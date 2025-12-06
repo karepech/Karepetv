@@ -1,9 +1,8 @@
-name: Update M3U Playlist Daily
+name: Update M3U Playlist Daily via API-Sports
 
 on:
   schedule:
-    # Jadwalkan agar berjalan setiap hari pada pukul 08:00 UTC (misalnya)
-    # Anda bisa menyesuaikan waktu ini
+    # Jadwalkan agar berjalan setiap hari pada pukul 08:00 UTC (15:00 WIB)
     - cron: '0 8 * * *'
   workflow_dispatch:
     # Memungkinkan menjalankan secara manual dari tab Actions di GitHub
@@ -11,6 +10,8 @@ on:
 jobs:
   update-m3u:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # IZIN INI PENTING: Memungkinkan action melakukan commit/push
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -21,17 +22,17 @@ jobs:
           python-version: '3.x'
 
       - name: Install Dependencies
-        # OpenLigaDB tidak memerlukan library khusus,
-        # tapi jika Anda menggunakan library HTTP (misalnya requests), instal di sini
+        # Memastikan library requests terinstal untuk koneksi API
         run: pip install requests
 
       - name: Run M3U Update Script
-        # Ganti 'script_update_m3u.py' dengan nama file skrip Anda
+        # PENTING: Kunci API disuntikkan ke lingkungan skrip (env)
         run: python script_update_m3u.py
+        env:
+          FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
 
       - name: Commit and Push Changes (jika ada perubahan)
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "🤖 Update M3U Playlist with latest data from API"
-          # Pastikan TOKEN ini memiliki izin 'write' ke konten repositori
+          commit_message: "🤖 Update M3U Playlist with latest data from API-Sports"
           token: ${{ secrets.GITHUB_TOKEN }}
