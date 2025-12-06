@@ -7,7 +7,7 @@ SOURCE_URL = "https://dildo.beww.pl/ngen.m3u"
 OUTPUT_FILE = "live_events.m3u"
 
 # Frasa kunci utama yang dikonfirmasi pengguna
-LIVE_CATEGORY_PHRASE = "LIVE NOW"
+LIVE_CATEGORY_PHRASE = "LIVE"
 
 # Regular Expression untuk mengambil group-title
 GROUP_TITLE_REGEX = re.compile(r'group-title="([^"]*)"', re.IGNORECASE)
@@ -52,6 +52,7 @@ def filter_live_events(source_url, output_file):
                     group_title = group_match.group(1).strip() if group_match else ""
                     
                     # b. Lakukan pemeriksaan filter: Cek apakah "LIVE NOW" ada di group-title.
+                    # MENGAKTIFKAN KEMBALI FILTER FINAL
                     is_live_category = LIVE_CATEGORY_PHRASE in group_title.strip().upper()
                     
                     if is_live_category:
@@ -84,5 +85,4 @@ def filter_live_events(source_url, output_file):
 
 
 if __name__ == "__main__":
-    # >>>>> INI PERBAIKAN DARI ERROR ANDA: MENGGUNAKAN SOURCE_URL <<<<<
     filter_live_events(SOURCE_URL, OUTPUT_FILE)
