@@ -3,7 +3,7 @@ import re
 import os
 
 # Konfigurasi
-SOURCE_URL = "https://dildo.beww.pl/ngen.m3u" 
+SOURCE_URL = "https://donzcompany.shop/donztelevision/donztelevision.php" 
 OUTPUT_FILE = "live_events.m3u"
 
 # >>>>> PERUBAHAN DI SINI: KATA KUNCI DIUBAH KE "SPORT" <<<<<
