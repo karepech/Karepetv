@@ -1,5 +1,5 @@
 # .github/workflows/filter.yml
-name: Filter M3U Live Events
+name: Download Full M3U Playlist
 
 on:
   # ATUR JADWAL: Jalankan secara terjadwal setiap hari pada pukul 04:00 UTC (sekitar jam 11:00 WIB)
@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  filter:
+  download: # Ubah nama job
     runs-on: ubuntu-latest
     steps:
       - name: Checkout kode
@@ -23,24 +23,25 @@ jobs:
       - name: Install dependencies (requests)
         run: pip install requests
 
-      - name: Jalankan Skrip Filter (Membuat live_events.m3u)
-        run: python filter_m3u.py
+      - name: Jalankan Skrip Pengunduhan (Membuat full_playlist.m3u)
+        # PASTIKAN NAMA FILE SKRIP DISESUAIKAN DI SINI
+        run: python download_m3u.py
         env:
           PYTHONUNBUFFERED: 1 
 
-      - name: Commit dan Push file M3U hasil filter (Hanya jika ada perubahan)
+      - name: Commit dan Push file M3U (Hanya jika ada perubahan)
         run: |
           # Konfigurasi Git untuk bot
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
           
-          # Periksa perbedaan antara file baru dan file yang ada
-          git add live_events.m3u
+          # Tambahkan file output yang baru
+          git add full_playlist.m3u
           
           if git diff --cached --exit-code; then
-            echo "Tidak ada perubahan pada live_events.m3u. Melewatkan commit."
+            echo "Tidak ada perubahan pada full_playlist.m3u. Melewatkan commit."
           else
             echo "Perubahan terdeteksi. Melakukan commit..."
-            git commit -m "Update M3U Live Events (Automated)"
+            git commit -m "Update Full Playlist (Automated)"
             git push
           fi
