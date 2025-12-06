@@ -233,6 +233,8 @@ http://49.0.64.96:8007/HiSports
 http://htvint.mada.ps:8889/orient/index.m3u8
 #EXTINF:-1 tvg-id="Cartoonito.it" tvg-name="Cartoonito" group-title="🇮🇹|ITALY CHANNEL" tvg-logo="https://i.imgur.com/pQcz03B.jpg",SUPER TENNIS
 https://live-embed.supertennix.hiway.media/restreamer/supertennix_client/gpu-a-c0-16/restreamer/outgest/aa3673f1-e178-44a9-a947-ef41db73211a/manifest.m3u8
+#EXTINF:-1 group-title="🎞️|PLUTO CHANNEL" tvg-logo="https://i.imgur.com/g5HvtcO.jpg", PLUTO SPOTLIGHT
+http://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/5ba3fb9c4b078e0f37ad34e8/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceLat=0&deviceLon=0&deviceDNT=%7BTARGETOPT%7D&deviceId=%7BPSID%7D&advertisingId=%7BPSID%7D&us_privacy=1YNY&samsung_app_domain=%7BAPP_DOMAIN%7D&samsung_app_name=%7BAPP_NAME%7D&profileLimit=&profileFloor=&embedPartner=samsung-tvplus
 #EXTINF:-1 tvg-id="cinemania.net" tvg-logo="https://i.imgur.com/eWrpTd5.jpg" group-title="👦🏻|KIDS CHANNEL",CINEMANIA PREMIERE
 http://filex.tv:8080//live/uk007/000920/533335.ts
 #EXTINF:-1 group-title="🎵|MUSIC CHANNEL" tvg-logo="https://i.imgur.com/xLUjOm1.jpg",MTV LIVE
