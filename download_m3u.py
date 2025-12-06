@@ -9,11 +9,11 @@ SOURCE_URLS = [
 ]
 OUTPUT_FILE = "live_events.m3u"
 
-# >>> FINAL KATA KUNCI UNTUK INKLUSI POSITIF (SPORT, LIVE, dan variasi) <<<
-# Script akan memasukkan saluran jika mengandung SALAH SATU kata kunci ini.
+# >>> FINAL KATA KUNCI UNTUK INKLUSI POSITIF (Mengatasi Bein dan Spot) <<<
 POSITIVE_KEYWORDS = [
     "SPORT", "SPORTS", "LIVE", "LANGSUNG", "OLAHRAGA", "MATCH", "EVENT", 
-    "PREMIER", "LIGA", "FOOTBALL", "BOLA", "TENNIS", "BASKET", "RACING", "BEIN" # Menambahkan BEIN eksplisit
+    "PREMIER", "LIGA", "FOOTBALL", "BOLA", "TENNIS", "BASKET", "RACING", 
+    "BEIN", "BE IN", "SPOT", "SPOTS" # Penambahan kata kunci baru
 ] 
 
 # Daftar URL yang dikecualikan (BLACKLIST)
@@ -22,7 +22,7 @@ BLACKLIST_URLS = [
     "https://bit.ly/DonzTelevisionNewAttention",
 ]
 
-# Regular Expression untuk mengambil group-title dan Channel Name
+# Regular Expression untuk mengambil group-title dan channel name
 GROUP_TITLE_REGEX = re.compile(r'group-title="([^"]*)"', re.IGNORECASE)
 CHANNEL_NAME_REGEX = re.compile(r',([^,]*)$')
 # Regex untuk membersihkan karakter non-alphanumeric (kecuali spasi)
