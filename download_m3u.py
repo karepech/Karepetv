@@ -3,50 +3,49 @@ import re
 import os
 
 # Konfigurasi
-# >>> PERUBAHAN 1: MENGGUNAKAN DAFTAR URL SUMBER <<<
 SOURCE_URLS = [
     "https://donzcompany.shop/donztelevision/donztelevision.php",
-    "https://getch.semar.my.id",
-    # TAMBAHKAN URL M3U LAIN DI SINI, PISAHKAN DENGAN KOMA
-    # Contoh: "http://link-m3u-lain.com/playlist.m3u",
+    # TAMBAHKAN URL M3U LAIN DI SINI
 ]
 OUTPUT_FILE = "live_events.m3u"
 
-# >>> PERUBAHAN 2: KATA KUNCI FILTER GANDA (SPORT ATAU LIVE) <<<
-FILTER_KEYWORDS = ["SPORT", "LIVE"] 
+# >>> FINAL KATA KUNCI UNTUK INKLUSI POSITIF (SPORT, LIVE, dan variasi) <<<
+# Script akan memasukkan saluran jika mengandung SALAH SATU kata kunci ini.
+POSITIVE_KEYWORDS = [
+    "SPORT", "SPORTS", "LIVE", "LANGSUNG", "OLAHRAGA", "MATCH", "EVENT", 
+    "PREMIER", "LIGA", "FOOTBALL", "BOLA", "TENNIS", "BASKET", "RACING", "BEIN" # Menambahkan BEIN eksplisit
+] 
 
-# >>> PERUBAHAN 3: DAFTAR URL YANG DIKECUALIKAN (BLACKLIST) <<<
-# URL ini akan diabaikan/dilewatkan, terlepas dari kategori mereka.
+# Daftar URL yang dikecualikan (BLACKLIST)
 BLACKLIST_URLS = [
     "https://bit.ly/428RaFW",
     "https://bit.ly/DonzTelevisionNewAttention",
 ]
 
-# Regular Expression untuk mengambil group-title
+# Regular Expression untuk mengambil group-title dan Channel Name
 GROUP_TITLE_REGEX = re.compile(r'group-title="([^"]*)"', re.IGNORECASE)
+CHANNEL_NAME_REGEX = re.compile(r',([^,]*)$')
+# Regex untuk membersihkan karakter non-alphanumeric (kecuali spasi)
+CLEANING_REGEX = re.compile(r'[^a-zA-Z0-9\s]+') 
 
 def filter_live_events(source_urls, output_file):
-    """Mengunduh dari banyak URL, memfilter berdasarkan kategori dan blacklist, lalu menyimpan hasilnya."""
+    """Mengunduh dari banyak URL, memfilter (hanya inklusi positif), dan blacklist."""
     
     filtered_lines = ["#EXTM3U"]
     total_entries = 0
     
-    # Loop melalui setiap URL sumber
     for url in source_urls:
         print(f"\n--- Memproses URL: {url} ---")
         
         try:
-            # 1. Unduh konten M3U
             response = requests.get(url, timeout=60) 
             response.raise_for_status()
             content = response.text.splitlines()
-
             print(f"Status Koneksi: {response.status_code}") 
             print(f"Jumlah baris yang berhasil diunduh: {len(content)}") 
-
         except requests.exceptions.RequestException as e:
             print(f"FATAL ERROR: Gagal mengunduh URL {url}: {e}")
-            continue # Lanjutkan ke URL berikutnya jika ada error
+            continue
 
         i = 0
         url_entries = 0
@@ -59,28 +58,33 @@ def filter_live_events(source_urls, output_file):
                 if i + 1 < len(content):
                     stream_url = content[i+1].strip()
                     
-                    # Logika Pengecekan URL dan Filter
-                    
-                    # 1. Pastikan baris berikutnya adalah URL valid
                     is_valid_url = not stream_url.startswith("#") and len(stream_url) > 5
                     
                     if is_valid_url:
                         
-                        # 2. Cek apakah URL ada di daftar pengecualian (BLACKLIST)
+                        # 1. Cek Blacklist (Jika ada di blacklist, lewati)
                         if stream_url in BLACKLIST_URLS:
                             print(f"   [SKIP] URL di blacklist: {stream_url}")
                             i += 2
                             continue
                             
-                        # 3. Lakukan Pengecekan Kategori (LIVE ATAU SPORT)
+                        # 2. Ekstrak, Bersihkan, dan Ubah ke Kapital
                         group_match = GROUP_TITLE_REGEX.search(line)
-                        group_title = group_match.group(1).strip() if group_match else ""
-                        group_title_upper = group_title.strip().upper()
+                        channel_match = CHANNEL_NAME_REGEX.search(line)
                         
-                        # Cek jika group-title mengandung SALAH SATU kata kunci
-                        is_category_match = any(keyword in group_title_upper for keyword in FILTER_KEYWORDS)
+                        raw_group_title = group_match.group(1) if group_match else ""
+                        raw_channel_name = channel_match.group(1) if channel_match else ""
                         
-                        if is_category_match:
+                        # Bersihkan Teks dari simbol aneh sebelum filtering
+                        clean_group_title = CLEANING_REGEX.sub(' ', raw_group_title).upper()
+                        clean_channel_name = CLEANING_REGEX.sub(' ', raw_channel_name).upper()
+                        
+                        # 3. LOGIKA FILTER UTAMA (POSITIF INKLUSI)
+                        
+                        # Cek apakah Group Title ATAU Channel Name mengandung SALAH SATU kata kunci positif
+                        is_match_positive = any(keyword in clean_group_title or keyword in clean_channel_name for keyword in POSITIVE_KEYWORDS)
+                        
+                        if is_match_positive:
                             filtered_lines.append(line)
                             filtered_lines.append(stream_url)
                             total_entries += 1
@@ -96,7 +100,7 @@ def filter_live_events(source_urls, output_file):
             
         print(f"Ditemukan {url_entries} entri yang cocok dari URL ini.")
 
-    # 3. Simpan konten yang sudah difilter
+    # 4. Simpan konten yang sudah difilter
     print(f"\n--- Total ---")
     print(f"Total ditemukan {total_entries} saluran yang difilter dari semua sumber.")
     
