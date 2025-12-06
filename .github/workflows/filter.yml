@@ -1,17 +1,11 @@
 # .github/workflows/filter.yml
-name: Filter M3U Live Events
+name: Advanced Multi-Filter M3U
 
 on:
-  # >>>>> PERUBAHAN DI SINI: MENAMBAHKAN PUSH EVENT <<<<<
   push:
-    # Workflow akan berjalan setiap kali ada push ke branch 'main' atau 'master'
     branches: [ main, master ] 
-  
-  # Jadwal harian (tetap dipertahankan)
   schedule:
     - cron: '0 4 * * *'
-  
-  # Memungkinkan eksekusi manual (tetap dipertahankan)
   workflow_dispatch:
 
 jobs:
@@ -29,24 +23,22 @@ jobs:
       - name: Install dependencies (requests)
         run: pip install requests
 
-      - name: Jalankan Skrip Filter Live Events (download_m3u.py)
-        # Nama script yang terakhir kita gunakan
+      - name: Jalankan Skrip Multi-Filter
+        # MEMANGGIL SCRIPT DENGAN NAMA LAMA
         run: python download_m3u.py
-        env:
-          PYTHONUNBUFFERED: 1 
 
-      - name: Commit dan Push file M3U (Hanya jika ada perubahan)
+      - name: Commit dan Push file M3U yang Diperbarui
         run: |
-          # Konfigurasi Git untuk bot
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
           
-          git add live_events.m3u
+          # >>> TAMBAHKAN KEDUA FILE OUTPUT BARU DI SINI <<<
+          git add event_only.m3u sports_live.m3u
           
           if git diff --cached --exit-code; then
-            echo "Tidak ada perubahan pada live_events.m3u. Melewatkan commit."
+            echo "Tidak ada perubahan."
           else
             echo "Perubahan terdeteksi. Melakukan commit..."
-            git commit -m "Update Live Events Filtered Playlist (Automated)"
+            git commit -m "Update Multi-Filtered Playlists (Automated)"
             git push
           fi
