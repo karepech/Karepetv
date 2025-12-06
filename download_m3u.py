@@ -3,40 +3,27 @@ import re
 import os
 
 # Konfigurasi
-# >>> URL SUMBER ANDA SUDAH DIPERBARUI DI SINI <<<
 SOURCE_URLS = [
     "https://donzcompany.shop/donztelevision/donztelevision.php",
-    # Tambahkan URL M3U lain di sini jika ada: "http://link-m3u-lain.com/playlist.m3u",
+    # Tambahkan URL M3U lain di sini jika ada.
 ]
-OUTPUT_FILE = "live_events.m3u"
+# Mengubah nama file output agar jelas bahwa ini adalah output debug/full
+OUTPUT_FILE = "live_events_full_debug.m3u" 
 
-# FINAL KATA KUNCI UNTUK INKLUSI POSITIF (Mengatasi Bein dan SpotV)
-POSITIVE_KEYWORDS = [
-    "SPORT", "SPORTS", "LIVE", "LANGSUNG", "OLAHRAGA", "MATCH", "EVENT", 
-    "PREMIER", "LIGA", "FOOTBALL", "BOLA", "TENNIS", "BASKET", "RACING", 
-    "BEIN", "SPOTV", "SPOT"
-] 
-
-# Daftar URL yang dikecualikan (BLACKLIST)
+# Daftar URL yang dikecualikan (BLACKLIST) - INI ADALAH SATU-SATUNYA FILTER AKTIF
 BLACKLIST_URLS = [
     "https://bit.ly/428RaFW",
     "https://bit.ly/DonzTelevisionNewAttention",
 ]
 
-# Regular Expression untuk mengambil group-title dan Channel Name
-GROUP_TITLE_REGEX = re.compile(r'group-title="([^"]*)"', re.IGNORECASE)
-CHANNEL_NAME_REGEX = re.compile(r',([^,]*)$')
-# Regex untuk membersihkan karakter non-alphanumeric (kecuali spasi)
-CLEANING_REGEX = re.compile(r'[^a-zA-Z0-9\s]+') 
-
 def filter_live_events(source_urls, output_file):
-    """Mengunduh, memfilter (hanya inklusi positif), dan blacklist."""
+    """Mendownload SEMUA konten dan hanya MENGECUALIKAN link yang ada di blacklist."""
     
     filtered_lines = ["#EXTM3U"]
     total_entries = 0
     
     for url in source_urls:
-        print(f"\n--- Memproses URL: {url} ---")
+        print(f"\n--- Memproses URL: {url} (MODE: BLACKLIST ONLY) ---")
         
         try:
             response = requests.get(url, timeout=60) 
@@ -49,7 +36,6 @@ def filter_live_events(source_urls, output_file):
             continue
 
         i = 0
-        url_entries = 0
         
         while i < len(content):
             line = content[i].strip()
@@ -63,30 +49,13 @@ def filter_live_events(source_urls, output_file):
                     
                     if is_valid_url:
                         
-                        # 1. Cek Blacklist (Jika ada di blacklist, lewati)
-                        if stream_url in BLACKLIST_URLS:
-                            i += 2
-                            continue
-                            
-                        # 2. Ekstrak, Bersihkan, dan Ubah ke Kapital
-                        group_match = GROUP_TITLE_REGEX.search(line)
-                        channel_match = CHANNEL_NAME_REGEX.search(line)
-                        
-                        raw_group_title = group_match.group(1) if group_match else ""
-                        raw_channel_name = channel_match.group(1) if channel_match else ""
-                        
-                        # Bersihkan Teks dari simbol aneh sebelum filtering
-                        clean_group_title = CLEANING_REGEX.sub(' ', raw_group_title).upper()
-                        clean_channel_name = CLEANING_REGEX.sub(' ', raw_channel_name).upper()
-                        
-                        # 3. LOGIKA FILTER UTAMA (POSITIF INKLUSI)
-                        is_match_positive = any(keyword in clean_group_title or keyword in clean_channel_name for keyword in POSITIVE_KEYWORDS)
-                        
-                        if is_match_positive:
+                        # LOGIKA FILTER: Jika BUKAN di blacklist, masukkan.
+                        if stream_url not in BLACKLIST_URLS:
                             filtered_lines.append(line)
                             filtered_lines.append(stream_url)
                             total_entries += 1
-                            url_entries += 1
+                        else:
+                            print(f"   [SKIP] URL di blacklist: {stream_url}")
                             
                         i += 2
                         continue
@@ -96,11 +65,12 @@ def filter_live_events(source_urls, output_file):
             
             i += 1
             
-        print(f"Ditemukan {url_entries} entri yang cocok dari URL ini.")
+        print(f"Total entries dari URL ini: {total_entries}")
+
 
     # 4. Simpan konten yang sudah difilter
     print(f"\n--- Total ---")
-    print(f"Total ditemukan {total_entries} saluran yang difilter dari semua sumber.")
+    print(f"Total ditemukan {total_entries} saluran yang difilter (BLACKLIST-ONLY).")
     
     with open(output_file, "w", encoding="utf-8") as f:
         if total_entries == 0:
@@ -108,7 +78,7 @@ def filter_live_events(source_urls, output_file):
         else:
              f.write('\n'.join(filtered_lines) + '\n')
 
-    print(f"Playlist yang difilter berhasil disimpan ke {output_file}")
+    print(f"Playlist berhasil disimpan ke {output_file}")
 
 
 if __name__ == "__main__":
