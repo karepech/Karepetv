@@ -1,36 +1,76 @@
 import requests
+import re
 import os
 
 # Konfigurasi
 SOURCE_URL = "https://dildo.beww.pl/ngen.m3u" 
-# Ganti nama file output menjadi 'full_playlist.m3u'
-OUTPUT_FILE = "full_playlist.m3u" 
+OUTPUT_FILE = "live_events.m3u"
 
-def download_m3u(source_url, output_file):
-    """Mengunduh seluruh konten M3U tanpa filter."""
+# Frasa kunci utama yang dikonfirmasi pengguna
+LIVE_CATEGORY_PHRASE = "LIVE"
+
+# Regular Expression untuk mengambil group-title
+GROUP_TITLE_REGEX = re.compile(r'group-title="([^"]*)"', re.IGNORECASE)
+
+def filter_live_events(source_url, output_file):
+    """Mengunduh, memfilter (berdasarkan LIVE NOW), dan menyimpan playlist M3U."""
     
     try:
-        print(f"Mengunduh seluruh konten M3U dari: {source_url}")
-        # Timeout diset ke 60 detik
+        # 1. Unduh konten M3U
+        print(f"Mengunduh M3U dari: {source_url}")
         response = requests.get(source_url, timeout=60) 
-        response.raise_for_status() # Akan memicu exception jika kode status >= 400
-        content = response.text
-        
-        # >>>>>> DEBUGGING OUTPUT <<<<<<
+        response.raise_for_status()
+        content = response.text.splitlines()
+
+        # DEBUGGING OUTPUT (optional, dapat dihapus setelah yakin)
         print(f"Status Koneksi: {response.status_code}") 
-        print(f"Ukuran konten yang berhasil diunduh (karakter): {len(content)}") 
-        # >>>>>> DEBUGGING OUTPUT <<<<<<
+        print(f"Jumlah baris yang berhasil diunduh: {len(content)}") 
 
     except requests.exceptions.RequestException as e:
         print(f"FATAL ERROR: Gagal mengunduh atau koneksi terputus: {e}")
         exit(1) 
 
-    # 2. Simpan konten yang sudah diunduh langsung ke file
-    with open(output_file, "w", encoding="utf-8") as f:
-        f.write(content)
+    filtered_lines = ["#EXTM3U"]
+    i = 0
+    num_entries = 0
+    
+    while i < len(content):
+        line = content[i].strip()
         
-    print(f"Seluruh playlist berhasil disimpan ke {output_file}")
+        if line.startswith("#EXTINF"):
+            if i + 1 < len(content):
+                stream_url = content[i+1].strip()
+                
+                # a. Ekstrak group-title
+                group_match = GROUP_TITLE_REGEX.search(line)
+                group_title = group_match.group(1).strip() if group_match else ""
+                
+                # b. Lakukan pemeriksaan filter: Cek apakah "LIVE NOW" ada di group-title.
+                # Menggunakan .strip().upper() dan operator 'in' untuk pencocokan yang paling toleran
+                is_live_category = LIVE_CATEGORY_PHRASE in group_title.strip().upper()
+                
+                if is_live_category:
+                    filtered_lines.append(line)
+                    filtered_lines.append(stream_url)
+                    num_entries += 1
+                
+                i += 2
+                continue
+        
+        i += 1
+        
+    # 3. Simpan konten yang sudah difilter
+    print(f"Ditemukan {num_entries} live event yang difilter.")
+    
+    # Simpan file live_events.m3u
+    with open(output_file, "w", encoding="utf-8") as f:
+        if num_entries == 0:
+             f.write('#EXTM3U\n')
+        else:
+             f.write('\n'.join(filtered_lines) + '\n')
+
+    print(f"Playlist yang difilter berhasil disimpan ke {output_file}")
 
 
 if __name__ == "__main__":
-    download_m3u(SOURCE_URL, OUTPUT_FILE)
+    filter_live_events(SOURCE_URL, OUTPUT_FILE)
