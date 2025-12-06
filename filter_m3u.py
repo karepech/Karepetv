@@ -1,26 +1,18 @@
 import requests
-import re # Digunakan untuk Regular Expressions
+import re 
 
 # Konfigurasi
 SOURCE_URL = "https://dildo.beww.pl/ngen.m3u" 
 OUTPUT_FILE = "live_events.m3u"
-# Kata kunci filter:
-# 1. Kategori (group-title) harus mengandung salah satu kata kunci ini
-CATEGORY_KEYWORDS = ["live", "event", "sport"]
-# 2. Nama Saluran (#EXTINF) harus mengandung salah satu kata kunci ini
-CHANNEL_KEYWORDS = ["live", "event", "langsung", "match"]
 
-# Regular Expression untuk mengambil group-title dan channel name
-# Regex ini mencari pola group-title="..." dan nama saluran (setelah koma)
+# Kunci utama adalah frasa "LIVE NOW" di group-title
+LIVE_CATEGORY_PHRASE = "LIVE NOW"
+
+# Regular Expression untuk mengambil group-title
 GROUP_TITLE_REGEX = re.compile(r'group-title="([^"]*)"', re.IGNORECASE)
-CHANNEL_NAME_REGEX = re.compile(r',([^,]*)$')
-
-def is_match(text, keywords):
-    """Mengecek apakah teks mengandung salah satu kata kunci."""
-    return any(keyword.lower() in text.lower() for keyword in keywords)
 
 def filter_m3u(source_url, output_file):
-    """Mengunduh dan memfilter playlist M3U berdasarkan group-title dan nama saluran."""
+    """Mengunduh dan memfilter playlist M3U berdasarkan group-title "LIVE NOW"."""
     
     try:
         # 1. Unduh konten M3U
@@ -33,41 +25,33 @@ def filter_m3u(source_url, output_file):
         return
 
     filtered_lines = ["#EXTM3U"]
-    
-    # 2. Proses konten baris demi baris
     i = 0
     num_entries = 0
+    
     while i < len(content):
         line = content[i].strip()
         
         if line.startswith("#EXTINF"):
-            # Baris berikutnya diharapkan adalah URL streaming
             if i + 1 < len(content):
                 stream_url = content[i+1].strip()
                 
                 # a. Ekstrak group-title
                 group_match = GROUP_TITLE_REGEX.search(line)
-                group_title = group_match.group(1) if group_match else ""
+                group_title = group_match.group(1).strip() if group_match else ""
                 
-                # b. Ekstrak nama saluran
-                name_match = CHANNEL_NAME_REGEX.search(line)
-                channel_name = name_match.group(1).strip() if name_match else ""
+                # b. Lakukan pemeriksaan filter: Cek apakah group-title mengandung "LIVE NOW"
+                # Menggunakan startswith untuk akurasi tinggi
+                is_live_category = group_title.upper().startswith(LIVE_CATEGORY_PHRASE)
                 
-                # c. Lakukan pemeriksaan filter
-                is_live_category = is_match(group_title, CATEGORY_KEYWORDS)
-                is_live_channel = is_match(channel_name, CHANNEL_KEYWORDS)
-                
-                # Jika salah satu kriteria terpenuhi (di kategori ATAU di nama saluran)
-                if is_live_category or is_live_channel:
+                if is_live_category:
                     filtered_lines.append(line)
                     filtered_lines.append(stream_url)
                     num_entries += 1
                 
-                # Lompati ke baris setelah URL stream
-                i += 2
+                i += 2 # Lompati ke baris setelah URL stream
                 continue
         
-        i += 1 # Pindah ke baris berikutnya
+        i += 1
         
     # 3. Simpan konten yang sudah difilter
     print(f"Ditemukan {num_entries} live event yang difilter.")
