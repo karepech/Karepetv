@@ -1,0 +1,37 @@
+name: Update M3U Playlist Daily
+
+on:
+  schedule:
+    # Jadwalkan agar berjalan setiap hari pada pukul 08:00 UTC (misalnya)
+    # Anda bisa menyesuaikan waktu ini
+    - cron: '0 8 * * *'
+  workflow_dispatch:
+    # Memungkinkan menjalankan secara manual dari tab Actions di GitHub
+
+jobs:
+  update-m3u:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install Dependencies
+        # OpenLigaDB tidak memerlukan library khusus,
+        # tapi jika Anda menggunakan library HTTP (misalnya requests), instal di sini
+        run: pip install requests
+
+      - name: Run M3U Update Script
+        # Ganti 'script_update_m3u.py' dengan nama file skrip Anda
+        run: python script_update_m3u.py
+
+      - name: Commit and Push Changes (jika ada perubahan)
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "🤖 Update M3U Playlist with latest data from API"
+          # Pastikan TOKEN ini memiliki izin 'write' ke konten repositori
+          token: ${{ secrets.GITHUB_TOKEN }}
