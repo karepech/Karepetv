@@ -2,7 +2,7 @@
 name: Filter M3U Live Events
 
 on:
-  # Jalankan secara terjadwal setiap hari pada pukul 04:00 UTC (sekitar jam 11:00 WIB)
+  # ATUR JADWAL: Jalankan secara terjadwal setiap hari pada pukul 04:00 UTC (sekitar jam 11:00 WIB)
   schedule:
     - cron: '0 4 * * *'
   # Memungkinkan eksekusi manual dari tab Actions
@@ -23,21 +23,24 @@ jobs:
       - name: Install dependencies (requests)
         run: pip install requests
 
-      - name: Jalankan Skrip Filter
+      - name: Jalankan Skrip Filter (Membuat live_events.m3u)
         run: python filter_m3u.py
         env:
           PYTHONUNBUFFERED: 1 
 
-      - name: Commit dan Push file M3U hasil filter
+      - name: Commit dan Push file M3U hasil filter (Hanya jika ada perubahan)
         run: |
+          # Konfigurasi Git untuk bot
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
           
-          if git diff --quiet live_events.m3u; then
+          # Periksa perbedaan antara file baru dan file yang ada
+          git add live_events.m3u
+          
+          if git diff --cached --exit-code; then
             echo "Tidak ada perubahan pada live_events.m3u. Melewatkan commit."
           else
             echo "Perubahan terdeteksi. Melakukan commit..."
-            git add live_events.m3u
             git commit -m "Update M3U Live Events (Automated)"
             git push
           fi
