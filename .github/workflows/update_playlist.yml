@@ -1,17 +1,22 @@
 name: Update M3U Playlist Daily via API-Sports
 
 on:
+  # 1. TRIGGER PUSH (JALAN OTOMATIS JIKA ADA UPDATE)
+  push:
+    branches: [ main ] # Ganti 'main' jika branch utama Anda bernama 'master' atau lainnya
+  
+  # 2. TRIGGER SCHEDULED (JALAN OTOMATIS SETIAP HARI)
   schedule:
-    # Jadwalkan agar berjalan setiap hari pada pukul 08:00 UTC (15:00 WIB)
-    - cron: '0 8 * * *'
+    - cron: '0 0 * * *'
+  
+  # 3. TRIGGER MANUAL (DARI TOMBOL 'RUN WORKFLOW')
   workflow_dispatch:
-    # Memungkinkan menjalankan secara manual dari tab Actions di GitHub
 
 jobs:
   update-m3u:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # IZIN INI PENTING: Memungkinkan action melakukan commit/push
+      contents: write 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -22,17 +27,17 @@ jobs:
           python-version: '3.x'
 
       - name: Install Dependencies
-        # Memastikan library requests terinstal untuk koneksi API
         run: pip install requests
 
       - name: Run M3U Update Script
-        # PENTING: Kunci API disuntikkan ke lingkungan skrip (env)
+        # Skrip akan menghasilkan live_dynamic.m3u
         run: python script_update_m3u.py
         env:
           FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
 
-      - name: Commit and Push Changes (jika ada perubahan)
+      - name: Commit and Push New Playlist
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "🤖 Update M3U Playlist with latest data from API-Sports"
+          files: 'live_dynamic.m3u' 
+          commit_message: "🤖 New Dynamic M3U Playlist Generated"
           token: ${{ secrets.GITHUB_TOKEN }}
