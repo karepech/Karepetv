@@ -21,7 +21,7 @@ def filter_live_events(source_url, output_file):
         response = requests.get(source_url, timeout=60) 
         response.raise_for_status()
         content = response.text.splitlines()
-        
+
         # DEBUGGING OUTPUT
         print(f"Status Koneksi: {response.status_code}") 
         print(f"Jumlah baris yang berhasil diunduh: {len(content)}") 
@@ -30,7 +30,6 @@ def filter_live_events(source_url, output_file):
         print(f"FATAL ERROR: Gagal mengunduh atau koneksi terputus: {e}")
         exit(1) 
 
-    # Tambahkan header M3U di awal
     filtered_lines = ["#EXTM3U"]
     i = 0
     num_entries = 0
@@ -41,15 +40,11 @@ def filter_live_events(source_url, output_file):
         # Cari baris deskripsi
         if line.startswith("#EXTINF"):
             
-            # --- START PERBAIKAN LOGIKA COPY URL ---
-            
-            # Periksa apakah ada baris berikutnya (yang seharusnya URL)
+            # --- Perbaikan Logika: Pastikan URL disalin dan bukan baris kosong/komentar ---
             if i + 1 < len(content):
-                
-                # Baris berikutnya yang diharapkan adalah URL
                 stream_url = content[i+1].strip()
                 
-                # Pastikan baris berikutnya terlihat seperti URL (tidak kosong/tidak dimulai dengan #)
+                # Hanya lanjutkan jika baris berikutnya bukan baris komentar atau terlalu pendek
                 if not stream_url.startswith("#") and len(stream_url) > 5:
                     
                     # a. Ekstrak group-title
@@ -60,7 +55,7 @@ def filter_live_events(source_url, output_file):
                     is_live_category = LIVE_CATEGORY_PHRASE in group_title.strip().upper()
                     
                     if is_live_category:
-                        # Ini adalah intinya: Salin BARIS DESKRIPSI (i) dan BARIS URL (i+1)
+                        # Salin BARIS DESKRIPSI (i) dan BARIS URL (i+1)
                         filtered_lines.append(line)
                         filtered_lines.append(stream_url)
                         num_entries += 1
@@ -69,12 +64,10 @@ def filter_live_events(source_url, output_file):
                     i += 2
                     continue
                 else:
-                    # Jika baris setelah EXTINF bukan URL (misalnya komentar atau baris kosong)
+                    # Jika baris setelah EXTINF bukan URL, lompati hanya 1 baris
                     i += 1
                     continue
             
-            # --- END PERBAIKAN LOGIKA COPY URL ---
-        
         i += 1
         
     # 3. Simpan konten yang sudah difilter
@@ -91,4 +84,5 @@ def filter_live_events(source_url, output_file):
 
 
 if __name__ == "__main__":
-    filter_live_events(SOURCE_url, OUTPUT_FILE)
+    # >>>>> INI PERBAIKAN DARI ERROR ANDA: MENGGUNAKAN SOURCE_URL <<<<<
+    filter_live_events(SOURCE_URL, OUTPUT_FILE)
