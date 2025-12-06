@@ -7,7 +7,7 @@ SOURCE_URL = "https://dildo.beww.pl/ngen.m3u"
 OUTPUT_FILE = "live_events.m3u"
 
 # Frasa kunci utama yang dikonfirmasi pengguna
-LIVE_CATEGORY_PHRASE = "LIVE"
+LIVE_CATEGORY_PHRASE = "LIVE NOW"
 
 # Regular Expression untuk mengambil group-title
 GROUP_TITLE_REGEX = re.compile(r'group-title="([^"]*)"', re.IGNORECASE)
@@ -21,8 +21,8 @@ def filter_live_events(source_url, output_file):
         response = requests.get(source_url, timeout=60) 
         response.raise_for_status()
         content = response.text.splitlines()
-
-        # DEBUGGING OUTPUT (optional, dapat dihapus setelah yakin)
+        
+        # DEBUGGING OUTPUT
         print(f"Status Koneksi: {response.status_code}") 
         print(f"Jumlah baris yang berhasil diunduh: {len(content)}") 
 
@@ -30,6 +30,7 @@ def filter_live_events(source_url, output_file):
         print(f"FATAL ERROR: Gagal mengunduh atau koneksi terputus: {e}")
         exit(1) 
 
+    # Tambahkan header M3U di awal
     filtered_lines = ["#EXTM3U"]
     i = 0
     num_entries = 0
@@ -37,25 +38,42 @@ def filter_live_events(source_url, output_file):
     while i < len(content):
         line = content[i].strip()
         
+        # Cari baris deskripsi
         if line.startswith("#EXTINF"):
+            
+            # --- START PERBAIKAN LOGIKA COPY URL ---
+            
+            # Periksa apakah ada baris berikutnya (yang seharusnya URL)
             if i + 1 < len(content):
+                
+                # Baris berikutnya yang diharapkan adalah URL
                 stream_url = content[i+1].strip()
                 
-                # a. Ekstrak group-title
-                group_match = GROUP_TITLE_REGEX.search(line)
-                group_title = group_match.group(1).strip() if group_match else ""
-                
-                # b. Lakukan pemeriksaan filter: Cek apakah "LIVE NOW" ada di group-title.
-                # Menggunakan .strip().upper() dan operator 'in' untuk pencocokan yang paling toleran
-                is_live_category = LIVE_CATEGORY_PHRASE in group_title.strip().upper()
-                
-                if is_live_category:
-                    filtered_lines.append(line)
-                    filtered_lines.append(stream_url)
-                    num_entries += 1
-                
-                i += 2
-                continue
+                # Pastikan baris berikutnya terlihat seperti URL (tidak kosong/tidak dimulai dengan #)
+                if not stream_url.startswith("#") and len(stream_url) > 5:
+                    
+                    # a. Ekstrak group-title
+                    group_match = GROUP_TITLE_REGEX.search(line)
+                    group_title = group_match.group(1).strip() if group_match else ""
+                    
+                    # b. Lakukan pemeriksaan filter: Cek apakah "LIVE NOW" ada di group-title.
+                    is_live_category = LIVE_CATEGORY_PHRASE in group_title.strip().upper()
+                    
+                    if is_live_category:
+                        # Ini adalah intinya: Salin BARIS DESKRIPSI (i) dan BARIS URL (i+1)
+                        filtered_lines.append(line)
+                        filtered_lines.append(stream_url)
+                        num_entries += 1
+                        
+                    # Lompati ke baris setelah URL stream
+                    i += 2
+                    continue
+                else:
+                    # Jika baris setelah EXTINF bukan URL (misalnya komentar atau baris kosong)
+                    i += 1
+                    continue
+            
+            # --- END PERBAIKAN LOGIKA COPY URL ---
         
         i += 1
         
@@ -73,4 +91,4 @@ def filter_live_events(source_url, output_file):
 
 
 if __name__ == "__main__":
-    filter_live_events(SOURCE_URL, OUTPUT_FILE)
+    filter_live_events(SOURCE_url, OUTPUT_FILE)
