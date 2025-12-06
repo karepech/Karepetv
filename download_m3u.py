@@ -5,7 +5,8 @@ import os
 # Konfigurasi
 # >>> PERUBAHAN 1: MENGGUNAKAN DAFTAR URL SUMBER <<<
 SOURCE_URLS = [
-    "https://dildo.beww.pl/ngen.m3u",
+    "https://donzcompany.shop/donztelevision/donztelevision.php",
+    "https://getch.semar.my.id",
     # TAMBAHKAN URL M3U LAIN DI SINI, PISAHKAN DENGAN KOMA
     # Contoh: "http://link-m3u-lain.com/playlist.m3u",
 ]
