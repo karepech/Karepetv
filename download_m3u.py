@@ -3,17 +3,18 @@ import re
 import os
 
 # Konfigurasi
+# >>> URL SUMBER ANDA SUDAH DIPERBARUI DI SINI <<<
 SOURCE_URLS = [
     "https://donzcompany.shop/donztelevision/donztelevision.php",
-    # TAMBAHKAN URL M3U LAIN DI SINI
+    # Tambahkan URL M3U lain di sini jika ada: "http://link-m3u-lain.com/playlist.m3u",
 ]
 OUTPUT_FILE = "live_events.m3u"
 
-# >>> FINAL KATA KUNCI UNTUK INKLUSI POSITIF (Mengatasi Bein dan Spot) <<<
+# FINAL KATA KUNCI UNTUK INKLUSI POSITIF (Mengatasi Bein dan SpotV)
 POSITIVE_KEYWORDS = [
     "SPORT", "SPORTS", "LIVE", "LANGSUNG", "OLAHRAGA", "MATCH", "EVENT", 
     "PREMIER", "LIGA", "FOOTBALL", "BOLA", "TENNIS", "BASKET", "RACING", 
-    "BEIN", "BE IN", "SPOT", "SPOTS" # Penambahan kata kunci baru
+    "BEIN", "SPOTV", "SPOT"
 ] 
 
 # Daftar URL yang dikecualikan (BLACKLIST)
@@ -22,14 +23,14 @@ BLACKLIST_URLS = [
     "https://bit.ly/DonzTelevisionNewAttention",
 ]
 
-# Regular Expression untuk mengambil group-title dan channel name
+# Regular Expression untuk mengambil group-title dan Channel Name
 GROUP_TITLE_REGEX = re.compile(r'group-title="([^"]*)"', re.IGNORECASE)
 CHANNEL_NAME_REGEX = re.compile(r',([^,]*)$')
 # Regex untuk membersihkan karakter non-alphanumeric (kecuali spasi)
 CLEANING_REGEX = re.compile(r'[^a-zA-Z0-9\s]+') 
 
 def filter_live_events(source_urls, output_file):
-    """Mengunduh dari banyak URL, memfilter (hanya inklusi positif), dan blacklist."""
+    """Mengunduh, memfilter (hanya inklusi positif), dan blacklist."""
     
     filtered_lines = ["#EXTM3U"]
     total_entries = 0
@@ -64,7 +65,6 @@ def filter_live_events(source_urls, output_file):
                         
                         # 1. Cek Blacklist (Jika ada di blacklist, lewati)
                         if stream_url in BLACKLIST_URLS:
-                            print(f"   [SKIP] URL di blacklist: {stream_url}")
                             i += 2
                             continue
                             
@@ -80,8 +80,6 @@ def filter_live_events(source_urls, output_file):
                         clean_channel_name = CLEANING_REGEX.sub(' ', raw_channel_name).upper()
                         
                         # 3. LOGIKA FILTER UTAMA (POSITIF INKLUSI)
-                        
-                        # Cek apakah Group Title ATAU Channel Name mengandung SALAH SATU kata kunci positif
                         is_match_positive = any(keyword in clean_group_title or keyword in clean_channel_name for keyword in POSITIVE_KEYWORDS)
                         
                         if is_match_positive:
