@@ -1,43 +1,43 @@
-name: Update M3U Playlist Daily via API-Sports
+# .github/workflows/filter.yml
+name: Filter M3U Live Events
 
 on:
-  # 1. TRIGGER PUSH (JALAN OTOMATIS JIKA ADA UPDATE)
-  push:
-    branches: [ main ] # Ganti 'main' jika branch utama Anda bernama 'master' atau lainnya
-  
-  # 2. TRIGGER SCHEDULED (JALAN OTOMATIS SETIAP HARI)
+  # Jalankan secara terjadwal setiap hari pada pukul 04:00 UTC (sekitar jam 11:00 WIB)
   schedule:
-    - cron: '0 0 * * *'
-  
-  # 3. TRIGGER MANUAL (DARI TOMBOL 'RUN WORKFLOW')
+    - cron: '0 4 * * *'
+  # Memungkinkan eksekusi manual dari tab Actions
   workflow_dispatch:
 
 jobs:
-  update-m3u:
+  filter:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write 
     steps:
-      - name: Checkout Repository
+      - name: Checkout kode
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
-      - name: Install Dependencies
+      - name: Install dependencies (requests)
         run: pip install requests
 
-      - name: Run M3U Update Script
-        # Skrip akan menghasilkan live_dynamic.m3u
-        run: python script_update_m3u.py
+      - name: Jalankan Skrip Filter
+        run: python filter_m3u.py
         env:
-          FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
+          PYTHONUNBUFFERED: 1 
 
-      - name: Commit and Push New Playlist
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          files: 'live_dynamic.m3u' 
-          commit_message: "🤖 New Dynamic M3U Playlist Generated"
-          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit dan Push file M3U hasil filter
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          
+          if git diff --quiet live_events.m3u; then
+            echo "Tidak ada perubahan pada live_events.m3u. Melewatkan commit."
+          else
+            echo "Perubahan terdeteksi. Melakukan commit..."
+            git add live_events.m3u
+            git commit -m "Update M3U Live Events (Automated)"
+            git push
+          fi
