@@ -2,8 +2,16 @@
 name: Filter M3U Live Events
 
 on:
+  # >>>>> PERUBAHAN DI SINI: MENAMBAHKAN PUSH EVENT <<<<<
+  push:
+    # Workflow akan berjalan setiap kali ada push ke branch 'main' atau 'master'
+    branches: [ main, master ] 
+  
+  # Jadwal harian (tetap dipertahankan)
   schedule:
     - cron: '0 4 * * *'
+  
+  # Memungkinkan eksekusi manual (tetap dipertahankan)
   workflow_dispatch:
 
 jobs:
@@ -22,13 +30,14 @@ jobs:
         run: pip install requests
 
       - name: Jalankan Skrip Filter Live Events (download_m3u.py)
-        # PERUBAHAN DI SINI: Memanggil download_m3u.py
+        # Nama script yang terakhir kita gunakan
         run: python download_m3u.py
         env:
           PYTHONUNBUFFERED: 1 
 
       - name: Commit dan Push file M3U (Hanya jika ada perubahan)
         run: |
+          # Konfigurasi Git untuk bot
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
           
