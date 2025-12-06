@@ -1,7 +1,6 @@
 #EXTM3U
 ##################### EVENT INFORMATION - 06 Dec 2025 #####################
 #EXTGRP: --- PEMBERITAHUAN ACARA KHUSUS ---
-#EXTGRP: BEIN SPORTS: Jadwal diperbarui otomatis jika ada pertandingan hari ini (PL, La Liga, BL)!
 #EXTGRP: BRI LIGA 1: Cek jadwal terkini di saluran PEGADAIAN CHAMPIONSHIP!
 #EXTGRP: WWE EVENTS: Cek jadwal mingguan Raw/SmackDown/PPV!
 #EXTGRP: ------------------------------------
@@ -12,6 +11,14 @@
 #EXTGRP: Pastikan saluran LIGA 1 (BRI) dan saluran SPORTS lain aktif saat event berlangsung!
 ##################################################################
 
+##################### ALL OTHER SPORTS CHANNELS #####################
+🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹 [LINE] 🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹
+
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+#KODIPROP:inputstream=ffmpegdirect
+#KODIPROP:inputstream.ffmpeg_options=-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5
+#KODIPROP:inputstream.adaptive.stream_headers=user-agent=Mozilla/5.0 (Linux; Android 12; Kodi/21.0) ExoPlayerLib/2.9.6,referer=http://203.77.246.58/
+#KODIPROP:network-caching=2000
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://mimipipi22.github.io/logo/sports/champions1.jpg" group-title="⭐|SPORTS CHANNEL",,CHAMPIONS TV 1
 http://202.169.224.202:8800/udp/239.9.1.9:1234
 
@@ -3896,3 +3903,5 @@ https://dck-ac-live.cdn.indazn.com/dash/dazn-linear-526/stream.mpd
 #EXTINF:-1 group-title="SPORTS LIVE" tvg-logo="https://docdog.top/logo/countries/france/canal_plus/DAZN_2.png" , DAZN 2
 #EXTINF:-1 group-title="SPORTS LIVE" tvg-logo="https://docdog.top/logo/countries/france/canal_plus/DAZN_3.png" , DAZN 3
 #EXTINF:-1 group-title="SPORTS LIVE" tvg-logo="https://docdog.top/logo/countries/france/canal_plus/DAZN_4.png" , DAZN 4
+
+# Diperbarui oleh GitHub Action pada 06/12/2025 15:43:47 WIB
