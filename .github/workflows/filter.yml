@@ -1,11 +1,15 @@
 name: Multi-Filter M3U Scheduler
 
 on:
-  # Penjadwalan menggunakan Cron
+  # 1. Trigger saat ada perubahan (push)
+  push:
+    branches:
+      # Jalankan setiap kali ada push ke branch 'main' (atau 'master', sesuaikan)
+      - main 
+  
+  # 2. Trigger terjadwal (setiap 20 menit)
   schedule:
     # MENJALANKAN SETIAP 20 MENIT
-    # Ini akan berjalan pada menit 0, menit 20, dan menit 40 setiap jam.
-    # Waktu ini menggunakan UTC (Universal Time Coordinated).
     - cron: '*/20 * * * *'
 
   # Izinkan menjalankan secara manual (opsional)
@@ -29,5 +33,16 @@ jobs:
       - name: Jalankan Skrip Multi-Filter
         run: python download_m3u.py
         
-      # Anda harus menambahkan langkah Git commit/push di sini
-      # agar file M3U yang sudah difilter tersimpan kembali di repositori.
+      # LANGKAH PENTING TAMBAHAN: Commit dan Push Hasil Filter
+      # Anda harus menambahkan langkah ini agar file M3U yang dihasilkan 
+      # (event_only_url1.m3u dan event_only_url2.m3u) tersimpan kembali di repo.
+      - name: Konfigurasi Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit dan Push file M3U yang Diperbarui
+        run: |
+          git add event_only_url1.m3u event_only_url2.m3u
+          git commit -m "Otomatis: Update playlist M3U dari filter (scheduled/push)" || echo "Tidak ada perubahan untuk di-commit"
+          git push
