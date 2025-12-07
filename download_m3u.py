@@ -1,4 +1,4 @@
-import requests
+Import requests
 import re
 import os
 
@@ -25,15 +25,15 @@ GLOBAL_BLACKLIST_URLS = [
 CONFIGURATIONS = [
     {
         "url": "https://bit.ly/kopinyaoke",
-        "output_file": "event_only.m3u", # Output file untuk Event
-        "keywords": ALL_POSITIVE_KEYWORDS["EVENT_ONLY"],
-        "description": "Hanya Event Kopi/Traktir"
+        "output_file": "event_only_url1.m3u", # Output file untuk Event
+        "keywords": ALL_POSITIVE_KEYWORDS["EVENT_ONLY"], # MENGGUNAKAN HANYA EVENT
+        "description": "Hanya Event dari URL 1 (Kopi/Traktir)"
     },
     {
         "url": "https://donzcompany.shop/donztelevision/donztelevisions.php","https://bakulwifi.my.id/live.m3u",
-        "output_file": "sports_live.m3u", # Output file untuk Sports/Live
-        "keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"],
-        "description": "Hanya Sports dan Live"
+        "output_file": "event_only_url2.m3u", # Output file untuk Event dari URL kedua
+        "keywords": ALL_POSITIVE_KEYWORDS["EVENT_ONLY"], # MENGGUNAKAN HANYA EVENT (PERUBAHAN DI SINI)
+        "description": "Hanya Event dari URL 2 (Sports/Live)"
     },
         
 ]
@@ -49,6 +49,7 @@ CLEANING_REGEX = re.compile(r'[^a-zA-Z0-9\s]+')
 
 def filter_m3u_by_config(config):
     """Mengunduh dan memfilter berdasarkan konfigurasi tunggal."""
+    # ... (Bagian fungsi ini tidak berubah, hanya menggunakan keywords yang sudah di-set)
     url = config["url"]
     output_file = config["output_file"]
     keywords = config["keywords"]
@@ -98,6 +99,7 @@ def filter_m3u_by_config(config):
                     clean_channel_name = CLEANING_REGEX.sub(' ', raw_channel_name).upper()
                     
                     # 3. LOGIKA FILTER POSITIF KHUSUS
+                    # Pengecekan kata kunci menggunakan daftar yang sudah di-set
                     is_match = any(keyword in clean_group_title or keyword in clean_channel_name for keyword in keywords)
                     
                     if is_match:
