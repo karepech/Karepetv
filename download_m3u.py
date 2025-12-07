@@ -1,4 +1,4 @@
-Import requests
+import requests # PERBAIKAN: Mengubah 'Iport' menjadi 'import'
 import re
 import os
 
@@ -10,7 +10,7 @@ import os
 ALL_POSITIVE_KEYWORDS = {
     # URL 1: Hanya Event (mengambil kata kunci yang ada di contoh M3U Event Anda)
     "EVENT_ONLY": ["EVENT",], 
-    # URL 2: Hanya Sports & Live
+    # URL 2: Hanya Sports & Live (Didefinisikan tapi tidak digunakan di CONFIGURATIONS baru)
     "SPORTS_LIVE": ["SPORT", "SPORTS", "LIVE", "LANGSUNG", "OLAHRAGA", "MATCH", "LIGA", "FOOTBALL", "BEIN", "SPOT", "BE IN"]
 }
 
@@ -26,13 +26,13 @@ CONFIGURATIONS = [
     {
         "url": "https://bit.ly/kopinyaoke",
         "output_file": "event_only_url1.m3u", # Output file untuk Event
-        "keywords": ALL_POSITIVE_KEYWORDS["EVENT_ONLY"], # MENGGUNAKAN HANYA EVENT
+        "keywords": ALL_POSITIVE_KEYWORDS["EVENT_ONLY"], # HANYA EVENT
         "description": "Hanya Event dari URL 1 (Kopi/Traktir)"
     },
     {
         "url": "https://donzcompany.shop/donztelevision/donztelevisions.php","https://bakulwifi.my.id/live.m3u",
         "output_file": "event_only_url2.m3u", # Output file untuk Event dari URL kedua
-        "keywords": ALL_POSITIVE_KEYWORDS["EVENT_ONLY"], # MENGGUNAKAN HANYA EVENT (PERUBAHAN DI SINI)
+        "keywords": ALL_POSITIVE_KEYWORDS["EVENT_ONLY"], # HANYA EVENT (Diperbarui)
         "description": "Hanya Event dari URL 2 (Sports/Live)"
     },
         
@@ -49,7 +49,6 @@ CLEANING_REGEX = re.compile(r'[^a-zA-Z0-9\s]+')
 
 def filter_m3u_by_config(config):
     """Mengunduh dan memfilter berdasarkan konfigurasi tunggal."""
-    # ... (Bagian fungsi ini tidak berubah, hanya menggunakan keywords yang sudah di-set)
     url = config["url"]
     output_file = config["output_file"]
     keywords = config["keywords"]
@@ -58,6 +57,7 @@ def filter_m3u_by_config(config):
     print(f"\n--- Memproses [{description}] dari: {url} ---")
     
     try:
+        # Menggunakan 'import requests' yang benar
         response = requests.get(url, timeout=60) 
         response.raise_for_status()
         content = response.text.splitlines()
@@ -93,44 +93,4 @@ def filter_m3u_by_config(config):
                     channel_match = CHANNEL_NAME_REGEX.search(line)
                     
                     raw_group_title = group_match.group(1) if group_match else ""
-                    raw_channel_name = channel_match.group(1) if channel_match else ""
-                    
-                    clean_group_title = CLEANING_REGEX.sub(' ', raw_group_title).upper()
-                    clean_channel_name = CLEANING_REGEX.sub(' ', raw_channel_name).upper()
-                    
-                    # 3. LOGIKA FILTER POSITIF KHUSUS
-                    # Pengecekan kata kunci menggunakan daftar yang sudah di-set
-                    is_match = any(keyword in clean_group_title or keyword in clean_channel_name for keyword in keywords)
-                    
-                    if is_match:
-                        filtered_lines.append(line)
-                        filtered_lines.append(stream_url)
-                        total_entries += 1
-                        
-                    i += 2
-                    continue
-                else:
-                    i += 1
-                    continue
-        
-        i += 1
-        
-    print(f"Total {total_entries} saluran difilter.")
-    
-    # Simpan file
-    with open(output_file, "w", encoding="utf-8") as f:
-        f.write('\n'.join(filtered_lines) + '\n')
-    print(f"Playlist {output_file} berhasil disimpan.")
-
-
-# ====================================================================
-# III. EKSEKUSI
-# ====================================================================
-
-if __name__ == "__main__":
-    print(f"Memulai Multi-Filter M3U.")
-    
-    for config in CONFIGURATIONS:
-        filter_m3u_by_config(config)
-        
-    print("\nProses Multi-Filter selesai.")
+                    raw_channel_name =
