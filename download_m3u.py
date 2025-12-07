@@ -30,7 +30,7 @@ CONFIGURATIONS = [
         "description": "Hanya Event Kopi/Traktir"
     },
     {
-        "url": "https://donzcompany.shop/donztelevision/donztelevision.php",
+        "url": "https://donzcompany.shop/donztelevision/donztelevisions.php",
         "output_file": "sports_live.m3u", # Output file untuk Sports/Live
         "keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"],
         "description": "Hanya Sports dan Live"
