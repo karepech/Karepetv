@@ -6,12 +6,13 @@ import os
 # I. KONFIGURASI GLOBAL (URL, Kata Kunci Positif, dan Negatif)
 # ====================================================================
 
-# DAFTAR LENGKAP SEMUA URL SUMBER
+# DAFTAR LENGKAP SEMUA URL SUMBER (DIPERBARUI)
 ALL_SOURCE_URLS = [
     "https://bit.ly/kopinyaoke",
-    "https://donzcompany.shop/donztelevision/donztelevision.php",
-    "https://URL_EVENT_TAMBAHAN_ANDA.m3u", 
-    "https://bakulwifi.my.id/live.m3u"
+    "https://donzcompany.shop/donztelevision/donztelevisions.php",
+    "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25", 
+    "https://getch.semar.my.id/",
+    "https://dildo.beww.pl/ngen.m3u"
 ]
 
 
@@ -52,13 +53,13 @@ CONFIGURATIONS = [
         "urls": ALL_SOURCE_URLS, 
         "output_file": "GROUP_EVENT_LIVE/event_combined.m3u", 
         "keywords": ALL_POSITIVE_KEYWORDS["EVENT_AND_LIVE"], 
-        "description": "GRUP 1: EVENT & LIVE"
+        "description": "GRUP 1: EVENT & LIVE (Scan Semua Sumber)"
     },
     {
         "urls": ALL_SOURCE_URLS, 
         "output_file": "GROUP_SPORTS_LEAGUES/sports_combined.m3u", 
         "keywords": ALL_POSITIVE_KEYWORDS["LEAGUES_AND_SPORTS"], 
-        "description": "GRUP 2: LEAGUES & SPORTS"
+        "description": "GRUP 2: LEAGUES & SPORTS (Scan Semua Sumber)"
     },
         
 ]
@@ -132,7 +133,7 @@ def filter_m3u_by_config(config):
                         clean_channel_name = CLEANING_REGEX.sub(' ', raw_channel_name).upper()
                         
                         # ================================================
-                        # 3. LOGIKA FILTER SUPER KETAT
+                        # 3. LOGIKA FILTER DILONGGARKAN (HANYA BLACKLIST & POSITIF)
                         # ================================================
                         
                         # A. Cek Blacklist (Wajib Dibuang jika mengandung kata kunci negatif)
@@ -145,62 +146,6 @@ def filter_m3u_by_config(config):
                             i += 2
                             continue 
                         
-                        # B. Cek Filter Positif (Saluran harus mengandung kata kunci event/liga)
+                        # B. Cek Filter Positif (SIMPAN jika mengandung kata kunci event/liga)
                         is_match = any(
-                            pos_keyword in clean_group_title or pos_keyword in clean_channel_name 
-                            for pos_keyword in keywords
-                        )
-                        
-                        # C. Pengecekan Kategori Wajib (SUPER KETAT)
-                        # Jika saluran memiliki GROUP TITLE, GROUP TITLE tersebut HARUS mengandung 
-                        # salah satu kata kunci positif yang kita cari. Jika tidak, BUANG!
-                        
-                        if raw_group_title:
-                            # 1. Bersihkan dan Uppercase group title untuk pengecekan
-                            clean_group_title_only = CLEANING_REGEX.sub(' ', raw_group_title).upper()
-                            
-                            # 2. Cek apakah Group Title match dengan keywords
-                            is_group_title_match = any(
-                                pos_keyword in clean_group_title_only
-                                for pos_keyword in keywords
-                            )
-                            
-                            # 3. Jika Group Title ada TAPI tidak match dengan keywords, BUANG!
-                            if not is_group_title_match:
-                                i += 2
-                                continue 
-                        
-                        
-                        # SIMPAN HANYA JIKA LOLOS SEMUA FILTER
-                        if is_match: 
-                            filtered_lines.append(line)
-                            filtered_lines.append(stream_url)
-                            total_entries += 1
-                            
-                        i += 2
-                        continue
-                    else:
-                        i += 1
-                        continue
-            
-            i += 1
-            
-    print(f"Total {total_entries} saluran difilter dari semua sumber.")
-    
-    # Simpan file
-    with open(output_file, "w", encoding="utf-8") as f:
-        f.write('\n'.join(filtered_lines) + '\n')
-    print(f"Playlist {output_file} berhasil disimpan.")
-
-
-# ====================================================================
-# III. EKSEKUSI
-# ====================================================================
-
-if __name__ == "__main__":
-    print(f"Memulai Multi-Filter M3U.")
-    
-    for config in CONFIGURATIONS:
-        filter_m3u_by_config(config)
-        
-    print("\nProses Multi-Filter selesai.")
+                            pos_keyword in clean_group_title or pos_keyword in clean_
