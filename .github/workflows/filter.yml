@@ -1,21 +1,24 @@
-# .github/workflows/filter.yml
-name: Advanced Multi-Filter M3U
+name: Multi-Filter M3U Scheduler
 
 on:
-  push:
-    branches: [ main, master ] 
+  # Penjadwalan menggunakan Cron
   schedule:
-    - cron: '0 4 * * *'
+    # MENJALANKAN SETIAP 20 MENIT
+    # Ini akan berjalan pada menit 0, menit 20, dan menit 40 setiap jam.
+    # Waktu ini menggunakan UTC (Universal Time Coordinated).
+    - cron: '*/20 * * * *'
+
+  # Izinkan menjalankan secara manual (opsional)
   workflow_dispatch:
 
 jobs:
-  filter:
+  filter_m3u:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout kode
         uses: actions/checkout@v4
 
-      - name: Setup Python
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
@@ -24,21 +27,7 @@ jobs:
         run: pip install requests
 
       - name: Jalankan Skrip Multi-Filter
-        # MEMANGGIL SCRIPT DENGAN NAMA LAMA
         run: python download_m3u.py
-
-      - name: Commit dan Push file M3U yang Diperbarui
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email 'github-actions[bot]@users.noreply.github.com'
-          
-          # >>> TAMBAHKAN KEDUA FILE OUTPUT BARU DI SINI <<<
-          git add event_only.m3u sports_live.m3u
-          
-          if git diff --cached --exit-code; then
-            echo "Tidak ada perubahan."
-          else
-            echo "Perubahan terdeteksi. Melakukan commit..."
-            git commit -m "Update Multi-Filtered Playlists (Automated)"
-            git push
-          fi
+        
+      # Anda harus menambahkan langkah Git commit/push di sini
+      # agar file M3U yang sudah difilter tersimpan kembali di repositori.
