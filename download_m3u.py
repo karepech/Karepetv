@@ -8,9 +8,13 @@ import os
 
 # DAFTAR KATA KUNCI POSITIF
 ALL_POSITIVE_KEYWORDS = {
-    # URL 1: Hanya Event 
-    "EVENT_ONLY": ["EVENT",], 
-    # URL 2: Hanya Sports & Live 
+    # PERUBAHAN UTAMA: Kategori baru yang mencakup EVENT dan Liga Utama
+    "EVENT_AND_LEAGUES": [
+        "EVENT", "PREMIER LEAGUE", "EPL", "SERIE A", "LIGA ITALIA", 
+        "LALIGA", "LIGA SPANYOL", "CHAMPIONS", "LIGA CHAMPIONS", 
+        "LIGUE 1", "BUNDESLIGA", "SPORT", "LIVE", "LANGSUNG", "MATCH"
+    ], 
+    # Kategori Sports lama (tetap didefinisikan, namun tidak digunakan di bawah)
     "SPORTS_LIVE": ["SPORT", "SPORTS", "LIVE", "LANGSUNG", "OLAHRAGA", "MATCH", "LIGA", "FOOTBALL", "BEIN", "SPOT", "BE IN"]
 }
 
@@ -24,18 +28,18 @@ GLOBAL_BLACKLIST_URLS = [
 # DAFTAR KONFIGURASI DENGAN ATURAN KHUSUS PER URL
 CONFIGURATIONS = [
     {
-        # PERUBAHAN UTAMA 1: URL kini berupa LIST
+        # Kategori 1: Event dan Liga Utama digabung
         "urls": ["https://bit.ly/kopinyaoke", "https://URL_EVENT_TAMBAHAN_ANDA.m3u"], 
-        "output_file": "event_combined.m3u", 
-        "keywords": ALL_POSITIVE_KEYWORDS["EVENT_ONLY"], 
-        "description": "EVENT: Gabungan dari beberapa sumber"
+        "output_file": "event_and_leagues.m3u", # Nama file output baru
+        "keywords": ALL_POSITIVE_KEYWORDS["EVENT_AND_LEAGUES"], # PENGGUNAAN KATA KUNCI BARU
+        "description": "GABUNGAN: Event, Liga Utama, dan Live Match"
     },
     {
-        # Contoh jika Anda ingin Sports dari dua sumber digabungkan
+        # Kategori 2: Sports (jika Anda ingin mencoba filter yang lebih luas di sini)
         "urls": ["https://donzcompany.shop/donztelevision/donztelevisions.php", "https://bakulwifi.my.id/live.m3u"], 
         "output_file": "sports_combined.m3u", 
-        "keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"], # Menggunakan Kategori Sports
-        "description": "SPORTS: Gabungan dari dua sumber Live"
+        "keywords": ALL_POSITIVE_KEYWORDS["EVENT_AND_LEAGUES"], # Juga menggunakan daftar liga baru
+        "description": "SPORTS: Gabungan dari dua sumber Live (Termasuk Liga)"
     },
         
 ]
@@ -51,7 +55,6 @@ CLEANING_REGEX = re.compile(r'[^a-zA-Z0-9\s]+')
 
 def filter_m3u_by_config(config):
     """Mengunduh dan memfilter berdasarkan konfigurasi tunggal (multi-URL)."""
-    # PERUBAHAN: Kini mengambil 'urls' (list) bukan 'url' (string)
     urls = config["urls"] 
     output_file = config["output_file"]
     keywords = config["keywords"]
@@ -62,7 +65,7 @@ def filter_m3u_by_config(config):
     filtered_lines = ["#EXTM3U"]
     total_entries = 0
     
-    # PERUBAHAN UTAMA 2: Iterasi melalui setiap URL di dalam daftar
+    # Iterasi melalui setiap URL di dalam daftar
     for url in urls:
         print(f"  > Mengunduh dari: {url}")
         
@@ -104,6 +107,7 @@ def filter_m3u_by_config(config):
                         clean_channel_name = CLEANING_REGEX.sub(' ', raw_channel_name).upper()
                         
                         # 3. LOGIKA FILTER POSITIF KHUSUS
+                        # Pengecekan kata kunci kini akan mencakup nama-nama liga
                         is_match = any(keyword in clean_group_title or keyword in clean_channel_name for keyword in keywords)
                         
                         if is_match:
