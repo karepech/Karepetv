@@ -1,4 +1,4 @@
-import requests 
+Import requests 
 import re
 import os
 
@@ -9,7 +9,7 @@ import os
 # DAFTAR LENGKAP SEMUA URL SUMBER
 ALL_SOURCE_URLS = [
     "https://bit.ly/kopinyaoke",
-    "https://donzcompany.shop/donztelevision/donztelevisions.php",
+    "https://donzcompany.shop/donztelevision/donztelevision.php",
     "https://URL_EVENT_TAMBAHAN_ANDA.m3u", 
     "https://bakulwifi.my.id/live.m3u"
 ]
@@ -27,16 +27,17 @@ ALL_POSITIVE_KEYWORDS = {
     "LEAGUES_AND_SPORTS": [
         "SPORT", "PREMIER LEAGUE", "EPL", "SERIE A", "LIGA ITALIA", 
         "LALIGA", "LIGA SPANYOL", "CHAMPIONS", "LIGA CHAMPIONS", 
-        "LIGUE 1", "BUNDESLIGA", "FOOTBALL", "BASKET", "NBA", "TENNIS", "BEIN"
+        "LIGUE 1", "BUNDESLIGA", "FOOTBALL", "BASKET", "NBA", "TENNIS", "BEIN", "DAZN", "ASTRO", "TNT"
     ]
 }
 
 # DAFTAR KATA KUNCI NEGATIF (BLACKLIST KATEGORI)
-# Saluran yang mengandung kata kunci ini akan dibuang, terlepas dari filter positif.
+# Saluran yang mengandung kata kunci ini akan dibuang.
 ALL_NEGATIVE_KEYWORDS = [
     "MOVIE", "FILM", "SERIAL", "SERIES", "MUSIC", "MUSIK", 
     "KIDS", "ANAK", "DOCUMENTARY", "BERITA", "NEWS", "RELIGI", 
-    "RADIO", "KARTUN", "ANIME", "HIBURAN", "TV LOKAL", "DAERAH", "MOVIES/SERIES"
+    "RADIO", "KARTUN", "ANIME", "HIBURAN", "TV LOKAL", "DAERAH", 
+    "CADANGAN", "MOVIES/SERIES", "TVRI DAERAH", "TV PREMIUM CHANNEL"
 ]
 
 # DAFTAR URL YANG DIKECUALIKAN SECARA GLOBAL (Stream URL)
@@ -132,10 +133,10 @@ def filter_m3u_by_config(config):
                         clean_channel_name = CLEANING_REGEX.sub(' ', raw_channel_name).upper()
                         
                         # ================================================
-                        # 3. LOGIKA FILTER BARU (PENGECEKAN NEGATIF DULU)
+                        # 3. LOGIKA FILTER SUPER KETAT
                         # ================================================
                         
-                        # Cek apakah saluran ini mengandung kata kunci yang harus DIBUANG
+                        # A. Cek Blacklist (Wajib Dibuang jika mengandung kata kunci negatif)
                         is_blacklisted = any(
                             neg_keyword in clean_group_title or neg_keyword in clean_channel_name 
                             for neg_keyword in ALL_NEGATIVE_KEYWORDS
@@ -143,15 +144,36 @@ def filter_m3u_by_config(config):
                         
                         if is_blacklisted:
                             i += 2
-                            continue # Buang saluran ini dan lanjut ke saluran berikutnya
-
-                        # Cek filter Positif (Hanya jika tidak di-blacklist)
+                            continue 
+                        
+                        # B. Cek Filter Positif (Saluran harus mengandung kata kunci event/liga)
                         is_match = any(
                             pos_keyword in clean_group_title or pos_keyword in clean_channel_name 
                             for pos_keyword in keywords
                         )
                         
-                        if is_match:
+                        # C. Pengecekan Kategori Wajib (SUPER KETAT)
+                        # Jika saluran memiliki GROUP TITLE, GROUP TITLE tersebut HARUS mengandung 
+                        # salah satu kata kunci positif yang kita cari. Jika tidak, BUANG!
+                        
+                        if raw_group_title:
+                            # 1. Bersihkan dan Uppercase group title untuk pengecekan
+                            clean_group_title_only = CLEANING_REGEX.sub(' ', raw_group_title).upper()
+                            
+                            # 2. Cek apakah Group Title match dengan keywords
+                            is_group_title_match = any(
+                                pos_keyword in clean_group_title_only
+                                for pos_keyword in keywords
+                            )
+                            
+                            # 3. Jika Group Title ada TAPI tidak match dengan keywords, BUANG!
+                            if not is_group_title_match:
+                                i += 2
+                                continue 
+                        
+                        
+                        # SIMPAN HANYA JIKA LOLOS SEMUA FILTER
+                        if is_match: 
                             filtered_lines.append(line)
                             filtered_lines.append(stream_url)
                             total_entries += 1
