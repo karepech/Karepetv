@@ -8,13 +8,13 @@ import os
 
 # DAFTAR KATA KUNCI POSITIF
 ALL_POSITIVE_KEYWORDS = {
-    # PERUBAHAN UTAMA: Kategori baru yang mencakup EVENT dan Liga Utama
+    # Kategori baru yang mencakup EVENT dan Liga Utama
     "EVENT_AND_LEAGUES": [
         "EVENT", "PREMIER LEAGUE", "EPL", "SERIE A", "LIGA ITALIA", 
         "LALIGA", "LIGA SPANYOL", "CHAMPIONS", "LIGA CHAMPIONS", 
         "LIGUE 1", "BUNDESLIGA", "SPORT", "LIVE", "LANGSUNG", "MATCH"
     ], 
-    # Kategori Sports lama (tetap didefinisikan, namun tidak digunakan di bawah)
+    # Kategori Sports lama (dibiarkan saja)
     "SPORTS_LIVE": ["SPORT", "SPORTS", "LIVE", "LANGSUNG", "OLAHRAGA", "MATCH", "LIGA", "FOOTBALL", "BEIN", "SPOT", "BE IN"]
 }
 
@@ -28,18 +28,18 @@ GLOBAL_BLACKLIST_URLS = [
 # DAFTAR KONFIGURASI DENGAN ATURAN KHUSUS PER URL
 CONFIGURATIONS = [
     {
-        # Kategori 1: Event dan Liga Utama digabung
+        # Kategori 1: Mengambil dari sumber Event
         "urls": ["https://bit.ly/kopinyaoke", "https://URL_EVENT_TAMBAHAN_ANDA.m3u"], 
-        "output_file": "event_and_leagues.m3u", # Nama file output baru
+        "output_file": "event_combined.m3u", # NAMA OUTPUT TETAP!
         "keywords": ALL_POSITIVE_KEYWORDS["EVENT_AND_LEAGUES"], # PENGGUNAAN KATA KUNCI BARU
-        "description": "GABUNGAN: Event, Liga Utama, dan Live Match"
+        "description": "GABUNGAN 1: Event, Liga Utama, dan Live Match"
     },
     {
-        # Kategori 2: Sports (jika Anda ingin mencoba filter yang lebih luas di sini)
+        # Kategori 2: Mengambil dari sumber Sports/Live
         "urls": ["https://donzcompany.shop/donztelevision/donztelevisions.php", "https://bakulwifi.my.id/live.m3u"], 
-        "output_file": "sports_combined.m3u", 
+        "output_file": "sports_combined.m3u", # NAMA OUTPUT TETAP!
         "keywords": ALL_POSITIVE_KEYWORDS["EVENT_AND_LEAGUES"], # Juga menggunakan daftar liga baru
-        "description": "SPORTS: Gabungan dari dua sumber Live (Termasuk Liga)"
+        "description": "GABUNGAN 2: Sports dan Live (Termasuk Liga)"
     },
         
 ]
