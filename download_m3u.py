@@ -6,16 +6,29 @@ import os
 # I. KONFIGURASI GLOBAL (URL, Kata Kunci, dan Blacklist)
 # ====================================================================
 
+# DAFTAR LENGKAP SEMUA URL SUMBER
+ALL_SOURCE_URLS = [
+    "https://bit.ly/kopinyaoke",
+    "https://donzcompany.shop/donztelevision/donztelevision.php",
+    "https://URL_EVENT_TAMBAHAN_ANDA.m3u", 
+    "https://bakulwifi.my.id/bwifi.m3u"
+]
+
+
 # DAFTAR KATA KUNCI POSITIF
 ALL_POSITIVE_KEYWORDS = {
-    # Kategori baru yang mencakup EVENT dan Liga Utama
-    "EVENT_AND_LEAGUES": [
-        "EVENT", "PREMIER LEAGUE", "EPL", "SERIE A", "LIGA ITALIA", 
-        "LALIGA", "LIGA SPANYOL", "CHAMPIONS", "LIGA CHAMPIONS", 
-        "LIGUE 1", "BUNDESLIGA", "SPORT", "LIVE", "LANGSUNG", "MATCH"
+    # KATEGORI 1: Fokus pada Event Spesifik dan Live
+    "EVENT_AND_LIVE": [
+        "EVENT", "LIVE", "LANGSUNG", "MATCH", "FINAL", "SEMI FINAL",
+        "QUARTER FINAL", "FIFA" 
     ], 
-    # Kategori Sports lama (dibiarkan saja)
-    "SPORTS_LIVE": ["SPORT", "SPORTS", "LIVE", "LANGSUNG", "OLAHRAGA", "MATCH", "LIGA", "FOOTBALL", "BEIN", "SPOT", "BE IN"]
+    
+    # KATEGORI 2: Fokus pada Nama Liga dan Sports umum
+    "LEAGUES_AND_SPORTS": [
+        "SPORT", "PREMIER LEAGUE", "EPL", "SERIE A", "LIGA ITALIA", 
+        "LALIGA", "LIGA SPANYOL", "CHAMPIONS", "LIGA CHAMPIONS", 
+        "LIGUE 1", "BUNDESLIGA", "FOOTBALL", "BASKET", "NBA", "TENNIS", "BEIN", "ASTRO", "DAZN", "SPOT" 
+    ]
 }
 
 # DAFTAR URL YANG DIKECUALIKAN SECARA GLOBAL
@@ -28,18 +41,18 @@ GLOBAL_BLACKLIST_URLS = [
 # DAFTAR KONFIGURASI DENGAN ATURAN KHUSUS PER URL
 CONFIGURATIONS = [
     {
-        # Kategori 1: Mengambil dari sumber Event
-        "urls": ["https://bit.ly/kopinyaoke", "https://URL_EVENT_TAMBAHAN_ANDA.m3u"], 
-        "output_file": "event_combined.m3u", # NAMA OUTPUT TETAP!
-        "keywords": ALL_POSITIVE_KEYWORDS["EVENT_AND_LEAGUES"], # PENGGUNAAN KATA KUNCI BARU
-        "description": "GABUNGAN 1: Event, Liga Utama, dan Live Match"
+        "urls": ALL_SOURCE_URLS, 
+        # PERUBAHAN: Nama file tetap 'event_combined.m3u', tetapi disimpan di folder
+        "output_file": "GROUP_EVENT_LIVE/event_combined.m3u", 
+        "keywords": ALL_POSITIVE_KEYWORDS["EVENT_AND_LIVE"], 
+        "description": "GRUP 1: EVENT & LIVE (Scan Semua Sumber)"
     },
     {
-        # Kategori 2: Mengambil dari sumber Sports/Live
-        "urls": ["https://donzcompany.shop/donztelevision/donztelevisions.php", "https://bakulwifi.my.id/live.m3u"], 
-        "output_file": "sports_combined.m3u", # NAMA OUTPUT TETAP!
-        "keywords": ALL_POSITIVE_KEYWORDS["EVENT_AND_LEAGUES"], # Juga menggunakan daftar liga baru
-        "description": "GABUNGAN 2: Sports dan Live (Termasuk Liga)"
+        "urls": ALL_SOURCE_URLS, 
+        # PERUBAHAN: Nama file tetap 'sports_combined.m3u', tetapi disimpan di folder
+        "output_file": "GROUP_SPORTS_LEAGUES/sports_combined.m3u", 
+        "keywords": ALL_POSITIVE_KEYWORDS["LEAGUES_AND_SPORTS"], 
+        "description": "GRUP 2: LEAGUES & SPORTS (Scan Semua Sumber)"
     },
         
 ]
@@ -65,6 +78,12 @@ def filter_m3u_by_config(config):
     filtered_lines = ["#EXTM3U"]
     total_entries = 0
     
+    # Membuat direktori jika belum ada
+    output_dir = os.path.dirname(output_file)
+    if output_dir: 
+        os.makedirs(output_dir, exist_ok=True)
+        print(f"  > Memastikan direktori '{output_dir}' sudah tersedia.")
+
     # Iterasi melalui setiap URL di dalam daftar
     for url in urls:
         print(f"  > Mengunduh dari: {url}")
@@ -76,7 +95,7 @@ def filter_m3u_by_config(config):
             print(f"  > Status: {response.status_code} | Baris Total: {len(content)}") 
         except requests.exceptions.RequestException as e:
             print(f"  > WARNING: Gagal mengunduh URL {url}. Melewatkan sumber ini. Error: {e}")
-            continue # Lanjut ke URL berikutnya jika gagal
+            continue 
 
         i = 0
         while i < len(content):
@@ -107,7 +126,6 @@ def filter_m3u_by_config(config):
                         clean_channel_name = CLEANING_REGEX.sub(' ', raw_channel_name).upper()
                         
                         # 3. LOGIKA FILTER POSITIF KHUSUS
-                        # Pengecekan kata kunci kini akan mencakup nama-nama liga
                         is_match = any(keyword in clean_group_title or keyword in clean_channel_name for keyword in keywords)
                         
                         if is_match:
