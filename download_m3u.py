@@ -3,15 +3,15 @@ import re
 import os
 
 # ====================================================================
-# I. KONFIGURASI GLOBAL (URL, Kata Kunci, dan Blacklist)
+# I. KONFIGURASI GLOBAL (URL, Kata Kunci Positif, dan Negatif)
 # ====================================================================
 
 # DAFTAR LENGKAP SEMUA URL SUMBER
 ALL_SOURCE_URLS = [
     "https://bit.ly/kopinyaoke",
-    "https://donzcompany.shop/donztelevision/donztelevision.php",
+    "https://donzcompany.shop/donztelevision/donztelevisions.php",
     "https://URL_EVENT_TAMBAHAN_ANDA.m3u", 
-    "https://bakulwifi.my.id/bwifi.m3u"
+    "https://bakulwifi.my.id/live.m3u"
 ]
 
 
@@ -20,39 +20,45 @@ ALL_POSITIVE_KEYWORDS = {
     # KATEGORI 1: Fokus pada Event Spesifik dan Live
     "EVENT_AND_LIVE": [
         "EVENT", "LIVE", "LANGSUNG", "MATCH", "FINAL", "SEMI FINAL",
-        "QUARTER FINAL", "FIFA" 
+        "QUARTER FINAL", "TRAKTIR KOPI", "FIFA" 
     ], 
     
     # KATEGORI 2: Fokus pada Nama Liga dan Sports umum
     "LEAGUES_AND_SPORTS": [
         "SPORT", "PREMIER LEAGUE", "EPL", "SERIE A", "LIGA ITALIA", 
         "LALIGA", "LIGA SPANYOL", "CHAMPIONS", "LIGA CHAMPIONS", 
-        "LIGUE 1", "BUNDESLIGA", "FOOTBALL", "BASKET", "NBA", "TENNIS", "BEIN", "ASTRO", "DAZN", "SPOT" 
+        "LIGUE 1", "BUNDESLIGA", "FOOTBALL", "BASKET", "NBA", "TENNIS", "BEIN"
     ]
 }
 
-# DAFTAR URL YANG DIKECUALIKAN SECARA GLOBAL
+# DAFTAR KATA KUNCI NEGATIF (BLACKLIST KATEGORI)
+# Saluran yang mengandung kata kunci ini akan dibuang, terlepas dari filter positif.
+ALL_NEGATIVE_KEYWORDS = [
+    "MOVIE", "FILM", "SERIAL", "SERIES", "MUSIC", "MUSIK", 
+    "KIDS", "ANAK", "DOCUMENTARY", "BERITA", "NEWS", "RELIGI", 
+    "RADIO", "KARTUN", "ANIME", "HIBURAN", "TV LOKAL", "DAERAH", "MOVIES/SERIES"
+]
+
+# DAFTAR URL YANG DIKECUALIKAN SECARA GLOBAL (Stream URL)
 GLOBAL_BLACKLIST_URLS = [
     "https://bit.ly/428RaFW",
     "https://bit.ly/DonzTelevisionNewAttention",
     "https://drive.google.com/uc?export=download&id=12slpj4XW5B5SlR9lruuZ77_NPtTHKKw8&usp",
 ]
 
-# DAFTAR KONFIGURASI DENGAN ATURAN KHUSUS PER URL
+# DAFTAR KONFIGURASI 
 CONFIGURATIONS = [
     {
         "urls": ALL_SOURCE_URLS, 
-        # PERUBAHAN: Nama file tetap 'event_combined.m3u', tetapi disimpan di folder
         "output_file": "GROUP_EVENT_LIVE/event_combined.m3u", 
         "keywords": ALL_POSITIVE_KEYWORDS["EVENT_AND_LIVE"], 
-        "description": "GRUP 1: EVENT & LIVE (Scan Semua Sumber)"
+        "description": "GRUP 1: EVENT & LIVE"
     },
     {
         "urls": ALL_SOURCE_URLS, 
-        # PERUBAHAN: Nama file tetap 'sports_combined.m3u', tetapi disimpan di folder
         "output_file": "GROUP_SPORTS_LEAGUES/sports_combined.m3u", 
         "keywords": ALL_POSITIVE_KEYWORDS["LEAGUES_AND_SPORTS"], 
-        "description": "GRUP 2: LEAGUES & SPORTS (Scan Semua Sumber)"
+        "description": "GRUP 2: LEAGUES & SPORTS"
     },
         
 ]
@@ -110,7 +116,7 @@ def filter_m3u_by_config(config):
                     
                     if is_valid_url:
                         
-                        # 1. Cek Blacklist GLOBAL
+                        # 1. Cek Blacklist URL Global
                         if stream_url in GLOBAL_BLACKLIST_URLS:
                             i += 2
                             continue
@@ -125,8 +131,25 @@ def filter_m3u_by_config(config):
                         clean_group_title = CLEANING_REGEX.sub(' ', raw_group_title).upper()
                         clean_channel_name = CLEANING_REGEX.sub(' ', raw_channel_name).upper()
                         
-                        # 3. LOGIKA FILTER POSITIF KHUSUS
-                        is_match = any(keyword in clean_group_title or keyword in clean_channel_name for keyword in keywords)
+                        # ================================================
+                        # 3. LOGIKA FILTER BARU (PENGECEKAN NEGATIF DULU)
+                        # ================================================
+                        
+                        # Cek apakah saluran ini mengandung kata kunci yang harus DIBUANG
+                        is_blacklisted = any(
+                            neg_keyword in clean_group_title or neg_keyword in clean_channel_name 
+                            for neg_keyword in ALL_NEGATIVE_KEYWORDS
+                        )
+                        
+                        if is_blacklisted:
+                            i += 2
+                            continue # Buang saluran ini dan lanjut ke saluran berikutnya
+
+                        # Cek filter Positif (Hanya jika tidak di-blacklist)
+                        is_match = any(
+                            pos_keyword in clean_group_title or pos_keyword in clean_channel_name 
+                            for pos_keyword in keywords
+                        )
                         
                         if is_match:
                             filtered_lines.append(line)
