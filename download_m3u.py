@@ -1,4 +1,4 @@
-import requests # PASTIKAN SELALU HURUF KECIL
+import requests 
 import re
 import os
 
@@ -100,110 +100,6 @@ def filter_m3u_by_config(config):
             content = response.text.splitlines()
             print(f"  > Status: {response.status_code} | Baris Total: {len(content)}") 
         except requests.exceptions.RequestException as e:
-            print(f"  > WARNING: Gagal mengunduh URL {url}. Melewatkan sumber ini. Error: {e}")
-            continue 
-
-        i = 0
-        while i < len(content):
-            line = content[i].strip()
-            
-            if line.startswith("#EXTINF"):
-                
-                if i + 1 < len(content):
-                    stream_url = content[i+1].strip()
-                    
-                    is_valid_url = not stream_url.startswith("#") and len(stream_url) > 5
-                    
-                    if is_valid_url:
-                        
-                        # 1. Cek Blacklist URL Global
-                        if stream_url in GLOBAL_BLACKLIST_URLS:
-                            i += 2
-                            continue
-                            
-                        # 2. Ekstrak dan Bersihkan
-                        group_match = GROUP_TITLE_REGEX.search(line)
-                        channel_match = CHANNEL_NAME_REGEX.search(line)
-                        
-                        raw_group_title = group_match.group(1) if group_match else ""
-                        raw_channel_name = channel_match.group(1) if channel_match else ""
-                        
-                        clean_group_title = CLEANING_REGEX.sub(' ', raw_group_title).upper()
-                        clean_channel_name = CLEANING_REGEX.sub(' ', raw_channel_name).upper()
-                        
-                        # ================================================
-                        # 3. LOGIKA FILTER SUPER KETAT
-                        # ================================================
-                        
-                        # A. Cek Blacklist (Wajib Dibuang jika mengandung kata kunci negatif)
-                        is_blacklisted = any(
-                            neg_keyword in clean_group_title or neg_keyword in clean_channel_name 
-                            for neg_keyword in ALL_NEGATIVE_KEYWORDS
-                        )
-                        
-                        if is_blacklisted:
-                            i += 2
-                            continue 
-                        
-                        # B. Cek Filter Positif (Saluran harus mengandung kata kunci event/liga)
-                        is_match = any(
-                            pos_keyword in clean_group_title or pos_keyword in clean_channel_name 
-                            for pos_keyword in keywords
-                        )
-                        
-                        # C. Pengecekan Kategori Wajib (SUPER KETAT)
-                        # Jika saluran memiliki GROUP TITLE, GROUP TITLE tersebut HARUS mengandung 
-                        # salah satu kata kunci positif yang kita cari. Jika tidak, BUANG!
-                        
-                        if raw_group_title:
-                            # 1. Bersihkan dan Uppercase group title untuk pengecekan
-                            clean_group_title_only = CLEANING_REGEX.sub(' ', raw_group_title).upper()
-                            
-                            # 2. Cek apakah Group Title match dengan keywords
-                            is_group_title_match = any(
-                                pos_keyword in clean_group_title_only
-                                for pos_keyword in keywords
-                            )
-                            
-                            # 3. Jika Group Title ada TAPI tidak match dengan keywords, BUANG!
-                            if not is_group_title_match:
-                                i += 2
-                                continue 
-                        
-                        
-                        # SIMPAN HANYA JIKA LOLOS SEMUA FILTER
-                        if is_match: 
-                            filtered_lines.append(line)
-                            filtered_lines.append(stream_url)
-                            total_entries += 1
-                            
-                        i += 2
-                        continue
-                    else:
-                        i += 1
-                        continue
-            
-            i += 1
-            
-    print(f"Total {total_entries} saluran difilter dari semua sumber.")
-    
-    # Simpan file
-    with open(output_file, "w", encoding="utf-8") as f:
-        f.write('\n'.join(filtered_lines) + '\n')
-    print(f"Playlist {output_file} berhasil disimpan.")
-
-
-# ====================================================================
-# III. EKSEKUSI
-# ====================================================================
-
-if __name__ == "__main__":
-    print(f"Memulai Multi-Filter M3U.")
-    
-    for config in CONFIGURATIONS:
-        filter_m3u_by_config(config)
-        
-    print("\nProses Multi-Filter selesai.")
             print(f"  > WARNING: Gagal mengunduh URL {url}. Melewatkan sumber ini. Error: {e}")
             continue 
 
