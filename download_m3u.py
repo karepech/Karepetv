@@ -25,14 +25,14 @@ GLOBAL_BLACKLIST_URLS = [
 CONFIGURATIONS = [
     {
         # PERUBAHAN UTAMA 1: URL kini berupa LIST
-        "urls": ["https://bit.ly/kopinyaoke", "https://dildo.beww.pl/ngen.m3u"], 
+        "urls": ["https://bit.ly/kopinyaoke", "https://dildo.beww.pl/ngen.m3u", "https://donztelevisionpremium.icu/donztelevision/donztelevision.php"], 
         "output_file": "event_combined.m3u", 
         "keywords": ALL_POSITIVE_KEYWORDS["EVENT_ONLY"], 
         "description": "EVENT: Gabungan dari beberapa sumber"
     },
     {
         # Contoh jika Anda ingin Sports dari dua sumber digabungkan
-        "urls": ["https://donzcompany.shop/donztelevision/donztelevisions.php", "https://bakulwifi.my.id/live.m3u"], 
+        "urls": ["https://donztelevisionpremium.icu/donztelevision/donztelevision.php", "https://bakulwifi.my.id/live.m3u"], 
         "output_file": "sports_combined.m3u", 
         "keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"], # Menggunakan Kategori Sports
         "description": "SPORTS: Gabungan dari dua sumber Live"
