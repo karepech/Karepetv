@@ -6,10 +6,10 @@ import os
 # I. KONFIGURASI GLOBAL (URL, Kata Kunci Positif, dan Negatif)
 # ====================================================================
 
-# DAFTAR LENGKAP SEMUA URL SUMBER
+# DAFTAR LENGKAP SEMUA URL SUMBER BARU (Semua yang Anda berikan)
 ALL_SOURCE_URLS = [
     "https://bit.ly/kopinyaoke",
-    "https://donzcompany.shop/donztelevision/donztelevision.php", 
+    "https://donzcompany.shop/donztelevision/donztelevision.php", # Dengan 'televison' (tanpa s)
     "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25",
     "https://getch.semar.my.id",
     "https://dildo.beww.pl/ngen.m3u",
@@ -17,19 +17,18 @@ ALL_SOURCE_URLS = [
 ]
 
 
-# DAFTAR KATA KUNCI POSITIF
+# DAFTAR KATA KUNCI POSITIF (Diperluas untuk kejelasan & hasil)
 ALL_POSITIVE_KEYWORDS = {
-    # KATEGORI 1: Fokus pada Event Spesifik dan Live
+    # GRUP 1: EVENT & LIVE
     "EVENT_AND_LIVE": [
-        "EVENT", "LIVE", "LANGSUNG", "MATCH", "FINAL", "SEMI FINAL",
-        "QUARTER FINAL", "TRAKTIR KOPI", "FIFA" 
+        "EVENT", "LIVE", "LANGSUNG", "MATCH", "FINAL", "TRAKTIR KOPI", "FIFA" 
     ], 
     
-    # KATEGORI 2: Fokus pada Nama Liga dan Sports umum
+    # GRUP 2: LEAGUES & SPORTS
     "LEAGUES_AND_SPORTS": [
         "SPORT", "PREMIER LEAGUE", "EPL", "SERIE A", "LIGA ITALIA", 
-        "LALIGA", "LIGA SPANYOL", "CHAMPIONS", "LIGA CHAMPIONS", 
-        "LIGUE 1", "BUNDESLIGA", "FOOTBALL", "BASKET", "NBA", "TENNIS", "BEIN", "DAZN", "ASTRO", "TNT"
+        "LALIGA", "LIGA SPANYOL", "CHAMPIONS", "LIGUE 1", "BUNDESLIGA", 
+        "FOOTBALL", "BASKET", "NBA", "TENNIS", "BEIN", "DAZN", "ASTRO", "TNT"
     ]
 }
 
@@ -51,16 +50,16 @@ GLOBAL_BLACKLIST_URLS = [
 # DAFTAR KONFIGURASI 
 CONFIGURATIONS = [
     {
-        "urls": ALL_SOURCE_URLS, 
+        "urls": ALL_SOURCE_URLS, # MENGGUNAKAN SEMUA URL
         "output_file": "GROUP_EVENT_LIVE/event_combined.m3u", 
         "keywords": ALL_POSITIVE_KEYWORDS["EVENT_AND_LIVE"], 
-        "description": "GRUP 1: EVENT & LIVE"
+        "description": "GRUP 1: EVENT & LIVE (Scan Semua Sumber)"
     },
     {
-        "urls": ALL_SOURCE_URLS, 
+        "urls": ALL_SOURCE_URLS, # MENGGUNAKAN SEMUA URL
         "output_file": "GROUP_SPORTS_LEAGUES/sports_combined.m3u", 
         "keywords": ALL_POSITIVE_KEYWORDS["LEAGUES_AND_SPORTS"], 
-        "description": "GRUP 2: LEAGUES & SPORTS"
+        "description": "GRUP 2: LEAGUES & SPORTS (Scan Semua Sumber)"
     },
         
 ]
@@ -86,7 +85,7 @@ def filter_m3u_by_config(config):
     filtered_lines = ["#EXTM3U"]
     total_entries = 0
     
-    # Membuat direktori jika belum ada
+    # Membuat direktori jika belum ada (diperlukan karena output_file menggunakan path)
     output_dir = os.path.dirname(output_file)
     if output_dir: 
         os.makedirs(output_dir, exist_ok=True)
@@ -102,7 +101,6 @@ def filter_m3u_by_config(config):
             content = response.text.splitlines()
             print(f"  > Status: {response.status_code} | Baris Total: {len(content)}") 
         except requests.exceptions.RequestException as e:
-            # PENTING: Perhatikan output ini di log GitHub Actions
             print(f"  > WARNING: Gagal mengunduh URL {url}. Melewatkan sumber ini. Error: {e}")
             continue 
 
@@ -135,7 +133,7 @@ def filter_m3u_by_config(config):
                         clean_channel_name = CLEANING_REGEX.sub(' ', raw_channel_name).upper()
                         
                         # ================================================
-                        # 3. LOGIKA FILTER DILONGGARKAN (PALING STABIL)
+                        # 3. LOGIKA FILTER FINAL (BLACKLIST & POSITIF)
                         # ================================================
                         
                         # A. Cek Blacklist (Wajib Dibuang jika mengandung kata kunci negatif)
