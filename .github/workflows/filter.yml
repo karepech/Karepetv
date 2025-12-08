@@ -1,52 +1,61 @@
-name: Multi-Filter M3U Scheduler
+name: 🔄 M3U Live Filter Multi-Source
 
 on:
-  # 1. Trigger saat ada perubahan (push)
+  # Trigger saat ada push ke branch 'main' (atau branch utama Anda)
   push:
     branches:
-      # Jalankan setiap kali ada push ke branch 'main'
-      - main 
-  
-  # 2. Trigger terjadwal (setiap 20 menit)
+      - main
+      
+  # Trigger otomatis setiap 20 menit
   schedule:
-    # MENJALANKAN SETIAP 20 MENIT
+    # Cron: Menit(*/20) Jam(*) Hari-Bulan(*) Bulan(*) Hari-Minggu(*)
     - cron: '*/20 * * * *'
-
-  # Izinkan menjalankan secara manual (opsional)
+    
+  # Memungkinkan untuk menjalankan secara manual dari GitHub UI
   workflow_dispatch:
 
+env:
+  # === DAFTAR URL M3U ANDA DISINI (Dipisahkan koma) ===
+  M3U_SOURCE_URLS: "bit.ly/kopinyaoke,https://example.com/playlist2.m3u"
+
 jobs:
-  filter_m3u:
+  filter_and_update:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout kode
+      - name: ⬇️ Checkout kode
         uses: actions/checkout@v4
-
-      - name: Set up Python
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: 🐍 Set up Python 3
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-
-      - name: Install dependencies (requests)
+          
+      - name: 📦 Install dependencies (requests)
         run: pip install requests
-
-      - name: Jalankan Skrip Multi-Filter
-        # Skrip ini menghasilkan event_combined.m3u dan sports_combined.m3u
+        
+      - name: 🏃 Run M3U Downloader and Filter
+        # Script Python akan otomatis mengambil variabel lingkungan M3U_SOURCE_URLS
         run: python download_m3u.py
         
-      # --- LANGKAH PENTING UNTUK COMMIT/PUSH ---
-      - name: Konfigurasi Git
+      - name: ⚙️ Konfigurasi Git User
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
 
-      - name: Commit dan Push file M3U yang Diperbarui
+      - name: 🔍 Cek perubahan pada event_combined.m3u
+        id: git_status
         run: |
-          # Perbaikan: Menambahkan file output yang benar ke staging area (sesuai skrip Python terbaru)
-          git add event_combined.m3u sports_combined.m3u
+          if git diff --exit-code event_combined.m3u; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
           
-          # Melakukan commit hanya jika ada perubahan. Pesan 'echo' akan muncul jika tidak ada perubahan.
-          git commit -m "Otomatis: Update playlist M3U dari filter (scheduled/push)" || echo "Tidak ada perubahan untuk di-commit"
-          
-          # Melakukan push. Perlu token akses default yang disediakan GitHub Actions.
+      - name: ⬆️ Commit dan Push jika ada perubahan
+        if: steps.git_status.outputs.changed == 'true'
+        run: |
+          git add event_combined.m3u
+          git commit -m "🤖 Auto update: event_combined.m3u (Merged and Filtered Live)"
           git push
