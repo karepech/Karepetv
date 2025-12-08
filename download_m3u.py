@@ -6,16 +6,15 @@ import os
 # I. KONFIGURASI GLOBAL (URL, Kata Kunci Positif, dan Negatif)
 # ====================================================================
 
-# DAFTAR LENGKAP SEMUA URL SUMBER (DIPERBAIKI)
-# PASTIKAN SETIAP BARIS DI BAWAH HANYA MEMUAT SATU URL DAN DI AKHIRI KOMA, KECUALI BARIS TERAKHIR.
+# DAFTAR LENGKAP SEMUA URL SUMBER (FINAL)
 ALL_SOURCE_URLS = [
     "https://bit.ly/kopinyaoke",
-    "https://donzcompany.shop/donztelevision/donztelevision.php", # Pastikan ada 's' di 'televisions'
-    "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25",
+    "https://donzcompany.shop/donztelevision/donztelevision.php", # <--- PERBAIKAN: TANPA 's'
+    "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25", 
     "https://getch.semar.my.id",
     "https://dildo.beww.pl/ngen.m3u",
     "https://free.anutv.xyz/neo.m3u8"
-] # BARIS TERAKHIR TIDAK ADA KOMA
+]
 
 
 # DAFTAR KATA KUNCI POSITIF
@@ -103,6 +102,7 @@ def filter_m3u_by_config(config):
             content = response.text.splitlines()
             print(f"  > Status: {response.status_code} | Baris Total: {len(content)}") 
         except requests.exceptions.RequestException as e:
+            # Peringatan ini akan muncul jika URL tidak dapat diakses
             print(f"  > WARNING: Gagal mengunduh URL {url}. Melewatkan sumber ini. Error: {e}")
             continue 
 
@@ -135,7 +135,7 @@ def filter_m3u_by_config(config):
                         clean_channel_name = CLEANING_REGEX.sub(' ', raw_channel_name).upper()
                         
                         # ================================================
-                        # 3. LOGIKA FILTER DILONGGARKAN (HANYA BLACKLIST & POSITIF)
+                        # 3. LOGIKA FILTER DILONGGARKAN (FINAL)
                         # ================================================
                         
                         # A. Cek Blacklist (Wajib Dibuang jika mengandung kata kunci negatif)
