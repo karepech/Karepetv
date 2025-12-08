@@ -10,10 +10,11 @@ import os
 # PASTIKAN SETIAP BARIS DI BAWAH HANYA MEMUAT SATU URL DAN DI AKHIRI KOMA, KECUALI BARIS TERAKHIR.
 ALL_SOURCE_URLS = [
     "https://bit.ly/kopinyaoke",
-    "https://donzcompany.shop/donztelevision/donztelevisions.php", # Pastikan ada 's' di 'televisions'
+    "https://donzcompany.shop/donztelevision/donztelevision.php", # Pastikan ada 's' di 'televisions'
     "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25",
-    "https://getch.semar.my.id/",
-    "https://dildo.beww.pl/ngen.m3u" 
+    "https://getch.semar.my.id",
+    "https://dildo.beww.pl/ngen.m3u",
+    "https://free.anutv.xyz/neo.m3u8"
 ] # BARIS TERAKHIR TIDAK ADA KOMA
 
 
