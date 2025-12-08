@@ -6,7 +6,7 @@ import os
 # I. KONFIGURASI GLOBAL (URL, Kata Kunci Positif, dan Negatif)
 # ====================================================================
 
-# DAFTAR LENGKAP SEMUA URL SUMBER (TERBARU)
+# DAFTAR LENGKAP SEMUA URL SUMBER
 ALL_SOURCE_URLS = [
     "https://bit.ly/kopinyaoke",
     "https://donzcompany.shop/donztelevision/donztelevision.php", 
@@ -33,7 +33,7 @@ ALL_POSITIVE_KEYWORDS = {
     ]
 }
 
-# DAFTAR KATA KUNCI NEGATIF (BLACKLIST KATEGORI) - DIGUNAKAN UNTUK MEMBERSIHKAN
+# DAFTAR KATA KUNCI NEGATIF (BLACKLIST KATEGORI)
 ALL_NEGATIVE_KEYWORDS = [
     "MOVIE", "FILM", "SERIAL", "SERIES", "MUSIC", "MUSIK", 
     "KIDS", "ANAK", "DOCUMENTARY", "BERITA", "NEWS", "RELIGI", 
@@ -102,7 +102,7 @@ def filter_m3u_by_config(config):
             content = response.text.splitlines()
             print(f"  > Status: {response.status_code} | Baris Total: {len(content)}") 
         except requests.exceptions.RequestException as e:
-            # Peringatan ini akan muncul jika URL tidak dapat diakses
+            # PENTING: Perhatikan output ini di log GitHub Actions
             print(f"  > WARNING: Gagal mengunduh URL {url}. Melewatkan sumber ini. Error: {e}")
             continue 
 
@@ -135,7 +135,7 @@ def filter_m3u_by_config(config):
                         clean_channel_name = CLEANING_REGEX.sub(' ', raw_channel_name).upper()
                         
                         # ================================================
-                        # 3. LOGIKA FILTER PALING DASAR (FINAL)
+                        # 3. LOGIKA FILTER DILONGGARKAN (PALING STABIL)
                         # ================================================
                         
                         # A. Cek Blacklist (Wajib Dibuang jika mengandung kata kunci negatif)
@@ -157,8 +157,6 @@ def filter_m3u_by_config(config):
                         # SIMPAN HANYA JIKA LOLOS BLACKLIST DAN ADA MATCH POSITIF
                         if is_match: 
                             filtered_lines.append(line)
-                            # PENTING: Untuk memastikan pemutar Anda mengelompokkan dengan benar,
-                            # pastikan Group Title di baris EXTINF sudah bersih dan relevan.
                             filtered_lines.append(stream_url)
                             total_entries += 1
                             
