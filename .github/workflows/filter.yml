@@ -1,1 +1,52 @@
+name: Multi-Filter M3U Scheduler
 
+on:
+  # 1. Trigger saat ada perubahan (push)
+  push:
+    branches:
+      # Jalankan setiap kali ada push ke branch 'main'
+      - main 
+  
+  # 2. Trigger terjadwal (setiap 20 menit)
+  schedule:
+    # MENJALANKAN SETIAP 20 MENIT
+    - cron: '*/20 * * * *'
+
+  # Izinkan menjalankan secara manual (opsional)
+  workflow_dispatch:
+
+jobs:
+  filter_m3u:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout kode
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies (requests)
+        run: pip install requests
+
+      - name: Jalankan Skrip Multi-Filter
+        # Skrip ini menghasilkan event_combined.m3u dan sports_combined.m3u
+        run: python download_m3u.py
+        
+      # --- LANGKAH PENTING UNTUK COMMIT/PUSH ---
+      - name: Konfigurasi Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit dan Push file M3U yang Diperbarui
+        run: |
+          # Perbaikan: Menambahkan file output yang benar ke staging area (sesuai skrip Python terbaru)
+          git add event_combined.m3u sports_combined.m3u
+          
+          # Melakukan commit hanya jika ada perubahan. Pesan 'echo' akan muncul jika tidak ada perubahan.
+          git commit -m "Otomatis: Update playlist M3U dari filter (scheduled/push)" || echo "Tidak ada perubahan untuk di-commit"
+          
+          # Melakukan push. Perlu token akses default yang disediakan GitHub Actions.
+          git push
