@@ -8,7 +8,7 @@ import os
 
 # DAFTAR LENGKAP SEMUA URL SUMBER BARU (Semua yang Anda berikan)
 ALL_SOURCE_URLS = [
-    "https://bit.ly/kopinyaoke",
+    
     "https://donzcompany.shop/donztelevision/donztelevision.php", # Dengan 'televison' (tanpa s)
     "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25",
     "https://getch.semar.my.id",
