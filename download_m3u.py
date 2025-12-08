@@ -6,11 +6,11 @@ import os
 # I. KONFIGURASI GLOBAL (URL, Kata Kunci Positif, dan Negatif)
 # ====================================================================
 
-# DAFTAR LENGKAP SEMUA URL SUMBER (FINAL)
+# DAFTAR LENGKAP SEMUA URL SUMBER (TERBARU)
 ALL_SOURCE_URLS = [
     "https://bit.ly/kopinyaoke",
-    "https://donzcompany.shop/donztelevision/donztelevision.php", # <--- PERBAIKAN: TANPA 's'
-    "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25", 
+    "https://donzcompany.shop/donztelevision/donztelevision.php", 
+    "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25",
     "https://getch.semar.my.id",
     "https://dildo.beww.pl/ngen.m3u",
     "https://free.anutv.xyz/neo.m3u8"
@@ -33,7 +33,7 @@ ALL_POSITIVE_KEYWORDS = {
     ]
 }
 
-# DAFTAR KATA KUNCI NEGATIF (BLACKLIST KATEGORI)
+# DAFTAR KATA KUNCI NEGATIF (BLACKLIST KATEGORI) - DIGUNAKAN UNTUK MEMBERSIHKAN
 ALL_NEGATIVE_KEYWORDS = [
     "MOVIE", "FILM", "SERIAL", "SERIES", "MUSIC", "MUSIK", 
     "KIDS", "ANAK", "DOCUMENTARY", "BERITA", "NEWS", "RELIGI", 
@@ -135,7 +135,7 @@ def filter_m3u_by_config(config):
                         clean_channel_name = CLEANING_REGEX.sub(' ', raw_channel_name).upper()
                         
                         # ================================================
-                        # 3. LOGIKA FILTER DILONGGARKAN (FINAL)
+                        # 3. LOGIKA FILTER PALING DASAR (FINAL)
                         # ================================================
                         
                         # A. Cek Blacklist (Wajib Dibuang jika mengandung kata kunci negatif)
@@ -157,6 +157,8 @@ def filter_m3u_by_config(config):
                         # SIMPAN HANYA JIKA LOLOS BLACKLIST DAN ADA MATCH POSITIF
                         if is_match: 
                             filtered_lines.append(line)
+                            # PENTING: Untuk memastikan pemutar Anda mengelompokkan dengan benar,
+                            # pastikan Group Title di baris EXTINF sudah bersih dan relevan.
                             filtered_lines.append(stream_url)
                             total_entries += 1
                             
