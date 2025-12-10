@@ -9,7 +9,7 @@ import os
 # DAFTAR KATA KUNCI POSITIF
 ALL_POSITIVE_KEYWORDS = {
     # URL 1: Hanya Event 
-    "EVENT_ONLY": ["EVENT"], 
+    "EVENT_ONLY": ["EVENT", "SEA GAMES"], 
     # URL 2: Hanya Sports & Live 
     "SPORTS_LIVE": ["SPORT", "SPORTS", "LIVE", "LANGSUNG", "OLAHRAGA", "MATCH", "LIGA", "FOOTBALL", "BEIN", "SPOT", "BE IN"]
 }
@@ -25,7 +25,7 @@ GLOBAL_BLACKLIST_URLS = [
 CONFIGURATIONS = [
     {
         # PERUBAHAN UTAMA 1: URL kini berupa LIST
-        "urls": ["https://bit.ly/kopinyaoke", "https://dildo.beww.pl/ngen.m3u", "https://donztelevisionpremium.icu/donztelevision/donztelevision.php"], 
+        "urls": ["https://bit.ly/kopinyaoke", "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25", "https://donztelevisionpremium.icu/donztelevision/donztelevision.php"], 
         "output_file": "event_combined.m3u", 
         "keywords": ALL_POSITIVE_KEYWORDS["EVENT_ONLY"], 
         "description": "EVENT: Gabungan dari beberapa sumber"
