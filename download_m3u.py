@@ -9,7 +9,7 @@ import os
 # DAFTAR KATA KUNCI POSITIF
 ALL_POSITIVE_KEYWORDS = {
     # URL 1: Hanya Event 
-    "EVENT_ONLY": ["EVENT", "SEA GAMES"], 
+    "EVENT_ONLY": ["EVENT", "SEA GAMES", "premier league", "la liga", "serie a", "bundesliga", "ligue 1",  "eredivisie", "liga 1 indonesia", "liga pro saudi"], 
     # URL 2: Hanya Sports & Live 
     "SPORTS_LIVE": ["SPORT", "SPORTS", "LIVE", "LANGSUNG", "OLAHRAGA", "MATCH", "LIGA", "FOOTBALL", "BEIN", "SPOT", "BE IN"]
 }
