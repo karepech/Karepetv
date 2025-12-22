@@ -27,7 +27,7 @@ GLOBAL_BLACKLIST_URLS = [
 CONFIGURATIONS = [
     {
         # PERUBAHAN UTAMA 1: URL kini berupa LIST
-        "urls": ["https://bit.ly/kopinyaoke", "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25", "https://bakulwifi.my.id/live.m3u"], 
+        "urls": ["https://bit.ly/kopinyaoke", "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25", "https://github.com/karepech/BakulwifiTV/blob/main/live.m3u"], 
         "output_file": "event_combined.m3u", 
         "keywords": ALL_POSITIVE_KEYWORDS["EVENT_ONLY"], 
         "description": "EVENT: Gabungan dari beberapa sumber"
