@@ -24,7 +24,7 @@ GLOBAL_BLACKLIST_URLS = {
 
 CONFIGURATIONS = [
     {
-        "urls": ["https://bit.ly/KPL203", "https://liveevent.iptvbonekoe.workers.dev", "https://freeiptv2026.tsender57.workers.dev"],
+        "urls": ["https://bit.ly/KPL203", "https://liveevent.iptvbonekoe.workers.dev", "https://freeiptv2026.tsender57.workers.dev", "https://s.id/semartv"],
         "output_file": "event_combined.m3u",
         "keywords": ALL_POSITIVE_KEYWORDS["EVENT_ONLY"],
         "description": "EVENT: Gabungan dari beberapa sumber"
