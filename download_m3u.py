@@ -49,7 +49,12 @@ GLOBAL_BLACKLIST_URLS = {
 # --- KONFIGURASI 7 KATEGORI (Semua Force Category = True) ---
 CONFIGURATIONS = [
     {
-        "urls": ["https://bit.ly/KPL203", "https://liveevent.iptvbonekoe.workers.dev", "https://deccotech.online/tv/tvstream.html", "https://freeiptv2026.tsender57.workers.dev"],
+        "urls": ["https://bit.ly/KPL203", "https://liveevent.iptvbonekoe.workers.dev", 
+                 "https://deccotech.online/tv/tvstream.html",
+                 "https://bit.ly/TVKITKAT",
+                 "https://s.id/semartv",
+                 "https://semar25.short.gy",
+                 "https://freeiptv2026.tsender57.workers.dev"],
         "output_file": "event_combined.m3u",
         "keywords": ALL_POSITIVE_KEYWORDS["EVENT_ONLY"],
         "exclude_keywords": ALL_POSITIVE_KEYWORDS["NEWS"] + ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["KNOWLEDGE"], 
