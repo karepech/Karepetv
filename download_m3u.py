@@ -7,10 +7,26 @@ import re
 
 ALL_POSITIVE_KEYWORDS = {
     "EVENT_ONLY": ["EVENT", "SEA GAMES", "PREMIER LEAGUE", "LA LIGA", "SERIE A", "BUNDESLIGA", "LIGUE 1", "EREDIVISIE", "LIGA 1 INDONESIA", "LIGA PRO SAUDI"],
-    "SPORTS_LIVE": ["SPORT", "SPORTS", "LIVE", "LANGSUNG", "OLAHRAGA", "MATCH", "LIGA", "FOOTBALL", "BEIN", "SPOT", "BE IN"]
+    "SPORTS_LIVE": ["SPORT", "SPORTS", "LIVE", "LANGSUNG", "OLAHRAGA", "MATCH", "LIGA", "FOOTBALL", "BEIN", "SPOT", "BE IN"],
+    "NASIONAL_ID": [
+        "INDONESIA", "NASIONAL", "LOKAL", "DAERAH",
+        "RCTI", "SCTV", "INDOSIAR", "TRANS", "MNC", "GTV", "GLOBAL TV", 
+        "INEWS", "TVONE", "TV ONE", "METRO", "KOMPAS", "NET", "RTV", 
+        "TVRI", "BTV", "CNN INDONESIA", "CNBC", "JAK TV", "JTV"
+    ],
+    # --- TAMBAHAN BARU: Kids & Knowledge ---
+    "KIDS": [
+        "KIDS", "ANAK", "CARTOON", "KARTUN", "NICKELODEON", "NICK JR", 
+        "DISNEY", "CARTOON NETWORK", "CN", "BOOMERANG", "BABY", 
+        "ANIMATION", "ANIMASI", "TOON", "CERIA", "MENTARI"
+    ],
+    "KNOWLEDGE": [
+        "KNOWLEDGE", "EDUCATION", "EDUKASI", "PENGETAHUAN", "DISCOVERY", 
+        "NATIONAL GEOGRAPHIC", "NAT GEO", "NATGEO", "HISTORY", 
+        "ANIMAL PLANET", "SCIENCE", "SAINS", "DOCUMENTARY", "DOKUMENTER", "WILD"
+    ]
 }
 
-# Typo 'hhttps' sudah diperbaiki. Menggunakan Set {} agar pencarian super cepat O(1)
 GLOBAL_BLACKLIST_URLS = {
     "https://bit.ly/428RaFW",
     "https://iili.io/KfT7PJ2.jpg",
@@ -24,17 +40,36 @@ GLOBAL_BLACKLIST_URLS = {
 
 CONFIGURATIONS = [
     {
-        "urls": ["https://bit.ly/KPL203", "https://liveevent.iptvbonekoe.workers.dev", "https://freeiptv2026.tsender57.workers.dev", "https://s.id/semartv"],
+        "urls": ["https://bit.ly/KPL203", "https://liveevent.iptvbonekoe.workers.dev", "https://freeiptv2026.tsender57.workers.dev"],
         "output_file": "event_combined.m3u",
         "keywords": ALL_POSITIVE_KEYWORDS["EVENT_ONLY"],
         "description": "EVENT: Gabungan dari beberapa sumber"
     },
     {
-        # URL s.id/semartv bisa kamu masukkan ke dalam list ini
         "urls": ["https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25", "https://deccotech.online/tv/tvstream.html", "https://s.id/semartv"],
         "output_file": "sports_combined.m3u",
         "keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"],
-        "description": "SPORTS: Gabungan dari dua sumber Live"
+        "description": "SPORTS: Gabungan dari sumber Live"
+    },
+    {
+        "urls": ["https://s.id/semartv", "https://liveevent.iptvbonekoe.workers.dev", "https://freeiptv2026.tsender57.workers.dev", "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25"],
+        "output_file": "nasional_combined.m3u",
+        "keywords": ALL_POSITIVE_KEYWORDS["NASIONAL_ID"],
+        "description": "NASIONAL: Gabungan Saluran TV Indonesia & Lokal"
+    },
+    {
+        # --- TAMBAHAN BARU: Kids ---
+        "urls": ["https://s.id/semartv", "https://liveevent.iptvbonekoe.workers.dev", "https://freeiptv2026.tsender57.workers.dev", "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25"],
+        "output_file": "kids_combined.m3u",
+        "keywords": ALL_POSITIVE_KEYWORDS["KIDS"],
+        "description": "KIDS: Gabungan Saluran Anak & Kartun"
+    },
+    {
+        # --- TAMBAHAN BARU: Knowledge ---
+        "urls": ["https://s.id/semartv", "https://liveevent.iptvbonekoe.workers.dev", "https://freeiptv2026.tsender57.workers.dev", "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25"],
+        "output_file": "knowledge_combined.m3u",
+        "keywords": ALL_POSITIVE_KEYWORDS["KNOWLEDGE"],
+        "description": "KNOWLEDGE: Gabungan Saluran Edukasi & Dokumenter"
     },
 ]
 
@@ -133,7 +168,7 @@ def filter_m3u_by_config(config):
             print(f"  > WARNING: Gagal memproses {url}. Error: {e}")
             continue
             
-    print(f"Total {total_entries} saluran difilter.")
+    print(f"Total {total_entries} saluran difilter dari kategori ini.")
     
     # Simpan ke file output
     with open(output_file, "w", encoding="utf-8") as f:
@@ -148,4 +183,4 @@ if __name__ == "__main__":
     print("Memulai Multi-Filter M3U (Optimized & OTT Supported)...")
     for config in CONFIGURATIONS:
         filter_m3u_by_config(config)
-    print("\nProses Multi-Filter selesai.")
+    print("\nProses Multi-Filter selesai. Semua 5 file M3U siap digunakan!")
