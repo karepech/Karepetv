@@ -1,13 +1,13 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="CNN.Indonesia.id" tvg-name="" tvg-logo="https://mimipipi22.github.io/logo/nasional/cnnid.jpg" group-title="INDONESIA TV",CNN INDONESIA
+#EXTINF:-1 tvg-id="CNN.Indonesia.id" tvg-name="" tvg-logo="https://mimipipi22.github.io/logo/nasional/cnnid.jpg" group-title="KIDS",CNN INDONESIA
 https://live.cnnindonesia.com/livecnn/smil:cnntv.smil/chunklist.m3u8
-#EXTINF:-1 tvg-id="CNBC.Indonesia.id" tvg-name="" tvg-logo="https://mimipipi22.github.io/logo/nasional/cnbcid.jpg" group-title="INDONESIA TV",CNBC INDONESIA
+#EXTINF:-1 tvg-id="CNBC.Indonesia.id" tvg-name="" tvg-logo="https://mimipipi22.github.io/logo/nasional/cnbcid.jpg" group-title="KIDS",CNBC INDONESIA
 https://live.cnbcindonesia.com/livecnbc/smil:cnbctv.smil/chunklist.m3u8
-#EXTINF:-1 tvg-id="CNN.International.id" tvg-name="CNN International" tvg-logo="https://mimipipi22.github.io/logo/news/cnn.jpg" group-title="NEWS",CNN INT
+#EXTINF:-1 tvg-id="CNN.International.id" tvg-name="CNN International" tvg-logo="https://mimipipi22.github.io/logo/news/cnn.jpg" group-title="KIDS",CNN INT
 https://atemecdnbalancer-voe.sysln.id/live/eds/CNNIntHD/mediampd/CNNIntHD.mpd
-#EXTINF:-1 tvg-id="Channel.News.Asia.id" tvg-name="CNA" tvg-logo="https://mimipipi22.github.io/logo/news/cna.jpg" group-title="NEWS",CNA
+#EXTINF:-1 tvg-id="Channel.News.Asia.id" tvg-name="CNA" tvg-logo="https://mimipipi22.github.io/logo/news/cna.jpg" group-title="KIDS",CNA
 https://atemecdnbalancer-voe.sysln.id/live/eds/CNAHD/mediampd/CNAHD.mpd
-#EXTINF:-1 tvg-id="CNBC.Asia.id" tvg-name="CNBC Asia" tvg-logo="https://mimipipi22.github.io/logo/news/cnbcasia.jpg" group-title="NEWS",CNBC ASIA
+#EXTINF:-1 tvg-id="CNBC.Asia.id" tvg-name="CNBC Asia" tvg-logo="https://mimipipi22.github.io/logo/news/cnbcasia.jpg" group-title="KIDS",CNBC ASIA
 https://d3b0v7fggu5zwm.cloudfront.net/out/v1/e8d3f81aae4b46fbacf545140b86f2c4/index.mpd
 #EXTINF:-1 tvg-id="Kids.TV.id" tvg-name="Kids TV" tvg-logo="https://mimipipi22.github.io/logo/kids/kidstv.jpg" group-title="KIDS",KIDS TV
 https://d3b0v7fggu5zwm.cloudfront.net/out/v1/9041826689ae4f9c9619576d411fa989/index.mpd
@@ -83,16 +83,16 @@ https://flv.intechmedia.net/live/ch29.m3u8?|user-agent=YouTV/1.5.6-prod.release 
 #EXTVLCOPT:http-user-agent=Oxygen TV/5.9 (Linux;Android 10) ExoPlayerLib/2.12.2
 #EXTHTTP:{"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NTg1NDk2NTQsImV4cCI6MTc1ODU2MDQ1NCwiZGF0YSI6eyJ1c2VyIjoiYmFkc2kiLCJjbGllbnRfaXAiOiIxMDMuMTA3Ljg0LjE4MyJ9fQ.wMafBJ9gJ_O3Fz6vZ6mjwls65hSlf-jupah8hsAIDEc", "X-TOKEN":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NTg1NDk2NTQsImV4cCI6MTc1ODU2MDQ1NCwiZGF0YSI6eyJ1c2VyIjoiYmFkc2kiLCJjbGllbnRfaXAiOiIxMDMuMTA3Ljg0LjE4MyJ9fQ.0BUFpzNT3h5xuYuhmKHMffBu22_78xn792rAWxKY4RQ"}
 https://gooo.blog/opix/genx.m3u8?id=kartoon&cyev=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NTg1NDk2NTQsImV4cCI6MTc1ODU2MDQ1NCwiZGF0YSI6eyJ1c2VyIjoiYmFkc2kiLCJjbGllbnRfaXAiOiIxMDMuMTA3Ljg0LjE4MyJ9fQ.wMafBJ9gJ_O3Fz6vZ6mjwls65hSlf-jupah8hsAIDEc
-#EXTINF:-1  tvg-name="0000" tvg-id="0000" tvg-logo="" group-title="ENTERTAINMENT",OCN Movies
+#EXTINF:-1  tvg-name="0000" tvg-id="0000" tvg-logo="" group-title="KIDS",OCN Movies
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=a97de619e5834e6da10c9bab768fc626:1452d46b8ecd87b38310ce90d4f5209f
 https://ocnmovies2-drm2-mcdn.tving.com/ocnmovies2_drm/live5000.smil/manifest.mpd
-#EXTINF:-1 tvg-logo="" group-title="ENTERTAINMENT",OCN
+#EXTINF:-1 tvg-logo="" group-title="KIDS",OCN
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=3fe5dc0503a849cbb1966cdd1faa6066:1058f9cebf4d4198b09335ee64cea5dc
 http://ocn-drm2-mcdn.tving.com/ocn_drm/live5000.smil/manifest.mpd
-#EXTINF:-1 tvg-logo="https://i.ibb.co/XbSHxd5/cnn.png" group-title="NEWS",CNN INT
+#EXTINF:-1 tvg-logo="https://i.ibb.co/XbSHxd5/cnn.png" group-title="KIDS",CNN INT
 https://jmp2.uk/stvp-CHBD800001D0
 #EXTINF:-1 group-title="KIDS",▂ ▃ ▅ ▇ █ ▓ ▒ ░ KIDS ░ ▒ ▓ █ ▇ ▅ ▃ ▂
 https://mimipipi22.github.io/logo/offline.m3u8
@@ -173,403 +173,403 @@ https://abc-iview-mediapackagestreams-1.akamaized.net/out/v1/72481e65a40b49b59af
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=ab4a24725b1c47e7ae3c0f17ab020905:214f5979b5a30a0b3cda03085006a77f
 https://abc-iview-mediapackagestreams-2.akamaized.net/out/v1/f160f706ecde4707ac4003d17d5a17a8/index.mpd
-#EXTINF:-1 tvg-chno="16" tvg-id="Boomerang.us2" tvg-name="Boomerang" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s21883_dark_360w_270h.png" group-title="EXTRAS",Boomerang
+#EXTINF:-1 tvg-chno="16" tvg-id="Boomerang.us2" tvg-name="Boomerang" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s21883_dark_360w_270h.png" group-title="KIDS",Boomerang
 http://23.237.104.106:8080/USA_BOOMERANG/index.m3u8
-#EXTINF:-1 tvg-chno="21" tvg-id="Cartoon.Network.HD.us2" tvg-name="Cartoon Network" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s12131_dark_360w_270h.png" group-title="EXTRAS",Cartoon Network
+#EXTINF:-1 tvg-chno="21" tvg-id="Cartoon.Network.HD.us2" tvg-name="Cartoon Network" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s12131_dark_360w_270h.png" group-title="KIDS",Cartoon Network
 http://23.237.104.106:8080/USA_CARTOON_NETWORK/index.m3u8
-#EXTINF:-1 tvg-chno="29" tvg-id="CNBC.HD.us2" tvg-name="CNBC" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s10139_dark_360w_270h.png" group-title="EXTRAS",CNBC
+#EXTINF:-1 tvg-chno="29" tvg-id="CNBC.HD.us2" tvg-name="CNBC" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s10139_dark_360w_270h.png" group-title="KIDS",CNBC
 http://41.205.93.154/CNBC/index.m3u8
-#EXTINF:-1 tvg-chno="44" tvg-id="Disney.XD.HD.us2" tvg-name="Disney XD" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s18279_dark_360w_270h.png" group-title="EXTRAS",Disney XD
+#EXTINF:-1 tvg-chno="44" tvg-id="Disney.XD.HD.us2" tvg-name="Disney XD" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s18279_dark_360w_270h.png" group-title="KIDS",Disney XD
 http://23.237.104.106:8080/USA_DISNEY_XD/index.m3u8
-#EXTINF:-1 tvg-chno="114" tvg-id="Nickelodeon.HD.us2" tvg-name="Nickelodeon" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s11006_dark_360w_270h.png" group-title="EXTRAS",Nickelodeon
+#EXTINF:-1 tvg-chno="114" tvg-id="Nickelodeon.HD.us2" tvg-name="Nickelodeon" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s11006_dark_360w_270h.png" group-title="KIDS",Nickelodeon
 http://23.237.104.106:8080/USA_NICKELODEON/index.m3u8
-#EXTINF:-1 tvg-chno="115" tvg-id="Nicktoons.us2" tvg-name="Nicktoons" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s30420_dark_360w_270h.png" group-title="EXTRAS",Nicktoons
+#EXTINF:-1 tvg-chno="115" tvg-id="Nicktoons.us2" tvg-name="Nicktoons" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s30420_dark_360w_270h.png" group-title="KIDS",Nicktoons
 http://212.102.60.231/NICKTOONS/index.m3u8
-#EXTINF:-1  tvg-name="0000" tvg-id="0000" tvg-logo="" group-title="EXTRAS",OCN Movies
+#EXTINF:-1  tvg-name="0000" tvg-id="0000" tvg-logo="" group-title="KIDS",OCN Movies
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=a97de619e5834e6da10c9bab768fc626:1452d46b8ecd87b38310ce90d4f5209f
 https://ocnmovies2-drm2-mcdn.tving.com/ocnmovies2_drm/live5000.smil/manifest.mpd
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/386_144.png" group-title="MY 🇲🇾",Ceria
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/386_144.png" group-title="KIDS",Ceria
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 ##KODIPROP:inputstream.adaptive.license_key=b6e60ca0d28e8f97395f07b4e2e53a10:0f0ea6c3543c29d7f513eb886eb74f88
 #KODIPROP:inputstream.adaptive.license_key=337ef92bfeeb4b599248841cc916ce24:a31f174c1abe17c2b08fb94dd521283c
 #https://get.perfecttv.net/dash2.mpd?username=vip_3klp0es8&password=wg3piwEs&channel=ceria
 https://load.perfecttv.net/rwt.mpd?username=vip_3klp0es8&password=wg3piwEs&channel=ceria
-#EXTINF:-1 tvg-id="" group-title="MY 🇲🇾" ch-number="136" tvg-logo="https://aqfadtv.xyz/logos/OhMyCeria.png",OH MY CERIA!
+#EXTINF:-1 tvg-id="" group-title="KIDS" ch-number="136" tvg-logo="https://aqfadtv.xyz/logos/OhMyCeria.png",OH MY CERIA!
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 https://b27a6dd8a86c3e4ba93fbae22aaaac64.pmqrop.channel-assembly.mediatailor.ap-southeast-1.amazonaws.com/v1/channel/FAST_7/dash.mpd
-#EXTINF:-1  tvg-id="556893" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='9358834'&EntityType='Item'&EntityId='556893'&Width=350&Height=250" group-title="SG 🇸🇬",Kartoon Channel!
+#EXTINF:-1  tvg-id="556893" tvg-logo="https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='png'&Quality=85&ImageId='9358834'&EntityType='Item'&EntityId='556893'&Width=350&Height=250" group-title="KIDS",Kartoon Channel!
 https://d29ecfnk3jwkp9.cloudfront.net/out/v1/f246ce87793444d9bbbc56f244ec3c2c/manifest.mpd
-#EXTINF:-1 tvg-id="CNA" group-title="SG 🇸🇬" tvg-logo="https://poster.starhubgo.com/Linear_channels2/106_1920x1080_HTV.png" ch-number="515", CNA
+#EXTINF:-1 tvg-id="CNA" group-title="KIDS" tvg-logo="https://poster.starhubgo.com/Linear_channels2/106_1920x1080_HTV.png" ch-number="515", CNA
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=https://ck-dash-mpd.astradamy.com/dash-ck/linear/605
 https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index.m3u8
-#EXTINF:-1 tvg-id="cartoonhd" group-title="VN 🇻🇳" tvg-logo="https://freight.cargo.site/w/1200/i/3cf72163d993c4d87263e6d4990ec4ccdd1e14b09ce89e6e35dee1de83ef4985/CN.jpg" catchup="append" catchup-days="2" catchup-source="https://tshift.fptplay.net/dvr/cartoonnetworkhd_1000.stream/chunks_dvr_range-${start}-${offset}.m3u8", Cartoon Network HD
+#EXTINF:-1 tvg-id="cartoonhd" group-title="KIDS" tvg-logo="https://freight.cargo.site/w/1200/i/3cf72163d993c4d87263e6d4990ec4ccdd1e14b09ce89e6e35dee1de83ef4985/CN.jpg" catchup="append" catchup-days="2" catchup-source="https://tshift.fptplay.net/dvr/cartoonnetworkhd_1000.stream/chunks_dvr_range-${start}-${offset}.m3u8", Cartoon Network HD
 #EXTVLCOPT:http-user-agent=Dalvik/2.1.0
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"PMGt1Drszj/jHJxqKluMIQ","kid":"PCAWZmCpOnWsd9uBVnOJ9w"}],"type":"temporary"}
 https://s2129134.cdn.mytvnet.vn/pkg20/live_dzones/cn.smil/manifest.mpd
-#EXTINF:-1 tvg-id="onkids" group-title="VN 🇻🇳" tvg-logo="https://i.ibb.co/mq65M0Y/On-kids.jpg",ON KIDS
+#EXTINF:-1 tvg-id="onkids" group-title="KIDS" tvg-logo="https://i.ibb.co/mq65M0Y/On-kids.jpg",ON KIDS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Window NT 10.0; Win64; x64)
 https://freem3u.xyz/api/live/play.m3u8?vid=179
-#EXTINF:-1 tvg-logo="https://cms.cignal.tv/Upload/Thumbnails/mo-macau-lotus-tv-3757.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼", Lotus Macao 🇵🇭
+#EXTINF:-1 tvg-logo="https://cms.cignal.tv/Upload/Thumbnails/mo-macau-lotus-tv-3757.png" group-title="KIDS", Lotus Macao 🇵🇭
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=60dc692e64ea443a8fb5ac186c865a9b:01bdbe22d59b2a4504b53adc2f606cc1
 https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/lotusmacau_prd/default/index.mpd
-#EXTINF:-1 tvg-logo="https://cms.cignal.tv/Upload/Thumbnails/mo-macau-lotus-tv-3757.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼", Lotus Macao Skygo
+#EXTINF:-1 tvg-logo="https://cms.cignal.tv/Upload/Thumbnails/mo-macau-lotus-tv-3757.png" group-title="KIDS", Lotus Macao Skygo
 https://cdn.skygo.mn/live/disk1/Lotus/HLSv3-FTA/Lotus.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://tpshen.com:16310/uploadfiles/livelogo/5d0364d443b49_7r8B.jpg" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",VIUTV TAIWAN
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://tpshen.com:16310/uploadfiles/livelogo/5d0364d443b49_7r8B.jpg" group-title="KIDS",VIUTV TAIWAN
 http://php.jdshipin.com:8880/smt.php?id=viu1_twn
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://www.tvchinese.net/uploads/tv/viutv6.jpg" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",VIUTV6 TAIWAN
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://www.tvchinese.net/uploads/tv/viutv6.jpg" group-title="KIDS",VIUTV6 TAIWAN
 http://php.jdshipin.com:8880/smt.php?id=viusix_twn
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://www.tvchinese.net/uploads/tv/hoy.jpg" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",HOY TV 77
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://www.tvchinese.net/uploads/tv/hoy.jpg" group-title="KIDS",HOY TV 77
 http://php.jdshipin.com/TVOD/iptv.php?id=hoytv
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Now News Channel
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="KIDS",Now News Channel
 http://208.87.242.79/livehttpplay?channel_id=20041
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Now Finance Channel
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="KIDS",Now Finance Channel
 ##http://hls.168.us.kg/u/331/master.m3u8
 http://208.87.242.79/livehttpplay?channel_id=13000
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Now Sports Channel
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="KIDS",Now Sports Channel
 http://hls.168.us.kg/u/630/master.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Now Star Channel (Chinese)
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="KIDS",Now Star Channel (Chinese)
 http://208.87.242.79/livehttpplay?channel_id=13004
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Now Star Channel (Cantonese)
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="KIDS",Now Star Channel (Cantonese)
 http://208.87.242.79/livehttpplay?channel_id=13003
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Now Popcorn Channel
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="KIDS",Now Popcorn Channel
 http://208.87.242.79/livehttpplay?channel_id=13002
-#EXTINF:-1 group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",CHC Action Movies
+#EXTINF:-1 group-title="KIDS",CHC Action Movies
 http://38.75.136.137:98/gslb/dsdqpub/chcdz.m3u8?auth=testpub
-#EXTINF:-1 group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",CHC Movie Fans
+#EXTINF:-1 group-title="KIDS",CHC Movie Fans
 http://38.75.136.137:98/gslb/dsdqpub/chchd.m3u8?auth=testpub
-#EXTINF:-1 group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",CHC Home Theater
+#EXTINF:-1 group-title="KIDS",CHC Home Theater
 http://38.75.136.137:98/gslb/dsdqpub/chcjt.m3u8?auth=testpub
-#EXTINF:-1  tvg-name="CCTV1" tvg-logo="https://live.fanmingming.cn/tv/CCTV1.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",CCTV1
+#EXTINF:-1  tvg-name="CCTV1" tvg-logo="https://live.fanmingming.cn/tv/CCTV1.png" group-title="KIDS",CCTV1
 http://38.75.136.137:98/gslb/dsdqbv/cctv1hd.m3u8?auth=test20251009
-#EXTINF:-1  tvg-name="CCTV2" tvg-logo="https://live.fanmingming.cn/tv/CCTV2.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",CCTV2
+#EXTINF:-1  tvg-name="CCTV2" tvg-logo="https://live.fanmingming.cn/tv/CCTV2.png" group-title="KIDS",CCTV2
 http://38.75.136.137:98/gslb/dsdqbv/cctv2hd.m3u8?auth=test20251009
-#EXTINF:-1  tvg-name="CCTV3" tvg-logo="https://live.fanmingming.cn/tv/CCTV3.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",CCTV3
+#EXTINF:-1  tvg-name="CCTV3" tvg-logo="https://live.fanmingming.cn/tv/CCTV3.png" group-title="KIDS",CCTV3
 http://38.75.136.137:98/gslb/dsdqbv/cctv3hd.m3u8?auth=test20251009
-#EXTINF:-1  tvg-name="CCTV4" tvg-logo="https://live.fanmingming.cn/tv/CCTV4.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",CCTV4
+#EXTINF:-1  tvg-name="CCTV4" tvg-logo="https://live.fanmingming.cn/tv/CCTV4.png" group-title="KIDS",CCTV4
 http://38.75.136.137:98/gslb/dsdqbv/cctv4hd.m3u8?auth=test20251009
-#EXTINF:-1  tvg-name="CCTV5" tvg-logo="https://live.fanmingming.cn/tv/CCTV5.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",CCTV5
+#EXTINF:-1  tvg-name="CCTV5" tvg-logo="https://live.fanmingming.cn/tv/CCTV5.png" group-title="KIDS",CCTV5
 http://38.75.136.137:98/gslb/dsdqbv/cctv5hd.m3u8?auth=test20251009
-#EXTINF:-1  tvg-name="CCTV5+" tvg-logo="https://live.fanmingming.cn/tv/CCTV5+.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",CCTV5+
+#EXTINF:-1  tvg-name="CCTV5+" tvg-logo="https://live.fanmingming.cn/tv/CCTV5+.png" group-title="KIDS",CCTV5+
 http://38.75.136.137:98/gslb/dsdqbv/cctv5p.m3u8?auth=test20251009
-#EXTINF:-1  tvg-name="CCTV6" tvg-logo="https://live.fanmingming.cn/tv/CCTV6.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",CCTV6
+#EXTINF:-1  tvg-name="CCTV6" tvg-logo="https://live.fanmingming.cn/tv/CCTV6.png" group-title="KIDS",CCTV6
 http://38.75.136.137:98/gslb/dsdqbv/cctv6hd.m3u8?auth=test20251009
-#EXTINF:-1  tvg-name="CCTV7" tvg-logo="https://live.fanmingming.cn/tv/CCTV7.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",CCTV7
+#EXTINF:-1  tvg-name="CCTV7" tvg-logo="https://live.fanmingming.cn/tv/CCTV7.png" group-title="KIDS",CCTV7
 http://38.75.136.137:98/gslb/dsdqbv/cctv7hd.m3u8?auth=test20251009
-#EXTINF:-1  tvg-name="CCTV8" tvg-logo="https://live.fanmingming.cn/tv/CCTV8.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",CCTV8
+#EXTINF:-1  tvg-name="CCTV8" tvg-logo="https://live.fanmingming.cn/tv/CCTV8.png" group-title="KIDS",CCTV8
 http://38.75.136.137:98/gslb/dsdqbv/cctv8hd.m3u8?auth=test20251009
-#EXTINF:-1  tvg-name="CCTV9" tvg-logo="https://live.fanmingming.cn/tv/CCTV9.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",CCTV9
+#EXTINF:-1  tvg-name="CCTV9" tvg-logo="https://live.fanmingming.cn/tv/CCTV9.png" group-title="KIDS",CCTV9
 http://38.75.136.137:98/gslb/dsdqbv/cctv9hd.m3u8?auth=test20251009
-#EXTINF:-1  tvg-name="CCTV10" tvg-logo="https://live.fanmingming.cn/tv/CCTV10.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",CCTV10
+#EXTINF:-1  tvg-name="CCTV10" tvg-logo="https://live.fanmingming.cn/tv/CCTV10.png" group-title="KIDS",CCTV10
 http://38.75.136.137:98/gslb/dsdqbv/cctv10hd.m3u8?auth=test20251009
-#EXTINF:-1  tvg-name="CCTV11" tvg-logo="https://live.fanmingming.cn/tv/CCTV11.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",CCTV11
+#EXTINF:-1  tvg-name="CCTV11" tvg-logo="https://live.fanmingming.cn/tv/CCTV11.png" group-title="KIDS",CCTV11
 http://38.75.136.137:98/gslb/dsdqbv/cctv11hd.m3u8?auth=test20251009
-#EXTINF:-1  tvg-name="CCTV12" tvg-logo="https://live.fanmingming.cn/tv/CCTV12.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",CCTV12
+#EXTINF:-1  tvg-name="CCTV12" tvg-logo="https://live.fanmingming.cn/tv/CCTV12.png" group-title="KIDS",CCTV12
 http://38.75.136.137:98/gslb/dsdqbv/cctv12hd.m3u8?auth=test20251009
-#EXTINF:-1  tvg-name="CCTV13" tvg-logo="https://live.fanmingming.cn/tv/CCTV13.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",CCTV13
+#EXTINF:-1  tvg-name="CCTV13" tvg-logo="https://live.fanmingming.cn/tv/CCTV13.png" group-title="KIDS",CCTV13
 http://38.75.136.137:98/gslb/dsdqbv/cctv13hd.m3u8?auth=test20251009
-#EXTINF:-1  tvg-name="CCTV14" tvg-logo="https://live.fanmingming.cn/tv/CCTV14.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",CCTV14
+#EXTINF:-1  tvg-name="CCTV14" tvg-logo="https://live.fanmingming.cn/tv/CCTV14.png" group-title="KIDS",CCTV14
 http://38.75.136.137:98/gslb/dsdqbv/cctv14hd.m3u8?auth=test20251009
-#EXTINF:-1  tvg-name="CCTV15" tvg-logo="https://live.fanmingming.cn/tv/CCTV15.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",CCTV15
+#EXTINF:-1  tvg-name="CCTV15" tvg-logo="https://live.fanmingming.cn/tv/CCTV15.png" group-title="KIDS",CCTV15
 http://38.75.136.137:98/gslb/dsdqbv/cctv15hd.m3u8?auth=test20251009
-#EXTINF:-1  tvg-name="CCTV16" tvg-logo="https://live.fanmingming.cn/tv/CCTV16.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",CCTV16
+#EXTINF:-1  tvg-name="CCTV16" tvg-logo="https://live.fanmingming.cn/tv/CCTV16.png" group-title="KIDS",CCTV16
 http://38.75.136.137:98/gslb/dsdqbv/cctv16hd.m3u8?auth=test20251009
-#EXTINF:-1  tvg-name="CCTV17" tvg-logo="https://live.fanmingming.cn/tv/CCTV17.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",CCTV17
+#EXTINF:-1  tvg-name="CCTV17" tvg-logo="https://live.fanmingming.cn/tv/CCTV17.png" group-title="KIDS",CCTV17
 http://38.75.136.137:98/gslb/dsdqbv/cctv17hd.m3u8?auth=test20251009
-#EXTINF:-1 group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",CCTV Weapon Technology
+#EXTINF:-1 group-title="KIDS",CCTV Weapon Technology
 http://38.75.136.137:98/gslb/dsdqpub/gfjs.m3u8?auth=testpub
-#EXTINF:-1 group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼", CCTV Health and Wellness
+#EXTINF:-1 group-title="KIDS", CCTV Health and Wellness
 http://38.75.136.137:98/gslb/dsdqpub/wsjk.m3u8?auth=testpub
-#EXTINF:-1 group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",CCTV Billiards
+#EXTINF:-1 group-title="KIDS",CCTV Billiards
 http://38.75.136.137:98/gslb/dsdqpub/ystq.m3u8?auth=testpub
-#EXTINF:-1 group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",CCTV First Theater
+#EXTINF:-1 group-title="KIDS",CCTV First Theater
 http://38.75.136.137:98/gslb/dsdqpub/dyjc.m3u8?auth=testpub
-#EXTINF:-1 group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",CCTV Fengyun Theater
+#EXTINF:-1 group-title="KIDS",CCTV Fengyun Theater
 http://38.75.136.137:98/gslb/dsdqpub/fyjc.m3u8?auth=testpub
-#EXTINF:-1 group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",CCTV Nostalgia Theater
+#EXTINF:-1 group-title="KIDS",CCTV Nostalgia Theater
 http://38.75.136.137:98/gslb/dsdqpub/hjjc.m3u8?auth=testpub
-#EXTINF:-1 group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",CCTV Sports Football
+#EXTINF:-1 group-title="KIDS",CCTV Sports Football
 http://38.75.136.137:98/gslb/dsdqpub/fyzq.m3u8?auth=testpub
-#EXTINF:-1 group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",CCTV Sports Music
+#EXTINF:-1 group-title="KIDS",CCTV Sports Music
 http://38.75.136.137:98/gslb/dsdqpub/fyyy.m3u8?auth=testpub
-#EXTINF:-1 group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",CCTV World Geography
+#EXTINF:-1 group-title="KIDS",CCTV World Geography
 http://38.75.136.137:98/gslb/dsdqpub/sjdl.m3u8?auth=testpub
-#EXTINF:-1 group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",CCTV TV Guide
+#EXTINF:-1 group-title="KIDS",CCTV TV Guide
 http://38.75.136.137:98/gslb/dsdqpub/dszn.m3u8?auth=testpub
-#EXTINF:-1 group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",CCTV Weapon Technology
+#EXTINF:-1 group-title="KIDS",CCTV Weapon Technology
 http://38.75.136.137:98/gslb/dsdqpub/bqkj.m3u8?auth=testpub
-#EXTINF:-1 group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",CCTB Golf & Tennis
+#EXTINF:-1 group-title="KIDS",CCTB Golf & Tennis
 http://38.75.136.137:98/gslb/dsdqpub/gefwq.m3u8?auth=testpub
-#EXTINF:-1 group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",CCTV Cultural Masterpieces
+#EXTINF:-1 group-title="KIDS",CCTV Cultural Masterpieces
 http://38.75.136.137:98/gslb/dsdqpub/ysjp.m3u8?auth=testpub
-#EXTINF:-1 group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",CCTV Women's Fashion
+#EXTINF:-1 group-title="KIDS",CCTV Women's Fashion
 http://38.75.136.137:98/gslb/dsdqpub/nxss.m3u8?auth=testpub
-#EXTINF:-1 tvg-name="Dragon TV" tvg-logo="https://live.fanmingming.cn/tv/Dragon TV.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Dragon TV
+#EXTINF:-1 tvg-name="Dragon TV" tvg-logo="https://live.fanmingming.cn/tv/Dragon TV.png" group-title="KIDS",Dragon TV
 http://38.75.136.137:98/gslb/dsdqbv/dfwshd.m3u8?auth=test20251009
-#EXTINF:-1 tvg-name="Jiangsu TV" tvg-logo="https://live.fanmingming.cn/tv/Jiangsu TV.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Jiangsu TV
+#EXTINF:-1 tvg-name="Jiangsu TV" tvg-logo="https://live.fanmingming.cn/tv/Jiangsu TV.png" group-title="KIDS",Jiangsu TV
 http://38.75.136.137:98/gslb/dsdqbv/jswshd.m3u8?auth=test20251009
-#EXTINF:-1 tvg-name="Zhejiang TV" tvg-logo="https://live.fanmingming.cn/tv/浙卫视.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Zhejiang TV
+#EXTINF:-1 tvg-name="Zhejiang TV" tvg-logo="https://live.fanmingming.cn/tv/浙卫视.png" group-title="KIDS",Zhejiang TV
 http://38.75.136.137:98/gslb/dsdqpub/zjwshd.m3u8?auth=testpub
-#EXTINF:-1 tvg-name="Beijing TV" tvg-logo="https://live.fanmingming.cn/tv/北京卫视.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Beijing TV
+#EXTINF:-1 tvg-name="Beijing TV" tvg-logo="https://live.fanmingming.cn/tv/北京卫视.png" group-title="KIDS",Beijing TV
 http://38.75.136.137:98/gslb/dsdqpub/bjwshd.m3u8?auth=testpub
-#EXTINF:-1 tvg-name="Shandong TV" tvg-logo="https://live.fanmingming.cn/tv/山东卫视.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Shandong TV
+#EXTINF:-1 tvg-name="Shandong TV" tvg-logo="https://live.fanmingming.cn/tv/山东卫视.png" group-title="KIDS",Shandong TV
 http://38.75.136.137:98/gslb/dsdqpub/sdwshd.m3u8?auth=testpub
-#EXTINF:-1 tvg-name="四川卫视" tvg-logo="https://live.fanmingming.cn/tv/四川卫视.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Sichuan TV
+#EXTINF:-1 tvg-name="四川卫视" tvg-logo="https://live.fanmingming.cn/tv/四川卫视.png" group-title="KIDS",Sichuan TV
 http://38.75.136.137:98/gslb/dsdqpub/scwshd.m3u8?auth=testpub
-#EXTINF:-1 tvg-name="广东卫视" tvg-logo="https://live.fanmingming.cn/tv/广东卫视.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Guangdong TV
+#EXTINF:-1 tvg-name="广东卫视" tvg-logo="https://live.fanmingming.cn/tv/广东卫视.png" group-title="KIDS",Guangdong TV
 http://38.75.136.137:98/gslb/dsdqpub/gdwshd.m3u8?auth=testpub
-#EXTINF:-1 tvg-name="Shenzhen TV" tvg-logo="https://live.fanmingming.cn/tv/深圳卫视.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Shenzhen TV
+#EXTINF:-1 tvg-name="Shenzhen TV" tvg-logo="https://live.fanmingming.cn/tv/深圳卫视.png" group-title="KIDS",Shenzhen TV
 http://38.75.136.137:98/gslb/dsdqpub/szwshd.m3u8?auth=testpub
-#EXTINF:-1 tvg-name="Heilongjiang TV" tvg-logo="https://live.fanmingming.cn/tv/黑龙江卫视.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Heilongjiang TV
+#EXTINF:-1 tvg-name="Heilongjiang TV" tvg-logo="https://live.fanmingming.cn/tv/黑龙江卫视.png" group-title="KIDS",Heilongjiang TV
 http://38.75.136.137:98/gslb/dsdqpub/hljwshd.m3u8?auth=testpub
-#EXTINF:-1 tvg-name="Jilin TV" tvg-logo="https://live.fanmingming.cn/tv/吉林卫视.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Jilin TV
+#EXTINF:-1 tvg-name="Jilin TV" tvg-logo="https://live.fanmingming.cn/tv/吉林卫视.png" group-title="KIDS",Jilin TV
 http://38.75.136.137:98/gslb/dsdqpub/jlwshd.m3u8?auth=testpub
-#EXTINF:-1 tvg-name="Tianjin TV" tvg-logo="https://live.fanmingming.cn/tv/Tianjin TV.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Tianjin TV
+#EXTINF:-1 tvg-name="Tianjin TV" tvg-logo="https://live.fanmingming.cn/tv/Tianjin TV.png" group-title="KIDS",Tianjin TV
 http://38.75.136.137:98/gslb/dsdqpub/tjwshd.m3u8?auth=testpub
-#EXTINF:-1 tvg-name="Hubei TV" tvg-logo="https://live.fanmingming.cn/tv/Hubei TV.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Hubei TV
+#EXTINF:-1 tvg-name="Hubei TV" tvg-logo="https://live.fanmingming.cn/tv/Hubei TV.png" group-title="KIDS",Hubei TV
 http://38.75.136.137:98/gslb/dsdqpub/hbwshd.m3u8?auth=testpub
-#EXTINF:-1 tvg-name="Jiangxi TV" tvg-logo="https://live.fanmingming.cn/tv/江西卫视.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Jiangxi TV
+#EXTINF:-1 tvg-name="Jiangxi TV" tvg-logo="https://live.fanmingming.cn/tv/江西卫视.png" group-title="KIDS",Jiangxi TV
 http://38.75.136.137:98/gslb/dsdqpub/jxwshd.m3u8?auth=testpub
-#EXTINF:-1 group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼", Shaanxi TV
+#EXTINF:-1 group-title="KIDS", Shaanxi TV
 http://38.75.136.137:98/gslb/dsdqpub/sxwshd.m3u8?auth=testpub
-#EXTINF:-1 tvg-name="Guizhou TV" tvg-logo="https://live.fanmingming.cn/tv/Guizhou TV.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Guizhou TV
+#EXTINF:-1 tvg-name="Guizhou TV" tvg-logo="https://live.fanmingming.cn/tv/Guizhou TV.png" group-title="KIDS",Guizhou TV
 http://38.75.136.137:98/gslb/dsdqpub/gzwshd.m3u8?auth=testpub
-#EXTINF:-1 tvg-name="Yunnan TV" tvg-logo="https://live.fanmingming.cn/tv/Yunnan TV.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Yunnan TV
+#EXTINF:-1 tvg-name="Yunnan TV" tvg-logo="https://live.fanmingming.cn/tv/Yunnan TV.png" group-title="KIDS",Yunnan TV
 http://38.75.136.137:98/gslb/dsdqpub/ynwshd.m3u8?auth=testpub
-#EXTINF:-1 tvg-name="Guizhou TV" tvg-logo="https://live.fanmingming.cn/tv/Guizhou TV.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Guizhou TV
+#EXTINF:-1 tvg-name="Guizhou TV" tvg-logo="https://live.fanmingming.cn/tv/Guizhou TV.png" group-title="KIDS",Guizhou TV
 http://38.75.136.137:98/gslb/dsdqpub/gzwshd.m3u8?auth=testpub
-#EXTINF:-1 tvg-name="Guangxi TV" tvg-logo="https://live.fanmingming.cn/tv/Guangxi TV.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Guangxi TV
+#EXTINF:-1 tvg-name="Guangxi TV" tvg-logo="https://live.fanmingming.cn/tv/Guangxi TV.png" group-title="KIDS",Guangxi TV
 http://38.75.136.137:98/gslb/dsdqpub/gxwshd.m3u8?auth=testpub
-#EXTINF:-1 tvg-name="Southeast TV" tvg-logo="https://live.fanmingming.cn/tv/Southeast TV.png" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Southeast TV
+#EXTINF:-1 tvg-name="Southeast TV" tvg-logo="https://live.fanmingming.cn/tv/Southeast TV.png" group-title="KIDS",Southeast TV
 http://38.75.136.137:98/gslb/dsdqpub/dnwshd.m3u8?auth=testpub
-#EXTINF:-1 tvg-logo="" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Tianjin News
+#EXTINF:-1 tvg-logo="" group-title="KIDS",Tianjin News
 http://38.75.136.137:98/gslb/dsdqpub/tjtv1.m3u8?auth=testpub
-#EXTINF:-1 tvg-logo="" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Tianjin Literature and Art
+#EXTINF:-1 tvg-logo="" group-title="KIDS",Tianjin Literature and Art
 http://38.75.136.137:98/gslb/dsdqpub/tjtv2.m3u8?auth=testpub
-#EXTINF:-1 tvg-logo="" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Tianjin Film and Television
+#EXTINF:-1 tvg-logo="" group-title="KIDS",Tianjin Film and Television
 http://38.75.136.137:98/gslb/dsdqpub/tjtv3.m3u8?auth=testpub
-#EXTINF:-1 tvg-logo="" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Tianjin Urban
+#EXTINF:-1 tvg-logo="" group-title="KIDS",Tianjin Urban
 http://38.75.136.137:98/gslb/dsdqpub/tjtv4.m3u8?auth=testpub
-#EXTINF:-1 tvg-logo="" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Tianjin Sports
+#EXTINF:-1 tvg-logo="" group-title="KIDS",Tianjin Sports
 http://38.75.136.137:98/gslb/dsdqpub/tjtv5.m3u8?auth=testpub
-#EXTINF:-1 tvg-logo="" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Tianjin Education
+#EXTINF:-1 tvg-logo="" group-title="KIDS",Tianjin Education
 http://38.75.136.137:98/gslb/dsdqpub/tjtv6.m3u8?auth=testpub
-#EXTINF:-1 tvg-logo="" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Jackie Chan movies
+#EXTINF:-1 tvg-logo="" group-title="KIDS",Jackie Chan movies
 http://38.75.136.137:98/gslb/dsdqpub/lbcl.m3u8?auth=testpub
-#EXTINF:-1 tvg-logo="" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Shaw Brothers films
+#EXTINF:-1 tvg-logo="" group-title="KIDS",Shaw Brothers films
 http://38.75.136.137:98/gslb/dsdqpub/lbssdy.m3u8?auth=testpub
-#EXTINF:-1 tvg-logo="" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Shaw Brothers martial arts films
+#EXTINF:-1 tvg-logo="" group-title="KIDS",Shaw Brothers martial arts films
 http://38.75.136.137:98/gslb/dsdqpub/lbsswx.m3u8?auth=testpub
-#EXTINF:-1 tvg-logo="" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Shaw Brothers action films
+#EXTINF:-1 tvg-logo="" group-title="KIDS",Shaw Brothers action films
 http://38.75.136.137:98/gslb/dsdqpub/lbssdz.m3u8?auth=testpub
-#EXTINF:-1 tvg-logo="" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Shaw Brothers comedies
+#EXTINF:-1 tvg-logo="" group-title="KIDS",Shaw Brothers comedies
 http://38.75.136.137:98/gslb/dsdqpub/lbssxj.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Longhua Movies
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="KIDS",Longhua Movies
 http://cdn8.163189.xyz/163189/lhdy
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Longhua Classics
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="KIDS",Longhua Classics
 http://cdn8.163189.xyz/163189/lhjd
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Longhua Cartoons
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="KIDS",Longhua Cartoons
 http://cdn8.163189.xyz/163189/lhkt
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Longhua Idols
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="KIDS",Longhua Idols
 http://cdn8.163189.xyz/163189/lhox
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Longhua Japanese & Korean
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="KIDS",Longhua Japanese & Korean
 http://cdn8.163189.xyz/163189/lhrh
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="CN 🇨🇳/HK 🇭🇰/TW 🇹🇼",Longhua Drama
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="KIDS",Longhua Drama
 http://cdn8.163189.xyz/163189/lhxj
-#EXTINF:-1 tvg-logo="" group-title="JP 🇯🇵",Kids Station
+#EXTINF:-1 tvg-logo="" group-title="KIDS",Kids Station
 https://nl.utako.moe/kids_station/index.m3u8
-#EXTINF:-1 tvg-logo="" group-title="JP 🇯🇵",Disney Channel
+#EXTINF:-1 tvg-logo="" group-title="KIDS",Disney Channel
 https://nl.utako.moe/disneychan/index.m3u8
-#EXTINF:-1 tvg-logo="" group-title="JP 🇯🇵",Cartoon Network Japan
+#EXTINF:-1 tvg-logo="" group-title="KIDS",Cartoon Network Japan
 https://nl.utako.moe/cartoon_network/index.m3u8
-#EXTINF:-1 tvg-id="48" tvg-chno="235" tvg-name="cartoon-tv-classics" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/ehuljr.png" group-title="YUPPTV", Cartoon TV Classics
+#EXTINF:-1 tvg-id="48" tvg-chno="235" tvg-name="cartoon-tv-classics" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/ehuljr.png" group-title="KIDS", Cartoon TV Classics
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #EXTVLCOPT:http-user-agent=YuppTV/7.18.1 (Linux;Android 16) ExoPlayerLib/2.19.1
 https://streams2.sofast.tv/ptnr-yupptv/title-CARTOON-TV-CLASSICS-ENG_yupptv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/d5543c06-5122-49a7-9662-32187f48aa2c/manifest.m3u8?hdnts=st%3D1769557978~exp%3D1769579578~acl%3D%21%2A%2Fptnr-yupptv%2Ftitle-CARTOON-TV-CLASSICS-ENG_yupptv%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2Fd5543c06-5122-49a7-9662-32187f48aa2c%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_128.24.160.230_yuppfast_2_channel_48_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_128.24.160.230_yuppfast_2_channel_48_-1~hmac%3Dbd91e6b14e5d9418296d4ce9163c5c5b8e59367ab9d0979620ea1462087a988b
-#EXTINF:-1 tvg-id="Disney.mv" tvg-name="Disney Channel" tvg-logo="https://assets.stacktv.ca/wp-content/uploads/2023/09/disney-channel.png" group-title="NITRO",DISNEY CHANNEL
+#EXTINF:-1 tvg-id="Disney.mv" tvg-name="Disney Channel" tvg-logo="https://assets.stacktv.ca/wp-content/uploads/2023/09/disney-channel.png" group-title="KIDS",DISNEY CHANNEL
 https://a77aivottepl-a.akamaihd.net/pdx-nitro/live/clients/dash/enc/zuf794yutz/out/v1/ca3534bfe4f148298b36719204d108e0/cenc.mpd
-#EXTINF:-1 group-title="NITRO" tvg-logo="",Cartoon Network
+#EXTINF:-1 group-title="KIDS" tvg-logo="",Cartoon Network
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=7ef57f7f3e8cf0efe4f3d5772a7cbb35:0ac6d617095fbe0ca7f4c9ae72fa5f51
 https://a190aivottlinear-a.akamaihd.net/OTTB/iad-nitro/live/clients/dash/enc/ampfzrmpam/out/v1/e08f3866c80040f2bc494cb48ebc7bce/cenc.mpd
-#EXTINF:-1 tvg-id="PBS_DOCUMENTARIES" tvg-name="PBS Documentaries" tvg-logo="" group-title="NITRO",PBS Documentaries
+#EXTINF:-1 tvg-id="PBS_DOCUMENTARIES" tvg-name="PBS Documentaries" tvg-logo="" group-title="KIDS",PBS Documentaries
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=5d97cf2527ef9b9d20afd7dd446af50b:87713be5a27996ee6901bd46a791f06b
 https://otte.live.fly.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/5kgj4foeaa/out/v1/aac8e6bb3b924bdf896032592ada5a3c/cenc.mpd?encoding=segmentBase
-#EXTINF:-1 tvg-logo="" group-title="CGATES",CNN International
+#EXTINF:-1 tvg-logo="" group-title="KIDS",CNN International
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=2f4052e0dcb740b28b8fd49ee4ecd35a:e2e0d07b2767e46581c82cf87614e750
 https://v4-pan-n79-cdn-01.live.cdn.cgates.lt/live/dash/560404/index.mpd
-#EXTINF:-1 tvg-logo="" group-title="CGATES",Baby TV
+#EXTINF:-1 tvg-logo="" group-title="KIDS",Baby TV
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=a7707f7fb0c84c8ba54619f514eee4ec:fd2ceae6cddde71895e4718f00f34275
 https://v4-pan-n79-cdn-01.live.cdn.cgates.lt/live/dash/561306/index.mpd
-#EXTINF:-1 tvg-logo="" group-title="CGATES",Cartoon Network
+#EXTINF:-1 tvg-logo="" group-title="KIDS",Cartoon Network
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=5cebda34393a4b20b0748445ba89e8c4:2c125f88407aff752517ffc485436043
 https://v4-pan-n79-cdn-01.live.cdn.cgates.lt/live/dash/560401/index.mpd
-#EXTINF:-1 tvg-logo="" group-title="CGATES",Nicktoons
+#EXTINF:-1 tvg-logo="" group-title="KIDS",Nicktoons
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=3161c6c45076419fbbc333c277a22f65:18827aad7e2e79e526f529fd5027cb47
 https://v4-pan-n79-cdn-01.live.cdn.cgates.lt/live/dash/561208/index.mpd
-#EXTINF:-1 tvg-id="DisneyJr.mv" tvg-name="Disney Junior" tvg-logo="https://assets.stacktv.ca/wp-content/uploads/2023/09/disney-junior.png" group-title="CGATES",DISNEY JUNIOR
+#EXTINF:-1 tvg-id="DisneyJr.mv" tvg-name="Disney Junior" tvg-logo="https://assets.stacktv.ca/wp-content/uploads/2023/09/disney-junior.png" group-title="KIDS",DISNEY JUNIOR
 https://v4-pan-m3-cdn-02.live.cdn.cgates.lt/live/dash/561307/index.mpd
-#EXTINF:-1 tvg-id="cartoon-network" tvg-logo="https://poster.starhubgo.com/Linear_channels2/316_1920x1080_HTV.png" group-title="CIGNAL TV",Cartoon Network
+#EXTINF:-1 tvg-id="cartoon-network" tvg-logo="https://poster.starhubgo.com/Linear_channels2/316_1920x1080_HTV.png" group-title="KIDS",Cartoon Network
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=a2d1f552ff9541558b3296b5a932136b:cdd48fa884dc0c3a3f85aeebca13d444
 https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cartoonnetworkhd/default/index.mpd
-#EXTINF:-1 tvg-id="moonbug-kids" tvg-logo="https://aqfadtv.xyz/logos/Moonbug.png" group-title="CIGNAL TV",Moonbug Kids
+#EXTINF:-1 tvg-id="moonbug-kids" tvg-logo="https://aqfadtv.xyz/logos/Moonbug.png" group-title="KIDS",Moonbug Kids
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=0bf00921bec94a65a124fba1ef52b1cd:0f1488487cbe05e2badc3db53ae0f29f
 https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_moonbug_kids_sd/default/index.mpd
-#EXTINF:-1 tvg-id="nickelodeon" tvg-logo="https://logos-world.net/wp-content/uploads/2021/09/Nickelodeon-Logo.png" group-title="CIGNAL TV",Nickelodeon
+#EXTINF:-1 tvg-id="nickelodeon" tvg-logo="https://logos-world.net/wp-content/uploads/2021/09/Nickelodeon-Logo.png" group-title="KIDS",Nickelodeon
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=9ce58f37576b416381b6514a809bfd8b:f0fbb758cdeeaddfa3eae538856b4d72
 https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_nickelodeon/default/index.mpd
-#EXTINF:-1 tvg-id="nick-jr" tvg-logo="https://logos-world.net/wp-content/uploads/2021/09/Nick-Jr.-Logo-2009-present-700x394.png" group-title="CIGNAL TV",Nick Jr
+#EXTINF:-1 tvg-id="nick-jr" tvg-logo="https://logos-world.net/wp-content/uploads/2021/09/Nick-Jr.-Logo-2009-present-700x394.png" group-title="KIDS",Nick Jr
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=bab5c11178b646749fbae87962bf5113:0ac679aad3b9d619ac39ad634ec76bc8
 https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_nickjr/default/index.mpd
-#EXTINF:-1 tvg-logo="https://i.imgur.com/vm9Z0uV.png" group-title="CIGNAL TV",CNA
+#EXTINF:-1 tvg-logo="https://i.imgur.com/vm9Z0uV.png" group-title="KIDS",CNA
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=b259df9987364dd3b778aa5d42cb9acd:753e3dba96ab467e468269e7e33fb813
 https://qp-pldt-live-grp-13-prod.akamaized.net/out/u/dr_channelnewsasia/default/index.mpd
-#EXTINF:-1 tvg-logo="http://115.146.176.131:80/images/2acf9495fde07739914e7a7bb3ffee94.png" group-title="CIGNAL TV",CNN HD
+#EXTINF:-1 tvg-logo="http://115.146.176.131:80/images/2acf9495fde07739914e7a7bb3ffee94.png" group-title="KIDS",CNN HD
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=900c43f0e02742dd854148b7a75abbec:da315cca7f2902b4de23199718ed7e90
 https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_cnnhd/default/index.mpd
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/08/30/963a84cd-e35a-3e34-87bc-a64ede11c701.jpeg" group-title="HBO MAX", Kids-Harry Potter 1
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/08/30/963a84cd-e35a-3e34-87bc-a64ede11c701.jpeg" group-title="KIDS", Kids-Harry Potter 1
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #KODIPROP:inputstream.adaptive.license_key=https://get.perfecttv.net/wvmax?editId=16e04231-69f4-4865-8538-69407a3b7711
 https://get.perfecttv.net/get_max.mpd?username=vip_3klp0es8&password=wg3piwEs&editId=16e04231-69f4-4865-8538-69407a3b7711&sub=t12
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/08/27/43681996-e918-3bd8-bbaf-d32c83369dd8.jpeg" group-title="HBO MAX", Kids-Harry Potter 2
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/08/27/43681996-e918-3bd8-bbaf-d32c83369dd8.jpeg" group-title="KIDS", Kids-Harry Potter 2
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #KODIPROP:inputstream.adaptive.license_key=https://get.perfecttv.net/wvmax?editId=2c3a13a2-7b9e-4e98-9db5-26d7e727ec18
 https://get.perfecttv.net/get_max.mpd?username=vip_3klp0es8&password=wg3piwEs&editId=2c3a13a2-7b9e-4e98-9db5-26d7e727ec18&sub=t42
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/08/27/0145115c-4c19-3869-bcf4-1c43e41921a9.jpeg" group-title="HBO MAX", Kids-Harry Potter 3
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/08/27/0145115c-4c19-3869-bcf4-1c43e41921a9.jpeg" group-title="KIDS", Kids-Harry Potter 3
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #KODIPROP:inputstream.adaptive.license_key=https://get.perfecttv.net/wvmax?editId=22dcb0f6-3351-4e1b-aced-9b8cb0b569b2
 https://get.perfecttv.net/get_max.mpd?username=vip_3klp0es8&password=wg3piwEs&editId=22dcb0f6-3351-4e1b-aced-9b8cb0b569b2&sub=t0
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/08/27/7a541bd5-64e2-3188-8d66-067f330ad814.jpeg" group-title="HBO MAX", Kids-Harry Potter 4
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/08/27/7a541bd5-64e2-3188-8d66-067f330ad814.jpeg" group-title="KIDS", Kids-Harry Potter 4
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #KODIPROP:inputstream.adaptive.license_key=https://get.perfecttv.net/wvmax?editId=f0c79c62-0e8a-420a-bbab-35ad3587b683
 https://get.perfecttv.net/get_max.mpd?username=vip_3klp0es8&password=wg3piwEs&editId=f0c79c62-0e8a-420a-bbab-35ad3587b683&sub=t32
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/08/27/e7ba3b8d-0149-3c34-8d8e-f11c22dcbadd.jpeg" group-title="HBO MAX", Kids-Harry Potter 5
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/08/27/e7ba3b8d-0149-3c34-8d8e-f11c22dcbadd.jpeg" group-title="KIDS", Kids-Harry Potter 5
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #KODIPROP:inputstream.adaptive.license_key=https://get.perfecttv.net/wvmax?editId=03a29f9d-b292-4ef8-861d-c911c0398447
 https://get.perfecttv.net/get_max.mpd?username=vip_3klp0es8&password=wg3piwEs&editId=03a29f9d-b292-4ef8-861d-c911c0398447&sub=t30
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/08/27/8a999684-46a5-3cf9-a13d-ea2d1bb10162.jpeg" group-title="HBO MAX", Kids-Harry Potter 6
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/08/27/8a999684-46a5-3cf9-a13d-ea2d1bb10162.jpeg" group-title="KIDS", Kids-Harry Potter 6
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #KODIPROP:inputstream.adaptive.license_key=https://get.perfecttv.net/wvmax?editId=97214560-494d-4180-887d-cdd66664bc9e
 https://get.perfecttv.net/get_max.mpd?username=vip_3klp0es8&password=wg3piwEs&editId=97214560-494d-4180-887d-cdd66664bc9e&sub=t44
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/08/27/782993c8-4a2c-392b-a271-dafbb8457be2.jpeg" group-title="HBO MAX", Kids-Harry Potter 7 Pt1
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/08/27/782993c8-4a2c-392b-a271-dafbb8457be2.jpeg" group-title="KIDS", Kids-Harry Potter 7 Pt1
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #KODIPROP:inputstream.adaptive.license_key=https://get.perfecttv.net/wvmax?editId=69c502cb-f393-47b3-96e5-bfe2c4cf3b65
 https://get.perfecttv.net/get_max.mpd?username=vip_3klp0es8&password=wg3piwEs&editId=69c502cb-f393-47b3-96e5-bfe2c4cf3b65&sub=t4
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/08/27/568e644a-eb9b-380c-bad9-367ff862fea1.jpeg" group-title="HBO MAX", Kids-Harry Potter 7 Pt2
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/08/27/568e644a-eb9b-380c-bad9-367ff862fea1.jpeg" group-title="KIDS", Kids-Harry Potter 7 Pt2
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #KODIPROP:inputstream.adaptive.license_key=https://get.perfecttv.net/wvmax?editId=9b9d9055-3638-468b-9889-096b22566f7b
 https://get.perfecttv.net/get_max.mpd?username=vip_3klp0es8&password=wg3piwEs&editId=9b9d9055-3638-468b-9889-096b22566f7b&sub=t32
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2025/02/21/d8511edb-7e97-3aa8-b2f5-3919cce9602b.jpeg" group-title="HBO MAX", Kids-Transformers One
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2025/02/21/d8511edb-7e97-3aa8-b2f5-3919cce9602b.jpeg" group-title="KIDS", Kids-Transformers One
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #KODIPROP:inputstream.adaptive.license_key=https://get.perfecttv.net/wvmax?editId=ef20e448-43cf-4da2-8730-671a933f3216
 https://get.perfecttv.net/get_max.mpd?username=vip_3klp0es8&password=wg3piwEs&editId=ef20e448-43cf-4da2-8730-671a933f3216&sub=t5
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/07/13/a5f86bc4-d7f7-336e-9b86-5c8a1386286b.jpeg" group-title="HBO MAX", Kids-How to Train Your Dragon
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/07/13/a5f86bc4-d7f7-336e-9b86-5c8a1386286b.jpeg" group-title="KIDS", Kids-How to Train Your Dragon
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #KODIPROP:inputstream.adaptive.license_key=https://get.perfecttv.net/wvmax?editId=bd0a8a14-4c41-4aa9-a80e-3f60353756ef
 https://get.perfecttv.net/get_max.mpd?username=vip_3klp0es8&password=wg3piwEs&editId=bd0a8a14-4c41-4aa9-a80e-3f60353756ef&sub=t6
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2023/12/13/b2eb7cba-159b-3e8a-bc9c-0648a21b30e2.jpeg" group-title="HBO MAX", Kids-Despicable Me
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2023/12/13/b2eb7cba-159b-3e8a-bc9c-0648a21b30e2.jpeg" group-title="KIDS", Kids-Despicable Me
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #KODIPROP:inputstream.adaptive.license_key=https://get.perfecttv.net/wvmax?editId=a6bd1572-0fb1-435e-8ea2-8d37c6e1f356
 https://get.perfecttv.net/get_max.mpd?username=vip_3klp0es8&password=wg3piwEs&editId=a6bd1572-0fb1-435e-8ea2-8d37c6e1f356&sub=t2
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2025/01/29/34b561f4-b438-31a8-9d38-d4760bb3ee6c.jpeg" group-title="HBO MAX", Kids-Despicable Me 4
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2025/01/29/34b561f4-b438-31a8-9d38-d4760bb3ee6c.jpeg" group-title="KIDS", Kids-Despicable Me 4
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #KODIPROP:inputstream.adaptive.license_key=https://get.perfecttv.net/wvmax?editId=82a2ffe0-3505-4c0a-9a79-67038a5bcc76
 https://get.perfecttv.net/get_max.mpd?username=vip_3klp0es8&password=wg3piwEs&editId=82a2ffe0-3505-4c0a-9a79-67038a5bcc76&sub=t2
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/11/18/251f1e00-6ccd-3c5c-a356-f62074458f63.jpeg" group-title="HBO MAX", Kids-Hugo
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/11/18/251f1e00-6ccd-3c5c-a356-f62074458f63.jpeg" group-title="KIDS", Kids-Hugo
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #KODIPROP:inputstream.adaptive.license_key=https://get.perfecttv.net/wvmax?editId=39d969d1-2a0d-4662-b438-6f4bc8d69cf3
 https://get.perfecttv.net/get_max.mpd?username=vip_3klp0es8&password=wg3piwEs&editId=39d969d1-2a0d-4662-b438-6f4bc8d69cf3&sub=t5
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/11/06/911d35f6-4d27-3e82-831e-24a66a34d3d0.jpeg" group-title="HBO MAX", Kids-IF
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/11/06/911d35f6-4d27-3e82-831e-24a66a34d3d0.jpeg" group-title="KIDS", Kids-IF
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #KODIPROP:inputstream.adaptive.license_key=https://get.perfecttv.net/wvmax?editId=d385a5d9-caa6-437b-935e-77e3a060da21
 https://get.perfecttv.net/get_max.mpd?username=vip_3klp0es8&password=wg3piwEs&editId=d385a5d9-caa6-437b-935e-77e3a060da21&sub=t3
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/10/24/96ad829a-0fed-3acc-8429-2533a244268f.jpeg" group-title="HBO MAX", Kids-Mr. Bean is Holiday
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/10/24/96ad829a-0fed-3acc-8429-2533a244268f.jpeg" group-title="KIDS", Kids-Mr. Bean is Holiday
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #KODIPROP:inputstream.adaptive.license_key=https://get.perfecttv.net/wvmax?editId=b35c844a-77f4-4373-8b2a-03e3d2a9e3bb
 https://get.perfecttv.net/get_max.mpd?username=vip_3klp0es8&password=wg3piwEs&editId=b35c844a-77f4-4373-8b2a-03e3d2a9e3bb&sub=t1
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2023/11/25/b5bb31fd-c41b-33db-bcc5-6f5167074fbf.jpeg" group-title="HBO MAX", Kids-Detective Pikachu
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2023/11/25/b5bb31fd-c41b-33db-bcc5-6f5167074fbf.jpeg" group-title="KIDS", Kids-Detective Pikachu
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #KODIPROP:inputstream.adaptive.license_key=https://get.perfecttv.net/wvmax?editId=fc18131f-0cf8-4a04-8da1-e4f0d6804c7d
 https://get.perfecttv.net/get_max.mpd?username=vip_3klp0es8&password=wg3piwEs&editId=fc18131f-0cf8-4a04-8da1-e4f0d6804c7d&sub=t19
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/02/28/5874bd0d-99db-316a-8d5c-91d32ea82ced.jpeg" group-title="HBO MAX", Kids-Tom & Jerry
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/02/28/5874bd0d-99db-316a-8d5c-91d32ea82ced.jpeg" group-title="KIDS", Kids-Tom & Jerry
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #KODIPROP:inputstream.adaptive.license_key=https://get.perfecttv.net/wvmax?editId=f84c6558-15a3-4237-8608-95106d91bb4d
 https://get.perfecttv.net/get_max.mpd?username=vip_3klp0es8&password=wg3piwEs&editId=f84c6558-15a3-4237-8608-95106d91bb4d&sub=t43
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/07/26/a658f8d6-068b-3a37-8007-9efa8cbdf200.jpeg" group-title="HBO MAX", Kids-Migration
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/07/26/a658f8d6-068b-3a37-8007-9efa8cbdf200.jpeg" group-title="KIDS", Kids-Migration
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #KODIPROP:inputstream.adaptive.license_key=https://get.perfecttv.net/wvmax?editId=c9807a3e-2fab-42dd-ae58-0817825754c2
 https://get.perfecttv.net/get_max.mpd?username=vip_3klp0es8&password=wg3piwEs&editId=c9807a3e-2fab-42dd-ae58-0817825754c2&sub=t6
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2025/01/23/dd74c225-829d-3036-9fb6-41c5a573a60b.jpeg" group-title="HBO MAX", Kids-Despicable Me 2
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2025/01/23/dd74c225-829d-3036-9fb6-41c5a573a60b.jpeg" group-title="KIDS", Kids-Despicable Me 2
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #KODIPROP:inputstream.adaptive.license_key=https://get.perfecttv.net/wvmax?editId=7dfe16cd-96b3-4a1f-81e4-ef4214ec35fb
 https://get.perfecttv.net/get_max.mpd?username=vip_3klp0es8&password=wg3piwEs&editId=7dfe16cd-96b3-4a1f-81e4-ef4214ec35fb&sub=t4
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/06/07/9383c6b2-caf1-3ee2-a2e2-80d0c74f3849.jpeg" group-title="HBO MAX", Kids-Kung Fu Panda
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/06/07/9383c6b2-caf1-3ee2-a2e2-80d0c74f3849.jpeg" group-title="KIDS", Kids-Kung Fu Panda
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #KODIPROP:inputstream.adaptive.license_key=https://get.perfecttv.net/wvmax?editId=2435805a-7f45-4326-8a73-e577f9cc94a7
 https://get.perfecttv.net/get_max.mpd?username=vip_3klp0es8&password=wg3piwEs&editId=2435805a-7f45-4326-8a73-e577f9cc94a7&sub=t2
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/11/07/f5d22898-3c4d-3e21-a644-3a687bf5cb3e.jpeg" group-title="HBO MAX", Kids-Kung Fu Panda 2
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/11/07/f5d22898-3c4d-3e21-a644-3a687bf5cb3e.jpeg" group-title="KIDS", Kids-Kung Fu Panda 2
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #KODIPROP:inputstream.adaptive.license_key=https://get.perfecttv.net/wvmax?editId=3925f141-9e29-4952-b6a7-2ff4f57cf5f4
 https://get.perfecttv.net/get_max.mpd?username=vip_3klp0es8&password=wg3piwEs&editId=3925f141-9e29-4952-b6a7-2ff4f57cf5f4&sub=t6
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/10/24/8c25e3a7-28ce-353b-bb7a-6d56fd39544a.jpeg" group-title="HBO MAX", Kids-Kung Fu Panda 4
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/10/24/8c25e3a7-28ce-353b-bb7a-6d56fd39544a.jpeg" group-title="KIDS", Kids-Kung Fu Panda 4
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #KODIPROP:inputstream.adaptive.license_key=https://get.perfecttv.net/wvmax?editId=1783ed5c-a800-4ae1-bbf0-df87efc6ee90
 https://get.perfecttv.net/get_max.mpd?username=vip_3klp0es8&password=wg3piwEs&editId=1783ed5c-a800-4ae1-bbf0-df87efc6ee90&sub=t6
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/03/28/cd26f59d-9286-3d0f-9f8e-cdc2dace53ad.jpeg" group-title="HBO MAX", Kids-Wonka
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/03/28/cd26f59d-9286-3d0f-9f8e-cdc2dace53ad.jpeg" group-title="KIDS", Kids-Wonka
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #KODIPROP:inputstream.adaptive.license_key=https://get.perfecttv.net/wvmax?editId=c49e1750-9a5b-4af7-a84f-fcffa7d92d6f
 https://get.perfecttv.net/get_max.mpd?username=vip_3klp0es8&password=wg3piwEs&editId=c49e1750-9a5b-4af7-a84f-fcffa7d92d6f&sub=t56
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2023/09/13/8ff9d556-078c-3ff2-9c4c-b0cd12f5d81b.jpeg" group-title="HBO MAX", Kids-Bee Movie
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2023/09/13/8ff9d556-078c-3ff2-9c4c-b0cd12f5d81b.jpeg" group-title="KIDS", Kids-Bee Movie
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #KODIPROP:inputstream.adaptive.license_key=https://get.perfecttv.net/wvmax?editId=5cf1039f-a16b-495b-a28d-f844126b4493
 https://get.perfecttv.net/get_max.mpd?username=vip_3klp0es8&password=wg3piwEs&editId=5cf1039f-a16b-495b-a28d-f844126b4493&sub=t2
-#EXTINF:-1 group-title="RADIO INDONESIA" tvg-logo="https://forgejo.plainrock127.xyz/avatars/2a377b6b23e650e3ea78703c16d7de58f77e35b37951f39142bc5a2f8048fd60",ID | CNN Indonesia
+#EXTINF:-1 group-title="KIDS" tvg-logo="https://forgejo.plainrock127.xyz/avatars/2a377b6b23e650e3ea78703c16d7de58f77e35b37951f39142bc5a2f8048fd60",ID | CNN Indonesia
 https://live.cnnindonesia.com/livecnn/smil:cnntv/chunklist.m3u8
-#EXTINF:-1 group-title="RADIO INDONESIA" tvg-logo="https://cdn.cnnindonesia.com/cnnid/mobile/images/logo__cnn.png?v=10.16.9",ID | CNN Indonesia TV
+#EXTINF:-1 group-title="KIDS" tvg-logo="https://cdn.cnnindonesia.com/cnnid/mobile/images/logo__cnn.png?v=10.16.9",ID | CNN Indonesia TV
 http://live.cnnindonesia.com/livecnn/smil:cnntv.smil/chunklist_w275412545_b384000_sleng.m3u8
