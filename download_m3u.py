@@ -37,15 +37,13 @@ GLOBAL_BLACKLIST_URLS = {
     "https://pulse1.zalmora.cfd/kuk1/usergendx472snx93kdgwqrnd.m3u8",
 }
 
-# --- PERUBAHAN: Menambahkan flag 'force_category' ---
-# EVENT tidak akan diubah nama grupnya (force_category: False)
 CONFIGURATIONS = [
     {
         "urls": ["https://bit.ly/KPL203", "https://liveevent.iptvbonekoe.workers.dev", "https://deccotech.online/tv/tvstream.html", "https://freeiptv2026.tsender57.workers.dev"],
         "output_file": "event_combined.m3u",
         "keywords": ALL_POSITIVE_KEYWORDS["EVENT_ONLY"],
         "category_name": "EVENT", 
-        "force_category": False, # Membiarkan nama grup asli khusus untuk Event
+        "force_category": False, 
         "description": "EVENT: Gabungan Event Asli"
     },
     {
@@ -53,7 +51,7 @@ CONFIGURATIONS = [
         "output_file": "sports_combined.m3u",
         "keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"],
         "category_name": "SPORTS",
-        "force_category": True,  # Paksa timpa jadi SPORTS
+        "force_category": True,  
         "description": "SPORTS: Gabungan Live"
     },
     {
@@ -109,8 +107,9 @@ def filter_m3u_by_config(config):
 
     print(f"\n--- Memproses [{description}] ---")
     
-    filtered_lines = ["#EXTM3U"]
-    total_entries = 0
+    # LIST SEMENTARA UNTUK MENYIMPAN DATA SEBELUM DIURUTKAN
+    # Format isi: (nama_channel_untuk_sorting, blok_metadata, stream_url)
+    channels_data = [] 
     
     for url in urls:
         if not url:
@@ -122,9 +121,8 @@ def filter_m3u_by_config(config):
             response = requests.get(url, headers=get_ott_headers(), timeout=(10, 30), stream=True, allow_redirects=True)
             response.raise_for_status()
             
-            # --- LOGIKA BARU: BUFFER PENUH ANTI-TERPOTONG ---
-            current_buffer = []  # Menampung seluruh baris tag (#KODIPROP, #EXTVLCOPT, #EXTINF, dll)
-            current_extinf = ""  # Hanya untuk menyimpan string #EXTINF demi pencocokan regex
+            current_buffer = []  
+            current_extinf = ""  
             
             for raw_line in response.iter_lines():
                 if not raw_line:
@@ -132,24 +130,20 @@ def filter_m3u_by_config(config):
                     
                 line = raw_line.decode('utf-8', errors='ignore').strip()
                 
-                # Abaikan baris #EXTM3U di tengah file
                 if line.startswith("#EXTM3U"):
                     continue
                 
-                # 1. Kumpulkan semua baris metadata ke dalam buffer
                 if line.startswith("#"):
                     current_buffer.append(line)
                     if line.startswith("#EXTINF"):
                         current_extinf = line
                         
-                # 2. Begitu menemukan URL, proses isi buffernya
                 elif len(line) > 5:
                     stream_url = line
                     
                     if current_buffer and current_extinf:
                         if stream_url not in GLOBAL_BLACKLIST_URLS:
                             
-                            # Ekstrak data dari baris #EXTINF
                             group_match = GROUP_TITLE_REGEX.search(current_extinf)
                             raw_group_title = group_match.group(1) if group_match else ""
                             
@@ -161,10 +155,15 @@ def filter_m3u_by_config(config):
                             clean_group_title = CLEANING_REGEX.sub(' ', raw_group_title).upper()
                             clean_channel_name = CLEANING_REGEX.sub(' ', raw_channel_name).upper()
                             
+                            # --- FITUR BARU: BUANG CHANNEL RADIO ---
+                            if "RADIO" in clean_channel_name or "RADIO" in clean_group_title:
+                                current_buffer = []
+                                current_extinf = ""
+                                continue # Langsung lewati ke baris berikutnya
+                            
                             is_match = any(k in clean_group_title or k in clean_channel_name for k in keywords)
                             
                             if is_match:
-                                # Jika ini kategori selain Event, timpa namanya
                                 if force_category:
                                     for idx in range(len(current_buffer)):
                                         b_line = current_buffer[idx]
@@ -183,12 +182,9 @@ def filter_m3u_by_config(config):
                                         elif b_line.upper().startswith("#EXTGRP:"):
                                             current_buffer[idx] = f"#EXTGRP:{target_category}"
                                 
-                                # Masukkan SEMUA baris metadata asli (termasuk KODIPROP/VLCOPT) dan URL ke hasil akhir
-                                filtered_lines.extend(current_buffer)
-                                filtered_lines.append(stream_url)
-                                total_entries += 1
+                                # Simpan ke list sementara (belum ditulis ke file) agar bisa diurutkan nanti
+                                channels_data.append((clean_channel_name, current_buffer, stream_url))
                                 
-                    # KOSONGKAN buffer secara wajib agar siap menampung channel berikutnya
                     current_buffer = []
                     current_extinf = ""
                         
@@ -196,7 +192,17 @@ def filter_m3u_by_config(config):
             print(f"  > WARNING: Gagal memproses {url}. Error: {e}")
             continue
             
-    print(f"Total {total_entries} saluran difilter.")
+    # --- FITUR BARU: URUTKAN BERDASARKAN ALFABET (NAMA CHANNEL) ---
+    # Ini akan membuat RCTI berjejer dengan RCTI lainnya, beIN 1 dengan beIN 1 lainnya.
+    channels_data.sort(key=lambda x: x[0])
+    
+    # Masukkan data yang sudah rapi berurutan ke hasil akhir
+    filtered_lines = ["#EXTM3U"]
+    for _, block_data, s_url in channels_data:
+        filtered_lines.extend(block_data)
+        filtered_lines.append(s_url)
+
+    print(f"Total {len(channels_data)} saluran difilter dan diurutkan.")
     
     with open(output_file, "w", encoding="utf-8") as f:
         f.write('\n'.join(filtered_lines) + '\n')
@@ -207,7 +213,7 @@ def filter_m3u_by_config(config):
 # ====================================================================
 
 if __name__ == "__main__":
-    print("Memulai Multi-Filter M3U (Full Metadata Catching)...")
+    print("Memulai Multi-Filter M3U (Sorted & Anti-Radio)...")
     for config in CONFIGURATIONS:
         filter_m3u_by_config(config)
-    print("\nProses selesai. Semua file M3U kini memiliki kode perlindungan lengkap!")
+    print("\nProses selesai. Semua file M3U kini berjejer rapi dan bebas Radio!")
