@@ -1,142 +1,151 @@
-import requests 
+import requests
 import re
-import os
 
 # ====================================================================
-# I. KONFIGURASI GLOBAL (URL, Kata Kunci, dan Blacklist)
+# I. KONFIGURASI GLOBAL
 # ====================================================================
 
-# DAFTAR KATA KUNCI POSITIF
 ALL_POSITIVE_KEYWORDS = {
-    # URL 1: Hanya Event 
-    "EVENT_ONLY": ["EVENT", "SEA GAMES", "premier league", "la liga", "serie a", "bundesliga", "ligue 1",  "eredivisie", "liga 1 indonesia", "liga pro saudi"], 
-    # URL 2: Hanya Sports & Live 
+    "EVENT_ONLY": ["EVENT", "SEA GAMES", "PREMIER LEAGUE", "LA LIGA", "SERIE A", "BUNDESLIGA", "LIGUE 1", "EREDIVISIE", "LIGA 1 INDONESIA", "LIGA PRO SAUDI"],
     "SPORTS_LIVE": ["SPORT", "SPORTS", "LIVE", "LANGSUNG", "OLAHRAGA", "MATCH", "LIGA", "FOOTBALL", "BEIN", "SPOT", "BE IN"]
 }
 
-# DAFTAR URL YANG DIKECUALIKAN SECARA GLOBAL
-GLOBAL_BLACKLIST_URLS = [
+# Typo 'hhttps' sudah diperbaiki. Menggunakan Set {} agar pencarian super cepat O(1)
+GLOBAL_BLACKLIST_URLS = {
     "https://bit.ly/428RaFW",
-    "https://bit.ly/DonzTelevisionNewAttention",
+    "https://iili.io/KfT7PJ2.jpg",
     "https://drive.google.com/uc?export=download&id=12slpj4XW5B5SlR9lruuZ77_NPtTHKKw8&usp",
-    "https://iili.io/KxLFPLJ.md.png",
-    "https://drive.google.com/uc?export=download&id=12slpj4XW5B5SlR9lruuZ77_NPtTHKKw8&usp",
-]
+    "https://shorter.me/SNozg",
+    "https://kuk1.modprimus.cfd/kuk3/usergendx0slfk9QssDx9lgxlsdmqrnd.m3u8",
+    "https://kuk1.modprimus.cfd/kuk2/usergendx0ul2J8tsDx9lgcddwqrnd.m3u8",
+    "https://kudos111.terranovax1.cfd/kuk4/usergendx0thc60skrdnnd.m3u8",
+    "https://pulse1.zalmora.cfd/kuk1/usergendx472snx93kdgwqrnd.m3u8",
+}
 
-# DAFTAR KONFIGURASI DENGAN ATURAN KHUSUS PER URL
 CONFIGURATIONS = [
     {
-        # PERUBAHAN UTAMA 1: URL kini berupa LIST
-        "urls": ["https://freeiptv2026.tsender57.workers.dev", "https://bit.ly/TVKITKAT", ""], 
-        "output_file": "event_combined.m3u", 
-        "keywords": ALL_POSITIVE_KEYWORDS["EVENT_ONLY"], 
+        "urls": ["https://bit.ly/KPL203", "https://liveevent.iptvbonekoe.workers.dev", "https://freeiptv2026.tsender57.workers.dev", "https://s.id/semartv"],
+        "output_file": "event_combined.m3u",
+        "keywords": ALL_POSITIVE_KEYWORDS["EVENT_ONLY"],
         "description": "EVENT: Gabungan dari beberapa sumber"
     },
     {
-        # Contoh jika Anda ingin Sports dari dua sumber digabungkan
-        "urls": ["https://donztelevisionpremium.icu/donztelevision/donztelevision.php", "https://bakulwifi.my.id/live.m3u"], 
-        "output_file": "sports_combined.m3u", 
-        "keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"], # Menggunakan Kategori Sports
+        # URL s.id/semartv bisa kamu masukkan ke dalam list ini
+        "urls": ["https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25", "https://deccotech.online/tv/tvstream.html", "https://s.id/semartv"],
+        "output_file": "sports_combined.m3u",
+        "keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"],
         "description": "SPORTS: Gabungan dari dua sumber Live"
     },
-        
 ]
 
-# Regular Expression
+# Regex untuk mengambil group-title
 GROUP_TITLE_REGEX = re.compile(r'group-title="([^"]*)"', re.IGNORECASE)
-CHANNEL_NAME_REGEX = re.compile(r',([^,]*)$')
-CLEANING_REGEX = re.compile(r'[^a-zA-Z0-9\s]+') 
+# Regex untuk membersihkan karakter (hanya alphanumeric dan spasi)
+CLEANING_REGEX = re.compile(r'[^a-zA-Z0-9\s]+')
 
 # ====================================================================
 # II. FUNGSI UTAMA FILTERING
 # ====================================================================
 
+def get_ott_headers():
+    """HTTP Headers palsu untuk mem-bypass blokir dasar dari link OTT / Shortlink."""
+    return {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "Accept": "*/*",
+        "Accept-Language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7",
+        "Origin": "https://www.google.com",
+        "Referer": "https://www.google.com/"
+    }
+
 def filter_m3u_by_config(config):
-    """Mengunduh dan memfilter berdasarkan konfigurasi tunggal (multi-URL)."""
-    # PERUBAHAN: Kini mengambil 'urls' (list) bukan 'url' (string)
-    urls = config["urls"] 
+    urls = config["urls"]
     output_file = config["output_file"]
     keywords = config["keywords"]
     description = config["description"]
-    
+
     print(f"\n--- Memproses [{description}] ---")
     
     filtered_lines = ["#EXTM3U"]
     total_entries = 0
     
-    # PERUBAHAN UTAMA 2: Iterasi melalui setiap URL di dalam daftar
     for url in urls:
+        if not url: # Melewati jika ada URL yang kosong ""
+            continue
+            
         print(f"  > Mengunduh dari: {url}")
         
         try:
-            response = requests.get(url, timeout=60) 
+            # allow_redirects=True Wajib ada untuk link s.id atau bit.ly
+            response = requests.get(url, headers=get_ott_headers(), timeout=(10, 30), stream=True, allow_redirects=True)
             response.raise_for_status()
-            content = response.text.splitlines()
-            print(f"  > Status: {response.status_code} | Baris Total: {len(content)}") 
-        except requests.exceptions.RequestException as e:
-            print(f"  > WARNING: Gagal mengunduh URL {url}. Melewatkan sumber ini. Error: {e}")
-            continue # Lanjut ke URL berikutnya jika gagal
-
-        i = 0
-        while i < len(content):
-            line = content[i].strip()
             
-            if line.startswith("#EXTINF"):
+            current_extinf = None
+            
+            # Membaca baris per baris secara live (Anti RAM Penuh)
+            for raw_line in response.iter_lines():
+                if not raw_line:
+                    continue
+                    
+                line = raw_line.decode('utf-8', errors='ignore').strip()
                 
-                if i + 1 < len(content):
-                    stream_url = content[i+1].strip()
+                # 1. Jika baris adalah info channel, simpan ke memori sementara
+                if line.startswith("#EXTINF"):
+                    current_extinf = line
                     
-                    is_valid_url = not stream_url.startswith("#") and len(stream_url) > 5
+                # 2. Jika baris berupa tag tambahan (seperti #EXTGRP), abaikan saja
+                elif line.startswith("#"):
+                    continue
                     
-                    if is_valid_url:
-                        
-                        # 1. Cek Blacklist GLOBAL
-                        if stream_url in GLOBAL_BLACKLIST_URLS:
-                            i += 2
-                            continue
+                # 3. Jika bukan komentar dan panjangnya > 5, ini pasti URL streamingnya
+                elif len(line) > 5:
+                    stream_url = line
+                    
+                    # Pastikan kita sedang memegang data #EXTINF dari baris sebelumnya
+                    if current_extinf:
+                        if stream_url not in GLOBAL_BLACKLIST_URLS:
                             
-                        # 2. Ekstrak dan Bersihkan
-                        group_match = GROUP_TITLE_REGEX.search(line)
-                        channel_match = CHANNEL_NAME_REGEX.search(line)
-                        
-                        raw_group_title = group_match.group(1) if group_match else ""
-                        raw_channel_name = channel_match.group(1) if channel_match else ""
-                        
-                        clean_group_title = CLEANING_REGEX.sub(' ', raw_group_title).upper()
-                        clean_channel_name = CLEANING_REGEX.sub(' ', raw_channel_name).upper()
-                        
-                        # 3. LOGIKA FILTER POSITIF KHUSUS
-                        is_match = any(keyword in clean_group_title or keyword in clean_channel_name for keyword in keywords)
-                        
-                        if is_match:
-                            filtered_lines.append(line)
-                            filtered_lines.append(stream_url)
-                            total_entries += 1
+                            # Ekstrak metadata
+                            group_match = GROUP_TITLE_REGEX.search(current_extinf)
+                            raw_group_title = group_match.group(1) if group_match else ""
                             
-                        i += 2
-                        continue
-                    else:
-                        i += 1
-                        continue
+                            # Ekstrak nama channel dengan aman (menghindari error jika tidak ada koma)
+                            if "," in current_extinf:
+                                raw_channel_name = current_extinf.split(',', 1)[1]
+                            else:
+                                raw_channel_name = current_extinf
+                            
+                            # Bersihkan teks
+                            clean_group_title = CLEANING_REGEX.sub(' ', raw_group_title).upper()
+                            clean_channel_name = CLEANING_REGEX.sub(' ', raw_channel_name).upper()
+                            
+                            # Cocokkan dengan kata kunci
+                            is_match = any(k in clean_group_title or k in clean_channel_name for k in keywords)
+                            
+                            if is_match:
+                                filtered_lines.append(current_extinf)
+                                filtered_lines.append(stream_url)
+                                total_entries += 1
+                                
+                        # Reset memory agar siap menerima channel berikutnya
+                        current_extinf = None
+                        
+        except requests.exceptions.RequestException as e:
+            print(f"  > WARNING: Gagal memproses {url}. Error: {e}")
+            continue
             
-            i += 1
-            
-    print(f"Total {total_entries} saluran difilter dari semua sumber.")
+    print(f"Total {total_entries} saluran difilter.")
     
-    # Simpan file
+    # Simpan ke file output
     with open(output_file, "w", encoding="utf-8") as f:
         f.write('\n'.join(filtered_lines) + '\n')
-    print(f"Playlist {output_file} berhasil disimpan.")
-
+    print(f"Playlist [{output_file}] berhasil disimpan.")
 
 # ====================================================================
 # III. EKSEKUSI
 # ====================================================================
 
 if __name__ == "__main__":
-    print(f"Memulai Multi-Filter M3U.")
-    
+    print("Memulai Multi-Filter M3U (Optimized & OTT Supported)...")
     for config in CONFIGURATIONS:
         filter_m3u_by_config(config)
-        
     print("\nProses Multi-Filter selesai.")
