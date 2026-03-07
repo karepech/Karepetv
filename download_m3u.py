@@ -8,21 +8,30 @@ import re
 ALL_POSITIVE_KEYWORDS = {
     "EVENT_ONLY": ["EVENT", "SEA GAMES", "PREMIER LEAGUE", "LA LIGA", "SERIE A", "BUNDESLIGA", "LIGUE 1", "EREDIVISIE", "LIGA 1 INDONESIA", "LIGA PRO SAUDI"],
     "SPORTS_LIVE": ["SPORT", "SPORTS", "LIVE", "LANGSUNG", "OLAHRAGA", "MATCH", "LIGA", "FOOTBALL", "BEIN", "SPOT", "BE IN"],
-    "NASIONAL_ID": [
+    "INDONESIA": [
         "INDONESIA", "NASIONAL", "LOKAL", "DAERAH",
         "RCTI", "SCTV", "INDOSIAR", "TRANS", "MNC", "GTV", "GLOBAL TV", 
-        "INEWS", "TVONE", "TV ONE", "METRO", "KOMPAS", "NET", "RTV", 
-        "TVRI", "BTV", "CNN INDONESIA", "CNBC", "JAK TV", "JTV"
+        "TVRI", "BTV", "JAK TV", "JTV", "RTV", "NET TV", "DAAI"
     ],
     "KIDS": [
         "KIDS", "ANAK", "CARTOON", "KARTUN", "NICKELODEON", "NICK JR", 
         "DISNEY", "CARTOON NETWORK", "CN", "BOOMERANG", "BABY", 
-        "ANIMATION", "ANIMASI", "TOON", "CERIA", "MENTARI"
+        "ANIMATION", "ANIMASI", "TOON", "CERIA", "MENTARI", "YEYA"
     ],
     "KNOWLEDGE": [
         "KNOWLEDGE", "EDUCATION", "EDUKASI", "PENGETAHUAN", "DISCOVERY", 
         "NATIONAL GEOGRAPHIC", "NAT GEO", "NATGEO", "HISTORY", 
         "ANIMAL PLANET", "SCIENCE", "SAINS", "DOCUMENTARY", "DOKUMENTER", "WILD"
+    ],
+    # --- KATAGORI BARU ---
+    "NEWS": [
+        "NEWS", "BERITA", "INFORMASI", "CNN", "CNBC", "INEWS", 
+        "TVONE", "TV ONE", "METRO", "KOMPAS", "AL JAZEERA", "BBC", "CNA", "BLOOMBERG"
+    ],
+    "RELIGI": [
+        "RELIGI", "ISLAM", "MUSLIM", "ROHANI", "DAKWAH", "NGAJI", 
+        "SUNNAH", "QURAN", "RODJA", "WESAL", "INSAN", "SURAU", 
+        "TVMU", "MTA", "KHAZANAH", "MADINAH", "MAKKAH", "NABAWI", "UMMAT"
     ]
 }
 
@@ -37,35 +46,41 @@ GLOBAL_BLACKLIST_URLS = {
     "https://pulse1.zalmora.cfd/kuk1/usergendx472snx93kdgwqrnd.m3u8",
 }
 
+# --- KONFIGURASI DENGAN SISTEM "EXCLUDE" (PENOLAKAN SILANG) ---
 CONFIGURATIONS = [
     {
         "urls": ["https://bit.ly/KPL203", "https://liveevent.iptvbonekoe.workers.dev", "https://deccotech.online/tv/tvstream.html", "https://freeiptv2026.tsender57.workers.dev"],
         "output_file": "event_combined.m3u",
         "keywords": ALL_POSITIVE_KEYWORDS["EVENT_ONLY"],
+        "exclude_keywords": [], # Event murni, tidak perlu filter penolakan
         "category_name": "EVENT", 
-        "force_category": False, 
+        "force_category": False, # Event tidak diubah namanya agar "apa adanya"
         "description": "EVENT: Gabungan Event Asli"
     },
     {
         "urls": ["https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25", "https://deccotech.online/tv/tvstream.html", "https://s.id/semartv"],
         "output_file": "sports_combined.m3u",
         "keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"],
+        "exclude_keywords": ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["NEWS"] + ALL_POSITIVE_KEYWORDS["RELIGI"],
         "category_name": "SPORTS",
         "force_category": True,  
         "description": "SPORTS: Gabungan Live"
     },
     {
         "urls": ["https://s.id/semartv", "https://liveevent.iptvbonekoe.workers.dev", "https://freeiptv2026.tsender57.workers.dev", "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25"],
-        "output_file": "nasional_combined.m3u",
-        "keywords": ALL_POSITIVE_KEYWORDS["NASIONAL_ID"],
-        "category_name": "NASIONAL",
+        "output_file": "indonesia_combined.m3u", # Berubah nama jadi indonesia_combined
+        "keywords": ALL_POSITIVE_KEYWORDS["INDONESIA"],
+        # Kunci utama: Tolak semua channel yang berbau Sport, News, Kids, Religi, Edukasi dari folder Indonesia!
+        "exclude_keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"] + ALL_POSITIVE_KEYWORDS["NEWS"] + ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["KNOWLEDGE"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["EVENT_ONLY"],
+        "category_name": "INDONESIA",
         "force_category": True,
-        "description": "NASIONAL: Gabungan Saluran Lokal"
+        "description": "INDONESIA: Gabungan TV Indonesia Murni"
     },
     {
         "urls": ["https://s.id/semartv", "https://liveevent.iptvbonekoe.workers.dev", "https://freeiptv2026.tsender57.workers.dev", "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25"],
         "output_file": "kids_combined.m3u",
         "keywords": ALL_POSITIVE_KEYWORDS["KIDS"],
+        "exclude_keywords": ALL_POSITIVE_KEYWORDS["NEWS"] + ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"] + ALL_POSITIVE_KEYWORDS["RELIGI"],
         "category_name": "KIDS",
         "force_category": True,
         "description": "KIDS: Gabungan Saluran Anak"
@@ -74,9 +89,28 @@ CONFIGURATIONS = [
         "urls": ["https://s.id/semartv", "https://liveevent.iptvbonekoe.workers.dev", "https://freeiptv2026.tsender57.workers.dev", "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25"],
         "output_file": "knowledge_combined.m3u",
         "keywords": ALL_POSITIVE_KEYWORDS["KNOWLEDGE"],
+        "exclude_keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"] + ALL_POSITIVE_KEYWORDS["KIDS"],
         "category_name": "KNOWLEDGE",
         "force_category": True,
         "description": "KNOWLEDGE: Gabungan Saluran Edukasi"
+    },
+    {
+        "urls": ["https://s.id/semartv", "https://liveevent.iptvbonekoe.workers.dev", "https://freeiptv2026.tsender57.workers.dev", "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25"],
+        "output_file": "news_combined.m3u",
+        "keywords": ALL_POSITIVE_KEYWORDS["NEWS"],
+        "exclude_keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"] + ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["RELIGI"],
+        "category_name": "NEWS",
+        "force_category": True,
+        "description": "NEWS: Gabungan Saluran Berita"
+    },
+    {
+        "urls": ["https://s.id/semartv", "https://liveevent.iptvbonekoe.workers.dev", "https://freeiptv2026.tsender57.workers.dev", "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25"],
+        "output_file": "religi_combined.m3u",
+        "keywords": ALL_POSITIVE_KEYWORDS["RELIGI"],
+        "exclude_keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"] + ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["NEWS"],
+        "category_name": "RELIGI",
+        "force_category": True,
+        "description": "RELIGI: Gabungan Saluran Dakwah & Rohani"
     },
 ]
 
@@ -101,14 +135,13 @@ def filter_m3u_by_config(config):
     urls = config["urls"]
     output_file = config["output_file"]
     keywords = config["keywords"]
+    exclude_keywords = config["exclude_keywords"] # Fitur baru
     target_category = config["category_name"] 
     force_category = config["force_category"]
     description = config["description"]
 
     print(f"\n--- Memproses [{description}] ---")
     
-    # LIST SEMENTARA UNTUK MENYIMPAN DATA SEBELUM DIURUTKAN
-    # Format isi: (nama_channel_untuk_sorting, blok_metadata, stream_url)
     channels_data = [] 
     
     for url in urls:
@@ -155,15 +188,20 @@ def filter_m3u_by_config(config):
                             clean_group_title = CLEANING_REGEX.sub(' ', raw_group_title).upper()
                             clean_channel_name = CLEANING_REGEX.sub(' ', raw_channel_name).upper()
                             
-                            # --- FITUR BARU: BUANG CHANNEL RADIO ---
+                            # Buang Channel Radio
                             if "RADIO" in clean_channel_name or "RADIO" in clean_group_title:
                                 current_buffer = []
                                 current_extinf = ""
-                                continue # Langsung lewati ke baris berikutnya
+                                continue 
                             
+                            # Logika Utama: Cek apakah ada kecocokan positif
                             is_match = any(k in clean_group_title or k in clean_channel_name for k in keywords)
                             
-                            if is_match:
+                            # Logika Pengecualian: Pastikan TIDAK mengandung kata kunci dari kategori lain
+                            is_excluded = any(k in clean_group_title or k in clean_channel_name for k in exclude_keywords)
+                            
+                            # Hanya proses jika COCOK dan TIDAK DITOLAK
+                            if is_match and not is_excluded:
                                 if force_category:
                                     for idx in range(len(current_buffer)):
                                         b_line = current_buffer[idx]
@@ -182,7 +220,6 @@ def filter_m3u_by_config(config):
                                         elif b_line.upper().startswith("#EXTGRP:"):
                                             current_buffer[idx] = f"#EXTGRP:{target_category}"
                                 
-                                # Simpan ke list sementara (belum ditulis ke file) agar bisa diurutkan nanti
                                 channels_data.append((clean_channel_name, current_buffer, stream_url))
                                 
                     current_buffer = []
@@ -192,17 +229,15 @@ def filter_m3u_by_config(config):
             print(f"  > WARNING: Gagal memproses {url}. Error: {e}")
             continue
             
-    # --- FITUR BARU: URUTKAN BERDASARKAN ALFABET (NAMA CHANNEL) ---
-    # Ini akan membuat RCTI berjejer dengan RCTI lainnya, beIN 1 dengan beIN 1 lainnya.
+    # Urutkan secara alfabet berdasarkan nama channel
     channels_data.sort(key=lambda x: x[0])
     
-    # Masukkan data yang sudah rapi berurutan ke hasil akhir
     filtered_lines = ["#EXTM3U"]
     for _, block_data, s_url in channels_data:
         filtered_lines.extend(block_data)
         filtered_lines.append(s_url)
 
-    print(f"Total {len(channels_data)} saluran difilter dan diurutkan.")
+    print(f"Total {len(channels_data)} saluran difilter secara ketat.")
     
     with open(output_file, "w", encoding="utf-8") as f:
         f.write('\n'.join(filtered_lines) + '\n')
@@ -213,7 +248,7 @@ def filter_m3u_by_config(config):
 # ====================================================================
 
 if __name__ == "__main__":
-    print("Memulai Multi-Filter M3U (Sorted & Anti-Radio)...")
+    print("Memulai Multi-Filter M3U (Strict Exclusion & Sorted)...")
     for config in CONFIGURATIONS:
         filter_m3u_by_config(config)
-    print("\nProses selesai. Semua file M3U kini berjejer rapi dan bebas Radio!")
+    print("\nProses selesai. 7 Kategori murni telah berhasil dibuat!")
