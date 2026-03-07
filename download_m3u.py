@@ -37,42 +37,48 @@ GLOBAL_BLACKLIST_URLS = {
     "https://pulse1.zalmora.cfd/kuk1/usergendx472snx93kdgwqrnd.m3u8",
 }
 
-# --- PERUBAHAN: Menambahkan "category_name" untuk menimpa nama grup di M3U ---
+# --- PERUBAHAN: Menambahkan flag 'force_category' ---
+# EVENT tidak akan diubah nama grupnya (force_category: False)
 CONFIGURATIONS = [
     {
         "urls": ["https://bit.ly/KPL203", "https://liveevent.iptvbonekoe.workers.dev", "https://deccotech.online/tv/tvstream.html", "https://freeiptv2026.tsender57.workers.dev"],
         "output_file": "event_combined.m3u",
         "keywords": ALL_POSITIVE_KEYWORDS["EVENT_ONLY"],
         "category_name": "EVENT", 
-        "description": "EVENT: Gabungan dari beberapa sumber"
+        "force_category": False, # Membiarkan nama grup asli khusus untuk Event
+        "description": "EVENT: Gabungan Event Asli"
     },
     {
         "urls": ["https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25", "https://deccotech.online/tv/tvstream.html", "https://s.id/semartv"],
         "output_file": "sports_combined.m3u",
         "keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"],
         "category_name": "SPORTS",
-        "description": "SPORTS: Gabungan dari sumber Live"
+        "force_category": True,  # Paksa timpa jadi SPORTS
+        "description": "SPORTS: Gabungan Live"
     },
     {
         "urls": ["https://s.id/semartv", "https://liveevent.iptvbonekoe.workers.dev", "https://freeiptv2026.tsender57.workers.dev", "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25"],
         "output_file": "nasional_combined.m3u",
         "keywords": ALL_POSITIVE_KEYWORDS["NASIONAL_ID"],
         "category_name": "NASIONAL",
-        "description": "NASIONAL: Gabungan Saluran TV Indonesia & Lokal"
+        "force_category": True,
+        "description": "NASIONAL: Gabungan Saluran Lokal"
     },
     {
         "urls": ["https://s.id/semartv", "https://liveevent.iptvbonekoe.workers.dev", "https://freeiptv2026.tsender57.workers.dev", "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25"],
         "output_file": "kids_combined.m3u",
         "keywords": ALL_POSITIVE_KEYWORDS["KIDS"],
         "category_name": "KIDS",
-        "description": "KIDS: Gabungan Saluran Anak & Kartun"
+        "force_category": True,
+        "description": "KIDS: Gabungan Saluran Anak"
     },
     {
         "urls": ["https://s.id/semartv", "https://liveevent.iptvbonekoe.workers.dev", "https://freeiptv2026.tsender57.workers.dev", "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25"],
         "output_file": "knowledge_combined.m3u",
         "keywords": ALL_POSITIVE_KEYWORDS["KNOWLEDGE"],
         "category_name": "KNOWLEDGE",
-        "description": "KNOWLEDGE: Gabungan Saluran Edukasi & Dokumenter"
+        "force_category": True,
+        "description": "KNOWLEDGE: Gabungan Saluran Edukasi"
     },
 ]
 
@@ -97,7 +103,8 @@ def filter_m3u_by_config(config):
     urls = config["urls"]
     output_file = config["output_file"]
     keywords = config["keywords"]
-    target_category = config["category_name"] # Menarik nama kategori yang dipaksa
+    target_category = config["category_name"] 
+    force_category = config["force_category"]
     description = config["description"]
 
     print(f"\n--- Memproses [{description}] ---")
@@ -115,8 +122,9 @@ def filter_m3u_by_config(config):
             response = requests.get(url, headers=get_ott_headers(), timeout=(10, 30), stream=True, allow_redirects=True)
             response.raise_for_status()
             
-            current_block = []   
-            current_extinf = ""  
+            # --- LOGIKA BARU: BUFFER PENUH ANTI-TERPOTONG ---
+            current_buffer = []  # Menampung seluruh baris tag (#KODIPROP, #EXTVLCOPT, #EXTINF, dll)
+            current_extinf = ""  # Hanya untuk menyimpan string #EXTINF demi pencocokan regex
             
             for raw_line in response.iter_lines():
                 if not raw_line:
@@ -124,21 +132,24 @@ def filter_m3u_by_config(config):
                     
                 line = raw_line.decode('utf-8', errors='ignore').strip()
                 
-                if line.startswith("#EXTINF"):
-                    current_block = [line] 
-                    current_extinf = line
-                    
-                elif line.startswith("#"):
-                    if current_block: 
-                        current_block.append(line)
-                    
+                # Abaikan baris #EXTM3U di tengah file
+                if line.startswith("#EXTM3U"):
+                    continue
+                
+                # 1. Kumpulkan semua baris metadata ke dalam buffer
+                if line.startswith("#"):
+                    current_buffer.append(line)
+                    if line.startswith("#EXTINF"):
+                        current_extinf = line
+                        
+                # 2. Begitu menemukan URL, proses isi buffernya
                 elif len(line) > 5:
                     stream_url = line
                     
-                    if current_block and current_extinf:
+                    if current_buffer and current_extinf:
                         if stream_url not in GLOBAL_BLACKLIST_URLS:
                             
-                            # Cek pencocokan dengan kata kunci
+                            # Ekstrak data dari baris #EXTINF
                             group_match = GROUP_TITLE_REGEX.search(current_extinf)
                             raw_group_title = group_match.group(1) if group_match else ""
                             
@@ -152,41 +163,40 @@ def filter_m3u_by_config(config):
                             
                             is_match = any(k in clean_group_title or k in clean_channel_name for k in keywords)
                             
-                            # --- LOGIKA BARU: MEMAKSA NAMA KATEGORI (OVERWRITE) ---
                             if is_match:
-                                extinf_line = current_block[0]
+                                # Jika ini kategori selain Event, timpa namanya
+                                if force_category:
+                                    for idx in range(len(current_buffer)):
+                                        b_line = current_buffer[idx]
+                                        
+                                        if b_line.startswith("#EXTINF"):
+                                            if 'group-title="' in b_line:
+                                                b_line = re.sub(r'group-title="[^"]*"', f'group-title="{target_category}"', b_line, flags=re.IGNORECASE)
+                                            else:
+                                                if ',' in b_line:
+                                                    parts = b_line.split(',', 1)
+                                                    b_line = f'{parts[0]} group-title="{target_category}",{parts[1]}'
+                                                else:
+                                                    b_line = f'{b_line} group-title="{target_category}"'
+                                            current_buffer[idx] = b_line
+                                            
+                                        elif b_line.upper().startswith("#EXTGRP:"):
+                                            current_buffer[idx] = f"#EXTGRP:{target_category}"
                                 
-                                # 1. Timpa group-title di dalam #EXTINF
-                                if 'group-title="' in extinf_line:
-                                    extinf_line = re.sub(r'group-title="[^"]*"', f'group-title="{target_category}"', extinf_line, flags=re.IGNORECASE)
-                                else:
-                                    # Jika dari sananya tidak ada group-title, kita suntikkan secara paksa
-                                    if ',' in extinf_line:
-                                        parts = extinf_line.split(',', 1)
-                                        extinf_line = f'{parts[0]} group-title="{target_category}",{parts[1]}'
-                                    else:
-                                        extinf_line = f'{extinf_line} group-title="{target_category}"'
-                                
-                                current_block[0] = extinf_line
-                                
-                                # 2. Timpa baris #EXTGRP (jika ada di dalam blok)
-                                for idx in range(1, len(current_block)):
-                                    if current_block[idx].upper().startswith("#EXTGRP:"):
-                                        current_block[idx] = f"#EXTGRP:{target_category}"
-                                
-                                # Masukkan URL dan gabungkan ke output
-                                current_block.append(stream_url) 
-                                filtered_lines.extend(current_block) 
+                                # Masukkan SEMUA baris metadata asli (termasuk KODIPROP/VLCOPT) dan URL ke hasil akhir
+                                filtered_lines.extend(current_buffer)
+                                filtered_lines.append(stream_url)
                                 total_entries += 1
                                 
-                        current_block = []
-                        current_extinf = ""
+                    # KOSONGKAN buffer secara wajib agar siap menampung channel berikutnya
+                    current_buffer = []
+                    current_extinf = ""
                         
         except requests.exceptions.RequestException as e:
             print(f"  > WARNING: Gagal memproses {url}. Error: {e}")
             continue
             
-    print(f"Total {total_entries} saluran difilter menjadi grup [{target_category}].")
+    print(f"Total {total_entries} saluran difilter.")
     
     with open(output_file, "w", encoding="utf-8") as f:
         f.write('\n'.join(filtered_lines) + '\n')
@@ -197,7 +207,7 @@ def filter_m3u_by_config(config):
 # ====================================================================
 
 if __name__ == "__main__":
-    print("Memulai Multi-Filter M3U (Auto-Grouping/Overwrite)...")
+    print("Memulai Multi-Filter M3U (Full Metadata Catching)...")
     for config in CONFIGURATIONS:
         filter_m3u_by_config(config)
-    print("\nProses selesai. Menu M3U sekarang bersih dan seragam!")
+    print("\nProses selesai. Semua file M3U kini memiliki kode perlindungan lengkap!")
