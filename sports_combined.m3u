@@ -775,14 +775,6 @@ http://104.238.222.251:9090/279422_.m3u8
 http://104.238.205.58:9090/279421_.m3u8
 #EXTINF:-1 tvg-id="BEKSports.us@West" tvg-logo="https://i.imgur.com/1l3t5jd.png" group-title="SPORTS",BEK TV Sports West (720p)
 https://cdn3.wowza.com/5/ZWQ1K2NYTmpFbGsr/BEK-WOWZA-1/smil:BEKPRIMEW.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="BloombergTV.us@AsiaLiveEvent" tvg-logo="https://i.imgur.com/OuogLHx.png" group-title="SPORTS",Bloomberg TV Asia Live Event (720p)
-https://bloomberg.com/media-manifest/streams/asia-event.m3u8
-#EXTINF:-1 tvg-id="BloombergTV.us@EMEALiveEvent" tvg-logo="https://i.imgur.com/OuogLHx.png" group-title="SPORTS",Bloomberg TV EMEA Live Event (720p)
-https://bloomberg.com/media-manifest/streams/eu-event.m3u8
-#EXTINF:-1 tvg-id="BloombergTV.us@LiveEvent" tvg-logo="https://i.imgur.com/OuogLHx.png" group-title="SPORTS",Bloomberg TV US Live Event (720p)
-https://bloomberg.com/media-manifest/streams/us-event.m3u8
-#EXTINF:-1 tvg-id="BloombergTV.us@PoliticsLiveEvent" tvg-logo="https://i.imgur.com/OuogLHx.png" group-title="SPORTS",Bloomberg TV US Politics Live Event (720p)
-https://bloomberg.com/media-manifest/streams/politics.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0
 #EXTINF:-1 tvg-id="" tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/486_144.png" group-title="SPORTS",BOLA ARENA 1
 ##KODIPROP:inputstream.adaptive.license_type=clearkey
@@ -827,10 +819,6 @@ http://199.127.63.143:9090/279514_.m3u8
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #EXTINF:-1 group-title="SPORTS" tvg-logo="https://www.tvchinese.net/uploads/tv/fyzq.jpg",CCTV FOOTBALL
 http://38.75.136.137:98/gslb/dsdqpub/fyzq.m3u8?auth=testpub
-#EXTINF:-1 group-title="SPORTS",CCTV Sports Football
-http://38.75.136.137:98/gslb/dsdqpub/fyzq.m3u8?auth=testpub
-#EXTINF:-1 group-title="SPORTS",CCTV Sports Music
-http://38.75.136.137:98/gslb/dsdqpub/fyyy.m3u8?auth=testpub
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0
 #EXTINF:-1 tvg-id="" tvg-logo="https://mimipipi22.github.io/logo/png/cctv5.png" group-title="SPORTS",CCTV5
 http://38.75.136.137:98/gslb/dsdqpub/cctv5hd.m3u8?auth=testpub
@@ -1036,8 +1024,6 @@ https://hd.pixelhd.online:443/play/pAVJjXWDXadNqa4ml_eoyF3wk-1sPQUfC2uib-R5TyE/.
 #EXTVLCOPT:http-origin=https://pixelsport.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://hd.pixelhd.online:443/play/pAVJjXWDXadNqa4ml_eoyJKbdz6w37WhU4IYZUIzYYw/.m3u8
-#EXTINF:-1 tvg-logo="" group-title="SPORTS",ESPN NEWS
-http://199.127.63.143:9090/279428_.m3u8
 #EXTINF:-1 tvg-logo="" group-title="SPORTS",ESPN U
 http://79.143.17.114:9090/279427_.m3u8
 #EXTVLCOPT:http-user-agent=ExoPlayerDemo/2.15.1 (Linux; Android 13) ExoPlayerLib/2.15.1
@@ -1423,8 +1409,6 @@ http://208.87.242.79/livehttpplay?channel_id=13011
 http://208.87.242.79/livehttpplay?channel_id=13012
 #EXTINF:-1 tvg-logo="" group-title="SPORTS",NOW SPORTS 7
 http://dragon1977.com:80/047306b75f/b5a06cc482d6/802482
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SPORTS",Now Sports Channel
-http://hls.168.us.kg/u/630/master.m3u8
 #EXTINF:-1 tvg-id="Now.Sports.Premier.League.3.hk" tvg-logo="https://i.imgur.com/kKFsIHz.png" group-title="SPORTS",Now Sports Premier League 3 HD
 https://7pal.short.gy/nowhkp3
 #EXTINF:-1 tvg-id="Now.Sports.Premier.League.1.hk" tvg-logo="https://i.imgur.com/WWi5Cjx.png" group-title="SPORTS",Now Sports Premier League1 HD
@@ -1718,10 +1702,6 @@ https://7pal.short.gy/SkSpMainE
 http://6zirt9yx.otttv.pw/iptv/HEGN4VXXQQSYCA/9310/index.m3u8
 #EXTINF:-1 tvg-logo="" group-title="SPORTS",SKY SPORTS MIX
 http://108.181.135.111:9090/286229_.m3u8
-#EXTINF:-1 tvg-name="Sky Sports F1 FHD" tvg-id="SkySp.News.HD.uk" tvg-logo="https://i.ibb.co/7WMDvDP/sky-news.png" group-title="SPORTS" radio="false",SKY SPORTS NEWS
-http://6zirt9yx.otttv.pw/iptv/HEGN4VXXQQSYCA/9314/index.m3u8
-#EXTINF:-1 tvg-id="SkySp.News.HD.uk" tvg-logo="https://i.imgur.com/buUigAI.png" group-title="SPORTS",Sky Sports News-FHD
-https://7pal.short.gy/ssportsnw
 #EXTINF:-1 tvg-logo="" group-title="SPORTS",SKY SPORTS PREMIER LEAGUE
 http://79.143.17.114:9090/164433_.m3u8
 #EXTINF:-1 tvg-id="SkySp.PL.HD.uk" tvg-logo="https://i.imgur.com/CMChNM4.png" group-title="SPORTS",Sky Sports PremierLeague FHD
@@ -2018,8 +1998,6 @@ https://alpha.tv.online.tm/hls/ch004.m3u8
 https://af7a8b4e.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctZ2JfdGFsa1NQT1JUX0hMUw/playlist.m3u8
 #EXTINF:-1 tvg-id="Teledeporte.es@SD" tvg-logo="https://i.imgur.com/b0H5f62.png" group-title="SPORTS",Teledeporte (1080p)
 https://d1cctoeg0n48w5.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-mnixw9wn5ugmv/TeledeporteES.m3u8
-#EXTINF:-1 tvg-logo="" group-title="SPORTS",Tianjin Sports
-http://38.75.136.137:98/gslb/dsdqpub/tjtv5.m3u8?auth=testpub
 #EXTINF:-1 tvg-id="TJKTV.tr@SD" tvg-logo="https://i.imgur.com/3zHdkYG.png" group-title="SPORTS",TJK TV (1080p)
 https://tjktv-live.tjk.org/tjktv.m3u8
 #EXTINF:-1 tvg-chno="315" tvg-id="" tvg-logo="https://lo1.in/arg/tntsp.png" group-title="SPORTS",TNT SPORT (PIXEL)
