@@ -13,7 +13,7 @@ ALL_POSITIVE_KEYWORDS = {
 # PERBAIKAN 1: Menggunakan Set {} agar pencarian blacklist berkecepatan $O(1)$
 GLOBAL_BLACKLIST_URLS = {
     "https://bit.ly/428RaFW",
-    "https://bit.ly/DonzTelevisionNewAttention",
+    "https://iili.io/KfT7PJ2.jpg",
     "https://drive.google.com/uc?export=download&id=12slpj4XW5B5SlR9lruuZ77_NPtTHKKw8&usp",
     "https://shorter.me/SNozg",
 }
