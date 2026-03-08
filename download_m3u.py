@@ -52,6 +52,7 @@ GLOBAL_BLACKLIST_URLS = {
     "https://iili.io/KfT7PJ2.jpg",
     "https://drive.google.com/uc?export=download&id=12slpj4XW5B5SlR9lruuZ77_NPtTHKKw8&usp",
     "https://shorter.me/SNozg",
+    "https://mimipipi22.github.io/logo/offline.m3u8",
     "https://dn720407.ca.archive.org/0/items/warkop-dki-mana-tahan/Warkop%20DKI%20-%20Mana%20Tahan.mp4",
     "https://mantul.biz.id:443/inetwork/gayanet12/19132.ts",
     "http://sauridigital.my.id/infogeulis/JOIN%20GROUP.mp4",
