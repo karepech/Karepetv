@@ -5,7 +5,19 @@ import re
 # I. KONFIGURASI GLOBAL
 # ====================================================================
 
-# Penyempurnaan: "CCTV" masuk News, "NET" diubah ke "NET TV", "CN" dihapus agar tidak bentrok dengan CNBC/CNN
+# DAFTAR URL SUMBER UTAMA (Semua kategori akan menarik data dari sini)
+MASTER_URLS = [
+    "https://bit.ly/KPL203", 
+    "https://liveevent.iptvbonekoe.workers.dev", 
+    "https://deccotech.online/tv/tvstream.html",
+    "https://bit.ly/TVKITKAT",
+    "https://s.id/semartv",
+    "https://semar25.short.gy",
+    "https://s.id/bwifi",
+    "https://freeiptv2026.tsender57.workers.dev",
+    "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25"
+]
+
 ALL_POSITIVE_KEYWORDS = {
     "EVENT_ONLY": ["EVENT", "SEA GAMES", "PREMIER LEAGUE", "LA LIGA", "SERIE A", "BUNDESLIGA", "LIGUE 1", "EREDIVISIE", "LIGA 1 INDONESIA", "LIGA PRO SAUDI"],
     "SPORTS_LIVE": ["SPORT", "SPORTS", "LIVE", "LANGSUNG", "OLAHRAGA", "MATCH", "LIGA", "FOOTBALL", "BEIN", "SPOTV", "BE IN"],
@@ -46,25 +58,19 @@ GLOBAL_BLACKLIST_URLS = {
     "https://pulse1.zalmora.cfd/kuk1/usergendx472snx93kdgwqrnd.m3u8",
 }
 
-# --- KONFIGURASI 7 KATEGORI (Semua Force Category = True) ---
+# --- KONFIGURASI 7 KATEGORI (Memanggil MASTER_URLS) ---
 CONFIGURATIONS = [
     {
-        "urls": ["https://bit.ly/KPL203", "https://liveevent.iptvbonekoe.workers.dev", 
-                 "https://deccotech.online/tv/tvstream.html",
-                 "https://bit.ly/TVKITKAT",
-                 "https://s.id/semartv",
-                 "https://semar25.short.gy",
-                 "https://s.id/bwifi",
-                 "https://freeiptv2026.tsender57.workers.dev"],
+        "urls": MASTER_URLS,
         "output_file": "event_combined.m3u",
         "keywords": ALL_POSITIVE_KEYWORDS["EVENT_ONLY"],
         "exclude_keywords": ALL_POSITIVE_KEYWORDS["NEWS"] + ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["KNOWLEDGE"], 
         "category_name": "EVENT", 
-        "force_category": True, # PERUBAHAN: Event sekarang digabungkan ke dalam 1 folder "EVENT"
+        "force_category": True, 
         "description": "EVENT: Gabungan Event Olahraga"
     },
     {
-        "urls": ["https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25", "https://deccotech.online/tv/tvstream.html", "https://s.id/semartv"],
+        "urls": MASTER_URLS,
         "output_file": "sports_combined.m3u",
         "keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"],
         "exclude_keywords": ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["NEWS"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["KNOWLEDGE"],
@@ -73,7 +79,7 @@ CONFIGURATIONS = [
         "description": "SPORTS: Gabungan Live"
     },
     {
-        "urls": ["https://s.id/semartv", "https://liveevent.iptvbonekoe.workers.dev", "https://freeiptv2026.tsender57.workers.dev", "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25"],
+        "urls": MASTER_URLS,
         "output_file": "indonesia_combined.m3u", 
         "keywords": ALL_POSITIVE_KEYWORDS["INDONESIA"],
         "exclude_keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"] + ALL_POSITIVE_KEYWORDS["NEWS"] + ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["KNOWLEDGE"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["EVENT_ONLY"],
@@ -82,7 +88,7 @@ CONFIGURATIONS = [
         "description": "INDONESIA: Gabungan TV Indonesia Murni"
     },
     {
-        "urls": ["https://s.id/semartv", "https://liveevent.iptvbonekoe.workers.dev", "https://freeiptv2026.tsender57.workers.dev", "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25"],
+        "urls": MASTER_URLS,
         "output_file": "kids_combined.m3u",
         "keywords": ALL_POSITIVE_KEYWORDS["KIDS"],
         "exclude_keywords": ALL_POSITIVE_KEYWORDS["NEWS"] + ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["EVENT_ONLY"],
@@ -91,7 +97,7 @@ CONFIGURATIONS = [
         "description": "KIDS: Gabungan Saluran Anak"
     },
     {
-        "urls": ["https://s.id/semartv", "https://liveevent.iptvbonekoe.workers.dev", "https://freeiptv2026.tsender57.workers.dev", "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25"],
+        "urls": MASTER_URLS,
         "output_file": "knowledge_combined.m3u",
         "keywords": ALL_POSITIVE_KEYWORDS["KNOWLEDGE"],
         "exclude_keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"] + ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["NEWS"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["EVENT_ONLY"],
@@ -100,7 +106,7 @@ CONFIGURATIONS = [
         "description": "KNOWLEDGE: Gabungan Saluran Edukasi"
     },
     {
-        "urls": ["https://s.id/semartv", "https://liveevent.iptvbonekoe.workers.dev", "https://freeiptv2026.tsender57.workers.dev", "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25"],
+        "urls": MASTER_URLS,
         "output_file": "news_combined.m3u",
         "keywords": ALL_POSITIVE_KEYWORDS["NEWS"],
         "exclude_keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"] + ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["EVENT_ONLY"],
@@ -109,7 +115,7 @@ CONFIGURATIONS = [
         "description": "NEWS: Gabungan Saluran Berita & CCTV"
     },
     {
-        "urls": ["https://s.id/semartv", "https://liveevent.iptvbonekoe.workers.dev", "https://freeiptv2026.tsender57.workers.dev", "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25"],
+        "urls": MASTER_URLS,
         "output_file": "religi_combined.m3u",
         "keywords": ALL_POSITIVE_KEYWORDS["RELIGI"],
         "exclude_keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"] + ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["NEWS"] + ALL_POSITIVE_KEYWORDS["EVENT_ONLY"],
@@ -250,7 +256,7 @@ def filter_m3u_by_config(config):
 # ====================================================================
 
 if __name__ == "__main__":
-    print("Memulai Multi-Filter M3U (Force Category & Anti-Tumpang-Tindih)...")
+    print("Memulai Multi-Filter M3U (Master URL Configuration)...")
     for config in CONFIGURATIONS:
         filter_m3u_by_config(config)
     print("\nProses selesai. 7 Kategori M3U super rapi siap digunakan!")
