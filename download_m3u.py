@@ -7,7 +7,7 @@ import re
 
 # DAFTAR URL SUMBER UTAMA (Semua kategori akan menarik data dari sini)
 MASTER_URLS = [
-    "https://freeiptv2026.tsender57.workers.dev", 
+    "https://deccotech.online/tv/tvstream.html", 
     "", 
     "",
     "",
