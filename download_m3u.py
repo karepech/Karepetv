@@ -16,7 +16,7 @@ MASTER_URLS = [
     "https://bit.ly/TVKITKAT",
     "https://spoo.me/tvplurl04",
     "https://bit.ly/TVKITKAT",
-    "",
+    "https://raw.githubusercontent.com/karepech/BakulwifiTV/refs/heads/main/live.m3u",
     "",
     "https://aspaltvpasti.top/xxx/merah.php"
 ]
