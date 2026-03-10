@@ -16,7 +16,7 @@ MASTER_URLS = [
     "https://bit.ly/TVKITKAT",
     "https://spoo.me/tvplurl04",
     "https://bit.ly/TVKITKAT",
-    "https://raw.githubusercontent.com/karepech/BakulwifiTV/refs/heads/main/live.m3u",
+    "",
     "",
     "https://aspaltvpasti.top/xxx/merah.php"
 ]
@@ -75,7 +75,7 @@ CONFIGURATIONS = [
         "exclude_keywords": ALL_POSITIVE_KEYWORDS["NEWS"] + ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["KNOWLEDGE"], 
         "category_name": "LIVE EVENT SPORTS", 
         "force_category": True, 
-        "require_time": True,  # <--- WAJIB ADA JAM TAYANG HANYA DI SINI
+        "require_time": True,
         "description": "EVENT: Gabungan Event Olahraga (Wajib Berjadwal)"
     },
     {
@@ -85,7 +85,7 @@ CONFIGURATIONS = [
         "exclude_keywords": ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["NEWS"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["KNOWLEDGE"],
         "category_name": "SPORTS",
         "force_category": True,  
-        "require_time": False, # <--- BEBAS JAM TAYANG
+        "require_time": False, 
         "description": "SPORTS: Gabungan Live"
     },
     {
@@ -145,6 +145,9 @@ GROUP_TITLE_REGEX = re.compile(r'group-title="([^"]*)"', re.IGNORECASE)
 CLEANING_REGEX = re.compile(r'[^a-zA-Z0-9\s]+')
 TIME_PATTERN_REGEX = re.compile(r'\d{1,2}[:.]\d{2}')
 
+# REGEX PEMBERSIH KUALITAS/KATA EKSTRA (Untuk menyamakan Bein 1 HD & Bein 1 Ind)
+QUALITY_CLEANER_REGEX = re.compile(r'\b(hd|fhd|uhd|sd|4k|8k|tv|ind|indo|id|my|sg|ch|channel|network|plus|max|raw|hevc|hq)\b', re.IGNORECASE)
+
 # ====================================================================
 # II. FUNGSI UTAMA FILTERING
 # ====================================================================
@@ -161,6 +164,16 @@ def get_ott_headers():
         "Referer": "https://www.google.com/"
     }
 
+def normalize_channel_name(name):
+    """
+    Fungsi untuk membuang karakter aneh dan embel-embel seperti HD, FHD, IND.
+    Contoh: "BEIN SPORTS 1 HD" -> "beinsports1"
+    """
+    clean_name = CLEANING_REGEX.sub(' ', name) # Buang simbol
+    clean_name = QUALITY_CLEANER_REGEX.sub('', clean_name) # Buang kata "HD", "IND", dll
+    clean_name = re.sub(r'\s+', '', clean_name) # Hapus semua spasi
+    return clean_name.lower()
+
 def filter_m3u_by_config(config):
     urls = config["urls"]
     output_file = config["output_file"]
@@ -168,7 +181,7 @@ def filter_m3u_by_config(config):
     exclude_keywords = config["exclude_keywords"] 
     target_category = config["category_name"] 
     force_category = config["force_category"]
-    require_time = config.get("require_time", False) # Ambil setelan wajib jam tayang
+    require_time = config.get("require_time", False) 
     description = config["description"]
 
     print(f"\n--- Memproses [{description}] ---")
@@ -177,6 +190,12 @@ def filter_m3u_by_config(config):
     
     for url in urls:
         if not url: continue
+        
+        # =========================================================
+        # TRACKER DI-RESET DI SINI (SETIAP GANTI PENYEDIA/URL BARU)
+        # =========================================================
+        seen_channels = set() 
+        # =========================================================
             
         print(f"  > Mengunduh dari: {url}")
         
@@ -209,10 +228,25 @@ def filter_m3u_by_config(config):
                             raw_group_title = group_match.group(1) if group_match else ""
                             
                             if "," in current_extinf:
-                                raw_channel_name = current_extinf.split(',', 1)[1]
+                                raw_channel_name = current_extinf.split(',', 1)[1].strip()
                             else:
-                                raw_channel_name = current_extinf
+                                raw_channel_name = current_extinf.strip()
                             
+                            # =======================================================
+                            # SISTEM CEGAT DOBEL (PER-PROVIDER/LINK)
+                            # =======================================================
+                            # Kategori EVENT_ONLY (Live Event) tidak boleh dicegat, 
+                            # karena beda jam tayang = beda acara (walau di channel yg sama).
+                            if not require_time: 
+                                normalized_name = normalize_channel_name(raw_channel_name)
+                                if normalized_name in seen_channels:
+                                    current_buffer = []
+                                    current_extinf = ""
+                                    continue # LEWATI JIKA NAMA SUDAH ADA DI PROVIDER INI
+                                else:
+                                    seen_channels.add(normalized_name) # CATAT NAMA BARU
+                            # =======================================================
+
                             clean_group_title = CLEANING_REGEX.sub(' ', raw_group_title).upper()
                             clean_channel_name = CLEANING_REGEX.sub(' ', raw_channel_name).upper()
                             
@@ -221,8 +255,6 @@ def filter_m3u_by_config(config):
                                 current_extinf = ""
                                 continue 
 
-                            # LOGIKA FILTER JAM TAYANG:
-                            # Berlaku HANYA jika require_time = True (Kategori Live Event)
                             if require_time and not contains_time_pattern(raw_channel_name):
                                 current_buffer = []
                                 current_extinf = ""
@@ -277,7 +309,7 @@ def filter_m3u_by_config(config):
 # ====================================================================
 
 if __name__ == "__main__":
-    print("Memulai Multi-Filter M3U...")
+    print("Memulai Multi-Filter M3U (Anti-Dobel Per Penyedia)...")
     for config in CONFIGURATIONS:
         filter_m3u_by_config(config)
     print("\nProses selesai. File M3U siap digunakan!")
