@@ -9,13 +9,16 @@ import re
 MASTER_URLS = [
     "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25", 
     "https://semar25.short.gy", 
-    "https://semar25.short.gy",
+    "https://deccotech.online/tv/tvstream.html",
     "https://bit.ly/KPL203",
     "https://liveevent.iptvbonekoe.workers.dev",
     "http://sauridigital.my.id/kerbaunakal/2026TVGNS.html",
     "https://bit.ly/TVKITKAT",
-    "https://deccotech.online/tv/tvstream.html",
-    ""
+    "https://spoo.me/tvplurl04",
+    "https://bit.ly/TVKITKAT",
+    "",
+    "",
+    "https://aspaltvpasti.top/xxx/merah.php"
 ]
 
 ALL_POSITIVE_KEYWORDS = {
