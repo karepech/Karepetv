@@ -66,7 +66,7 @@ GLOBAL_BLACKLIST_URLS = {
     "https://pulse1.zalmora.cfd/kuk1/usergendx472snx93kdgwqrnd.m3u8",
 }
 
-# --- KONFIGURASI 7 KATEGORI (Memanggil MASTER_URLS) ---
+# --- KONFIGURASI 7 KATEGORI ---
 CONFIGURATIONS = [
     {
         "urls": MASTER_URLS,
@@ -75,7 +75,8 @@ CONFIGURATIONS = [
         "exclude_keywords": ALL_POSITIVE_KEYWORDS["NEWS"] + ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["KNOWLEDGE"], 
         "category_name": "LIVE EVENT SPORTS", 
         "force_category": True, 
-        "description": "EVENT: Gabungan Event Olahraga"
+        "require_time": True,  # <--- WAJIB ADA JAM TAYANG HANYA DI SINI
+        "description": "EVENT: Gabungan Event Olahraga (Wajib Berjadwal)"
     },
     {
         "urls": MASTER_URLS,
@@ -84,6 +85,7 @@ CONFIGURATIONS = [
         "exclude_keywords": ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["NEWS"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["KNOWLEDGE"],
         "category_name": "SPORTS",
         "force_category": True,  
+        "require_time": False, # <--- BEBAS JAM TAYANG
         "description": "SPORTS: Gabungan Live"
     },
     {
@@ -93,6 +95,7 @@ CONFIGURATIONS = [
         "exclude_keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"] + ALL_POSITIVE_KEYWORDS["NEWS"] + ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["KNOWLEDGE"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["EVENT_ONLY"],
         "category_name": "INDONESIA",
         "force_category": True,
+        "require_time": False,
         "description": "INDONESIA: Gabungan TV Indonesia Murni"
     },
     {
@@ -102,6 +105,7 @@ CONFIGURATIONS = [
         "exclude_keywords": ALL_POSITIVE_KEYWORDS["NEWS"] + ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["EVENT_ONLY"],
         "category_name": "KIDS",
         "force_category": True,
+        "require_time": False,
         "description": "KIDS: Gabungan Saluran Anak"
     },
     {
@@ -111,6 +115,7 @@ CONFIGURATIONS = [
         "exclude_keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"] + ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["NEWS"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["EVENT_ONLY"],
         "category_name": "KNOWLEDGE",
         "force_category": True,
+        "require_time": False,
         "description": "KNOWLEDGE: Gabungan Saluran Edukasi"
     },
     {
@@ -120,6 +125,7 @@ CONFIGURATIONS = [
         "exclude_keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"] + ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["EVENT_ONLY"],
         "category_name": "NEWS",
         "force_category": True,
+        "require_time": False,
         "description": "NEWS: Gabungan Saluran Berita & CCTV"
     },
     {
@@ -129,6 +135,7 @@ CONFIGURATIONS = [
         "exclude_keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"] + ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["NEWS"] + ALL_POSITIVE_KEYWORDS["EVENT_ONLY"],
         "category_name": "RELIGI",
         "force_category": True,
+        "require_time": False,
         "description": "RELIGI: Gabungan Saluran Dakwah & Rohani"
     },
 ]
@@ -136,10 +143,14 @@ CONFIGURATIONS = [
 # Regex
 GROUP_TITLE_REGEX = re.compile(r'group-title="([^"]*)"', re.IGNORECASE)
 CLEANING_REGEX = re.compile(r'[^a-zA-Z0-9\s]+')
+TIME_PATTERN_REGEX = re.compile(r'\d{1,2}[:.]\d{2}')
 
 # ====================================================================
 # II. FUNGSI UTAMA FILTERING
 # ====================================================================
+
+def contains_time_pattern(text):
+    return bool(TIME_PATTERN_REGEX.search(text))
 
 def get_ott_headers():
     return {
@@ -157,6 +168,7 @@ def filter_m3u_by_config(config):
     exclude_keywords = config["exclude_keywords"] 
     target_category = config["category_name"] 
     force_category = config["force_category"]
+    require_time = config.get("require_time", False) # Ambil setelan wajib jam tayang
     description = config["description"]
 
     print(f"\n--- Memproses [{description}] ---")
@@ -164,8 +176,7 @@ def filter_m3u_by_config(config):
     channels_data = [] 
     
     for url in urls:
-        if not url:
-            continue
+        if not url: continue
             
         print(f"  > Mengunduh dari: {url}")
         
@@ -177,13 +188,11 @@ def filter_m3u_by_config(config):
             current_extinf = ""  
             
             for raw_line in response.iter_lines():
-                if not raw_line:
-                    continue
+                if not raw_line: continue
                     
                 line = raw_line.decode('utf-8', errors='ignore').strip()
                 
-                if line.startswith("#EXTM3U"):
-                    continue
+                if line.startswith("#EXTM3U"): continue
                 
                 if line.startswith("#"):
                     current_buffer.append(line)
@@ -207,16 +216,21 @@ def filter_m3u_by_config(config):
                             clean_group_title = CLEANING_REGEX.sub(' ', raw_group_title).upper()
                             clean_channel_name = CLEANING_REGEX.sub(' ', raw_channel_name).upper()
                             
-                            # Buang Channel Radio
                             if "RADIO" in clean_channel_name or "RADIO" in clean_group_title:
                                 current_buffer = []
                                 current_extinf = ""
                                 continue 
+
+                            # LOGIKA FILTER JAM TAYANG:
+                            # Berlaku HANYA jika require_time = True (Kategori Live Event)
+                            if require_time and not contains_time_pattern(raw_channel_name):
+                                current_buffer = []
+                                current_extinf = ""
+                                continue
                             
                             is_match = any(k in clean_group_title or k in clean_channel_name for k in keywords)
                             is_excluded = any(k in clean_group_title or k in clean_channel_name for k in exclude_keywords)
                             
-                            # Cek Kategori Murni (Masuk ke Target Grup yang Ditentukan)
                             if is_match and not is_excluded:
                                 if force_category:
                                     for idx in range(len(current_buffer)):
@@ -245,7 +259,6 @@ def filter_m3u_by_config(config):
             print(f"  > WARNING: Gagal memproses {url}. Error: {e}")
             continue
             
-    # Urutkan secara alfabet berdasarkan nama channel agar berjejer rapi
     channels_data.sort(key=lambda x: x[0])
     
     filtered_lines = ["#EXTM3U"]
@@ -264,7 +277,7 @@ def filter_m3u_by_config(config):
 # ====================================================================
 
 if __name__ == "__main__":
-    print("Memulai Multi-Filter M3U (Master URL Configuration)...")
+    print("Memulai Multi-Filter M3U...")
     for config in CONFIGURATIONS:
         filter_m3u_by_config(config)
-    print("\nProses selesai. 7 Kategori M3U super rapi siap digunakan!")
+    print("\nProses selesai. File M3U siap digunakan!")
