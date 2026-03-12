@@ -361,17 +361,29 @@ https://7pal.short.gy/tsn4ca
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:90.0) Gecko/20100101 Firefox/140.0
 https://7pal.short.gy/tsn5ca
 #EXTINF:-1 xui-id="11539" tvg-id="" tvg-name="" tvg-logo="https://i.ibb.co.com/2tBx8pR/TNT1.png" group-title="SPORTS", TNT Sport 1 🇬🇧
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:90.0) Gecko/20100101 Firefox/140.0
-https://7pal.short.gy/tntspts1
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b
+https://qw.live.pv-cdn.net/OTTB/lhr-nitro/live/clients/dash/enc/cllekigzzn/out/v1/bd3b0c314fff4bb1ab4693358f3cd2d3/cenc.mpd
 #EXTINF:-1 xui-id="11540" tvg-id="" tvg-name="" tvg-logo="https://i.ibb.co.com/fpHYC7N/TNT2.png" group-title="SPORTS", TNT Sport 2 🇬🇧
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:90.0) Gecko/20100101 Firefox/140.0
-https://7pal.short.gy/tntspts2
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=f288380ca4cef9ad3f27a92a08e9bb8b:9f18d26291d9230833501f7f822f6875
+https://qw.live.pv-cdn.net/OTTB/lhr-nitro/live/clients/dash/enc/fb6jy4pxts/out/v1/f8fa17f087564f51aa4d5c700be43ec4/cenc.mpd
 #EXTINF:-1 xui-id="11541" tvg-id="" tvg-name="" tvg-logo="https://i.ibb.co.com/5r1gJwz/TNT3.png" group-title="SPORTS", TNT Sport 3 🇬🇧
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:90.0) Gecko/20100101 Firefox/140.0
-https://7pal.short.gy/tntspts3
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=1d96ab366bbe6451edf7407b58e2fa16:0116201f4a63ac5bf5787d2c610c41a7
+https://qw.live.pv-cdn.net/OTTB/lhr-nitro/live/clients/dash/enc/5sxuux529k/out/v1/bb548a3626cd4708afbb94a58d71dce9/cenc.mpd
 #EXTINF:-1 xui-id="11542" tvg-id="" tvg-name="" tvg-logo="https://i.ibb.co.com/ZgQ5jVD/TNT4.png" group-title="SPORTS", TNT Sport 4 🇬🇧
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:90.0) Gecko/20100101 Firefox/140.0
-https://7pal.short.gy/tntspts4
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=192b1115da041585c77200128549efa1:634e10efe4abbb14be400a3ccbac0258
+https://qw.live.pv-cdn.net/OTTB/lhr-nitro/live/clients/dash/enc/pnu10tp36z/out/v1/912e9db56d75403b8a9ac0a719110f36/cenc.mpd
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT3YgKhAMGlkn_9DFUR74KdIPl4oi-qpXTaiLrOa_630grs2jqRjkRd9BI&s=10" group-title="SPORTS",BUNDESLIGA 2
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=8bcec6b31cc9edcb6768ab26548e22c3:e3c5b07328894c33734a4de6ae55a87f
@@ -895,6 +907,30 @@ https://streams2.sofast.tv/ptnr-yupptv/title-SPORT-FISHING-TV-ENG_yupptv/v1/mast
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #EXTVLCOPT:http-user-agent=YuppTV/7.18.1 (Linux;Android 16) ExoPlayerLib/2.19.1
 https://streams2.sofast.tv/ptnr-yupptv/title-adventuresportstv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/dbac0562-cc83-4443-a546-44c04912102a/manifest.m3u8?hdnts=st%3D1769558011~exp%3D1769579611~acl%3D%21%2A%2Fptnr-yupptv%2Ftitle-adventuresportstv%2Fv1%2Fmaster%2F611d79b11b77e2f571934fd80ca1413453772ac7%2Fdbac0562-cc83-4443-a546-44c04912102a%2F%2A%21%2Fpayload%2Fyupptvott_5_-1_7c03c72952b44aa4_US_128.24.160.230_yuppfast_2_channel_292_-1%2F%2A~data%3Dyupptvott_5_-1_7c03c72952b44aa4_US_128.24.160.230_yuppfast_2_channel_292_-1~hmac%3D9696120bc087fbdef152080e7e85d4de6dffa9f0b36abc97667a6eab06827145
+#EXTINF:-1 group-title="SPORTS" tvg-id="TNTSports1.uk" tvg-logo="https://www.lyngsat.com/logo/tv/tt/tnt-sports-uk-us-uk.png",TNT SPORTS 1 🇬🇧
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b
+https://qw.live.pv-cdn.net/OTTB/lhr-nitro/live/clients/dash/enc/cllekigzzn/out/v1/bd3b0c314fff4bb1ab4693358f3cd2d3/cenc.mpd
+#EXTINF:-1 group-title="SPORTS" tvg-id="TNTSports2.uk" tvg-logo="https://www.lyngsat.com/logo/tv/tt/tnt-sports-uk-us-uk.png",TNT SPORTS 2 🇬🇧
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=f288380ca4cef9ad3f27a92a08e9bb8b:9f18d26291d9230833501f7f822f6875
+https://qw.live.pv-cdn.net/OTTB/lhr-nitro/live/clients/dash/enc/fb6jy4pxts/out/v1/f8fa17f087564f51aa4d5c700be43ec4/cenc.mpd
+#EXTINF:-1 group-title="SPORTS" tvg-id="TNTSports3.uk" tvg-logo="https://www.lyngsat.com/logo/tv/tt/tnt-sports-uk-us-uk.png",TNT SPORTS 3 🇬🇧
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=1d96ab366bbe6451edf7407b58e2fa16:0116201f4a63ac5bf5787d2c610c41a7
+https://qw.live.pv-cdn.net/OTTB/lhr-nitro/live/clients/dash/enc/5sxuux529k/out/v1/bb548a3626cd4708afbb94a58d71dce9/cenc.mpd
+#EXTINF:-1 group-title="SPORTS" tvg-id="TNTSports4.uk" tvg-logo="https://www.lyngsat.com/logo/tv/tt/tnt-sports-uk-us-uk.png",TNT SPORTS 4 🇬🇧
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=192b1115da041585c77200128549efa1:634e10efe4abbb14be400a3ccbac0258
+https://qw.live.pv-cdn.net/OTTB/lhr-nitro/live/clients/dash/enc/pnu10tp36z/out/v1/912e9db56d75403b8a9ac0a719110f36/cenc.mpd
 #EXTINF:-1 tvg-id="FOX SPORTS.mx" tvg-name="" tvg-logo="https://i.ibb.co.com/4s30xbj/fxspmx.png" group-title="SPORTS", FOX SPORTS 🇲🇽
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
@@ -919,6 +955,16 @@ https://otte.live.fly.ww.aiv-cdn.net/dub-nitro/live/dash/enc/wybgz0orr8/out/v1/2
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=9f327d24c66fbd84e15ab5c9ead7c7a4:83837185529c0c4048f81386c2d36426
 https://otte.live.fly.ww.aiv-cdn.net/dub-nitro/live/dash/enc/fdx74zqzhu/out/v1/7d7a8c6981a842b98a683e9fbfe51d17/cenc.mpd
+#EXTINF:-1 tvg-logo="https://i.ibb.co.com/7Md2qy9/fubosp.png" group-title="SPORTS", FUBO SPORTS 1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:90.0) Gecko/20100101 Firefox/90.0
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=dc69b6159a0f9f0a4e03b3ff91cbacd5:d0dcbcd7723bc40df0bf34c9c092d51f
+http://qw.live.pv-cdn.net/OTTB/pdx-nitro/live/clients/dash/enc/3b7qwiqzk3/out/v1/9f14895badca43e6a716db021dcd0c31/cenc.mpd
+#EXTINF:-1 tvg-logo="https://i.ibb.co.com/7Md2qy9/fubosp.png" group-title="SPORTS", FUBO SPORTS 2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:90.0) Gecko/20100101 Firefox/90.0
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=3dcfbec0e7146928baa55210bf2cb62f:bc85f74f815d9be5ae1dd6defaa05135
+http://qw.live.pv-cdn.net/OTTB/pdx-nitro/live/clients/dash/enc/uiffe4jhf0/out/v1/3534efafca8c4815adbb4d2e9a1fe003/cenc.mpd
 #EXTINF:-1 tvg-logo="" group-title="SPORTS",CBS Sports
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=d9623774ac5c8c351aafe97c5fe70267:5164e6d05164a2d65fa8fcc962aa4861
@@ -1251,14 +1297,6 @@ http://208.87.242.79/livehttpplay?channel_id=13011
 http://208.87.242.79/livehttpplay?channel_id=13012
 #EXTINF:-1 tvg-logo="" group-title="SPORTS",NOW SPORTS 7
 http://dragon1977.com:80/047306b75f/b5a06cc482d6/802482
-#EXTINF:-1 tvg-logo="" group-title="SPORTS",TNT SPORTS 1
-http://dragon1977.com:80/047306b75f/b5a06cc482d6/578001
-#EXTINF:-1 tvg-logo="" group-title="SPORTS",TNT SPORTS 2
-http://dragon1977.com:80/047306b75f/b5a06cc482d6/578000
-#EXTINF:-1 tvg-logo="" group-title="SPORTS",TNT SPORTS 3
-http://dragon1977.com:80/047306b75f/b5a06cc482d6/577999
-#EXTINF:-1 tvg-logo="" group-title="SPORTS",TNT SPORTS 4
-http://dragon1977.com:80/047306b75f/b5a06cc482d6/577998
 #EXTINF:-1 tvg-logo="" group-title="SPORTS",TNT SPORTS 5
 http://dragon1977.com:80/047306b75f/b5a06cc482d6/577997
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/11/10/cbf5b555-f73d-3af4-8043-1fb047f3ea77.jpeg" group-title="SPORTS", Action-2-Special Delivery
