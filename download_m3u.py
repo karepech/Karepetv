@@ -74,7 +74,7 @@ CONFIGURATIONS = [
         "exclude_keywords": ALL_POSITIVE_KEYWORDS["NEWS"] + ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["KNOWLEDGE"], 
         "category_name": "LIVE EVENT SPORTS", 
         "force_category": True, 
-        "require_time": True,  # <--- KHUSUS LIVE EVENT (ATURAN ASLI DIPERTAHANKAN)
+        "require_time": True, 
         "description": "EVENT: Gabungan Event Olahraga (Wajib Berjadwal)"
     },
     {
@@ -184,12 +184,15 @@ def filter_m3u_by_config(config):
     
     channels_data = [] 
     
+    # =========================================================
+    # KUNCIAN BARU: TRACKER LINK STREAMING LINTAS PENYEDIA
+    # =========================================================
+    global_seen_urls = set()
+    
     for url in urls:
         if not url: continue
         
-        # =========================================================
-        # TRACKER DI-RESET SETIAP GANTI PENYEDIA/URL BARU
-        # =========================================================
+        # Tracker nama channel (di-reset setiap ganti penyedia)
         seen_channels = set() 
             
         print(f"  > Mengunduh dari: {url}")
@@ -219,6 +222,14 @@ def filter_m3u_by_config(config):
                     if current_buffer and current_extinf:
                         if stream_url not in GLOBAL_BLACKLIST_URLS:
                             
+                            # =======================================================
+                            # ATURAN BARU: CEGAT JIKA LINK STREAMING SUDAH PERNAH DIAMBIL
+                            # =======================================================
+                            if stream_url in global_seen_urls:
+                                current_buffer = []
+                                current_extinf = ""
+                                continue
+                            
                             group_match = GROUP_TITLE_REGEX.search(current_extinf)
                             raw_group_title = group_match.group(1) if group_match else ""
                             
@@ -228,14 +239,14 @@ def filter_m3u_by_config(config):
                                 raw_channel_name = current_extinf.strip()
                             
                             # =======================================================
-                            # SISTEM CEGAT DOBEL (TIDAK BERLAKU UNTUK LIVE EVENT)
+                            # SISTEM CEGAT DOBEL NAMA DALAM 1 PROVIDER (Kecuali Event)
                             # =======================================================
                             if not require_time: 
                                 normalized_name = normalize_channel_name(raw_channel_name)
                                 if normalized_name in seen_channels:
                                     current_buffer = []
                                     current_extinf = ""
-                                    continue # Abaikan jika sudah ada di provider ini
+                                    continue # Abaikan jika nama channel sudah ada di provider ini
                                 else:
                                     seen_channels.add(normalized_name) # Simpan nama baru
                             # =======================================================
@@ -277,6 +288,9 @@ def filter_m3u_by_config(config):
                                 
                                 channels_data.append((clean_channel_name, current_buffer, stream_url))
                                 
+                                # Tambahkan link ke dalam tracker global agar tidak diambil lagi
+                                global_seen_urls.add(stream_url)
+                                
                     current_buffer = []
                     current_extinf = ""
                         
@@ -285,13 +299,13 @@ def filter_m3u_by_config(config):
             continue
             
     # ====================================================================
-    # SISTEM PENGURUTAN (SORTING) YANG BARU
+    # SISTEM PENGURUTAN (SORTING)
     # ====================================================================
     if require_time:
-        # 1. Khusus LIVE EVENT SPORTS -> Tetap diurutkan pakai Abjad (A-Z) seperti aturan sebelumnya
+        # 1. Khusus LIVE EVENT SPORTS -> Tetap diurutkan pakai Abjad (A-Z)
         channels_data.sort(key=lambda x: x[0])
     else:
-        # 2. Kategori Reguler -> TIDAK DIURUT ABJAD (Dibiarkan apa adanya sesuai urutan Provider lalu Posisi Pabrik)
+        # 2. Kategori Reguler -> TIDAK DIURUT ABJAD (Urutan asli Provider)
         pass 
     # ====================================================================
     
@@ -311,7 +325,7 @@ def filter_m3u_by_config(config):
 # ====================================================================
 
 if __name__ == "__main__":
-    print("Memulai Multi-Filter M3U (Susunan Asli Per Provider)...")
+    print("Memulai Multi-Filter M3U (Susunan Asli Per Provider + Filter Link Ganda)...")
     for config in CONFIGURATIONS:
         filter_m3u_by_config(config)
     print("\nProses selesai. File M3U siap digunakan!")
