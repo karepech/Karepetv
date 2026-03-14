@@ -16,7 +16,7 @@ MASTER_URLS = [
     "http://sauridigital.my.id/kerbaunakal/2026TVGNS.html",
     "https://bit.ly/TVKITKAT",
     "https://spoo.me/tvplurl04",
-    "https://bit.ly/TVKITKAT",
+    "https://tvg.short.gy/GEULISALLOTT26",
     "https://aspaltvpasti.top/xxx/merah.php"
 ]
 
