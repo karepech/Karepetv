@@ -138,10 +138,10 @@ TIME_PATTERN_REGEX = re.compile(r'\d{1,2}[:.]\d{2}')
 QUALITY_CLEANER_REGEX = re.compile(r'\b(hd|fhd|uhd|sd|4k|8k|tv|ind|indo|id|my|sg|ch|channel|network|plus|max|raw|hevc|hq)\b', re.IGNORECASE)
 
 # ====================================================================
-# BUKU CATATAN PUSAT (SUPER GLOBAL TRACKER)
-# Mencatat SEMUA link streaming agar tidak ada duplikat lintas kategori
+# TRACKER GLOBAL
 # ====================================================================
-GLOBAL_SEEN_STREAM_URLS = set()
+# Untuk menyimpan URL yang sudah dikelompokkan agar tidak masuk ke kategori lain
+CATEGORIZED_URLS = set()
 
 # ====================================================================
 # II. FUNGSI UTAMA MESIN SEDOT & FILTERING
@@ -182,22 +182,19 @@ def download_playlist(url):
             
             if line.startswith("#EXTM3U"): continue
             
-            # Menggulung semua atribut blok (misal #EXTINF, #EXTGRP, dll) ke dalam current_buffer
             if line.startswith("#"):
                 current_buffer.append(line)
                 if line.startswith("#EXTINF"):
                     current_extinf = line
                     
-            # Jika tidak diawali '#', dan panjangnya masuk akal, kita anggap itu link streaming-nya!
             elif len(line) > 5: 
                 stream_url = line
                 if current_buffer and current_extinf:
                     channels.append({
-                        "buffer": current_buffer, # Ini membawa SATU BLOK UTUH
+                        "buffer": current_buffer,
                         "extinf": current_extinf,
                         "url": stream_url
                     })
-                # Reset untuk menangkap blok selanjutnya
                 current_buffer = []
                 current_extinf = ""
                 
@@ -206,8 +203,8 @@ def download_playlist(url):
         print(f"  > WARNING: Gagal memproses {url}. Error: {e}")
         return url, []
 
-# FUNGSI 2: PEMBAGI KATEGORI DARI MEMORI
-def filter_m3u_by_config(config, all_providers_data):
+# FUNGSI 2: PEMBAGI KATEGORI DARI DAFTAR SUPER BERSIH
+def filter_m3u_by_config(config, super_clean_channels):
     output_file = config["output_file"]
     keywords = config["keywords"]
     exclude_keywords = config["exclude_keywords"] 
@@ -219,91 +216,79 @@ def filter_m3u_by_config(config, all_providers_data):
     print(f"\n--- Memproses [{description}] ---")
     
     channels_data = [] 
+    seen_names_in_category = set() # Mencegah nama dobel di dalam 1 file output
     
-    # Looping dari data yang sudah disedot "SATU BLOK UTUH" di awal
-    for provider in all_providers_data:
-        url = provider["url"]
-        channels_in_provider = provider["channels"]
+    for ch in super_clean_channels:
+        stream_url = ch["url"]
         
-        # Tracker CEGAT DOBEL NAMA DALAM 1 PROVIDER (di-reset tiap ganti penyedia)
-        seen_channels = set() 
+        # Jika URL ini sudah masuk ke file/kategori sebelumnya, langsung lewati (Sapu bersih lintas kategori)
+        if stream_url in CATEGORIZED_URLS:
+            continue
+
+        current_extinf = ch["extinf"]
+        current_buffer = list(ch["buffer"]) # Copy blok utuh
+
+        group_match = GROUP_TITLE_REGEX.search(current_extinf)
+        raw_group_title = group_match.group(1) if group_match else ""
         
-        for ch in channels_in_provider:
-            stream_url = ch["url"]
-            current_extinf = ch["extinf"]
-            
-            # COPY blok utuh agar aman dimodifikasi tanpa merusak data asli di memori
-            current_buffer = list(ch["buffer"])
-            
-            # ATURAN 1: CEK BLACKLIST
-            if stream_url in GLOBAL_BLACKLIST_URLS:
-                continue
-                
-            # ATURAN 2: CEK SUPER GLOBAL TRACKER (Cegat link yang sudah pernah diambil)
-            if stream_url in GLOBAL_SEEN_STREAM_URLS:
-                continue
-
-            group_match = GROUP_TITLE_REGEX.search(current_extinf)
-            raw_group_title = group_match.group(1) if group_match else ""
-            
-            if "," in current_extinf:
-                raw_channel_name = current_extinf.split(',', 1)[1].strip()
-            else:
-                raw_channel_name = current_extinf.strip()
-            
-            # ATURAN 3: CEGAT NAMA DOBEL DALAM 1 PROVIDER (Kecuali Live Event)
-            if not require_time: 
-                normalized_name = normalize_channel_name(raw_channel_name)
-                if normalized_name in seen_channels:
-                    continue 
-                else:
-                    seen_channels.add(normalized_name)
-
-            clean_group_title = CLEANING_REGEX.sub(' ', raw_group_title).upper()
-            clean_channel_name = CLEANING_REGEX.sub(' ', raw_channel_name).upper()
-            
-            if "RADIO" in clean_channel_name or "RADIO" in clean_group_title:
+        if "," in current_extinf:
+            raw_channel_name = current_extinf.split(',', 1)[1].strip()
+        else:
+            raw_channel_name = current_extinf.strip()
+        
+        # Mencegah nama channel yang sama persis masuk 2x di kategori yang sama (opsional tapi rapi)
+        if not require_time: 
+            normalized_name = normalize_channel_name(raw_channel_name)
+            if normalized_name in seen_names_in_category:
                 continue 
+            else:
+                seen_names_in_category.add(normalized_name)
 
-            if require_time and not contains_time_pattern(raw_channel_name):
-                continue
-            
-            is_match = any(k in clean_group_title or k in clean_channel_name for k in keywords)
-            is_excluded = any(k in clean_group_title or k in clean_channel_name for k in exclude_keywords)
-            
-            if is_match and not is_excluded:
-                if force_category:
-                    # Modifikasi pintar: Hanya mengubah 'group-title' TANPA merusak isi blok utuh
-                    for idx in range(len(current_buffer)):
-                        b_line = current_buffer[idx]
-                        if b_line.startswith("#EXTINF"):
-                            if 'group-title="' in b_line:
-                                b_line = re.sub(r'group-title="[^"]*"', f'group-title="{target_category}"', b_line, flags=re.IGNORECASE)
+        clean_group_title = CLEANING_REGEX.sub(' ', raw_group_title).upper()
+        clean_channel_name = CLEANING_REGEX.sub(' ', raw_channel_name).upper()
+        
+        if "RADIO" in clean_channel_name or "RADIO" in clean_group_title:
+            continue 
+
+        if require_time and not contains_time_pattern(raw_channel_name):
+            continue
+        
+        is_match = any(k in clean_group_title or k in clean_channel_name for k in keywords)
+        is_excluded = any(k in clean_group_title or k in clean_channel_name for k in exclude_keywords)
+        
+        # Jika channel cocok dengan kriteria kategori ini
+        if is_match and not is_excluded:
+            if force_category:
+                # Modifikasi pintar: Hanya mengubah 'group-title' TANPA merusak isi blok utuh
+                for idx in range(len(current_buffer)):
+                    b_line = current_buffer[idx]
+                    if b_line.startswith("#EXTINF"):
+                        if 'group-title="' in b_line:
+                            b_line = re.sub(r'group-title="[^"]*"', f'group-title="{target_category}"', b_line, flags=re.IGNORECASE)
+                        else:
+                            if ',' in b_line:
+                                parts = b_line.split(',', 1)
+                                b_line = f'{parts[0]} group-title="{target_category}",{parts[1]}'
                             else:
-                                if ',' in b_line:
-                                    parts = b_line.split(',', 1)
-                                    b_line = f'{parts[0]} group-title="{target_category}",{parts[1]}'
-                                else:
-                                    b_line = f'{b_line} group-title="{target_category}"'
-                            current_buffer[idx] = b_line
-                            
-                        elif b_line.upper().startswith("#EXTGRP:"):
-                            current_buffer[idx] = f"#EXTGRP:{target_category}"
-                
-                # Masukkan 1 BLOK UTUH yang sudah ber-kategori baru ke dalam array
-                channels_data.append((clean_channel_name, current_buffer, stream_url))
-                
-                # CATAT KE DALAM SUPER GLOBAL TRACKER!
-                GLOBAL_SEEN_STREAM_URLS.add(stream_url)
+                                b_line = f'{b_line} group-title="{target_category}"'
+                        current_buffer[idx] = b_line
                         
-    # SISTEM PENGURUTAN (SORTING)
+                    elif b_line.upper().startswith("#EXTGRP:"):
+                        current_buffer[idx] = f"#EXTGRP:{target_category}"
+            
+            channels_data.append((clean_channel_name, current_buffer, stream_url))
+            
+            # KUNCI URL INI! Agar tidak diambil oleh kategori lain yang diproses setelah ini
+            CATEGORIZED_URLS.add(stream_url)
+                    
+    # SISTEM PENGURUTAN (SORTING) - Khusus untuk Event
     if require_time:
         channels_data.sort(key=lambda x: x[0])
     
     # GABUNGKAN BLOK + LINK JADI SATU FILE PLAYLIST
     filtered_lines = ["#EXTM3U"]
     for _, block_data, s_url in channels_data:
-        filtered_lines.extend(block_data)  # Menulis 1 Blok Utuh (Extinf, Logo, dll)
+        filtered_lines.extend(block_data)  # Menulis 1 Blok Utuh
         filtered_lines.append(s_url)       # Menulis Link Streaming di bawahnya
 
     print(f"Total {len(channels_data)} saluran berhasil dikelompokkan ke grup [{target_category}].")
@@ -325,7 +310,7 @@ if __name__ == "__main__":
     all_providers_data = []
     
     with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
-        # Menjalankan download secara bersamaan, tapi hasilnya tetap berurutan sesuai MASTER_URLS
+        # executor.map menjaga urutan hasil sesuai dengan urutan MASTER_URLS
         results = executor.map(download_playlist, MASTER_URLS)
         
         for url, channels in results:
@@ -334,11 +319,31 @@ if __name__ == "__main__":
                     "url": url,
                     "channels": channels
                 })
+                
+    print("\n[+] Membuat Daftar Saluran Super Bersih (Prioritas Penyedia Nomor 1)...")
     
-    print("\n[+] Selesai menyedot semua sumber. Memulai proses filtering ke Kategori...")
+    # 2. PROSES DEDUPLIKASI URL BERDASARKAN KASTA PENYEDIA (PROVIDER HIERARCHY)
+    super_clean_channels = []
+    master_seen_urls = set()
     
-    # 2. FILTER DATA KE DALAM 7 KATEGORI
+    for provider in all_providers_data:
+        for ch in provider["channels"]:
+            stream_url = ch["url"]
+            
+            # Cek Blacklist
+            if stream_url in GLOBAL_BLACKLIST_URLS:
+                continue
+                
+            # Cek apakah URL ini sudah diamankan oleh penyedia dengan kasta lebih tinggi (urutan atas)
+            if stream_url not in master_seen_urls:
+                master_seen_urls.add(stream_url)
+                super_clean_channels.append(ch) # Masukkan ke daftar super bersih
+    
+    print(f"Total saluran unik yang didapat: {len(super_clean_channels)} (Duplikat URL dibuang)")
+    print("\n[+] Memulai proses filtering ke Kategori...")
+    
+    # 3. FILTER DATA SUPER BERSIH KE DALAM 7 KATEGORI
     for config in CONFIGURATIONS:
-        filter_m3u_by_config(config, all_providers_data)
+        filter_m3u_by_config(config, super_clean_channels)
         
-    print("\n✅ PROSES SELESAI! File M3U sudah bersih, utuh 1 blok, anti-dobel, dan siap digunakan!")
+    print("\n✅ PROSES SELESAI! File M3U sudah sangat bersih, anti-dobel URL, mengutamakan penyedia urutan atas, dan siap digunakan untuk ION Network / Bakul Wifi!")
