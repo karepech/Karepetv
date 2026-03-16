@@ -763,11 +763,13 @@ http://202.169.224.202:8800/udp/239.9.1.11:1234
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
 #EXTINF:-1 tvg-id="Fight.Sports.id" tvg-name="Fight Sports" tvg-logo="https://mimipipi22.github.io/logo/sports/fightsports.jpg" group-title="SPORTS",FIGHT SPORTS
 https://d2tjypxxy769fn.cloudfront.net/out/v1/73b7057c72da4615888a11b02a6cbb3c/index.mpd
-#EXTVLCOPT:http-user-agent=ExoPlayerDemo/2.15.1 (Linux; Android 13) ExoPlayerLib/2.15.1
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=47c03f29f04747d2a298c0ad63f3b2c1:8b48b2cb2743b91d5f20cf2622067f3a
+#KODIPROP:inputstream.adaptive.license_key=11223344556677889900112233445566:4b80724d0ef86bcb2c21f7999d67739d
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTINF:-1 tvg-id="Eurosport.id" tvg-name="Eurosport" tvg-logo="https://mimipipi22.github.io/logo/sports/eurosports.jpg" group-title="SPORTS",EUROSPORT
-https://atemecdnbalancer-voe.sysln.id/live/eds/EUROSPORTHD/mediampd/EUROSPORTHD.mpd
+https://dash2.antik.sk/stream/nvidia_eurosport1/playlist_cenc.mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=657707bbd1e240e08bd6969df27fef7c:364e00581c1432f4175e4a2e8e0cd57e
 #EXTINF:-1 tvg-id="Eurosport 2" tvg-name="Eurosport 2" tvg-logo="https://mimipipi22.github.io/logo/sports/eurosports.jpg" group-title="SPORTS",EUROSPORT 2
@@ -836,13 +838,6 @@ https://atemecdnbalancer-voe.sysln.id/live/eds/MTVLiveHD/mediampd/MTVLiveHD.mpd
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #KODIPROP:inputstream.adaptive.license_key=https://drm.antik.sk/widevine/key
 https://dash2.antik.sk/stream/nvidia_ct_sport/playlist_cbcs.mpd
-#EXTINF:-1 tvg-name="" tvg-id="" tvg-logo="https://mimipipi22.github.io/logo/antik/eurosport1.jpg" group-title="SPORTS",EUROSPORT 1 🇸🇰
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=11223344556677889900112233445566:4b80724d0ef86bcb2c21f7999d67739d
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://dash2.antik.sk/stream/nvidia_eurosport1/playlist_cenc.mpd
 #EXTINF:-1 tvg-name="" tvg-id="" tvg-logo="https://mimipipi22.github.io/logo/antik/jojsport.jpg" group-title="SPORTS",JOJ SPORT 🇸🇰
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referer=https://webtv.sk/tv/
@@ -1330,8 +1325,6 @@ https://livevlisctcdnw.seenow.vn/mean/BONGDA_HD/manifest.mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=6187523f92b9475bb5b192f70cef1342:5119311f482144d58dacabc5bc1fa4ba
 https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/7/7.mpd
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="SPORTS",Now Sports Channel
-http://hls.168.us.kg/u/630/master.m3u8
 #EXTINF:-1 tvg-logo="" group-title="SPORTS",Tianjin Sports
 http://38.75.136.137:98/gslb/dsdqpub/tjtv5.m3u8?auth=testpub
 #EXTINF:-1 tvg-logo="" group-title="SPORTS",WOWOW Live
@@ -1586,6 +1579,12 @@ https://v4-pan-n79-cdn-01.live.cdn.cgates.lt/live/dash/561402/index.mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=8ab2332442854e62b0018eec3ee58484:37fdee8b6eef5c96001e8c6fc47bfc08
 https://v4-pan-n79-cdn-01.live.cdn.cgates.lt/live/dash/561002/index.mpd
+#EXTINF:-1 group-title="SPORTS" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/37/Eurosport1hd.png", Eurosport 1
+#EXTVLCOPT:http-user-agent=Dalvik/2.1.0
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=01a665d487aa4c1c898c9eb0ff1a21df:a0b9df5f92e6b218ddb6aa40a2cd996d
+https://v4-pan-n79-cdn-01.live.cdn.cgates.lt/live/dash/561802/index.mpd
 #EXTINF:-1 tvg-id="24.7.Dummy.us" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/v2/s34710_h15_aa.png" group-title="SPORTS",NFL NETWORK (PIXEL)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 #EXTVLCOPT:http-referrer=https://pixelsport.tv/
@@ -1832,176 +1831,6 @@ https://tglmp04.akamaized.net/out/v1/400fc0702dee453bb33ebcc29466e58a/manifest.m
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=d418f733ed224f9bb9c2b1589db22a20:6ed6fe26daa4b926810869ff60254ebb
 https://tglmp02.akamaized.net/out/v1/cc0fc82e76cb4e0093e81695284af443/manifest.mpd
-#EXTVLCOPT:http-referrer=https://www.visionplus.id/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:145.0) Gecko/20100101 Firefox/145.0
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=ac900f4053fa420095fb84f491f7a331:59748725964ff275e524af73792c8ad4
-#EXTINF:-1 tvg-id="Sportstars 3" tvg-url="https://raw.githubusercontent.com/apistech/project/refs/heads/main/ApisTECH.xml" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a3/Sportstars_3.png" group-title="SPORTS",Sportstars 3ᴴᴰ
-https://d2xz2v5wuvgur6.cloudfront.net/out/v1/9a06560796f441a3981cd5a27c7d917f/index.mpd
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_mL0demzg3hvHJDhLsKYvDSbULZJ9FHwbbw&s" group-title="SPORTS",VOLI TV
-http://103.160.205.142:9999/stream/channelid/1572314271?profile=pass
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPK2wQnJ0926ZdrVr-uV_uvnh97Jr9XLlOCQ&s" group-title="SPORTS",USA
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=c760bcb13f83a8d66f4c676f04c23d81:e024f5099f059ce93607812e5b406360
-https://nog-live1-ott.izzigo.tv/5/out/u/dash/USAHD/default.mpd
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/NBA_TV.svg/1200px-NBA_TV.svg.png" group-title="SPORTS",NBA PHILIPPINES
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=c5e51f41ceac48709d0bdcd9c13a4d88:20b91609967e472c27040716ef6a8b9a
-https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cgnl_nba/default/index.mpd
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/njemacka/automotorsport.png" group-title="SPORTS",Auto Motor Sport
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/9362
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/sk1.png" group-title="SPORTS",Sport Klub 1 HR
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1199
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/sk2.png" group-title="SPORTS",Sport Klub 2 HR RAW
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1195
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/sk3.png" group-title="SPORTS",Sport Klub 3 HR RAW
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1194
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/sk4.png" group-title="SPORTS",Sport Klub 4 HR
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1193
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/sk5.png" group-title="SPORTS",Sport Klub 5 HR
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1192
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/sk6.png" group-title="SPORTS",Sport Klub 6 HR
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1191
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/sportklub7.png" group-title="SPORTS",Sport Klub 7 HR
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/18960
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/sportklub8.png" group-title="SPORTS",Sport Klub 8 HR
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/18961
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/sportklub9.png" group-title="SPORTS",Sport Klub 9 HR
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/18962
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/sportklub10.png" group-title="SPORTS",Sport Klub 10 HR
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/19077
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/skhd.png" group-title="SPORTS",Sport Klub HD HR
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/20121
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/skfightchannel.png" group-title="SPORTS",SK Fight Channel
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1288
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport1.png" group-title="SPORTS",Arena Sport 1 HR
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1189
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport2.png" group-title="SPORTS",Arena Sport 2 HR
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1187
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport3.png" group-title="SPORTS",Arena Sport 3 HR
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1185
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport4.png" group-title="SPORTS",Arena Sport 4 HR
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1183
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport5.png" group-title="SPORTS",Arena Sport 5 HR
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1181
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport6.png" group-title="SPORTS",Arena Sport 6 HR
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1179
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport7.png" group-title="SPORTS",Arena Sport 7 HR
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/17669
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport8.png" group-title="SPORTS",Arena Sport 8 HR
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/17670
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport9.png" group-title="SPORTS",Arena Sport 9 HR
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/17671
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport10.png" group-title="SPORTS",Arena Sport 10 HR
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/17672
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport1.png" group-title="SPORTS",Arena Sport 1 Sr
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1177
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport2.png" group-title="SPORTS",Arena Sport 2 Sr
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1176
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport3.png" group-title="SPORTS",Arena Sport 3 Sr
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1175
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport4.png" group-title="SPORTS",Arena Sport 4 Sr
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1174
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport5.png" group-title="SPORTS",Arena Sport 5 Sr
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1173
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport6.png" group-title="SPORTS",Arena Sport 6 Sr
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/26792
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport7.png" group-title="SPORTS",Arena Sport 7 Sr
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/26793
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport8.png" group-title="SPORTS",Arena Sport 8 Sr
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/26794
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport9.png" group-title="SPORTS",Arena Sport 9 Sr
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/26795
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport10.png" group-title="SPORTS",Arena Sport 10 Sr
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/26796
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenapremium1.png" group-title="SPORTS",Arena Premium 1
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/19011
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenapremium2.png" group-title="SPORTS",Arena Premium 2
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/19012
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenapremium3.png" group-title="SPORTS",Arena Premium 3
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/19013
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenapremium4.png" group-title="SPORTS",Arena Premium 4
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/27356
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenapremium5.png" group-title="SPORTS",Arena Premium 5
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/27357
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenapremium1.png" group-title="SPORTS",Arena Premium 1 BiH
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/28862
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenatenis.png" group-title="SPORTS",Arena Tenis
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/27358
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenaadrenalin.png" group-title="SPORTS",Arena Adrenalin
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/27359
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport1.png" group-title="SPORTS",Arena Sport 1 BH
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/21550
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenafight.png" group-title="SPORTS",Arena Fight Test
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/19615
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenaesport.png" group-title="SPORTS",Arena Esport Test
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/19616
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/daznppv.png" group-title="SPORTS",FNC PPV
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/25949
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/novsport.png" group-title="SPORTS",Nova Sport
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/9443
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/gp1.png" group-title="SPORTS",GP1
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/22489
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/maxsport1.png" group-title="SPORTS",MAXSport 1
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1165
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/maxsport1.png" group-title="SPORTS",MAXSport 1 Backup
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/21114
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/maxsport2.png" group-title="SPORTS",MAXSport 2
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/20773
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/maxsport2.png" group-title="SPORTS",MAXSport 2 Backup
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/21115
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/hdtv.png" group-title="SPORTS",Hajduk TV
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/26481
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/skysportarenauk.png" group-title="SPORTS",SS Arena UK
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1160
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/skysportf1uk.png" group-title="SPORTS",SS F1 UK
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1159
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/skysportfoodball.png" group-title="SPORTS",SS Football UK
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1163
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/skysportmainevent.png" group-title="SPORTS",SS Main Event UK
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1164
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/skysportpremierlegue.png" group-title="SPORTS",SS Premier League UK
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1162
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/uk/ssgolf.png" group-title="SPORTS",SS Golf UK
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/22931
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/uk/ssracing.png" group-title="SPORTS",SS Racing UK
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/22932
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/btsport1.png" group-title="SPORTS",BT Sport 1 HD
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1154
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/btsport2.png" group-title="SPORTS",BT Sport 2 HD
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1153
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/btsport3.png" group-title="SPORTS",BT Sport 3 HD
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1152
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/espn2.png" group-title="SPORTS",ESPN 2 US HD Test
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/4022
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/foxsports1.png" group-title="SPORTS",FOX Sports 1 Nl
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1122
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/foxsports2.png" group-title="SPORTS",FOX Sports 2 Nl
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1121
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/foxsports3.png" group-title="SPORTS",FOX Sports 3 Nl
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1120
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/foxsports4.png" group-title="SPORTS",FOX Sports 4 Nl
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1119
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/soskanal.png" group-title="SPORTS",SOS Kanal
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1287
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/sptv.png" group-title="SPORTS",Sportska TV
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1289
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/tvzvezda.png" group-title="SPORTS",TV Zvezda
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/19780
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/slovenija/sporttvslo1.png" group-title="SPORTS",SPORT TV 1 SLO
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/24686
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/slovenija/sporttvslo2.png" group-title="SPORTS",SPORT TV 2 SLO
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/24687
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/slovenija/sporttvslo3.png" group-title="SPORTS",SPORT TV 3 SLO
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/24688
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/daznppv.png" group-title="SPORTS",Dazn F1 ES TEST
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/25117
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/digisport2.png" group-title="SPORTS",Digi Sport 2
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/27182
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/digisport3.png" group-title="SPORTS",Digi Sport 3
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/27183
-#EXTINF:-1 group-title="SPORTS",Digi Sport 4
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/27184
 #EXTINF:-1 group-title="SPORTS" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgofRMXYA-3dc3fNg7OKCfuposx1mdDx-GrTn3DeJ9HMIrRyJfL4o-diHV4nMN7kmaNeUi4r-2xPC1ZQYc4-SyG24QvAHxBkqACgDxFqLBOL1tRZMLAQcAa9BxzYNTJhgsuBRBTquxuqyCHY2DsPgtJF1mC7MuNDamj88_5x1d-qxdssTFcPvEs5S4huDdO/s700/TIMNAS.png",TIMNAS DAY 1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXTVLCOPT:http-origin=https://www.instreamtv.xyz
@@ -2020,6 +1849,12 @@ https://sauridigital.my.id/infogeulis/SALURAN%20OFFLINE.mp4
 https://liveplus.rctiplus.id/rcti2023.m3u8
 #EXTINF:-1 group-title="SPORTS" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgofRMXYA-3dc3fNg7OKCfuposx1mdDx-GrTn3DeJ9HMIrRyJfL4o-diHV4nMN7kmaNeUi4r-2xPC1ZQYc4-SyG24QvAHxBkqACgDxFqLBOL1tRZMLAQcAa9BxzYNTJhgsuBRBTquxuqyCHY2DsPgtJF1mC7MuNDamj88_5x1d-qxdssTFcPvEs5S4huDdO/s700/TIMNAS.png",TIMNAS DAY 3
 https://lenz.splus.ir/PLTV/88888888/224/3221226845/3.m3u8
+#EXTINF:-1 group-title="SPORTS" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjkzXd8z54qPQqjJ_03R18EgJqQ6igaARYmwnNHExsVBHWSHjgjHOX4SLDqYsCneAIEbuG7lmiUBWh46IygHIuOJmbnGGmWUiB2eashc4UcNjvk2LX8HsaWGJgjStPUApwkFE8drKKdjv3uNdrFbnBwagqdF7ymVubvpG22Fic6WqZECsDw2RPFQRWA7Tzh/s700/SPORTSTARS%203.png",SPORTSTARS 3
+#EXTVLCOPT:http-referrer=https://www.visionplus.id/
+#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+#KODIPROP:inputstream.adaptive.license_key=https://pepek.semar.my.id/sportstars3.html
+https://d2xz2v5wuvgur6.cloudfront.net/out/v1/6f5596513af749c19d0bcdac013dda3c/index.mpd
 #EXTINF:-1 group-title="SPORTS" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWXLEjqZOOO2LT5C_1aBWyMBW7K3X8UaK2r3jmKvNbuXaWpei7VO_9LR1lfKqXhTIvYjciKBzFsa2ENtKRmI5snupnZUB4zdLh-mzhgQwwryclFl-OCE-auGTDPhjOog0Wv36dnGXU1WJTG3T9yT-ZcWj7ddXMMZTLilzzt8rrZd7zLmHd221buxvteyRU/s700/GTV.png",GTV SPORTS
 http://103.66.62.83:8000/play/a00y/index.m3u8
 #EXTINF:-1 group-title="SPORTS" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqFfGFGJU6o9ViyB8hBd8doyC83zYkVvesuwx1e9Rdkg819se6Z8e0jdFE7fS0tgrVofADMaFR_fylrNM2KxmuloQcLKyi3J80VUtkVUIbtALBx2BQw0rdG3s9EbUd1jenmSyDYWzXbboMesCFWxiP4g5Z7CiV8s2BBtmM8HJh9jarJwSNcZsFO4p88YL9/s700/MNC%20TV.png",MNC TV SPORTS
@@ -2028,6 +1863,18 @@ http://103.66.62.83:8000/play/a00w/index.m3u8
 http://103.66.62.83:8000/play/a00r/index.m3u8
 #EXTINF:-1 group-title="SPORTS" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnHtM20QGYDSezSI9xCQzo6-G5Zo0cNSPasC9gVLq7TMH7G7jurfiI9vXlpsjcSVp5s3UCQ7WCpTL9qXPVghiAHoezld19CXUDTos4vFlrdLUPksQN3OAYsCN7sXnSRZTPD_fj9pNrV5kw8KvCC_QNTAp0NNgBCu2mEQ3qVXEuGtAWLwdzWj396LBzBdol/s700/TVRI%20SPORT.png",TVRI SPORTS
 http://103.66.62.83:8000/play/a00q/index.m3u8
+#EXTINF:-1 group-title="SPORTS" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgi4UmZ8SPoiLvTAAexLRXCO12r_n9ajAmS5fNCTeNdp2YSL6dMBEwT1nvp1JCxruDzsHqxjFujd_IZDKe6XedF7SDnzRiHqLGF216iRV5CrIzeq1B2VJki118wBxqBYjvdnHUZF4qML1zuNOmQnlEl5acYNqkHKGBf_BcSPoIVVUW_v2gH6D1vGxh_v_pT/s700/VOLI%20TV.png",VOLI TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 15; P1 Build/AP4A.25010.002; wv-atv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.106 Mobile Safari/537.36
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=https://aylin-ratu77.mediaflow.workers.dev/index.mpd?id=20240&type=drm
+https://aylin-ratu77.mediaflow.workers.dev/index.mpd?id=20240&type=dash
+#EXTINF:-1 group-title="SPORTS" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjybmmOLSaU-GT1VuodMC2QFMtvtGExIgAmoc_SYbJLWXS-JKux6GrHKScHPym7mkK0ooKJ_8yFK0rIEwgZ8GkKttmVU6uzeWULT9bwzLcf7HSy6Db_wNCvdY01Nkocua6pp4AIYNXStx5Cebyn1zOjdGj9oAwI1hhQ4xEtQyyRDEXTRevJbPqAt0Oenblc/s700/SPOTV.png",SPOTV HD FM
+#EXTVLCOPT:http-user-agent=ExoPlayerDemo/2.15.1 (Linux; Android 13) ExoPlayerLib/2.15.1
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=e60ece8f0d9042fcb52508055ec48e5e:213f438bd4961cda987d41b7f154f1e5
+https://atemecdnbalancer-voe.sysln.id/live/eds/SPOTVHD/mediampd/SPOTVHD.mpd
 #EXTINF:-1 group-title="SPORTS" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOs5V6wbLyHlAiK5kEtNWmRVdoggVjzNT-_1z45wKBQWEeo3pWpKKYMDLU4BQBDzjPeXsXS2VxuY1fdzm4m-E0rAdpivXHZSNUFKKAzLw4eCeb_ZBMWrjtv17StapLfuKOZjSNo_bjdoBnmNjGm2pQg2-KL05K62XYdCpwiqZf5L4ICeuuenHYlvATxuo6/s700/INDOSIAR.png",INDOSIAR SPORTS 2
 #http://mycdn.ddnskita.my.id:9911/play/cpYLY9CQJyca2b2twMnpr-axVurlG7b_hSIWnBXzOCc/ts
 #EXTINF:-1 group-title="SPORTS" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgWQ84jW_0137UxufDZCQrqJAObB0BIWzsW63cQi82xpr9JKZBPLhKyrIeFZV34cR9yxXO0wz53En49I9bexOLVC0F9-2ls3w2_SvBCQ0PrqgB8aTPaTsHtwTY8PnO1L815EUqGXKDOQNALv-h9vwSIugMHALteahi6acSWhVQfK2xlnYL-tOrs9eSDvg0/s700/FIFA+.png",FIFA+ AU
@@ -2104,16 +1951,6 @@ https://zap-live1-ott.izzigo.tv/1/out/u/dash/SKYLIVEEVENT4HD/default.mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=d9e3024854648dd01714f781c1492c4c:9404541975d298f6787c591d2cc871b1
 https://zap-live1-ott.izzigo.tv/5/out/u/dash/SKYLIVEEVENT7HD/default.mpd
-#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLYY7Ull7hxpAyPJ_eD4cYBXurv0dM_CXGPXSBzD5vv9H1l-igZahkmyP0P6o2WqnRJ_Tc9Fg79gtcJLB-bvcqw5DabdEMlS5dFxItXj_mLYZh9uv9oz0-XBVza9jT6n_DOsRvpUOfTyIqaDNjR-FMNkeWci19U_JgKHkdcjuwFuIQORa-g545tXdoYnPc/s700/ESPN.png" group-title="SPORTS",ESPN 2
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=faa2d2197cc44dc154650bbacb0dc238:9859d70c856660e20bbe6896f9cd3048
-https://nog-live1-ott.izzigo.tv/7/out/u/dash/ESPN2HDH265/default.mpd
-#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLYY7Ull7hxpAyPJ_eD4cYBXurv0dM_CXGPXSBzD5vv9H1l-igZahkmyP0P6o2WqnRJ_Tc9Fg79gtcJLB-bvcqw5DabdEMlS5dFxItXj_mLYZh9uv9oz0-XBVza9jT6n_DOsRvpUOfTyIqaDNjR-FMNkeWci19U_JgKHkdcjuwFuIQORa-g545tXdoYnPc/s700/ESPN.png" group-title="SPORTS",ESPN 3
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=10580600369dbd7ac029f7e737247917:24ef48adb31daa130675c2a502da6982
-https://nog-live1-ott.izzigo.tv/6/out/u/dash/ESPN3HDH265/default.mpd
 #EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLYY7Ull7hxpAyPJ_eD4cYBXurv0dM_CXGPXSBzD5vv9H1l-igZahkmyP0P6o2WqnRJ_Tc9Fg79gtcJLB-bvcqw5DabdEMlS5dFxItXj_mLYZh9uv9oz0-XBVza9jT6n_DOsRvpUOfTyIqaDNjR-FMNkeWci19U_JgKHkdcjuwFuIQORa-g545tXdoYnPc/s700/ESPN.png" group-title="SPORTS",ESPN 4
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=
 #KODIPROP:inputstream.adaptive.license_type=clearkey
@@ -2181,6 +2018,18 @@ https://1621590671.rsc.cdn77.org/HLS/BILLIARDTV_SCTE.m3u8
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=00208c93f4358213b52220898b962385:8ae6063167228e350dd132d4a1573102
 http://cors.tundracast.com:2000/https://fsly.stream.peacocktv.com/Content/CMAF_CTR-4s/Live/channel(vc106wh3yw)/master.mpd
+##### CHAMPIONS #####
+#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLMPRSbf3PcfBhJKin25Hpim3yrMOHUv6IJV7c9hNvtnBMqWmFcd1Rgi7wfjGvAZtxrb5qZzW11abhvpSNWmXjl6K0OQaarRLoZcS4D1WP7BmjXSVL3lF0D6unw5gjS8rSHaHiebGcYn9PQgSQT9WvK_rUv9Zo7H42lQeDhyphenhyphenVacp35me-mCn-XmwseU_Ie/s700/CHAMPIONS%20TV.png" group-title="SPORTS",CTV 1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1
+#EXTVLCOPT:http-user-agent=VidioPlayer/4.3.0-WITH_ADS
+#KODIPROP:mimetype=application/dash+xml
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.stream_headers=origin=https://www.vidio.com&referer=https://www.vidio.com/&user-agent=Vidio/6.43.9-8ec34856ef (Linux;Android 11) ExoPlayerLib/2.19.1
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
+#KODIPROP:inputstream.adaptive.license_key=https://manamedian.serv00.net/1antaubospanel.php/manifest.mpd?id=17938&type=drm
+https://manamedian.serv00.net/1antaubospanel.php/manifest.mpd?id=17938&type=dash
 #EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6ik3jNXcR5C9mDXf6WZwa_RoZ7X8Zr9EFAVQgsWSxoyr6VDjIqogRftWRtjvSfrLZu7KhVGw3N1V09v0ZPRnQIAqvp547uk9fCVkPsODP_4oy9ZfI2xGfrgySfWMo0cEHMRd0VR4MQazq-cmY74QJi_rH01vu0cCles4RQ5RITiYauwX6yIHxKo8d-KNi/s700/KOVO.png" group-title="SPORTS", KOVO LIVE 2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36
@@ -2448,7 +2297,7 @@ http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5e
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.stream_headers=user-agent=Xstream XGO/1.22 (Linux;Android 9) ExoPlayerLib/2.10.5
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#KODIPROP:inputstream.adaptive.license_key=https://terson.treshold.workers.dev/
+#KODIPROP:inputstream.adaptive.license_key=https://cubmu.caranytv.workers.dev/trv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
 https://cdnjkt913.transvision.co.id:1000/live/master/2/4028c68578b331d80178b5acf1fd0a55/manifest.mpd
 #EXTINF:-1 tvg-id="" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUgUNGLAMEB1VtU9brMaQqx1ifEHWzCaq4kFrefsLHXBGNOow4ZXble2M-cuhKozeeUqWdhhNHTNuJIkN5FMX4mg2gFXoMEeJdZ0lfHLIX75b0wRRJ8d8VyLwGwjerCuVKdrHTHaEWQpC68BrFjwd6wjGLxuAgl831oyvJSS3I5HNmWaq7JKXmo5ckuD5L/s700/SPORTS.png" group-title="SPORTS", WEDOTV SPORTS
@@ -2467,3 +2316,161 @@ http://202.80.222.20/cdn/iptv/Tvod/001/channel2000045/1024.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
 #EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAG3aQBG_pQWJTEDaM-fVme5MYzppW5xUNsPqdzmpCDJ7PoEVNv7KAhzYg-26cREM0QEzgJLjHjYhxw2FBDx82V_IzpvDYUV6TKeNhlCZ7eBGfSP92DO_YMJSh6uU-XVJJ0BSQNP1MDAcmuViI2eI8mXvTAjSdNPxxONQDzCA31zQEylry6F9z9VlM19cz/s700/FIGHT%20SPORTS.png" group-title="SPORTS", FIGHT SPORT
 http://202.80.222.20/cdn/iptv/Tvod/001/channel2000163/1024.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/NBA_TV.svg/1200px-NBA_TV.svg.png" group-title="SPORTS",NBA PHILIPPINES
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=c5e51f41ceac48709d0bdcd9c13a4d88:20b91609967e472c27040716ef6a8b9a
+https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cgnl_nba/default/index.mpd
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/njemacka/automotorsport.png" group-title="SPORTS",Auto Motor Sport
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/9362
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/sk1.png" group-title="SPORTS",Sport Klub 1 HR
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1199
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/sk2.png" group-title="SPORTS",Sport Klub 2 HR RAW
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1195
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/sk3.png" group-title="SPORTS",Sport Klub 3 HR RAW
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1194
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/sk4.png" group-title="SPORTS",Sport Klub 4 HR
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1193
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/sk5.png" group-title="SPORTS",Sport Klub 5 HR
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1192
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/sk6.png" group-title="SPORTS",Sport Klub 6 HR
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1191
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/sportklub7.png" group-title="SPORTS",Sport Klub 7 HR
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/18960
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/sportklub8.png" group-title="SPORTS",Sport Klub 8 HR
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/18961
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/sportklub9.png" group-title="SPORTS",Sport Klub 9 HR
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/18962
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/sportklub10.png" group-title="SPORTS",Sport Klub 10 HR
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/19077
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/skhd.png" group-title="SPORTS",Sport Klub HD HR
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/20121
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/skfightchannel.png" group-title="SPORTS",SK Fight Channel
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1288
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport1.png" group-title="SPORTS",Arena Sport 1 HR
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1189
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport2.png" group-title="SPORTS",Arena Sport 2 HR
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1187
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport3.png" group-title="SPORTS",Arena Sport 3 HR
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1185
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport4.png" group-title="SPORTS",Arena Sport 4 HR
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1183
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport5.png" group-title="SPORTS",Arena Sport 5 HR
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1181
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport6.png" group-title="SPORTS",Arena Sport 6 HR
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1179
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport7.png" group-title="SPORTS",Arena Sport 7 HR
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/17669
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport8.png" group-title="SPORTS",Arena Sport 8 HR
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/17670
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport9.png" group-title="SPORTS",Arena Sport 9 HR
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/17671
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport10.png" group-title="SPORTS",Arena Sport 10 HR
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/17672
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport1.png" group-title="SPORTS",Arena Sport 1 Sr
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1177
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport2.png" group-title="SPORTS",Arena Sport 2 Sr
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1176
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport3.png" group-title="SPORTS",Arena Sport 3 Sr
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1175
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport4.png" group-title="SPORTS",Arena Sport 4 Sr
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1174
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport5.png" group-title="SPORTS",Arena Sport 5 Sr
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1173
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport6.png" group-title="SPORTS",Arena Sport 6 Sr
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/26792
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport7.png" group-title="SPORTS",Arena Sport 7 Sr
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/26793
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport8.png" group-title="SPORTS",Arena Sport 8 Sr
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/26794
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport9.png" group-title="SPORTS",Arena Sport 9 Sr
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/26795
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport10.png" group-title="SPORTS",Arena Sport 10 Sr
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/26796
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenapremium1.png" group-title="SPORTS",Arena Premium 1
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/19011
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenapremium2.png" group-title="SPORTS",Arena Premium 2
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/19012
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenapremium3.png" group-title="SPORTS",Arena Premium 3
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/19013
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenapremium4.png" group-title="SPORTS",Arena Premium 4
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/27356
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenapremium5.png" group-title="SPORTS",Arena Premium 5
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/27357
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenapremium1.png" group-title="SPORTS",Arena Premium 1 BiH
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/28862
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenatenis.png" group-title="SPORTS",Arena Tenis
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/27358
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenaadrenalin.png" group-title="SPORTS",Arena Adrenalin
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/27359
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenasport1.png" group-title="SPORTS",Arena Sport 1 BH
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/21550
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenafight.png" group-title="SPORTS",Arena Fight Test
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/19615
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/arenaesport.png" group-title="SPORTS",Arena Esport Test
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/19616
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/daznppv.png" group-title="SPORTS",FNC PPV
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/25949
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/novsport.png" group-title="SPORTS",Nova Sport
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/9443
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/gp1.png" group-title="SPORTS",GP1
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/22489
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/maxsport1.png" group-title="SPORTS",MAXSport 1
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1165
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/maxsport1.png" group-title="SPORTS",MAXSport 1 Backup
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/21114
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/maxsport2.png" group-title="SPORTS",MAXSport 2
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/20773
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/maxsport2.png" group-title="SPORTS",MAXSport 2 Backup
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/21115
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/hdtv.png" group-title="SPORTS",Hajduk TV
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/26481
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/skysportarenauk.png" group-title="SPORTS",SS Arena UK
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1160
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/skysportf1uk.png" group-title="SPORTS",SS F1 UK
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1159
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/skysportfoodball.png" group-title="SPORTS",SS Football UK
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1163
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/skysportmainevent.png" group-title="SPORTS",SS Main Event UK
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1164
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/skysportpremierlegue.png" group-title="SPORTS",SS Premier League UK
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1162
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/uk/ssgolf.png" group-title="SPORTS",SS Golf UK
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/22931
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/uk/ssracing.png" group-title="SPORTS",SS Racing UK
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/22932
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/btsport1.png" group-title="SPORTS",BT Sport 1 HD
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1154
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/btsport2.png" group-title="SPORTS",BT Sport 2 HD
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1153
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/btsport3.png" group-title="SPORTS",BT Sport 3 HD
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1152
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/espn2.png" group-title="SPORTS",ESPN 2 US HD Test
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/4022
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/foxsports1.png" group-title="SPORTS",FOX Sports 1 Nl
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1122
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/foxsports2.png" group-title="SPORTS",FOX Sports 2 Nl
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1121
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/foxsports3.png" group-title="SPORTS",FOX Sports 3 Nl
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1120
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/foxsports4.png" group-title="SPORTS",FOX Sports 4 Nl
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1119
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/soskanal.png" group-title="SPORTS",SOS Kanal
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1287
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/sptv.png" group-title="SPORTS",Sportska TV
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1289
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/tvzvezda.png" group-title="SPORTS",TV Zvezda
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/19780
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/slovenija/sporttvslo1.png" group-title="SPORTS",SPORT TV 1 SLO
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/24686
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/slovenija/sporttvslo2.png" group-title="SPORTS",SPORT TV 2 SLO
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/24687
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/slovenija/sporttvslo3.png" group-title="SPORTS",SPORT TV 3 SLO
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/24688
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/daznppv.png" group-title="SPORTS",Dazn F1 ES TEST
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/25117
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/digisport2.png" group-title="SPORTS",Digi Sport 2
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/27182
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/digisport3.png" group-title="SPORTS",Digi Sport 3
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/27183
+#EXTINF:-1 group-title="SPORTS",Digi Sport 4
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/27184
