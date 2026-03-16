@@ -1,6 +1,7 @@
 import requests
 import re
 import concurrent.futures
+from datetime import datetime
 
 # ====================================================================
 # I. KONFIGURASI GLOBAL
@@ -165,6 +166,29 @@ def normalize_channel_name(name):
     clean_name = re.sub(r'\s+', '', clean_name) 
     return clean_name.lower()
 
+def extract_date_from_group(group_title):
+    if not group_title:
+        return None
+    # Kamus Bulan Indonesia & Singkatannya
+    months = {
+        'januari': '01', 'jan': '01', 'februari': '02', 'feb': '02',
+        'maret': '03', 'mar': '03', 'april': '04', 'apr': '04',
+        'mei': '05', 'juni': '06', 'jun': '06',
+        'juli': '07', 'jul': '07', 'agustus': '08', 'agu': '08', 'agus': '08',
+        'september': '09', 'sep': '09', 'oktober': '10', 'okt': '10',
+        'november': '11', 'nov': '11', 'desember': '12', 'des': '12'
+    }
+    pattern = r'(\d{1,2})\s*(' + '|'.join(months.keys()) + r')'
+    match = re.search(pattern, group_title, re.IGNORECASE)
+    
+    if match:
+        day = match.group(1).zfill(2)
+        month_str = match.group(2).lower()
+        month = months[month_str]
+        year = datetime.now().strftime("%y") # Ambil 2 digit tahun saat ini (ex: 26)
+        return f"{day}-{month}-{year}"
+    return None
+
 # FUNGSI 1: SEDOT SATU BLOK UTUH (MULTITHREADING)
 def download_playlist(url):
     print(f"  > Sedang menyedot dari: {url}")
@@ -213,20 +237,21 @@ def filter_m3u_by_config(config, super_clean_channels):
     require_time = config.get("require_time", False) 
     description = config["description"]
 
+    is_event_category = (target_category == "LIVE EVENT SPORTS")
+
     print(f"\n--- Memproses [{description}] ---")
     
     channels_data = [] 
-    seen_names_in_category = set() # Mencegah nama dobel di dalam 1 file output
+    seen_names_in_category = set() 
     
     for ch in super_clean_channels:
         stream_url = ch["url"]
         
-        # Jika URL ini sudah masuk ke file/kategori sebelumnya, langsung lewati (Sapu bersih lintas kategori)
         if stream_url in CATEGORIZED_URLS:
             continue
 
         current_extinf = ch["extinf"]
-        current_buffer = list(ch["buffer"]) # Copy blok utuh
+        current_buffer = list(ch["buffer"]) 
 
         group_match = GROUP_TITLE_REGEX.search(current_extinf)
         raw_group_title = group_match.group(1) if group_match else ""
@@ -236,8 +261,12 @@ def filter_m3u_by_config(config, super_clean_channels):
         else:
             raw_channel_name = current_extinf.strip()
         
-        # Mencegah nama channel yang sama persis masuk 2x di kategori yang sama (opsional tapi rapi)
-        if not require_time: 
+        has_time_pattern = contains_time_pattern(raw_channel_name)
+        new_channel_name = raw_channel_name
+        extracted_date = None
+        
+        # Mencegah nama channel yang sama persis masuk 2x (Kecuali Event)
+        if not is_event_category: 
             normalized_name = normalize_channel_name(raw_channel_name)
             if normalized_name in seen_names_in_category:
                 continue 
@@ -247,22 +276,46 @@ def filter_m3u_by_config(config, super_clean_channels):
         clean_group_title = CLEANING_REGEX.sub(' ', raw_group_title).upper()
         clean_channel_name = CLEANING_REGEX.sub(' ', raw_channel_name).upper()
         
-        if "RADIO" in clean_channel_name or "RADIO" in clean_group_title:
-            continue 
+        match_found = False
 
-        if require_time and not contains_time_pattern(raw_channel_name):
-            continue
+        # ==============================================================
+        # PUKAT HARIMAU WAKTU: ATURAN KHUSUS UNTUK "LIVE EVENT SPORTS"
+        # ==============================================================
+        if is_event_category:
+            # Jika namanya mengandung Jam, OTOMATIS MASUK ke Event (Bypass keywords)
+            if has_time_pattern:
+                match_found = True
+                # Curi tanggal dari group-title aslinya
+                extracted_date = extract_date_from_group(raw_group_title)
+                
+                # Jika dapat tanggal, dan channel belum berformat DD-MM-YY, tempelkan di depan!
+                if extracted_date and not re.match(r'^\d{2}-\d{2}-\d{2,4}', raw_channel_name.strip()):
+                    new_channel_name = f"{extracted_date} {raw_channel_name.strip()}"
         
-        is_match = any(k in clean_group_title or k in clean_channel_name for k in keywords)
-        is_excluded = any(k in clean_group_title or k in clean_channel_name for k in exclude_keywords)
-        
-        # Jika channel cocok dengan kriteria kategori ini
-        if is_match and not is_excluded:
+        # ==============================================================
+        # ATURAN NORMAL: UNTUK KATEGORI SELAIN EVENT
+        # ==============================================================
+        else:
+            is_match = any(k in clean_group_title or k in clean_channel_name for k in keywords)
+            is_excluded = any(k in clean_group_title or k in clean_channel_name for k in exclude_keywords)
+            
+            if is_match and not is_excluded:
+                if require_time and not has_time_pattern:
+                    match_found = False
+                else:
+                    match_found = True
+
+        # Pengecualian mutlak untuk RADIO
+        if "RADIO" in clean_channel_name or "RADIO" in clean_group_title:
+            match_found = False
+
+        if match_found:
             if force_category:
-                # Modifikasi pintar: Hanya mengubah 'group-title' TANPA merusak isi blok utuh
                 for idx in range(len(current_buffer)):
                     b_line = current_buffer[idx]
+                    
                     if b_line.startswith("#EXTINF"):
+                        # 1. Timpa Group Title
                         if 'group-title="' in b_line:
                             b_line = re.sub(r'group-title="[^"]*"', f'group-title="{target_category}"', b_line, flags=re.IGNORECASE)
                         else:
@@ -271,25 +324,39 @@ def filter_m3u_by_config(config, super_clean_channels):
                                 b_line = f'{parts[0]} group-title="{target_category}",{parts[1]}'
                             else:
                                 b_line = f'{b_line} group-title="{target_category}"'
+                        
+                        # 2. Timpa Nama Channel jika ini adalah Live Event yang disulap
+                        if is_event_category and new_channel_name != raw_channel_name:
+                            parts = b_line.split(',', 1)
+                            if len(parts) == 2:
+                                b_line = f"{parts[0]},{new_channel_name}"
+                                
                         current_buffer[idx] = b_line
                         
                     elif b_line.upper().startswith("#EXTGRP:"):
                         current_buffer[idx] = f"#EXTGRP:{target_category}"
             
-            channels_data.append((clean_channel_name, current_buffer, stream_url))
+            # Kunci Rahasia Pengurutan Sempurna Lintas Bulan untuk Live Event
+            sort_key = new_channel_name.upper()
+            if is_event_category and extracted_date:
+                # Ubah DD-MM-YY ke YY-MM-DD khusus untuk kunci sorting memori
+                date_parts = extracted_date.split('-')
+                if len(date_parts) == 3:
+                    sort_key = f"{date_parts[2]}-{date_parts[1]}-{date_parts[0]} {new_channel_name.upper()}"
             
-            # KUNCI URL INI! Agar tidak diambil oleh kategori lain yang diproses setelah ini
+            channels_data.append((sort_key, current_buffer, stream_url))
             CATEGORIZED_URLS.add(stream_url)
                     
-    # SISTEM PENGURUTAN (SORTING) - Khusus untuk Event
-    if require_time:
+    # SISTEM PENGURUTAN (SORTING)
+    if require_time or is_event_category:
+        # Sortir menggunakan "sort_key" yang sudah disempurnakan (YY-MM-DD HH:MM)
         channels_data.sort(key=lambda x: x[0])
     
     # GABUNGKAN BLOK + LINK JADI SATU FILE PLAYLIST
     filtered_lines = ["#EXTM3U"]
     for _, block_data, s_url in channels_data:
-        filtered_lines.extend(block_data)  # Menulis 1 Blok Utuh
-        filtered_lines.append(s_url)       # Menulis Link Streaming di bawahnya
+        filtered_lines.extend(block_data)  
+        filtered_lines.append(s_url)       
 
     print(f"Total {len(channels_data)} saluran berhasil dikelompokkan ke grup [{target_category}].")
     
@@ -306,11 +373,9 @@ if __name__ == "__main__":
     print("MEMULAI MESIN PENYEDOT IPTV (MULTITHREADING TURBO)")
     print("=====================================================")
     
-    # 1. SEDOT SEMUA DATA SEKALI SAJA (DENGAN 10 PEKERJA SERENTAK)
     all_providers_data = []
     
     with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
-        # executor.map menjaga urutan hasil sesuai dengan urutan MASTER_URLS
         results = executor.map(download_playlist, MASTER_URLS)
         
         for url, channels in results:
@@ -322,7 +387,6 @@ if __name__ == "__main__":
                 
     print("\n[+] Membuat Daftar Saluran Super Bersih (Prioritas Penyedia Nomor 1)...")
     
-    # 2. PROSES DEDUPLIKASI URL BERDASARKAN KASTA PENYEDIA (PROVIDER HIERARCHY)
     super_clean_channels = []
     master_seen_urls = set()
     
@@ -330,20 +394,17 @@ if __name__ == "__main__":
         for ch in provider["channels"]:
             stream_url = ch["url"]
             
-            # Cek Blacklist
             if stream_url in GLOBAL_BLACKLIST_URLS:
                 continue
                 
-            # Cek apakah URL ini sudah diamankan oleh penyedia dengan kasta lebih tinggi (urutan atas)
             if stream_url not in master_seen_urls:
                 master_seen_urls.add(stream_url)
-                super_clean_channels.append(ch) # Masukkan ke daftar super bersih
+                super_clean_channels.append(ch) 
     
     print(f"Total saluran unik yang didapat: {len(super_clean_channels)} (Duplikat URL dibuang)")
     print("\n[+] Memulai proses filtering ke Kategori...")
     
-    # 3. FILTER DATA SUPER BERSIH KE DALAM 7 KATEGORI
     for config in CONFIGURATIONS:
         filter_m3u_by_config(config, super_clean_channels)
         
-    print("\n✅ PROSES SELESAI! File M3U sudah sangat bersih, anti-dobel URL, mengutamakan penyedia urutan atas, dan siap digunakan untuk ION Network / Bakul Wifi!")
+    print("\n✅ PROSES SELESAI! M3U Event Bosku sekarang punya Tanggal & terurut presisi!")
