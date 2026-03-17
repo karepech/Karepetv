@@ -15,11 +15,11 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # ====================================================================
 
 MASTER_URLS = [
-    "https://aspaltvpasti.top/xxx/merah.php",
+    
     "https://deccotech.online/tv/tvstream.html", 
     "https://freeiptv2026.tsender57.workers.dev", 
     "https://raw.githubusercontent.com/tvplaylist/T2/refs/heads/main/tv1",
-    "http://sauridigital.my.id/kerbaunakal/2026TVGNS.html", # KEMBALI KE HTTP MURNI
+    "http://sauridigital.my.id/kerbaunakal/2026TVGNS.html", 
     "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25",
     "https://semar25.short.gy",
     "https://bit.ly/TVKITKAT",
@@ -146,18 +146,7 @@ TIME_PATTERN_REGEX = re.compile(r'\b(?:[01]?[0-9]|2[0-3])[:.][0-5][0-9]\s*WIB\b'
 SPAM_KEYWORDS = ['EXTVLCOPT', 'USER-AGENT', 'GECKO', 'CHROME', 'SAFARI', 'WINK', 'MOZILLA', 'APPLEWEBKIT', 'HTTP']
 
 CATEGORIZED_URLS = set()
-SPORTS_LOG = {k: set() for k in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 99, 999]}
-KASTA_NAMES = {
-    1: "[KASTA 1 - BEIN]", 2: "[KASTA 2 - CTV]", 3: "[KASTA 3 - SPOTV]",
-    4: "[KASTA 4 - SPORTSTARS]", 5: "[KASTA 5 - SOCCER CHANNEL]",
-    6: "[KASTA 6 - LOKAL SPORTS]", 7: "[KASTA 7 - DAZN / ELEVEN]",
-    8: "[KASTA 8 - SKY SPORTS]", 9: "[KASTA 9 - TNT SPORTS]",
-    10: "[KASTA 10 - TRUE SPORTS]", 11: "[KASTA 11 - HUB PREMIER / SPORTS]",
-    12: "[KASTA 12 - ASTRO]", 13: "[KASTA 13 - SETANTA]",
-    14: "[KASTA 14 - PRIMA]", 15: "[KASTA 15 - SPORT UMUM]",
-    16: "[KASTA 16 - FUBO]", 99: "[KASTA 99 - LAIN-LAIN / SISA]",
-    999: "[KASTA 999 - ARENA (JURU KUNCI)]"
-}
+CATEGORY_LOGS = {} # Kamus sakti penyimpan absen semua Kategori
 
 # ====================================================================
 # II. FUNGSI UTAMA MESIN SEDOT & FILTERING
@@ -201,34 +190,97 @@ def extract_date_from_group(group_title):
         return f"{day}-{month}-{year}"
     return None
 
-def get_channel_priority(channel_name):
+def get_channel_priority(channel_name, category):
+    """ SISTEM KASTA MAHA SULTAN UNTUK SEMUA KATEGORI """
     n = channel_name.upper()
     
-    if "BEIN" in n: return 1
-    if re.search(r'\bCTV\b', n): return 2
-    if "SPOTV" in n: return 3
-    if "SPORTSTAR" in n: return 4
-    if "SOCCER CHANNEL" in n: return 5
-    
-    lokal_gratis = ["RCTI", "SCTV", "INDOSIAR", "ANTV", "MNC TV", "MNCTV", "INEWS", "GTV", "TVRI", "TRANS", "MOJI", "RTV", "VOLI TV", "RCTV"]
-    is_lokal_sports = any(k in n for k in lokal_gratis) and ("SPORT" in n or "LIGA" in n)
-    if is_lokal_sports: return 6
-    
-    if "DAZN" in n: return 7
-    if "SKY" in n and "SPORT" in n: return 8
-    if "TNT" in n and "SPORT" in n: return 9
-    if "TRUE" in n and "SPORT" in n: return 10
-    if "HUB" in n or "PREMIER" in n: return 11
-    if "ASTRO" in n: return 12
-    if "SETANTA" in n: return 13
-    if "PRIMA" in n: return 14
-    
-    if "SPORT" in n and not any(k in n for k in ["BEIN", "SPOTV", "SKY", "TNT", "TRUE", "ARENA", "DAZN"]): return 15
-    if "FUBO" in n: return 16
-    
-    if "ARENA" in n: return 999 
-    
-    return 99 
+    if category == "SPORTS":
+        if "BEIN" in n: return 1
+        if re.search(r'\bCTV\b', n): return 2
+        if "SPOTV" in n: return 3
+        if "SPORTSTAR" in n: return 4
+        if "SOCCER CHANNEL" in n: return 5
+        
+        lokal_gratis = ["RCTI", "SCTV", "INDOSIAR", "ANTV", "MNC TV", "MNCTV", "INEWS", "GTV", "TVRI", "TRANS", "MOJI", "RTV", "VOLI TV", "RCTV"]
+        is_lokal_sports = any(k in n for k in lokal_gratis) and ("SPORT" in n or "LIGA" in n)
+        if is_lokal_sports: return 6
+        
+        if "DAZN" in n: return 7
+        if "SKY" in n and "SPORT" in n: return 8
+        if "TNT" in n and "SPORT" in n: return 9
+        if "TRUE" in n and "SPORT" in n: return 10
+        if "HUB" in n or "PREMIER" in n: return 11
+        if "ASTRO" in n: return 12
+        if "SETANTA" in n: return 13
+        if "PRIMA" in n: return 14
+        if "SPORT" in n and not any(k in n for k in ["BEIN", "SPOTV", "SKY", "TNT", "TRUE", "ARENA", "DAZN"]): return 15
+        if "FUBO" in n: return 16
+        if "ARENA" in n: return 999 
+        return 99 
+
+    elif category == "INDONESIA":
+        if "RCTI" in n: return 1
+        if "SCTV" in n: return 2
+        if "INDOSIAR" in n: return 3
+        if "TRANS" in n: return 4
+        if "MNC" in n: return 5
+        if "GTV" in n or "GLOBAL" in n: return 6
+        if "TVRI" in n: return 7
+        if "METRO" in n: return 8
+        if "TVONE" in n or "TV ONE" in n: return 9
+        if "KOMPAS" in n: return 10
+        if "NET" in n: return 11
+        if "RTV" in n: return 12
+        if "INEWS" in n: return 13
+        if "DAAI" in n: return 14
+        if "JTV" in n or "JAK TV" in n: return 15
+        return 99
+
+    elif category == "KIDS":
+        if "DISNEY" in n: return 1
+        if "NICKELODEON" in n or "NICK" in n: return 2
+        if "CARTOON" in n or "CN" in n: return 3
+        if "BOOMERANG" in n: return 4
+        if "BABY" in n: return 5
+        if "MENTARI" in n: return 6
+        if "CERIA" in n: return 7
+        if "ANIMASI" in n or "ANIMATION" in n: return 8
+        return 99
+
+    elif category == "KNOWLEDGE":
+        if "NAT" in n and "GEO" in n: return 1
+        if "DISCOVERY" in n: return 2
+        if "ANIMAL" in n: return 3
+        if "HISTORY" in n: return 4
+        if "SCIENCE" in n: return 5
+        if "WILD" in n: return 6
+        if "DOKUMENTER" in n or "DOCUMENTARY" in n: return 7
+        return 99
+
+    elif category == "NEWS":
+        if "CNN" in n: return 1
+        if "CNBC" in n: return 2
+        if "BBC" in n: return 3
+        if "AL JAZEERA" in n: return 4
+        if "CNA" in n: return 5
+        if "BLOOMBERG" in n: return 6
+        if "CCTV" in n: return 999 # CCTV dipindah ke bawah
+        return 99
+
+    elif category == "RELIGI":
+        if "MAKKAH" in n or "MADINAH" in n: return 1
+        if "RODJA" in n: return 2
+        if "TVMU" in n: return 3
+        if "MTA" in n: return 4
+        if "WESAL" in n or "INSAN" in n or "SURAU" in n: return 5
+        if "KHAZANAH" in n: return 6
+        if "UMMAT" in n or "NABAWI" in n: return 7
+        return 99
+        
+    elif category == "LIVE EVENT SPORTS":
+        return 0 # Event tidak punya kasta nama, dia urut berdasar tanggal
+        
+    return 99
 
 def download_playlist(args):
     idx, url = args
@@ -249,7 +301,6 @@ def download_playlist(args):
         response = session.get(url, headers=get_ott_headers(), timeout=10, verify=False)
         response.raise_for_status()
         
-        # INI PEMBACA HTML-NYA (Aman dan Kokoh)
         text_data = response.text.replace('<br>', '\n').replace('<br/>', '\n').replace('<BR>', '\n')
         
         current_buffer = []  
@@ -295,6 +346,10 @@ def filter_m3u_by_config(config, super_clean_channels):
 
     print(f"\n--- Memproses [{description}] ---")
     
+    # Inisiasi wadah log absen untuk kategori ini
+    if target_category not in CATEGORY_LOGS:
+        CATEGORY_LOGS[target_category] = {}
+        
     channels_data = [] 
     
     for ch in super_clean_channels:
@@ -329,10 +384,8 @@ def filter_m3u_by_config(config, super_clean_channels):
             continue
 
         if target_category == "SPORTS":
-            if "CHAMPIONS" in clean_channel_name:
-                continue
-            if "BEIN" in clean_channel_name and "MAX" in clean_channel_name:
-                continue
+            if "CHAMPIONS" in clean_channel_name: continue
+            if "BEIN" in clean_channel_name and "MAX" in clean_channel_name: continue
 
         if "RADIO" in clean_channel_name or "RADIO" in clean_group_title:
             continue
@@ -407,23 +460,23 @@ def filter_m3u_by_config(config, super_clean_channels):
                 if len(date_parts) == 3:
                     sort_key = f"{date_parts[2]}-{date_parts[1]}-{date_parts[0]} {new_channel_name.upper()}"
             
-            priority_score = 99
-            if target_category == "SPORTS":
-                priority_score = get_channel_priority(new_channel_name)
-                clean_name_for_log = re.sub(r'\[.*?\]|\(.*?\)', '', new_channel_name).strip()
-                SPORTS_LOG[priority_score].add(clean_name_for_log)
-            elif is_event_category:
-                priority_score = 0
+            # CEK KASTA MENGGUNAKAN FUNGSI BARU (BERLAKU UNTUK SEMUA KATEGORI)
+            priority_score = get_channel_priority(new_channel_name, target_category)
+            
+            # MENCATAT SEMUA NAMA CHANNEL KE DALAM LOG (SISTEM ABSENSI OMNI)
+            clean_name_for_log = re.sub(r'\[.*?\]|\(.*?\)', '', new_channel_name).strip()
+            if priority_score not in CATEGORY_LOGS[target_category]:
+                CATEGORY_LOGS[target_category][priority_score] = set()
+            CATEGORY_LOGS[target_category][priority_score].add(clean_name_for_log)
             
             channels_data.append((priority_score, provider_idx, sort_key, current_buffer, stream_url))
             CATEGORIZED_URLS.add(stream_url)
                     
+    # SORTIR 3 LAPIS (KASTA -> PROVIDER -> ABJAD NAMA) DITERAPKAN KE SEMUA KATEGORI!
     if is_event_category:
-        channels_data.sort(key=lambda x: (x[2], x[1])) 
-    elif target_category == "SPORTS":
-        channels_data.sort(key=lambda x: (x[0], x[1], x[2])) 
+        channels_data.sort(key=lambda x: (x[2], x[1])) # Khusus Event: Tanggal -> Provider
     else:
-        channels_data.sort(key=lambda x: (x[1], x[2])) 
+        channels_data.sort(key=lambda x: (x[0], x[1], x[2])) # Semua Kategori: Kasta -> Provider -> Nama
     
     filtered_lines = ["#EXTM3U"]
     for _, _, _, block_data, s_url in channels_data:
@@ -442,7 +495,7 @@ def filter_m3u_by_config(config, super_clean_channels):
 
 if __name__ == "__main__":
     print("=====================================================")
-    print("MEMULAI MESIN PENYEDOT IPTV (MULTITHREADING SUPER TURBO)")
+    print("MEMULAI MESIN PENYEDOT IPTV (OMNI-KASTA SUPER TURBO)")
     print("=====================================================")
     
     all_providers_data = []
@@ -481,20 +534,36 @@ if __name__ == "__main__":
                 }) 
     
     print(f"Total saluran unik (Link Beda) yang didapat: {len(super_clean_channels)}")
-    print("\n[+] Memulai proses filtering ke Kategori...")
+    print("\n[+] Memulai proses filtering Omni-Kasta...")
     
     for config in CONFIGURATIONS:
         filter_m3u_by_config(config, super_clean_channels)
         
-    print("\n[+] Mencetak file Laporan EPG Sports...")
-    with open("daftar_semua_sports_epg.txt", "w", encoding="utf-8") as f:
-        f.write("DAFTAR LENGKAP CHANNEL SPORTS (UNTUK MAPPING EPG)\n")
-        f.write("==================================================\n\n")
-        for kasta in sorted(KASTA_NAMES.keys()):
-            if SPORTS_LOG[kasta]: 
-                f.write(f"{KASTA_NAMES[kasta]}\n")
-                for name in sorted(SPORTS_LOG[kasta]):
-                    f.write(f"  - {name}\n")
-                f.write("\n")
+    # ====================================================================
+    # CETAK FILE LAPORAN EPG UNTUK SEMUA KATEGORI
+    # ====================================================================
+    print("\n[+] Mencetak file Laporan EPG Lengkap...")
+    with open("daftar_epg_lengkap.txt", "w", encoding="utf-8") as f:
+        f.write("DAFTAR LENGKAP CHANNEL SEMUA KATEGORI (UNTUK MAPPING EPG)\n")
+        f.write("=========================================================\n\n")
+        
+        for category in sorted(CATEGORY_LOGS.keys()):
+            f.write(f"=== KATEGORI: {category} ===\n")
+            kasta_dict = CATEGORY_LOGS[category]
+            
+            for kasta in sorted(kasta_dict.keys()):
+                if kasta == 0:
+                    kasta_name = "[JADWAL EVENT]"
+                elif kasta == 99:
+                    kasta_name = "[KASTA 99 - UMUM / LAIN-LAIN]"
+                elif kasta == 999:
+                    kasta_name = "[KASTA 999 - BAWAH / JURU KUNCI]"
+                else:
+                    kasta_name = f"[KASTA {kasta} - PRIORITAS UTAMA]"
+                    
+                f.write(f"  {kasta_name}\n")
+                for name in sorted(kasta_dict[kasta]):
+                    f.write(f"    - {name}\n")
+            f.write("\n")
                 
-    print("\n✅ PROSES SELESAI! Sauri kembali jalan, HTML aman!")
+    print("\n✅ PROSES SELESAI! Laporan 'daftar_epg_lengkap.txt' sukses dicetak!")
