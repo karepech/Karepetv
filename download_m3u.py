@@ -15,7 +15,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # ====================================================================
 
 MASTER_URLS = [
-    
+    "https://aspaltvpasti.top/xxx/merah.php",
     "https://deccotech.online/tv/tvstream.html", 
     "https://freeiptv2026.tsender57.workers.dev", 
     "https://raw.githubusercontent.com/tvplaylist/T2/refs/heads/main/tv1",
@@ -146,7 +146,7 @@ TIME_PATTERN_REGEX = re.compile(r'\b(?:[01]?[0-9]|2[0-3])[:.][0-5][0-9]\s*WIB\b'
 SPAM_KEYWORDS = ['EXTVLCOPT', 'USER-AGENT', 'GECKO', 'CHROME', 'SAFARI', 'WINK', 'MOZILLA', 'APPLEWEBKIT', 'HTTP']
 
 CATEGORIZED_URLS = set()
-CATEGORY_LOGS = {} # Kamus sakti penyimpan absen semua Kategori
+CATEGORY_LOGS = {} 
 
 # ====================================================================
 # II. FUNGSI UTAMA MESIN SEDOT & FILTERING
@@ -264,7 +264,7 @@ def get_channel_priority(channel_name, category):
         if "AL JAZEERA" in n: return 4
         if "CNA" in n: return 5
         if "BLOOMBERG" in n: return 6
-        if "CCTV" in n: return 999 # CCTV dipindah ke bawah
+        if "CCTV" in n: return 999 
         return 99
 
     elif category == "RELIGI":
@@ -278,7 +278,7 @@ def get_channel_priority(channel_name, category):
         return 99
         
     elif category == "LIVE EVENT SPORTS":
-        return 0 # Event tidak punya kasta nama, dia urut berdasar tanggal
+        return 0 
         
     return 99
 
@@ -288,17 +288,19 @@ def download_playlist(args):
     channels = []
     try:
         session = requests.Session()
+        # RETRY DITAMBAH JADI 2 DAN BACKOFF DILONGGARKAN AGAR LEBIH SABAR
         retry_strategy = Retry(
-            total=1,  
+            total=2,  
             status_forcelist=[429, 500, 502, 503, 504],
             allowed_methods=["HEAD", "GET", "OPTIONS"],
-            backoff_factor=0.5  
+            backoff_factor=1  
         )
         adapter = HTTPAdapter(max_retries=retry_strategy)
         session.mount("http://", adapter)
         session.mount("https://", adapter)
 
-        response = session.get(url, headers=get_ott_headers(), timeout=10, verify=False)
+        # TIMEOUT DINAIKKAN JADI 30 DETIK (Anti Gagal untuk Server Lemot)
+        response = session.get(url, headers=get_ott_headers(), timeout=30, verify=False)
         response.raise_for_status()
         
         text_data = response.text.replace('<br>', '\n').replace('<br/>', '\n').replace('<BR>', '\n')
@@ -346,7 +348,6 @@ def filter_m3u_by_config(config, super_clean_channels):
 
     print(f"\n--- Memproses [{description}] ---")
     
-    # Inisiasi wadah log absen untuk kategori ini
     if target_category not in CATEGORY_LOGS:
         CATEGORY_LOGS[target_category] = {}
         
@@ -460,10 +461,8 @@ def filter_m3u_by_config(config, super_clean_channels):
                 if len(date_parts) == 3:
                     sort_key = f"{date_parts[2]}-{date_parts[1]}-{date_parts[0]} {new_channel_name.upper()}"
             
-            # CEK KASTA MENGGUNAKAN FUNGSI BARU (BERLAKU UNTUK SEMUA KATEGORI)
             priority_score = get_channel_priority(new_channel_name, target_category)
             
-            # MENCATAT SEMUA NAMA CHANNEL KE DALAM LOG (SISTEM ABSENSI OMNI)
             clean_name_for_log = re.sub(r'\[.*?\]|\(.*?\)', '', new_channel_name).strip()
             if priority_score not in CATEGORY_LOGS[target_category]:
                 CATEGORY_LOGS[target_category][priority_score] = set()
@@ -472,11 +471,10 @@ def filter_m3u_by_config(config, super_clean_channels):
             channels_data.append((priority_score, provider_idx, sort_key, current_buffer, stream_url))
             CATEGORIZED_URLS.add(stream_url)
                     
-    # SORTIR 3 LAPIS (KASTA -> PROVIDER -> ABJAD NAMA) DITERAPKAN KE SEMUA KATEGORI!
     if is_event_category:
-        channels_data.sort(key=lambda x: (x[2], x[1])) # Khusus Event: Tanggal -> Provider
+        channels_data.sort(key=lambda x: (x[2], x[1])) 
     else:
-        channels_data.sort(key=lambda x: (x[0], x[1], x[2])) # Semua Kategori: Kasta -> Provider -> Nama
+        channels_data.sort(key=lambda x: (x[0], x[1], x[2])) 
     
     filtered_lines = ["#EXTM3U"]
     for _, _, _, block_data, s_url in channels_data:
@@ -539,9 +537,6 @@ if __name__ == "__main__":
     for config in CONFIGURATIONS:
         filter_m3u_by_config(config, super_clean_channels)
         
-    # ====================================================================
-    # CETAK FILE LAPORAN EPG UNTUK SEMUA KATEGORI
-    # ====================================================================
     print("\n[+] Mencetak file Laporan EPG Lengkap...")
     with open("daftar_epg_lengkap.txt", "w", encoding="utf-8") as f:
         f.write("DAFTAR LENGKAP CHANNEL SEMUA KATEGORI (UNTUK MAPPING EPG)\n")
@@ -566,4 +561,4 @@ if __name__ == "__main__":
                     f.write(f"    - {name}\n")
             f.write("\n")
                 
-    print("\n✅ PROSES SELESAI! Laporan 'daftar_epg_lengkap.txt' sukses dicetak!")
+    print("\n✅ PROSES SELESAI! Mesin kini lebih sabar untuk server lemot!")
