@@ -34,7 +34,8 @@ ALL_POSITIVE_KEYWORDS = {
     "INDONESIA": [
         "INDONESIA", "NASIONAL", "LOKAL", "DAERAH",
         "RCTI", "SCTV", "INDOSIAR", "TRANS", "MNC", "GTV", "GLOBAL TV", 
-        "TVRI", "BTV", "JAK TV", "JTV", "RTV", "NET TV", "DAAI"
+        "TVRI", "BTV", "JAK TV", "JTV", "RTV", "NET TV", "DAAI",
+        "INEWS", "TVONE", "TV ONE", "METRO", "KOMPAS" # Berita lokal pindah ke sini
     ],
     "KIDS": [
         "KIDS", "ANAK", "CARTOON", "KARTUN", "NICKELODEON", "NICK JR", 
@@ -47,8 +48,7 @@ ALL_POSITIVE_KEYWORDS = {
         "ANIMAL PLANET", "SCIENCE", "SAINS", "DOCUMENTARY", "DOKUMENTER", "WILD"
     ],
     "NEWS": [
-        "NEWS", "BERITA", "INFORMASI", "CNN", "CNBC", "INEWS", 
-        "TVONE", "TV ONE", "METRO", "KOMPAS", "AL JAZEERA", "BBC", "CNA", "BLOOMBERG", "CCTV"
+        "NEWS", "BERITA", "INFORMASI", "CNN", "CNBC", "AL JAZEERA", "BBC", "CNA", "BLOOMBERG", "CCTV"
     ],
     "RELIGI": [
         "RELIGI", "ISLAM", "MUSLIM", "ROHANI", "DAKWAH", "NGAJI", 
@@ -95,7 +95,8 @@ CONFIGURATIONS = [
     {
         "output_file": "indonesia_combined.m3u", 
         "keywords": ALL_POSITIVE_KEYWORDS["INDONESIA"],
-        "exclude_keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"] + ALL_POSITIVE_KEYWORDS["NEWS"] + ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["KNOWLEDGE"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["EVENT_ONLY"],
+        "exclude_keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"] + ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["KNOWLEDGE"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["EVENT_ONLY"],
+        # Berita lokal dibebaskan, jadi exclude_keywords tidak ada unsur "NEWS"
         "category_name": "INDONESIA",
         "force_category": True,
         "require_time": False,
@@ -122,11 +123,12 @@ CONFIGURATIONS = [
     {
         "output_file": "news_combined.m3u",
         "keywords": ALL_POSITIVE_KEYWORDS["NEWS"],
-        "exclude_keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"] + ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["EVENT_ONLY"],
+        # Satpam Internasional: Kalau ada TV Lokal masuk ke grup NEWS, TENDANG KELUAR!
+        "exclude_keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"] + ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["EVENT_ONLY"] + ALL_POSITIVE_KEYWORDS["INDONESIA"],
         "category_name": "NEWS",
         "force_category": True,
         "require_time": False,
-        "description": "NEWS: Gabungan Saluran Berita & CCTV"
+        "description": "NEWS: Gabungan Saluran Berita Internasional"
     },
     {
         "output_file": "religi_combined.m3u",
@@ -191,6 +193,7 @@ def extract_date_from_group(group_title):
     return None
 
 def get_channel_priority(channel_name, category):
+    """ SISTEM KASTA MAHA SULTAN OMNI-KATEGORI """
     n = channel_name.upper()
     
     if category == "SPORTS":
@@ -218,6 +221,7 @@ def get_channel_priority(channel_name, category):
         return 99 
 
     elif category == "INDONESIA":
+        # Berita lokal dimasukkan ke kasta rapi di sini
         if "RCTI" in n: return 1
         if "SCTV" in n: return 2
         if "INDOSIAR" in n: return 3
@@ -228,11 +232,12 @@ def get_channel_priority(channel_name, category):
         if "METRO" in n: return 8
         if "TVONE" in n or "TV ONE" in n: return 9
         if "KOMPAS" in n: return 10
-        if "NET" in n: return 11
+        if "INEWS" in n: return 11
         if "RTV" in n: return 12
-        if "INEWS" in n: return 13
-        if "DAAI" in n: return 14
+        if "NET" in n: return 13
+        if "BTV" in n or "BERITA SATU" in n: return 14
         if "JTV" in n or "JAK TV" in n: return 15
+        if "DAAI" in n: return 16
         return 99
 
     elif category == "KIDS":
@@ -297,7 +302,6 @@ def download_playlist(args):
         session.mount("http://", adapter)
         session.mount("https://", adapter)
 
-        # TIMEOUT GANDA: 15 detik konek, 60 detik nunggu download
         response = session.get(url, headers=get_ott_headers(), timeout=(15, 60), verify=False)
         response.raise_for_status()
         
@@ -386,6 +390,14 @@ def filter_m3u_by_config(config, super_clean_channels):
 
         if "RADIO" in clean_channel_name or "RADIO" in clean_group_title:
             continue
+
+        # ====================================================================
+        # SATPAM KHUSUS: PEMUSNAH TVRI DAERAH
+        # ====================================================================
+        if "TVRI" in clean_channel_name:
+            tvri_daerah = ["JABAR", "JATIM", "JATENG", "BALI", "PAPUA", "MALUKU", "SULSEL", "SULUT", "SUMUT", "SUMBAR", "RIAU", "JAMBI", "BANTEN", "JAKARTA", "DKI", "KALTIM", "KALBAR", "KALSEL", "KALTENG", "NTB", "NTT", "GORONTALO", "LAMPUNG", "BENGKULU", "BABEL", "KEPRI", "ACEH", "YOGYAKARTA", "JOGJA", "DIY", "SULTENG", "SULTRA", "SULBAR"]
+            if any(d in clean_channel_name for d in tvri_daerah):
+                continue # Buang channel ini dari semua proses!
 
         match_found = False
 
@@ -557,4 +569,4 @@ if __name__ == "__main__":
                     f.write(f"    - {name}\n")
             f.write("\n")
                 
-    print("\n✅ PROSES SELESAI! Mesin Anti-Timeout siap bertempur!")
+    print("\n✅ PROSES SELESAI! Berita Lokal & TVRI Daerah berhasil dikondisikan!")
