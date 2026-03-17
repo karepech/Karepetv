@@ -8,15 +8,15 @@ from datetime import datetime
 # ====================================================================
 
 MASTER_URLS = [
-    "https://deccotech.online/tv/tvstream.html", 
     "https://freeiptv2026.tsender57.workers.dev", 
-    "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25",
+    "https://deccotech.online/tv/tvstream.html", 
+    "https://spoo.me/tvplurl04",
     "https://bit.ly/KPL203",
     "http://sauridigital.my.id/kerbaunakal/2026TVGNS.html",
-    "https://liveevent.iptvbonekoe.workers.dev",
+    "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25",
     "https://semar25.short.gy",
     "https://bit.ly/TVKITKAT",
-    "https://spoo.me/tvplurl04",
+    "https://liveevent.iptvbonekoe.workers.dev",
     "https://tvg.short.gy/GEULISALLOTT26",
     "https://aspaltvpasti.top/xxx/merah.php"
 ]
@@ -137,20 +137,17 @@ GROUP_TITLE_REGEX = re.compile(r'group-title="([^"]*)"', re.IGNORECASE)
 CLEANING_REGEX = re.compile(r'[^a-zA-Z0-9\s]+')
 
 # ====================================================================
-# REGEX SUPER KETAT: Wajib mendeteksi format Jam (00:00 - 23:59) yang DIIKUTI kata "WIB"
-# Contoh: "00.00 WIB", "19:30 wib", "21:00WIB"
+# REGEX SUPER KETAT: Wajib mendeteksi format Jam yang DIIKUTI kata "WIB"
 # ====================================================================
 TIME_PATTERN_REGEX = re.compile(r'\b(?:[01]?[0-9]|2[0-3])[:.][0-5][0-9]\s*WIB\b', re.IGNORECASE)
 
 QUALITY_CLEANER_REGEX = re.compile(r'\b(hd|fhd|uhd|sd|4k|8k|tv|ind|indo|id|my|sg|ch|channel|network|plus|max|raw|hevc|hq)\b', re.IGNORECASE)
 
-# KATA KUNCI PEMBASMI SPAM (Membuang User-Agent yang bocor ke nama channel)
 SPAM_KEYWORDS = ['EXTVLCOPT', 'USER-AGENT', 'GECKO', 'CHROME', 'SAFARI', 'WINK', 'MOZILLA', 'APPLEWEBKIT', 'HTTP']
 
 # ====================================================================
 # TRACKER GLOBAL
 # ====================================================================
-# Untuk menyimpan URL yang sudah dikelompokkan agar tidak masuk ke kategori lain
 CATEGORIZED_URLS = set()
 
 # ====================================================================
@@ -169,16 +166,9 @@ def get_ott_headers():
         "Referer": "https://www.google.com/"
     }
 
-def normalize_channel_name(name):
-    clean_name = CLEANING_REGEX.sub(' ', name) 
-    clean_name = QUALITY_CLEANER_REGEX.sub('', clean_name) 
-    clean_name = re.sub(r'\s+', '', clean_name) 
-    return clean_name.lower()
-
 def extract_date_from_group(group_title):
     if not group_title:
         return None
-    # Kamus Bulan Indonesia & Singkatannya
     months = {
         'januari': '01', 'jan': '01', 'februari': '02', 'feb': '02',
         'maret': '03', 'mar': '03', 'april': '04', 'apr': '04',
@@ -194,11 +184,10 @@ def extract_date_from_group(group_title):
         day = match.group(1).zfill(2)
         month_str = match.group(2).lower()
         month = months[month_str]
-        year = datetime.now().strftime("%y") # Ambil 2 digit tahun saat ini (ex: 26)
+        year = datetime.now().strftime("%y") 
         return f"{day}-{month}-{year}"
     return None
 
-# FUNGSI 1: SEDOT SATU BLOK UTUH (MULTITHREADING)
 def download_playlist(url):
     print(f"  > Sedang menyedot dari: {url}")
     channels = []
@@ -220,7 +209,6 @@ def download_playlist(url):
                 if line.startswith("#EXTINF"):
                     current_extinf = line
                     
-            # VALIDASI SUPER KETAT: Memastikan ini benar-benar URL, bukan teks nyasar
             elif len(line) > 5 and line.lower().startswith("http"): 
                 stream_url = line
                 if current_buffer and current_extinf:
@@ -237,7 +225,6 @@ def download_playlist(url):
         print(f"  > WARNING: Gagal memproses {url}. Error: {e}")
         return url, []
 
-# FUNGSI 2: PEMBAGI KATEGORI DARI DAFTAR SUPER BERSIH
 def filter_m3u_by_config(config, super_clean_channels):
     output_file = config["output_file"]
     keywords = config["keywords"]
@@ -252,11 +239,11 @@ def filter_m3u_by_config(config, super_clean_channels):
     print(f"\n--- Memproses [{description}] ---")
     
     channels_data = [] 
-    seen_names_in_category = set() 
     
     for ch in super_clean_channels:
         stream_url = ch["url"]
         
+        # Cegah masuk kategori ganda
         if stream_url in CATEGORIZED_URLS:
             continue
 
@@ -275,18 +262,10 @@ def filter_m3u_by_config(config, super_clean_channels):
         new_channel_name = raw_channel_name
         extracted_date = None
         
-        # Mencegah nama channel yang sama persis masuk 2x (Kecuali Event)
-        if not is_event_category: 
-            normalized_name = normalize_channel_name(raw_channel_name)
-            if normalized_name in seen_names_in_category:
-                continue 
-            else:
-                seen_names_in_category.add(normalized_name)
-
         clean_group_title = CLEANING_REGEX.sub(' ', raw_group_title).upper()
         clean_channel_name = CLEANING_REGEX.sub(' ', raw_channel_name).upper()
         
-        # PENGHANCUR SPAM: Buang seketika jika nama channel berisi kode browser / VLC
+        # PENGHANCUR SPAM
         if any(spam in clean_channel_name for spam in SPAM_KEYWORDS):
             continue
 
@@ -297,21 +276,17 @@ def filter_m3u_by_config(config, super_clean_channels):
         match_found = False
 
         # ==============================================================
-        # PUKAT HARIMAU WAKTU: ATURAN KHUSUS UNTUK "LIVE EVENT SPORTS"
+        # ATURAN EVENT: TARIK PAKSA JIKA ADA JAM TAYANG (00.00 WIB)
         # ==============================================================
         if is_event_category:
-            # Jika namanya mengandung Jam + WIB, OTOMATIS MASUK ke Event (Bypass keywords)
             if has_time_pattern:
                 match_found = True
-                # Curi tanggal dari group-title aslinya
                 extracted_date = extract_date_from_group(raw_group_title)
-                
-                # Jika dapat tanggal, dan channel belum berformat DD-MM-YY, tempelkan di depan!
                 if extracted_date and not re.match(r'^\d{2}-\d{2}-\d{2,4}', raw_channel_name.strip()):
                     new_channel_name = f"{extracted_date} {raw_channel_name.strip()}"
         
         # ==============================================================
-        # ATURAN NORMAL: UNTUK KATEGORI SELAIN EVENT
+        # ATURAN KATEGORI LAIN
         # ==============================================================
         else:
             is_match = any(k in clean_group_title or k in clean_channel_name for k in keywords)
@@ -329,7 +304,6 @@ def filter_m3u_by_config(config, super_clean_channels):
                     b_line = current_buffer[idx]
                     
                     if b_line.startswith("#EXTINF"):
-                        # 1. Timpa Group Title
                         if 'group-title="' in b_line:
                             b_line = re.sub(r'group-title="[^"]*"', f'group-title="{target_category}"', b_line, flags=re.IGNORECASE)
                         else:
@@ -339,7 +313,6 @@ def filter_m3u_by_config(config, super_clean_channels):
                             else:
                                 b_line = f'{b_line} group-title="{target_category}"'
                         
-                        # 2. Timpa Nama Channel jika ini adalah Live Event yang disulap
                         if is_event_category and new_channel_name != raw_channel_name:
                             parts = b_line.split(',', 1)
                             if len(parts) == 2:
@@ -350,10 +323,8 @@ def filter_m3u_by_config(config, super_clean_channels):
                     elif b_line.upper().startswith("#EXTGRP:"):
                         current_buffer[idx] = f"#EXTGRP:{target_category}"
             
-            # Kunci Rahasia Pengurutan Sempurna Lintas Bulan untuk Live Event
             sort_key = new_channel_name.upper()
             if is_event_category and extracted_date:
-                # Ubah DD-MM-YY ke YY-MM-DD khusus untuk kunci sorting memori
                 date_parts = extracted_date.split('-')
                 if len(date_parts) == 3:
                     sort_key = f"{date_parts[2]}-{date_parts[1]}-{date_parts[0]} {new_channel_name.upper()}"
@@ -361,12 +332,11 @@ def filter_m3u_by_config(config, super_clean_channels):
             channels_data.append((sort_key, current_buffer, stream_url))
             CATEGORIZED_URLS.add(stream_url)
                     
-    # SISTEM PENGURUTAN (SORTING)
+    # SORTING
     if require_time or is_event_category:
-        # Sortir menggunakan "sort_key" yang sudah disempurnakan (YY-MM-DD HH:MM)
         channels_data.sort(key=lambda x: x[0])
     
-    # GABUNGKAN BLOK + LINK JADI SATU FILE PLAYLIST
+    # GABUNGKAN PLAYLIST
     filtered_lines = ["#EXTM3U"]
     for _, block_data, s_url in channels_data:
         filtered_lines.extend(block_data)  
@@ -389,6 +359,7 @@ if __name__ == "__main__":
     
     all_providers_data = []
     
+    # Executor Map memastikan hasil tetap sesuai urutan dari MASTER_URLS
     with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
         results = executor.map(download_playlist, MASTER_URLS)
         
@@ -410,15 +381,16 @@ if __name__ == "__main__":
             
             if stream_url in GLOBAL_BLACKLIST_URLS:
                 continue
-                
+            
+            # CEK KEMBAR: Nama boleh sama (sebagai cadangan), TAPI link (URL) wajib beda/unik
             if stream_url not in master_seen_urls:
                 master_seen_urls.add(stream_url)
                 super_clean_channels.append(ch) 
     
-    print(f"Total saluran unik yang didapat: {len(super_clean_channels)} (Duplikat URL dibuang)")
+    print(f"Total saluran unik (Link Beda) yang didapat: {len(super_clean_channels)}")
     print("\n[+] Memulai proses filtering ke Kategori...")
     
     for config in CONFIGURATIONS:
         filter_m3u_by_config(config, super_clean_channels)
         
-    print("\n✅ PROSES SELESAI! M3U Event Bosku sekarang bersih dari Spam dan punya Tanggal!")
+    print("\n✅ PROSES SELESAI! M3U bersih, Nama Kembar diizinkan untuk cadangan asalkan link beda!")
