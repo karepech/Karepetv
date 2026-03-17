@@ -20,12 +20,13 @@ MASTER_URLS = [
     "https://semar25.short.gy",
     "https://bit.ly/TVKITKAT",
     "https://liveevent.iptvbonekoe.workers.dev",
+    "https://tvg.short.gy/GEULISALLOTT26",
     "https://bit.ly/KPL203"
 ]
 
 ALL_POSITIVE_KEYWORDS = {
     "EVENT_ONLY": ["EVENT", "SEA GAMES", "PREMIER LEAGUE", "LA LIGA", "SERIE A", "BUNDESLIGA", "LIGUE 1", "EREDIVISIE", "LIGA 1 INDONESIA", "LIGA PRO SAUDI"],
-    "SPORTS_LIVE": ["SPORT", "SPORTS", "LIVE", "LANGSUNG", "OLAHRAGA", "MATCH", "LIGA", "FOOTBALL", "BEIN", "SPOTV", "BE IN", "CTV", "DAZN", "ELEVEN", "ZIGGO", "SSC"],
+    "SPORTS_LIVE": ["SPORT", "SPORTS", "LIVE", "LANGSUNG", "OLAHRAGA", "MATCH", "LIGA", "FOOTBALL", "BEIN", "SPOTV", "BE IN", "CTV", "DAZN", "ELEVEN", "ZIGGO", "SSC", "HUB", "PREMIER", "SETANTA", "PRIMA", "FUBO", "ARENA"],
     "INDONESIA": [
         "INDONESIA", "NASIONAL", "LOKAL", "DAERAH",
         "RCTI", "SCTV", "INDOSIAR", "TRANS", "MNC", "GTV", "GLOBAL TV", 
@@ -151,7 +152,6 @@ def contains_time_pattern(text):
     return bool(TIME_PATTERN_REGEX.search(text))
 
 def get_ott_headers():
-    # Kamuflase dirotasi agar server provider bingung
     user_agents = [
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
@@ -188,70 +188,86 @@ def extract_date_from_group(group_title):
     return None
 
 def get_channel_priority(channel_name):
+    """
+    SISTEM KASTA MAHA SULTAN (Prioritas Urutan SPORTS)
+    Makin kecil angkanya, makin di atas posisinya.
+    """
     n = channel_name.upper()
     
-    # Kasta 1: beIN
+    # 1. beIN
     if "BEIN" in n: return 1
     
-    # Kasta 2: SPOTV, CTV, dan TV Lokal Gratis yang ditambahi kata "SPORT"
+    # 2. CTV
+    if "CTV" in n: return 2
+    
+    # 3. SPOTV
+    if "SPOTV" in n: return 3
+    
+    # 4. Sportstars
+    if "SPORTSTARS" in n: return 4
+    
+    # 5. Soccer Channel
+    if "SOCCER CHANNEL" in n: return 5
+    
+    # 6. TV Indonesia Lokal + SPORTS
     lokal_gratis = ["RCTI", "SCTV", "INDOSIAR", "ANTV", "MNC TV", "INEWS", "GTV", "TVRI", "TRANS", "MOJI", "RTV", "VOLI TV"]
     is_lokal_sports = any(k in n for k in lokal_gratis) and "SPORT" in n
-    if "SPOTV" in n or "CTV" in n or is_lokal_sports: return 2
+    if is_lokal_sports: return 6
     
-    # Kasta 3: Lokal Premium Berbayar
-    if any(k in n for k in ["MNC", "SPORTSTARS", "SOCCER CHANNEL", "VIDIO"]): return 3
+    # 7. DAZN (termasuk Eleven yang sudah dimutasi)
+    if "DAZN" in n: return 7
     
-    # Kasta 4: Raksasa Afrika
-    if "SUPER" in n and "SPORT" in n or re.search(r'\bSS\b', n): return 4
+    # 8. Sky Sports
+    if "SKY" in n and "SPORT" in n: return 8
     
-    # Kasta 5: Ziggo (Belanda)
-    if "ZIGGO" in n: return 5
+    # 9. TNT Sports
+    if "TNT" in n and "SPORT" in n: return 9
     
-    # Kasta 6: Sky Sports
-    if "SKY" in n: return 6
+    # 10. True Sports
+    if "TRUE" in n and "SPORT" in n: return 10
     
-    # Kasta 7: TNT & BT Sport
-    if "TNT" in n or "BT SPORT" in n: return 7
+    # 11. HUB Premier & Hub Sports
+    if "HUB" in n or "PREMIER" in n: return 11
     
-    # Kasta 8: SSC
-    if "SSC" in n: return 8
+    # 12. Astro
+    if "ASTRO" in n: return 12
     
-    # Kasta 9: Abu Dhabi & Dubai
-    if "ABU DHABI" in n or "DUBAI" in n: return 9
+    # 13. Setanta
+    if "SETANTA" in n: return 13
     
-    # Kasta 10: Astro
-    if "ASTRO" in n: return 10
+    # 14. Prima
+    if "PRIMA" in n: return 14
     
-    # Kasta 11: TrueVisions
-    if "TRUE" in n: return 11
+    # 15. Sport (Sport1, dll)
+    if "SPORT" in n and not any(k in n for k in ["BEIN", "SPOTV", "SKY", "TNT", "TRUE", "ARENA"]): return 15
     
-    # Kasta 12: Menengah
-    if any(k in n for k in ["EUROSPORT", "FOX", "OPTUS", "SETANTA"]): return 12
+    # 16. Fubo
+    if "FUBO" in n: return 16
     
-    # Kasta 99: Rakyat jelata, akan berjejer sesuai aslinya dari server tanpa diurutkan abjad
+    # 18. ARENA SPORT (Kasta Terakhir Mutlak)
+    if "ARENA" in n: return 999 
+    
+    # 17. DLL (Sisa Rakyat Jelata akan diurutkan sesuai Abjad)
     return 99 
 
 def download_playlist(url):
     print(f"  > Sedang menyedot dari: {url}")
     channels = []
     try:
-        # Membangun sistem kebal timeout (Auto-Retry Pantang Menyerah)
         session = requests.Session()
         retry_strategy = Retry(
-            total=3,  # Coba ulang maksimal 3 kali jika gagal
+            total=3,  
             status_forcelist=[429, 500, 502, 503, 504],
             allowed_methods=["HEAD", "GET", "OPTIONS"],
-            backoff_factor=1  # Jeda 1 detik, lalu 2 detik, lalu 4 detik
+            backoff_factor=1  
         )
         adapter = HTTPAdapter(max_retries=retry_strategy)
         session.mount("http://", adapter)
         session.mount("https://", adapter)
 
-        # Timeout diperpanjang jadi 30 detik
         response = session.get(url, headers=get_ott_headers(), timeout=30)
         response.raise_for_status()
         
-        # PERBAIKAN HTML: Baca keseluruhan teks, tangani <br>, lalu splitlines
         text_data = response.text.replace('<br>', '\n').replace('<br/>', '\n').replace('<BR>', '\n')
         
         current_buffer = []  
@@ -270,6 +286,7 @@ def download_playlist(url):
                     
             elif len(line) > 5 and line.lower().startswith("http"): 
                 stream_url = line
+                
                 if current_buffer and current_extinf:
                     channels.append({
                         "buffer": current_buffer,
@@ -329,8 +346,13 @@ def filter_m3u_by_config(config, super_clean_channels):
         if any(spam in clean_channel_name for spam in SPAM_KEYWORDS):
             continue
 
-        if target_category == "SPORTS" and "CHAMPIONS" in clean_channel_name:
-            continue
+        if target_category == "SPORTS":
+            # 1. Musnahkan "CHAMPIONS"
+            if "CHAMPIONS" in clean_channel_name:
+                continue
+            # 2. Musnahkan "BEIN MAX" (Liga Prancis error)
+            if "BEIN" in clean_channel_name and "MAX" in clean_channel_name:
+                continue
 
         if "RADIO" in clean_channel_name or "RADIO" in clean_group_title:
             continue
@@ -353,12 +375,11 @@ def filter_m3u_by_config(config, super_clean_channels):
                 else:
                     match_found = True
 
-        # ====================================================================
-        # SATPAM KHUSUS SPORTS: BLOKIR LOKAL GRATIS TANPA "SPORT"
-        # ====================================================================
+        # SATPAM TV LOKAL (GRATIS) DI SPORTS
         if match_found and target_category == "SPORTS":
             lokal_gratis = ["RCTI", "SCTV", "INDOSIAR", "ANTV", "MNC TV", "INEWS", "GTV", "TVRI", "TRANS", "MOJI", "RTV", "NET TV", "VOLI TV"]
             if any(k in clean_channel_name for k in lokal_gratis):
+                # WAJIB ada kata SPORT atau LIGA, jika tidak ada, TENDANG KELUAR DARI SPORTS!
                 if not any(s in clean_channel_name for s in ["SPORT", "LIGA"]):
                     match_found = False
 
@@ -402,10 +423,12 @@ def filter_m3u_by_config(config, super_clean_channels):
             channels_data.append((priority_score, sort_key, current_buffer, stream_url))
             CATEGORIZED_URLS.add(stream_url)
                     
+    # ATURAN SORTING KASTA SULTAN
     if is_event_category:
         channels_data.sort(key=lambda x: x[1]) 
     elif target_category == "SPORTS":
-        channels_data.sort(key=lambda x: x[0]) 
+        # Sort pertama berdasarkan Kasta (0-999), Sort kedua berdasarkan Abjad agar rapi
+        channels_data.sort(key=lambda x: (x[0], x[1])) 
     else:
         pass 
     
@@ -432,6 +455,7 @@ if __name__ == "__main__":
     all_providers_data = []
     
     with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
+        # Typo dari sebelumnya sudah saya perbaiki di sini
         results = executor.map(download_playlist, MASTER_URLS)
         
         for url, channels in results:
@@ -463,4 +487,4 @@ if __name__ == "__main__":
     for config in CONFIGURATIONS:
         filter_m3u_by_config(config, super_clean_channels)
         
-    print("\n✅ PROSES SELESAI! Anti-Error Siap Menjalankan Tugas!")
+    print("\n✅ PROSES SELESAI! beIN MAX Lenyap, Sauri Masuk Normal, Arena Di Dasar!")
