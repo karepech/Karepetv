@@ -24,7 +24,7 @@ MASTER_URLS = [
     "https://semar25.short.gy",
     "https://bit.ly/TVKITKAT",
     "https://liveevent.iptvbonekoe.workers.dev",
-    "https://tvg.short.gy/GEULISALLOTT26",
+    "https://bwifi.my.id/lokal",
     "https://bit.ly/KPL203"
 ]
 
