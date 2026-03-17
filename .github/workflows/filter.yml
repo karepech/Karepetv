@@ -7,7 +7,7 @@ on:
       # Jalankan setiap kali ada push ke branch 'main'
       - main 
   
-  # 2. Trigger terjadwal (setiap 20 menit)
+  # 2. Trigger terjadwal 
   schedule:
     # MENJALANKAN SETIAP 50 MENIT
     - cron: '*/50 * * * *'
@@ -31,7 +31,7 @@ jobs:
         run: pip install requests
 
       - name: Jalankan Skrip Multi-Filter
-        # Skrip ini menghasilkan 5 file M3U (Event, Sports, Nasional, Kids, Knowledge)
+        # Skrip ini menghasilkan file M3U dan file TXT laporan EPG
         run: python download_m3u.py
         
       # --- LANGKAH PENTING UNTUK COMMIT/PUSH ---
@@ -40,14 +40,13 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Commit dan Push file M3U yang Diperbarui
+      - name: Commit dan Push file M3U dan TXT yang Diperbarui
         run: |
-          # Perbaikan: Menggunakan *.m3u agar SEMUA file playlist otomatis terdeteksi
-          # tanpa perlu menulis namanya satu per satu.
-          git add *.m3u
+          # Perbaikan: Menggunakan *.m3u dan *.txt agar playlist DAN laporan EPG ikut terdeteksi
+          git add *.m3u *.txt
           
-          # Melakukan commit hanya jika ada perubahan. Pesan 'echo' akan muncul jika tidak ada perubahan.
-          git commit -m "Otomatis: Update semua playlist M3U kategori (scheduled/push)" || echo "Tidak ada perubahan untuk di-commit"
+          # Melakukan commit hanya jika ada perubahan.
+          git commit -m "Otomatis: Update playlist M3U & Daftar EPG Sports" || echo "Tidak ada perubahan untuk di-commit"
           
-          # Melakukan push. Perlu token akses default yang disediakan GitHub Actions.
+          # Melakukan push.
           git push
