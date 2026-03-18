@@ -1,8 +1,11 @@
 #EXTM3U
 #EXTINF:-1 group-title="KNOWLEDGE" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Natgeologo.svg/512px-Natgeologo.svg.png",National Geographic Japan (1080p)
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs10
-#EXTINF:-1 tvg-logo="https://statik.tempo.co/data/2023/07/01/id_1216192/1216192_720.jpg" group-title="KNOWLEDGE", National Geographic
-#EXTINF:-1 tvg-logo="https://i.ibb.co.com/4LgsdtB/wp8223158.jpg" group-title="KNOWLEDGE", National Geographic Wild
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/njemacka/natgeowild.png" group-title="KNOWLEDGE",Nat Geo Wild DE
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1316
+#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/njemacka/nationalgeographic.png" group-title="KNOWLEDGE",National Geographic DE
+http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1317
+#EXTINF:-1 group-title="KNOWLEDGE" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhBonGjUCzL-ZOHd-HPGhw4mL9kMMVZfkbMLt3sP41Sa5fTp_hWRiUXg0qm9kJU3HG9QQiTPPAyFCrU23DQEhvjns4YczJMVQ8dHKCE2CLlulSpdQe11KnE2nSwdodznJw40E44N2RQmqIRHAS_lrAGgxVgTki7z4M2EpR1DWvLdOYQ4-IlwC24JASKYd0/s700/NAT%20GEO%20WILD.png",NAT GEO WILD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referer=https://webtv.sk/tv/
 #KODIPROP:inputstreamaddon=inputstream.adaptive
@@ -10,10 +13,6 @@ http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs10
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #KODIPROP:inputstream.adaptive.license_key=https://drm.antik.sk/widevine/key
 https://dash2.antik.sk/stream/hisi_ngw/playlist_cbcs.mpd
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/njemacka/natgeowild.png" group-title="KNOWLEDGE",Nat Geo Wild DE
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1316
-#EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/njemacka/nationalgeographic.png" group-title="KNOWLEDGE",National Geographic DE
-http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1317
 #EXTINF:-1 group-title="KNOWLEDGE" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyGa59QzxXZV-2KoHHPqB7PJitYDC54dshAS8CdgManEgm0jikLf3Y2LdIztSZ4eHodqSahYx29N08xLC1mv1hB5KETubqZyzjjYH-KHCZp0edLjg7d5oZvVJN8cqc3Ct6mVnvf52Xkbzd-pp7fRxDy4KmN2D82lgr6XtCSmV4I5rWIJMUQrLGCEl_2K3G/s700/NATIONAL%20GEOGRAPHIC.png",NATIONAL GEOGRAPHIC
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:90.0) Gecko/20100101 Firefox/90.0
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://www.izzigo.tv/
@@ -73,18 +72,13 @@ https://raw.githubusercontent.com/hendroagung2904/Super-Dooper-Stupid/refs/heads
 #KODIPROP:inputstream.adaptive.license_key=c011525969e44b99a86059dbb3cdf4e8:6700a5d93203417b8585f7de7dd1a09b
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/qdVMaoN.jpeg" group-title="KNOWLEDGE", Discovery Turbo (AG)
 https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Discoveryturbo2/default/manifest.mpd
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=69646b755f3130303030303030303030:e4a2359b05563399f1d9adfce641724a
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0
-#EXTINF:-1 tvg-logo="https://warningfm.github.io/v3/img/MRwgwUL.png?v=1.0.0.1" group-title="KNOWLEDGE" group-logo="https://i.imgur.com/i1s3UMq.png?v=1.0.0.1" tvg-id="Curiosity.id" tvg-name="Curiosity", Curiosity
-#https://cdn08jtedge.indihometv.com/dassdvr/194/curiosity/manifest.mpd
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=27c8a08eabcd4bbc88eda3690cbf6aaf:bb078e32f6df14ca97bff5b8aee8caf5
-#EXTVLCOPT:http-user-agent=ExoPlayerDemo/4.0 (Linux; Android 14) ExoPlayerLib/2.15.1
-#EXTINF:-1 tvg-logo="https://warningfm.github.io/v3/img/XIY8A94.png?v=1.0.0.1" group-title="KNOWLEDGE" group-logo="https://i.imgur.com/i1s3UMq.png?v=1.0.0.1" tvg-id="DiscoveryAsia.id" tvg-name="Discovery Asia", Discovery Asia
-https://atemeshield1-voe.sysln.id/live/eds/DiscoveryAsiaHD/mediampd/DiscoveryAsiaHD.mpd
 #EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/njemacka/discovery_channelok.png" group-title="KNOWLEDGE",Discovery Channel DE
 http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/1315
+#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyA_Oy7v8xjdoZUQXo2uPWyY0M-tLI_N4U_sEKoCgqXw3G93kG1EUYl5Y68xtvHIXqbgMQ1K7Td5Cz-D4kZGbcEE1KrJHwo-UmWwkRPgreY8guhSzhbThdALIP-q0Usqj5R4dk37NmpmMnKz_zYNBorQ-2jCudOTlIum7_uGJ3v1yVDqZq428mt_d7gN5N/s700/DISCOVERY%20ASIA.png" group-title="KNOWLEDGE",DISCOVERY ASIA
+#EXTVLCOPT:http-user-agent=ExoPlayerDemo/2.15.1 (Linux; Android 13) ExoPlayerLib/2.15.1
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=27c8a08eabcd4bbc88eda3690cbf6aaf:bb078e32f6df14ca97bff5b8aee8caf5
+https://atemeshield1-voe.sysln.id/live/eds/DiscoveryAsiaHD/mediampd/DiscoveryAsiaHD.mpd
 #EXTINF:-1 group-title="KNOWLEDGE" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyA_Oy7v8xjdoZUQXo2uPWyY0M-tLI_N4U_sEKoCgqXw3G93kG1EUYl5Y68xtvHIXqbgMQ1K7Td5Cz-D4kZGbcEE1KrJHwo-UmWwkRPgreY8guhSzhbThdALIP-q0Usqj5R4dk37NmpmMnKz_zYNBorQ-2jCudOTlIum7_uGJ3v1yVDqZq428mt_d7gN5N/s700/DISCOVERY%20ASIA.png",DISCOVERY ASIA
 https://cdn08jtedge.indihometv.com/dassdvr/194/discoveryasia/manifest.mpd
 #EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjI6L_cbGTTZwb3DVTIcCJRHGDp70zflqThSpDpRbAt9IHD99JP59Q0xOr2X-4X0hUUzJivjvT5XW8uSlb8ZDUpHJI-BCCLVZtwpu01JKAoHbG9A3pRSM60bETCqD9IZJOEKGOlZgSdWp5HcesKu0zjZgiQX5MUQ-VmvhfjlU8L4WYpsX_2gbCAGS1kYMyz/s700/DISCOVERY%20CHANNEL.png" group-title="KNOWLEDGE",DISCOVERY CHANNEL
@@ -162,7 +156,7 @@ https://mega.z5cable.com/bpk-tv/discovery_turbo_hd/default/index.mpd
 #EXTINF:-1 group-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2-fdTlvlaQ9FzNdZSkIs80dVAYPQ5ZDaJng&s" group-title="KNOWLEDGE"
 #EXTINF:-1  tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlle38Uoo0fTf3I4kgxD2S8T8Ap8nza9Dnvg&s" group-title="KNOWLEDGE", Animal Planet US
 https://raw.githubusercontent.com/B-inal-123/arabasta-s/main/Animalplanet.m3u8
-#EXTINF:-1 tvg-logo="https://warningfm.github.io/v3/img/JLMBNgX.png?v=1.0.0.1" group-title="KNOWLEDGE" group-logo="https://i.imgur.com/i1s3UMq.png?v=1.0.0.1" tvg-id="AnimalPlanet.id" tvg-name="Animal Planet", Animal Planet HD
+#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjaKDrUV-rE7KkBo7zVPpO4felyJwl-06uCXfisVJ_vAqV5MJeOjDR2R3Jqt2MGDApB-eZZP9xpizZ4m9QykeIz8OcJp6Kl_k5o1Fhtv-2PUhWJ0WGYW5FKn-hP5IgEnCNaOUw8v7iSu3Pvq7EuMoG3K93fn7tMQBlZvfm9nloiM6R2TASwBDnjx-eAkOXd/s700/ANIMAL%20PLANET.png" group-title="KNOWLEDGE",ANIMAL PLANET
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
@@ -298,26 +292,6 @@ https://53ff3982.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmxheH
 https://amg01775-amg01775c1-amgplt0343.playout.now3.amagi.tv/playlist/amg01775-amg01775c1-amgplt0343/playlist.m3u8
 #EXTINF:-1 group-title="KNOWLEDGE" tvg-logo="https://i.imgur.com/Vhv5gjN.png",WildEarth (1080p)
 https://dqga3jatxofgx.cloudfront.net/WildEarth.m3u8
-#EXTINF:-1 tvg-logo="https://warningfm.github.io/v3/img/7QX6p0Y.png?v=1.0.0.1" group-title="KNOWLEDGE" group-logo="https://i.imgur.com/i1s3UMq.png?v=1.0.0.1" tvg-id="DiscoveryChannel.id" tvg-name="Discovery Channel HD", Discovery Channel HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=4271dec5b6794650872dc915fe10fdeb:0e64ddadd1cbd079f98c597fc01c06bf
-#https://cdn08jtedge.indihometv.com/dassdvr/133/disco/manifest.mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=62fae935e91c4e8d9e835a294ea81909:328cfed51cba1bfa41f1bda219ceeff8
-#EXTVLCOPT:http-user-agent=ExoPlayerDemo/4.0 (Linux; Android 14) ExoPlayerLib/2.15.1
-#EXTINF:-1 tvg-logo="https://warningfm.github.io/v3/img/NGHlb2H.png?v=1.0.0.1" group-title="KNOWLEDGE" group-logo="https://i.imgur.com/i1s3UMq.png?v=1.0.0.1" tvg-id="DMAX.HD.my" tvg-name="DMAX HD", DMAX
-#https://atemecdnbalancer-voe.sysln.id/live/eds/DMAXHD/mediampd/DMAXHD.mpd
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=a7724b7ca2604c33bb2e963a0319968a:6f97e3e2eb2bade626e0281ec01d3675
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0
-#EXTINF:-1 tvg-logo="https://warningfm.github.io/v3/img/Roz7rC6.png?v=1.0.0.1" group-title="KNOWLEDGE" group-logo="https://i.imgur.com/i1s3UMq.png?v=1.0.0.1" tvg-id="401" tvg-name="HISTORY HD", History
-#https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_historyhd/default/index.mpd
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0
-#EXTINF:-1 tvg-logo="https://warningfm.github.io/v3/img/VZS5v61.png?v=1.0.0.1" group-title="KNOWLEDGE" group-logo="https://i.imgur.com/i1s3UMq.png?v=1.0.0.1" channel-id="GBBA220000751-gb" tvg-id="GBBA220000751" tvg-chno="4498" tvg-name="INWILD", INWILD
-https://amg00861-terninternation-inwild-samsunguk-w5wic.amagi.tv/playlist/amg00861-terninternation-inwild-samsunguk/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://warningfm.github.io/v3/img/Mu3QRrg.png?v=1.0.0.1" group-title="KNOWLEDGE" group-logo="https://i.imgur.com/i1s3UMq.png?v=1.0.0.1" channel-id="ITBA3300046KE-it" tvg-id="ITBA3300046KE" tvg-chno="4489" tvg-name="WildEarth", WildEarth
-https://wildearth-plex.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2023/12/15/ad0c4e9a-ae99-3e40-a252-01c63c0bac9a.jpeg" group-title="KNOWLEDGE", Action-2-River Wild
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
@@ -347,13 +321,6 @@ https://1d153317c8db4250b3789601274e2402.mediatailor.us-west-2.amazonaws.com/v1/
 https://rt-rtd.rttv.com/dvr/rtdoc/playlist.m3u8
 #EXTINF:-1 group-title="KNOWLEDGE" tvg-logo="https://i.imgur.com/aeu5zIC.png",RT Documentary Russian (1080p)
 https://rt-doc.rttv.com/dvr/rtdru/playlist.m3u8
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36
-#EXTINF:-1 tvg-logo="https://warningfm.github.io/v3/img/vCe26fV.png?v=1.0.0.1" group-title="KNOWLEDGE" group-logo="https://i.imgur.com/i1s3UMq.png?v=1.0.0.1" tvg-id="CGTNDocumentary.id" tvg-name="CGTN-Documentary", CGTN Documentary
-http://cdn.nng.cloudns.us/live/m3u8/knl/0d3dbf8c78f1fb7.m3u8
-#EXTINF:-1 tvg-id="RTDoc.ru" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCyw-KzJ9ZlXfik4e2z5h6rSfIMahcCiWg9Q&s" group-title="KNOWLEDGE",RT DOCUMENTARY
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-https://rt-rtd.rttv.com/live/rtdoc/playlist.m3u8
 #EXTINF:-1 group-title="KNOWLEDGE" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMBOocFuESu6S13QMoV2ARjAbZ-PClEag3vSRqmgnn0Ouuz4lYg2O_JmGDdMdTPTY0dDOrcgchL_s8NMRZBVe50ha6Yd06F9NhXlArpu5-JvIcgKrTycMFad5hDea5Fy2XPYrCCkKzEWvavq2pJ-OYFyMpP8H4aWZqI3pBnVicZfICaIgH9w0SkAxYJ-Ju/s700/CGTN%20DOCUMENTARY.png",CGTN DOCUMENTARY
 #EXTVLCOPT:http-referrer=http://www.dens.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36
@@ -371,6 +338,10 @@ http://202.80.222.20/cdn/iptv/Tvod/001/channel2000035/1024.m3u8
 ############### PENGETAHUAN ###############
 #EXTINF:-1 group-title="KNOWLEDGE" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMBOocFuESu6S13QMoV2ARjAbZ-PClEag3vSRqmgnn0Ouuz4lYg2O_JmGDdMdTPTY0dDOrcgchL_s8NMRZBVe50ha6Yd06F9NhXlArpu5-JvIcgKrTycMFad5hDea5Fy2XPYrCCkKzEWvavq2pJ-OYFyMpP8H4aWZqI3pBnVicZfICaIgH9w0SkAxYJ-Ju/s700/CGTN%20DOCUMENTARY.png",CGTN DOCUMENTARY
 https://cdn10jtedge.indihometv.com/atm/DASH/CGTN_DOCUMENTARY/manifest.mpd
+#EXTINF:-1 tvg-id="RTDoc.ru" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8vIAI2qnErrKYygzCy4OFTBIa5aVzZCVdAqpEiTfg5Bhh7A1tstzpBgAF61k6nKzQm3kxvd6BQTaqxsiayVpnJgIoT9JZyIsXpn6VWfrmwr1yHWN0NbcVjW0iauTs76qcv5jcGEMx9A4GhHfvSPNwZAJl1vbFNtCmZL8aaW7gc8sVto6nGBvCuH7RQApU/s700/RT%20DOCUMENTARY.png" group-title="KNOWLEDGE",RT DOCUMENTARY
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+https://rt-rtd.rttv.com/live/rtdoc/playlist.m3u8
 ##############################################################################################################################
 #EXTINF:-1 group-logo="https://i.pinimg.com/736x/29/93/3a/29933a0e75897be347bc686aa1f121fd.jpg" group-title="KNOWLEDGE"
 #EXTINF:-1 group-title="KNOWLEDGE" tvg-logo="https://cbs12.com/resources/media/0c1ecad8-fb09-4bb2-beaa-fc561dfe624a-small21x9_LoomerStill.jpg?1603419052801",30A Loomered TV
@@ -477,60 +448,8 @@ http://s1.tv-nano.com/Nano_rec/index.m3u8
 https://vod.tuva.ru/nauka2/index.m3u8
 #EXTINF:-1 group-title="KNOWLEDGE" tvg-logo="https://i.imgur.com/itRbMX3.png",Ð¡Ð¸ÑÐ¸ Ð­Ð´ÐµÐ¼ ÐÐ¸Ð½Ð¾ÐÐ¾Ðº [Not 24/7]
 https://cityeden.catcast.tv/content/38354/index.m3u8
-#EXTINF:-1 tvg-logo="https://iili.io/JmoKxjV.png" group-title="KNOWLEDGE",ABC
-#https://content.uplynk.com/channel/ext/4413701bf5a1488db55b767f8ae9d4fa/kgo_24x7_news.m3u8
-#EXTVLCOPT:http-referrer=https://www.visionplus.id/
-#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://mrpw.ptmnc01.verspective.net/?deviceId=YzZhZjI1NjMtYzEzYy0zYjkyLTg0Y2MtNmEwOTg0NDk5MTJm
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/dc/AWE_Logo_%28platinum%29.jpg" group-title="KNOWLEDGE",AWE Encore
-#EXTVLCOPT:http-origin=https://www.distro.tv
-#EXTVLCOPT:http-referrer=https://www.distro.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
-https://d35j504z0x2vu2.cloudfront.net/v1/manifest/0bc8e8376bd8417a1b6761138aa41c26c7309312/awe-encore/f9df390f-1207-4bc5-b2cf-0e97ccac135d/0.m3u8
-#EXTINF:-1 tvg-id="biznet adventure" tvg-logo="https://iili.io/JmoCN07.png" group-title="KNOWLEDGE",Biznet Adventure
+#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBRFCDhha6eBvCe_9MiaiCBtUXJ-p5jZc9YUN7YR7Dd102U9rtRUjQ4PFQh6ph7I-d8Mxoh7cX979NmLD2Ue_6kJbLYziL6TJTa-26JHtajdrblbp-HBLVLb3iORq5bAyWofLPikGz7TekQBeNZ9KMnMhcF1wsjmj-UrBxNOaUcHEo_V90tZKnNFXzP5tP/s700/BIZNET%20ADVENTURE.png" group-title="KNOWLEDGE",BIZNET ADVENTURE
 http://livestream.biznetvideo.net/biznet_adventure/smil:adventure.smil/manifest.mpd?bizkeylivestarttime=0&bizkeyliveendtime=0&bizkeyliveCustomParameter=myParameter&bizkeylivehash=D2-Bdo6x4Cb0PsmWG5fu7YVz3FhpmD2005p60ZgyKUQS1JrK98LUd-yQ6T81d1tE
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=ce73b28200934af786104ce175d0dc45:b3a7b83221ed0d8fe18b8fcf92b5861a
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0
-#EXTINF:-1 tvg-logo="https://warningfm.github.io/v3/img/gdy1nf8.png?v=1.0.0.1" group-title="KNOWLEDGE" tvg-id="403" tvg-name="Crime + Investigation HD", Crime + Investigation HD
-https://d2xz2v5wuvgur6.cloudfront.net/out/v1/384f26c1c3b74ce09fa60bed24719b79/index.mpd|Referer=https://www.visionplus.id
-#EXTINF:-1 tvg-logo="https://www.dens.tv/images/channel-logo/1.jpg" group-title="KNOWLEDGE",Dens Learning
-#EXTVLCOPT:http-referrer=https://www.dens.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-https://op-group1-swiftservehd-1.dens.tv/h/h236/02.m3u8
-#EXTINF:-1 tvg-logo="https://www.earthtouchnews.com/media/1954995/logo-big.png" group-title="KNOWLEDGE",Earth Touch tv
-https://autentic-adventure-earth-1-gb.lg.wurl.tv/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpifIjMWpn3PXEAt0QdU0eu6lWiEUCW4CFUg&s" group-title="KNOWLEDGE",FOX WEATHER
-https://247wlive.foxweather.com/stream/index.m3u8
-#EXTVLCOPT:http-referrer=https://www.visionplus.id/
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=59de57168ce94a96bed1606f10c65f67:459fdec6262975e03adc82d62b749f44
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-#EXTINF:-1 tvg-logo="https://iili.io/JZICdD7.png" group-title="KNOWLEDGE",Lifetime
-https://d84q7nw4qf3j3.cloudfront.net/out/v1/1880fc1b32d3449196e80345f6cd5918/index.mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=8b878569bb12450aa445e43b705109be:33183c9de39dafd7c9310081f97b4825
-#EXTVLCOPT:http-user-agent=ExoPlayerDemo/4.0 (Linux; Android 14) ExoPlayerLib/2.15.1
-#EXTINF:-1 tvg-logo="https://warningfm.github.io/v3/img/eC5Qr6n.png?v=1.0.0.1" group-title="KNOWLEDGE" group-logo="https://i.imgur.com/i1s3UMq.png?v=1.0.0.1" tvg-id="USBA3400003IP" tvg-chno="1404" tvg-name="Love Nature 4K", Love Nature 4K
-https://atemecdnbalancer-voe.sysln.id/live/eds/LoveNatureHD/mediampd/LoveNatureHD.mpd
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0
-#EXTINF:-1 tvg-logo="https://i.imgur.com/1M72vsb.png?v=1.0.0.1" group-title="KNOWLEDGE" group-logo="https://i.imgur.com/i1s3UMq.png?v=1.0.0.1" tvg-id="NatureTime" tvg-chno="" tvg-name="NatureTime", Nature Time
-https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00090-blueantmedia-naturetime-samsungfr/playlist.m3u8
-#EXTINF:-1 group-title="KNOWLEDGE" tvg-id="National Geographic Channel HD" tvg-url=""tvg-logo="https://iili.io/JmoCZ5g.png",Outdoor Channel
-https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg00718-outdoorchannela-outdoortvnz-samsungnz/playlist.m3u8
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0/v2206
-#EXTINF:-1 tvg-logo="https://warningfm.github.io/v3/img/xR2QgyB.png?v=1.0.0.1" group-title="KNOWLEDGE" group-logo="https://i.imgur.com/i1s3UMq.png?v=1.0.0.1" tvg-id="5f21ea08007a49000762d349" tvg-name="Smithsonian Channel Selects", Smithsonian Channel
-#https://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/5f21ea08007a49000762d349/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceLat=0&deviceLon=0&deviceDNT={TARGETOPT}&deviceId={PSID}&advertisingId={PSID}&us_privacy=1YNY&samsung_app_domain={APP_DOMAIN}&samsung_app_name={APP_NAME}&profileLimit=&profileFloor=&embedPartner=samsung-tvplus
-https://jmp2.uk/plu-5f21ea08007a49000762d349.m3u8
-#EXTINF:-1 tvg-logo="https://images.indihometv.com/assets/CURIOSITY-OTT-135-HD.png?v=2.0.0.13" group-title="KNOWLEDGE",Curiosity Indihome
-#EXTVLCOPT:http-referrer=https://www.indihometv.com/
-#EXTVLCOPT:http-user-agent=IndiHomeTV/8.7.12 (Linux;Android 15.0.0;) ExoPlayerLib/2.19.1
-#https://cdn08jtedge.indihometv.com/dassdvr/194/curiosity/manifest.mpd
-#EXTINF:-1 tvg-logo="https://assets-jpcust.jwpsrv.com/thumbnails/dl2dykfS-1280.jpg" group-title="KNOWLEDGE",TBN
-http://xxip9.top:8080/live/Gizvid192@giz.com/1234@4321/21895.ts
-#EXTINF:-1 tvg-logo="https://warningfm.github.io/v3/img/p7w8wS3.png?v=1.0.0.1" group-title="KNOWLEDGE" group-logo="https://i.imgur.com/i1s3UMq.png?v=1.0.0.1" tvg-id="Wonder.uk" tvg-name="Wonder", Wonder
-https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg00426-littledotstudio-wondernz-samsungnz/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0pHQFzXoyoICOhqHg67WcMcD8pBF1ARd3Sx_A9PjkmfPJTEek37a-NySsCC3LbzW04ECUjieQ9ELsprdiNuLNci7lKmFTbqEn3LuXY3w5C8c_v3yjn2gyDvDzYOht15dm0ZyXHNqUk2YDyB3J5xzjpbGCqXn4wKDbPzJCEKAfRBVOdHW2HqCTr5kxOGdf/s700/COSMOS%20TV.png" group-title="KNOWLEDGE", COSMOS TV
 https://video.hostingcaaguazu.com:19360/cosmostv/cosmostv.m3u8
 #EXTINF:-1 group-title="KNOWLEDGE" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrUjeUJZLZV7K8e0cd1aoGwe_lOVIl0NDK4g6IaPd6ZNwMalv-8d7kmkbiNPxndtHc7iia6K8iFXuP2PwGV7kYwJEeyn3RKtms0peSCrfUYxmRSbsQc60jM7XbLoTxja61ZUtD1q2IUsu99p9fJXDX0ZfWos_vHaJHKJGPiOTiZirsV9TudlqbK_csOEdO/s700/CRIME%20INVESTIGATION.png",CRIME INVESTIGATION
@@ -544,6 +463,10 @@ https://atemecdnbalancer-voe.sysln.id/live/eds/CrimeInvestigationHD/mediampd/Cri
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=fcb7e2aeecf04c2ea7f84f6d5418c9c6:1f83ca6b943604a45ae429895e6f7fc6
 https://cdn08jtedge.indihometv.com/dassdvr/133/curiosity/manifest.mpd
+#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3g7jbRlqB2artDtp6L15KwPUhealKlA0Ur_cJaL3YCPYelpoOT5NLbtUODQgjZXDXi9kaYpUQiQ4VFBGNdisQvV0EfcguOV_f-ncAd_-qohdx57nWqk6ckV3EwO6wJ2E09VIxISoALNoJIT07UOTy9OT2OjDCMK-g2r1BRBRP6gEHujg9B3NoJBMW06ts/s700/DENS%20KNOWLEDGE.png" group-title="KNOWLEDGE",DENS LEARNING & KNOWLEDGE
+#EXTVLCOPT:http-referrer=https://www.dens.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+https://op-group1-swiftservehd-1.dens.tv/h/h236/02.m3u8
 #EXTINF:-1 tvg-id="1" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJZ3pOp0SBXsCwOfSieDCCpnl30dlBp8luDGJe6KgV_N5y6OiLMeXsklLwrkqKRO-3aWRfFW49jVPSiB_Y_ayssm0L-0xnfJbzgIQjdheLbLpoQMng2kFF21hX9nifDbgEdw4WrI0PqbtCQiFWTz1OuXBE6Ed_tNKWmJrDrt3BbmYjh4Z9Xh-G39BAe54v/s700/DENS%20KNOWLEDGE.png" group-title="KNOWLEDGE", DENSKNOWLEDGE
 #EXTVLCOPT:http-referrer=http://www.dens.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36
@@ -553,6 +476,8 @@ http://op-group1-swiftservehd-1.dens.tv/h/h236/index.m3u8
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=62fae935e91c4e8d9e835a294ea81909:328cfed51cba1bfa41f1bda219ceeff8
 https://atemecdnbalancer-voe.sysln.id/live/eds/DMAXHD/mediampd/DMAXHD.mpd
+#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrJsh2ouuWZ2MVbQWUaZAgjllSXxPWgWH1tjjecY8aiifZZ_oCutyhpQ2ZaMxnV9r9xWr1RQfZkOqeJAf-4w7XxGqi8mdRTvVwLv5b1EPYX9ol55zp5wDtVIQWGsz26Avw85EkJejivd39_0ssBN484LMMTXw6Xceqhj45RAizvcNf_P0JQbqjDPWc8U2U/s700/FOX%20WEATHER.png" group-title="KNOWLEDGE",FOX WEATHER
+https://247wlive.foxweather.com/stream/index.m3u8
 #EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLGEBrdnRS7LT4-fqbtjAwdfaeIlNgnoBFtlN6koglMfe3P2MEANaZT1d8uJT-Jd6mZOg4oeZJzHXwPpVdJsvqN2TP1jdnu8hWkhg6MtKQ5XcSGq6B_U9x0-MJ4XhAxq6UZIqxHrVi8r7-IS6_iu5d426iELYPIYhBbUTP5MQXfJtxkpSgg-ksknBoLFvY/s700/GLOBAL%20TREKKER.png" group-title="KNOWLEDGE",GLOBAL TREKKER
 #EXTVLCOPT:http-user-agent=ExoPlayerDemo/2.15.1 (Linux; Android 13) ExoPlayerLib/2.15.1
 #KODIPROP:inputstream.adaptive.license_type=clearkey
@@ -579,6 +504,17 @@ https://cdnjkt913.transvision.co.id:1000/live/master/3/4028c68582449a2e018259716
 #KODIPROP:inputstream.adaptive.license_key=https://cubmu.caranytv.workers.dev/trv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
 https://cdnjkt913.transvision.co.id:1000/live/master/4/4028c6856fd0d66d0170341b51bd0904/manifest.mpd
+#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjI6L_cbGTTZwb3DVTIcCJRHGDp70zflqThSpDpRbAt9IHD99JP59Q0xOr2X-4X0hUUzJivjvT5XW8uSlb8ZDUpHJI-BCCLVZtwpu01JKAoHbG9A3pRSM60bETCqD9IZJOEKGOlZgSdWp5HcesKu0zjZgiQX5MUQ-VmvhfjlU8L4WYpsX_2gbCAGS1kYMyz/s700/DISCOVERY%20CHANNEL.png" group-title="KNOWLEDGE",DISCOVERY CHANNEL CG
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=d9ac48f5131641a789328257e778ad3a:b6e67c37239901980c6e37e0607ceee6
+#https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/discovery/default/index.mpd
+#EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEis6PVY1M9RQsuRVREe5zmwK7l_Ic94K7OJJGRL5q8f7FBO3IOF1dlKPqqQqnYW190GMnc9MNYefKrirTTYR0G82wWkThWOR2GOpUvFbVlqIBQSTFGOnectN3hpnkJac38qG-3FaGoObPOnOstvU69Pw7fyzRLIGj-0gA1ZrRgVSl26RPPaPxGrM7PLWHLb/s700/LOVE%20NATURE.png" group-title="KNOWLEDGE",LOVE NATURE
+#EXTVLCOPT:http-user-agent=ExoPlayerDemo/2.15.1 (Linux; Android 13) ExoPlayerLib/2.15.1
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=8b878569bb12450aa445e43b705109be:33183c9de39dafd7c9310081f97b4825
+https://atemecdnbalancer-voe.sysln.id/live/eds/LoveNatureHD/mediampd/LoveNatureHD.mpd
 #EXTINF:-1 group-title="KNOWLEDGE" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQG5Zeg9deQbmlFKahfJYjc2LSCYSFRbjlTW_slVFJRgWReBke9hNplACLshWKuxRTZ-N2oWiytdgR53_emaBi0ndkt25FfUzeQa0ifjlS1e6WnH-blzwkgL-Fp4te9hzHhHWIpoyKkz398odM4BmvMEfpj1CGZ-m4UFpx5cBIOaGD9prBhdAm5X1eM7NF/s700/SMITHSONIAN%20CHANNEL.png",SMITHSONIAN CHANNEL
 #https://raw.githubusercontent.com/konanda-sg/thuran9/refs/heads/main/smithsonian.m3u8
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5f21ea08007a49000762d349/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2bb094-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=984e1d1d-6d7f-4f0b-98a5-825ccb67a891
@@ -633,8 +569,14 @@ https://mob.webtvstream.bhtelecom.ba/hls15/viasat_nature.mpd?n=276ceb87b528e1ce0
 http://202.169.224.202:8800/udp/239.9.1.3:1234
 #EXTINF:-1 tvg-logo="https://iili.io/JmoKxjV.png" group-title="KNOWLEDGE",ABC
 https://content.uplynk.com/channel/ext/4413701bf5a1488db55b767f8ae9d4fa/kgo_24x7_news.m3u8
+#EXTINF:-1 tvg-logo="https://www.earthtouchnews.com/media/1954995/logo-big.png" group-title="KNOWLEDGE",Earth Touch tv
+https://autentic-adventure-earth-1-gb.lg.wurl.tv/playlist.m3u8
+#EXTINF:-1 group-title="KNOWLEDGE" tvg-id="National Geographic Channel HD" tvg-url=""tvg-logo="https://iili.io/JmoCZ5g.png",Outdoor Channel
+https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg00718-outdoorchannela-outdoortvnz-samsungnz/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d5/Smithsonian_Channel.png" group-title="KNOWLEDGE", Smithsonian
 https://raw.githubusercontent.com/konanda-sg/thuran9/refs/heads/main/smithsonian.m3u8
+#EXTINF:-1 tvg-logo="https://assets-jpcust.jwpsrv.com/thumbnails/dl2dykfS-1280.jpg" group-title="KNOWLEDGE",TBN
+http://xxip9.top:8080/live/Gizvid192@giz.com/1234@4321/21895.ts
 #EXTINF:-1 tvg-logo="https://iili.io/Jmoc3MX.png" group-title="KNOWLEDGE",TBN ASIA
 #EXTVLCOPT:http-referrer=http://www.dens.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36
