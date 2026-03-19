@@ -35,7 +35,7 @@ ALL_POSITIVE_KEYWORDS = {
         "INDONESIA", "NASIONAL", "LOKAL", "DAERAH",
         "RCTI", "SCTV", "INDOSIAR", "TRANS", "MNC", "GTV", "GLOBAL TV", 
         "TVRI", "BTV", "JAK TV", "JTV", "RTV", "NET TV", "DAAI",
-        "INEWS", "TVONE", "TV ONE", "METRO", "KOMPAS" # Berita lokal pindah ke sini
+        "INEWS", "TVONE", "TV ONE", "METRO", "KOMPAS" 
     ],
     "KIDS": [
         "KIDS", "ANAK", "CARTOON", "KARTUN", "NICKELODEON", "NICK JR", 
@@ -96,7 +96,6 @@ CONFIGURATIONS = [
         "output_file": "indonesia_combined.m3u", 
         "keywords": ALL_POSITIVE_KEYWORDS["INDONESIA"],
         "exclude_keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"] + ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["KNOWLEDGE"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["EVENT_ONLY"],
-        # Berita lokal dibebaskan, jadi exclude_keywords tidak ada unsur "NEWS"
         "category_name": "INDONESIA",
         "force_category": True,
         "require_time": False,
@@ -123,7 +122,6 @@ CONFIGURATIONS = [
     {
         "output_file": "news_combined.m3u",
         "keywords": ALL_POSITIVE_KEYWORDS["NEWS"],
-        # Satpam Internasional: Kalau ada TV Lokal masuk ke grup NEWS, TENDANG KELUAR!
         "exclude_keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"] + ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["EVENT_ONLY"] + ALL_POSITIVE_KEYWORDS["INDONESIA"],
         "category_name": "NEWS",
         "force_category": True,
@@ -193,7 +191,6 @@ def extract_date_from_group(group_title):
     return None
 
 def get_channel_priority(channel_name, category):
-    """ SISTEM KASTA MAHA SULTAN OMNI-KATEGORI """
     n = channel_name.upper()
     
     if category == "SPORTS":
@@ -221,7 +218,6 @@ def get_channel_priority(channel_name, category):
         return 99 
 
     elif category == "INDONESIA":
-        # Berita lokal dimasukkan ke kasta rapi di sini
         if "RCTI" in n: return 1
         if "SCTV" in n: return 2
         if "INDOSIAR" in n: return 3
@@ -307,6 +303,16 @@ def download_playlist(args):
         
         text_data = response.text.replace('<br>', '\n').replace('<br/>', '\n').replace('<BR>', '\n')
         
+        # ====================================================================
+        # FITUR BARU: AUTO-REPLACE LOGO OGI BONE MENJADI BAKUL WIFI
+        # ====================================================================
+        url_logo_lama1 = "https://raw.githubusercontent.com/tsender57-dotcom/offline/refs/heads/main/logo/Logo%20OGI%20Bone.png"
+        url_logo_lama2 = "https://raw.githubusercontent.com/tsender57-dotcom/offline/refs/heads/main/logo/Logo OGI Bone.png"
+        url_logo_baru = "https://raw.githubusercontent.com/karepech/bakul/refs/heads/main/bw.png" # Memakai versi Raw file!
+        
+        text_data = text_data.replace(url_logo_lama1, url_logo_baru).replace(url_logo_lama2, url_logo_baru)
+        # ====================================================================
+        
         current_buffer = []  
         current_extinf = ""  
         
@@ -391,13 +397,10 @@ def filter_m3u_by_config(config, super_clean_channels):
         if "RADIO" in clean_channel_name or "RADIO" in clean_group_title:
             continue
 
-        # ====================================================================
-        # SATPAM KHUSUS: PEMUSNAH TVRI DAERAH
-        # ====================================================================
         if "TVRI" in clean_channel_name:
             tvri_daerah = ["JABAR", "JATIM", "JATENG", "BALI", "PAPUA", "MALUKU", "SULSEL", "SULUT", "SUMUT", "SUMBAR", "RIAU", "JAMBI", "BANTEN", "JAKARTA", "DKI", "KALTIM", "KALBAR", "KALSEL", "KALTENG", "NTB", "NTT", "GORONTALO", "LAMPUNG", "BENGKULU", "BABEL", "KEPRI", "ACEH", "YOGYAKARTA", "JOGJA", "DIY", "SULTENG", "SULTRA", "SULBAR"]
             if any(d in clean_channel_name for d in tvri_daerah):
-                continue # Buang channel ini dari semua proses!
+                continue 
 
         match_found = False
 
@@ -569,4 +572,4 @@ if __name__ == "__main__":
                     f.write(f"    - {name}\n")
             f.write("\n")
                 
-    print("\n✅ PROSES SELESAI! Berita Lokal & TVRI Daerah berhasil dikondisikan!")
+    print("\n✅ PROSES SELESAI! Logo OGI Bone berhasil disulap jadi Bakul Wifi!")
