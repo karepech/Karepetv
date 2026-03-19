@@ -2418,8 +2418,6 @@ https://aegis-cloudfront-1.tubi.video/d5171dc7-f8c6-469c-81eb-e1ffaaed5721/playl
 https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/playlist.m3u8?ads.xumo_channelId=88883102
 #EXTINF:-1 tvg-id="DongNaiTV2.vn@SD" tvg-logo="https://i.imgur.com/tNKPSkO.png" group-title="SPORTS",Äá»ng Nai 2 (480p) [Not 24/7]
 http://118.107.85.4:1935/live/smil:DNTV2.smil/chunklist.m3u8
-#EXTINF:-1 group-title="SPORTS", AS Roma vs Bologna
-https://live.trendgallary.com/live/13645226_daf75dfdae2d66a750d0a26b34acd32e.m3u8
 ### 🟡 UPCOMING EVENT
 #EXTINF:-1 group-title="SPORTS", BKMA vs Urartu
 https://freeiptv2026.tsender57.workers.dev/go
@@ -2432,9 +2430,6 @@ https://stitcher.pluto.tv/stitch/hls/channel/64df7ab4dfa32400083c517blivestitch/
 #EXTVLCOPT:http-referer=https://webtv.sk/
 #EXTVLCOPT:http-origin=https://webtv.sk
 https://dash3.antik.sk/live/test_fast_and_funbox_medium_atk/playlist.m3u8
-### 🔴 LIVE EVENT
-#EXTINF:-1 group-title="SPORTS", FC Shakhtar Donetsk vs Lech Poznan
-https://live2.trendgallary.com/live/13645437_26cd15a31973bb6a8cbbf9c5502dd046.m3u8
 #EXTINF:-1 tvg-name="" tvg-id="" tvg-logo="https://mimipipi22.github.io/logo/antik/fightbox.jpg" group-title="SPORTS",FIGHT BOX 🇸🇰
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referer=https://webtv.sk/
@@ -2445,6 +2440,9 @@ https://dash3.antik.sk/live/test_fightbox_medium_atk/playlist.m3u8
 #EXTVLCOPT:http-referer=https://webtv.sk/
 #EXTVLCOPT:http-origin=https://webtv.sk
 https://dash3.antik.sk/live/test_golf_channel/playlist.m3u8
+### 🔴 LIVE EVENT
+#EXTINF:-1 group-title="SPORTS", Gremio vs Vitoria BA
+https://live.trendgallary.com/live/13376952_cbeccd8b9cf3ac536dd5fdc3ec5d7f2b.m3u8
 #EXTINF:-1 tvg-logo="https://www.thefightcity.com/wp-content/uploads/2019/10/HBO-logo-image-1-620x396.jpg" group-title="SPORTS" tvg-logo="",HBO Boxing
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
@@ -2485,6 +2483,8 @@ https://tglmp02.akamaized.net/out/v1/06bffdc183074130a6faf73d04502eaa/manifest.m
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
 #EXTINF:-1 tvg-logo="https://warningfm.github.io/v3/img/Qr0o2tP.png?v=1.0.0.1" group-title="SPORTS" tvg-id="Motorvision+.id" tvg-name="Motorvision+.id", Motorvision+
 https://op-group1-swiftservehd-1.dens.tv/h/h09/index.m3u8?app_type=web&userid=lite&chname=Motorvision+
+#EXTINF:-1 group-title="SPORTS", Mount Pleasant FA vs Los Angeles Galaxy
+https://hwcn111pull-b.bszb.me/live/956863_1773960580.flv
 #EXTINF:-1 tvg-id="onfootball" group-title="SPORTS" tvg-logo="https://raw.githubusercontent.com/PhatBee/phatbeetv/refs/heads/main/logo/VTVCab/OnFootball.png",ON Football HD (VTV Prime)
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
