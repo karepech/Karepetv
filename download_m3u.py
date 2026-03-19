@@ -145,7 +145,6 @@ def load_epg_databases():
     print(f"  > Selesai. Total Channel ID di EPG: {len(VALID_EPGS_DICT)}")
 
 def get_suggested_epg_id(channel_name):
-    # Coba cari ID EPG yang cocok berdasarkan nama channel
     cleaned = clean_channel_for_lookup(channel_name)
     for k, v in REVERSE_EPG_DICT.items():
         if k in cleaned or cleaned in k:
@@ -167,7 +166,6 @@ def get_provider_name(url):
     return "Unknown_Provider"
 
 def extract_date_from_group(group_title):
-    # Sama seperti aslinya
     return None
 
 def download_playlist(args):
@@ -196,7 +194,6 @@ def download_playlist(args):
                     
             elif len(line) > 5 and line.lower().startswith("http"): 
                 if current_buffer and current_extinf:
-                    # Ambil TVG-ID
                     tvg_id_match = TVG_ID_REGEX.search(current_extinf)
                     tvg_id = tvg_id_match.group(1).strip() if tvg_id_match else ""
 
@@ -236,12 +233,19 @@ def filter_m3u_by_config(config, super_clean_channels):
         current_extinf = ch["extinf"]
         raw_channel_name = current_extinf.split(',', 1)[1].strip() if "," in current_extinf else current_extinf.strip()
         clean_channel_name = CLEANING_REGEX.sub(' ', raw_channel_name).upper()
+
+        # ====================================================================
+        # SATPAM KHUSUS: CTV & CHAMPIONS HANYA BOLEH DARI DECCOTECH!
+        # ====================================================================
+        is_ctv = re.search(r'\bCTV\b', clean_channel_name) or "CHAMPIONS" in clean_channel_name
+        if is_ctv:
+            if "deccotech" not in provider_name.lower():
+                continue # Langsung buang kalau bukan dari Deccotech!
+        # ====================================================================
         
-        # Logika filtering sederhana
         match_found = any(k in clean_channel_name for k in keywords)
 
         if match_found:
-            # Masukkan ke Log Provider
             if provider_name not in CATEGORY_LOGS[target_category]:
                 CATEGORY_LOGS[target_category][provider_name] = []
             
@@ -264,7 +268,6 @@ if __name__ == "__main__":
     print("MEMULAI MESIN PENYEDOT IPTV (OMNI-KASTA SUPER TURBO)")
     print("=====================================================")
     
-    # LOAD EPG TERLEBIH DAHULU
     load_epg_databases()
     
     all_providers_data = []
@@ -314,12 +317,10 @@ if __name__ == "__main__":
                     tvg_id = ch["tvg_id"]
                     
                     if not tvg_id:
-                        # KONDISI 3: KOSONG
                         saran_id = get_suggested_epg_id(name)
                         line_out = f"    🟡 {C_YELLOW}{name} (Kosong) -> Harusnya id epgnya: {saran_id}{C_RESET}\n"
                     
                     elif tvg_id not in VALID_EPGS_DICT:
-                        # KONDISI 4: ID ADA TAPI TIDAK ADA DI XML
                         saran_id = get_suggested_epg_id(name)
                         line_out = f"    🟠 {C_ORANGE}{name} ({tvg_id}) -> Tidak valid/kosong di XML. Harusnya: {saran_id}{C_RESET}\n"
                     
@@ -328,12 +329,9 @@ if __name__ == "__main__":
                         clean_ch_name = clean_channel_for_lookup(name)
                         clean_epg_name = clean_channel_for_lookup(epg_name)
                         
-                        # Cek kesesuaian nama (Toleransi sebagian kata)
                         if clean_epg_name in clean_ch_name or clean_ch_name in clean_epg_name:
-                            # KONDISI 1: COCOK
                             line_out = f"    🟢 {C_GREEN}{name} ({tvg_id}) -> Cocok!{C_RESET}\n"
                         else:
-                            # KONDISI 2: NAMA CHANNEL DAN NAMA EPG JAUH BERBEDA
                             saran_id = get_suggested_epg_id(name)
                             line_out = f"    🔴 {C_RED}{name} ({tvg_id}) -> Meleset (di EPG bernama '{epg_name}'). Harusnya: {saran_id}{C_RESET}\n"
                             
