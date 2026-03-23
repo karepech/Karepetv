@@ -1653,6 +1653,9 @@ https://livevlisctcdnw.seenow.vn/livesnv2/HAY_TV/manifest.mpd
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=f00bd0122a8a4da1a49ea6c49f7098ad:a4079f3667ba4c2bcfdeb13e45a6e9c6
 https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_onesportsplus_hd1/default/index.mpd
+### 🔴 LIVE EVENT
+#EXTINF:-1 group-title="SPORTS", Sport Club Corinthians Paulista vs CR Flamengo
+https://v.lfsxfj.com/live/100337.m3u8?txSecret=49870834758de230b03b99c41a739b82&txTime=69C087EA&sign=5a5b3e7a0248c1a7
 #EXTINF:-1 group-title="SPORTS" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMnznWuIcC6OZZ0o8JRWcabHGnkBr8eTGFpX-LcMmKOw&s=10", SportDigital
 https://d46c0ebf9ef94053848fdd7b1f2f6b90.mediatailor.eu-central-1.amazonaws.com/v1/manifest/81bfcafb76f9c947b24574657a9ce7fe14ad75c0/live-prod/413e9d90-a69f-4c02-963d-6aca91619f32/0.m3u8
 #EXTINF:-1 tvg-id="starsportsselect1.in" tvg-name="STAR SPORTS SELECT 1 4K" tvg-logo="http://tatatv.cc/stalker_portal/misc/logos/320/12067.jpeg" group-title="SPORTS",STAR SPORTS SELECT 1 4K
@@ -2476,9 +2479,6 @@ https://dash3.antik.sk/live/test_golf_channel/playlist.m3u8
 https://otte.live.fly.ww.aiv-cdn.net/dub-nitro/live/clients/dash/enc/cmtyd9kpfe/out/v1/813bba04214e4f4dab57f0129365635a/cenc.mpd
 #EXTINF:-1 group-title="SPORTS" tvg-logo="https://i.pinimg.com/736x/0e/96/3c/0e963cdb5e91944561a6ae37eace1f9c.jpg",INTER TV
 https://ilglobotv-live.akamaized.net/channels/InterTV/Live.m3u8
-### 🔴 LIVE EVENT
-#EXTINF:-1 group-title="SPORTS", Internacional RS vs Chapecoense SC
-https://live.trendgallary.com/live/13376962_e97de8980af0e752919b514bb17da74c.m3u8
 #EXTINF:-1 group-title="SPORTS" tvg-logo="https://i.pinimg.com/736x/0e/96/3c/0e963cdb5e91944561a6ae37eace1f9c.jpg",La liga Inside
 https://d3bb58xoj568xi.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-don7i7nmbho0q/index.m3u8
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZC-ziqZMsoRYfc6wGnXmOAUd0TZ2cGABVvxVJA2ZUZIG2BeY-bN5TMCoI&s=10" group-title="SPORTS",LALIGA
@@ -2527,11 +2527,11 @@ https://livevlisctcdnw.seenow.vn/livesnv2/THETHAO_GOLF_HD/manifest.mpd
 #EXTINF:-1 tvg-logo="https://warningfm.github.io/v3/img/v5wKtPf.png?v=1.1.1.1" group-title="SPORTS" group-logo="https://warningfm.github.io/v3/img/bpvKmSk.png?v=1.0.0.1" tvg-id="CAAJ2700030ON" tvg-name="Outside", Outside
 https://gist.githubusercontent.com/warningfm/f951716f1dfd96d4480dbdad6a000eeb/raw/c04d61b0a6119b0f2efcc31b3308c8cc82d2025a/Outside.m3u8
 #EXTINF:-1 group-title="SPORTS", Pachuca vs Toluca
-https://hwcn111pull-b.bszb.me/live/2165019_1774219717.flv
+https://v.lfsxfj.com/live/100357.m3u8?txSecret=0b9f5e69eafd79c08e28dbd270f65207&txTime=69C087E9&sign=f2ad25b401e505b7
 #EXTINF:-1 group-title="SPORTS", San Diego FC vs Real Salt Lake
-https://hwcn111pull-b.bszb.me/live/1161772_1774219771.flv
+https://v.lfsxfj.com/live/100351.m3u8?txSecret=073b91e1cd0ea9ac4bb8da542a858150&txTime=69C087EA&sign=fa600a424ef7e4f2
 #EXTINF:-1 group-title="SPORTS", Santos Laguna vs Puebla
-https://hwcn111pull-b.bszb.me/live/2464811_1774219724.flv
+https://v.lfsxfj.com/live/100505.m3u8?txSecret=37fcaef23718629c0093445333ae74fb&txTime=69C087E9&sign=2c70347d604b6640
 #EXTINF:-1 tvg-logo="http://stvlive.net/assets/images/Star Select11731408156.png" group-title="SPORTS",Star Select1
 http://ts1.supports.top/live/Flixprime1896/qxhnz0fxqn/276734.ts
 #EXTINF:-1 tvg-logo="http://stvlive.net/assets/images/Star Select21731408458.png" group-title="SPORTS",Star Select2
@@ -2570,8 +2570,6 @@ https://otte.cache.aiv-cdn.net/bom-nitro/clients/dash/enc/jkcljgqbx8/out/v1/63bf
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=5f096c1f9e243b31ddc3bf4f5d88fc5f:27334536d6077737b321c64663ebf59d
 https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash-sd/enc/1a5vdd4i8j/out/v1/db14823b937045ac8b2b0effbcdded45/cenc-sd.mpd
-#EXTINF:-1 group-title="SPORTS", Vitoria BA vs Mirassol
-https://live1.trendgallary.com/live/13376966_1d3b23f27c2c7cd03566f8c47e46c7f4.m3u8
 #EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/espn2.png" group-title="SPORTS",ESPN 2 US HD Test
 http://moj.feniks.team:25461/411dariocacic/a1Uni9hC0D/4022
 #EXTINF:-1 tvg-logo="http://smartillusion.feniks.team:25002/images/sport/daznppv.png" group-title="SPORTS",FNC PPV
