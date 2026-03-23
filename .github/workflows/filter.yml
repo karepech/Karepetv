@@ -9,8 +9,8 @@ on:
   
   # 2. Trigger terjadwal 
   schedule:
-    # MENJALANKAN SETIAP 50 MENIT
-    - cron: '*/50 * * * *'
+    # MENJALANKAN SETIAP 15 MENIT
+    - cron: '*/15 * * * *'
 
   # Izinkan menjalankan secara manual (opsional)
   workflow_dispatch:
