@@ -1,66 +1,51 @@
 #EXTM3U
+#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://www.srilankasports.com/wp-content/uploads/2024/02/friendly.png", 00:00 WIB Kanada vs Islandia
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.livecdnem.com/
+https://live1.pro2cdnlive.com/live/channel2.m3u8?wsSecret=064b0ad54315f8f7534fa2c83cb7c990&wsABSTime=1772570276
+#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-DH4Zo1nFEu_R7H_JhMpG8S2yIFahoMR-Zw&s", 19:00 WIB Namibia vs Comoros
+#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
+#EXTVLCOPT:http-origin=http://www.fawanews.sc/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+http://195.178.110.2/hls/VEVEVEQ.m3u8
+### 🥇 PRIORITY SOURCE
+### 🥈 SECOND SOURCE
+#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://iili.io/3cSp4Lu.md.png", 20:35 WIB MotoGP Rd 3 Red Bull Grand Prix of The U.S Free Practice 2
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=7eea72d6075245a99ee3255603d58853:6848ef60575579bf4d415db1032153ed
+https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_spotv2hd/default/index.mpd
+#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://www.srilankasports.com/wp-content/uploads/2024/02/friendly.png", 21:00 WIB Republik Korea vs Pantai Gading
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.livecdnem.com/
+https://live1.pro2cdnlive.com/live/channel15.m3u8?wsSecret=796baabf373552b168b54380f98ae384&wsABSTime=1773517215
+#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://www.srilankasports.com/wp-content/uploads/2024/02/friendly.png", 23:00 WIB Senegal vs Peru
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.livecdnem.com/
+https://live1.pro2cdnlive.com/live/channel11.m3u8?wsSecret=71c13ab6d69a095b8c94b64aeac78596&wsABSTime=1766260690
 ### 🔵 EXTRA SOURCE: http://kendutv.diskon.cloud/iptv/cache_ott_live.m3u
 # ===== SOURCE 1 =====
-#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/2Ix_mWZ1w8VZqZuZ3FPuKPPrthQ=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/4969750/a52132.jpg" group-title="BACKUP EVENT SPORTS", 15:22 WIB 28/03/26 Adhyaksa FC vs Sumsel United - Pegadaian Championship (S1)
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/2ZSWOvVzC-pr0Z1ly-EKh28JuTc=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/4969774/065841.jpg" group-title="BACKUP EVENT SPORTS", 18:52 WIB 28/03/26 PSMS Medan vs PSPS Pekanbaru - Pegadaian Championship (S1)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-https://vid-zero-gelang.disini.workers.dev/19541.m3u8?dev_kaki_09&t=1774703632&uip=2a06%3A98c0%3A3600%3A%3A103&h=535d8597c2dfc578bf7b97c2f9fc854e8dd7a1cf6fb9d94a911b2a0ea5e5e380
-#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/2Ix_mWZ1w8VZqZuZ3FPuKPPrthQ=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/4969750/a52132.jpg" group-title="BACKUP EVENT SPORTS", 15:22 WIB 28/03/26 Adhyaksa FC vs Sumsel United - Pegadaian Championship (S2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#KODIPROP:inputstream.adaptive.license_key=https://vid-zero-gelang.disini.workers.dev/19541.drm?dev_kaki_09&t=1774703632&uip=2a06%3A98c0%3A3600%3A%3A103&h=535d8597c2dfc578bf7b97c2f9fc854e8dd7a1cf6fb9d94a911b2a0ea5e5e380
-https://vid-zero-gelang.disini.workers.dev/19541.mpd?dev_kaki_09&t=1774703632&uip=2a06%3A98c0%3A3600%3A%3A103&h=535d8597c2dfc578bf7b97c2f9fc854e8dd7a1cf6fb9d94a911b2a0ea5e5e380
-#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/2Ix_mWZ1w8VZqZuZ3FPuKPPrthQ=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/4969750/a52132.jpg" group-title="BACKUP EVENT SPORTS", 15:22 WIB 28/03/26 Adhyaksa FC vs Sumsel United - Pegadaian Championship (S3)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-https://zeroxxxvid.disini.workers.dev/19541.m3u8?exp=1774703632&uip=2a06%3A98c0%3A3600%3A%3A103&sign=e3d49f7e84fbeaec68ac4f1b6543e715848d9774e6a72e9425d0bb282f72b8b7
-#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/2Ix_mWZ1w8VZqZuZ3FPuKPPrthQ=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/4969750/a52132.jpg" group-title="BACKUP EVENT SPORTS", 15:22 WIB 28/03/26 Adhyaksa FC vs Sumsel United - Pegadaian Championship (S4)
+https://vid-zero-gelang.disini.workers.dev/19541.m3u8?dev_kaki_09&t=1774710201&uip=2a06%3A98c0%3A3600%3A%3A103&h=fa04ce2c97f4520b545417c5f4028c134d1b1094d2b49b8b02bb13f7e0fa385a
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/2ZSWOvVzC-pr0Z1ly-EKh28JuTc=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/4969774/065841.jpg" group-title="BACKUP EVENT SPORTS", 18:52 WIB 28/03/26 PSMS Medan vs PSPS Pekanbaru - Pegadaian Championship (S2)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#KODIPROP:inputstream.adaptive.license_key=https://zeroxxxvid.disini.workers.dev/19541.drm?exp=1774703632&uip=2a06%3A98c0%3A3600%3A%3A103&sign=4a68e6c0dfe5d7fb14f2de92a79ae412eb42b6e3af10c410ea1c81f2a7fcfee6
-https://zeroxxxvid.disini.workers.dev/19541.mpd?exp=1774703632&uip=2a06%3A98c0%3A3600%3A%3A103&sign=e3d49f7e84fbeaec68ac4f1b6543e715848d9774e6a72e9425d0bb282f72b8b7
-#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/I0tzVGRKBs0cXp00_OTbpVCg10o=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/4969752/4f40c3.jpg" group-title="BACKUP EVENT SPORTS", 15:22 WIB 28/03/26 Persela Lamongan vs Persiba Balikpapan - Pegadaian Championship (S1)
+#KODIPROP:inputstream.adaptive.license_key=https://vid-zero-gelang.disini.workers.dev/19541.drm?dev_kaki_09&t=1774710201&uip=2a06%3A98c0%3A3600%3A%3A103&h=fa04ce2c97f4520b545417c5f4028c134d1b1094d2b49b8b02bb13f7e0fa385a
+https://vid-zero-gelang.disini.workers.dev/19541.mpd?dev_kaki_09&t=1774710201&uip=2a06%3A98c0%3A3600%3A%3A103&h=fa04ce2c97f4520b545417c5f4028c134d1b1094d2b49b8b02bb13f7e0fa385a
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/2ZSWOvVzC-pr0Z1ly-EKh28JuTc=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/4969774/065841.jpg" group-title="BACKUP EVENT SPORTS", 18:52 WIB 28/03/26 PSMS Medan vs PSPS Pekanbaru - Pegadaian Championship (S3)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-https://vid-zero-gelang.disini.workers.dev/20833.m3u8?dev_kaki_09&t=1774703632&uip=2a06%3A98c0%3A3600%3A%3A103&h=1face05602402fa7192baa97d696e5f093ec2608809b1e163f1b5e9487762a54
-#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/I0tzVGRKBs0cXp00_OTbpVCg10o=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/4969752/4f40c3.jpg" group-title="BACKUP EVENT SPORTS", 15:22 WIB 28/03/26 Persela Lamongan vs Persiba Balikpapan - Pegadaian Championship (S2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#KODIPROP:inputstream.adaptive.license_key=https://vid-zero-gelang.disini.workers.dev/20833.drm?dev_kaki_09&t=1774703632&uip=2a06%3A98c0%3A3600%3A%3A103&h=1face05602402fa7192baa97d696e5f093ec2608809b1e163f1b5e9487762a54
-https://vid-zero-gelang.disini.workers.dev/20833.mpd?dev_kaki_09&t=1774703632&uip=2a06%3A98c0%3A3600%3A%3A103&h=1face05602402fa7192baa97d696e5f093ec2608809b1e163f1b5e9487762a54
-#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/I0tzVGRKBs0cXp00_OTbpVCg10o=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/4969752/4f40c3.jpg" group-title="BACKUP EVENT SPORTS", 15:22 WIB 28/03/26 Persela Lamongan vs Persiba Balikpapan - Pegadaian Championship (S3)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-https://zeroxxxvid.disini.workers.dev/20833.m3u8?exp=1774703632&uip=2a06%3A98c0%3A3600%3A%3A103&sign=c871a124e19a5be88228cd3e666efbac7f8462d97469c885acdab2d256e757d4
-#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/I0tzVGRKBs0cXp00_OTbpVCg10o=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/4969752/4f40c3.jpg" group-title="BACKUP EVENT SPORTS", 15:22 WIB 28/03/26 Persela Lamongan vs Persiba Balikpapan - Pegadaian Championship (S4)
+https://zeroxxxvid.disini.workers.dev/19541.m3u8?exp=1774710201&uip=2a06%3A98c0%3A3600%3A%3A103&sign=b0b2455df71bbdcf26ae90fd5de15d9bca5d813606e6c3ee0efc2528ec72dba0
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/2ZSWOvVzC-pr0Z1ly-EKh28JuTc=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/4969774/065841.jpg" group-title="BACKUP EVENT SPORTS", 18:52 WIB 28/03/26 PSMS Medan vs PSPS Pekanbaru - Pegadaian Championship (S4)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#KODIPROP:inputstream.adaptive.license_key=https://zeroxxxvid.disini.workers.dev/20833.drm?exp=1774703632&uip=2a06%3A98c0%3A3600%3A%3A103&sign=cd0babd72a693de66905eb1ce07da22f1f9821b4874b92d74653afb12dc0fb8a
-https://zeroxxxvid.disini.workers.dev/20833.mpd?exp=1774703632&uip=2a06%3A98c0%3A3600%3A%3A103&sign=c871a124e19a5be88228cd3e666efbac7f8462d97469c885acdab2d256e757d4
-#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/suWhcuMGXKUriJmKMmhBAhKeQCM=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/4969754/7495a5.jpg" group-title="BACKUP EVENT SPORTS", 16:52 WIB 28/03/26 Persipura Jayapura vs Deltras FC - Pegadaian Championship (S1)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#KODIPROP:inputstream.adaptive.license_key=https://vid-zero-gelang.disini.workers.dev/19543.drm?dev_kaki_09&t=1774703632&uip=2a06%3A98c0%3A3600%3A%3A103&h=e73c2fbeee2e74c4631153ee7cbfa1013fbf43565f41cb1dd251a6f4b6919693
-https://vid-zero-gelang.disini.workers.dev/19543.mpd?dev_kaki_09&t=1774703632&uip=2a06%3A98c0%3A3600%3A%3A103&h=e73c2fbeee2e74c4631153ee7cbfa1013fbf43565f41cb1dd251a6f4b6919693
-#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/suWhcuMGXKUriJmKMmhBAhKeQCM=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/4969754/7495a5.jpg" group-title="BACKUP EVENT SPORTS", 16:52 WIB 28/03/26 Persipura Jayapura vs Deltras FC - Pegadaian Championship (S2)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#KODIPROP:inputstream.adaptive.license_key=https://zeroxxxvid.disini.workers.dev/19543.drm?exp=1774703632&uip=2a06%3A98c0%3A3600%3A%3A103&sign=cf3b21e9204492636a6e4e37e97fc1ed6f62532bb936f3ca561e5124a32a8afd
-https://zeroxxxvid.disini.workers.dev/19543.mpd?exp=1774703632&uip=2a06%3A98c0%3A3600%3A%3A103&sign=da34436651d95d50ce0ef905bdb7cee8ed074e554a5d6da9ae4a4cc7f52bd478
-#EXTINF:-1 tvg-logo="https://img.colatv88xd.cc/football/team/ba472bb6eb37e333549df040175df856.png!w80" group-title="BACKUP EVENT SPORTS",[LIVE] (18:00 WIB) Anh U19 vs Tây Ban Nha U19 [BLV 247]
-#EXTVLCOPT:http-referrer=https://www.spindlersptown.com/
-#EXTVLCOPT:http-origin=https://www.spindlersptown.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
-https://live5.msrktz.app/live/90865415.m3u8
-### 🔵 EXTRA SOURCE: http://kendutv.diskon.cloud/liveevent/rakhoitvcache.m3u
+#KODIPROP:inputstream.adaptive.license_key=https://zeroxxxvid.disini.workers.dev/19541.drm?exp=1774710201&uip=2a06%3A98c0%3A3600%3A%3A103&sign=b7dd884d89f692437bc38f335d7b0502bbffec631a42961a6297ee68c4394a13
+https://zeroxxxvid.disini.workers.dev/19541.mpd?exp=1774710201&uip=2a06%3A98c0%3A3600%3A%3A103&sign=b0b2455df71bbdcf26ae90fd5de15d9bca5d813606e6c3ee0efc2528ec72dba0
 #EXTINF:-1 tvg-logo="https://img.colatv88xd.cc/football/team/e51f03da53b2f36fc922a7ce18a07476.png!w80" group-title="BACKUP EVENT SPORTS",[LIVE] (18:35 WIB) Trung Quốc U23 vs Triều Tiên U23 [BLV SODA]
 #EXTVLCOPT:http-referrer=https://www.spindlersptown.com/
 #EXTVLCOPT:http-origin=https://www.spindlersptown.com
@@ -71,6 +56,27 @@ https://live5.msrktz.app/live/02456966.m3u8
 #EXTVLCOPT:http-origin=https://www.spindlersptown.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
 https://live5.msrktz.app/live/90725470.m3u8
+#EXTINF:-1 tvg-logo="https://img.colatv88xd.cc/football/team/6550678bf94ca14194fe646fa9a18ee0.png!w80" group-title="BACKUP EVENT SPORTS",[LIVE] (19:00 WIB) Everton Nữ vs Liverpool Nữ [BLV MONSTER]
+#EXTVLCOPT:http-referrer=https://www.spindlersptown.com/
+#EXTVLCOPT:http-origin=https://www.spindlersptown.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+https://live5.msrktz.app/live/75915087.m3u8
+#EXTINF:-1 tvg-logo="https://img.colatv88xd.cc/football/team/247c0a953f3a082b83443b3dfccedffb.png!w80" group-title="BACKUP EVENT SPORTS",[LIVE] (19:00 WIB) Namibia vs Comoros [BLV REVIVE]
+#EXTVLCOPT:http-referrer=https://www.spindlersptown.com/
+#EXTVLCOPT:http-origin=https://www.spindlersptown.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+https://live5.msrktz.app/live/33982309.m3u8
+### 🔵 EXTRA SOURCE: http://kendutv.diskon.cloud/liveevent/rakhoitvcache.m3u
+#EXTINF:-1 tvg-logo="https://img.colatv88xd.cc/football/team/247c0a953f3a082b83443b3dfccedffb.png!w80" group-title="BACKUP EVENT SPORTS",[LIVE] (19:00 WIB) Namibia vs Comoros [BLV ÔLONG]
+#EXTVLCOPT:http-referrer=https://www.spindlersptown.com/
+#EXTVLCOPT:http-origin=https://www.spindlersptown.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+https://live5.msrktz.app/live/97312754.m3u8
+#EXTINF:-1 tvg-logo="https://img.colatv88xd.cc/football/team/cb76c8ffac95e7e5429aca574aab5deb.png!w80" group-title="BACKUP EVENT SPORTS",[LIVE] (20:00 WIB) Ceuta vs Cadiz CF [BLV RỒNG ĐỎ]
+#EXTVLCOPT:http-referrer=https://www.spindlersptown.com/
+#EXTVLCOPT:http-origin=https://www.spindlersptown.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+https://live5.msrktz.app/live/88508431.m3u8
 #EXTINF:-1 tvg-logo="https://img.colatv88xd.cc/football/team/9c7c68ee0cad47be69a9d57e43261484.png!w80" group-title="BACKUP EVENT SPORTS",[UPCOMING] (00:30 WIB) Malaga vs Leganes [BLV REDBULL]
 #EXTVLCOPT:http-referrer=https://www.spindlersptown.com/
 #EXTVLCOPT:http-origin=https://www.spindlersptown.com
@@ -86,6 +92,11 @@ https://live5.msrktz.app/live/41943555.m3u8
 #EXTVLCOPT:http-origin=https://www.spindlersptown.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
 https://live5.msrktz.app/live/87379114.m3u8
+#EXTINF:-1 tvg-logo="https://img.colatv88xd.cc/basketball/team/e52f6ac53681289c91703501a960cb3c.png!w80" group-title="BACKUP EVENT SPORTS",[UPCOMING] (05:00 WIB) Charlotte Hornets vs Philadelphia 76ers [BLV 247]
+#EXTVLCOPT:http-referrer=https://www.spindlersptown.com/
+#EXTVLCOPT:http-origin=https://www.spindlersptown.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+https://live5.msrktz.app/live/90865415.m3u8
 #EXTINF:-1 tvg-logo="https://img.colatv88xd.cc/football/team/bb5004650a388d73f47cc3ca08623cc8.png!w80" group-title="BACKUP EVENT SPORTS",[UPCOMING] (05:30 WIB) Montevideo City vs Nacional [BLV FANTA]
 #EXTVLCOPT:http-referrer=https://www.spindlersptown.com/
 #EXTVLCOPT:http-origin=https://www.spindlersptown.com
@@ -126,26 +137,6 @@ https://live5.msrktz.app/live/24561735.m3u8
 #EXTVLCOPT:http-origin=https://www.spindlersptown.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
 https://live5.msrktz.app/live/07808742.m3u8
-#EXTINF:-1 tvg-logo="https://img.colatv88xd.cc/football/team/6550678bf94ca14194fe646fa9a18ee0.png!w80" group-title="BACKUP EVENT SPORTS",[UPCOMING] (19:00 WIB) Everton Nữ vs Liverpool Nữ [BLV MONSTER]
-#EXTVLCOPT:http-referrer=https://www.spindlersptown.com/
-#EXTVLCOPT:http-origin=https://www.spindlersptown.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
-https://live5.msrktz.app/live/75915087.m3u8
-#EXTINF:-1 tvg-logo="https://img.colatv88xd.cc/football/team/247c0a953f3a082b83443b3dfccedffb.png!w80" group-title="BACKUP EVENT SPORTS",[UPCOMING] (19:00 WIB) Namibia vs Comoros [BLV REVIVE]
-#EXTVLCOPT:http-referrer=https://www.spindlersptown.com/
-#EXTVLCOPT:http-origin=https://www.spindlersptown.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
-https://live5.msrktz.app/live/33982309.m3u8
-#EXTINF:-1 tvg-logo="https://img.colatv88xd.cc/football/team/247c0a953f3a082b83443b3dfccedffb.png!w80" group-title="BACKUP EVENT SPORTS",[UPCOMING] (19:00 WIB) Namibia vs Comoros [BLV ÔLONG]
-#EXTVLCOPT:http-referrer=https://www.spindlersptown.com/
-#EXTVLCOPT:http-origin=https://www.spindlersptown.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
-https://live5.msrktz.app/live/97312754.m3u8
-#EXTINF:-1 tvg-logo="https://img.colatv88xd.cc/football/team/cb76c8ffac95e7e5429aca574aab5deb.png!w80" group-title="BACKUP EVENT SPORTS",[UPCOMING] (20:00 WIB) Ceuta vs Cadiz CF [BLV RỒNG ĐỎ]
-#EXTVLCOPT:http-referrer=https://www.spindlersptown.com/
-#EXTVLCOPT:http-origin=https://www.spindlersptown.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
-https://live5.msrktz.app/live/88508431.m3u8
 #EXTINF:-1 tvg-logo="https://img.colatv88xd.cc/football/team/db33359c11033fc28c9bedec0a4a89d9.png!w80" group-title="BACKUP EVENT SPORTS",[UPCOMING] (20:30 WIB) Manchester Utd Nữ vs Manchester City Nữ [BLV HỔ VẰN]
 #EXTVLCOPT:http-referrer=https://www.spindlersptown.com/
 #EXTVLCOPT:http-origin=https://www.spindlersptown.com
@@ -181,15 +172,13 @@ https://live5.msrktz.app/live/18812304.m3u8
 #EXTVLCOPT:http-origin=https://www.spindlersptown.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
 https://live5.msrktz.app/live/78905744.m3u8
-#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://www.srilankasports.com/wp-content/uploads/2024/02/friendly.png", 00:00 WIB Kanada vs Islandia
+#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-DH4Zo1nFEu_R7H_JhMpG8S2yIFahoMR-Zw&s", 19:00 WIB Namibia vs Comoros
+#EXTVLCOPT:http-user-agent=OTT Navigator/hometv.finale (Linux;Android 15) ExoPlayerLib/2.13.2
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
+#KODIPROP:inputstream.adaptive.license_key=https://www.plus.fifa.com/flux-capacitor/api/v1/licensing/widevine/modular?sessionId=E4FJWtFfbnjfGN1ivn40MT6g7BA2RYjOHu92px0Anx8zagsKQfNQW-jeyOkXMzdTmsORa2VMtuFIKyaDERIfV7Tq9Wv7k61RCEaXODxNIC8
+https://d7pd9oqdl4d44.cloudfront.net/2026_03_26_10_52_00_fe033dd3-3b2a-40c1-bd1b-64e1438b019f/PROD_CMAF_CENC/index-dash.mpd
+#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://shorter.me/IxVCR", GEOBLOCK 19:00 WIB THY vs Nữ Galatasaray
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.livecdnem.com/
-https://live1.pro2cdnlive.com/live/channel2.m3u8?wsSecret=064b0ad54315f8f7534fa2c83cb7c990&wsABSTime=1772570276
-#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://www.srilankasports.com/wp-content/uploads/2024/02/friendly.png", 21:00 WIB Republik Korea vs Pantai Gading
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.livecdnem.com/
-https://live1.pro2cdnlive.com/live/channel15.m3u8?wsSecret=796baabf373552b168b54380f98ae384&wsABSTime=1773517215
-#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://www.srilankasports.com/wp-content/uploads/2024/02/friendly.png", 23:00 WIB Senegal vs Peru
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.livecdnem.com/
-https://live1.pro2cdnlive.com/live/channel11.m3u8?wsSecret=71c13ab6d69a095b8c94b64aeac78596&wsABSTime=1766260690
+https://live3.procdnlive.com/livecdn/channel40.flv?auth_key=3000001774682579-0-0-6c049405cf37c5f2fef1a0427d4955fb
