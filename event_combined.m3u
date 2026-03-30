@@ -1,4 +1,10 @@
 #EXTM3U
+#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://www.srilankasports.com/wp-content/uploads/2024/02/friendly.png", 01:45 WIB Jerman vs Ghana
+#EXTVLCOPT:http-user-agent=Dalvik/2.1.0 (Linux; U; Android 9; SM-A730F Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://www.visionplus.id/
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=4035323a7fe64767ab8f3345ed9b93be:67377b8d429603f8bf30c161bda269e5
+https://d2xz2v5wuvgur6.cloudfront.net/out/v1/63c0da12bb4d48afbaf053f51dff2353/index.mpd
 ### 🥇 PRIORITY SOURCE
 ### 🥈 SECOND SOURCE
 #EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-DH4Zo1nFEu_R7H_JhMpG8S2yIFahoMR-Zw&s", 20:00 WIB Indonesia vs Bulgaria
@@ -7,60 +13,61 @@
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #KODIPROP:inputstream.adaptive.license_key=https://www.plus.fifa.com/flux-capacitor/api/v1/licensing/widevine/modular?sessionId=VNB63TbeJ7tIF963NguEjCQsfqrzG7Ljcl0BGQNMsjtvecYef74hRn1NelA9JckMEfS0JSS8RSL3PJey2Kgc9YpHBMTynC0NkGLQg-jizFs
 https://d7pd9oqdl4d44.cloudfront.net/2026_03_26_15_54_26_1045349a-2c5a-4c82-a015-cf64dbc78f2d/PROD_CMAF_CENC/index-dash.mpd
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/karepech/bakul/refs/heads/main/bw.png" group-title="BACKUP EVENT SPORTS",21:00 WIB - GRENADA VS KENYA [Server 1] [FOOTBALL]
-#EXTVLCOPT:http-origin=https://xlz.livecdnem.com
-#EXTVLCOPT:http-referrer=https://xlz.livecdnem.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.pro2cdnlive.com/live/channel21.flv?wsSecret=b3a4350bdbb17e5ea1251b713d330640&wsABSTime=1774928424
-### 🔵 EXTRA SOURCE
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/karepech/bakul/refs/heads/main/bw.png" group-title="BACKUP EVENT SPORTS",21:00 WIB - UZBEKISTAN VS VENEZUELA [Server 1] [FOOTBALL]
-#EXTVLCOPT:http-origin=https://xlz.livecdnem.com
-#EXTVLCOPT:http-referrer=https://xlz.livecdnem.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.pro2cdnlive.com/live/channel2.flv?wsSecret=422490de6d243f1f4567e356069fb5a5&wsABSTime=1774928423
 #EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-DH4Zo1nFEu_R7H_JhMpG8S2yIFahoMR-Zw&s", 21:00 WIB Uzbekistan vs Venezuela
 #EXTVLCOPT:http-user-agent=OTT Navigator/hometv.finale (Linux;Android 15) ExoPlayerLib/2.13.2
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #KODIPROP:inputstream.adaptive.license_key=https://www.plus.fifa.com/flux-capacitor/api/v1/licensing/widevine/modular?sessionId=M7JB9_HXPqtHKElQOd6flV0T6236xBUxxVp3SAcM9Lw5PnIKd_C4UtjbWszv86K7WDBdQOO4dCH4DmxdrxeRQu-vLn6GAhwiIfw78RUJAL8
 https://d7pd9oqdl4d44.cloudfront.net/2026_03_24_16_55_18_3f65cda4-a958-4e10-8660-9516accba630/PROD_CMAF_CENC/index-dash.mpd
+### 🔵 EXTRA SOURCE
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/karepech/bakul/refs/heads/main/bw.png" group-title="BACKUP EVENT SPORTS",21:30 WIB - AL KARKH VS AL MINAA SC [Server 1] [FOOTBALL]
 #EXTVLCOPT:http-origin=https://xlz.livecdnem.com
 #EXTVLCOPT:http-referrer=https://xlz.livecdnem.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.pro2cdnlive.com/live/channel8.flv?wsSecret=c1b6f70795729c589eae35ae144af32a&wsABSTime=1774928424
+https://live1.pro2cdnlive.com/live/channel8.flv?wsSecret=6605aef9288a94723e47dbe3c0faa116&wsABSTime=1774932020
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/karepech/bakul/refs/heads/main/bw.png" group-title="BACKUP EVENT SPORTS",21:30 WIB - DUHOK VS ZAKHO SC [Server 1] [FOOTBALL]
 #EXTVLCOPT:http-origin=https://xlz.livecdnem.com
 #EXTVLCOPT:http-referrer=https://xlz.livecdnem.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.pro2cdnlive.com/live/channel17.flv?wsSecret=f7cb14c97feeb146ed7b95fb36c691e4&wsABSTime=1774928425
+https://live1.pro2cdnlive.com/live/channel17.flv?wsSecret=e51aae9506575bb575f0886e72d5963f&wsABSTime=1774932021
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/karepech/bakul/refs/heads/main/bw.png" group-title="BACKUP EVENT SPORTS",21:30 WIB - MOSUL FC VS AL KAHRBAA CLUB [Server 1] [FOOTBALL]
 #EXTVLCOPT:http-origin=https://xlz.livecdnem.com
 #EXTVLCOPT:http-referrer=https://xlz.livecdnem.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.pro2cdnlive.com/live/channel28.flv?wsSecret=ccaa8d4bc482346f7583073e7d3a2168&wsABSTime=1774928425
+https://live1.pro2cdnlive.com/live/channel28.flv?wsSecret=21efd62b832614a45c24197e86cbc411&wsABSTime=1774932020
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/karepech/bakul/refs/heads/main/bw.png" group-title="BACKUP EVENT SPORTS",22:00 WIB - AL MASRY VS EL GOUNAH [Server 1] [FOOTBALL]
 #EXTVLCOPT:http-origin=https://xlz.livecdnem.com
 #EXTVLCOPT:http-referrer=https://xlz.livecdnem.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.pro2cdnlive.com/live/channel18.flv?wsSecret=dd3073f21fcfe6ba18b9134b2f2129b5&wsABSTime=1774928426
+https://live1.pro2cdnlive.com/live/channel18.flv?wsSecret=01b7db9c092d3d2890056e4b82b5be7b&wsABSTime=1774932021
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/karepech/bakul/refs/heads/main/bw.png" group-title="BACKUP EVENT SPORTS",22:00 WIB - AZERBAIJAN VS SIERRA LEONE [Server 1] [FOOTBALL]
 #EXTVLCOPT:http-origin=https://xlz.livecdnem.com
 #EXTVLCOPT:http-referrer=https://xlz.livecdnem.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.pro2cdnlive.com/live/channel11.flv?wsSecret=f6a5926bbd1a15ff35ec45bf7c43de00&wsABSTime=1774928426
+https://live1.pro2cdnlive.com/live/channel11.flv?wsSecret=d7c9f6dfbf74dd1015b3d0d9719bc6e7&wsABSTime=1774932021
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/karepech/bakul/refs/heads/main/bw.png" group-title="BACKUP EVENT SPORTS",22:00 WIB - CH SEC U20 VS BO DAO NHA U20 [Server 1] [FOOTBALL]
 #EXTVLCOPT:http-origin=https://xlz.livecdnem.com
 #EXTVLCOPT:http-referrer=https://xlz.livecdnem.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.pro2cdnlive.com/live/channel23.flv?wsSecret=aaaa70c502cdfd45d0a002ea8ff7a98a&wsABSTime=1774928427
+https://live1.pro2cdnlive.com/live/channel23.flv?wsSecret=bb11f8f6ce7c81e927ef0fa911519a7c&wsABSTime=1774932022
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/karepech/bakul/refs/heads/main/bw.png" group-title="BACKUP EVENT SPORTS",23:00 WIB - DAO SIP VS MOLDOVA [Server 1] [FOOTBALL]
 #EXTVLCOPT:http-origin=https://xlz.livecdnem.com
 #EXTVLCOPT:http-referrer=https://xlz.livecdnem.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.pro2cdnlive.com/live/channel16.flv?wsSecret=06a77b6da3e0b91d334dbf14595ab878&wsABSTime=1774928428
+https://live1.pro2cdnlive.com/live/channel16.flv?wsSecret=20b07bcae69a9bfe2cc87cc1879edb0d&wsABSTime=1774932023
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/karepech/bakul/refs/heads/main/bw.png" group-title="BACKUP EVENT SPORTS",23:00 WIB - NU HAMBURGER SV VS NU BAYER LEVERKUSEN [Server 1] [FOOTBALL]
 #EXTVLCOPT:http-origin=https://xlz.livecdnem.com
 #EXTVLCOPT:http-referrer=https://xlz.livecdnem.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.pro2cdnlive.com/live/channel9.flv?wsSecret=1783c717055e553ab397333ff804a417&wsABSTime=1774928428
+https://live1.pro2cdnlive.com/live/channel9.flv?wsSecret=3ddb1af847acc403f40797834ad31049&wsABSTime=1774932023
+#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://www.srilankasports.com/wp-content/uploads/2024/02/friendly.png", 23:00 WIB Siprus vs Moldova
+#EXTVLCOPT:http-user-agent=Dalvik/2.1.0 (Linux; U; Android 9; SM-A730F Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=39c4dc6704cf4ceea2fd4863b88d8a7d:4e9d7954c2ff46759289da4fc9f018ea
+#EXTVLCOPT:http-referrer=https://www.visionplus.id/
+https://d2tjypxxy769fn.cloudfront.net/out/v1/89a6e4261cd7470f83e5869e90440cff/index.mpd
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/karepech/bakul/refs/heads/main/bw.png" group-title="BACKUP EVENT SPORTS",23:30 WIB - TORPEDO MOSCOW VS SKA KHABAROVSK [Server 1] [FOOTBALL]
+#EXTVLCOPT:http-origin=https://xlz.livecdnem.com
+#EXTVLCOPT:http-referrer=https://xlz.livecdnem.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://live1.pro2cdnlive.com/live/channel24.flv?wsSecret=35b68acf1f5b410cf81513641b0c9804&wsABSTime=1774932024
