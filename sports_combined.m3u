@@ -2056,9 +2056,6 @@ https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae0
 http://88.212.15.19/live/test_ctsport_25p/playlist.m3u8
 #EXTINF:-1 group-title="SPORTS" tvg-logo="https://i.imgur.com/tNKPSkO.png",Äá»ng Nai 2 (480p) [Not 24/7]
 http://118.107.85.4:1935/live/smil:DNTV2.smil/chunklist.m3u8
-### 🔴 LIVE EVENT
-#EXTINF:-1 group-title="SPORTS", Adelaide United vs Auckland FC
-https://live.bbs456.com/live/13134070_580b7dc9ea4cafc327fffaa6337a2b82.m3u8
 #EXTINF:-1 tvg-name="" tvg-id="" tvg-logo="https://mimipipi22.github.io/logo/antik/automotorsport.jpg" group-title="SPORTS",AUTO MOTOR AND SPORT 🇸🇰
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referer=https://webtv.sk/tv/
@@ -2067,6 +2064,9 @@ https://live.bbs456.com/live/13134070_580b7dc9ea4cafc327fffaa6337a2b82.m3u8
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #KODIPROP:inputstream.adaptive.license_key=https://drm.antik.sk/widevine/key
 https://dash2.antik.sk/stream/hisi_ams/playlist_cbcs.mpd
+### 🔴 LIVE EVENT
+#EXTINF:-1 group-title="SPORTS", Bangkok United FC vs Sukhothai
+https://hls.livelivelive.space/live/4463937.m3u8
 #EXTINF:-1 tvg-name="Cowboy tv" group-title="SPORTS",Cowboy tv
 https://amg17292-amg17292c1-distrotv-us-4170.playouts.now.amagi.tv/playlist/amg17292-tetonridgellc-tetonridgefast-distrotvus/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.pinimg.com/236x/8b/74/ce/8b74ce8802bd87ddf5f4446455ae41a6.jpg" group-title="SPORTS",DZ COMBAT
@@ -2338,8 +2338,6 @@ https://cors-proxy.cooks.fyi/https://cd-stream-live.telenorcdn.net/cdgo/sm_viasp
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key={"10827657b810ae957f6adc178eca9c20":"3f73e8c9b64b2972bd25859efef7e5ac","10827657b810ae957f6adc178eca9c10":"ca8605499cbdc8e0d2f12898258f8f6e"}
 https://cors-proxy.cooks.fyi/https://cd-stream-live.telenorcdn.net/cdgo/sm_viasport3_hd_live/sm_viasport3_hd_live.isml/playlist.mpd
-#EXTINF:-1 group-title="SPORTS", Van Hien University vs Quang Ninh
-https://live.bbs456.com/live/13571884_ce652b49e882f2e88b18be0e589db509.m3u8
 #EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqsipWOIMkUaOTGFlOsyaS4gZOU5OtBhVgHEQewgVGKM0P8-wFqEvp2SAgaQq6Pg_6T0NrtBSm-y0ac5SQKoct4nJ3CkaDP2j7iwIkOnHCaYkSNuVHYTjFUnJfyrQTZObfPMumAtk0gAFbUjjO6ScJQaCvBPOnCz-1NWL0ubaUYDhFkgCtNFPjlODXuhSl/s700/BILLIYARD%20TV.png" group-title="SPORTS",BILLIYARD TV
 https://1621590671.rsc.cdn77.org/HLS/BILLIARDTV_SCTE.m3u8
 #EXTINF:-1 group-title="SPORTS" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggQR9Rf25uPOeL_KvSLFBihQG9laN9uNNYb8hisYExCCXXJHdD0jNRQJUNbRi8cMV6Uj39x1xTTHBBltITmT13vl9nisDju2pGovRbQqZDxbK1SQcllHHJH6mzMYTxQHkmJbXViQCSzZeMVY_XixkGNgoVxGKRdVOrFQYrVXdoAIdWnjsRsUKM5HaVHTpI/s700/BOXING%20TV.png",BOXING TV
