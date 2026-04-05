@@ -1,63 +1,17 @@
 #EXTM3U
-#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://g-sports.id/wp-content/uploads/2025/08/Liga-Italia.jpg", 01:45 WIB Lazio vs Parma
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=7995c724a13748ed970840a8ab5bb9b3:67bdaf1e2175b9ff682fcdf0e2354b1e
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://a83aivottlinear-a.akamaihd.net/OTTB/syd-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd
-#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://shorter.me/87PxH", 02:00 WIB Ajax vs Twente
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=0ad4080cdff8c60b1233b22087f0b340:285f129c5eca01dd08a5d5a14ad801c8
-https://otte.live.fly.ww.aiv-cdn.net/fra-nitro/live/clients/dash/enc/ssdefyhkkr/out/v1/cf01290cb7f64525bdf861580a016ca8/cenc.mpd
-### 🥇 PRIORITY SOURCE
-### 🥈 SECOND SOURCE
-#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://iili.io/FtSMHX9.jpg", 02:00 WIB Atlético Madrid vs Barcelona
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=0b42be2664d7e811d04f3e504e0924c5:ae24090123b8c72ac5404dc152847cb8
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://otte.live.fly.ww.aiv-cdn.net/syd-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd
-#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://shorter.me/w9SUr", 02:00 WIB Southampton vs Arsenal
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b
-https://qw.live.pv-cdn.net/OTTB/lhr-nitro/live/clients/dash/enc/cllekigzzn/out/v1/bd3b0c314fff4bb1ab4693358f3cd2d3/cenc.mpd
-#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://iili.io/FDOiPI4.jpg", 02:05 WIB Lille vs Lens
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
-#EXTVLCOPT:http-referrer=https://xl365.livecdnem.com/
-https://live1.pro2cdnlive.com/live/channel13.m3u8?wsSecret=7394e64feb0236bf8e9e232eb0c1cf52&wsABSTime=1758737017
-### 🔵 EXTRA SOURCE
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/gpxwrxlho65ryk0/image/small" group-title="BACKUP EVENT SPORTS",14:00 WIB - KAWASAKI FRONTALE VS URAWA RED [JPN D1] (v1)
-#EXTVLCOPT:http-origin=https://xlz.livecdnem.com
-#EXTVLCOPT:http-referrer=https://xlz.livecdnem.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.pro2cdnlive.com/live/channel12.flv?wsSecret=ee0c483791baedf1f448fe8475a25b9e&wsABSTime=1775422531
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/yl5ergph64kr8k0/image/small" group-title="BACKUP EVENT SPORTS",14:30 WIB - INCHEON UNITED VS GIMCHEON SANGMU [KOR D1] (v1)
-#EXTVLCOPT:http-origin=https://xlz.livecdnem.com
-#EXTVLCOPT:http-referrer=https://xlz.livecdnem.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.pro2cdnlive.com/live/channel6.flv?wsSecret=0d045ed730a4bd274dfef1409e3eae70&wsABSTime=1775422532
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/y0or5jhlodoqwzv/image/small" group-title="BACKUP EVENT SPORTS",14:30 WIB - PAJU FRONTIER FC VS GIMHAE CITY [KOR D2] (v1)
-#EXTVLCOPT:http-origin=https://xlz.livecdnem.com
-#EXTVLCOPT:http-referrer=https://xlz.livecdnem.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.pro2cdnlive.com/live/channel28.flv?wsSecret=dd60a7bf63232f4abe570af65d11f36c&wsABSTime=1775422532
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/basketball/team/gx7lm73tdzlr2wd/image/small" group-title="BACKUP EVENT SPORTS",14:30 WIB - SUWON SONICBOOM VS ULSAN PHOEBUS [KOR] (v1)
-#EXTVLCOPT:http-origin=https://xlz.livecdnem.com
-#EXTVLCOPT:http-referrer=https://xlz.livecdnem.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://live1.pro2cdnlive.com/live/channel27.flv?wsSecret=2b4917abcf0cc70d8fb0c68ff4ef1fe5&wsABSTime=1775422537
 #EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://iili.io/FDOiPI4.jpg", 01:45 WIB Monaco vs Olympique Marseille
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.livecdnem.com/
 https://live1.pro2cdnlive.com/live/channel2.m3u8?wsSecret=064b0ad54315f8f7534fa2c83cb7c990&wsABSTime=1772570276
-##EXTINF:-1 group-title="EVENT" tvg-logo="https://iili.io/30Jk8Al.md.png",002 Cara Menonton
-#https://shorter.me/aJXUE
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/basketball/team/l5ergytve6jr8k0/image/small" group-title="BACKUP EVENT SPORTS",15:00 WIB - KEELUNG BLACK KITES VS BANK OF TAIWAN [CHI] (v1)
+#EXTVLCOPT:http-origin=https://xlz.livecdnem.com
+#EXTVLCOPT:http-referrer=https://xlz.livecdnem.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://live1.pro2cdnlive.com/live/channel29.flv?wsSecret=4274e06b69016f0ad587ce76c01fc74c&wsABSTime=1775425835
+### 🥇 PRIORITY SOURCE
+### 🥈 SECOND SOURCE
+#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://iili.io/fe5XHVn.md.png", 16:00 WIB Putra: Jakarta Lavani Livin Transmedia vs Surabaya Samator
+#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://iili.io/fe5XHVn.md.png", 19:00 WIB Putri: Gresik Phonska Plus Pupuk Indonesia vs Jakarta Electric PLN Mobile
 #EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://iili.io/fe5XHVn.md.png", 16:00 WIB Putra: Jakarta Lavani Livin Transmedia vs Surabaya Samator
 #EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://iili.io/fe5XHVn.md.png", 19:00 WIB Putri: Gresik Phonska Plus Pupuk Indonesia vs Jakarta Electric PLN Mobile
 #EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://shorter.me/_bDcr", 15:30 WIB Bhayangkara vs Persija
@@ -74,6 +28,21 @@ https://xyzna2-cf.didjhfyu8yg.sbs/auth%3Dc6d6b41ab7388f626c8f77ca7dcc46fc1dc3127
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.livecdnem.com/
 https://live1.pro2cdnlive.com/live/channel11.m3u8?wsSecret=71c13ab6d69a095b8c94b64aeac78596&wsABSTime=1766260690
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/y39mp1hjk42mojx/image/small" group-title="BACKUP EVENT SPORTS",16:00 WIB - BA RIA VUNG TAU VS KHANH HOA [VIE D2] (v1)
+#EXTVLCOPT:http-origin=https://xlz.livecdnem.com
+#EXTVLCOPT:http-referrer=https://xlz.livecdnem.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://live1.pro2cdnlive.com/live/channel7.flv?wsSecret=b95c84130c5ef5453a5f4933d7916458&wsABSTime=1775425832
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/4wyrn4hv0pyq86p/image/small" group-title="BACKUP EVENT SPORTS",16:00 WIB - NU JORDAN U20 VS NU HAN QUOC U20 [AFC] (v1)
+#EXTVLCOPT:http-origin=https://xlz.livecdnem.com
+#EXTVLCOPT:http-referrer=https://xlz.livecdnem.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://live1.pro2cdnlive.com/live/channel23.flv?wsSecret=ea4239a9cf8a082c018d08b1a7588258&wsABSTime=1775425833
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/l965mkyhpy5r1ge/image/small" group-title="BACKUP EVENT SPORTS",17:00 WIB - HOANG ANH GIA LAI VS NINH BINH [VIE D1] (v1)
+#EXTVLCOPT:http-origin=https://xlz.livecdnem.com
+#EXTVLCOPT:http-referrer=https://xlz.livecdnem.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://live1.pro2cdnlive.com/live/channel21.flv?wsSecret=21ac8edfaf3ee7d30eef4aaee0cc5d80&wsABSTime=1775425834
 #EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://iili.io/FDOiPI4.jpg", 20:00 WIB Angers SCO vs Olympique Lyonnais
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.livecdnem.com/
@@ -82,3 +51,16 @@ https://live1.pro2cdnlive.com/live/channel18.m3u8?wsSecret=c02150b13b4029cc7749f
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.livecdnem.com/
 https://live1.pro2cdnlive.com/live/channel19.m3u8?wsSecret=f56bef7bf4aa7288d3fe39aac3ca7d85&wsABSTime=1761932703
+#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://shorter.me/w9SUr", 22:30 WIB West Ham United vs Leeds United
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b
+https://qw.live.pv-cdn.net/OTTB/lhr-nitro/live/clients/dash/enc/cllekigzzn/out/v1/bd3b0c314fff4bb1ab4693358f3cd2d3/cenc.mpd
+##EXTINF:-1 group-title="EVENT" tvg-logo="https://iili.io/30Jk8Al.md.png",002 Cara Menonton
+#https://shorter.me/aJXUE
+#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://iili.io/fe5XHVn.md.png", 16:00 WIB Putra: Jakarta Lavani Livin Transmedia vs Surabaya Samator
+#EXTVLCOPT:http-origin=https://ppdd02.dtfjinikdinbiframe.shop/
+#EXTVLCOPT:http-referrer=https://ppdd02.dtfjinikdinbiframe.shop/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+https://xyzna2-cf.didjhfyu8yg.sbs/auth%3D0f63a575b8d257c4a9c628c00b78d9c6800b5b4d11e5e686d1956d58f750427add002eba4a4b0514ab53c6a8bc83c48a82a351eef74f17a2c349bc44b5410f082eec0f7fa9eb1a840b34db6416561b6885b0ed00f0eca96858d4e52c9548b8a3be6024afbe20b9eb16846b72e5a3bffc765eab2bbf043580e3d210b608f26e7de3dc021d3f2995bd810987c46bde000309b056da2bc37e1477e330e8d9449abe%26cid%3DiQ386Q6sUZkpb8vAJb0SJ260405%26_v%3D2%26_r%3D4DgNZz%26_vis%3D5f8c110604e9fe08ff1efac89177fae3f82529b8c40dbc1be720ec9acb7ecdcc%26_vvs%3D2f33b0cc43f5e40a87198592575d540212794e9bab35d38e4d0d5004ac763e35%26_vas%3Dac1f77071f250e55cf369a01294d52b1766c33e9c7d479613af2dfcc73d48e57/app/c415142.m3u8
