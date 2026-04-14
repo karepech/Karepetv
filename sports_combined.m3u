@@ -129,12 +129,6 @@ https://d3b0v7fggu5zwm.cloudfront.net/out/v1/b4814ae93ca84dd3bb5b0aff76ca263f/in
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=3197f7f5086c4315af2b7a94bc9201cb:17462a74739ae0d9855705ffc2c0e1b5
 https://fta3-cdn-flr.visionplus.id/out/v1/b4814ae93ca84dd3bb5b0aff76ca263f/index.mpd
-#EXTINF:-1 tvg-id="" tvg-logo="https://www.visionplus.id/images/repository/960/49960-SNAPSHOT-l.png" group-title="SPORTS", SpoTV 1 PH
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=ec7ee27d83764e4b845c48cca31c8eef:9c0e4191203fccb0fde34ee29999129e
-https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_spotvhd/default/index.mpd
 #EXTINF:-1 group-logo="" group-title="SPORTS" tvg-id="" tvg-logo="https://www.visionplus.id/images/repository/657/657-LOGO-l.png",SpoTV 2
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=1539f043249e413d91906036f305831e:671e24fd8d234c7f38d85055815f902a
@@ -555,12 +549,6 @@ https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/5sxuux529k/out/v1
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=192b1115da041585c77200128549efa1:634e10efe4abbb14be400a3ccbac0258
 https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/pnu10tp36z/out/v1/912e9db56d75403b8a9ac0a719110f36/cenc.mpd
-#EXTINF:-1 xui-id="11539" tvg-id="" tvg-name="" tvg-logo="https://i.ibb.co.com/2tBx8pR/TNT1.png" group-title="SPORTS", TNT Sport 1 🇬🇧
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b
-http://live-pv-ta.amazon.fastly-edge.com/sin-nitro/live/clients/dash/enc/cllekigzzn/out/v1/bd3b0c314fff4bb1ab4693358f3cd2d3/cenc.mpd
 #EXTINF:-1 xui-id="11540" tvg-id="" tvg-name="" tvg-logo="https://i.ibb.co.com/fpHYC7N/TNT2.png" group-title="SPORTS", TNT Sport 2 🇬🇧
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
@@ -1825,13 +1813,20 @@ https://cors-proxy.cooks.fyi/https://cd-stream-live.telenorcdn.net/cdgo/sm_viasp
 https://cors-proxy.cooks.fyi/https://cd-stream-live.telenorcdn.net/cdgo/sm_viasport3_hd_live/sm_viasport3_hd_live.isml/playlist.mpd
 #EXTINF:-1 group-title="SPORTS", [LIVE] Al-Naft SC vs Erbil SC - Iraq Stars League
 https://live.bbs456.com/live/13786525_8f259d555f8ef0dc22ee39acc1ddfd1e.m3u8
-### 🔴 LIVE EVENT
+#EXTINF:-1 group-title="SPORTS", [LIVE] Botev Vratsa vs Lokomotiv Sofia - BUL First League
+https://live3.bbs456.com/live/13714915_668de678152a70db8c3e55cf0ef6977a.m3u8
 #EXTINF:-1 group-title="SPORTS", [LIVE] Bulgaria Women vs Kosovo Women - FIFA Women's World Cup qualification(UEFA)
 https://live.bbs456.com/live/13341063_cafd6304fb7bc4ac0cbae7975fa19f31.m3u8
+#EXTINF:-1 group-title="SPORTS", [LIVE] Bunyodkor vs Neftchi Fergana - UZB Super League
+https://live.bbs456.com/live/13759153_a0f9b54b10c332ccbc515df5aa2ff448.m3u8
+#EXTINF:-1 group-title="SPORTS", [LIVE] Czechia Women vs Montenegro Women - FIFA Women's World Cup qualification(UEFA)
+https://v.lfsxfj.com/live/100357.m3u8?txSecret=02e8aeb5248025db6eb3c25abfc8fdc2&txTime=69DE6279&sign=81f1c7a703daad9c
+#EXTINF:-1 group-title="SPORTS", [LIVE] Finland Women vs Slovakia Women - FIFA Women's World Cup qualification(UEFA)
+https://v.lfsxfj.com/live/100300.m3u8?txSecret=d50f03339b709fcba0d805f6129dde10&txTime=69DE6549&sign=8030ccd5adc55a5f
+#EXTINF:-1 group-title="SPORTS", [LIVE] Modern Sport FC vs El Gounah - EGY Premier League
+https://live.bbs456.com/live/13691238_f220d1a15fa24e30c4eff3e82ffd7d9c.m3u8
 #EXTINF:-1 group-title="SPORTS", [LIVE] North Macedonia Women vs Hungary Women - FIFA Women's World Cup qualification(UEFA)
 https://v.lfsxfj.com/live/100509.m3u8?txSecret=8148ec84a57b936ffe6be166695e1a3b&txTime=69DE4D60&sign=d322ea2005e4ee11
-#EXTINF:-1 group-title="SPORTS", [LIVE] Xorazm Urganch vs FK Kokand 1912 - UZB Super League
-https://live2.bbs456.com/live/13759154_d40c3f6d2d8d6f563cde82cc503ea18f.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://images.cdn.prd.api.discomax.com/2024/11/10/cbf5b555-f73d-3af4-8043-1fb047f3ea77.jpeg" group-title="SPORTS", Action-2-Special Delivery
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
