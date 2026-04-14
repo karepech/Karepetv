@@ -718,6 +718,12 @@ http://op-group1-swiftservehd-1.dens.tv/h/h39/01.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://mimipipi22.github.io/logo/nasional/bntv.jpg" group-title="INDONESIA",BN TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
 https://flv.intechmedia.net/live/ch112.m3u8|user-agent=Mozilla/5.0
+#EXTVLCOPT:http-user-agent=ExoPlayerDemo/2.15.1 (Linux; Android 13) ExoPlayerLib/2.15.1
+##KODIPROP:inputstream.adaptive.license_type=clearkey
+##KODIPROP:inputstream.adaptive.license_key=eabfbb7dd5ef461699c879b05941e18d:c2f7e8f9468def5266e01a4c646b76a6
+#EXTINF:-1 tvg-id="Chinese.Drama.id" tvg-name="Citra Drama" tvg-logo="https://mimipipi22.github.io/logo/entertainment/citradrama.jpg" group-title="INDONESIA",CITRA DRAMA
+#https://atemecdnbalancer-voe.sysln.id/live/eds/CitraDramaHD/mediampd/CitraDramaHD.mpd
+http://202.169.224.202:8800/udp/239.9.1.12:1234
 #EXTVLCOPT:http-referrer=https://www.cnbcindonesia.com/
 #EXTVLCOPT:http-origin=https://www.cnbcindonesia.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0/v2206
