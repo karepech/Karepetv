@@ -1,9 +1,4 @@
 #EXTM3U
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=900c43f0e02742dd854148b7a75abbec:da315cca7f2902b4de23199718ed7e90
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0
-#EXTINF:-1 tvg-logo="https://thumbs2.imgbox.com/3d/55/acsUbCBq_t.png?v=1.0.0.1" group-title="NEWS" group-logo="https://iili.io/3OQDqdB.png?v=1.1.1.1" tvg-id="CNNInternational.id" tvg-name="CNN", CNN
-https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_cnnhd/default/index.mpd
 #EXTINF:-1 tvg-id="cnn" group-title="NEWS" tvg-logo="https://freem3u.xyz/static/images/global/cnn.png",CNN
 #EXTVLCOPT:http-user-agent=Dalvik/2.1.0
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -20,6 +15,10 @@ http://89.105.221.127/CNN/index.m3u8?token=test
 http://84.17.50.102/cnn/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="NEWS",CNN Brasil
 https://canaiss.fazoeli.co.za/fontes/smart/cnnbrasil.m3u8
+#EXTINF:-1 tvg-logo="http://115.146.176.131:80/images/2acf9495fde07739914e7a7bb3ffee94.png" group-title="NEWS",CNN HD
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=900c43f0e02742dd854148b7a75abbec:da315cca7f2902b4de23199718ed7e90
+https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_cnnhd/default/index.mpd
 #EXTVLCOPT:http-user-agent=ExoPlayerDemo/2.15.1 (Linux; Android 13) ExoPlayerLib/2.15.1
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=1a1feb27e16048a59f39246a1321ea7e:979f770ca36fae07e287257bfa56bc4c
@@ -35,11 +34,6 @@ https://sm-monirul.top/Toffee/live.php?id=cnn&e=.m3u8
 #EXTINF:-1 tvg-id="SEAToday" tvg-url="https://bit.ly/IndonesiaEpg" tvg-logo="https://static.mncnow.id/images/channel/7bdd87fc/0cb7_r32.jpg" group-title="NEWS",SEA Today V+
 #EXTINF:-1 tvg-logo="https://iili.io/JV3xSnt.png" group-title="NEWS",CNN
 https://live.cnnindonesia.com/livecnn/smil:cnntv.smil/chunklist_w1238913108_b384000_sleng.m3u8|user-agent=VLC/3.0.9 LibVLC/3.0.9 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=f2ecb7420c48463c9c1eeb9a908825ed:2ddaa7bc8fcff832464ad874ab468c3f
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0
-#EXTINF:-1 tvg-logo="https://thumbs2.imgbox.com/19/04/k2xsxpJn_t.png?v=1.0.0.1" group-title="NEWS" group-logo="https://iili.io/3OQDqdB.png?v=1.1.1.1" tvg-id="CNBCAsia.id" tvg-name"CNBC Asia", CNBC HD
-https://d3b0v7fggu5zwm.cloudfront.net/out/v1/e8d3f81aae4b46fbacf545140b86f2c4/index.mpd|Referer=https://www.visionplus.id
 #EXTINF:-1 tvg-chno="29" tvg-id="CNBC.HD.us2" tvg-name="CNBC" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s10139_dark_360w_270h.png" group-title="NEWS",CNBC
 http://41.205.93.154/CNBC/index.m3u8
 #EXTINF:-1 group-title="NEWS",CNBC
@@ -50,11 +44,6 @@ http://89.105.221.127/CNBC/index.m3u8?token=test
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
 #EXTINF:-1 tvg-id="CNBC.Asia.id" tvg-name="CNBC Asia" tvg-logo="https://mimipipi22.github.io/logo/news/cnbcasia.jpg" group-title="NEWS",CNBC ASIA
 https://d3b0v7fggu5zwm.cloudfront.net/out/v1/e8d3f81aae4b46fbacf545140b86f2c4/index.mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=5709bc59805c4f23b000306efea48438:1772cf06c2f5dd3980a3245cd31fd356
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0
-#EXTINF:-1 tvg-logo="https://warningfm.github.io/v3/img/U4aTRX9.png?v=1.0.0.1" group-title="NEWS" group-logo="https://i.imgur.com/i1s3UMq.png?v=1.0.0.1" tvg-id="407" tvg-name="BBC Earth HD", BBC Earth HD
-https://d84q7nw4qf3j3.cloudfront.net/out/v1/4e5b2a283adf462c8b6b55b2ef059fac/index.mpd
 #EXTINF:-1 tvg-chno="11" tvg-id="BBC.America.HD.us2" tvg-name="BBC America" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s64492_dark_360w_270h.png" group-title="NEWS",BBC America
 https://bcovlive-a.akamaihd.net/7f5ec16d102f4b5d92e8e27bc95ff424/us-east-1/6240731308001/playlist.m3u8
 #EXTINF:-1 tvg-id="Amazon.US.BBCAmerica" tvg-logo="https://m.media-amazon.com/images/S/pv-target-images/02fc1e9f87d890307bc233d06dca2c4c83d8741ed43d95ed1f781d10fe21b356._SL170_FMpng_.png" group-title="NEWS",BBC America
@@ -68,6 +57,12 @@ https://otte.live.fly.ww.aiv-cdn.net/PDX/clients/dash/enc/xtxdupopeb/out/v1/bdba
 #KODIPROP:inputstream.adaptive.license_key=cca73a006b4b39a595207ceb5ed9ca0a:b833d1f40c261ef78896f97e06f80cdc
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"uDPR9AwmHveIlvl+BvgM3A","kid":"zKc6AGtLOaWVIHzrXtnKCg"}],"type":"temporary"}
 https://s2129134.cdn.mytvnet.vn/pkg20/live_dzones/cbb.smil/manifest.mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=5709bc59805c4f23b000306efea48438:1772cf06c2f5dd3980a3245cd31fd356
+#EXTVLCOPT:http-referrer=https://www.visionplus.id/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+#EXTINF:-1 tvg-id="BBC.Earth.id" tvg-name="BBC Earth" tvg-logo="https://mimipipi22.github.io/logo/knowledge/bbcearth.jpg" group-title="NEWS",BBC EARTH
+https://d84q7nw4qf3j3.cloudfront.net/out/v1/4e5b2a283adf462c8b6b55b2ef059fac/index.mpd
 #EXTINF:-1 tvg-id="bbcearth" group-title="NEWS" tvg-logo="https://freem3u.xyz/static/images/global/bbc-earth.png",BBC Earth
 #EXTVLCOPT:http-user-agent=Dalvik/2.1.0
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -159,10 +154,6 @@ https://atemeshield1-voe.sysln.id/live/eds/BBCWorldNewsHD/mpd/BBCWorldNewsHD.mpd
 #KODIPROP:inputstream.adaptive.license_key=https://mrpw.ptmnc01.verspective.net/?deviceId=YzZhZjI1NjMtYzEzYy0zYjkyLTg0Y2MtNmEwOTg0NDk5MTJm
 #EXTINF:-1 tvg-name="" tvg-id="BBC World News - [Channel 332].id" tvg-url="" tvg-logo="https://www.mncvision.id/userfiles/image/channel/channel_332.jpg" group-title="NEWS",BBC World V+
 https://d2vnbkvjbims7j.cloudfront.net/containerA/LTN/playlist_4300k.m3u8
-########################################################           News           ########################################################
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0
-#EXTINF:-1 tvg-logo="https://thumbs2.imgbox.com/fa/8a/w5za9Ci0_t.png?v=1.0.0.1" group-title="NEWS" group-logo="https://iili.io/3OQDqdB.png?v=1.1.1.1" tvg-id="AlJazeeraEnglish.id" tvg-name="Al Jazeera English", Al Jazeera English
-http://cdn.nng.cloudns.us/live/m3u8/ns/f5f5c18cf037919.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/BvwE3tW.png" group-title="NEWS",Al Jazeera
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=7f3d900a04d84492b31fe9f79ac614e3:d33ff14f50beac42969385583294b8f2
@@ -195,13 +186,14 @@ https://op-group1-swiftservehd-1.dens.tv/h/h29/01.m3u8?app_type=web&userid=lite&
 #EXTINF:-1 group-title="NEWS" tvg-logo="https://i.postimg.cc/9fNnV6js/cna-sg.png",CNA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
 http://103.58.160.157:8278/720-CNA/playlist.m3u8
+#EXTINF:-1 tvg-id="CNA" group-title="NEWS" tvg-logo="https://poster.starhubgo.com/Linear_channels2/106_1920x1080_HTV.png" ch-number="515", CNA
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=https://ck-dash-mpd.astradamy.com/dash-ck/linear/605
+https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/vm9Z0uV.png" group-title="NEWS",CNA
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=b259df9987364dd3b778aa5d42cb9acd:753e3dba96ab467e468269e7e33fb813
 https://qp-pldt-live-grp-13-prod.akamaized.net/out/u/dr_channelnewsasia/default/index.mpd
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0
-#EXTINF:-1 tvg-logo="https://thumbs2.imgbox.com/9a/98/5HnKe9J4_t.png?v=1.0.0.1" group-title="NEWS" group-logo="https://iili.io/3OQDqdB.png?v=1.1.1.1" tvg-id="Bloomberg.id" tvg-name"Bloomberg", BLOOMBERG  TV HD
-https://bloomberg.com/media-manifest/streams/asia.m3u8
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=aed600d8f9c74267b03e7050bd442ffa:26065a2053d49dc3f07fd5d302eb4678
 #EXTVLCOPT:http-user-agent=ExoPlayerDemo/2.15.1 (Linux; Android 13) ExoPlayerLib/2.15.1
@@ -221,50 +213,6 @@ https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/bloomberg_sd/default/index
 https://a3569457567-s70378.cdn.ngenix.net/bloomberg/2/index.m3u8
 #EXTINF:-1 tvg-chno="15" tvg-id="Bloomberg.HD.us2" tvg-name="Bloomberg TV" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s71799_dark_360w_270h.png" group-title="NEWS",Bloomberg TV
 https://live-manifest.production-public.tubi.io/live/a5aabf5a-9615-4987-8163-18edfa1360c6/playlist.m3u8
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=3db925fa5b654910aecb196080722def:b19719a771e0f8647216f5bb94da2734
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0
-#EXTINF:-1 tvg-logo="https://thumbs2.imgbox.com/18/74/lxoUxetD_t.png?v=1.0.0.1" group-title="NEWS" group-logo="https://iili.io/3OQDqdB.png?v=1.1.1.1" tvg-id="5251" tvg-name="ABC Australia", ABC Australia
-https://d84q7nw4qf3j3.cloudfront.net/out/v1/6c075b570f99473fa6715bb399bc9571/index.mpd
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTINF:-1 tvg-logo="https://thumbs2.imgbox.com/8c/77/td4c5ak5_t.png?v=1.0.0.1" group-title="NEWS" group-logo="https://iili.io/3OQDqdB.png?v=1.1.1.1" tvg-id="Al Arabiya HD.sa" tvg-name="Al Arabiya HD.sa", Al Arabiya
-http://cdn.nng.cloudns.us/live/m3u8/ar/b8b58e25df2b3ce.m3u8
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTINF:-1 tvg-logo="https://thumbs2.imgbox.com/ff/18/YyHkaGm3_t.png?v=1.0.0.1" group-title="NEWS" group-logo="https://iili.io/3OQDqdB.png?v=1.1.1.1" tvg-id="AlManar.lb" tvg-name="Al-Manar TV", Al-Manar TV
-http://cdn.nng.cloudns.us/live/m3u8/ns/almanar.m3u8
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTINF:-1 tvg-logo="https://thumbs2.imgbox.com/4d/9d/4DNDSG7x_t.png?v=1.0.0.1" group-title="NEWS" group-logo="https://iili.io/3OQDqdB.png?v=1.1.1.1" tvg-id="AlJazeera.Arabic.net" tvg-name="Al Jazeera Arabic", AlJazeera Arabic
-http://cdn.nng.cloudns.us/live/m3u8/ar/f5f5c18cf037918b.m3u8
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0
-#EXTINF:-1 tvg-logo="https://thumbs2.imgbox.com/a7/95/YleXFiJZ_t.png?v=1.0.0.1" group-title="NEWS" group-logo="https://iili.io/3OQDqdB.png?v=1.1.1.1" tvg-id="ChannelNewsAsia.au" tvg-name"CNA HD", Channel NewsAsia
-https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index.m3u8
-#http://cdn.nng.cloudns.us/live/m3u8/ns/0c913970f4e013e.m3u8
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-#EXTINF:-1 tvg-logo="https://thumbs2.imgbox.com/15/9b/RsfN59lu_t.png?v=1.0.0.1" group-title="NEWS" group-logo="https://iili.io/3OQDqdB.png?v=1.1.1.1" tvg-id="DWEnglish.de" tvg-name="DW HD", DW (English)
-https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=941717a97fe946069fd7ebc7afb48402:305d9297ec5797e7fd8aca03142b3b7e
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-#EXTINF:-1 tvg-logo="https://thumbs2.imgbox.com/15/e9/OlWrW70Y_t.png?v=1.0.0.1" group-title="NEWS" group-logo="https://iili.io/3OQDqdB.png?v=1.1.1.1" tvg-id="IDX.id" tvg-name"IDX", IDX
-https://d2xx73ro32cip.cloudfront.net/out/v1/db34a1b61f414d2181c29f1892bc8d0b/index.mpd
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-#EXTINF:-1 tvg-logo="https://thumbs2.imgbox.com/7c/41/Vn8TdKTG_t.png?v=1.0.0.1" group-title="NEWS" group-logo="https://iili.io/3OQDqdB.png?v=1.1.1.1" tvg-id="811" tvg-name"NHK World Japan", NHK WORLD - JAPAN HD
-http://khano.nng.cloudns.us/live/m3u8/ns/29fe33a8dc20fa3.m3u8
-#https://media-tyo.hls.nhkworld.jp/hls/w/live/master.m3u8
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=2f699274d40f479d89804912c134830d:352d8c910649b4d332047cf2833bb43f
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-#EXTINF:-1 tvg-logo="https://thumbs2.imgbox.com/83/3c/sqwDCsFN_t.png?v=1.0.0.1" group-title="NEWS" group-logo="https://iili.io/3OQDqdB.png?v=1.1.1.1" tvg-ID="812" tvg-name"NHK World Premium HD", NHK World Premium HD
-https://d2xz2v5wuvgur6.cloudfront.net/out/v1/85b02e02587747058c1940af6aa3d0fa/index.mpd
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTINF:-1 tvg-logo="https://thumbs2.imgbox.com/99/b4/AEYHaDzP_t.png?v=1.0.0.1" group-title="NEWS" group-logo="https://iili.io/3OQDqdB.png?v=1.1.1.1" tvg-id="Sky News Arabia HD.ae" tvg-name="Sky News Arabia HD.ae", Skynews Arabiya
-https://stream.skynewsarabia.com/hls/sna.m3u8
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-#EXTINF:-1 tvg-logo="https://thumbs2.imgbox.com/50/df/ZnZnRrHO_t.png?v=1.0.0.1" group-title="NEWS" group-logo="https://iili.io/3OQDqdB.png?v=1.1.1.1" tvg-id="TRTWorld.tr.id" tvg-name"TRT World", TRT World
-http://khano.nng.cloudns.us/live/m3u8/ns/27491db6bea155a.m3u8
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTINF:-1 tvg-logo="https://warningfm.github.io/v3/img/Fq7axtv.png?v=1.0.0.1" group-title="NEWS" group-logo="https://iili.io/3OQDqdB.png?v=1.1.1.1" tvg-id="WION.World.is.One.News.distro" tvg-name="WION World is One News", WION
-http://khano.nng.cloudns.us/live/m3u8/ns/0a8c23a12b66e1b.m3u8
 #EXTINF:-1#EXTINF:-1 group-title="NEWS",ABC News
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=clearkey
