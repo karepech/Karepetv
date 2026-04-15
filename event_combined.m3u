@@ -1,6 +1,137 @@
 #EXTM3U
-##EXTINF:-1 group-title="EVENT" tvg-logo="https://iili.io/30Jk8Al.md.png",002 Cara Menonton
-#https://shorter.me/aJXUE
+#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://shorter.me/3gy7g", 01:00 WIB Al Quadisiya vs Al Shabab
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=ec7ee27d83764e4b845c48cca31c8eef:9c0e4191203fccb0fde34ee29999129e
+https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_spotvhd/default/index.mpd
+#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://shorter.me/ii84S", 02:00 WIB Atlético Madrid vs Barcelona
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=294b5761cefc22d0c6312939e13d8278:52148f1042d238849f0a7813f1da8a7b
+http://live-pv-ta.amazon.fastly-edge.com/sin-nitro/live/clients/dash/enc/cllekigzzn/out/v1/bd3b0c314fff4bb1ab4693358f3cd2d3/cenc.mpd
+#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://upload.wikimedia.org/wikipedia/id/b/be/EFL_Championship_Logo.svg.png", 02:00 WIB Portsmouth vs Ipswich Town
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=7995c724a13748ed970840a8ab5bb9b3:67bdaf1e2175b9ff682fcdf0e2354b1e
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://a83aivottlinear-a.akamaihd.net/OTTB/syd-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd
+### 🥇 PRIORITY SOURCE
+### 🆕 BADMINTON SOURCE
+### 🥈 SECOND SOURCE
 #EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJL1Rj_kafMhF-_yRQNAyBC1QxNjT7ZPjBEA&s", 15:30 WIB Brunei Darussalam vs Kamboja
 #EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJL1Rj_kafMhF-_yRQNAyBC1QxNjT7ZPjBEA&s", 19:30 WIB Singapura vs Australia
 https://live5.msrktz.app/live/08552895.m3u8
+### 🟣 RAKHOI SOURCE
+#EXTINF:-1 tvg-logo="https://img.colatv88xd.cc/basketball/team/e52f6ac53681289c91703501a960cb3c.png!w80" group-title="BACKUP EVENT SPORTS",[LIVE] (06:30 WIB) Charlotte Hornets vs Miami Heat [BLV Cozy]
+#EXTVLCOPT:http-referrer=https://www.spindlersptown.com/
+#EXTVLCOPT:http-origin=https://www.spindlersptown.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+https://live5.msrktz.app/live/87379114.m3u8
+#EXTINF:-1 tvg-logo="https://img.colatv88xd.cc/football/team/9ed2c4f6adc51975cdbd2a93093e6a43.png!w80" group-title="BACKUP EVENT SPORTS",[LIVE] (07:00 WIB) Boca Juniors vs Barcelona SC [BLV BÍ ĐAO]
+#EXTVLCOPT:http-referrer=https://www.spindlersptown.com/
+#EXTVLCOPT:http-origin=https://www.spindlersptown.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+https://live5.msrktz.app/live/99121525.m3u8
+#EXTINF:-1 tvg-logo="https://img.colatv88xd.cc/football/team/f110dc3a4406e67ecbc46511a7ea83f7.png!w80" group-title="BACKUP EVENT SPORTS",[LIVE] (07:00 WIB) Vasco vs A. Italiano [BLV REDBULL]
+#EXTVLCOPT:http-referrer=https://www.spindlersptown.com/
+#EXTVLCOPT:http-origin=https://www.spindlersptown.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+https://live5.msrktz.app/live/68848594.m3u8
+#EXTINF:-1 tvg-logo="https://img.colatv88xd.cc/football/team/0840bace9b911b3f0dbadb710ea20316.png!w80" group-title="BACKUP EVENT SPORTS",[LIVE] (07:30 WIB) Santos vs Deportivo Recoleta [BLV STING]
+#EXTVLCOPT:http-referrer=https://www.spindlersptown.com/
+#EXTVLCOPT:http-origin=https://www.spindlersptown.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+https://live5.msrktz.app/live/14707124.m3u8
+#EXTINF:-1 tvg-logo="https://img.colatv88xd.cc/football/team/2addd50487c8f61276d5fff8714f6a5c.png!w80" group-title="BACKUP EVENT SPORTS",[LIVE] (08:00 WIB) Cruz Azul vs Los Angeles FC [BLV SPRITE]
+#EXTVLCOPT:http-referrer=https://www.spindlersptown.com/
+#EXTVLCOPT:http-origin=https://www.spindlersptown.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+https://live5.msrktz.app/live/90725470.m3u8
+#EXTINF:-1 tvg-logo="https://img.colatv88xd.cc/football/team/97b182dc35a57e1fbfce5ab2382fe317.png!w80" group-title="BACKUP EVENT SPORTS",[UPCOMING] (00:00 WIB) Sarpsborg vs Bodo Glimt [BLV MOUNTAIN DEW]
+#EXTVLCOPT:http-referrer=https://www.spindlersptown.com/
+#EXTVLCOPT:http-origin=https://www.spindlersptown.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+https://live5.msrktz.app/live/87547578.m3u8
+#EXTINF:-1 tvg-logo="https://img.colatv88xd.cc/football/team/0d9975f7e846a1ecb099f4cd62d1b8f7.png!w80" group-title="BACKUP EVENT SPORTS",[UPCOMING] (01:00 WIB) Al-Nassr vs Al Ettifaq [BLV HỔ VẰN]
+#EXTVLCOPT:http-referrer=https://www.spindlersptown.com/
+#EXTVLCOPT:http-origin=https://www.spindlersptown.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+https://live5.msrktz.app/live/07428422.m3u8
+#EXTINF:-1 tvg-logo="https://img.colatv88xd.cc/football/team/d6f5debc456da1119256ab66462ab510.png!w80" group-title="BACKUP EVENT SPORTS",[UPCOMING] (02:00 WIB) Arsenal vs Sporting [BLV  KHÔNG ĐỘ]
+#EXTVLCOPT:http-referrer=https://www.spindlersptown.com/
+#EXTVLCOPT:http-origin=https://www.spindlersptown.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+https://live5.msrktz.app/live/41943555.m3u8
+#EXTINF:-1 tvg-logo="https://img.colatv88xd.cc/basketball/team/da3c882a7e0bc592b4c1ba9d8c5fb68d.png!w80" group-title="BACKUP EVENT SPORTS",[UPCOMING] (09:00 WIB) Phoenix suns vs Portland Trail Blazers [BLV ROCKSTAR]
+#EXTVLCOPT:http-referrer=https://www.spindlersptown.com/
+#EXTVLCOPT:http-origin=https://www.spindlersptown.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+https://live5.msrktz.app/live/82054853.m3u8
+#EXTINF:-1 tvg-logo="https://img.colatv88xd.cc/football/team/0011800200177bdd6d5197b2bd13e8d9.png!w80" group-title="BACKUP EVENT SPORTS",[UPCOMING] (14:00 WIB) Changchun Xidu vs Taian Tiankuang [BLV RỒNG ĐỎ]
+#EXTVLCOPT:http-referrer=https://www.spindlersptown.com/
+#EXTVLCOPT:http-origin=https://www.spindlersptown.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+https://live5.msrktz.app/live/88508431.m3u8
+#EXTINF:-1 tvg-logo="https://img.colatv88xd.cc/football/team/f4f29caf210db9a418ece37a7025eb5f.png!w80" group-title="BACKUP EVENT SPORTS",[UPCOMING] (15:00 WIB) Shenzhen 2028 vs Xiamen Feilu [BLV SODA]
+#EXTVLCOPT:http-referrer=https://www.spindlersptown.com/
+#EXTVLCOPT:http-origin=https://www.spindlersptown.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+https://live5.msrktz.app/live/02456966.m3u8
+#EXTINF:-1 tvg-logo="https://img.colatv88xd.cc/football/team/81bef8ac44ea05ab6bec8a2249381ff1.png!w80" group-title="BACKUP EVENT SPORTS",[UPCOMING] (16:00 WIB) Triều Tiên U20 Nữ vs Hàn Quốc U20 nữ [BLV 7UP]
+#EXTVLCOPT:http-referrer=https://www.spindlersptown.com/
+#EXTVLCOPT:http-origin=https://www.spindlersptown.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+https://live5.msrktz.app/live/78905744.m3u8
+#EXTINF:-1 tvg-logo="https://img.colatv88xd.cc/football/team/0e8a5b04bcb76a376d0f0ddf9f54fbaa.png!w80" group-title="BACKUP EVENT SPORTS",[UPCOMING] (16:30 WIB) Canberra Croatia vs Canberra White Eagles [BLV SAMURAI]
+#EXTVLCOPT:http-referrer=https://www.spindlersptown.com/
+#EXTVLCOPT:http-origin=https://www.spindlersptown.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+https://live5.msrktz.app/live/07808742.m3u8
+#EXTINF:-1 tvg-logo="https://img.colatv88xd.cc/football/team/fe07fb888ebcb282192332cb8aed21b1.png!w80" group-title="BACKUP EVENT SPORTS",[UPCOMING] (17:30 WIB) Ulsan Hyundai vs Seoul [BLV COCA]
+#EXTVLCOPT:http-referrer=https://www.spindlersptown.com/
+#EXTVLCOPT:http-origin=https://www.spindlersptown.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+https://live5.msrktz.app/live/24561735.m3u8
+#EXTINF:-1 tvg-logo="https://img.colatv88xd.cc/football/team/2fa59a9c9801ee88b9049fa051fce162.png!w80" group-title="BACKUP EVENT SPORTS",[UPCOMING] (18:30 WIB) Lanzhou Longyuan vs Shandong Taishan B [BLV PEPSI]
+#EXTVLCOPT:http-referrer=https://www.spindlersptown.com/
+#EXTVLCOPT:http-origin=https://www.spindlersptown.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+https://live5.msrktz.app/live/43612277.m3u8
+#EXTINF:-1 tvg-logo="https://img.colatv88xd.cc/basketball/team/858cde8d2c075296f24e7ee61929fbeb.png!w80" group-title="BACKUP EVENT SPORTS",[UPCOMING] (18:35 WIB) Guangzhou Loong Lions vs Shanghai [BLV 247]
+#EXTVLCOPT:http-referrer=https://www.spindlersptown.com/
+#EXTVLCOPT:http-origin=https://www.spindlersptown.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+https://live5.msrktz.app/live/90865415.m3u8
+#EXTINF:-1 tvg-logo="https://img.colatv88xd.cc/football/team/5cd8cd571685287d0cb678034d78b9bd.png!w80" group-title="BACKUP EVENT SPORTS",[UPCOMING] (19:15 WIB) Bangkok Utd vs Gamba Osaka [BLV GIÀ LÀNG]
+#EXTVLCOPT:http-referrer=https://www.spindlersptown.com/
+#EXTVLCOPT:http-origin=https://www.spindlersptown.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+https://live5.msrktz.app/live/14830711.m3u8
+#EXTINF:-1 tvg-logo="https://img.colatv88xd.cc/football/team/5cd8cd571685287d0cb678034d78b9bd.png!w80" group-title="BACKUP EVENT SPORTS",[UPCOMING] (19:15 WIB) Bangkok Utd vs Gamba Osaka [BLV ÔLONG]
+#EXTVLCOPT:http-referrer=https://www.spindlersptown.com/
+#EXTVLCOPT:http-origin=https://www.spindlersptown.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+https://live5.msrktz.app/live/97312754.m3u8
+#EXTINF:-1 tvg-logo="https://img.colatv88xd.cc/football/team/c3b8d20e9dfa2c4e81773a78b673413d.png!w80" group-title="BACKUP EVENT SPORTS",[UPCOMING] (19:50 WIB) Abha vs AL Rabeea Jeddah [BLV MONSTER]
+#EXTVLCOPT:http-referrer=https://www.spindlersptown.com/
+#EXTVLCOPT:http-origin=https://www.spindlersptown.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+https://live5.msrktz.app/live/75915087.m3u8
+#EXTINF:-1 tvg-logo="https://img.colatv88xd.cc/football/team/7dc5332e791f718f0c0e38430853d6bc.png!w80" group-title="BACKUP EVENT SPORTS",[UPCOMING] (20:00 WIB) Trung Quốc U20 Nữ vs Nhật Bản U20 Nữ [BLV REVIVE]
+#EXTVLCOPT:http-referrer=https://www.spindlersptown.com/
+#EXTVLCOPT:http-origin=https://www.spindlersptown.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+https://live5.msrktz.app/live/33982309.m3u8
+#EXTINF:-1 tvg-logo="https://img.colatv88xd.cc/football/team/348fa7d49029584354427690fe88f874.png!w80" group-title="BACKUP EVENT SPORTS",[UPCOMING] (22:00 WIB) AC Oulu vs Jaro [BLV DR THANH]
+#EXTVLCOPT:http-referrer=https://www.spindlersptown.com/
+#EXTVLCOPT:http-origin=https://www.spindlersptown.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+https://live5.msrktz.app/live/79665343.m3u8
+#EXTINF:-1 tvg-logo="https://img.colatv88xd.cc/football/team/809acdd49b4b1e55e7393c7575189e81.png!w80" group-title="BACKUP EVENT SPORTS",[UPCOMING] (22:30 WIB) Ekenas vs TPS [BLV AQUA]
+#EXTVLCOPT:http-referrer=https://www.spindlersptown.com/
+#EXTVLCOPT:http-origin=https://www.spindlersptown.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+https://live5.msrktz.app/live/18812304.m3u8
