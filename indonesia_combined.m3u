@@ -521,8 +521,23 @@ https://op-group1-swiftservesd-1.dens.tv/s/s182/index2.m3u8?app_type=web&userid=
 #EXTINF:-1 group-title="INDONESIA" tvg-logo="https://www.lyngsat-logo.com/logo/tv/dd/da-ai-tv-indonesia-tw-in.png",DAAI TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
 http://103.58.160.157:8278/720-DAAITV/playlist.m3u8
+#EXT-X-VERSION:3
 #EXTINF:-1 tvg-logo="https://cdn.jwplayer.com/v2/media/5ytDXh1w/poster.jpg?width=720" group-title="INDONESIA",PGE GiEK SKRA Belchatow - Indykpol AZS Olsztyn | Play Off - 5th place Round 2
 https://aspaltvpasti.top/Bosmp4.mp4
+#EXTINF:-1 tvg-id="112" group-title="INDONESIA" tvg-logo="https://www.visionplus.id/images/repository/176/723176-SNAPSHOT-m.jpg",⏳ [Upcoming] Sirkuit Nasional A •  U-17, U-19, Dewasa - Final (10:00 WIB • 18/04)
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://visionplus.id/
+#KODIPROP:inputstream.adaptive.license_key=https://vision.xxx3x.workers.dev/112.mancok?exp=1776441304&sign=767cc5c48ce6d1a51db28b4802a3f5015048be210604ff3eb5fbb211849c0745
+https://vision.xxx3x.workers.dev/112.mpd?exp=1776441304&sign=b59dd0152967acc31290b429fea20ccc8ece8db7dcfbf7c5935b2670ee1bbc96
+#EXTINF:-1 tvg-id="112" tvg-logo="https://www.visionplus.id/images/repository/176/723176-SNAPSHOT-m.jpg" group-title="INDONESIA",⏳ [Upcoming] Sirkuit Nasional A • U-17, U-19, Dewasa - Final (10:00 WIB • 18/04/2026)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=39c4dc6704cf4ceea2fd4863b88d8a7d:4e9d7954c2ff46759289da4fc9f018ea
+#EXTVLCOPT:Referer=https://www.visionplus.id/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13; SM-G9980) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36
+https://d2tjypxxy769fn.cloudfront.net/out/v1/89a6e4261cd7470f83e5869e90440cff/index.mpd
 #EXTINF:-1 group-title="INDONESIA" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgS3TwbzcmFu7WonOAz8-abjxplh3PKlHVn_skjOFWcI3lPYCR3o7DDMk4tE1GzIwWVZs6vidYf6aLsATjPK48eVEZwuhqhH2lJlFawnSq5XtgGr-qSuHV3tWzNOzNMvHFzLyNZitZ0nRjqMmPnejzPu-q80jpOH3tJDO1IpuIalwxO70zWIEFsWMe5WDU/s720/teveMobile.png",AllPlay Ent
 https://cdn10jtedge.indihometv.com/atm/DASH/useeprime/manifest.mpd
 #EXTINF:-1 group-title="INDONESIA"" tvg-logo="https://1.bp.blogspot.com/-nAJwwj4oRdw/YJVWtPSvpmI/AAAAAAAAEZ8/HHJlyX9LW_Ybsq-yL48U4twTqfH_sar1ACLcBGAsYHQ/s720/antara-p.png",Antara
