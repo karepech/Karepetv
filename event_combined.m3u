@@ -1,8 +1,8 @@
 #EXTM3U
-#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://iili.io/FtSMHX9.jpg", 00:00 WIB Mallorca vs Valencia
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=7995c724a13748ed970840a8ab5bb9b3:67bdaf1e2175b9ff682fcdf0e2354b1e
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-https://a83aivottlinear-a.akamaihd.net/OTTB/syd-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd
+##EXTINF:-1 group-title="EVENT" tvg-logo="https://iili.io/30Jk8Al.md.png",002 Cara Menonton
+#https://shorter.me/aJXUE
+#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://iili.io/fe5XHVn.md.png", 16:00 WIB Bronze Final - Game 1: Surabaya Samator vs Jakarta Garuda Jaya
+#EXTVLCOPT:http-origin=https://jlbfpc.jlbfyh.com/
+#EXTVLCOPT:http-referrer=https://jlbfpc.jlbfyh.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+https://bf.jabflive.com/live/322647_hd01.m3u8?txSecret=50b98425adb8c563764c64265b2bef51&txTime=69e73c02
