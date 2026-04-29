@@ -9,8 +9,6 @@ https://s7771.cdn.mytvnet.vn/pkg20/live_dzones/cnn.smil/manifest.mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=0c39778fe8fb4f9f8574016b3d4ae2ed:232b1f450f2e37f47fdd5b678a8a546d
 https://mega.z5cable.com/bpk-tv/cnn_hd/default/index.mpd
-#EXTINF:-1 group-title="NEWS",CNN
-http://89.105.221.127/CNN/index.m3u8?token=test
 #EXTINF:-1 group-title="NEWS",cnn
 http://84.17.50.102/cnn/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="NEWS",CNN Brasil
@@ -52,8 +50,6 @@ https://n18syndication.akamaized.net/bpk-tv/CNBC_Tv18_Prime_HD_NW18_MOB/output01
 https://hnpsechtsc.turknet.ercdn.net/xpnvudnlsv/cnbc-e/cnbc-e.m3u8
 #EXTINF:-1 tvg-chno="29" tvg-id="CNBC.HD.us2" tvg-name="CNBC" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s10139_dark_360w_270h.png" group-title="NEWS",CNBC
 http://41.205.93.154/CNBC/index.m3u8
-#EXTINF:-1 group-title="NEWS",CNBC
-http://89.105.221.127/CNBC/index.m3u8?token=test
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=f2ecb7420c48463c9c1eeb9a908825ed:2ddaa7bc8fcff832464ad874ab468c3f
 #EXTVLCOPT:http-referrer=https://www.visionplus.id/

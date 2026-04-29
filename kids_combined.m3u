@@ -92,8 +92,6 @@ http://23.237.104.106:8080/USA_NICKELODEON/index.m3u8
 https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_nickelodeon/default/index.mpd
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="KIDS",Nickelodeon
 https://canaiss.fazoeli.co.za/fontes/smart/nickelodeon.m3u8
-#EXTINF:-1 group-title="KIDS",Nickelodeon
-http://89.105.221.127/Nickelodeon/index.m3u8?token=test
 #EXTINF:-1 group-title="KIDS",nickelodeon
 http://84.17.50.102/nickelodeon/index.m3u8
 #EXTINF:-1 group-title="KIDS",Nickelodeon
@@ -134,6 +132,10 @@ http://103.58.160.157:8278/720-CARTOONNETWORK/playlist.m3u8
 #KODIPROP:inputstream.adaptive.license_key=3c20166660a93a75ac77db81567389f7:3cc1add43aecce3fe31c9c6a2a5b8c21
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","k":"PMGt1Drszj/jHJxqKluMIQ","kid":"PCAWZmCpOnWsd9uBVnOJ9w"}],"type":"temporary"}
 https://s2129134.cdn.mytvnet.vn/pkg20/live_dzones/cn.smil/manifest.mpd
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/SRmrCKp0/CN.jpg" group-title="KIDS",CARTOON NETWORK
+#EXTVLCOPT:http-referrer="https://mini.allinonereborn.fun"
+#KODIPROP:inputstream.adaptive.http-referrer="https://mini.allinonereborn.fun"
+https://mini.allinonereborn.fun/jiotv-www/app/ts_live_816.m3u8
 #EXTINF:-1 tvg-id="cartoon_network_sd" tvg-name="Cartoon Network" tvg-logo="https://images.toffeelive.com/images/program/27232/logo/240x240/mobile_logo_320294001679201065.png" group-title="KIDS",Cartoon Network
 https://sm-monirul.top/Toffee/live.php?id=cartoon_network_sd&e=.m3u8
 #EXTINF:-1 group-title="KIDS" tvg-logo="",Cartoon Network
@@ -202,8 +204,6 @@ https://canaiss.fazoeli.co.za/fontes/smart/cartoonito.m3u8
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=ad2371259d34404cb89d54a4dc88dcd3:1ba155e345c4456ba891cbee9b3e1c4c
 https://udn-streamer1.cdn.3bbtv.com:8443/3bb/live/302/302.mpd
-#EXTINF:-1 group-title="KIDS",CartoonNetwork
-http://89.105.221.127/CartoonNetwork/index.m3u8?token=test
 #EXTINF:-1 group-title="KIDS",cartoonnetwork
 http://84.17.50.102/cartoonnetwork/index.m3u8
 #EXTINF:-1 tvg-id="pop" tvg-name="POP" tvg-logo="https://images.pluto.tv/channels/664c94e80120f40008b860f0/colorLogoPNG.png" group-title="KIDS",POP
@@ -359,6 +359,10 @@ https://d3b0v7fggu5zwm.cloudfront.net/out/v1/8554b3cb938e44038093df2d65080932/in
 https://sirius.greenhosting.ru/MultimaniaRu/tracks-v1a1/mono.m3u8
 #EXTINF:-1 group-title="KIDS" tvg-logo="https://i.imgur.com/HCefxaK.png",Ð¡Ð¾Ð»Ð½ÑÐµ
 http://tv.mediacdn.ru/live/solntse/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/QdKpB7W9/Discovery-Kids.jpg" group-title="KIDS",118.DISCOVERY KIDS
+#EXTVLCOPT:http-referrer="https://mini.allinonereborn.fun"
+#KODIPROP:inputstream.adaptive.http-referrer="https://mini.allinonereborn.fun"
+https://mini.allinonereborn.fun/jiotv-www/app/ts_live_554.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #EXTINF:-1#EXTINF:-1 group-title="KIDS",ABC Big Kids
 #KODIPROP:inputstream.adaptive.license_type=clearkey

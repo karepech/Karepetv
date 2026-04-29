@@ -27,8 +27,6 @@ https://otte.live.fly.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/c9sshqw4lf/
 #KODIPROP:inputstream.adaptive.license_key=ffa7c3ca6020428c919e13b817b7e31b:adf163c6c1729e6f77668d4e49f32352
 #EXTINF:-1 tvg-id="NationalGeographicWest.us" tvg-logo="https://mimipipi22.github.io/logo/png/natgeowild.png" group-title="KNOWLEDGE", NATGEO WILD 🇺🇸
 https://at-live-3.tentcdn.eu/bpk-tv/Nat_Geo_People_HD/default/index.mpd
-#EXTINF:-1 group-title="KNOWLEDGE",NatGeoWild
-http://89.105.221.127/NatGeoWild/index.m3u8?token=test
 #EXTINF:-1 group-title="KNOWLEDGE",natgeowild HD
 http://84.17.50.102/natgeowild/index.m3u8
 #EXTINF:-1 tvg-chno="100" tvg-id="National.Geographic.HD.us2" tvg-name="National Geographic" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s49438_dark_360w_270h.png" group-title="KNOWLEDGE",National Geographic
@@ -67,8 +65,6 @@ https://sm-monirul.top/Toffee/live.php?id=discovery_sd&e=.m3u8
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=d9ac48f5131641a789328257e778ad3a:b6e67c37239901980c6e37e0607ceee6
 https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/discovery/default/index.mpd
-#EXTINF:-1 group-title="KNOWLEDGE",Discovery
-http://89.105.221.127/Discovery/index.m3u8?token=test
 #EXTINF:-1 group-title="KNOWLEDGE",discovery
 http://84.17.50.102/discovery/index.m3u8
 #EXTVLCOPT:http-user-agent=ExoPlayerDemo/2.15.1 (Linux; Android 13) ExoPlayerLib/2.15.1
@@ -102,6 +98,10 @@ https://sm-monirul.top/Toffee/live.php?id=discovery_hd&e=.m3u8
 https://mega.z5cable.com/bpk-tv/discovery_channel_hd/default/index.mpd
 #EXTINF:-1 group-title="KNOWLEDGE",Discovery HD
 http://151.80.18.177:86/Discovery_HD/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://live.dinesh29.com.np/logos/tataplay/discoveryhdworld.png" group-title="KNOWLEDGE",Discovery HD World
+#EXTVLCOPT:http-referrer="https://mini.allinonereborn.fun"
+#KODIPROP:inputstream.adaptive.http-referrer="https://mini.allinonereborn.fun"
+https://mini.allinonereborn.fun/jiotv-www/app/ts_live_463.m3u8
 #EXTINF:-1 tvg-id="id" tvg-logo="" group-title="KNOWLEDGE",Discovery ID
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=0c39778fe8fb4f9f8574016b3d4ae2ed:232b1f450f2e37f47fdd5b678a8a546d
@@ -110,6 +110,10 @@ https://mega.z5cable.com/bpk-tv/id_hd/default/index.mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=2828ea6f6a984505b0454da0c03f68b9:5d3b7195086544c2807aa8c1544e7379
 https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Investigationdiscovery2/default/manifest.mpd
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/Y0dk6jZT/Invest-Discovery.jpg" group-title="KNOWLEDGE",DISCOVERY INVESTIGATION
+#EXTVLCOPT:http-referrer="https://mini.allinonereborn.fun"
+#KODIPROP:inputstream.adaptive.http-referrer="https://mini.allinonereborn.fun"
+https://mini.allinonereborn.fun/jiotv-www/app/ts_live_527.m3u8
 #EXTINF:-1 tvg-name="Discovery Life Channel HD" tvg-id="discovery-life-channel" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/discovery-life-us.png?raw=true" group-title="KNOWLEDGE",DISCOVERY LIFE
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:90.0) Gecko/20100101 Firefox/140.0
 http://supersonictv.live:8080/864072/196529/22075
@@ -119,6 +123,10 @@ http://supersonictv.live:8080/864072/196529/22075
 #KODIPROP:inputstream.adaptive.license_key=5458f45efedb4d6f8aa6ac76c85b621b:dbf8a0a306a64525ba3012fd225370c0
 #EXTINF:-1  tvg-name="Science HD" tvg-id="science" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/discovery-science-us.png?raw=true" group-title="KNOWLEDGE",DISCOVERY SCIENCE
 https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Discoveryscience2/default/manifest.mpd
+#EXTINF:-1 tvg-id="" tvg-logo="https://i.postimg.cc/cHMdJFmx/Discovery-Science.jpg" group-title="KNOWLEDGE",Discovery Science
+#EXTVLCOPT:http-referrer="https://mini.allinonereborn.fun"
+#KODIPROP:inputstream.adaptive.http-referrer="https://mini.allinonereborn.fun"
+https://mini.allinonereborn.fun/jiotv-www/app/ts_live_568.m3u8
 #EXTINF:-1 tvg-id="discovery_science" tvg-name="Discovery Science" tvg-logo="https://images.toffeelive.com/images/program/378/logo/240x240/mobile_logo_604754001673177502.png" group-title="KNOWLEDGE",Discovery Science
 https://sm-monirul.top/Toffee/live.php?id=discovery_science&e=.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="KNOWLEDGE",Discovery Science
@@ -153,6 +161,10 @@ https://sm-monirul.top/Toffee/live.php?id=animal_planet_sd&e=.m3u8
 https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_animal_planet_sd/default/index.mpd
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="KNOWLEDGE",Animal Planet
 https://canaiss.fazoeli.co.za/fontes/smart/animalplanet.m3u8
+#EXTINF:-1 tvg-logo="https://i.postimg.cc/4xdySR1z/Animal-Planet.jpg" group-title="KNOWLEDGE",ANIMAL PLANET HD
+#EXTVLCOPT:http-referrer="https://mini.allinonereborn.fun"
+#KODIPROP:inputstream.adaptive.http-referrer="https://mini.allinonereborn.fun"
+https://mini.allinonereborn.fun/jiotv-www/app/ts_live_566.m3u8
 #EXTINF:-1 tvg-id="animal_planet_hd" tvg-name="Animal Planet HD" tvg-logo="https://images.toffeelive.com/images/program/18096/logo/240x240/mobile_logo_032001001673194753.png" group-title="KNOWLEDGE",Animal Planet HD
 https://sm-monirul.top/Toffee/live.php?id=animal_planet_hd&e=.m3u8
 #EXTINF:-1 tvg-id="animal planet" tvg-logo="" group-title="KNOWLEDGE",Animal Planet HD
@@ -216,6 +228,10 @@ https://qp-pldt-live-grp-11-prod.akamaized.net/out/u/dr_historyhd.mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=bbfd8a5d79b8b84e5b65be1a0ee17dba:99e5e91fc3f9c297abed36000fb1fe88
 https://otte.live.fly.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/w91wojgmz7/out/v1/e105d6321667470d872c9bb3d519e6d5/cenc.mpd?encoding=segmentBase
+#EXTINF:-1 tvg-id="" tvg-logo="https://i.postimg.cc/zGb5hzjP/History.jpg" group-title="KNOWLEDGE",History TV
+#EXTVLCOPT:http-referrer="https://mini.allinonereborn.fun"
+#KODIPROP:inputstream.adaptive.http-referrer="https://mini.allinonereborn.fun"
+https://mini.allinonereborn.fun/jiotv-www/app/ts_live_578.m3u8
 #EXTINF:-1 tvg-name="HISTORY" tvg-logo="https://mimipipi22.github.io/logo/knowledge/history.jpg" group-title="KNOWLEDGE",HISTORY 🇺🇸
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=a598d133e3ea508a29255f58e09758bf:ad64ce2c7864315dfd293f454f54bea0
