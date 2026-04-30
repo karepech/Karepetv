@@ -299,6 +299,8 @@ def get_channel_priority(channel_name, category):
 
 def download_playlist(args):
     idx, url = args
+    if not url: return idx, url, []
+    
     print(f"  > Sedang menyedot dari: {url}")
     channels = []
     try:
@@ -454,9 +456,7 @@ def filter_m3u_by_config(config, super_clean_channels):
                 if not any(s in clean_channel_name for s in ["SPORT", "LIGA"]):
                     match_found = False
             
-            # ====================================================================
-            # PERBAIKAN SATPAM CTV: Cek ke Provider URL, bukan ke Stream URL
-            # ====================================================================
+            # SATPAM CTV: Cek ke Provider URL
             if "CHAMPIONS" in clean_channel_name or re.search(r'\bCTV\b', clean_channel_name):
                 if "deccotech" not in MASTER_URLS[provider_idx].lower():
                     match_found = False
@@ -507,17 +507,24 @@ def filter_m3u_by_config(config, super_clean_channels):
                 
             log_entry = f"{clean_name_for_log}  [EPG: {epg_name}]"
             
-            if priority_score not in CATEGORY_LOGS[target_category]:
-                CATEGORY_LOGS[target_category][priority_score] = set()
-            CATEGORY_LOGS[target_category][priority_score].add(log_entry)
+            # STRUKTUR LOG BARU: Berdasarkan Provider Index (p_idx) -> Kasta
+            if provider_idx not in CATEGORY_LOGS[target_category]:
+                CATEGORY_LOGS[target_category][provider_idx] = {}
+            if priority_score not in CATEGORY_LOGS[target_category][provider_idx]:
+                CATEGORY_LOGS[target_category][provider_idx][priority_score] = set()
+                
+            CATEGORY_LOGS[target_category][provider_idx][priority_score].add(log_entry)
             
             channels_data.append((priority_score, provider_idx, sort_key, current_buffer, stream_url))
             CATEGORIZED_URLS.add(stream_url)
                     
+    # ==============================================================================
+    # PERUBAHAN PENGURUTAN: Urutkan berdasarkan Provider Index dulu (x[1])
+    # ==============================================================================
     if target_category == "LIVE EVENT SPORTS":
-        channels_data.sort(key=lambda x: (x[2], x[1])) 
+        channels_data.sort(key=lambda x: (x[1], x[2])) # Provider -> Nama
     else:
-        channels_data.sort(key=lambda x: (x[0], x[1], x[2])) 
+        channels_data.sort(key=lambda x: (x[1], x[0], x[2])) # Provider -> Kasta -> Nama
     
     filtered_lines = ["#EXTM3U"]
     for _, _, _, block_data, s_url in channels_data:
@@ -600,29 +607,37 @@ if __name__ == "__main__":
         30: "[KASTA 30 - FEEDS & LIVE EVENTS]", 31: "[KASTA 31 - PHILIPPINES & EAST ASIA]"
     }
 
+    # ==============================================================================
+    # PERUBAHAN CETAK TXT: Urut berdasarkan Penyedia -> Kasta
+    # ==============================================================================
     with open("daftar_epg_lengkap.txt", "w", encoding="utf-8") as f:
-        f.write("DAFTAR LENGKAP CHANNEL SEMUA KATEGORI BESERTA ID EPG\n")
-        f.write("=========================================================\n\n")
+        f.write("DAFTAR LENGKAP CHANNEL SEMUA KATEGORI BESERTA ID EPG (DIURUTKAN PER PENYEDIA)\n")
+        f.write("================================================================================\n\n")
         
         for category in sorted(CATEGORY_LOGS.keys()):
             f.write(f"=== KATEGORI: {category} ===\n")
-            kasta_dict = CATEGORY_LOGS[category]
+            provider_dict = CATEGORY_LOGS[category]
             
-            for kasta in sorted(kasta_dict.keys()):
-                if kasta == 0:
-                    kasta_name = "[JADWAL EVENT]"
-                elif category == "SPORTS" and kasta <= 31:
-                    kasta_name = kasta_names_sports.get(kasta, f"[KASTA {kasta} - SPORTS]")
-                elif kasta == 99:
-                    kasta_name = "[KASTA 99 - UMUM / LAIN-LAIN]"
-                elif kasta == 999:
-                    kasta_name = "[KASTA 999 - BAWAH / JURU KUNCI]" 
-                else:
-                    kasta_name = f"[KASTA {kasta} - PRIORITAS UTAMA]"
-                    
-                f.write(f"  {kasta_name}\n")
-                for name_with_epg in sorted(kasta_dict[kasta]):
-                    f.write(f"    - {name_with_epg}\n")
-            f.write("\n")
+            for p_idx in sorted(provider_dict.keys()):
+                provider_url = MASTER_URLS[p_idx] if p_idx < len(MASTER_URLS) and MASTER_URLS[p_idx] else "URL KOSONG / LOKAL"
+                f.write(f"\n  [SUMBER PENYEDIA: {provider_url}]\n")
+                kasta_dict = provider_dict[p_idx]
                 
-    print("\n✅ PROSES SELESAI! Daftar Channel dan EPG sukses dicetak ke TXT!")
+                for kasta in sorted(kasta_dict.keys()):
+                    if kasta == 0:
+                        kasta_name = "[JADWAL EVENT]"
+                    elif category == "SPORTS" and kasta <= 31:
+                        kasta_name = kasta_names_sports.get(kasta, f"[KASTA {kasta} - SPORTS]")
+                    elif kasta == 99:
+                        kasta_name = "[KASTA 99 - UMUM / LAIN-LAIN]"
+                    elif kasta == 999:
+                        kasta_name = "[KASTA 999 - BAWAH / JURU KUNCI]" 
+                    else:
+                        kasta_name = f"[KASTA {kasta} - PRIORITAS UTAMA]"
+                        
+                    f.write(f"    {kasta_name}\n")
+                    for name_with_epg in sorted(kasta_dict[kasta]):
+                        f.write(f"      - {name_with_epg}\n")
+            f.write("\n================================================================================\n\n")
+                
+    print("\n✅ PROSES SELESAI! Daftar Channel dan EPG sukses dicetak ke TXT (Terurut Per Penyedia)!")
