@@ -18,13 +18,13 @@ MASTER_URLS = [
     "",
     "https://deccotech.online/tv/tvstream.html", 
     "https://freeiptv2026.tsender57.workers.dev", 
-    "https://raw.githubusercontent.com/tvplaylist/T2/refs/heads/main/tv1",
-    "", 
+    "https://raw.githubusercontent.com/jrpahe-del/IPTV/refs/heads/main/RafaDervian.m3u",
+    "http://sauridigital.my.id/kerbaunakal/2026TVGNS.html", 
     "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25",
     "https://semar25.short.gy",
     "https://bit.ly/TVKITKAT",
     "https://liveevent.iptvbonekoe.workers.dev",
-    "",
+    "https://raw.githubusercontent.com/Bluestraveller13/super-duper-spork/refs/heads/main/KITKATJOSS",
     "https://bit.ly/KPL203"
 ]
 
