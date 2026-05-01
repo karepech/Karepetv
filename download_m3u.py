@@ -15,7 +15,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # ====================================================================
 
 MASTER_URLS = [
-    "http://freeiptv2026.sepak7042.workers.dev",
+    "https://raw.githubusercontent.com/tsender57-dotcom/iptv-rox-playlist/refs/heads/main/playlist.m3u",
     "https://deccotech.online/tv/tvstream.html", 
     "https://freeiptv2026.tsender57.workers.dev", 
     "https://raw.githubusercontent.com/jrpahe-del/IPTV/refs/heads/main/RafaDervian.m3u",
