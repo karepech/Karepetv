@@ -442,11 +442,9 @@ https://cdn08jtedge.indihometv.com/dassdvr/194/discoveryasia/manifest.mpd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
 https://cdnjkt913.transvision.co.id:1000/live/master/5/4028c68572841ba301729d4068d13c20/manifest.mpd
 #EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjaKDrUV-rE7KkBo7zVPpO4felyJwl-06uCXfisVJ_vAqV5MJeOjDR2R3Jqt2MGDApB-eZZP9xpizZ4m9QykeIz8OcJp6Kl_k5o1Fhtv-2PUhWJ0WGYW5FKn-hP5IgEnCNaOUw8v7iSu3Pvq7EuMoG3K93fn7tMQBlZvfm9nloiM6R2TASwBDnjx-eAkOXd/s700/ANIMAL%20PLANET.png" group-title="KNOWLEDGE",ANIMAL PLANET
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=1c9f7a6d3b2e4e5d8a61f4d0c2b9e813:b8f52451c67a2b54f272543eef45b621
-https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_animal_planet_sd/default/index.mpd
+#EXTVLCOPT:http-referrer="https://mini.allinonereborn.fun"
+#KODIPROP:inputstream.adaptive.http-referrer="https://mini.allinonereborn.fun"
+https://mini.allinonereborn.fun/jiotv-www/app/ts_live_566.m3u8
 #EXTINF:-1 group-title="KNOWLEDGE" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjaKDrUV-rE7KkBo7zVPpO4felyJwl-06uCXfisVJ_vAqV5MJeOjDR2R3Jqt2MGDApB-eZZP9xpizZ4m9QykeIz8OcJp6Kl_k5o1Fhtv-2PUhWJ0WGYW5FKn-hP5IgEnCNaOUw8v7iSu3Pvq7EuMoG3K93fn7tMQBlZvfm9nloiM6R2TASwBDnjx-eAkOXd/s700/ANIMAL%20PLANET.png",ANIMAL PLANET
 https://cdn08jtedge.indihometv.com/dassdvr/194/animalplanet/manifest.mpd
 #EXTINF:-1 group-title="KNOWLEDGE" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcs3M_DV7ENe79F0gn1fIYvy_SeytVoHmnLHBWyvfRC5SI_mbbEXxF4L060T1kdo1-eJBXGY0rwD4y2LuAr7PFEOW3sz2i408OjiLkCaFxNVxMRC5Kz-j5_zvSZCnfI84VaE7HpczxZ6_824ZeQxAOvZX4r2tlBPhRZVjJM4n3nnm_K673UBaTgn0G4Zlj/s700/HISTORY%20H2.png",HISTORY H2
@@ -498,10 +496,9 @@ https://247wlive.foxweather.com/stream/index.m3u8
 #KODIPROP:inputstream.adaptive.license_key=87ca873142174f2bbdcfadd878422c77:bb51816f7407f68830dcdc215416f385
 https://atemecdnbalancer-voe.sysln.id/live/eds/GlobalTrekkerHD/mediampd/GlobalTrekkerHD.mpd
 #EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlu26q_0sQjovwgtvB-ysYr8PVRRovLqPYwfc9zlyRRIWEDmSwcC8XqpICkkk-b5I1nKKYpqfBfUjks-NMR8Ux_fzTzJFCm8YJHRX79wUKqr0uJcOE1LOpyL4HhNIft9kye0zTItUHGBusCW3kXDtW8w6gV5NLwEFxNjKieOMRfR7jQPPRGiKzqQc8elPZ/s700/HGTV.png" group-title="KNOWLEDGE",HGTV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=d0c607f0958a4d85bb7b2be81e9ef278:cb3e057a2fce88366d0ef4d6dcdd7a5f
-https://cdn08jtedge.indihometv.com/dassdvr/133/hgtv/manifest.mpd
+#KODIPROP:inputstream.adaptive.license_key=0c39778fe8fb4f9f8574016b3d4ae2ed:232b1f450f2e37f47fdd5b678a8a546d
+https://mega.z5cable.com/bpk-tv/hgtv_hd/default/index.mpd
 #EXTINF:-1 tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFfS0-pT30pdGQVYC49zheQQm_eK-uOKTctFIighkaxuAfbLJSJCObi5Qq2t0Efdi1faQpcoZquV95AmVoZb1Yaj_to6IEE-fRyuOjqozYyyMxUOEEVBv32m6XpePWlMWQPfRvYCP-lhJU94-oI9tdAr_frsgZ9Wusj9x2U_HdvkEFemT5fniuSJ_0W6gq/s700/KNOWLEDGE+.png" group-title="KNOWLEDGE",KNOWLEDGE+
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
@@ -646,12 +643,12 @@ https://cdn08jtedge.indihometv.com/dassdvr/194/animalplanet/manifest_w816003161_
 http://23.239.31.26:8989/animalplanet/index.m3u8
 #EXTINF:-1 tvg-id="animal_planet_sd" tvg-name="Animal Planet" tvg-logo="https://images.toffeelive.com/images/program/359/logo/240x240/mobile_logo_835681001673175607.png" group-title="KNOWLEDGE",Animal Planet
 https://sm-monirul.top/Toffee/live.php?id=animal_planet_sd&e=.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/mBFs4RQ/pinpng-com-animal-planet-png-4851143.png" group-title="KNOWLEDGE",Animal Planet
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=436b69f987924fcbbc06d40a69c2799a:c63d5b0d7e52335b61aeba4f6537d54d
+https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_animal_planet_sd/default/index.mpd
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="KNOWLEDGE",Animal Planet
 https://canaiss.fazoeli.co.za/fontes/smart/animalplanet.m3u8
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/4xdySR1z/Animal-Planet.jpg" group-title="KNOWLEDGE",ANIMAL PLANET HD
-#EXTVLCOPT:http-referrer="https://mini.allinonereborn.fun"
-#KODIPROP:inputstream.adaptive.http-referrer="https://mini.allinonereborn.fun"
-https://mini.allinonereborn.fun/jiotv-www/app/ts_live_566.m3u8
 #EXTINF:-1 tvg-id="animal_planet_hd" tvg-name="Animal Planet HD" tvg-logo="https://images.toffeelive.com/images/program/18096/logo/240x240/mobile_logo_032001001673194753.png" group-title="KNOWLEDGE",Animal Planet HD
 https://sm-monirul.top/Toffee/live.php?id=animal_planet_hd&e=.m3u8
 #EXTINF:-1 tvg-id="animal planet" tvg-logo="" group-title="KNOWLEDGE",Animal Planet HD
