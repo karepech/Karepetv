@@ -320,14 +320,6 @@ https://cdnb4u.wiseplayout.com/B4U_Movies/HD1080/HD1080.m3u8
 https://cloudfrontnet.vercel.app/tplay/playout/209627/master.m3u8
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/5/56/ENTV_Bangla_Movies_HD_logo_%282020%29.png/revision/latest?cb=20210429041753" group-title="MOVIES",Bangla Movies 2
 https://live-stream.utkalbongo.com/hls/livebanglatvstream.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/dramaworld.png" group-title="MOVIES",Drama World
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://visionplus.id/
-#KODIPROP:inputstream.adaptive.license_key=https://ayo.maling.pl/Vision/drm.license?id=204
-https://ayo.maling.pl/Vision/index.mpd?id=204
 #EXTINF:-1 group-title="MOVIES" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/dunialain.png",Dunia Lain
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
@@ -1756,21 +1748,6 @@ http://151.80.18.177:86/Canal+_cinema_HD/index.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
 #EXTINF:-1 tvg-id="CCM.id" tvg-name="CCM" tvg-logo="https://mimipipi22.github.io/logo/movies/ccm.jpg" group-title="MOVIES",CCM
 https://fta1-cdn-flr.visionplus.id/out/v1/6bdbe6ce7f034807aba5f09bed048b05/index.mpd
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="MOVIES",Now Live Channel
-#
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="MOVIES",Now News Channel
-#
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="MOVIES",Now Finance Channel
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="MOVIES",Now Sports Channel
-#
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="MOVIES",Now Star Channel (Chinese)
-#
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="MOVIES",Now Star Channel (Cantonese)
-#
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="MOVIES",Now Popcorn Channel
-#
-#EXTINF:-1 group-title="MOVIES",CHC Action Movies
-http://38.75.136.137:98/gslb/dsdqpub/chcdz.m3u8?auth=testpub
 #EXTINF:-1 group-title="MOVIES",CHC Movie Fans
 http://38.75.136.137:98/gslb/dsdqpub/chchd.m3u8?auth=testpub
 #EXTINF:-1 tvg-logo="https://www.mnbctv.mn/upload/images/tv/Cinema_Hd1.jpg" tvg-id="Cinema.mn@SD" group-title="MOVIES",Cinema
