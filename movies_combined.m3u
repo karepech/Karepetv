@@ -242,13 +242,6 @@ https://op-group1-swiftservehd-1.dens.tv/h/h77/index2.m3u8?app_type=web&userid=l
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:150.0) Gecko/20100101 Firefox/150.0
 #EXTINF:-1 tvg-id="CINEMAWORLD" tvg-url="https://raw.githubusercontent.com/apistech/project/refs/heads/main/ApisTECH.xml" tvg-logo="https://www.vhv.rs/dpng/d/592-5920199_home-cinemaworld-cinema-world-tv-hd-png-download.png" group-title="MOVIES",Cinema World
 http://103.58.160.157:8278/720-CINEMAWORLD/playlist.m3u8
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#EXTVLCOPT:http-user-agent=VidioPlayer/6.41.11
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=386eb62b9787c4fce02eac827ca8c72d:51c053c2760a769ff3e9c5e5b521f8f1
-#EXTINF:-1 group-title="MOVIES" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/fe/Logo_Citra_Drama_Plus.png", Citra Drama
-https://bosstv.asia/yabostv/21179.mpd
 #KODIPROP:inputstream.adaptive.stream_headers=Origin=https://maxstream.tv/
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://maxstream.tv/
 #KODIPROP:inputstreamaddon=inputstream.adaptive
@@ -355,6 +348,7 @@ https://raw.githubusercontent.com/Bluestraveller13/super-duper-spork/refs/heads/
 #KODIPROP:inputstream.adaptive.stream_headers=User-Agent=|user-agent=IndiHomeTV/8.7.12 (Linux;Android 15.0.0;) ExoPlayerLib/2.19.1& Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
 #EXTINF:-1 tvg-id="ROCKAction.id" tvg-url="https://raw.githubusercontent.com/apistech/project/refs/heads/main/ApisTECH.xml" tvg-logo="https://i.imgur.com/l6lmlqG.png" group-title="MOVIES",Rock Action
 https://cdn10jtedge.indihometv.com/atm/DASH/ROCK_ACTION/ROCK_ACTION-avc1_2500000=7-3277707030000000.mpd
+#EXTINF:-1 group-title="MOVIES" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/fe/Logo_Citra_Drama_Plus.png", Citra Drama
 #EXTVLCOPT:http-referrer=https://www.visionplus.id/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:150.0) Gecko/20100101 Firefox/150.0F
 #KODIPROP:inputstreamaddon=inputstream.adaptive
@@ -419,6 +413,26 @@ https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_hbosign/default/index.m
 https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/u7xfabrc5b/out/v1/67371e988d6649afbde43ba1e9747550/cenc.mpd
 #EXTINF:-1 tvg-logo="https://stmify.com/wp-content/uploads/2024/08/36-s.webp"group-title="MOVIES",Khushboo Bangla
 https://cdn-4.pishow.tv/live/1473/master.m3u8
+#EXTINF:-1 tvg-id="HBO.us" tvg-name="USA: HBO" tvg-logo="https://puddintap.click/ico/USA-Color-Movies/hbo.png" group-title="MOVIES",USA: HBO
+http://zerotwo.access.ly:2096/ruswri/6024593781/814423
+#EXTINF:-1 tvg-id="HBO2.us" tvg-name="USA: HBO 2" tvg-logo="https://puddintap.click/ico/USA-Color-Movies/hbo2.png" group-title="MOVIES",USA: HBO 2
+http://zerotwo.access.ly:2096/ruswri/6024593781/814424
+#EXTINF:-1 tvg-id="US: HBO 2 WEST" tvg-name="USA: HBO 2 WEST" tvg-logo="https://puddintap.click/ico/USA-Color-Movies/hbo2.png" group-title="MOVIES",USA: HBO 2 WEST
+http://zerotwo.access.ly:2096/ruswri/6024593781/814425
+#EXTINF:-1 tvg-id="HBOComedy.us" tvg-name="USA: HBO COMEDY" tvg-logo="https://puddintap.click/ico/USA-Color-Movies/hbocomedy.png" group-title="MOVIES",USA: HBO COMEDY
+http://zerotwo.access.ly:2096/ruswri/6024593781/814426
+#EXTINF:-1 tvg-id="HBOComedyPacific.us" tvg-name="USA: HBO COMEDY WEST" tvg-logo="https://puddintap.click/ico/USA-Color-Movies/hbocomedy.png" group-title="MOVIES",USA: HBO COMEDY WEST
+http://zerotwo.access.ly:2096/ruswri/6024593781/814427
+#EXTINF:-1 tvg-id="US: HBO SIGNATURE EAST" tvg-name="USA: HBO SIGNATURE" tvg-logo="https://puddintap.click/ico/USA-Color-Movies/hbosignature.png" group-title="MOVIES",USA: HBO SIGNATURE
+http://zerotwo.access.ly:2096/ruswri/6024593781/814430
+#EXTINF:-1 tvg-id="US: HBO SIGNATURE WEST" tvg-name="USA: HBO SIGNATURE WEST" tvg-logo="https://puddintap.click/ico/USA-Color-Movies/hbosignature.png" group-title="MOVIES",USA: HBO SIGNATURE WEST
+http://zerotwo.access.ly:2096/ruswri/6024593781/814431
+#EXTINF:-1 tvg-id="HBOPacific.us" tvg-name="USA: HBO WEST" tvg-logo="https://puddintap.click/ico/USA-Color-Movies/hbo_west.png" group-title="MOVIES",USA: HBO WEST
+http://zerotwo.access.ly:2096/ruswri/6024593781/814432
+#EXTINF:-1 tvg-id="HBOZone.us" tvg-name="USA: HBO ZONE" tvg-logo="https://puddintap.click/ico/USA-Color-Movies/hbo_zone.png" group-title="MOVIES",USA: HBO ZONE
+http://zerotwo.access.ly:2096/ruswri/6024593781/814433
+#EXTINF:-1 tvg-id="HBOZone.us" tvg-name="USA: HBO ZONE WEST" tvg-logo="https://puddintap.click/ico/USA-Color-Movies/hbo_zone.png" group-title="MOVIES",USA: HBO ZONE WEST
+http://zerotwo.access.ly:2096/ruswri/6024593781/814434
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
@@ -443,6 +457,21 @@ https://a61aivottlinear-a.akamaihd.net/OTTB/pdx-nitro/live/clients/dash/enc/bkuv
 #KODIPROP:inputstream.adaptive.license_key=b207c44332844523a3a3b0469e5652d7:fe71aea346db08f8c6fbf0592209f955
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/cinemax.png" group-title="MOVIES",Cinemax NO SUB
 https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_cinemax/default/index.mpd
+#==========US PREMIUM.===============#
+#EXTINF:-1 tvg-id="CineMAX.us" tvg-name="USA: CINEMAX" tvg-logo="https://puddintap.click/ico/USA-Color-Movies/cinemax.png" group-title="MOVIES",USA: CINEMAX
+http://zerotwo.access.ly:2096/ruswri/6024593781/814412
+#EXTINF:-1 tvg-id="Cinemax5StarMAX.us" tvg-name="USA: CINEMAX 5 STARMAX" tvg-logo="https://puddintap.click/ico/USA-Color-Movies/5starmax.png" group-title="MOVIES",USA: CINEMAX 5 STARMAX
+http://zerotwo.access.ly:2096/ruswri/6024593781/814413
+#EXTINF:-1 tvg-id="CinemaxAction.us" tvg-name="USA: CINEMAX ACTION MAX" tvg-logo="https://puddintap.click/ico/USA-Color-Movies/actionmax.png" group-title="MOVIES",USA: CINEMAX ACTION MAX
+http://zerotwo.access.ly:2096/ruswri/6024593781/814414
+#EXTINF:-1 tvg-id="US: ACTIONMAX WEST" tvg-name="USA: CINEMAX ACTION MAX WEST" tvg-logo="https://puddintap.click/ico/USA-Color-Movies/actionmax.png" group-title="MOVIES",USA: CINEMAX ACTION MAX WEST
+http://zerotwo.access.ly:2096/ruswri/6024593781/814415
+#EXTINF:-1 tvg-id="COVID19" tvg-name="USA: CINEMAX MOREMAX EAST" tvg-logo="https://puddintap.click/ico/USA-Color-Movies/moremax.png" group-title="MOVIES",USA: CINEMAX MOREMAX EAST
+http://zerotwo.access.ly:2096/ruswri/6024593781/814416
+#EXTINF:-1 tvg-id="US: MOREMAX WEST" tvg-name="USA: CINEMAX MOREMAX WEST" tvg-logo="https://puddintap.click/ico/USA-Color-Movies/moremax.png" group-title="MOVIES",USA: CINEMAX MOREMAX WEST
+http://zerotwo.access.ly:2096/ruswri/6024593781/814417
+#EXTINF:-1 tvg-id="CineMAXPacific.us" tvg-name="USA: CINEMAX WEST" tvg-logo="https://puddintap.click/ico/USA-Color-Movies/cinemaxwest.png" group-title="MOVIES",USA: CINEMAX WEST
+http://zerotwo.access.ly:2096/ruswri/6024593781/814422
 #EXTINF:-1 tvg-id="99991348" tvg-name="KOCOWA K-Drama" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/zeebioskop.png" group-title="MOVIES",Zee Bioskop
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
 https://cdn10jtedge.indihometv.com/atm/DASH/zbioskop/manifest.mpd
@@ -467,8 +496,8 @@ https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/995zvakyej/
 #KODIPROP:inputstream.adaptive.license_key=3e429eb91a1791d55df2a554dc58dda7:2f688f94ef580a61eada6932598137e4
 #EXTINF:-1 group-title="MOVIES" tvg-logo="https://i0.wp.com/www.seogroupbuy.io/wp-content/uploads/2023/05/primevideo-group-buy.png?w=1200&ssl=1",Amazon Movies
 https://otte.live.fly.ww.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/oynu8tcxfa/out/v1/ab567b96658c4d84ae1fc6c67110987c/cenc.mpd
-#EXTVLCOPT:http-user-agent=DRM Player/2.5.6 (Linux; Android 14; 24040RN64Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36 ExoPlayerLib/1.10.0-alpha01
 #EXTINF:-1 tvg-id="Americanninja.us" group-title="MOVIES" tvg-logo="https://image.xumo.com/v1/channels/channel/99951318/168x168.png?type=color_onBlack", American Ninja Warrior
+#EXTVLCOPT:http-user-agent=DRM Player/2.5.6 (Linux; Android 14; 24040RN64Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36 ExoPlayerLib/1.10.0-alpha01
 https://xumo-drct-ch812-n4996.fast.nbcuni.com/live/master.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/subirkumarpaul/Logo/main/B4U%20Movies.png"group-title="MOVIES",B4U Movies
 https://cdnb4u.wiseplayout.com/B4U_Movies/HD1080/HD1080.m3u8
@@ -535,8 +564,8 @@ http://op-group1-swiftservehd-1.dens.tv/h/h18/index.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36
 http://op-group1-swiftservehd-1.dens.tv/h/h192/index.m3u8
 #=========Indonesia Channels ==================================================>#
-#EXTVLCOPT:http-user-agent=DRM Player/2.5.6 (Linux; Android 14; 24040RN64Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36 ExoPlayerLib/1.10.0-alpha01
 #EXTINF:-1 tvg-id="Americanninja.us" group-title="MOVIES" tvg-logo="https://image.xumo.com/v1/channels/channel/99951318/168x168.png?type=color_onBlack",Ninja Warrior
+#EXTVLCOPT:http-user-agent=DRM Player/2.5.6 (Linux; Android 14; 24040RN64Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36 ExoPlayerLib/1.10.0-alpha01
 https://amg00654-itv-amg00654c27-rakuten-uk-5295.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="ROCKAction.id" tvg-url="mmm" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/rockactions.png" group-title="MOVIES",Rock Action
 #EXTVLCOPT:http-user-agent=YouTV/1.5.6-prod.release (Linux;Android 7.1.1) ExoPlayerLib/2.12.3
@@ -550,7 +579,6 @@ https://times-ott-live.akamaized.net/romedynow_wv_drm/index.mpd
 #KODIPROP:inputstream.adaptive.license_key=81a74ef0cf71e28d5d9bc55d5fd7921a:884e89f90a9f5cbaaa5c2a451e1d8f86
 #EXTINF:-1 tvg-logo="https://m.media-amazon.com/images/S/pv-target-images/dc690e5ba3fd497e686c4ebdf851b2b02503aca677988571453512d6d1870727._SL170_FMpng_.png" group-title="MOVIES",StarMAX East
 https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/yfo5p7nmtt/out/v1/fdce98358ffb47c9b6314feb9cfeda3f/cenc.mpd
-#EXTVLCOPT:http-user-agent=DRM Player/2.5.6 (Linux; Android 14; 24040RN64Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36 ExoPlayerLib/1.10.0-alpha01
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/takesi.png" group-title="MOVIES",Takeshi's Castle
 https://jmp2.uk/plu-6054a9f4bc8a5f000771504c.m3u8
 #EXTVLCOPT:http-user-agent=ExoPlayerDemo/2.15.1 (Linux; Android 13) ExoPlayerLib/2.15.1
@@ -562,10 +590,34 @@ https://atemeshield1-voe.sysln.id/live/eds/TvNMoviesHD/mpd/TvNMoviesHD.mpd
 #EXTVLCOPT:http-referrer=http://www.dens.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36
 http://op-group1-swiftservehd-1.dens.tv/h/h21/index.m3u8
+#EXTINF:-1 tvg-id="FLIX.us" tvg-name="USA: FLIX" tvg-logo="https://sc.dish.com/shared/images/station-logos/FLIX.png" group-title="MOVIES",USA: FLIX
+http://zerotwo.access.ly:2096/ruswri/6024593781/814496
+#EXTINF:-1 tvg-id="FlixPacific.us" tvg-name="USA: FLIX (WEST)" tvg-logo="https://sc.dish.com/shared/images/station-logos/FLIX.png" group-title="MOVIES",USA: FLIX (WEST)
+http://zerotwo.access.ly:2096/ruswri/6024593781/814497
+#EXTINF:-1 tvg-id="HDNetMovies.us" tvg-name="USA: HDNET MOVIES" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a5/HDNET_Movies_Logo.png" group-title="MOVIES",USA: HDNET MOVIES
+http://zerotwo.access.ly:2096/ruswri/6024593781/814435
+#EXTINF:-1 tvg-id="MoviePlex.us" tvg-name="USA: MOVIEPLEX" tvg-logo="https://puddintap.click/ico/USA-Color-Movies/movieplex.png" group-title="MOVIES",USA: MOVIEPLEX
+http://zerotwo.access.ly:2096/ruswri/6024593781/814442
+#EXTINF:-1 tvg-id="MoviePlexPacific.us" tvg-name="USA: MOVIEPLEX WEST" tvg-logo="https://puddintap.click/ico/USA-Color-Movies/movieplex.png" group-title="MOVIES",USA: MOVIEPLEX WEST
+http://zerotwo.access.ly:2096/ruswri/6024593781/814443
+#EXTINF:-1 tvg-id="ScreenPixAction.us" tvg-name="USA: SCREENPIX ACTION" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/27/ScreenPix_Action.png" group-title="MOVIES",USA: SCREENPIX ACTION
+http://zerotwo.access.ly:2096/ruswri/6024593781/814448
+#EXTINF:-1 tvg-id="SonyMovieChannel.us" tvg-name="USA: SONY MOVIE CHANNEL" tvg-logo="https://i1.wp.com/www.broadbandtvnews.com/wp-content/uploads/2016/12/Sony_Movie_Channel_logo.png" group-title="MOVIES",USA: SONY MOVIE CHANNEL
+http://zerotwo.access.ly:2096/ruswri/6024593781/814468
+#EXTINF:-1 tvg-id="StarzCinema.us" tvg-name="USA: STARZ CINEMA" tvg-logo="https://puddintap.click/ico/USA-Color-Movies/starz_cinema.png" group-title="MOVIES",USA: STARZ CINEMA
+http://zerotwo.access.ly:2096/ruswri/6024593781/814470
+#EXTINF:-1 tvg-id="StarzCinemaPacific.us" tvg-name="USA: STARZ CINEMA WEST" tvg-logo="https://puddintap.click/ico/USA-Color-Movies/starz_cinema.png" group-title="MOVIES",USA: STARZ CINEMA WEST
+http://zerotwo.access.ly:2096/ruswri/6024593781/814471
+#EXTINF:-1 tvg-id="StarzEncoreAction.us" tvg-name="USA: STARZ ENCORE ACTION" tvg-logo="https://puddintap.click/ico/USA-Color-Movies/starz_encore_action.png" group-title="MOVIES",USA: STARZ ENCORE ACTION
+http://zerotwo.access.ly:2096/ruswri/6024593781/814477
+#EXTINF:-1 tvg-id="TheMovieChannel.us" tvg-name="USA: THE MOVIE CHANNEL" tvg-logo="https://puddintap.click/ico/USA-Color-Movies/the_movie_channel.png" group-title="MOVIES",USA: THE MOVIE CHANNEL
+http://zerotwo.access.ly:2096/ruswri/6024593781/814494
+#EXTINF:-1 tvg-id="TheMovieChannelExtra.us" tvg-name="USA: THE MOVIE CHANNEL XTRA" tvg-logo="https://puddintap.click/ico/USA-Color-Movies/the_movie_channel_xtra.png" group-title="MOVIES",USA: THE MOVIE CHANNEL XTRA
+http://zerotwo.access.ly:2096/ruswri/6024593781/814495
 #EXTINF:-1 tvg-id="WOWOWCinema.jp@SD" tvg-logo="https://i.imgur.com/Wx9fkCW.png" group-title="MOVIES",WOWOW Cinema (544p)
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs07
-#EXTVLCOPT:http-user-agent=DRM Player/2.5.6 (Linux; Android 14; 24040RN64Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36 ExoPlayerLib/1.10.0-alpha01
 #EXTINF:-1 tvg-logo="https://images.sr.roku.com/idType/roku-trc/context/trc/id/0128b5f756acf1e1c488509fd76b0a61/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1758735344999_X_Games_TV_260x147_White.png" group-title="MOVIES",X Games TV
+#EXTVLCOPT:http-user-agent=DRM Player/2.5.6 (Linux; Android 14; 24040RN64Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36 ExoPlayerLib/1.10.0-alpha01
 https://raw.githubusercontent.com/jrpahe-del/M3U8/refs/heads/main/X-Games.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/subirkumarpaul/Logo/main/Zee%20Action.png"group-title="MOVIES",Zee Action
 http://103.175.73.12:8080/live/270/270_0.m3u8
