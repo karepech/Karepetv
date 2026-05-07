@@ -492,6 +492,10 @@ https://a3569457567-s70378.cdn.ngenix.net/national_geographic/1/index.m3u8
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=eb4160ea553a321d899553e4e796fec2:bea5a07157e0c4d17b11ab399517f952
 https://s2129134.cdn.mytvnet.vn/pkg20/live_dzones/dsc.smil/manifest.mpd
+#EXTINF:-1 tvg-id="" tvg-logo="https://dtil.tmsimg.com/assets/GNLZZGG002E9L1W.png?lock=720x540" group-title="KNOWLEDGE",Discovery
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=b70a8cf9450c4d6484b4ac4d3c6761c0:0908be844260409cbac180bf0181da40
+https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Discoverychannel2/default/manifest.mpd
 #EXTINF:-1 tvg-id="discovery_sd" tvg-name="Discovery" tvg-logo="https://images.toffeelive.com/images/program/18097/logo/240x240/mobile_logo_297723001673195119.png" group-title="KNOWLEDGE",Discovery
 https://ottbanglaplatform.com/tv/toffee/live.php?id=discovery_sd&e=.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/2rx8Whs.png" group-title="KNOWLEDGE",Discovery
@@ -525,25 +529,13 @@ https://ottbanglaplatform.com/tv/toffee/live.php?id=discovery_hd&e=.m3u8
 https://mega.z5cable.com/bpk-tv/discovery_channel_hd/default/index.mpd
 #EXTINF:-1 group-title="KNOWLEDGE",Discovery HD
 http://151.80.18.177:86/Discovery_HD/index.m3u8
-#EXTINF:-1 tvg-id="" tvg-logo="https://live.dinesh29.com.np/logos/tataplay/discoveryhdworld.png" group-title="KNOWLEDGE",Discovery HD World
-#EXTVLCOPT:http-referrer="https://mini.allinonereborn.fun"
-#KODIPROP:inputstream.adaptive.http-referrer="https://mini.allinonereborn.fun"
-https://mini.allinonereborn.fun/jiotv-www/app/ts_live_463.m3u8
 #EXTINF:-1 tvg-id="id" tvg-logo="" group-title="KNOWLEDGE",Discovery ID
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=0c39778fe8fb4f9f8574016b3d4ae2ed:232b1f450f2e37f47fdd5b678a8a546d
 https://mega.z5cable.com/bpk-tv/id_hd/default/index.mpd
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/Y0dk6jZT/Invest-Discovery.jpg" group-title="KNOWLEDGE",DISCOVERY INVESTIGATION
-#EXTVLCOPT:http-referrer="https://mini.allinonereborn.fun"
-#KODIPROP:inputstream.adaptive.http-referrer="https://mini.allinonereborn.fun"
-https://mini.allinonereborn.fun/jiotv-www/app/ts_live_527.m3u8
 #EXTINF:-1 tvg-name="Discovery Life Channel HD" tvg-id="discovery-life-channel" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/discovery-life-us.png?raw=true" group-title="KNOWLEDGE",DISCOVERY LIFE
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:90.0) Gecko/20100101 Firefox/140.0
 http://supersonictv.live:8080/864072/196529/22075
-#EXTINF:-1 tvg-id="" tvg-logo="https://i.postimg.cc/cHMdJFmx/Discovery-Science.jpg" group-title="KNOWLEDGE",Discovery Science
-#EXTVLCOPT:http-referrer="https://mini.allinonereborn.fun"
-#KODIPROP:inputstream.adaptive.http-referrer="https://mini.allinonereborn.fun"
-https://mini.allinonereborn.fun/jiotv-www/app/ts_live_568.m3u8
 #EXTINF:-1 tvg-id="discovery_science" tvg-name="Discovery Science" tvg-logo="https://images.toffeelive.com/images/program/378/logo/240x240/mobile_logo_604754001673177502.png" group-title="KNOWLEDGE",Discovery Science
 https://ottbanglaplatform.com/tv/toffee/live.php?id=discovery_science&e=.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="KNOWLEDGE",Discovery Science
@@ -572,10 +564,6 @@ http://23.239.31.26:8989/animalplanet/index.m3u8
 https://ottbanglaplatform.com/tv/toffee/live.php?id=animal_planet_sd&e=.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="KNOWLEDGE",Animal Planet
 https://canaiss.fazoeli.co.za/fontes/smart/animalplanet.m3u8
-#EXTINF:-1 tvg-logo="https://i.postimg.cc/4xdySR1z/Animal-Planet.jpg" group-title="KNOWLEDGE",ANIMAL PLANET HD
-#EXTVLCOPT:http-referrer="https://mini.allinonereborn.fun"
-#KODIPROP:inputstream.adaptive.http-referrer="https://mini.allinonereborn.fun"
-https://mini.allinonereborn.fun/jiotv-www/app/ts_live_566.m3u8
 #EXTINF:-1 tvg-id="animal_planet_hd" tvg-name="Animal Planet HD" tvg-logo="https://images.toffeelive.com/images/program/18096/logo/240x240/mobile_logo_032001001673194753.png" group-title="KNOWLEDGE",Animal Planet HD
 https://ottbanglaplatform.com/tv/toffee/live.php?id=animal_planet_hd&e=.m3u8
 #EXTINF:-1 tvg-id="animal planet" tvg-logo="" group-title="KNOWLEDGE",Animal Planet HD
@@ -619,10 +607,6 @@ https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_historyhd/default/index
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=a7724b7ca2604c33bb2e963a0319968a:6f97e3e2eb2bade626e0281ec01d3675
 https://qp-pldt-live-grp-11-prod.akamaized.net/out/u/dr_historyhd.mpd
-#EXTINF:-1 tvg-id="" tvg-logo="https://i.postimg.cc/zGb5hzjP/History.jpg" group-title="KNOWLEDGE",History TV
-#EXTVLCOPT:http-referrer="https://mini.allinonereborn.fun"
-#KODIPROP:inputstream.adaptive.http-referrer="https://mini.allinonereborn.fun"
-https://mini.allinonereborn.fun/jiotv-www/app/ts_live_578.m3u8
 #EXTINF:-1 group-title="KNOWLEDGE",Viasat History
 https://a3569457567-s70378.cdn.ngenix.net/viasat_history/2/index.m3u8
 #EXTINF:-1 tvg-id="SCIENCE_IS_AMAZING" tvg-name="Science is Amazing" tvg-logo="" group-title="KNOWLEDGE",Science is Amazing
