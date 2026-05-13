@@ -765,7 +765,7 @@ https://s2129134.cdn.mytvnet.vn/pkg20/live_dzones/max.smil/manifest.mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=f48caba466394e93b50780f21798787a:9a074a10db4342e7937076b3e52f6029
 https://cri-streamer3.cdn.3bbtv.com:8443/3bb/live/107/107.mpd
-#EXTINF:-1 tvg-id="cinemax" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Cinemax_LA.png/330px-Cinemax_LA.png" group-title="MOVIES",Cinemax
+#EXTINF:-1 tvg-id="cinemax" tvg-logo="" group-title="MOVIES",Cinemax
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=0c39778fe8fb4f9f8574016b3d4ae2ed:232b1f450f2e37f47fdd5b678a8a546d
 https://mega.z5cable.com/bpk-tv/cinemax_hd/default/index.mpd
@@ -1849,6 +1849,11 @@ https://get.perfecttv.net/get_max.mpd?username=vip_3klp0es8&password=wg3piwEs&ed
 https://get.perfecttv.net/get_max.mpd?username=vip_3klp0es8&password=wg3piwEs&editId=16c3204c-cbfb-40fd-adfa-3b8fafd74c82&sub=t0
 #EXTINF:-1 tvg-id="" tvg-logo="http://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch113_170_122" group-title="MOVIES",Asian Box
 https://cdn4.skygo.mn/live/disk1/AsianBOX/HLSv3-FTA/AsianBOX.m3u8
+#EXTINF:0 group-title="MOVIES" tvg-logo="",AZ Cinema México
+#EXTVLCOPT:network-caching=1000
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"0c39778fe8fb4f9f8574016b3d4ae2ed":"232b1f450f2e37f47fdd5b678a8a546d"}
+https://mega.z5cable.com/bpk-tv/az_cinema_hd/default/index.mpd
 #EXTINF:-1 tvg-logo="" group-title="MOVIES",B4U MOVIES
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:90.0) Gecko/20100101 Firefox/140.0
 https://cdnb4u.wiseplayout.com/B4U_Movies/master.m3u8
@@ -1882,7 +1887,7 @@ http://38.75.136.137:98/gslb/dsdqpub/chchd.m3u8?auth=testpub
 https://cdn4.skygo.mn/live/disk1/CinemaTV/HLSv3-FTA/CinemaTV.m3u8
 #EXTINF:-1 group-title="MOVIES",Cinema House Premium
 https://a3569457567-s70378.cdn.ngenix.net/dom_kino_premium_hd/3/index.m3u8
-#EXTINF:-1 tvg-logo="" group-title="MOVIES", Cinema Platino HD
+#EXTINF:-1 tvg-logo="https://s37328.pcdn.co/wp-content/uploads/2021/07/megacable-welcomes-edye__thumb.jpg" group-title="MOVIES", Cinema Platino HD
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=52358519f886446d82834a803b36f796:58b6ac8e07d354b178255e03b9d0f819
 https://bks400-tol-110.quieroxview.com.mx/bpk-tv/cinema_platino_hd/default/index.mpd
@@ -2265,6 +2270,11 @@ https://cdn4.skygo.mn/live/disk1/Moviebox/HLSv3-FTA/Moviebox.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://i.imgur.com/NIVhISa.png" group-title="MOVIES",Movies Action
 #EXTVLCOPT:http-user-agent=VLC/3.2.21 LibVLC/3.2.21
 https://shls-live-enc.edgenextcdn.net/out/v1/46079e838e65490c8299f902a7731168/index.m3u8
+#EXTINF:0 group-title="MOVIES" tvg-logo="",Multicinema México
+#EXTVLCOPT:network-caching=1000
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"0c39778fe8fb4f9f8574016b3d4ae2ed":"232b1f450f2e37f47fdd5b678a8a546d"}
+https://mega.z5cable.com/bpk-tv/multicinema_hd/default/index.mpd
 #EXTVLCOPT:http-user-agent=DENSGO/3.00.00 (Linux;Android 15.0.0;) ExoPlayerLib/2.19.1
 #EXTVLCOPT:http-referrer=https://delta.dens.tv/
 #EXTINF:-1 tvg-id="My.Cinema.Asia.id" tvg-name="My Cinema Asia" tvg-logo="https://mimipipi22.github.io/logo/movies/mycinemaasia.jpg" group-title="MOVIES",MY CINEMA ASIA

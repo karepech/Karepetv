@@ -245,18 +245,31 @@ https://tvcdn.tv.telia.lt/live/eds/Disney_Channel_H/DASH_5_CPIX_NPVR/Disney_Chan
 http://89.105.221.127/Disney/index.m3u8?token=test
 #EXTINF:-1 tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-183-400x400.png" group-title="KIDS",Disney Channel
 https://nl.utako.moe/disneychan/index.m3u8
+#EXTINF:-1 tvg-logo="https://s37328.pcdn.co/wp-content/uploads/2021/07/megacable-welcomes-edye__thumb.jpg" group-title="KIDS", Disney Channel HD
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=52358519f886446d82834a803b36f796:58b6ac8e07d354b178255e03b9d0f819
+https://bks400-tol-110.quieroxview.com.mx/bpk-tv/disney_channel_hd/default/index.mpd
+#EXTINF:-1 tvg-id="DISNEY.mx" group-title="KIDS" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/world-latin-america/disney-channel-lam.png", Disney Channel HD (México)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"f047ea1abdca6f03117454c4de0b6d5b":"b038c8c8f114c568956d428e80ae38d7"}
+https://hfc-tlx-live-atv-cdn.izzigo.tv/12/out/u/dash/DISNEY-CHANNEL-HD/default.mpd
 #EXTINF:-1 group-title="KIDS",Disney HD
 http://151.80.18.177:86/Disney_Channel_HD/index.m3u8
+#EXTINF:-1 tvg-logo="https://s37328.pcdn.co/wp-content/uploads/2021/07/megacable-welcomes-edye__thumb.jpg" group-title="KIDS", Disney Jr HD
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=52358519f886446d82834a803b36f796:58b6ac8e07d354b178255e03b9d0f819
+https://bks400-tol-110.quieroxview.com.mx/bpk-tv/disney_jr_hd/default/index.mpd
 #EXTINF:-1 group-title="KIDS",Disney JR HD
 http://151.80.18.177:86/Disney_Junior_HD/index.m3u8
+#EXTINF:0 tvg-id="Disney Junior.mx" group-title="KIDS" tvg-logo="", Disney Jr México
+#EXTVLCOPT:network-caching=1000
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"52358519f886446d82834a803b36f796":"58b6ac8e07d354b178255e03b9d0f819"}
+https://mega.z5cable.com/bpk-tv/disney_jr_hd/default/index.mpd
 #EXTINF:-1 tvg-logo="https://assets.stacktv.ca/wp-content/uploads/2023/09/disney-junior.png" group-title="KIDS",Disney Jr.
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=1ecc83e1cbb1f4c1bd3343845f55b361:560a022b2d0e0909420fd363101b2e3b
 https://tvcdn.tv.telia.lt/live/eds/Disney_Junior_H/DASH_5_CPIX_NPVR/Disney_Junior_H.mpd
-#EXTINF:-1 tvg-id="disney" tvg-logo="" group-title="KIDS",Disney Jr.
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=52358519f886446d82834a803b36f796:58b6ac8e07d354b178255e03b9d0f819
-https://bks400-tol-110.quieroxview.com.mx/bpk-tv/disney_jr_hd/default/index.mpd
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://epg.112114.xyz/logo/Discovery Kids Tamil.png" group-title="KIDS",DISCOVERY KIDS
 ##http://185.150.190.199/DISCOVERYKIDS/index.m3u8
 #EXTINF:-1 tvg-id="toonzkids" tvg-logo="https://a.jsrdn.com/hls/23131/toonzkids/poster_20231121_195247.jpg" group-title="KIDS",ToonzKids
@@ -290,6 +303,10 @@ https://tvcdn.tv.telia.lt/live/eds/Nick_Jr_H/DASH_5_CPIX_NPVR/Nick_Jr_H.mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=bab5c11178b646749fbae87962bf5113:0ac679aad3b9d619ac39ad634ec76bc8
 https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_nickjr/default/index.mpd
+#EXTINF:-1 tvg-logo="https://s37328.pcdn.co/wp-content/uploads/2021/07/megacable-welcomes-edye__thumb.jpg" group-title="KIDS", Nick Jr HD
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=0c39778fe8fb4f9f8574016b3d4ae2ed:232b1f450f2e37f47fdd5b678a8a546d
+https://bks400-tol-110.quieroxview.com.mx/bpk-tv/nick_jr_hd/default/index.mpd
 #EXTINF:-1 tvg-id="" tvg-logo="https://49-231-37-237-rewriter.ais-vidnt.com/ais/play/origin/LIVE//channelicon/Nickjr_2024.png" group-title="KIDS",NICK JR 🇹🇭
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=641c3f0e676d49d18c2082e093380e69:e06f3a2e327643249c3831ab199c4015
@@ -361,8 +378,16 @@ https://ottbanglaplatform.com/tv/toffee/live.php?id=cartoon_network_hd&e=.m3u8
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=52358519f886446d82834a803b36f796:58b6ac8e07d354b178255e03b9d0f819
 https://mega.z5cable.com/bpk-tv/cartoon_network_hd/default/index.mpd
+#EXTINF:-1 tvg-logo="https://s37328.pcdn.co/wp-content/uploads/2021/07/megacable-welcomes-edye__thumb.jpg" group-title="KIDS", Cartoon Network HD
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=52358519f886446d82834a803b36f796:58b6ac8e07d354b178255e03b9d0f819
+https://bks400-tol-110.quieroxview.com.mx/bpk-tv/cartoon_network_hd/default/index.mpd
 #EXTINF:-1 tvg-logo="https://tvguide.myjcom.jp/monomedia/ch_logo/jcom/logo-65406-171-400x400.png" group-title="KIDS",Cartoon Network Japan
 https://nl.utako.moe/cartoon_network/index.m3u8
+#EXTINF:0 tvg-id="Cartoon Network.mx" group-title="KIDS" tvg-logo="http://media.gvp.telefonica.com/storagearea0/IMAGES/00/06/52/6523297_AC1C9C4372225AAB.png", Cartoon Network México HD
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"85d06ba283f3b18bb14f9f8d59b8fb82":"6659fed472544289adee986c1d33fa79"}
+https://zap-live1-ott.izzigo.tv/14/out/u/dash/CARTOON-NETWORK-HD/default.mpd
 #EXTINF:-1 tvg-id="" tvg-logo="https://49-231-37-237-rewriter.ais-vidnt.com/ais/play/origin/LIVE///channelicon//0171.png" group-title="KIDS",CARTOON NETWORK 🇹🇭
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=f140b94c73ab4ef5b96da7f49afb1154:85e4ef232c6e460f888eb20f651d66e3
@@ -402,6 +427,12 @@ https://s2129134.cdn.mytvnet.vn/pkg20/live_dzones/boomerang.smil/manifest.mpd
 https://mega.z5cable.com/bpk-tv/boomerang_hd/default/index.mpd
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="KIDS",Cartoonito
 https://canaiss.fazoeli.co.za/fontes/smart/cartoonito.m3u8
+#EXTINF:0 tvg-id="Cartoonito.co" group-title="KIDS" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/mexico/cartoonito-mx.png", Cartoonito LA MPD
+#EXTVLCOPT:network-caching=1000
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"3fc370ab08218da5dad9b9644f1df57b":"1ddc60916c0efd29990cb1d319e7710a"}
+#KODIPROP:inputstream.adaptive.stream_headers=referer=https://hfc-tlx-live-atv-cdn.izzigo.tv
+https://hfc-tlx-live-atv-cdn.izzigo.tv/12/out/u/dash/CARTOONITO-HD/default.mpd
 #EXTINF:-1 tvg-id="" tvg-logo="https://49-231-37-237-rewriter.ais-vidnt.com/ais/play/origin/LIVE/channelicon//Cartoonito.png" group-title="KIDS",CARTOONITO 🇹🇭
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=ad2371259d34404cb89d54a4dc88dcd3:1ba155e345c4456ba891cbee9b3e1c4c
@@ -424,13 +455,11 @@ https://a3569457567-s70378.cdn.ngenix.net/baby_tv/2/index.m3u8
 #EXTVLCOPT:http-user-agent=Oxygen TV/5.9 (Linux;Android 10) ExoPlayerLib/2.12.2
 #EXTHTTP:{"Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NTg1NDk2NTQsImV4cCI6MTc1ODU2MDQ1NCwiZGF0YSI6eyJ1c2VyIjoiYmFkc2kiLCJjbGllbnRfaXAiOiIxMDMuMTA3Ljg0LjE4MyJ9fQ.wMafBJ9gJ_O3Fz6vZ6mjwls65hSlf-jupah8hsAIDEc", "X-TOKEN":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NTg1NDk2NTQsImV4cCI6MTc1ODU2MDQ1NCwiZGF0YSI6eyJ1c2VyIjoiYmFkc2kiLCJjbGllbnRfaXAiOiIxMDMuMTA3Ljg0LjE4MyJ9fQ.0BUFpzNT3h5xuYuhmKHMffBu22_78xn792rAWxKY4RQ"}
 https://gooo.blog/opix/genx.m3u8?id=mentaritv&cyev=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NTg1NDk2NTQsImV4cCI6MTc1ODU2MDQ1NCwiZGF0YSI6eyJ1c2VyIjoiYmFkc2kiLCJjbGllbnRfaXAiOiIxMDMuMTA3Ljg0LjE4MyJ9fQ.wMafBJ9gJ_O3Fz6vZ6mjwls65hSlf-jupah8hsAIDEc
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/315_144.png" group-title="KIDS",Oasis
+#
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/386_144.png" group-title="KIDS",Ceria
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-##KODIPROP:inputstream.adaptive.license_key=b6e60ca0d28e8f97395f07b4e2e53a10:0f0ea6c3543c29d7f513eb886eb74f88
-#KODIPROP:inputstream.adaptive.license_key=337ef92bfeeb4b599248841cc916ce24:a31f174c1abe17c2b08fb94dd521283c
-#https://get.perfecttv.net/dash2.mpd?username=vip_3klp0es8&password=wg3piwEs&channel=ceria
-https://load.perfecttv.net/rwt.mpd?username=vip_3klp0es8&password=wg3piwEs&channel=ceria
+#EXTVLCOPT:http-user-agent=ExoPlayerDemo/2.15.1 (Linux; Android 12) ExoPlayerLib/2.15.1
+https://rakyattv.my.id/donate/stream.php/.m3u8?id=ceria
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #EXTINF:-1#EXTINF:-1 group-title="KIDS",ABC Big Kids
 #KODIPROP:inputstream.adaptive.license_type=clearkey
@@ -480,10 +509,19 @@ https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Discoverykids2/default/manifest.mpd
 https://ottbanglaplatform.com/tv/toffee/live.php?id=discovery_kids&e=.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="KIDS",Discovery Kids
 https://canaiss.fazoeli.co.za/fontes/smart/discoverykids.m3u8
-#EXTINF:-1 tvg-logo="" group-title="KIDS", Discovery Kids HD
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=9201c07931b74c37c4e30a9e96b64c30:8e1ce4f1b1185f64e42f9974cbad1442
+#EXTINF:-1 ch-number="204" tvg-id="DISCOVERY KIDS.mx" tvg-logo="https://i.postimg.cc/WbSw-Jyxm/DKids.png" group-title="KIDS", Discovery Kids (México)
+https://hfc-tlx-live-atv-cdn.izzigo.tv/11/out/u/dash/DISCOVERY-KIDS-HD/default.mpd
+#EXTINF:-1 tvg-logo="https://s37328.pcdn.co/wp-content/uploads/2021/07/megacable-welcomes-edye__thumb.jpg" group-title="KIDS", Discovery Kids HD
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=52358519f886446d82834a803b36f796:58b6ac8e07d354b178255e03b9d0f819
 https://bks400-tol-110.quieroxview.com.mx/bpk-tv/discovery_kids_hd/default/index.mpd
+#EXTINF:0 tvg-id="Discovery Kids.mx" group-title="KIDS" tvg-logo="", Discovery Kids México
+#EXTVLCOPT:network-caching=1000
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"52358519f886446d82834a803b36f796":"58b6ac8e07d354b178255e03b9d0f819"}
+https://mega.z5cable.com/bpk-tv/discovery_kids_hd/default/index.mpd
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #KODIPROP:inputstream.adaptive.license_key=https://cubmu.caranytv.workers.dev/trv
 #KODIPROP:inputstream.adaptive.stream_headers=user-agent=Xstream XGO/1.22 (Linux;Android 9) ExoPlayerLib/2.10.5
@@ -571,7 +609,7 @@ https://a3569457567-s70378.cdn.ngenix.net/ctc_kids/1/index.m3u8
 http://151.80.18.177:86/Teletoon+_HD/index.m3u8
 #EXTINF:-1 tvg-id="ToonGoggles.mv" tvg-name="Toon Goggles" tvg-logo="https://8upload.com/image/680637c515d85/tghilay.png" group-title="KIDS",TOON GOGGLESS
 https://tinyurl.com/TiviMe-ToonGoogles
-#EXTINF:-1 tvg-logo="" group-title="KIDS", Tooncast HD
+#EXTINF:-1 tvg-logo="https://s37328.pcdn.co/wp-content/uploads/2021/07/megacable-welcomes-edye__thumb.jpg" group-title="KIDS", Tooncast HD
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=0c39778fe8fb4f9f8574016b3d4ae2ed:232b1f450f2e37f47fdd5b678a8a546d
 https://bks400-tol-110.quieroxview.com.mx/bpk-tv/tooncast_hd/default/index.mpd

@@ -391,6 +391,16 @@ https://mega.z5cable.com/bpk-tv/cnn_hd/default/index.mpd
 http://84.17.50.102/cnn/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="NEWS",CNN Brasil
 https://canaiss.fazoeli.co.za/fontes/smart/cnnbrasil.m3u8
+#EXTINF:0 tvg-id="CNN en Español.co" group-title="NEWS" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/argentina/cnn-en-espanol-ar.png", CNN EN ESPAÑOL SD
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"f3a704793810e4848980bf8ebe11ba72":"8a761310bfa7436136729b23ea590185"}
+#KODIPROP:inputstream.adaptive.stream_headers=referer=https://hfc-tlx-live-atv-cdn.izzigo.tv
+https://hfc-tlx-live-atv-cdn.izzigo.tv/13/out/u/dash/CNN-EN-ESPANOL-SD/default.mpd
+#EXTINF:0 tvg-id="Cable News Network.us" group-title="NEWS", CNN HD
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"4514db2f0b4864f56dbf8b14bcdd4022":"6cc79244441f942839b867572702364e"}
+#KODIPROP:inputstream.adaptive.stream_headers=referer=https://hfc-tlx-live-atv-cdn.izzigo.tv
+https://hfc-tlx-live-atv-cdn.izzigo.tv/14/out/u/dash/CNN-HD/default.mpd
 #EXTINF:-1 tvg-logo="http://115.146.176.131:80/images/2acf9495fde07739914e7a7bb3ffee94.png" group-title="NEWS",CNN HD
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=900c43f0e02742dd854148b7a75abbec:da315cca7f2902b4de23199718ed7e90
@@ -617,9 +627,6 @@ http://cdn.163189.xyz/163189/now
 https://oneamericanews-vizio.amagi.tv/playlist.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0
 #EXTINF:-1 tvg-id="PhoenixInfoNews" tvg-logo="http://linear-poster.astro.com.my/prod/logo/Phoenix_News_Info_v1.png" group-title="NEWS",PHOENIX INFO NEWS
-##KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-##KODIPROP:inputstream.adaptive.license_key={ "keys":[ { "kty":"oct", "k":"i563q3GWpCXZq2GKXJ+Z2Q", "kid":"lylVipv/jZR3S/ovAZoTEA" } ], "type":"temporary" }
-##https://ast.livecricketsl.live/proxy/sg.php/http://linearjitp-playback.astro.com.my/dash-wv/linear/5009/default_ott.mpd
 http://mytv-extra.com:80/V713SWTY/D8T8KGTL/5109
 #EXTINF:-1 tvg-id="" group-title="NEWS" tvg-logo="https://images.indihometv.com/images/channels/image_ch_phoenixinfonews.png",PHOENIX INFONEWS
 https://cdn10jtedge.indihometv.com/atm/DASH/phoenixinfonews/phoenixinfonews-avc1_2500000=7-3277707030000000.mpd

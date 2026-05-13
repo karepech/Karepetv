@@ -727,11 +727,6 @@ http://84.17.50.102/gtv/index.m3u8
 #EXTINF:-1 tvg-id="GTV.id" tvg-name="GTV" tvg-logo="https://mimipipi22.github.io/logo/nasional/gtvw.jpg" group-title="INDONESIA",GTV WORLD
 ##https://mimipipi22.github.io/logo/offline.m3u8
 http://slayerteam.in.rs:80/play/live.php?mac=00:1B:79:F0:81:7F&stream=1919441&extension=ts&play_token=kdXrrtWwYD
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=4d3d70298a8f442f9dee7c11a47c3edf:ff7a89f008a62664e5ebd821187296d1
-#EXTVLCOPT:http-user-agent=ExoPlayerDemo/2.15.1 (Linux; Android 13) ExoPlayerLib/2.15.1
-#EXTINF:-1 tvg-id="HGTV.id" tvg-name="HGTV" tvg-logo="https://mimipipi22.github.io/logo/lifestyle/hgtv.jpg" group-title="INDONESIA",HGTV
-https://atemecdnbalancer-voe.sysln.id/live/eds/HGTVHD/mediampd/HGTVHD.mpd
 #EXTINF:-1 tvg-id="hgtv" tvg-logo="" group-title="INDONESIA",HGTV
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=0c39778fe8fb4f9f8574016b3d4ae2ed:232b1f450f2e37f47fdd5b678a8a546d
@@ -740,6 +735,13 @@ https://mega.z5cable.com/bpk-tv/hgtv_hd/default/index.mpd
 https://canaiss.fazoeli.co.za/fontes/smart/hgtv.m3u8
 #EXTINF:-1 group-title="INDONESIA",hgtv
 http://84.17.50.102/hgtv/index.m3u8
+#EXTINF:-1 tvg-logo="https://s37328.pcdn.co/wp-content/uploads/2021/07/megacable-welcomes-edye__thumb.jpg" group-title="INDONESIA", Sony HD
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=52358519f886446d82834a803b36f796:58b6ac8e07d354b178255e03b9d0f819
+#EXTINF:-1 tvg-logo="https://s37328.pcdn.co/wp-content/uploads/2021/07/megacable-welcomes-edye__thumb.jpg" group-title="INDONESIA", HGTV HD
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=0c39778fe8fb4f9f8574016b3d4ae2ed:232b1f450f2e37f47fdd5b678a8a546d
+https://bks400-tol-110.quieroxview.com.mx/bpk-tv/hgtv_hd/default/index.mpd
 #EXTINF:-1 tvg-id="global_tv" tvg-name="Global TV" tvg-logo="https://assets-prod.services.toffeelive.com/w_640,q_75,f_webp/0y_tDJsBNnOkwJLWNrdE/posters/2ff058e1-630f-4657-8dc6-b677e65642c5.png" group-title="INDONESIA",Global TV
 https://ottbanglaplatform.com/tv/toffee/live.php?id=global_tv&e=.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="INDONESIA",SGTV 1
