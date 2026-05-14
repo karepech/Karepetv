@@ -23,7 +23,7 @@ MASTER_URLS = [
     "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25",
     "https://semar25.short.gy",
     "https://freeiptv2026.tsender57.workers.dev",
-    "",
+    "https://cixar.web.id/gvision1.m3u",
     "",
     "https://liveevent.iptvbonekoe.workers.dev",
     "",
