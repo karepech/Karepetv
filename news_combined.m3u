@@ -713,53 +713,6 @@ http://58.245.255.38:8888/tsfile/live/0007_1.m3u8?key=txiptv&playlive=1&authid=0
 http://58.245.255.38:8888/tsfile/live/0008_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1  tvg-name="CCTV9" tvg-logo="https://live.fanmingming.cn/tv/CCTV9.png" group-title="NEWS",CCTV9
 http://58.245.255.38:8888/tsfile/live/0009_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-id="CNN.International.(HD).sg" tvg-name="" tvg-logo="https://images.indihometv.com/images/channels/image_ch_cnninter.png" group-title="NEWS",CNN INTERNATIONAL (S1)
-https://turnerlive.warnermediacdn.com/hls/live/586497/cnngo/cnni/VIDEO_0_3564000.m3u8
-#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#EXTINF:-1 tvg-id="cnnj" tvg-logo="https://www.lyngsat-logo.com/logo/tv/cc/cnn-j-us-jp.png" group-title="NEWS",CNN Japan
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs16&isp=10&bind=0&uin=159413&playseek=0
-#EXTINF:-1 tvg-id="cnbc" group-title="NEWS" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqR2PZM1Hv__7pEnJOHFz9MAPy8ki1I5zoXiXwvI3MFQ&s=10",CNBC
-https://liveh34.vtvprime.vn/hls/CNBC/03.m3u8
-#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#EXTINF:-1 tvg-id="bbcnews" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI4GuqiaLPdwEyFTLuUQ_rWJDWHdYfOQf-wQxT4pCb6g&s=10" group-title="NEWS",BBC NEWS
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs15&isp=10&bind=0&uin=159413&playseek=0
-#EXTINF:-1 channel-id="6183f9f73a64394cf3c55690605af2a7" tvg-id="6183f9f73a64394cf3c55690605af2a7" tvg-chno="144" tvg-name="BBC News" tvg-logo="https://raw.githubusercontent.com/apistech/project/refs/heads/main/logo/imageCir_180x180_BBC_NEWS_2025_12_03_10_30_32.jpg" group-title="NEWS",BBC News (RK)
-https://jmp2.uk/rok-6183f9f73a64394cf3c55690605af2a7.m3u8
-#EXTINF:-1 tvg-id="AlJazeera.qa" tvg-logo="https://images.indihometv.com/images/channels/image_ch_aljazeera.png" group-title="NEWS",Al Jazeera Arabic
-https://live-hls-apps-aja-fa.getaj.net/AJA/index.m3u8
-#EXTINF:-1 tvg-id="AlJazeeraMubasher.qa" tvg-logo="https://images.indihometv.com/images/channels/image_ch_aljazeera.png" group-title="NEWS",Al Jazeera Arabic Mubasher
-https://live-hls-apps-ajm-fa.getaj.net/AJM/index.m3u8
-#EXTINF:-1 tvg-id="AlJazeeraMubasher24.qa" tvg-logo="https://images.indihometv.com/images/channels/image_ch_aljazeera.png" group-title="NEWS",Al Jazeera Arabic Mubasher 24
-https://live-hls-apps-ajm24-fa.getaj.net/AJM24/index.m3u8
-#EXTINF:-1 tvg-id="AlJazeeraMubasherBroadcast2.qa" tvg-logo="https://images.indihometv.com/images/channels/image_ch_aljazeera.png" group-title="NEWS",Al Jazeera Arabic Mubasher Broadcast 2
-https://live-hls-apps-ajm2-fa.getaj.net/AJM2/index.m3u8
-# --- Nhóm TV VIETNAM 🇻🇳  ---
-#EXTINF:-1 tvg-id="cna" tvg-group-logo="" group-title="NEWS" tvg-logo="https://raw.githubusercontent.com/PhatBee/phatbeetv/refs/heads/main/logo/QuocTe/cna.png",CNA
-https://liveh12.vtvprime.vn/hls/CAN/03.m3u8
-#EXTINF:-1 group-title="NEWS" tvg-logo="https://raw.githubusercontent.com/apistech/project/refs/heads/main/logo/image_ch_abcaustrlia.png",ABC Australia (IHT)
-https://cdn10jtedge.indihometv.com/atm/DASH/ABC_AUSTRALIA/manifest.mpd
-#EXTINF:-1 tvg-id="dw" group-title="NEWS" tvg-logo="https://images.indihometv.com/images/channels/image_ch_dwtv.png",DW (VTP)
-https://liveh12.vtvprime.vn/hls/DW/03.m3u8
-#EXTINF:-1 tvg-id="france24eng" group-title="NEWS" tvg-logo="https://raw.githubusercontent.com/apistech/project/refs/heads/main/logo/image_ch_france24.png",France24 (VTP)
-https://liveh12.vtvprime.vn/hls/FRANCE24/03.m3u8
-#EXTINF:-1 tvg-id="Russia.Today.in" tvg-name="" tvg-logo="https://i.imgur.com/QY4B8Hg.png" group-title="NEWS",RT NEWS
-https://rt-glb.rttv.com/live/rtnews/playlist.m3u8?v=1
-#EXTINF:-1 group-title="NEWS" tvg-logo="https://raw.githubusercontent.com/apistech/project/refs/heads/main/logo/imageCir_180x180-CL-RT_2025_10_24_15_49_57.jpg",RT NEWS (IHT)
-https://cdn08jtedge.indihometv.com/dassdvr/194/rusiatv/manifest.mpd
-#EXTINF:-1 channel-id="55b285cd2665de274553d66f" tvg-id="55b285cd2665de274553d66f" tvg-chno="2630" tvg-name="Sky News" tvg-logo="https://i.ibb.co/8MBM4M1/skyn.png" group-title="NEWS",Sky News (RK)
-https://jmp2.uk/plu-55b285cd2665de274553d66f.m3u8
-#EXTINF:-1 tvg-id="SkyNewsArabia.ae" tvg-logo="https://i.imgur.com/SvjU4h6.png" group-title="NEWS",Sky News Arabia (Ga 24 Jam)
-https://stream.skynewsarabia.com/ott/ott.m3u8
-#KODIPROP:inputstream=inputstream.ffmpegdirect
-#KODIPROP:mimetype=application/x-mpegURL
-#KODIPROP:inputstream.ffmpegdirect.is_realtime_stream=true
-#KODIPROP:inputstream.ffmpegdirect.stream_mode=timeshift
-#KODIPROP:inputstream.ffmpegdirect.manifest_type=hls
-#EXTINF:-1 group-title="NEWS" tvg-id="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr74w-J71h9R8i7wfs4Q7rLY12v6F-7Y2QGvYTWxkKng&s=10",VOA (S2)
-https://voa-ingest.akamaized.net/hls/live/2033874/tvmc06/playlist_1080.m3u8
-#EXTINF:-1 tvg-logo="https://images.seeklogo.com/logo-png/42/1/cctv-china-media-group-logo-png_seeklogo-424806.png" group-title="NEWS",CCTV 1
-#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-http://cdn6.veryfast.filegear-sg.me/live/cctv1/stream.m3u8
 #EXTINF:-1 group-title="NEWS" tvg-url="https://bit.ly/AstroEpg" tvg-name="CNN" tvg-country="ID" tvg-logo="https://w7.pngwing.com/pngs/335/473/png-transparent-cnn-international-fox-news-television-tv-channel-television-text-logo.png", CNN Int HD
 #EXTINF:-1 tvg-name="Bloomberg" tvg-id="BloombergTV.id" tvg-url="https://bit.ly/IndonesiaEpg" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmITD-lgTwN7sjF4EoXeKMF_1NrLhZBcilag&s" group-title="NEWS",Bloomberg
 #EXTINF:-1 tvg-id="NHKWorldJapan" tvg-name="NHKWorldJapan.jp" tvg-url="https://bit.ly/IndonesiaEpg" tvg-logo="https://www.mncvision.id/userfiles/image/channel/channel_355.jpeg" group-title="NEWS",NHK World Japan
@@ -807,3 +760,11 @@ https://op-group1-swiftservehd-1.dens.tv/h/h226/index.m3u8?app_type=web&userid=w
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=4c325414b6254a3ba4bcb2a31d4b1318:ae6c5d2b86727b478da73ffd0795c417
 https://atemeshield1-voe.sysln.id/live/eds/TRTWorldHD/mpd/TRTWorldHD.mpd
+#EXTINF:-1 group-title="NEWS" tvg-id="" tvg-url="https://upload.wikimedia.org/wikipedia/commons/7/7f/JakartaGlobe2019.png",Jakarta GlobeNews Channel
+#KODIPROP:inputstream=inputstream.ffmpegdirect
+#KODIPROP:mimetype=application/x-mpegURL
+#KODIPROP:inputstream.ffmpegdirect.is_realtime_stream=true
+#KODIPROP:inputstream.ffmpegdirect.stream_mode=timeshift
+#KODIPROP:inputstream.ffmpegdirect.manifest_type=hls
+#EXTINF:-1 tvg-logo="https://w7.pngwing.com/pngs/494/982/png-transparent-united-states-voice-of-america-internet-radio-voa-amharic-broadcasting-united-states-text-logo-united-states.png" group-title="NEWS",Voice Of America
+https://voa-ingest.akamaized.net/hls/live/2033874/tvmc06/playlist_1080.m3u8
