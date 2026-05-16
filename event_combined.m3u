@@ -70,10 +70,8 @@ https://cdn08jtedge.indihometv.com/dassdvr/194/useesport/manifest.mpd
 #KODIPROP:inputstream.adaptive.license_key=1539f043249e413d91906036f305831e:671e24fd8d234c7f38d85055815f902a
 #EXTINF:-1 tvg-id="SPOTV 2" tvg-url="mmm" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/motogp.png" group-title="BACKUP EVENT SPORTS",17:00 WIB MOTOGP+
 https://d2tjypxxy769fn.cloudfront.net/out/v1/46d9cf39b9a84183b8d5022ac8f4bc41/index.mpd
-#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVOWrYWcxQuStsyqLahrIgC8kSRP927h-SiQ&s", 12:00 WIB Thomas & Uber Cup Finals 2026
-https://052d33b4b506ff051775da149c5848eb.v.smtcdns.net/play.cbalive.weibisai.com/live/4203727353351061_AiSD.m3u8?txSecret=2aff9439b754e483a58f6d2205da3910&txTime=6A092F30
-#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVOWrYWcxQuStsyqLahrIgC8kSRP927h-SiQ&s", 13:00 WIB Thomas & Uber Cup Finals 2026
-https://052d33b4b506ff051775da149c5848eb.v.smtcdns.net/play.cbalive.weibisai.com/live/4203727555712061_AiSD.m3u8?txSecret=4098630a69ed9cae022b28208b1b45bd&txTime=6A092F30
+##EXTINF:-1 group-title="EVENT" tvg-logo="https://iili.io/30Jk8Al.md.png",002 Cara Menonton
+#https://shorter.me/aJXUE
 #EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://shorter.me/_bDcr", 19:00 WIB Malut United vs Persita
 https://yallavoide.yalla-shoot-zhubo.com/sport/202_4972477_1.m3u8?auth_key=1779019198-0-0-9dd6922b89fb355166b633734a8c3705
 #EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://shorter.me/_bDcr", 19:00 WIB Malut United vs Persita
@@ -90,7 +88,10 @@ https://stream.titanlivescore.com/live/LXSCORE-4880037.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://xl365.livepingscorex.com/
 https://live2.pro2cdnlive.com/live/channel25.m3u8
-##EXTINF:-1 group-title="EVENT" tvg-logo="https://iili.io/30Jk8Al.md.png",002 Cara Menonton
-#https://shorter.me/aJXUE
-#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-kSmuHx7qFwHAOLc6PqyG_MwcWIyM4QodnA&s", 19:00 WIB Semi-Final: Jakarta Bhayangkara Presisi (INA) - Hyundai Capital SkyWalkers (KOR)
-https://livecdn.euw1-0005.jwplive.com//live/sites/fM9jRrkn/media/92qFv1PB/live.isml/.m3u8
+#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://abnnews.id/wp-content/uploads/2025/08/images-3-12.jpeg", 20:30 WIB Bayer Leverkusen vs Hamburger SV
+https://yallavoide.yalla-shoot-zhubo.com/sport/202_4968562_2.m3u8?auth_key=1779024598-0-0-96c128351e72466a6925b2530a26feca
+#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://abnnews.id/wp-content/uploads/2025/08/images-3-12.jpeg", 20:30 WIB Freiburg vs RB Leipzig
+#EXTVLCOPT:http-referrer=http://www.fawanews.sc/
+#EXTVLCOPT:http-origin=http://www.fawanews.sc/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+http://193.47.62.58/hls/tiiiqQQQQQ.m3u8
