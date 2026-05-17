@@ -40,11 +40,6 @@ ALL_POSITIVE_KEYWORDS = {
         "TVRI", "BTV", "JAK TV", "JTV", "RTV", "NET TV", "DAAI",
         "INEWS", "TVONE", "TV ONE", "METRO", "KOMPAS" 
     ],
-    "MOVIES": [
-        "MOVIE", "MOVIES", "FILM", "CINEMA", "BIOSKOP", "HBO", "CINEMAX", 
-        "STAR MOVIES", "CATCHPLAY", "THRILL", "CELESTIAL", "FLIX", "MY CINEMA",
-        "GALAXY", "ACTION", "BLOCKBUSTER", "PREMIERE"
-    ],
     "KIDS": [
         "KIDS", "ANAK", "CARTOON", "KARTUN", "NICKELODEON", "NICK JR", 
         "DISNEY", "CARTOON NETWORK", "BOOMERANG", "BABY", 
@@ -85,7 +80,7 @@ CONFIGURATIONS = [
     {
         "output_file": "event_combined.m3u",
         "keywords": ALL_POSITIVE_KEYWORDS["EVENT_ONLY"],
-        "exclude_keywords": ALL_POSITIVE_KEYWORDS["NEWS"] + ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["KNOWLEDGE"] + ALL_POSITIVE_KEYWORDS["MOVIES"], 
+        "exclude_keywords": ALL_POSITIVE_KEYWORDS["NEWS"] + ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["KNOWLEDGE"], 
         "category_name": "BACKUP EVENT SPORTS", 
         "force_category": True, 
         "require_time": True, 
@@ -94,25 +89,16 @@ CONFIGURATIONS = [
     {
         "output_file": "sports_combined.m3u",
         "keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"],
-        "exclude_keywords": ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["NEWS"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["KNOWLEDGE"] + ALL_POSITIVE_KEYWORDS["MOVIES"],
+        "exclude_keywords": ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["NEWS"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["KNOWLEDGE"],
         "category_name": "SPORTS",
         "force_category": True,  
         "require_time": False, 
         "description": "SPORTS: Gabungan Live"
     },
     {
-        "output_file": "movies_combined.m3u",
-        "keywords": ALL_POSITIVE_KEYWORDS["MOVIES"],
-        "exclude_keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"] + ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["NEWS"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["EVENT_ONLY"] + ALL_POSITIVE_KEYWORDS["KNOWLEDGE"],
-        "category_name": "MOVIES",
-        "force_category": True,
-        "require_time": False,
-        "description": "MOVIES: Gabungan Saluran Film dan Bioskop"
-    },
-    {
         "output_file": "indonesia_combined.m3u", 
         "keywords": ALL_POSITIVE_KEYWORDS["INDONESIA"],
-        "exclude_keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"] + ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["KNOWLEDGE"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["EVENT_ONLY"] + ALL_POSITIVE_KEYWORDS["MOVIES"],
+        "exclude_keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"] + ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["KNOWLEDGE"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["EVENT_ONLY"],
         "category_name": "INDONESIA",
         "force_category": True,
         "require_time": False,
@@ -121,7 +107,7 @@ CONFIGURATIONS = [
     {
         "output_file": "kids_combined.m3u",
         "keywords": ALL_POSITIVE_KEYWORDS["KIDS"],
-        "exclude_keywords": ALL_POSITIVE_KEYWORDS["NEWS"] + ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["EVENT_ONLY"] + ALL_POSITIVE_KEYWORDS["MOVIES"],
+        "exclude_keywords": ALL_POSITIVE_KEYWORDS["NEWS"] + ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["EVENT_ONLY"],
         "category_name": "KIDS",
         "force_category": True,
         "require_time": False,
@@ -130,7 +116,7 @@ CONFIGURATIONS = [
     {
         "output_file": "knowledge_combined.m3u",
         "keywords": ALL_POSITIVE_KEYWORDS["KNOWLEDGE"],
-        "exclude_keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"] + ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["NEWS"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["EVENT_ONLY"] + ALL_POSITIVE_KEYWORDS["MOVIES"],
+        "exclude_keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"] + ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["NEWS"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["EVENT_ONLY"],
         "category_name": "KNOWLEDGE",
         "force_category": True,
         "require_time": False,
@@ -139,7 +125,7 @@ CONFIGURATIONS = [
     {
         "output_file": "news_combined.m3u",
         "keywords": ALL_POSITIVE_KEYWORDS["NEWS"],
-        "exclude_keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"] + ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["EVENT_ONLY"] + ALL_POSITIVE_KEYWORDS["INDONESIA"] + ALL_POSITIVE_KEYWORDS["MOVIES"],
+        "exclude_keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"] + ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["EVENT_ONLY"] + ALL_POSITIVE_KEYWORDS["INDONESIA"],
         "category_name": "NEWS",
         "force_category": True,
         "require_time": False,
@@ -148,7 +134,7 @@ CONFIGURATIONS = [
     {
         "output_file": "religi_combined.m3u",
         "keywords": ALL_POSITIVE_KEYWORDS["RELIGI"],
-        "exclude_keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"] + ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["NEWS"] + ALL_POSITIVE_KEYWORDS["EVENT_ONLY"] + ALL_POSITIVE_KEYWORDS["MOVIES"],
+        "exclude_keywords": ALL_POSITIVE_KEYWORDS["SPORTS_LIVE"] + ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["NEWS"] + ALL_POSITIVE_KEYWORDS["EVENT_ONLY"],
         "category_name": "RELIGI",
         "force_category": True,
         "require_time": False,
@@ -207,7 +193,7 @@ def extract_date_from_group(group_title):
     return None
 
 def get_channel_priority(channel_name, category):
-    """ SISTEM 31 KASTA SUPER VIP UNTUK SPORTS & KASTA LAINNYA """
+    """ SISTEM 31 KASTA SUPER VIP UNTUK SPORTS """
     n = channel_name.upper()
     
     if category == "SPORTS":
@@ -248,16 +234,6 @@ def get_channel_priority(channel_name, category):
         if any(k in n for k in ["PILIPINAS", "UAAP", "SUKAN", "RTB", "ELTA", "J SPORT", "GAORA", "NITTELE"]): return 31
         
         return 999 
-
-    elif category == "MOVIES":
-        if "HBO" in n: return 1
-        if "FOX" in n and "MOVIE" in n: return 2
-        if "CINEMAX" in n: return 3
-        if "CATCHPLAY" in n: return 4
-        if "BIOSKOP" in n: return 5
-        if "THRILL" in n: return 6
-        if "CELESTIAL" in n: return 7
-        return 99
 
     elif category == "INDONESIA":
         if "RCTI" in n: return 1
@@ -326,8 +302,6 @@ def get_channel_priority(channel_name, category):
 
 def download_playlist(args):
     idx, url = args
-    if not url: return idx, url, []
-    
     print(f"  > Sedang menyedot dari: {url}")
     channels = []
     try:
@@ -427,14 +401,12 @@ def filter_m3u_by_config(config, super_clean_channels):
         clean_group_title = CLEANING_REGEX.sub(' ', raw_group_title).upper()
         clean_channel_name = CLEANING_REGEX.sub(' ', new_channel_name).upper()
 
-        # [MODIFIKASI] Filter SPOTV dengan emoji bendera dimatikan agar tetap terangkut
-        # if "SPOTV" in clean_channel_name and re.search(r'[\U0001F1E6-\U0001F1FF]', raw_channel_name):
-        #     continue 
+        if "SPOTV" in clean_channel_name and re.search(r'[\U0001F1E6-\U0001F1FF]', raw_channel_name):
+            continue 
         
         if any(spam in clean_channel_name for spam in SPAM_KEYWORDS):
             continue
 
-        # [TETAP AKTIF] Filter BeIN MAX
         if target_category == "SPORTS":
             if "BEIN" in clean_channel_name and "MAX" in clean_channel_name: continue
 
@@ -442,8 +414,9 @@ def filter_m3u_by_config(config, super_clean_channels):
             continue
 
         if "TVRI" in clean_channel_name:
-            if not ("SPORT" in clean_channel_name or "NASIONAL" in clean_channel_name or clean_channel_name.strip() in ["TVRI", "TVRI HD"]):
-                continue
+            tvri_daerah = ["JABAR", "JATIM", "JATENG", "BALI", "PAPUA", "MALUKU", "SULSEL", "SULUT", "SUMUT", "SUMBAR", "RIAU", "JAMBI", "BANTEN", "JAKARTA", "DKI", "KALTIM", "KALBAR", "KALSEL", "KALTENG", "NTB", "NTT", "GORONTALO", "LAMPUNG", "BENGKULU", "BABEL", "KEPRI", "ACEH", "YOGYAKARTA", "JOGJA", "DIY", "SULTENG", "SULTRA", "SULBAR"]
+            if any(d in clean_channel_name for d in tvri_daerah):
+                continue 
 
         match_found = False
 
@@ -484,17 +457,18 @@ def filter_m3u_by_config(config, super_clean_channels):
                 if not any(s in clean_channel_name for s in ["SPORT", "LIGA"]):
                     match_found = False
             
-            # [MODIFIKASI] Blokir Monopoli Provider untuk CHAMPIONS/CTV dimatikan
-            # if "CHAMPIONS" in clean_channel_name or re.search(r'\bCTV\b', clean_channel_name):
-            #     if "deccotech" not in MASTER_URLS[provider_idx].lower():
-            #         match_found = False
+            # ====================================================================
+            # PERBAIKAN SATPAM CTV: Cek ke Provider URL, bukan ke Stream URL
+            # ====================================================================
+            if "CHAMPIONS" in clean_channel_name or re.search(r'\bCTV\b', clean_channel_name):
+                if "deccotech" not in MASTER_URLS[provider_idx].lower():
+                    match_found = False
 
         if match_found:
             priority_score = get_channel_priority(new_channel_name, target_category)
             
-            # [MODIFIKASI] Pembuang Kasta 999 (Sports Lainnya) dimatikan agar tetap masuk
-            # if target_category == "SPORTS" and priority_score == 999:
-            #     continue 
+            if target_category == "SPORTS" and priority_score == 999:
+                continue 
 
             if force_category:
                 for idx in range(len(current_buffer)):
@@ -536,20 +510,17 @@ def filter_m3u_by_config(config, super_clean_channels):
                 
             log_entry = f"{clean_name_for_log}  [EPG: {epg_name}]"
             
-            if provider_idx not in CATEGORY_LOGS[target_category]:
-                CATEGORY_LOGS[target_category][provider_idx] = {}
-            if priority_score not in CATEGORY_LOGS[target_category][provider_idx]:
-                CATEGORY_LOGS[target_category][provider_idx][priority_score] = set()
-                
-            CATEGORY_LOGS[target_category][provider_idx][priority_score].add(log_entry)
+            if priority_score not in CATEGORY_LOGS[target_category]:
+                CATEGORY_LOGS[target_category][priority_score] = set()
+            CATEGORY_LOGS[target_category][priority_score].add(log_entry)
             
             channels_data.append((priority_score, provider_idx, sort_key, current_buffer, stream_url))
             CATEGORIZED_URLS.add(stream_url)
                     
     if target_category == "LIVE EVENT SPORTS":
-        channels_data.sort(key=lambda x: (x[1], x[2])) 
+        channels_data.sort(key=lambda x: (x[2], x[1])) 
     else:
-        channels_data.sort(key=lambda x: (x[1], x[0], x[2])) 
+        channels_data.sort(key=lambda x: (x[0], x[1], x[2])) 
     
     filtered_lines = ["#EXTM3U"]
     for _, _, _, block_data, s_url in channels_data:
@@ -597,7 +568,6 @@ if __name__ == "__main__":
             if stream_url in GLOBAL_BLACKLIST_URLS:
                 continue
             
-            # [TETAP AKTIF] Fitur Anti-Duplikat URL tetap dibiarkan agar hanya link beda yang masuk
             if stream_url not in master_seen_urls:
                 master_seen_urls.add(stream_url)
                 super_clean_channels.append({
@@ -613,7 +583,7 @@ if __name__ == "__main__":
     for config in CONFIGURATIONS:
         filter_m3u_by_config(config, super_clean_channels)
         
-    print("\n[+] Mencetak file Laporan EPG Lengkap & Khusus SPORTS...")
+    print("\n[+] Mencetak file Laporan EPG Lengkap...")
     
     kasta_names_sports = {
         1: "[KASTA 1 - BEIN]", 2: "[KASTA 2 - CTV]", 3: "[KASTA 3 - SPOTV]",
@@ -633,63 +603,29 @@ if __name__ == "__main__":
         30: "[KASTA 30 - FEEDS & LIVE EVENTS]", 31: "[KASTA 31 - PHILIPPINES & EAST ASIA]"
     }
 
-    # 1. MENCETAK LAPORAN LENGKAP (SEMUA KATEGORI)
     with open("daftar_epg_lengkap.txt", "w", encoding="utf-8") as f:
-        f.write("DAFTAR LENGKAP CHANNEL SEMUA KATEGORI BESERTA ID EPG (DIURUTKAN PER PENYEDIA)\n")
-        f.write("================================================================================\n\n")
+        f.write("DAFTAR LENGKAP CHANNEL SEMUA KATEGORI BESERTA ID EPG\n")
+        f.write("=========================================================\n\n")
         
         for category in sorted(CATEGORY_LOGS.keys()):
             f.write(f"=== KATEGORI: {category} ===\n")
-            provider_dict = CATEGORY_LOGS[category]
+            kasta_dict = CATEGORY_LOGS[category]
             
-            for p_idx in sorted(provider_dict.keys()):
-                provider_url = MASTER_URLS[p_idx] if p_idx < len(MASTER_URLS) and MASTER_URLS[p_idx] else "URL KOSONG / LOKAL"
-                f.write(f"\n  [SUMBER PENYEDIA: {provider_url}]\n")
-                kasta_dict = provider_dict[p_idx]
-                
-                for kasta in sorted(kasta_dict.keys()):
-                    if kasta == 0:
-                        kasta_name = "[JADWAL EVENT]"
-                    elif category == "SPORTS" and kasta <= 31:
-                        kasta_name = kasta_names_sports.get(kasta, f"[KASTA {kasta} - SPORTS]")
-                    elif category == "MOVIES":
-                        kasta_name = f"[KASTA {kasta} - MOVIES]" if kasta != 99 else "[KASTA 99 - FILM UMUM]"
-                    elif kasta == 99:
-                        kasta_name = "[KASTA 99 - UMUM / LAIN-LAIN]"
-                    elif kasta == 999:
-                        kasta_name = "[KASTA 999 - BAWAH / JURU KUNCI]" 
-                    else:
-                        kasta_name = f"[KASTA {kasta} - PRIORITAS UTAMA]"
-                        
-                    f.write(f"    {kasta_name}\n")
-                    for name_with_epg in sorted(kasta_dict[kasta]):
-                        f.write(f"      - {name_with_epg}\n")
-            f.write("\n================================================================================\n\n")
-
-    # 2. MENCETAK KHUSUS KATEGORI SPORTS (HANYA NAMA CHANNEL)
-    with open("daftar_channel_sports.txt", "w", encoding="utf-8") as fs:
-        fs.write("DAFTAR NAMA CHANNEL KHUSUS KATEGORI SPORTS\n")
-        fs.write("===================================================\n\n")
-        
-        if "SPORTS" in CATEGORY_LOGS:
-            sports_dict = CATEGORY_LOGS["SPORTS"]
-            for p_idx in sorted(sports_dict.keys()):
-                provider_url = MASTER_URLS[p_idx] if p_idx < len(MASTER_URLS) and MASTER_URLS[p_idx] else "URL KOSONG / LOKAL"
-                fs.write(f"=== SUMBER: {provider_url} ===\n")
-                kasta_dict = sports_dict[p_idx]
-                
-                for kasta in sorted(kasta_dict.keys()):
-                    kasta_name = kasta_names_sports.get(kasta, f"[KASTA {kasta}]")
-                    fs.write(f"  {kasta_name}\n")
+            for kasta in sorted(kasta_dict.keys()):
+                if kasta == 0:
+                    kasta_name = "[JADWAL EVENT]"
+                elif category == "SPORTS" and kasta <= 31:
+                    kasta_name = kasta_names_sports.get(kasta, f"[KASTA {kasta} - SPORTS]")
+                elif kasta == 99:
+                    kasta_name = "[KASTA 99 - UMUM / LAIN-LAIN]"
+                elif kasta == 999:
+                    kasta_name = "[KASTA 999 - BAWAH / JURU KUNCI]" 
+                else:
+                    kasta_name = f"[KASTA {kasta} - PRIORITAS UTAMA]"
                     
-                    for name_with_epg in sorted(kasta_dict[kasta]):
-                        # Memisahkan nama channel dari tag EPG agar yang tercetak hanya nama murni
-                        channel_name_only = name_with_epg.split("  [EPG:")[0]
-                        fs.write(f"    - {channel_name_only}\n")
-                fs.write("\n")
-        else:
-            fs.write("Tidak ada channel sports yang ditemukan pada pemindaian ini.\n")
-
-    print("\n✅ PROSES SELESAI!")
-    print(" - Daftar lengkap (Semua Kategori & EPG) tersimpan di: daftar_epg_lengkap.txt")
-    print(" - Daftar nama channel (Khusus SPORTS) tersimpan di: daftar_channel_sports.txt")
+                f.write(f"  {kasta_name}\n")
+                for name_with_epg in sorted(kasta_dict[kasta]):
+                    f.write(f"    - {name_with_epg}\n")
+            f.write("\n")
+                
+    print("\n✅ PROSES SELESAI! Daftar Channel dan EPG sukses dicetak ke TXT!")
