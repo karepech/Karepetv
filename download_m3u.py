@@ -19,7 +19,7 @@ MASTER_URLS = [
     "https://raw.githubusercontent.com/jrpahe-del/IPTV/refs/heads/main/RafaDervian.m3u", 
     "https://raw.githubusercontent.com/Bluestraveller13/super-duper-spork/refs/heads/main/KITKATJOSS", 
     "https://deccotech.online/tv/tvstream.html",
-    "", 
+    "https://raw.githubusercontent.com/karepech/Karepetv/refs/heads/main/bein.m3u", 
     "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25",
     "",
     "https://semar25.short.gy",
