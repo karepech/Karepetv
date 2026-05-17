@@ -21,6 +21,7 @@ MASTER_URLS = [
     "https://deccotech.online/tv/tvstream.html",
     "https://raw.githubusercontent.com/tsender57-dotcom/iptv-rox-playlist/refs/heads/main/playlist.m3u", 
     "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25",
+    "https://raw.githubusercontent.com/sportlive18/Star-Share-m3u-Playlist/refs/heads/main/Sayan.m3u",
     "https://semar25.short.gy",
     "https://freeiptv2026.tsender57.workers.dev",
     "https://cixar.web.id/gvision1.m3u",
