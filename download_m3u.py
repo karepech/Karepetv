@@ -24,9 +24,9 @@ MASTER_URLS = [
     "https://semar25.short.gy",
     "https://freeiptv2026.tsender57.workers.dev",
     "https://cixar.web.id/gvision1.m3u",
-    "",
+    "https://raw.githubusercontent.com/pk0979/m3u-live/refs/heads/main/all.m3u",
     "https://liveevent.iptvbonekoe.workers.dev",
-    "",
+    "https://raw.githubusercontent.com/tsender57-dotcom/iptv-rox-playlist/refs/heads/main/rakettv.m3u8",
     "https://bit.ly/KPL203"
 ]
 
