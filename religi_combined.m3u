@@ -3,6 +3,9 @@
 #EXTVLCOPT:http-user-agent=Dalvik/2.1.0 (Linux; U; Android 12; sti6140d360 Build/QT) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 TV Safari/537.36
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 https://nextgenz.my.id/event/pidio/play.mpd?id=7464&type=dash
+#EXTINF:-1 tvg-logo="https://aliman.id/site/wp-content/uploads/2024/09/LOGO-AL-IMAN-TV-2-1024x250.png" group-title="RELIGI",AL IMAN TV
+#EXTVLCOPT:http-user-agent=YouTV/1.5.6-prod.release (Linux;Android 7.1.1) ExoPlayerLib/2.12.3
+https://flv.intechmedia.net/live/ch9.m3u8
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=d2b87b73266741bc9e82b6296f732cd6:acc999bccde4bcdb93a00c5058a2def5
 #EXTVLCOPT:http-user-agent=ExoPlayerDemo/2.15.1 (Linux; Android 13) ExoPlayerLib/2.15.1
@@ -18,15 +21,13 @@ https://wahyu1ptv.pages.dev/AshiilTV-HD.m3u8
 #EXTVLCOPT:http-user-agent=Dalvik/2.1.0 (Linux; U; Android 12; sti6140d360 Build/QT) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 TV Safari/537.36
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 https://nextgenz.my.id/event/pidio/play.mpd?id=18622&type=dash
-#EXTVLCOPT:http-user-agent=ExoPlayerDemo/2.15.1 (Linux; Android 13) ExoPlayerLib/2.15.1
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=33b71e0fd4e74614b55c5e4399e2eb9c:f5bae0f7ea037e59a8b2a7851954ecbe
-#EXTINF:-1 tvg-id="EWTN.id" tvg-name="EWTN.id" tvg-logo="https://mimipipi22.github.io/logo/religion/ewtn.jpg" group-title="RELIGI",EWTN
-https://atemecdnbalancer-voe.sysln.id/live/eds/EWTN/mediampd/EWTN.mpd
 #https://spacetv.my.id/index.mpd?id=7464&type=dash
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
 #EXTINF:-1 tvg-logo="" group-title="RELIGI",FATWA TV
 http://202.169.224.202:8800/udp/239.3.1.6:1234
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/7/79/Hijrah_TV_logo1.png/revision/latest?cb=20201015115131" group-title="RELIGI",HIJRAH TV
+#EXTVLCOPT:http-user-agent=YouTV/1.5.6-prod.release (Linux;Android 7.1.1) ExoPlayerLib/2.12.3
+https://flv.intechmedia.net/live/ch8.m3u8
 #EXTINF:-1 tvg-id="HijrahTV" tvg-name="Hijrah TV" group-title="RELIGI" tvg-logo="https://youtv.live/data/channel/hijrahtv.jpg",HIJRAH TV
 https://flv.intechmedia.net/live/ch8.m3u8|user-agent=Mozilla/5.0
 #EXTINF:-1 tvg-id="Hope" tvg-name="Hope" tvg-logo="https://mimipipi22.github.io/logo/religion/hope.jpg" group-title="RELIGI",HOPE
@@ -35,6 +36,11 @@ https://flv.intechmedia.net/live/ch8.m3u8|user-agent=Mozilla/5.0
 https://gooo.blog/opix/genx.m3u8?id=hope&cyev=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NTg1NDk2NTQsImV4cCI6MTc1ODU2MDQ1NCwiZGF0YSI6eyJ1c2VyIjoiYmFkc2kiLCJjbGllbnRfaXAiOiIxMDMuMTA3Ljg0LjE4MyJ9fQ.wMafBJ9gJ_O3Fz6vZ6mjwls65hSlf-jupah8hsAIDEc
 #EXTINF:-1 tvg-id="insantv" tvg-name="Insan TV" group-title="RELIGI" tvg-logo="https://www.insantv.com/wp-content/uploads/sites/2/2017/06/insantv.png",INSAN TV
 https://flv.intechmedia.net/live/ch1.m3u8|user-agent=Mozilla/5.0
+################RELIGI##################
+#EXTINF:-1 group-logo="https://www.uii.ac.id/wp-content/uploads/2021/10/islamtantanganzaman-1030x558.jpg" group-title="RELIGI"
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgE61xxcOKT0EnE2ysc6_2InllCLRzXbBOyWYfnGo9dg&s" group-title="RELIGI",IZZAH TV
+#EXTVLCOPT:http-user-agent=YouTV/1.5.6-prod.release (Linux;Android 7.1.1) ExoPlayerLib/2.12.3
+https://flv.intechmedia.net/live/ch28.m3u8
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #KODIPROP:inputstream.adaptive.license_key=https://cubmu.caranytv.workers.dev/trv
 #KODIPROP:inputstream.adaptive.stream_headers=user-agent=Xstream XGO/1.22 (Linux;Android 9) ExoPlayerLib/2.10.5
@@ -46,6 +52,13 @@ https://cdnjkt913.transvision.co.id:1000/live/master/2/4028c6856f08326c016f557be
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
 #EXTINF:-1 tvg-id="LIFE.id" tvg-name="LIFE" tvg-logo="https://mimipipi22.github.io/logo/religion/life.jpg" group-title="RELIGI",LIFE
 https://fta2-cdn-flr.visionplus.id/out/v1/a61250017f23459692bf28a6841cf087/index.mpd
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2qMurvWHQTm141ewKlGNFLz03ozz25wy0IxALvNBfZw&s" group-title="RELIGI",MADANI TV
+#EXTVLCOPT:http-user-agent=YouTV/1.5.6-prod.release (Linux;Android 7.1.1) ExoPlayerLib/2.12.3
+#https://stream.asianastream.com/madani/madanitv.smil/chunklist.m3u8
+https://stream.asianastream.com/madani/madanitv.smil/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://makkahtv.tv/assets/images/-436x436.png" group-title="RELIGI",MAKKAH TV
+#EXTVLCOPT:http-user-agent=YouTV/1.5.6-prod.release (Linux;Android 7.1.1) ExoPlayerLib/2.12.3
+https://flv.intechmedia.net/live/ch13.m3u8
 #EXTVLCOPT:http-referrer=https://www.indihometv.com/
 #EXTVLCOPT:http-user-agent=IndiHomeTV/8.7.12 (Linux;Android 15.0.0;) ExoPlayerLib/2.19.1
 #EXTINF:-1 tvg-id="MQTV.id" tvg-name="MQTV" tvg-logo="https://mimipipi22.github.io/logo/religion/mqtv.jpg" group-title="RELIGI",MQTV
@@ -56,10 +69,19 @@ https://wahyu1ptv.pages.dev/MQTV-HD.m3u8
 #EXTVLCOPT:http-user-agent=IndiHomeTV/8.7.12 (Linux;Android 15.0.0;) ExoPlayerLib/2.19.1
 #EXTINF:-1 tvg-id="MTATV.id" group-title="RELIGI" tvg-logo="https://images.indihometv.com/assets/88_MTATV_2025_03_17_14_56_40.png",MTATV
 https://cdn10jtedge.indihometv.com/atm/DASH/mtatv/mtatv-avc1_2500000=7-3277707030000000.mpd
+#EXTINF:-1 tvg-logo="https://www.lyngsat.com/logo/tv/mm/muadz-tv-id.png" group-title="RELIGI",MUADZ TV
+#EXTVLCOPT:http-user-agent=YouTV/1.5.6-prod.release (Linux;Android 7.1.1) ExoPlayerLib/2.12.3
+https://flv.intechmedia.net/live/ch5.m3u8
 #EXTVLCOPT:http-referrer=https://www.indihometv.com/
 #EXTVLCOPT:http-user-agent=IndiHomeTV/8.7.12 (Linux;Android 15.0.0;) ExoPlayerLib/2.19.1
 #EXTINF:-1 tvg-id="MUI.TV.id" tvg-name="MUI TV.id" tvg-logo="https://mimipipi22.github.io/logo/religion/muitv.jpg" group-title="RELIGI",MUITV
 https://cdn10jtedge.indihometv.com/atm/DASH/muitv/muitv-avc1_2500000=7-3277707030000000.mpd
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsnzMbymvPtdvoUzZJolrzGcdmnoY8klwJSMRh4e869beIgOvswFSeU-EtGw1z-HMc4Hk&usqp=CAU" group-title="RELIGI",NAAJIYA TV
+#EXTVLCOPT:http-user-agent=YouTV/1.5.6-prod.release (Linux;Android 7.1.1) ExoPlayerLib/2.12.3
+https://flv.intechmedia.net/live/ch7.m3u8
+#EXTINF:-1 tvg-logo="https://www.tvdakwah.com/wp-content/uploads/2019/03/tv-online-niaga-tv.png" group-title="RELIGI",NIAGA TV
+#EXTVLCOPT:http-user-agent=YouTV/1.5.6-prod.release (Linux;Android 7.1.1) ExoPlayerLib/2.12.3
+https://flv.intechmedia.net/live/ch10.m3u8
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #KODIPROP:inputstream.adaptive.license_key=https://cubmu.caranytv.workers.dev/trv
 #KODIPROP:inputstream.adaptive.stream_headers=user-agent=Xstream XGO/1.22 (Linux;Android 9) ExoPlayerLib/2.10.5
@@ -70,6 +92,8 @@ https://cdnjkt913.transvision.co.id:1000/live/master/3/4028c685730a4243017321f35
 #EXTVLCOPT:http-user-agent=ExoPlayerDemo/2.15.1 (Linux; Android 13) ExoPlayerLib/2.15.1
 #EXTINF:-1 tvg-id="Reformed 21.id" tvg-name="Reformed 21.id" tvg-logo="https://mimipipi22.github.io/logo/religion/reformed21.jpg" group-title="RELIGI",REFORMED 21
 https://atemecdnbalancer-voe.sysln.id/live/eds/Reformed21HD/mediampd/Reformed21HD.mpd
+#EXTINF:-1 tvg-logo="https://rodja.tv/site/wp-content/uploads/2023/02/poster-rodjatv-live-streaming.jpg" group-title="RELIGI",RODJA TV
+https://rodjatv.com/rodjatv/live_240p528kbs/index.m3u8
 #EXTVLCOPT:http-user-agent=DENSGO/3.00.00 (Linux;Android 15.0.0;) ExoPlayerLib/2.19.1
 #EXTVLCOPT:http-referrer=https://delta.dens.tv/
 #EXTINF:-1 tvg-id="Rodja.TV.id" tvg-name="Rodja TV" tvg-logo="https://mimipipi22.github.io/logo/religion/rodjatv.jpg" group-title="RELIGI",RODJA TV
@@ -77,13 +101,25 @@ https://op-group1-swiftservesd-1.dens.tv/s/s14/index.m3u8?app_type=web&userid=li
 #EXTINF:-1 group-title="RELIGI" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLPKzuSGXnuJG5gOA1AGIknytvyxTCq9kQRw&s",RODJA TV 2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36
 http://op-group1-swiftservesd-1.dens.tv/s/s14/index.m3u8?app_type=web&amp;userid=wnctpm5uf2j&amp;chname=RodjaTV
+#EXTINF:-1  tvg-logo="https://rodja.tv/site/wp-content/uploads/2023/02/logo-rodjatv-box.png" group-title="RELIGI",RODJA TV DENS
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0
+http://op-group1-swiftservehd-1.dens.tv/h/h233/02.m3u8
 #EXTINF:-1 group-title="RELIGI" tvg-id="CNBCAsia.id" tvg-url="https://bit.ly/IndonesiaEpg" tvg-logo="https://www.mncvision.id/userfiles/image/channel/cnbc.png",RodjaTV
 #EXTINF:-1 group-title="RELIGI" tvg-id="CNA.id" tvg-url="https://bit.ly/IndonesiaEpg" tvg-logo="https://static.mncnow.id/images/channel/f36bdbf0/d7d8_r32.jpg",RodjaTV
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/whs4030/Logo/refs/heads/main/Rodja_TV.png" group-title="RELIGI",RodjaTV
 https://wahyu1ptv.pages.dev/RodjaTV-HD.m3u8
+#EXTINF:-1 tvg-logo="https://salamtelevisi.com/wp-content/uploads/2022/05/copy-logo-salamtv.png" group-title="RELIGI",SALAM TV
+#EXTVLCOPT:http-user-agent=YouTV/1.5.6-prod.release (Linux;Android 7.1.1) ExoPlayerLib/2.12.3
+https://flv.intechmedia.net/live/ch12.m3u8
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYrSkE7defPaYAeHpUD22vQAb1sCeamnAQa8o7VTf_00as51PC1-05N81QxYAYGahOncI&usqp=CAU" group-title="RELIGI",SIAK TV
+#EXTVLCOPT:http-user-agent=YouTV/1.5.6-prod.release (Linux;Android 7.1.1) ExoPlayerLib/2.12.3
+https://flv.intechmedia.net/live/ch60.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
 #EXTINF:-1 tvg-id="Sunna.TV.id" tvg-name="Sunna TV" tvg-logo="https://mimipipi22.github.io/logo/religion/sunnatv.jpg" group-title="RELIGI",SUNNA TV
 http://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDDEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFsaWRtaW51aiPhnPTI2/madina.stream/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://test.annurs.com/uploads/tv_image/sunnah-tv.png" group-title="RELIGI",SUNNAH JALAN PASTI
+#EXTVLCOPT:http-user-agent=YouTV/1.5.6-prod.release (Linux;Android 7.1.1) ExoPlayerLib/2.12.3
+https://flv.intechmedia.net/live/ch17.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/whs4030/Logo/refs/heads/main/SurauTV.png" group-title="RELIGI",SurauTV
 https://wahyu1ptv.pages.dev/SurauTV-HD.m3u8
 #EXTINF:-1 tvg-logo="" group-title="RELIGI" ,TV 10 HD
