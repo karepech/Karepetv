@@ -427,12 +427,14 @@ def filter_m3u_by_config(config, super_clean_channels):
         clean_group_title = CLEANING_REGEX.sub(' ', raw_group_title).upper()
         clean_channel_name = CLEANING_REGEX.sub(' ', new_channel_name).upper()
 
-        if "SPOTV" in clean_channel_name and re.search(r'[\U0001F1E6-\U0001F1FF]', raw_channel_name):
-            continue 
+        # [MODIFIKASI] Filter SPOTV dengan emoji bendera dimatikan agar tetap terangkut
+        # if "SPOTV" in clean_channel_name and re.search(r'[\U0001F1E6-\U0001F1FF]', raw_channel_name):
+        #     continue 
         
         if any(spam in clean_channel_name for spam in SPAM_KEYWORDS):
             continue
 
+        # [TETAP AKTIF] Filter BeIN MAX
         if target_category == "SPORTS":
             if "BEIN" in clean_channel_name and "MAX" in clean_channel_name: continue
 
@@ -482,15 +484,17 @@ def filter_m3u_by_config(config, super_clean_channels):
                 if not any(s in clean_channel_name for s in ["SPORT", "LIGA"]):
                     match_found = False
             
-            if "CHAMPIONS" in clean_channel_name or re.search(r'\bCTV\b', clean_channel_name):
-                if "deccotech" not in MASTER_URLS[provider_idx].lower():
-                    match_found = False
+            # [MODIFIKASI] Blokir Monopoli Provider untuk CHAMPIONS/CTV dimatikan
+            # if "CHAMPIONS" in clean_channel_name or re.search(r'\bCTV\b', clean_channel_name):
+            #     if "deccotech" not in MASTER_URLS[provider_idx].lower():
+            #         match_found = False
 
         if match_found:
             priority_score = get_channel_priority(new_channel_name, target_category)
             
-            if target_category == "SPORTS" and priority_score == 999:
-                continue 
+            # [MODIFIKASI] Pembuang Kasta 999 (Sports Lainnya) dimatikan agar tetap masuk
+            # if target_category == "SPORTS" and priority_score == 999:
+            #     continue 
 
             if force_category:
                 for idx in range(len(current_buffer)):
@@ -593,6 +597,7 @@ if __name__ == "__main__":
             if stream_url in GLOBAL_BLACKLIST_URLS:
                 continue
             
+            # [TETAP AKTIF] Fitur Anti-Duplikat URL tetap dibiarkan agar hanya link beda yang masuk
             if stream_url not in master_seen_urls:
                 master_seen_urls.add(stream_url)
                 super_clean_channels.append({
