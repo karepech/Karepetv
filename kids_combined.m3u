@@ -675,6 +675,17 @@ https://jmp2.uk/rok-2bc36154da3310eaa692d0ea141ef8e0.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
 #EXTINF:-1 tvg-id="ZooMoo.id" tvg-name="Zoomoo" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHP4gK-yGMUdK7XLqiQlbVuKt_JBxekK5jD0HtMDWzmA&s=10" group-title="KIDS",ZOO MOO (AMG)
 https://zoomoo-samsungau.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="Cartoon" tvg-name="Cartoon" group-title="KIDS" tvg-logo="https://img-zlr1.tv360.vn/image1/2021/09/30/17/16329991075/0c76e4e7e984_480_270.png", Cartoon
+http://pk79.io.vn/tv360/play.php?id=277
+#EXTINF:0 group-title="KIDS" tvg-logo="https://s72139.cdn.mytvnet.vn/vimages/6f/ff/f4/47/73/3b/6ff47-pcartoonnetworkhd-channel-unkn.png",CartoonNetwork HD
+http://hoangai.dpdns.org:8082/mytv/get1.php?id=592
+#EXTINF:-1 tvg-id="VTVcab 21- Cartoon Kids HD" tvg-name="VTVcab 21- Cartoon Kids HD" group-title="KIDS" tvg-logo="https://img-zlr1.tv360.vn/image1/2025/07/21/14/1753083917555/313a5cc8943c_480_270.png", VTVcab 21- Cartoon Kids HD
+http://pk79.io.vn/tv360/play.php?id=179
+#EXTINF:-1 tvg-id="onkids" group-title="KIDS" tvg-logo="https://vietanhtv.id.vn/logo/onkids.png", On Kids
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://vpsttt.vietanhtv.top/tv360/tv360.php?id=179
+#EXTINF:0 group-title="KIDS" tvg-logo="https://s72139.cdn.mytvnet.vn/vimages/57/7e/e3/3d/d3/3b/57e3d-ponkidshd-channel-unkn.png",ON Kids (HD)
+http://hoangai.dpdns.org:8082/mytv/get1.php?id=742
 #EXTINF:-1  group-title="KIDS" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Boomerang_2014_logo.svg/600px-Boomerang_2014_logo.svg.png",BOOMERANG INDI
 https://indihuy.streamized.net/atm/DASH/boomerang/manifest.mpd
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTltEXMZMIQR4bLtcC9ESqtNzhoF-D4ud3ecg&s" group-title="KIDS",BIZNET KIDS HD
