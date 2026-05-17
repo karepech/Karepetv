@@ -760,20 +760,6 @@ https://voa-ingest.akamaized.net/hls/live/2033874/tvmc06/playlist_1080.m3u8
 #EXTINF:-1 tvg-logo="https://images.seeklogo.com/logo-png/42/1/cctv-china-media-group-logo-png_seeklogo-424806.png" group-title="NEWS",CCTV 1
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 http://cdn6.veryfast.filegear-sg.me/live/cctv1/stream.m3u8
-#EXTINF:-1 tvg-id="CNN" tvg-name="CNN" group-title="NEWS" tvg-logo="https://img-zlr1.tv360.vn/image1/2021/10/01/08/1633052531161/ccb61db3f667_480_270.png", CNN
-http://pk79.io.vn/tv360/play.php?id=275
-#EXTINF:0 group-title="NEWS" tvg-logo="https://s72139.cdn.mytvnet.vn/vimages/93/3c/c3/3a/ab/be/93c3a-pcnnhd-channel-unkn.png",CNN HD
-http://hoangai.dpdns.org:8082/mytv/get1.php?id=593
-#EXTINF:0 group-title="NEWS" tvg-logo="https://s72139.cdn.mytvnet.vn/vimages/01/13/3a/a4/4a/a4/013a4-pcnbc-channel-unkn.png",CNBC
-http://hoangai.dpdns.org:8082/mytv/get1.php?id=358
-#EXTINF:-1 tvg-id="CNBC" tvg-name="CNBC" group-title="NEWS" tvg-logo="https://img-zlr1.tv360.vn/image1/2026/03/29/23/1774802901669/9a839f2886f1_480_270.png", CNBC
-http://pk79.io.vn/tv360/play.php?id=9855
-#EXTINF:-1 tvg-id="Bloomberg" tvg-name="Bloomberg" group-title="NEWS" tvg-logo="https://img-zlr1.tv360.vn/image1/2025/12/31/00/1767115195629/60e0ef5853e1_480_270.png", Bloomberg
-http://pk79.io.vn/tv360/play.php?id=237
-#EXTINF:-1 tvg-id="Channel News Asia" tvg-name="Channel News Asia" group-title="NEWS" tvg-logo="https://img-zlr1.tv360.vn/image1/2024/09/30/22/172770964477/d5bbdfff9927_480_270.png", Channel News Asia
-http://pk79.io.vn/tv360/play.php?id=112
-#EXTINF:0 group-title="NEWS" tvg-logo="https://s72139.cdn.mytvnet.vn/vimages/69/91/15/50/06/60/69150-pchannelnewsasiahd-channel-unkn.png",Channel News Asia HD
-http://hoangai.dpdns.org:8082/mytv/get1.php?id=366
 #EXTINF:-1 group-title="NEWS" tvg-url="https://bit.ly/AstroEpg" tvg-name="CNN" tvg-country="ID" tvg-logo="https://w7.pngwing.com/pngs/335/473/png-transparent-cnn-international-fox-news-television-tv-channel-television-text-logo.png", CNN Int HD
 #EXTINF:-1 tvg-name="Bloomberg" tvg-id="BloombergTV.id" tvg-url="https://bit.ly/IndonesiaEpg" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmITD-lgTwN7sjF4EoXeKMF_1NrLhZBcilag&s" group-title="NEWS",Bloomberg
 #EXTINF:-1 tvg-id="NHKWorldJapan" tvg-name="NHKWorldJapan.jp" tvg-url="https://bit.ly/IndonesiaEpg" tvg-logo="https://www.mncvision.id/userfiles/image/channel/channel_355.jpeg" group-title="NEWS",NHK World Japan
