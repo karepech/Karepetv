@@ -207,13 +207,14 @@ def extract_date_from_group(group_title):
     return None
 
 def get_channel_priority(channel_name, category):
-    """ SISTEM 31 KASTA SUPER VIP UNTUK SPORTS & KASTA LAINNYA """
+    """ SISTEM KASTA SUPER VIP UNTUK SPORTS & KASTA LAINNYA """
     n = channel_name.upper()
     
     if category == "SPORTS":
+        if "SPOTV" in n: return 0  # <--- KASTA 0 UNTUK SPOTV ALL PROVIDER
         if "BEIN" in n: return 1
         if re.search(r'\bCTV\b', n) or "CHAMPIONS" in n: return 2
-        if "SPOTV" in n: return 3
+        # (Spotv dihapus dari Kasta 3)
         if "SPORTSTAR" in n: return 4
         if "SOCCER CHANNEL" in n: return 5
         
@@ -542,10 +543,13 @@ def filter_m3u_by_config(config, super_clean_channels):
             channels_data.append((priority_score, provider_idx, sort_key, current_buffer, stream_url))
             CATEGORIZED_URLS.add(stream_url)
                     
+    # LOGIKA PENGURUTAN BARU (KASTA 0 PRIORITAS ABSOLUT)
     if target_category == "LIVE EVENT SPORTS":
         channels_data.sort(key=lambda x: (x[1], x[2])) 
     else:
-        channels_data.sort(key=lambda x: (x[1], x[0], x[2])) 
+        # Jika priority (x[0]) adalah 0, jadikan nilai utamanya 0. Jika bukan 0, jadikan 1.
+        # Kemudian urutkan berdasarkan provider (x[1]), lalu priority asli (x[0]), lalu nama (x[2])
+        channels_data.sort(key=lambda x: (0 if x[0] == 0 else 1, x[1], x[0], x[2])) 
     
     filtered_lines = ["#EXTM3U"]
     for _, _, _, block_data, s_url in channels_data:
@@ -610,8 +614,10 @@ if __name__ == "__main__":
         
     print("\n[+] Mencetak file Laporan EPG Lengkap & Khusus SPORTS...")
     
+    # KAMUS KASTA DIPERBARUI DENGAN KASTA 0
     kasta_names_sports = {
-        1: "[KASTA 1 - BEIN]", 2: "[KASTA 2 - CTV]", 3: "[KASTA 3 - SPOTV]",
+        0: "[KASTA 0 - SPOTV ABSOLUTE (ALL PROVIDERS)]",
+        1: "[KASTA 1 - BEIN]", 2: "[KASTA 2 - CTV]",
         4: "[KASTA 4 - SPORTSTARS]", 5: "[KASTA 5 - SOCCER CHANNEL]",
         6: "[KASTA 6 - LOKAL SPORTS]", 7: "[KASTA 7 - DAZN / ELEVEN]",
         8: "[KASTA 8 - ZIGGO SPORT]", 9: "[KASTA 9 - ARENA SPORT]",
@@ -643,8 +649,11 @@ if __name__ == "__main__":
                 kasta_dict = provider_dict[p_idx]
                 
                 for kasta in sorted(kasta_dict.keys()):
-                    if kasta == 0:
+                    # PEMISAHAN LOGIKA KASTA 0
+                    if category == "LIVE EVENT SPORTS" and kasta == 0:
                         kasta_name = "[JADWAL EVENT]"
+                    elif category == "SPORTS" and kasta == 0:
+                        kasta_name = kasta_names_sports.get(kasta)
                     elif category == "SPORTS" and kasta <= 31:
                         kasta_name = kasta_names_sports.get(kasta, f"[KASTA {kasta} - SPORTS]")
                     elif category == "MOVIES":
