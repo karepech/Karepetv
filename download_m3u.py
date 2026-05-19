@@ -211,10 +211,9 @@ def get_channel_priority(channel_name, category):
     n = channel_name.upper()
     
     if category == "SPORTS":
-        if "SPOTV" in n: return 0  # <--- KASTA 0 UNTUK SPOTV ALL PROVIDER
+        if "SPOTV" in n: return 0  
         if "BEIN" in n: return 1
         if re.search(r'\bCTV\b', n) or "CHAMPIONS" in n: return 2
-        # (Spotv dihapus dari Kasta 3)
         if "SPORTSTAR" in n: return 4
         if "SOCCER CHANNEL" in n: return 5
         
@@ -403,10 +402,7 @@ def filter_m3u_by_config(config, super_clean_channels):
     for ch in super_clean_channels:
         stream_url = ch["url"]
         provider_idx = ch["provider_idx"] 
-        
-        if stream_url in CATEGORIZED_URLS:
-            continue
-
+        provider_url_str = MASTER_URLS[provider_idx] if provider_idx < len(MASTER_URLS) else ""
         current_extinf = ch["extinf"]
         current_buffer = list(ch["buffer"]) 
 
@@ -417,7 +413,18 @@ def filter_m3u_by_config(config, super_clean_channels):
             raw_channel_name = current_extinf.split(',', 1)[1].strip()
         else:
             raw_channel_name = current_extinf.strip()
-        
+            
+        # CEK APAKAH INI SPOTV
+        is_ch_spotv = "SPOTV" in raw_channel_name.upper()
+
+        # BYPASS ANTI-DUPLIKAT URL KHUSUS SPOTV
+        if stream_url in CATEGORIZED_URLS and not is_ch_spotv:
+            continue
+            
+        # BLOKIR SPOTV JIKA DARI bit.ly/KPL
+        if is_ch_spotv and "bit.ly/KPL" in provider_url_str:
+            continue
+
         has_time_pattern = contains_time_pattern(raw_channel_name)
         new_channel_name = raw_channel_name
         extracted_date = None
@@ -543,12 +550,9 @@ def filter_m3u_by_config(config, super_clean_channels):
             channels_data.append((priority_score, provider_idx, sort_key, current_buffer, stream_url))
             CATEGORIZED_URLS.add(stream_url)
                     
-    # LOGIKA PENGURUTAN BARU (KASTA 0 PRIORITAS ABSOLUT)
     if target_category == "LIVE EVENT SPORTS":
         channels_data.sort(key=lambda x: (x[1], x[2])) 
     else:
-        # Jika priority (x[0]) adalah 0, jadikan nilai utamanya 0. Jika bukan 0, jadikan 1.
-        # Kemudian urutkan berdasarkan provider (x[1]), lalu priority asli (x[0]), lalu nama (x[2])
         channels_data.sort(key=lambda x: (0 if x[0] == 0 else 1, x[1], x[0], x[2])) 
     
     filtered_lines = ["#EXTM3U"]
@@ -584,21 +588,38 @@ if __name__ == "__main__":
                     "channels": channels
                 })
                 
-    print("\n[+] Membuat Daftar Saluran Super Bersih (Prioritas Penyedia Nomor 1)...")
+    print("\n[+] Membuat Daftar Saluran Super Bersih (Memasukkan Duplikat SPOTV)...")
     
     super_clean_channels = []
     master_seen_urls = set()
     
     for provider in all_providers_data:
         p_idx = provider["provider_idx"]
+        provider_url_str = MASTER_URLS[p_idx] if p_idx < len(MASTER_URLS) else ""
+        
         for ch in provider["channels"]:
             stream_url = ch["url"]
+            extinf = ch["extinf"]
             
             if stream_url in GLOBAL_BLACKLIST_URLS:
                 continue
             
-            if stream_url not in master_seen_urls:
-                master_seen_urls.add(stream_url)
+            # Ekstrak nama channel untuk deteksi SPOTV
+            if "," in extinf:
+                raw_channel_name = extinf.split(',', 1)[1].strip()
+            else:
+                raw_channel_name = extinf.strip()
+                
+            is_ch_spotv = "SPOTV" in raw_channel_name.upper()
+            
+            # BLOKIR SPOTV JIKA DARI bit.ly/KPL (pada tahap deduplikasi awal)
+            if is_ch_spotv and "bit.ly/KPL" in provider_url_str:
+                continue
+            
+            # BYPASS ANTI-DUPLIKAT KHUSUS SPOTV
+            if is_ch_spotv or stream_url not in master_seen_urls:
+                if not is_ch_spotv:
+                    master_seen_urls.add(stream_url)
                 super_clean_channels.append({
                     "buffer": ch["buffer"],
                     "extinf": ch["extinf"],
@@ -606,7 +627,7 @@ if __name__ == "__main__":
                     "provider_idx": p_idx
                 }) 
     
-    print(f"Total saluran unik (Link Beda) yang didapat: {len(super_clean_channels)}")
+    print(f"Total saluran yang diproses: {len(super_clean_channels)}")
     print("\n[+] Memulai proses filtering Omni-Kasta...")
     
     for config in CONFIGURATIONS:
@@ -614,9 +635,8 @@ if __name__ == "__main__":
         
     print("\n[+] Mencetak file Laporan EPG Lengkap & Khusus SPORTS...")
     
-    # KAMUS KASTA DIPERBARUI DENGAN KASTA 0
     kasta_names_sports = {
-        0: "[KASTA 0 - SPOTV ABSOLUTE (ALL PROVIDERS)]",
+        0: "[KASTA 0 - SPOTV ABSOLUTE (ALL PROVIDERS EX. KPL)]",
         1: "[KASTA 1 - BEIN]", 2: "[KASTA 2 - CTV]",
         4: "[KASTA 4 - SPORTSTARS]", 5: "[KASTA 5 - SOCCER CHANNEL]",
         6: "[KASTA 6 - LOKAL SPORTS]", 7: "[KASTA 7 - DAZN / ELEVEN]",
@@ -649,7 +669,6 @@ if __name__ == "__main__":
                 kasta_dict = provider_dict[p_idx]
                 
                 for kasta in sorted(kasta_dict.keys()):
-                    # PEMISAHAN LOGIKA KASTA 0
                     if category == "LIVE EVENT SPORTS" and kasta == 0:
                         kasta_name = "[JADWAL EVENT]"
                     elif category == "SPORTS" and kasta == 0:
