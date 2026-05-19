@@ -15,18 +15,19 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # ====================================================================
 
 MASTER_URLS = [
-    "https://gist.githubusercontent.com/zentral-qtrung/531720c17d089702dd7ac4b96db6e1ce/raw/91a8ccd82ef831df356bc53b6a7f621a9ba913f4/sports.m3u",
+    "https://raw.githubusercontent.com/Love4vn/Test/refs/heads/main/hubsport.m3u",
+    "https://gist.githubusercontent.com/zentral-qtrung/531720c17d089702dd7ac4b96db6e1ce/raw/a40d137328263e58d827dccee2974079eae092b5/sports.m3u",
     "https://raw.githubusercontent.com/jrpahe-del/IPTV/refs/heads/main/RafaDervian.m3u", 
-    "https://raw.githubusercontent.com/Bluestraveller13/super-duper-spork/refs/heads/main/KITKATJOSS", 
-    "https://deccotech.online/tv/tvstream.html",
     "", 
+    "https://deccotech.online/tv/tvstream.html",
+    "https://raw.githubusercontent.com/Bluestraveller13/super-duper-spork/refs/heads/main/KITKATJOSS", 
     "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25",
     "",
     "https://semar25.short.gy",
     "https://freeiptv2026.tsender57.workers.dev",
     "",
     "",
-    "http://sauridigital.my.id/kerbaunakal/2026TVGNS.html",
+    "",
     "https://raw.githubusercontent.com/tsender57-dotcom/iptv-rox-playlist/refs/heads/main/rakettv.m3u8",
     "https://bit.ly/KPL203"
 ]
