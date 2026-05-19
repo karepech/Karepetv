@@ -26,7 +26,7 @@ MASTER_URLS = [
     "https://freeiptv2026.tsender57.workers.dev",
     "",
     "",
-    "",
+    "http://sauridigital.my.id/kerbaunakal/2026TVGNS.html",
     "https://raw.githubusercontent.com/tsender57-dotcom/iptv-rox-playlist/refs/heads/main/rakettv.m3u8",
     "https://bit.ly/KPL203"
 ]
