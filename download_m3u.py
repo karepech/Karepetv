@@ -1,4 +1,4 @@
-yimport requests
+import requests
 import re
 import concurrent.futures
 import random
@@ -15,19 +15,20 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # ====================================================================
 
 MASTER_URLS = [
-    "https://deccotech.online/tv/tvstream.html",
+    "https://gist.githubusercontent.com/zentral-qtrung/531720c17d089702dd7ac4b96db6e1ce/raw/91a8ccd82ef831df356bc53b6a7f621a9ba913f4/sports.m3u",
     "https://raw.githubusercontent.com/jrpahe-del/IPTV/refs/heads/main/RafaDervian.m3u", 
     "https://raw.githubusercontent.com/Bluestraveller13/super-duper-spork/refs/heads/main/KITKATJOSS", 
-    "",
-    "https://raw.githubusercontent.com/tsender57-dotcom/iptv-rox-playlist/refs/heads/main/playlist.m3u", 
+    "https://deccotech.online/tv/tvstream.html",
+    "", 
     "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25",
+    "",
     "https://semar25.short.gy",
     "https://freeiptv2026.tsender57.workers.dev",
-    "https://gist.githubusercontent.com/zentral-qtrung/531720c17d089702dd7ac4b96db6e1ce/raw/91a8ccd82ef831df356bc53b6a7f621a9ba913f4/sports.m3u",
-    "https://bit.ly/KPL203",
-    "https://liveevent.iptvbonekoe.workers.dev",
     "",
-    ""
+    "",
+    "",
+    "https://raw.githubusercontent.com/tsender57-dotcom/iptv-rox-playlist/refs/heads/main/rakettv.m3u8",
+    "https://bit.ly/KPL203"
 ]
 
 ALL_POSITIVE_KEYWORDS = {
@@ -438,10 +439,6 @@ def filter_m3u_by_config(config, super_clean_channels):
         if "RADIO" in clean_channel_name or "RADIO" in clean_group_title:
             continue
 
-        # ====================================================================
-        # ATURAN KETAT TVRI: Lolos HANYA jika mengandung "SPORT", "NASIONAL", 
-        # atau bernama persis "TVRI" / "TVRI HD"
-        # ====================================================================
         if "TVRI" in clean_channel_name:
             if not ("SPORT" in clean_channel_name or "NASIONAL" in clean_channel_name or clean_channel_name.strip() in ["TVRI", "TVRI HD"]):
                 continue
@@ -485,7 +482,6 @@ def filter_m3u_by_config(config, super_clean_channels):
                 if not any(s in clean_channel_name for s in ["SPORT", "LIGA"]):
                     match_found = False
             
-            # SATPAM CTV: Cek ke Provider URL
             if "CHAMPIONS" in clean_channel_name or re.search(r'\bCTV\b', clean_channel_name):
                 if "deccotech" not in MASTER_URLS[provider_idx].lower():
                     match_found = False
@@ -547,9 +543,9 @@ def filter_m3u_by_config(config, super_clean_channels):
             CATEGORIZED_URLS.add(stream_url)
                     
     if target_category == "LIVE EVENT SPORTS":
-        channels_data.sort(key=lambda x: (x[1], x[2])) # Provider -> Nama
+        channels_data.sort(key=lambda x: (x[1], x[2])) 
     else:
-        channels_data.sort(key=lambda x: (x[1], x[0], x[2])) # Provider -> Kasta -> Nama
+        channels_data.sort(key=lambda x: (x[1], x[0], x[2])) 
     
     filtered_lines = ["#EXTM3U"]
     for _, _, _, block_data, s_url in channels_data:
@@ -612,7 +608,7 @@ if __name__ == "__main__":
     for config in CONFIGURATIONS:
         filter_m3u_by_config(config, super_clean_channels)
         
-    print("\n[+] Mencetak file Laporan EPG Lengkap...")
+    print("\n[+] Mencetak file Laporan EPG Lengkap & Khusus SPORTS...")
     
     kasta_names_sports = {
         1: "[KASTA 1 - BEIN]", 2: "[KASTA 2 - CTV]", 3: "[KASTA 3 - SPOTV]",
@@ -632,6 +628,7 @@ if __name__ == "__main__":
         30: "[KASTA 30 - FEEDS & LIVE EVENTS]", 31: "[KASTA 31 - PHILIPPINES & EAST ASIA]"
     }
 
+    # 1. MENCETAK LAPORAN LENGKAP (SEMUA KATEGORI)
     with open("daftar_epg_lengkap.txt", "w", encoding="utf-8") as f:
         f.write("DAFTAR LENGKAP CHANNEL SEMUA KATEGORI BESERTA ID EPG (DIURUTKAN PER PENYEDIA)\n")
         f.write("================================================================================\n\n")
@@ -663,5 +660,31 @@ if __name__ == "__main__":
                     for name_with_epg in sorted(kasta_dict[kasta]):
                         f.write(f"      - {name_with_epg}\n")
             f.write("\n================================================================================\n\n")
+
+    # 2. MENCETAK KHUSUS KATEGORI SPORTS (HANYA NAMA CHANNEL)
+    with open("daftar_channel_sports.txt", "w", encoding="utf-8") as fs:
+        fs.write("DAFTAR NAMA CHANNEL KHUSUS KATEGORI SPORTS\n")
+        fs.write("===================================================\n\n")
+        
+        if "SPORTS" in CATEGORY_LOGS:
+            sports_dict = CATEGORY_LOGS["SPORTS"]
+            for p_idx in sorted(sports_dict.keys()):
+                provider_url = MASTER_URLS[p_idx] if p_idx < len(MASTER_URLS) and MASTER_URLS[p_idx] else "URL KOSONG / LOKAL"
+                fs.write(f"=== SUMBER: {provider_url} ===\n")
+                kasta_dict = sports_dict[p_idx]
                 
-    print("\n✅ PROSES SELESAI! Daftar Channel dan EPG sukses dicetak ke TXT (Terurut Per Penyedia)!")
+                for kasta in sorted(kasta_dict.keys()):
+                    kasta_name = kasta_names_sports.get(kasta, f"[KASTA {kasta}]")
+                    fs.write(f"  {kasta_name}\n")
+                    
+                    for name_with_epg in sorted(kasta_dict[kasta]):
+                        # Memisahkan nama channel dari tag EPG agar yang tercetak hanya nama murni
+                        channel_name_only = name_with_epg.split("  [EPG:")[0]
+                        fs.write(f"    - {channel_name_only}\n")
+                fs.write("\n")
+        else:
+            fs.write("Tidak ada channel sports yang ditemukan pada pemindaian ini.\n")
+
+    print("\n✅ PROSES SELESAI!")
+    print(" - Daftar lengkap (Semua Kategori & EPG) tersimpan di: daftar_epg_lengkap.txt")
+    print(" - Daftar nama channel (Khusus SPORTS) tersimpan di: daftar_channel_sports.txt")
