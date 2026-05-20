@@ -581,6 +581,14 @@ https://rtvstream.rtv.co.id:4555/hls/rtv.m3u8
 #EXTVLCOPT:http-referrer=https://www.dens.tv/
 #EXTINF:-1 tvg-id="Berita Satu" group-title="INDONESIA" tvg-url="https://raw.githubusercontent.com/apistech/project/refs/heads/main/epgs/guide.xml" tvg-logo="https://thumbor.prod.vidiocdn.com/cSyueV9bIgkdLkvVWqIZOlR6TFQ=/230x230/filters:quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/square_image/18280/c7fc8f.png",Berita Satu (DensTV) (KitKat)
 https://raw.githubusercontent.com/Bluestraveller13/super-duper-spork/refs/heads/main/BeritaSatu.m3u8
+#EXTVLCOPT:http-referrer=https://www.visionplus.id/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:150.0) Gecko/20100101 Firefox/150.0F
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=47d8c564b0eb4d6ba83f7b155c827024:098f10e1734d00c0177bae1236db60fc
+#EXTINF:-1 tvg-id="BTV" group-title="INDONESIA" tvg-url="https://raw.githubusercontent.com/apistech/project/refs/heads/main/epgs/guide.xml" tvg-logo="https://thumbor.prod.vidiocdn.com/DoRk_b8tcmbwDHroNxP2-o6QRKU=/230x230/filters:quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/square_image/6165/8c950f.png",BTV (V+) (KitKat)
+https://d2xz2v5wuvgur6.cloudfront.net/out/v1/3112ca4fbc2642e79ecaf9b2b0999e07/index.mpd
 #EXTVLCOPT:http-referrer=https://maxstream.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:150.0) Gecko/20100101 Firefox/150.0
 #KODIPROP:inputstream.adaptive.stream_headers=User-Agent=|user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
@@ -627,14 +635,6 @@ https://hgmtv.com:19360/garudatvlivestreaming/480p.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0
 #EXTINF:-1 tvg-id="Magna Channel" tvg-url="https://raw.githubusercontent.com/apistech/project/refs/heads/main/epgs/guide.xml" tvg-logo="https://thumbor.prod.vidiocdn.com/43T_Bt_R_JSQugV3MxoAeYze7OQ=/230x230/filters:quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/square_image/7230/7d6bf5.jpg" group-title="INDONESIA",MAGNA Channel (KitKat)
 https://op-group1-swiftservehd-1.dens.tv/h/h24/index.m3u8
-#EXTVLCOPT:http-referrer=https://maxstream.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:150.0) Gecko/20100101 Firefox/150.0F
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=b6568e0d0a23406ebbe24619fdd063ed:4d6a505b7361c5e1b07ffa72155d045f
-#EXTINF:-1 tvg-id="MDTV" group-title="INDONESIA" tvg-url="tvg-url="https://raw.githubusercontent.com/apistech/project/refs/heads/main/epgs/guide.xml" tvg-logo="https://thumbor.prod.vidiocdn.com/LCZH_yEBnTYEQzrU1pB7w7ev-Bw=/230x230/filters:quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/square_image/875/325605.png",MDTV (KitKat)
-https://cdn08jtedge.indihometv.com/dassdvr/134/net/manifest_wuseetv.mpd
 #EXTINF:-1 tvg-id="MDTV" group-title="INDONESIA" tvg-url="tvg-url="https://raw.githubusercontent.com/apistech/project/refs/heads/main/epgs/guide.xml" tvg-logo="https://thumbor.prod.vidiocdn.com/LCZH_yEBnTYEQzrU1pB7w7ev-Bw=/230x230/filters:quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/square_image/875/325605.png",MDTV (KitKat)
 http://op-group1-swiftservesd-1.dens.tv/h/h06/01.m3u8
 #EXTINF:-1 tvg-id="Musik Indonesia" tvg-url="https://raw.githubusercontent.com/apistech/project/refs/heads/main/epgs/guide.xml" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/b5/Logo_Musik_Indonesia.png" group-title="INDONESIA",Musik Indonesia (KitKat)
@@ -658,11 +658,11 @@ https://indihuy.streamized.net/atm/DASH/sinpotv/sinpotv-avc1_2500000=7-327770703
 #EXTVLCOPT:http-origin=https://www.vidio.com
 #EXTINF:-1 group-title="INDONESIA" tvg-logo="https://thumbor.prod.vidiocdn.com/wZs8Xxf9gMUStqOa3fM3rznnDWM=/640x198/filters:quality(70)/vidio-web-prod-user/uploads/user/cover/187019218/ProfileBannerSinPoTV-a703fecf7ac03ff6.png",SIN PO TV (KitKat)
 https://ratu77.adptv.workers.dev/index.mpd?id=19046&type=dash
-#EXTVLCOPT:http-referrer=https://maxstream.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:150.0) Gecko/20100101 Firefox/150.0
-#KODIPROP:inputstream.adaptive.license_type=clearkey
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:150.0) Gecko/20100101 Firefox/150.0F
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
 #EXTINF:-1 group-title="INDONESIA" tvg-id="SindoNews" tvg-url="https://raw.githubusercontent.com/apistech/project/refs/heads/main/epgs/guide.xml" tvg-logo="https://nabelsakha.com/wp-content/uploads/2023/10/Sindonews.png",SindoNews (KitKat)
-https://cdn10jtedge.indihometv.com/atm/DASH/mncnews/mncnews-avc1_2500000=7-3277707030000000.mpd
+https://cdnbal1.indihometv.com/atm/DASH/mncnews/manifest.mpd
 #EXTINF:-1 group-title="INDONESIA" tvg-logo="https://i.postimg.cc/nrPHX66g/ezgif-6-a457ded6d0.png",RCTI (Lalajo)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
 http://103.58.160.157:8278/720-RCTI/playlist.m3u8
@@ -909,33 +909,23 @@ https://cdnbal1.indihometv.com/atm/DASH/mncnews/mncnews-avc1_2500000=7-327770703
 #EXTINF:-1 tvg-id="1537038" tvg-name="PRIME: ABC INDIANAPOLIS (WRTV) ᴿᴬᵂ" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/13797.png?ver=39230" group-title="INDONESIA" tvg-chno="23131",PRIME: ABC INDIANAPOLIS (WRTV) ᴿᴬᵂ (Love4vn-Mac)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 12A5206D30F403E7C191B7FDFD22A64B
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1537038&extension=ts&play_token=ga7oZdyYtL
+#EXTVLCOPT:http-header=Authorization: Bearer 8C26AC11435A5073B4335C4952678082
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1537038&extension=ts&play_token=JQ6atX1MhE
 #EXTINF:-1 tvg-id="1920502" tvg-name="PRIME| ABC INDIANAPOLIS (WRTV) ᴿᴬᵂ" tvg-logo="http://51.158.145.100/picons/logos/USA/1920502.png" group-title="INDONESIA" tvg-chno="7381",PRIME| ABC INDIANAPOLIS (WRTV) ᴿᴬᵂ (Love4vn-Mac)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 9BC85EC7D6E1179C3144081369AA6CB0
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1920502&extension=ts&play_token=Rp8iE5RERI
-#EXTINF:-1 tvg-id="1076561" tvg-name="US - ABC 06 INDIANAPOLIS IN (WRTV) HD" tvg-logo="https://go4.pw/USA/abc1.png" group-title="INDONESIA" tvg-chno="23597",US - ABC 06 INDIANAPOLIS IN (WRTV) HD (Love4vn-Mac)
+#EXTVLCOPT:http-header=Authorization: Bearer 6500898A9EABD7E78B99FD6AFA7C1C71
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1920502&extension=ts&play_token=C4Sq8i5teZ
+#EXTINF:-1 tvg-id="1058924" tvg-name="┃ID┃ SOCCER CHANNEL HD" tvg-logo="http://picon.tivi-ott.net:25461/picon//INDONESIA/SOCCER CHANNEL.png" group-title="INDONESIA" tvg-chno="23631",┃ID┃ SOCCER CHANNEL HD (Love4vn-Mac)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 3C3D7F7021C988B7320E01BFA7A9AAAA
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1076561
-#EXTINF:-1 tvg-id="1247978" tvg-name="ID - Golf Plus" tvg-logo="" group-title="INDONESIA" tvg-chno="25489",ID - Golf Plus (Love4vn-Mac)
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 1A2CB06F35614130220F504C95ABD03B
+http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=1058924&extension=ts&play_token=3rvTu6lkD8
+#EXTINF:-1 tvg-id="1058972" tvg-name="┃ID┃ SOCCER CHANNEL HD" tvg-logo="http://picon.tivi-ott.net:25461/picon//INDONESIA/SOCCER CHANNEL.png" group-title="INDONESIA" tvg-chno="23632",┃ID┃ SOCCER CHANNEL HD (Love4vn-Mac)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 3C3D7F7021C988B7320E01BFA7A9AAAA
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1247978
-#EXTINF:-1 tvg-id="830541" tvg-name="ID - SOCCER CHANNEL HD" tvg-logo="https://go4.pw/INDONESIA/Soccer_Channel.png" group-title="INDONESIA" tvg-chno="25323",ID - SOCCER CHANNEL HD (Love4vn-Mac)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 3C3D7F7021C988B7320E01BFA7A9AAAA
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/830541
-#EXTINF:-1 tvg-id="1247874" tvg-name="ID - Soccer Channel-HD" tvg-logo="" group-title="INDONESIA" tvg-chno="25304",ID - Soccer Channel-HD (Love4vn-Mac)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 3C3D7F7021C988B7320E01BFA7A9AAAA
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1247874
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 1A2CB06F35614130220F504C95ABD03B
+http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=1058972&extension=ts&play_token=x7sIAWNn16
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/RCTI_logo_2015.svg/250px-RCTI_logo_2015.svg.png" group-title="INDONESIA",RCTI (2) R+ (KPL203)
 #EXTVLCOPT:http-user-agent=android-R+
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/

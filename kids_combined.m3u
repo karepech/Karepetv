@@ -203,8 +203,14 @@ http://tv.mediacdn.ru/live/solntse/playlist.m3u8
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=7ef57f7f3e8cf0efe4f3d5772a7cbb35:0ac6d617095fbe0ca7f4c9ae72fa5f51
 https://a190aivottlinear-a.akamaihd.net/OTTB/iad-nitro/live/clients/dash/enc/ampfzrmpam/out/v1/e08f3866c80040f2bc494cb48ebc7bce/cenc.mpd
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=a2d1BSN7gxmPWYCAKJgA9aH4yNuERpTvs4uiX:cdd48fa884dc0c3a3f85aeebca13d444
+#EXTINF:-1 tvg-url="https://raw.githubusercontent.com/apistech/project/refs/heads/main/epgs/guide.xml" tvg-logo="https://www.pngall.com/wp-content/uploads/13/Cartoon-Network-Logo-PNG-Image.png" group-title="KIDS" tvg-id="Cartoon Network" ,Cartoon Network (KitKat)
+https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cartoonnetworkhd/default/index.mpd
 #EXTINF:-1 tvg-id="Cartoonito" tvg-url="https://raw.githubusercontent.com/apistech/project/refs/heads/main/epgs/guide.xml" group-title="KIDS" tvg-logo="https://i.pinimg.com/736x/7b/ae/af/7baeafff7f408e5be7136eb1e62d60a8.jpg",Cartoonito (KitKat)
-https://indihuy.streamized.net/atm/DASH/boomerang/manifest.mpd
+https://cdnbal1.indihometv.com/atm/DASH/boomerang/manifest.mpd
 #EXTVLCOPT:http-referrer=https://www.firstmedia.com
 #EXTVLCOPT:http-user-agent=ExoPlayerDemo/2.15.1 (Linux; Android 13) ExoPlayerLib/2.15.1
 #KODIPROP:inputstream.adaptive.license_type=clearkey
@@ -226,6 +232,11 @@ https://cdn08jtedge.indihometv.com/dassdvr/130/duniaanak/manifest_wuseetv.mpd
 https://ratuvidio.adptv.workers.dev/index.mpd?id=7052
 #EXTINF:-1 group-title="KIDS" tvg-logo="https://raw.githubusercontent.com/apistech/project/refs/heads/main/logo/imageCir_180x180_CLMAXKids_2026_01_31_00_41_18.jpg",Max Kids (KitKat)
 https://cdnbal1.indihometv.com/atm/DASH/indikids/manifest.mpd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:150.0) Gecko/20100101 Firefox/150.0F
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#EXTINF:-1 tvg-id="Mykidz" tvg-url="https://raw.githubusercontent.com/apistech/project/refs/heads/main/epgs/guide.xml" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/6d/M_Kidz.png/revision/latest?cb=20200201131221" group-title="KIDS",MyKidz (KitKat)
+https://cdnbal1.indihometv.com/atm/DASH/mykids/manifest.mpd
 #EXTINF:-1 tvg-id="disney" tvg-logo="" group-title="KIDS",Disney (Lalajo)
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=52358519f886446d82834a803b36f796:58b6ac8e07d354b178255e03b9d0f819
@@ -354,10 +365,6 @@ http://103.58.160.157:8278/720-CARTOONNETWORK/playlist.m3u8
 https://s2129134.cdn.mytvnet.vn/pkg20/live_dzones/cn.smil/manifest.mpd
 #EXTINF:-1 tvg-id="cartoon_network_sd" tvg-name="Cartoon Network" tvg-logo="https://images.toffeelive.com/images/program/27232/logo/240x240/mobile_logo_320294001679201065.png" group-title="KIDS",Cartoon Network (Lalajo)
 https://ottbanglaplatform.com/tv/toffee/live.php?id=cartoon_network_sd&e=.m3u8
-#EXTINF:-1 tvg-id="cartoon-network" tvg-logo="https://poster.starhubgo.com/Linear_channels2/316_1920x1080_HTV.png" group-title="KIDS",Cartoon Network (Lalajo)
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=a2d1f552ff9541558b3296b5a932136b:cdd48fa884dc0c3a3f85aeebca13d444
-https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cartoonnetworkhd/default/index.mpd
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="KIDS",Cartoon Network (Lalajo)
 https://canaiss.fazoeli.co.za/fontes/smart/cartoonnetwork.m3u8
 #EXTINF:-1 tvg-id="cartoon_network_hd" tvg-name="Cartoon Network HD" tvg-logo="https://images.toffeelive.com/images/program/26942/logo/240x240/mobile_logo_443429001678950505.png" group-title="KIDS",Cartoon Network HD (Lalajo)
@@ -617,53 +624,75 @@ https://gooo.blog/opix/genx.m3u8?id=vtv&cyev=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ
 #EXTINF:-1 tvg-id="1801856" tvg-name="Aston Villa vs Nottingham Forest @ May 7 10:50 PM :Disney+ SE  04" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14863.png?ver=13962" group-title="KIDS" tvg-chno="2212",Aston Villa vs Nottingham Forest @ May 7 10:50 PM :Disney+ SE  04 (Love4vn-Mac)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 12A5206D30F403E7C191B7FDFD22A64B
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1801856&extension=ts&play_token=8hs1j92Rtb
+#EXTVLCOPT:http-header=Authorization: Bearer 8C26AC11435A5073B4335C4952678082
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1801856&extension=ts&play_token=mJCj1vwRH4
 #EXTINF:-1 tvg-id="2026416" tvg-name="Aston Villa vs Nottingham Forest @ May 7 10:50 PM :Disney+ SE  04" tvg-logo="http://51.158.145.100/picons/logos/PPV/DISNEYPLUS.png" group-title="KIDS" tvg-chno="2042",Aston Villa vs Nottingham Forest @ May 7 10:50 PM :Disney+ SE  04 (Love4vn-Mac)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 9BC85EC7D6E1179C3144081369AA6CB0
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2026416&extension=ts&play_token=lVeHPHrGRo
+#EXTVLCOPT:http-header=Authorization: Bearer 6500898A9EABD7E78B99FD6AFA7C1C71
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2026416&extension=ts&play_token=ovOj1eSWSN
 #EXTINF:-1 tvg-id="1801858" tvg-name="Crystal Palace vs Shakhtar @ May 7 10:50 PM :Disney+ SE  02" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14863.png?ver=13962" group-title="KIDS" tvg-chno="2210",Crystal Palace vs Shakhtar @ May 7 10:50 PM :Disney+ SE  02 (Love4vn-Mac)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 12A5206D30F403E7C191B7FDFD22A64B
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1801858&extension=ts&play_token=GiF44p5arG
+#EXTVLCOPT:http-header=Authorization: Bearer 8C26AC11435A5073B4335C4952678082
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1801858&extension=ts&play_token=hRjHaIbJJ1
 #EXTINF:-1 tvg-id="2026418" tvg-name="Crystal Palace vs Shakhtar @ May 7 10:50 PM :Disney+ SE  02" tvg-logo="http://51.158.145.100/picons/logos/PPV/DISNEYPLUS.png" group-title="KIDS" tvg-chno="2040",Crystal Palace vs Shakhtar @ May 7 10:50 PM :Disney+ SE  02 (Love4vn-Mac)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 9BC85EC7D6E1179C3144081369AA6CB0
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2026418&extension=ts&play_token=9sJ7nNmTdb
+#EXTVLCOPT:http-header=Authorization: Bearer 6500898A9EABD7E78B99FD6AFA7C1C71
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2026418&extension=ts&play_token=UXXENdoSPN
 #EXTINF:-1 tvg-id="1984089" tvg-name="ENDED | BOURNEMOUTH VS. MANCHESTER CITY | Tue 19 May 16:20 -02 (BR) | 8K EXCLUSIVE | BR: DISNEY+ PPV 37" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14863.png?ver=13962" group-title="KIDS" tvg-chno="41391",ENDED | BOURNEMOUTH VS. MANCHESTER CITY | Tue 19 May 16:20 -02 (BR) | 8K EXCLUSIVE | BR: DISNEY+ PPV 37 (Love4vn-Mac)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 12A5206D30F403E7C191B7FDFD22A64B
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1984089&extension=ts&play_token=pVkKwFZMFx
+#EXTVLCOPT:http-header=Authorization: Bearer 8C26AC11435A5073B4335C4952678082
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1984089&extension=ts&play_token=LcSsGU2YpH
 #EXTINF:-1 tvg-id="2070597" tvg-name="ENDED | BOURNEMOUTH VS. MANCHESTER CITY | Tue 19 May 16:20 -02 (BR) | 8K EXCLUSIVE | BR: DISNEY+ PPV 37" tvg-logo="http://51.158.145.100/picons/logos/PPV/DISNEYPLUS.png" group-title="KIDS" tvg-chno="26161",ENDED | BOURNEMOUTH VS. MANCHESTER CITY | Tue 19 May 16:20 -02 (BR) | 8K EXCLUSIVE | BR: DISNEY+ PPV 37 (Love4vn-Mac)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 9BC85EC7D6E1179C3144081369AA6CB0
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2070597&extension=ts&play_token=l0gpcIRMnY
+#EXTVLCOPT:http-header=Authorization: Bearer 6500898A9EABD7E78B99FD6AFA7C1C71
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2070597&extension=ts&play_token=NSMlioIdSg
 #EXTINF:-1 tvg-id="1984088" tvg-name="ENDED | CHELSEA VS. TOTTENHAM HOTSPUR | Tue 19 May 17:05 -02 (BR) | 8K EXCLUSIVE | BR: DISNEY+ PPV 38" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14863.png?ver=13962" group-title="KIDS" tvg-chno="41392",ENDED | CHELSEA VS. TOTTENHAM HOTSPUR | Tue 19 May 17:05 -02 (BR) | 8K EXCLUSIVE | BR: DISNEY+ PPV 38 (Love4vn-Mac)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 12A5206D30F403E7C191B7FDFD22A64B
-http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1984088&extension=ts&play_token=NTJCR0CSRR
+#EXTVLCOPT:http-header=Authorization: Bearer 8C26AC11435A5073B4335C4952678082
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1984088&extension=ts&play_token=5Rf5nHjUrA
 #EXTINF:-1 tvg-id="2070596" tvg-name="ENDED | CHELSEA VS. TOTTENHAM HOTSPUR | Tue 19 May 17:05 -02 (BR) | 8K EXCLUSIVE | BR: DISNEY+ PPV 38" tvg-logo="http://51.158.145.100/picons/logos/PPV/DISNEYPLUS.png" group-title="KIDS" tvg-chno="26162",ENDED | CHELSEA VS. TOTTENHAM HOTSPUR | Tue 19 May 17:05 -02 (BR) | 8K EXCLUSIVE | BR: DISNEY+ PPV 38 (Love4vn-Mac)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 9BC85EC7D6E1179C3144081369AA6CB0
-http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2070596&extension=ts&play_token=qtDt116Ujp
-#EXTINF:-1 tvg-id="1412820" tvg-name="UK - APPLE F1 02 : MIAMI: RACE (KIDS) – MAY 03 – 12:50 PM ET / 05:50 PM UK" tvg-logo="https://go4.pw/appletv.png" group-title="KIDS" tvg-chno="6065",UK - APPLE F1 02 : MIAMI: RACE (KIDS) – MAY 03 – 12:50 PM ET / 05:50 PM UK (Love4vn-Mac)
+#EXTVLCOPT:http-header=Authorization: Bearer 6500898A9EABD7E78B99FD6AFA7C1C71
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2070596&extension=ts&play_token=G4xWBpAER5
+#EXTINF:-1 tvg-id="1984020" tvg-name="NEXT | AO VIVO: FREIBURG X ASTON VILLA | EUROPA LEAGUE (CAZÉTV) | Wed 20 May 16:00 -02 (BR) | 8K EXCLUSIVE | BR: DISNEY+ PPV 105" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14863.png?ver=13962" group-title="KIDS" tvg-chno="41460",NEXT | AO VIVO: FREIBURG X ASTON VILLA | EUROPA LEAGUE (CAZÉTV) | Wed 20 May 16:00 -02 (BR) | 8K EXCLUSIVE | BR: DISNEY+ PPV 105 (Love4vn-Mac)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 3C3D7F7021C988B7320E01BFA7A9AAAA
-http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1412820
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 8C26AC11435A5073B4335C4952678082
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1984020&extension=ts&play_token=au0hXtUEL3
+#EXTINF:-1 tvg-id="2070528" tvg-name="NEXT | AO VIVO: FREIBURG X ASTON VILLA | EUROPA LEAGUE (CAZÉTV) | Wed 20 May 16:00 -02 (BR) | 8K EXCLUSIVE | BR: DISNEY+ PPV 105" tvg-logo="http://51.158.145.100/picons/logos/PPV/DISNEYPLUS.png" group-title="KIDS" tvg-chno="26230",NEXT | AO VIVO: FREIBURG X ASTON VILLA | EUROPA LEAGUE (CAZÉTV) | Wed 20 May 16:00 -02 (BR) | 8K EXCLUSIVE | BR: DISNEY+ PPV 105 (Love4vn-Mac)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 6500898A9EABD7E78B99FD6AFA7C1C71
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=2070528&extension=ts&play_token=gg4KUCUWRf
+#EXTINF:-1 tvg-id="1538889" tvg-name="NEXT | FREIBURG - ASTON VILLA | Wed 20 May 20:00 CEST (DK) | 8K EXCLUSIVE | DK: DISNEY+ PPV 12" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/14863.png?ver=13962" group-title="KIDS" tvg-chno="20209",NEXT | FREIBURG - ASTON VILLA | Wed 20 May 20:00 CEST (DK) | 8K EXCLUSIVE | DK: DISNEY+ PPV 12 (Love4vn-Mac)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:7D:93:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 8C26AC11435A5073B4335C4952678082
+http://assarao4k.com:80/play/live.php?mac=00:1A:79:7D:93:30&stream=1538889&extension=ts&play_token=j3Mxs7VhAO
+#EXTINF:-1 tvg-id="1934524" tvg-name="NEXT | FREIBURG - ASTON VILLA | Wed 20 May 20:00 CEST (DK) | 8K EXCLUSIVE | DK: DISNEY+ PPV 12" tvg-logo="http://51.158.145.100/picons/logos/PPV/DISNEYPLUS.png" group-title="KIDS" tvg-chno="2791",NEXT | FREIBURG - ASTON VILLA | Wed 20 May 20:00 CEST (DK) | 8K EXCLUSIVE | DK: DISNEY+ PPV 12 (Love4vn-Mac)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:BC:94:42; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 6500898A9EABD7E78B99FD6AFA7C1C71
+http://atk97.online:80/play/live.php?mac=00:1A:79:BC:94:42&stream=1934524&extension=ts&play_token=JpW8zJl5DD
 #EXTINF:-1 tvg-id="225718" tvg-name="┃NL┃ VIAPLAY FORMULE 1 | KIDS |" tvg-logo="http://picon.tivi-ott.net:25461/picon/NEDERLAND/VIAPLAYHD.png" group-title="KIDS" tvg-chno="326",┃NL┃ VIAPLAY FORMULE 1 | KIDS | (Love4vn-Mac)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 1D4298D3F97D2D3E0D30832926328EAB
-http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=225718&extension=ts&play_token=tvG44HSw7o
+#EXTVLCOPT:http-header=Authorization: Bearer EB003936D0465251FE4E4F6F12F58782
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=225718&extension=ts&play_token=jB76BMoxf8
+#EXTINF:-1 tvg-id="225718" tvg-name="┃NL┃ VIAPLAY FORMULE 1 | KIDS |" tvg-logo="http://picon.tivi-ott.net:25461/picon/NEDERLAND/VIAPLAYHD.png" group-title="KIDS" tvg-chno="373",┃NL┃ VIAPLAY FORMULE 1 | KIDS | (Love4vn-Mac)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 1A2CB06F35614130220F504C95ABD03B
+http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=225718&extension=ts&play_token=fuQWehxkQD
+#EXTINF:-1  group-title="KIDS" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Boomerang_2014_logo.svg/600px-Boomerang_2014_logo.svg.png",BOOMERANG INDI (KPL203)
+https://indihuy.streamized.net/atm/DASH/boomerang/manifest.mpd
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTltEXMZMIQR4bLtcC9ESqtNzhoF-D4ud3ecg&s" group-title="KIDS",BIZNET KIDS HD (KPL203)
 http://livestream.biznetvideo.net/biznet_kids/smil:kids.smil/manifest.mpd?bizkeylivestarttime=0&bizkeyliveendtime=0&bizkeyliveCustomParameter=myParameter&bizkeylivehash=qAri1M2xu_MAlnHwVRtOs24lR8Y_HSDijN2CRNghifUllhYqQSDlkd0qE8CkZwxC
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPJKWUxYUQeWs-g3hBQHHFC9w9QaIyy7iw4w&s" group-title="KIDS",FUN PLANET (KPL203)
