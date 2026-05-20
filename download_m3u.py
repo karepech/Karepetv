@@ -32,6 +32,25 @@ MASTER_URLS = [
     "https://bit.ly/KPL203"
 ]
 
+# Daftar Alias Provider untuk dimunculkan di belakang nama channel
+PROVIDER_NAMES = [
+    "Love4vn-Test",      # 0
+    "Qtrung",            # 1
+    "RafaDervian",       # 2
+    "Love4vn-Live",      # 3
+    "Deccotech",         # 4
+    "KitKat",            # 5
+    "Lalajo",            # 6
+    "Love4vn-Mac",       # 7
+    "Semar25",           # 8
+    "FreeIPTV",          # 9
+    "Lokal-1",           # 10
+    "Lokal-2",           # 11
+    "Lokal-3",           # 12
+    "RaketTV",           # 13
+    "KPL203"             # 14
+]
+
 ALL_POSITIVE_KEYWORDS = {
     "EVENT_ONLY": ["EVENT", "SEA GAMES", "PREMIER LEAGUE", "LA LIGA", "SERIE A", "BUNDESLIGA", "LIGUE 1", "EREDIVISIE", "LIGA 1 INDONESIA", "LIGA PRO SAUDI"],
     "SPORTS_LIVE": ["SPORT", "SPORTS", "LIVE", "LANGSUNG", "OLAHRAGA", "MATCH", "LIGA", "FOOTBALL", "BEIN", "SPOTV", "BE IN", "CTV", "DAZN", "ELEVEN", "ZIGGO", "SSC", "HUB", "PREMIER", "SETANTA", "PRIMA", "FUBO", "ARENA"],
@@ -501,9 +520,14 @@ def filter_m3u_by_config(config, super_clean_channels):
             if target_category == "SPORTS" and priority_score == 999:
                 continue 
 
+            # ====== MODIFIKASI: MENYISIPKAN NAMA PENYEDIA KE DALAM NAMA CHANNEL ======
+            provider_name = PROVIDER_NAMES[provider_idx] if provider_idx < len(PROVIDER_NAMES) else f"Prov-{provider_idx}"
+            final_channel_name = f"{new_channel_name.strip()} ({provider_name})"
+            # =========================================================================
+
             if force_category:
-                for idx in range(len(current_buffer)):
-                    b_line = current_buffer[idx]
+                for idx_buf in range(len(current_buffer)):
+                    b_line = current_buffer[idx_buf]
                     
                     if b_line.startswith("#EXTINF"):
                         if 'group-title="' in b_line:
@@ -515,22 +539,23 @@ def filter_m3u_by_config(config, super_clean_channels):
                             else:
                                 b_line = f'{b_line} group-title="{target_category}"'
                         
-                        if new_channel_name != raw_channel_name:
-                            parts = b_line.split(',', 1)
-                            if len(parts) == 2:
-                                b_line = f"{parts[0]},{new_channel_name}"
+                        # Gantikan nama channel lama dengan nama yang sudah ditambahkan (Provider)
+                        parts = b_line.split(',', 1)
+                        if len(parts) == 2:
+                            b_line = f"{parts[0]},{final_channel_name}"
                                 
-                        current_buffer[idx] = b_line
+                        current_buffer[idx_buf] = b_line
                         
                     elif b_line.upper().startswith("#EXTGRP:"):
-                        current_buffer[idx] = f"#EXTGRP:{target_category}"
+                        current_buffer[idx_buf] = f"#EXTGRP:{target_category}"
             
-            sort_key = new_channel_name.upper()
+            sort_key = final_channel_name.upper()
             if target_category == "LIVE EVENT SPORTS" and extracted_date:
                 date_parts = extracted_date.split('-')
                 if len(date_parts) == 3:
-                    sort_key = f"{date_parts[2]}-{date_parts[1]}-{date_parts[0]} {new_channel_name.upper()}"
+                    sort_key = f"{date_parts[2]}-{date_parts[1]}-{date_parts[0]} {final_channel_name.upper()}"
             
+            # Membersihkan nama dari kurung siku untuk logs, tapi tetap mempertahankan alias provider
             clean_name_for_log = re.sub(r'\[.*?\]|\(.*?\)', '', new_channel_name).strip()
             
             tvg_id_match = re.search(r'tvg-id="([^"]*)"', current_extinf, re.IGNORECASE)
@@ -539,7 +564,8 @@ def filter_m3u_by_config(config, super_clean_channels):
                 tvg_name_match = re.search(r'tvg-name="([^"]*)"', current_extinf, re.IGNORECASE)
                 epg_name = tvg_name_match.group(1).strip() if tvg_name_match else "KOSONG"
                 
-            log_entry = f"{clean_name_for_log}  [EPG: {epg_name}]"
+            # Log sekarang akan memunculkan "(ProviderName) [EPG: ...]"
+            log_entry = f"{clean_name_for_log} ({provider_name})  [EPG: {epg_name}]"
             
             if provider_idx not in CATEGORY_LOGS[target_category]:
                 CATEGORY_LOGS[target_category][provider_idx] = {}
