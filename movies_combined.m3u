@@ -2948,6 +2948,16 @@ https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Zeecinemalu/default/manifest.mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=d27bc072600d431faa7d0c8441a5fb43:3b61f64edc79497d9da31d612a88f8ea
 https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Zeecinemalu/default/main.mpd?
+#EXTINF:-1 tvg-id="1001711" tvg-name="┃NL┃ VIAPLAY THRILLER 1 HD" tvg-logo="http://picon.tivi-ott.net:25461/picon/NEDERLAND/VIAPLAY/VIAPLAY.png" group-title="MOVIES" tvg-chno="572",┃NL┃ VIAPLAY THRILLER 1 HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 1D4298D3F97D2D3E0D30832926328EAB
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=1001711&extension=ts&play_token=qjCP8NvW0i
+#EXTINF:-1 tvg-id="1001713" tvg-name="┃NL┃ VIAPLAY THRILLER 2 HD" tvg-logo="http://picon.tivi-ott.net:25461/picon/NEDERLAND/VIAPLAY/VIAPLAY.png" group-title="MOVIES" tvg-chno="573",┃NL┃ VIAPLAY THRILLER 2 HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:51:32:B0; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 1D4298D3F97D2D3E0D30832926328EAB
+http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:51:32:B0&stream=1001713&extension=ts&play_token=atbCR3afxC
 #EXTINF:-1 tvg-id="411.astro" tvg-logo="https://linear-poster.astro.com.my/prod/logo/HBO_v1.png" group-title="MOVIES",HBO
 #KODIPROP:inputstream.adaptive.stream_headers=Origin=https://www.indihometv.com
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://www.indihometv.com
