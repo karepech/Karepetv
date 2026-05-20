@@ -22,7 +22,7 @@ MASTER_URLS = [
     "https://deccotech.online/tv/tvstream.html",
     "https://raw.githubusercontent.com/Bluestraveller13/super-duper-spork/refs/heads/main/KITKATJOSS", 
     "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25",
-    "https://raw.githubusercontent.com/Love4vn/Stalker2M3U/refs/heads/1/Mac_playlist.m3u",
+    "",
     "https://semar25.short.gy",
     "https://freeiptv2026.tsender57.workers.dev",
     "",
