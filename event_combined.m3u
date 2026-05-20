@@ -1,27 +1,37 @@
 #EXTM3U
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://1000logos.net/wp-content/uploads/2018/10/Chinese-Super-League-logo.png",00:45 WIB PAOK vs Celta de Vigo (RafaDervian)
+#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://1000logos.net/wp-content/uploads/2018/10/Chinese-Super-League-logo.png",00:45 WIB PAOK vs Celta de Vigo (Love4vn-Live)
 http://38.75.136.137:98/gslb/dsdqpub/fyzq.m3u8?auth=testpub
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
-#EXTINF:-1 tvg-id="Sportstars 4"  tvg-url="mmm" tvg-logo="https://st2.depositphotos.com/2219730/47349/i/450/depositphotos_473491512-stock-photo-manchester-lancashire-england-may-2021.jpg" group-title="BACKUP EVENT SPORTS",02:00 WIB EVENT BOLA+ 2026 (RafaDervian)
+#EXTINF:-1 tvg-id="Sportstars 4"  tvg-url="mmm" tvg-logo="https://st2.depositphotos.com/2219730/47349/i/450/depositphotos_473491512-stock-photo-manchester-lancashire-england-may-2021.jpg" group-title="BACKUP EVENT SPORTS",02:00 WIB EVENT BOLA+ 2026 (Love4vn-Live)
 https://get.perfecttv.net/mutv.mpd
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=ec7ee27d83764e4b845c48cca31c8eef:9c0e4191203fccb0fde34ee29999129e
-#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/motogp.png",02:00 WIB MOTOGP+ (RafaDervian)
+#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/motogp.png",02:00 WIB MOTOGP+ (Love4vn-Live)
 https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_spotvhd/default/index.mpd
 #EXTVLCOPT:http-referrer=https://rohan116.ultronx1.cfd/000/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36
-#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://cdn.fctoolshub.com/game_assets/fc25/leagues/dark/330.png",03:00 WIB Celtic vs Stuttgart (RafaDervian)
+#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://cdn.fctoolshub.com/game_assets/fc25/leagues/dark/330.png",03:00 WIB Celtic vs Stuttgart (Love4vn-Live)
 https://rohan116.ultronx1.cfd/puk1/usergenrx0cir27aq.m3u8
 #EXTVLCOPT:http-referrer=https://www.visionplus.id/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:145.0) Gecko/20100101 Firefox/145.0
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=1539f043249e413d91906036f305831e:671e24fd8d234c7f38d85055815f902a
-#EXTINF:-1 tvg-id="SPOTV 2" tvg-url="mmm" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/motogp.png" group-title="BACKUP EVENT SPORTS",17:00 WIB MOTOGP+ (RafaDervian)
+#EXTINF:-1 tvg-id="SPOTV 2" tvg-url="mmm" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/motogp.png" group-title="BACKUP EVENT SPORTS",17:00 WIB MOTOGP+ (Love4vn-Live)
 https://d2tjypxxy769fn.cloudfront.net/out/v1/46d9cf39b9a84183b8d5022ac8f4bc41/index.mpd
-#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/motogp.png",17:00 WIB MOTOGP+ (RafaDervian)
+#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/motogp.png",17:00 WIB MOTOGP+ (Love4vn-Live)
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg02873-kravemedia-mtrspt1-sportstribal/playlist.m3u8?channel_name=MTRSPT1&content_genre=Drag%20Racing%2CMotor%20Racing%2CMotorsport%2CRacing%2CSport&ic=IAB17%2CIAB17-1&provider=FreeLiveSports&us_privacy=[US_PRIVACY]&gdpr=[GDPR]&gdpr_consent=[CONSENT_STRING]&coppa=0&content_livestream=1&p=sportstribal&url=[REF]&lmt=[LAT]&did=[DEVICE_ID]
+##EXTINF:-1 group-title="EVENT" tvg-logo="https://iili.io/30Jk8Al.md.png",002 Cara Menonton
+#https://shorter.me/aJXUE
+#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_37zkgjYEy-FYpXYOhwe9sKOjuBrj-esFEg&s",20:00 WIB Nizhnevartovsk vs MGTU Moscow (KPL203)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.buzzscorelinez.com/ajax/chanel/
+https://live1.pro2cdnlive.com/live/channel50.m3u8?wsSecret=91b4014d1fa01486020aaee675e32bec&wsABSTime=1779320253
+#EXTINF:-1 group-title="BACKUP EVENT SPORTS" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4uZhlxYfU2OzJoPemb6yYJ4sqLPoC22VPkQ&s",22:30 WIB Murom W vs Minchanka W (KPL203)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://xl365.buzzscorelinez.com/ajax/chanel/
+https://live1.pro2cdnlive.com/live/channel51.m3u8?wsSecret=c5e2531adffca14ba0b01e0a5ad8d681&wsABSTime=1779320432
