@@ -396,12 +396,6 @@ https://fgtvlive.fgtv.com/smil:fgtv.smil/playlist.m3u8
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=f1e8c2d97a3b4f5d8c669d1a2b7e4c30:03aaa7dcf893e6b934aeb3c46f9df5b9
 https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/hgtv_hd1/default/index.mpd
-#EXTINF:-1 group-title="INDONESIA" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/1/16/KG1_Kien_Giang.png/revision/latest?cb=20200622095807",KienGiangTV (RafaDervian)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:145.0) Gecko/20100101 Firefox/145.0
-http://tv.kgtv.vn/live/kgtv/kgtv.m3u8
-#EXTINF:-1 group-title="INDONESIA" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/1/16/KG1_Kien_Giang.png/revision/latest?cb=20200622095807",KienGiangTV1 (RafaDervian)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:145.0) Gecko/20100101 Firefox/145.0
-http://tv.kgtv.vn/live/kgtv1/kgtv1.m3u8
 #EXTINF:-1 tvg-id="TRANS7" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtogRbJgPxkWVJeb7RK93WDteZFWKwrPzNtQ&s" group-title="INDONESIA",Selaparangtv (RafaDervian)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0
 https://selaparangtv.siar.us/live/selaparangtv.m3u8
