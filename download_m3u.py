@@ -1,4 +1,4 @@
-import requests
+weimport requests
 import re
 import concurrent.futures
 import random
@@ -34,21 +34,21 @@ MASTER_URLS = [
 
 # Daftar Alias Provider untuk dimunculkan di belakang nama channel
 PROVIDER_NAMES = [
-    "Love4vn-Test",      # 0
-    "Qtrung",            # 1
+    " ",                 # 0
+    "Qt",                # 1
     "Bakulwifi",         # 2
     "Love4vn-Live",      # 3
-    "Deccotech",         # 4
-    "KitKat",            # 5
-    "Lalajo",            # 6
-    "Love4vn-Mac",       # 7
+    "Dec",               # 4
+    "Kit",               # 5
+    "La",                # 6
+    "Love",              # 7
     "Semar25",           # 8
     "FreeIPTV",          # 9
     "Lokal-1",           # 10
     "Lokal-2",           # 11
     "Lokal-3",           # 12
     "RaketTV",           # 13
-    "KPL203"             # 14
+    "KP"                 # 14
 ]
 
 ALL_POSITIVE_KEYWORDS = {
