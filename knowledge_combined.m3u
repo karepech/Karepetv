@@ -456,17 +456,19 @@ https://op-group1-swiftservehd-1.dens.tv/h/h236/02.m3u8
 #EXTINF:-1 group-title="KNOWLEDGE" tvg-logo="https://www.kds.tw/wp-content/uploads/2025/09/5f5238eb84441_i5BZ-480x320.png",ASTRO NATGEO WILD (KitKat)
 #EXTVLCOPT:http-user-agent=ExoPlayerDemo/2.15.1 (Linux; Android 12) ExoPlayerLib/2.15.1
 https://rakyattv.my.id/donate/stream.php/.m3u8?id=natgeo-wild-hd
-#EXTINF:-1 tvg-id="nat geo" tvg-logo="" group-title="KNOWLEDGE",Nat Geo HD (KitKat)
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=52358519f886446d82834a803b36f796:58b6ac8e07d354b178255e03b9d0f819
-https://mega.z5cable.com/bpk-tv/nat_geo_hd/default/index.mpd
-#EXTINF:-1 tvg-logo="https://s37328.pcdn.co/wp-content/uploads/2021/07/megacable-welcomes-edye__thumb.jpg" group-title="KNOWLEDGE",Nat Geo HD (KitKat)
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=52358519f886446d82834a803b36f796:58b6ac8e07d354b178255e03b9d0f819
-https://bks400-tol-110.quieroxview.com.mx/bpk-tv/nat_geo_hd/default/index.mpd
+#EXTINF:-1 group-title="KNOWLEDGE",Nat Geo HD (KitKat)
+http://85.14.32.26:8800/udp/239.100.10.169:5000
+#EXTINF:-1 group-title="KNOWLEDGE",Nat Geo Wild HD (KitKat)
+http://85.14.32.26:8800/udp/239.100.10.70:5000
+#EXTINF:-1 group-title="KNOWLEDGE",natgeo (KitKat)
+http://198.58.104.90:8989/natgeo/index.m3u8
+#EXTINF:-1 group-title="KNOWLEDGE",NATGEO (KitKat)
+http://179.60.51.134:8888/NATGEO/index.m3u8
 #EXTINF:-1 group-title="KNOWLEDGE" tvg-logo="https://www.kds.tw/wp-content/uploads/2025/09/5d2af69bb9249_fbAn-480x320.png",NATGEO TAMIL (KitKat)
 #EXTVLCOPT:http-user-agent=ExoPlayerDemo/2.15.1 (Linux; Android 12) ExoPlayerLib/2.15.1
 https://rakyattv.my.id/donate/stream.php/.m3u8?id=natgeo-tamil
+#EXTINF:-1 group-title="KNOWLEDGE",NatGeo Wild (KitKat)
+http://85.14.32.26:8800/udp/239.100.10.68:5000
 #EXTINF:-1 group-title="KNOWLEDGE" tvg-logo="https://www.kds.tw/wp-content/uploads/2025/09/5d2af6e3dec12_1y8U-480x320.jpg",NATGEO WILD TAMIL (KitKat)
 #EXTVLCOPT:http-user-agent=ExoPlayerDemo/2.15.1 (Linux; Android 12) ExoPlayerLib/2.15.1
 https://rakyattv.my.id/donate/stream.php/.m3u8?id=natgeo-wild-tamil
@@ -479,10 +481,16 @@ https://rakyattv.my.id/donate/stream.php/.m3u8?id=natgeo-wild-tamil
 #KODIPROP:inputstream.adaptive.license_key=ffa7c3ca6020428c919e13b817b7e31b:adf163c6c1729e6f77668d4e49f32352
 #EXTINF:-1 tvg-id="NationalGeographicWest.us" tvg-logo="https://mimipipi22.github.io/logo/png/natgeowild.png" group-title="KNOWLEDGE",NATGEO WILD 🇺🇸 (KitKat)
 https://at-live-3.tentcdn.eu/bpk-tv/Nat_Geo_People_HD/default/index.mpd
+#EXTINF:-1 group-title="KNOWLEDGE",natgeowild (KitKat)
+http://198.58.104.90:8989/natgeowild/index.m3u8
 #EXTINF:-1 group-title="KNOWLEDGE",natgeowild HD (KitKat)
 http://84.17.50.102/natgeowild/index.m3u8
+#EXTINF:-1 group-title="KNOWLEDGE",National Geographic (KitKat)
+http://85.14.32.26:8800/udp/239.100.10.69:5000
 #EXTINF:-1 group-title="KNOWLEDGE",National geographic (KitKat)
 https://a3569457567-s70378.cdn.ngenix.net/national_geographic/1/index.m3u8
+#EXTINF:-1 group-title="KNOWLEDGE",USA_NAT_GEO (KitKat)
+http://23.237.104.106:8080/USA_NAT_GEO/index.m3u8
 #EXTINF:-1 tvg-id="discovery" group-title="KNOWLEDGE" tvg-logo="https://freem3u.xyz/static/images/global/discovery-channel.png",Discovery (KitKat)
 #EXTVLCOPT:http-user-agent=Dalvik/2.1.0
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -512,14 +520,10 @@ https://atemeshield1-voe.sysln.id/live/eds/DiscoveryAsiaHD/mediampd/DiscoveryAsi
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=934907b134be3963a6263a453846924c:788e2835fb98568aed2f47bbdc091515
 https://s2129134.cdn.mytvnet.vn/pkg20/live_dzones/dscasia.smil/manifest.mpd
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="KNOWLEDGE",Discovery Channel (KitKat)
-https://canaiss.fazoeli.co.za/fontes/smart/discoverychannel.m3u8
-#EXTINF:-1 tvg-logo="https://s37328.pcdn.co/wp-content/uploads/2021/07/megacable-welcomes-edye__thumb.jpg" group-title="KNOWLEDGE",Discovery Channel HD (KitKat)
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=52358519f886446d82834a803b36f796:58b6ac8e07d354b178255e03b9d0f819
-https://bks400-tol-110.quieroxview.com.mx/bpk-tv/discovery_channel_hd/default/index.mpd
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="KNOWLEDGE",Discovery H&H (KitKat)
-https://canaiss.fazoeli.co.za/fontes/smart/discoveryhh.m3u8
+#EXTINF:-1 group-title="KNOWLEDGE",Discovery Channel (KitKat)
+http://85.14.32.26:8800/udp/239.100.10.37:5000
+#EXTINF:-1 group-title="KNOWLEDGE",Discovery Channel HD (KitKat)
+http://85.14.32.26:8800/udp/239.100.10.147:5000
 #EXTINF:0 tvg-id="Discovery Home and Health.cl" group-title="KNOWLEDGE" tvg-logo="https://raw.githubusercontent.com/JeanMercado2009/tv-logos/refs/heads/main/countries/world-latin-america/discovery-home-and-health-lam.png",Discovery H&H (México) (KitKat)
 #EXTVLCOPT:network-caching=1000
 #KODIPROP:inputstream.adaptive.license_type=clearkey
@@ -528,43 +532,19 @@ https://canaiss.fazoeli.co.za/fontes/smart/discoveryhh.m3u8
 https://hfc-tlx-live-atv-cdn.izzigo.tv/13/out/u/dash/DISCOVERY-HOME-AND-HEALTH-HD/default.mpd
 #EXTINF:-1 tvg-id="discovery_hd" tvg-name="Discovery HD" tvg-logo="https://images.toffeelive.com/images/program/18093/logo/240x240/mobile_logo_868363001673181438.png" group-title="KNOWLEDGE",Discovery HD (KitKat)
 https://ottbanglaplatform.com/tv/toffee/live.php?id=discovery_hd&e=.m3u8
-#EXTINF:-1 tvg-id="discovery" tvg-logo="" group-title="KNOWLEDGE",Discovery HD (KitKat)
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=52358519f886446d82834a803b36f796:58b6ac8e07d354b178255e03b9d0f819
-https://mega.z5cable.com/bpk-tv/discovery_channel_hd/default/index.mpd
 #EXTINF:-1 group-title="KNOWLEDGE",Discovery HD (KitKat)
 http://151.80.18.177:86/Discovery_HD/index.m3u8
-#EXTINF:-1 tvg-id="id" tvg-logo="" group-title="KNOWLEDGE",Discovery ID (KitKat)
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=0c39778fe8fb4f9f8574016b3d4ae2ed:232b1f450f2e37f47fdd5b678a8a546d
-https://mega.z5cable.com/bpk-tv/id_hd/default/index.mpd
 #EXTINF:-1 tvg-name="Discovery Life Channel HD" tvg-id="discovery-life-channel" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/discovery-life-us.png?raw=true" group-title="KNOWLEDGE",DISCOVERY LIFE (KitKat)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:90.0) Gecko/20100101 Firefox/140.0
 http://supersonictv.live:8080/864072/196529/22075
 #EXTINF:-1 tvg-id="discovery_science" tvg-name="Discovery Science" tvg-logo="https://images.toffeelive.com/images/program/378/logo/240x240/mobile_logo_604754001673177502.png" group-title="KNOWLEDGE",Discovery Science (KitKat)
 https://ottbanglaplatform.com/tv/toffee/live.php?id=discovery_science&e=.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="KNOWLEDGE",Discovery Science (KitKat)
-https://canaiss.fazoeli.co.za/fontes/smart/discoveryscience.m3u8
-#EXTINF:-1 tvg-logo="https://s37328.pcdn.co/wp-content/uploads/2021/07/megacable-welcomes-edye__thumb.jpg" group-title="KNOWLEDGE",Discovery Science HD (KitKat)
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=52358519f886446d82834a803b36f796:58b6ac8e07d354b178255e03b9d0f819
-https://bks400-tol-110.quieroxview.com.mx/bpk-tv/discovery_science_hd/default/index.mpd
 #EXTINF:-1 tvg-id="discovery_turbo" tvg-name="Discovery Turbo" tvg-logo="https://images.toffeelive.com/images/program/379/logo/240x240/mobile_logo_775127001673177876.png" group-title="KNOWLEDGE",Discovery Turbo (KitKat)
 https://ottbanglaplatform.com/tv/toffee/live.php?id=discovery_turbo&e=.m3u8
-#EXTINF:-1 tvg-id="discovery turbo" tvg-logo="" group-title="KNOWLEDGE",Discovery Turbo (KitKat)
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=0c39778fe8fb4f9f8574016b3d4ae2ed:232b1f450f2e37f47fdd5b678a8a546d
-https://mega.z5cable.com/bpk-tv/discovery_turbo_hd/default/index.mpd
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="KNOWLEDGE",Discovery Turbo (KitKat)
-https://canaiss.fazoeli.co.za/fontes/smart/discoveryturbo.m3u8
-#EXTINF:-1 tvg-logo="https://s37328.pcdn.co/wp-content/uploads/2021/07/megacable-welcomes-edye__thumb.jpg" group-title="KNOWLEDGE",Discovery Turbo HD (KitKat)
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=0c39778fe8fb4f9f8574016b3d4ae2ed:232b1f450f2e37f47fdd5b678a8a546d
-https://bks400-tol-110.quieroxview.com.mx/bpk-tv/discovery_turbo_hd/default/index.mpd
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="KNOWLEDGE",Discovery World (KitKat)
-https://canaiss.fazoeli.co.za/fontes/smart/discoveryworld.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="KNOWLEDGE",Investigation Discovery (KitKat)
-https://canaiss.fazoeli.co.za/fontes/smart/discoveryid.m3u8
+#EXTINF:-1 group-title="KNOWLEDGE",DISCOVERY-CHANNEL (KitKat)
+http://179.60.51.134:8888/DISCOVERY-CHANNEL/index.m3u8
+#EXTINF:-1 group-title="KNOWLEDGE",ID-DISCOVERY (KitKat)
+http://179.60.51.134:8888/ID-DISCOVERY/index.m3u8
 #EXTINF:-1 tvg-id="discovary_investigation_hd" tvg-name="Investigation Discovery HD" tvg-logo="https://images.toffeelive.com/images/program/18094/logo/240x240/mobile_logo_154805001673178308.png" group-title="KNOWLEDGE",Investigation Discovery HD (KitKat)
 https://ottbanglaplatform.com/tv/toffee/live.php?id=discovary_investigation_hd&e=.m3u8
 #EXTINF:-1 group-title="KNOWLEDGE",USA_DISCOVERY (KitKat)
@@ -575,14 +555,10 @@ http://23.237.104.106:8080/USA_DISCOVERY/index.m3u8
 https://cdn08jtedge.indihometv.com/dassdvr/194/animalplanet/manifest_w816003161_qRFZS.mpd?encp=&uid=&expp=
 #EXTINF:-1 tvg-id="animal_planet_sd" tvg-name="Animal Planet" tvg-logo="https://images.toffeelive.com/images/program/359/logo/240x240/mobile_logo_835681001673175607.png" group-title="KNOWLEDGE",Animal Planet (KitKat)
 https://ottbanglaplatform.com/tv/toffee/live.php?id=animal_planet_sd&e=.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="KNOWLEDGE",Animal Planet (KitKat)
-https://canaiss.fazoeli.co.za/fontes/smart/animalplanet.m3u8
+#EXTINF:-1 group-title="KNOWLEDGE",Animal Planet (KitKat)
+http://85.14.32.26:8800/udp/239.100.10.14:5000
 #EXTINF:-1 tvg-id="animal_planet_hd" tvg-name="Animal Planet HD" tvg-logo="https://images.toffeelive.com/images/program/18096/logo/240x240/mobile_logo_032001001673194753.png" group-title="KNOWLEDGE",Animal Planet HD (KitKat)
 https://ottbanglaplatform.com/tv/toffee/live.php?id=animal_planet_hd&e=.m3u8
-#EXTINF:-1 tvg-id="animal planet" tvg-logo="" group-title="KNOWLEDGE",Animal Planet HD (KitKat)
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=0c39778fe8fb4f9f8574016b3d4ae2ed:232b1f450f2e37f47fdd5b678a8a546d
-https://mega.z5cable.com/bpk-tv/animal_planet_hd/default/index.mpd
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="KNOWLEDGE",Animal Planet 🇺🇸 (KitKat)
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -595,31 +571,25 @@ https://otte.live.fly.ww.aiv-cdn.net/dub-nitro/live/clients/dash/enc/ewj95eclhn/
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=ec6f072c7125377a9bc0ae61598095f4:1d5388e0781415ebcec9914f5ad75875
 https://s2129134.cdn.mytvnet.vn/pkg20/live_dzones/ap.smil/manifest.mpd
+#EXTINF:-1 group-title="KNOWLEDGE",ANIMAL-PLANET (KitKat)
+http://179.60.51.134:8888/ANIMAL-PLANET/index.m3u8
+#EXTINF:-1 group-title="KNOWLEDGE",USA_ANIMAL_PLANET (KitKat)
+http://23.237.104.106:8080/USA_ANIMAL_PLANET/index.m3u8
 #EXTVLCOPT:http-user-agent=ExoPlayerDemo/2.15.1 (Linux; Android 13) ExoPlayerLib/2.15.1
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=bf7ec2974fa14a248e338280a6e64cb8:7e81ae9282d08881e304aa527a1d7e72
 #EXTINF:-1 tvg-id="History.id" tvg-name="History" tvg-logo="https://mimipipi22.github.io/logo/knowledge/history.jpg" group-title="KNOWLEDGE",HISTORY (KitKat)
 https://atemecdnbalancer-voe.sysln.id/live/eds/HistoryHD/mediampd/HistoryHD.mpd
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="KNOWLEDGE",History (KitKat)
-https://canaiss.fazoeli.co.za/fontes/smart/history.m3u8
 #EXTINF:-1 group-title="KNOWLEDGE",history (KitKat)
 http://84.17.50.102/history/index.m3u8
+#EXTINF:-1 group-title="KNOWLEDGE",HISTORY (KitKat)
+http://179.60.51.134:8888/HISTORY/index.m3u8
 #EXTINF:-1 group-title="KNOWLEDGE",History (KitKat)
 https://a3569457567-s70378.cdn.ngenix.net/history/1/index.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="KNOWLEDGE",History 2 (KitKat)
-https://canaiss.fazoeli.co.za/fontes/smart/history2.m3u8
-#EXTINF:-1 tvg-logo="https://s37328.pcdn.co/wp-content/uploads/2021/07/megacable-welcomes-edye__thumb.jpg" group-title="KNOWLEDGE",History 2 HD (KitKat)
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=0c39778fe8fb4f9f8574016b3d4ae2ed:232b1f450f2e37f47fdd5b678a8a546d
-https://bks400-tol-110.quieroxview.com.mx/bpk-tv/history_2_hd/default/index.mpd
-#EXTINF:-1 tvg-logo="https://s37328.pcdn.co/wp-content/uploads/2021/07/megacable-welcomes-edye__thumb.jpg" group-title="KNOWLEDGE",History Channel HD (KitKat)
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=52358519f886446d82834a803b36f796:58b6ac8e07d354b178255e03b9d0f819
-https://bks400-tol-110.quieroxview.com.mx/bpk-tv/history_channel_hd/default/index.mpd
-#EXTINF:-1 tvg-id="history" tvg-logo="" group-title="KNOWLEDGE",History HD (KitKat)
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=52358519f886446d82834a803b36f796:58b6ac8e07d354b178255e03b9d0f819
-https://mega.z5cable.com/bpk-tv/history_channel_hd/default/index.mpd
+#EXTINF:-1 group-title="KNOWLEDGE",History Channel (KitKat)
+http://85.14.32.26:8800/udp/239.100.10.157:5000
+#EXTINF:-1 group-title="KNOWLEDGE",History Channel HD (KitKat)
+http://85.14.32.26:8800/udp/239.100.10.158:5000
 #EXTINF:-1 tvg-logo="https://i.imgur.com/huazOc1.png" group-title="KNOWLEDGE",HISTORY HD (KitKat)
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=a7724b7ca2604c33bb2e963a0319968a:6f97e3e2eb2bade626e0281ec01d3675
@@ -631,16 +601,20 @@ https://qp-pldt-live-grp-11-prod.akamaized.net/out/u/dr_historyhd.mpd
 #EXTINF:-1 group-title="KNOWLEDGE" tvg-logo="https://www.kds.tw/wp-content/uploads/2025/09/5d2ae78b2bc27_e9E9-480x320.png",HISTORY TAMIL (KitKat)
 #EXTVLCOPT:http-user-agent=ExoPlayerDemo/2.15.1 (Linux; Android 12) ExoPlayerLib/2.15.1
 https://rakyattv.my.id/donate/stream.php/.m3u8?id=history-tamil
+#EXTINF:-1 group-title="KNOWLEDGE",HISTORY2 (KitKat)
+http://179.60.51.134:8888/HISTORY2/index.m3u8
+#EXTINF:-1 group-title="KNOWLEDGE",Viasat History (KitKat)
+http://85.14.32.26:8800/udp/239.100.10.107:5000
 #EXTINF:-1 group-title="KNOWLEDGE",Viasat History (KitKat)
 https://a3569457567-s70378.cdn.ngenix.net/viasat_history/2/index.m3u8
+#EXTINF:-1 group-title="KNOWLEDGE",Viasat History HD (KitKat)
+http://85.14.32.26:8800/udp/239.100.10.109:5000
 #EXTINF:-1 tvg-id="SCIENCE_IS_AMAZING" tvg-name="Science is Amazing" tvg-logo="" group-title="KNOWLEDGE",Science is Amazing (KitKat)
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=8cdce02de4ee021313752bf3f4170fb4:60dbfbe941a0462e0d56a95c7b9e3bee
 https://a82aivottlinear-a.akamaihd.net/OTTB/pdx-nitro/live/clients/dash/enc/d9iunfir77/out/v1/4c1ded14e2db44d59915910e6dc2284d/cenc.mpd?encoding=segmentBase
-#EXTINF:-1 tvg-logo="https://www.lyngsat-logo.com/logo/tv/tt/true_explore_wild.png" group-title="KNOWLEDGE",TRUE EXPLORE WILD (KitKat)
-http://119.59.118.168/live/ch57/irannahee/index.m3u8
 #EXTINF:-1 group-title="KNOWLEDGE",Wild (KitKat)
 https://a3569457567-s70378.cdn.ngenix.net/dikiy/1/index.m3u8
 #EXTVLCOPT:http-user-agent=ExoPlayerDemo/2.15.1 (Linux; Android 13) ExoPlayerLib/2.15.1
