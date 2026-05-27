@@ -48,6 +48,11 @@ https://raw.githubusercontent.com/B-inal-123/arabasta-s/main/HbosignatureID.m3u8
 https://indihuy.streamized.net/atm/DASH/cinemax/cinemax-avc1_2500000=7-3277707030000000.mpd
 #EXTINF:0 tvg-logo="https://1.bp.blogspot.com/-5c7cU3ULocM/YJZOZAwEdxI/AAAAAAAAEp8/hmQSk7dXX1gqj1VRIEsa4DO-QsSVLsK-gCLcBGAsYHQ/s720/CINEMAX-Poster.png" group-title="MOVIES",Cinemax ID (Love4vn-Test)
 https://raw.githubusercontent.com/B-inal-123/arabasta-s/main/HbocinemaxID.m3u8
+#EXTINF:-1 tvg-logo="https://www.transvision.co.id/img/channel/bioskop_ind.png" group-title="MOVIES",Bioskop Indonesia (Love4vn-Test)
+#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
+#KODIPROP:inputstream.adaptive.license_key=https://cubmu.mediaflow.workers.dev/
+#KODIPROP:inputstream.adaptive.stream_headers=user-agent=Xstream XGO/1.22 (Linux;Android 9) ExoPlayerLib/2.10.5
+https://cdnjkt913.transvision.co.id:1000/live/master/4/4028c6856fd0d66d0170341bf1000905/manifest.mpd
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=398ef14ec7014ad8ae75414a7efd2a0f:99a6225691aa669f0f22677b4536705e
 #EXTVLCOPT:http-referrer=https://www.visionplus.id/
@@ -189,6 +194,53 @@ https://rpn.bozztv.com/gusa/gusa-tvswesternmovies/index.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0
 #EXTINF:-1 tvg-id="CinemachiXtra" tvg-url="https://bit.ly/IndonesiaEpg" tvg-logo="https://www.mncvision.id/userfiles/image/channel/channel_6.png" group-title="MOVIES",Uniquest (Love4vn-Test)
 https://d3b0v7fggu5zwm.cloudfront.net/out/v1/bde0a6d8d3fd4d77ae5093ad2e6699dc/index.mpd
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/GY64FK8gbwdBKUhiVZIp5mhTDs8=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/5089900/b86456.jpg" group-title="MOVIES",📺 Bioskop Keluarga Indonesia [J1] (ALT MPD) (BakulWIFI)
+#EXTVLCOPT:http-user-agent=Dalvik/2.1.0 (Linux; U; Android 15; itel S688LN Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36
+#EXTVLCOPT:network-caching=150
+#EXTVLCOPT:live-caching=150
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1xxxxxx/8237.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTg2MTYwNCwiZXhwIjoxNzc5OTA0ODA0LCJyeiI6OTgwMTM3fQ._cArW0QvWBsJDRI0Ev441ckG2AC2Nlk310b3oIhRICQ
+https://bosstv.asia/1xxxxxx/8237.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTg2MTYwNCwiZXhwIjoxNzc5OTA0ODA0LCJyeiI6OTgwMTM3fQ._cArW0QvWBsJDRI0Ev441ckG2AC2Nlk310b3oIhRICQ
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/GY64FK8gbwdBKUhiVZIp5mhTDs8=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/5089900/b86456.jpg" group-title="MOVIES",📺 Bioskop Keluarga Indonesia [J1] (ALT) (BakulWIFI)
+#EXTVLCOPT:http-user-agent=Dalvik/2.1.0 (Linux; U; Android 15; itel S688LN Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36
+#EXTVLCOPT:network-caching=150
+#EXTVLCOPT:live-caching=150
+https://bosstv.asia/1xxxxxx/8237.m3u8?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTg2MTYwNCwiZXhwIjoxNzc5OTA0ODA0LCJyeiI6OTgwMTM3fQ._cArW0QvWBsJDRI0Ev441ckG2AC2Nlk310b3oIhRICQ
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/GY64FK8gbwdBKUhiVZIp5mhTDs8=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/5089900/b86456.jpg" group-title="MOVIES",📺 Bioskop Keluarga Indonesia [J1] (BakulWIFI)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+#EXTVLCOPT:network-caching=150
+#EXTVLCOPT:live-caching=150
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+https://bosstv.asia/1bostv/TOKEN/8237.m3u8?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTg2MTYwNCwiZXhwIjoxNzc5OTA0ODA0LCJyeiI6OTgwMTM3fQ._cArW0QvWBsJDRI0Ev441ckG2AC2Nlk310b3oIhRICQ
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/GY64FK8gbwdBKUhiVZIp5mhTDs8=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/5089900/b86456.jpg" group-title="MOVIES",📺 Bioskop Keluarga Indonesia [J1] (MPD) (BakulWIFI)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+#EXTVLCOPT:network-caching=150
+#EXTVLCOPT:live-caching=150
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1bostv/TOKEN/8237.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTg2MTYwNCwiZXhwIjoxNzc5OTA0ODA0LCJyeiI6OTgwMTM3fQ._cArW0QvWBsJDRI0Ev441ckG2AC2Nlk310b3oIhRICQ
+https://bosstv.asia/1bostv/TOKEN/8237.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTg2MTYwNCwiZXhwIjoxNzc5OTA0ODA0LCJyeiI6OTgwMTM3fQ._cArW0QvWBsJDRI0Ev441ckG2AC2Nlk310b3oIhRICQ
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/0f2I5boA9LShVN7cMKGpHG7T9gQ=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/665/rcti-aac20c.jpg" group-title="MOVIES",📺 Mega Film Tv [J1] (ALT) (BakulWIFI)
+#EXTVLCOPT:http-user-agent=Dalvik/2.1.0 (Linux; U; Android 15; itel S688LN Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36
+#EXTVLCOPT:network-caching=150
+#EXTVLCOPT:live-caching=150
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1xxxxxx/665.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTg2MTYwNCwiZXhwIjoxNzc5OTA0ODA0LCJyeiI6OTgwMTM3fQ._cArW0QvWBsJDRI0Ev441ckG2AC2Nlk310b3oIhRICQ
+https://bosstv.asia/1xxxxxx/665.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTg2MTYwNCwiZXhwIjoxNzc5OTA0ODA0LCJyeiI6OTgwMTM3fQ._cArW0QvWBsJDRI0Ev441ckG2AC2Nlk310b3oIhRICQ
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/0f2I5boA9LShVN7cMKGpHG7T9gQ=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/665/rcti-aac20c.jpg" group-title="MOVIES",📺 Mega Film Tv [J1] (BakulWIFI)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+#EXTVLCOPT:network-caching=150
+#EXTVLCOPT:live-caching=150
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1bostv/TOKEN/665.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTg2MTYwNCwiZXhwIjoxNzc5OTA0ODA0LCJyeiI6OTgwMTM3fQ._cArW0QvWBsJDRI0Ev441ckG2AC2Nlk310b3oIhRICQ
+https://bosstv.asia/1bostv/TOKEN/665.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTg2MTYwNCwiZXhwIjoxNzc5OTA0ODA0LCJyeiI6OTgwMTM3fQ._cArW0QvWBsJDRI0Ev441ckG2AC2Nlk310b3oIhRICQ
 #KODIPROP:inputstream.adaptive.stream_headers=Origin=https://www.indihometv.com
 #KODIPROP:inputstream.adaptive.stream_headers=Referer=https://www.indihometv.com
 #KODIPROP:inputstreamaddon=inputstream.adaptive
