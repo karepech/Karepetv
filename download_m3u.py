@@ -227,7 +227,6 @@ def extract_date_from_group(group_title):
     return None
 
 def get_channel_priority(channel_name, category):
-    """ SISTEM KASTA SUPER VIP UNTUK SPORTS & KASTA LAINNYA """
     n = channel_name.upper()
     
     if category == "SPORTS":
@@ -426,10 +425,6 @@ def filter_m3u_by_config(config, super_clean_channels):
         current_extinf = ch["extinf"]
         current_buffer = list(ch["buffer"]) 
 
-        # EKSEKUSI PENGECUALIAN KHUSUS RAFADERVIAN
-        if target_category == "EVENT LIVE SPORTS" and "RafaDervian.m3u" in provider_url_str:
-            continue
-
         group_match = GROUP_TITLE_REGEX.search(current_extinf)
         raw_group_title = group_match.group(1) if group_match else ""
         
@@ -453,7 +448,6 @@ def filter_m3u_by_config(config, super_clean_channels):
         clean_group_title = CLEANING_REGEX.sub(' ', raw_group_title).upper()
         clean_channel_name = CLEANING_REGEX.sub(' ', new_channel_name).upper()
         
-        # DIFERENSIASI REGIONAL SPORTS KETAT (MENCEGAH OVERLAP JADWAL)
         if "BEIN" in clean_channel_name:
             if re.search(r'\b(AU|AUSTRALIA)\b', clean_channel_name) and "(AU)" not in new_channel_name.upper():
                 new_channel_name += " (AU)"
@@ -525,7 +519,6 @@ def filter_m3u_by_config(config, super_clean_channels):
         if match_found:
             priority_score = get_channel_priority(new_channel_name, target_category)
             
-            # PRIORITASKAN STATUS 'LIVE' DARI PROVIDER
             if "LIVE" in raw_channel_name.upper():
                 priority_score = max(0, priority_score - 1)
             
@@ -637,6 +630,14 @@ if __name__ == "__main__":
             
             if stream_url in GLOBAL_BLACKLIST_URLS:
                 continue
+
+            # ==============================================================
+            # CEGATAN HULU: MUSNAHKAN EVENT LIVE SPORTS DARI RAFADERVIAN
+            # ==============================================================
+            if "RafaDervian.m3u" in provider_url_str:
+                group_match = GROUP_TITLE_REGEX.search(extinf)
+                if group_match and "EVENT LIVE SPORTS" in group_match.group(1).upper():
+                    continue # Bypass mutlak, channel ini dibuang sebelum diproses!
             
             if "," in extinf:
                 raw_channel_name = extinf.split(',', 1)[1].strip()
