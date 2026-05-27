@@ -156,6 +156,45 @@ https://cdn08jtedge.indihometv.com/dassdvr/130/beib2/manifest.mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=7eea72d6075245a99ee3255603d58853:6848ef60575579bf4d415db1032153ed
 https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_spotv2hd/default/index.mpd
+#EXTINF:-1 tvg-id="SPOTVStadia.my" tvg-name="SPOTV Stadia" tvg-logo="https://www.visionplus.id/images/repository/856/522856-LOGO-m.png" group-title="SPORTS",SPOTV 1 (Cignal) (Lalajo)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://cignalplay.com/
+#KODIPROP:inputstream.adaptive.livestream=false
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=ec7ee27d83764e4b845c48cca31c8eef:9c0e4191203fccb0fde34ee29999129e
+https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_spotvhd/default/index.mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=3197f7f5086c4315af2b7a94bc9201cb:17462a74739ae0d9855705ffc2c0e1b5
+#EXTVLCOPT:http-referrer=https://www.visionplus.id/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+#EXTINF:-1 tvg-id="SPOTV.id" tvg-name="SPOTV" tvg-logo="https://www.visionplus.id/images/repository/856/522856-LOGO-m.png" group-title="SPORTS",SPOTV 1 (V+) (Lalajo)
+https://d3b0v7fggu5zwm.cloudfront.net/out/v1/b4814ae93ca84dd3bb5b0aff76ca263f/index.mpd
+#EXTINF:-1 tvg-id="SPOTV2Stadia.my" tvg-name="SPOTV 2 Stadia" tvg-logo="https://www.visionplus.id/images/repository/366/525366-LOGO-m.png" group-title="SPORTS",SPOTV 2 (Cignal) (Lalajo)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://cignalplay.com/
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=7eea72d6075245a99ee3255603d58853:6848ef60575579bf4d415db1032153ed
+https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/dr_spotv2hd/default/index.mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=1539f043249e413d91906036f305831e:671e24fd8d234c7f38d85055815f902a
+#EXTVLCOPT:http-referrer=https://www.visionplus.id/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+#EXTINF:-1 tvg-id="SPOTV2.id" tvg-name="SPOTV 2" tvg-logo="https://www.visionplus.id/images/repository/366/525366-LOGO-m.png" group-title="SPORTS",SPOTV 2 (V+) (Lalajo)
+https://d2tjypxxy769fn.cloudfront.net/out/v1/46d9cf39b9a84183b8d5022ac8f4bc41/index.mpd
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=3dd653fc7aa1e3075b7f0233620df68f:8573791fa55bff03a3094ff559fc1407
+#EXTVLCOPT:http-referrer=https://www.mana2.my/
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logos/images/f/f4/SPOTV_Now_logo_%28%C4%90N%C3%81%29.png/revision/latest/scale-to-width-down/985?cb=20231224030110&path-prefix=vi" group-title="SPORTS",SPOTV Now (Alt) (Lalajo)
+https://svod.mana2.my/SpotvNow/index.mpd
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=3dd653fc7aa1e3075b7f0233620df68f:8573791fa55bff03a3094ff559fc1407
+#EXTVLCOPT:http-referrer=https://www.mana2.my/
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logos/images/f/f4/SPOTV_Now_logo_%28%C4%90N%C3%81%29.png/revision/latest/scale-to-width-down/985?cb=20231224030110&path-prefix=vi" group-title="SPORTS",SPOTV Now (Lalajo)
+https://slive.mana2.my/SpotvNow/index.mpd
 #EXTINF:-1 tvg-url="https://bit.ly/AstroEpg" tvg-id="beINSports" tvg-logo="https://i.pinimg.com/736x/df/65/de/df65dec905351d128f5668d7f9213d3b.jpg" group-title="SPORTS",beIN Sports 1 (Love4vn-Test)
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
@@ -1422,53 +1461,53 @@ http://cdn69630.sp-vpn-vad.com:80/at2sc0r6b4/kmmutt995q/256630
 http://lordstreams.live:80/9857855271/8369553594/661361
 #EXTINF:-1 xui-id="{XUI_ID}" tvg-id="raisport+.ch" tvg-name="|IT| RAI SPORT+ ᵁᴴᴰ" tvg-logo="http://138.199.27.237:8080/ITALY/RAISPORT.png" group-title="SPORTS",|IT| RAI SPORT+ ᵁᴴᴰ (Qtrung)
 http://lordstreams.live:80/9857855271/8369553594/661360
-#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/OSqPEYiOv62kWQ8kq-msbuAqAjk=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/5096510/bc28ea.jpg" group-title="SPORTS",⏳ (-1h 18j) 18:30 WIB 29/05/26ONE Friday Fights 156 [J1] (ALT MPD) (BakulWIFI)
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/OSqPEYiOv62kWQ8kq-msbuAqAjk=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/5096510/bc28ea.jpg" group-title="SPORTS",⏳ (-1h 17j) 18:30 WIB 29/05/26ONE Friday Fights 156 [J1] (ALT MPD) (BakulWIFI)
 #EXTVLCOPT:http-user-agent=Dalvik/2.1.0 (Linux; U; Android 15; itel S688LN Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36
 #EXTVLCOPT:network-caching=150
 #EXTVLCOPT:live-caching=150
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1xxxxxx/16890.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-https://bosstv.asia/1xxxxxx/16890.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/OSqPEYiOv62kWQ8kq-msbuAqAjk=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/5096510/bc28ea.jpg" group-title="SPORTS",⏳ (-1h 18j) 18:30 WIB 29/05/26ONE Friday Fights 156 [J1] (ALT) (BakulWIFI)
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1xxxxxx/16890.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+https://bosstv.asia/1xxxxxx/16890.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/OSqPEYiOv62kWQ8kq-msbuAqAjk=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/5096510/bc28ea.jpg" group-title="SPORTS",⏳ (-1h 17j) 18:30 WIB 29/05/26ONE Friday Fights 156 [J1] (ALT) (BakulWIFI)
 #EXTVLCOPT:http-user-agent=Dalvik/2.1.0 (Linux; U; Android 15; itel S688LN Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36
 #EXTVLCOPT:network-caching=150
 #EXTVLCOPT:live-caching=150
-https://bosstv.asia/1xxxxxx/16890.m3u8?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/OSqPEYiOv62kWQ8kq-msbuAqAjk=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/5096510/bc28ea.jpg" group-title="SPORTS",⏳ (-1h 18j) 18:30 WIB 29/05/26ONE Friday Fights 156 [J1] (BakulWIFI)
+https://bosstv.asia/1xxxxxx/16890.m3u8?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/OSqPEYiOv62kWQ8kq-msbuAqAjk=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/5096510/bc28ea.jpg" group-title="SPORTS",⏳ (-1h 17j) 18:30 WIB 29/05/26ONE Friday Fights 156 [J1] (BakulWIFI)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
 #EXTVLCOPT:network-caching=150
 #EXTVLCOPT:live-caching=150
 #KODIPROP:inputstreamaddon=inputstream.adaptive
-https://bosstv.asia/1bostv/TOKEN/16890.m3u8?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/OSqPEYiOv62kWQ8kq-msbuAqAjk=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/5096510/bc28ea.jpg" group-title="SPORTS",⏳ (-1h 18j) 18:30 WIB 29/05/26ONE Friday Fights 156 [J1] (MPD) (BakulWIFI)
+https://bosstv.asia/1bostv/TOKEN/16890.m3u8?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/OSqPEYiOv62kWQ8kq-msbuAqAjk=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/5096510/bc28ea.jpg" group-title="SPORTS",⏳ (-1h 17j) 18:30 WIB 29/05/26ONE Friday Fights 156 [J1] (MPD) (BakulWIFI)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
 #EXTVLCOPT:network-caching=150
 #EXTVLCOPT:live-caching=150
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1bostv/TOKEN/16890.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-https://bosstv.asia/1bostv/TOKEN/16890.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/EY-0wF2KHJRiXgK47HxRFoBN--U=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/21474/tvod-hss-rookie-fight-e1b8c8.jpg" group-title="SPORTS",⏳ (-3h 13j) 14:00 WIB 31/05/26HSS Rookie Fight [J1] (ALT) (BakulWIFI)
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1bostv/TOKEN/16890.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+https://bosstv.asia/1bostv/TOKEN/16890.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/EY-0wF2KHJRiXgK47HxRFoBN--U=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/21474/tvod-hss-rookie-fight-e1b8c8.jpg" group-title="SPORTS",⏳ (-3h 12j) 14:00 WIB 31/05/26HSS Rookie Fight [J1] (ALT) (BakulWIFI)
 #EXTVLCOPT:http-user-agent=Dalvik/2.1.0 (Linux; U; Android 15; itel S688LN Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36
 #EXTVLCOPT:network-caching=150
 #EXTVLCOPT:live-caching=150
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1xxxxxx/21474.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-https://bosstv.asia/1xxxxxx/21474.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/EY-0wF2KHJRiXgK47HxRFoBN--U=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/21474/tvod-hss-rookie-fight-e1b8c8.jpg" group-title="SPORTS",⏳ (-3h 13j) 14:00 WIB 31/05/26HSS Rookie Fight [J1] (BakulWIFI)
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1xxxxxx/21474.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+https://bosstv.asia/1xxxxxx/21474.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/EY-0wF2KHJRiXgK47HxRFoBN--U=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/21474/tvod-hss-rookie-fight-e1b8c8.jpg" group-title="SPORTS",⏳ (-3h 12j) 14:00 WIB 31/05/26HSS Rookie Fight [J1] (BakulWIFI)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
 #EXTVLCOPT:network-caching=150
 #EXTVLCOPT:live-caching=150
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1bostv/TOKEN/21474.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-https://bosstv.asia/1bostv/TOKEN/21474.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1bostv/TOKEN/21474.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+https://bosstv.asia/1bostv/TOKEN/21474.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
 #EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/5NgLTDabV3AEIYs3ivgNuCNCjyg=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/19538/real-madrid-tv-243de0.jpg" group-title="SPORTS",🔴 Real Madrid Pass [J1] (ALT) (BakulWIFI)
 #EXTVLCOPT:http-user-agent=Dalvik/2.1.0 (Linux; U; Android 15; itel S688LN Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36
 #EXTVLCOPT:network-caching=150
@@ -1476,8 +1515,8 @@ https://bosstv.asia/1bostv/TOKEN/21474.mpd?kamu_mau_ngapain_goblok_sengaja_selam
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1xxxxxx/19538.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-https://bosstv.asia/1xxxxxx/19538.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1xxxxxx/19538.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+https://bosstv.asia/1xxxxxx/19538.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
 #EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/5NgLTDabV3AEIYs3ivgNuCNCjyg=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/19538/real-madrid-tv-243de0.jpg" group-title="SPORTS",🔴 Real Madrid Pass [J1] (BakulWIFI)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
 #EXTVLCOPT:network-caching=150
@@ -1485,62 +1524,80 @@ https://bosstv.asia/1xxxxxx/19538.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1bostv/TOKEN/19538.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-https://bosstv.asia/1bostv/TOKEN/19538.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/2qVGPWK0aKGSEDclrl_e1-4GRNQ=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/5092048/3c0fa7.jpg" group-title="SPORTS",⏳ (-1h 2j) 03:00 WIB 29/05/26Round 1 - Charles Schwab Challenge 2026 [J1] (ALT) (BakulWIFI)
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1bostv/TOKEN/19538.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+https://bosstv.asia/1bostv/TOKEN/19538.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/2qVGPWK0aKGSEDclrl_e1-4GRNQ=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/5092048/3c0fa7.jpg" group-title="SPORTS",⏳ (-1h 1j) 03:00 WIB 29/05/26Round 1 - Charles Schwab Challenge 2026 [J1] (ALT) (BakulWIFI)
 #EXTVLCOPT:http-user-agent=Dalvik/2.1.0 (Linux; U; Android 15; itel S688LN Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36
 #EXTVLCOPT:network-caching=150
 #EXTVLCOPT:live-caching=150
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1xxxxxx/18189.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-https://bosstv.asia/1xxxxxx/18189.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/2qVGPWK0aKGSEDclrl_e1-4GRNQ=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/5092048/3c0fa7.jpg" group-title="SPORTS",⏳ (-1h 2j) 03:00 WIB 29/05/26Round 1 - Charles Schwab Challenge 2026 [J1] (BakulWIFI)
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1xxxxxx/18189.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+https://bosstv.asia/1xxxxxx/18189.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/2qVGPWK0aKGSEDclrl_e1-4GRNQ=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/5092048/3c0fa7.jpg" group-title="SPORTS",⏳ (-1h 1j) 03:00 WIB 29/05/26Round 1 - Charles Schwab Challenge 2026 [J1] (BakulWIFI)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
 #EXTVLCOPT:network-caching=150
 #EXTVLCOPT:live-caching=150
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1bostv/TOKEN/18189.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-https://bosstv.asia/1bostv/TOKEN/18189.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/959laOUQhqSJNgyNU79VEOoiBho=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/21490/byon-madness-vol-4-2026-bb64a5.jpg" group-title="SPORTS",⏳ (-9h 14j) 15:00 WIB 06/06/26BYON Madness 4 [J1] (ALT) (BakulWIFI)
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1bostv/TOKEN/18189.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+https://bosstv.asia/1bostv/TOKEN/18189.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/NtkdRDdayZWoIHDegRrYwDmZmyQ=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/5091547/43e196.jpg" group-title="SPORTS",⏳ (-39m) 01:55 WIB 28/05/26Final: Crystal Palace vs Rayo Vallecano - UEFA Conference League [J1] (ALT) (BakulWIFI)
+#EXTVLCOPT:http-user-agent=Dalvik/2.1.0 (Linux; U; Android 15; itel S688LN Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36
+#EXTVLCOPT:network-caching=150
+#EXTVLCOPT:live-caching=150
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1xxxxxx/6299.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+https://bosstv.asia/1xxxxxx/6299.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/NtkdRDdayZWoIHDegRrYwDmZmyQ=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/5091547/43e196.jpg" group-title="SPORTS",⏳ (-39m) 01:55 WIB 28/05/26Final: Crystal Palace vs Rayo Vallecano - UEFA Conference League [J1] (BakulWIFI)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+#EXTVLCOPT:network-caching=150
+#EXTVLCOPT:live-caching=150
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1bostv/TOKEN/6299.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+https://bosstv.asia/1bostv/TOKEN/6299.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/959laOUQhqSJNgyNU79VEOoiBho=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/21490/byon-madness-vol-4-2026-bb64a5.jpg" group-title="SPORTS",⏳ (-9h 13j) 15:00 WIB 06/06/26BYON Madness 4 [J1] (ALT) (BakulWIFI)
 #EXTVLCOPT:http-user-agent=Dalvik/2.1.0 (Linux; U; Android 15; itel S688LN Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36
 #EXTVLCOPT:network-caching=150
 #EXTVLCOPT:live-caching=150
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1xxxxxx/21490.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-https://bosstv.asia/1xxxxxx/21490.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/959laOUQhqSJNgyNU79VEOoiBho=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/21490/byon-madness-vol-4-2026-bb64a5.jpg" group-title="SPORTS",⏳ (-9h 14j) 15:00 WIB 06/06/26BYON Madness 4 [J1] (BakulWIFI)
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1xxxxxx/21490.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+https://bosstv.asia/1xxxxxx/21490.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/959laOUQhqSJNgyNU79VEOoiBho=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/21490/byon-madness-vol-4-2026-bb64a5.jpg" group-title="SPORTS",⏳ (-9h 13j) 15:00 WIB 06/06/26BYON Madness 4 [J1] (BakulWIFI)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
 #EXTVLCOPT:network-caching=150
 #EXTVLCOPT:live-caching=150
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1bostv/TOKEN/21490.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-https://bosstv.asia/1bostv/TOKEN/21490.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/DzXnocwMYJzN0JcfgfZANqYaiPs=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/21485/tvod-nex-r3c-da3ab4.jpg" group-title="SPORTS",⏳ (-9h 15j) 16:00 WIB 06/06/26nex Road to Champion Vol. 3 [J1] (ALT) (BakulWIFI)
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1bostv/TOKEN/21490.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+https://bosstv.asia/1bostv/TOKEN/21490.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/DzXnocwMYJzN0JcfgfZANqYaiPs=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/21485/tvod-nex-r3c-da3ab4.jpg" group-title="SPORTS",⏳ (-9h 14j) 16:00 WIB 06/06/26nex Road to Champion Vol. 3 [J1] (ALT) (BakulWIFI)
 #EXTVLCOPT:http-user-agent=Dalvik/2.1.0 (Linux; U; Android 15; itel S688LN Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36
 #EXTVLCOPT:network-caching=150
 #EXTVLCOPT:live-caching=150
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1xxxxxx/21485.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-https://bosstv.asia/1xxxxxx/21485.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/DzXnocwMYJzN0JcfgfZANqYaiPs=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/21485/tvod-nex-r3c-da3ab4.jpg" group-title="SPORTS",⏳ (-9h 15j) 16:00 WIB 06/06/26nex Road to Champion Vol. 3 [J1] (BakulWIFI)
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1xxxxxx/21485.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+https://bosstv.asia/1xxxxxx/21485.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/DzXnocwMYJzN0JcfgfZANqYaiPs=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/21485/tvod-nex-r3c-da3ab4.jpg" group-title="SPORTS",⏳ (-9h 14j) 16:00 WIB 06/06/26nex Road to Champion Vol. 3 [J1] (BakulWIFI)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
 #EXTVLCOPT:network-caching=150
 #EXTVLCOPT:live-caching=150
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1bostv/TOKEN/21485.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-https://bosstv.asia/1bostv/TOKEN/21485.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1bostv/TOKEN/21485.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+https://bosstv.asia/1bostv/TOKEN/21485.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
 #EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/k-sY_yuIcw_2WlMiaRGVZf_ctXI=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/206/moji-a5bd3e.jpg" group-title="SPORTS",📺 Rerun Proliga 2026 [J1] (ALT MPD) (BakulWIFI)
 #EXTVLCOPT:http-user-agent=Dalvik/2.1.0 (Linux; U; Android 15; itel S688LN Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36
 #EXTVLCOPT:network-caching=150
@@ -1548,19 +1605,19 @@ https://bosstv.asia/1bostv/TOKEN/21485.mpd?kamu_mau_ngapain_goblok_sengaja_selam
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1xxxxxx/206.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-https://bosstv.asia/1xxxxxx/206.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1xxxxxx/206.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+https://bosstv.asia/1xxxxxx/206.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
 #EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/k-sY_yuIcw_2WlMiaRGVZf_ctXI=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/206/moji-a5bd3e.jpg" group-title="SPORTS",📺 Rerun Proliga 2026 [J1] (ALT) (BakulWIFI)
 #EXTVLCOPT:http-user-agent=Dalvik/2.1.0 (Linux; U; Android 15; itel S688LN Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36
 #EXTVLCOPT:network-caching=150
 #EXTVLCOPT:live-caching=150
-https://bosstv.asia/1xxxxxx/206.m3u8?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
+https://bosstv.asia/1xxxxxx/206.m3u8?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
 #EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/k-sY_yuIcw_2WlMiaRGVZf_ctXI=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/206/moji-a5bd3e.jpg" group-title="SPORTS",📺 Rerun Proliga 2026 [J1] (BakulWIFI)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
 #EXTVLCOPT:network-caching=150
 #EXTVLCOPT:live-caching=150
 #KODIPROP:inputstreamaddon=inputstream.adaptive
-https://bosstv.asia/1bostv/TOKEN/206.m3u8?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
+https://bosstv.asia/1bostv/TOKEN/206.m3u8?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
 #EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/k-sY_yuIcw_2WlMiaRGVZf_ctXI=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/206/moji-a5bd3e.jpg" group-title="SPORTS",📺 Rerun Proliga 2026 [J1] (MPD) (BakulWIFI)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
 #EXTVLCOPT:network-caching=150
@@ -1568,8 +1625,66 @@ https://bosstv.asia/1bostv/TOKEN/206.m3u8?kamu_mau_ngapain_goblok_sengaja_selama
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1bostv/TOKEN/206.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-https://bosstv.asia/1bostv/TOKEN/206.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1bostv/TOKEN/206.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+https://bosstv.asia/1bostv/TOKEN/206.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/XSpSRDs94R38OpBmssaBVngAr2Q=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/734/trans7-9dade4.jpg" group-title="SPORTS",📺 Sport 7 [J1] (ALT MPD) (BakulWIFI)
+#EXTVLCOPT:http-user-agent=Dalvik/2.1.0 (Linux; U; Android 15; itel S688LN Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36
+#EXTVLCOPT:network-caching=150
+#EXTVLCOPT:live-caching=150
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1xxxxxx/734.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+https://bosstv.asia/1xxxxxx/734.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/XSpSRDs94R38OpBmssaBVngAr2Q=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/734/trans7-9dade4.jpg" group-title="SPORTS",📺 Sport 7 [J1] (ALT) (BakulWIFI)
+#EXTVLCOPT:http-user-agent=Dalvik/2.1.0 (Linux; U; Android 15; itel S688LN Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36
+#EXTVLCOPT:network-caching=150
+#EXTVLCOPT:live-caching=150
+https://bosstv.asia/1xxxxxx/734.m3u8?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/XSpSRDs94R38OpBmssaBVngAr2Q=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/734/trans7-9dade4.jpg" group-title="SPORTS",📺 Sport 7 [J1] (BakulWIFI)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+#EXTVLCOPT:network-caching=150
+#EXTVLCOPT:live-caching=150
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+https://bosstv.asia/1bostv/TOKEN/734.m3u8?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/XSpSRDs94R38OpBmssaBVngAr2Q=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/734/trans7-9dade4.jpg" group-title="SPORTS",📺 Sport 7 [J1] (MPD) (BakulWIFI)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+#EXTVLCOPT:network-caching=150
+#EXTVLCOPT:live-caching=150
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1bostv/TOKEN/734.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+https://bosstv.asia/1bostv/TOKEN/734.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/-Q2Z5lwWi55xmDzdAsOdm8thDlU=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/5095117/229642.jpg" group-title="SPORTS",🔴 01:15 WIB 28/05/26Tomas Machac vs Alexander Zverev - Men's Singles | Roland Garros 2026: Round 2 - Night 4 (Court 1) [J1] (ALT MPD) (BakulWIFI)
+#EXTVLCOPT:http-user-agent=Dalvik/2.1.0 (Linux; U; Android 15; itel S688LN Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36
+#EXTVLCOPT:network-caching=150
+#EXTVLCOPT:live-caching=150
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1xxxxxx/17875.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+https://bosstv.asia/1xxxxxx/17875.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/-Q2Z5lwWi55xmDzdAsOdm8thDlU=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/5095117/229642.jpg" group-title="SPORTS",🔴 01:15 WIB 28/05/26Tomas Machac vs Alexander Zverev - Men's Singles | Roland Garros 2026: Round 2 - Night 4 (Court 1) [J1] (ALT) (BakulWIFI)
+#EXTVLCOPT:http-user-agent=Dalvik/2.1.0 (Linux; U; Android 15; itel S688LN Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36
+#EXTVLCOPT:network-caching=150
+#EXTVLCOPT:live-caching=150
+https://bosstv.asia/1xxxxxx/17875.m3u8?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/-Q2Z5lwWi55xmDzdAsOdm8thDlU=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/5095117/229642.jpg" group-title="SPORTS",🔴 01:15 WIB 28/05/26Tomas Machac vs Alexander Zverev - Men's Singles | Roland Garros 2026: Round 2 - Night 4 (Court 1) [J1] (BakulWIFI)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+#EXTVLCOPT:network-caching=150
+#EXTVLCOPT:live-caching=150
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+https://bosstv.asia/1bostv/TOKEN/17875.m3u8?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/-Q2Z5lwWi55xmDzdAsOdm8thDlU=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/5095117/229642.jpg" group-title="SPORTS",🔴 01:15 WIB 28/05/26Tomas Machac vs Alexander Zverev - Men's Singles | Roland Garros 2026: Round 2 - Night 4 (Court 1) [J1] (MPD) (BakulWIFI)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+#EXTVLCOPT:network-caching=150
+#EXTVLCOPT:live-caching=150
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1bostv/TOKEN/17875.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+https://bosstv.asia/1bostv/TOKEN/17875.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
 #EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/59zP__MSrnXn38rWMl1U7pwfW4Y=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/5095112/80e8ef.jpg" group-title="SPORTS",🔴 15:55 WIB 27/05/26Round 2 - Day 4 (Court 2) - Roland Garros 2026 [J1] (ALT) (BakulWIFI)
 #EXTVLCOPT:http-user-agent=Dalvik/2.1.0 (Linux; U; Android 15; itel S688LN Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36
 #EXTVLCOPT:network-caching=150
@@ -1577,8 +1692,8 @@ https://bosstv.asia/1bostv/TOKEN/206.mpd?kamu_mau_ngapain_goblok_sengaja_selama_
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1xxxxxx/6317.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-https://bosstv.asia/1xxxxxx/6317.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1xxxxxx/6317.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+https://bosstv.asia/1xxxxxx/6317.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
 #EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/59zP__MSrnXn38rWMl1U7pwfW4Y=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/5095112/80e8ef.jpg" group-title="SPORTS",🔴 15:55 WIB 27/05/26Round 2 - Day 4 (Court 2) - Roland Garros 2026 [J1] (BakulWIFI)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
 #EXTVLCOPT:network-caching=150
@@ -1586,80 +1701,44 @@ https://bosstv.asia/1xxxxxx/6317.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
-#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1bostv/TOKEN/6317.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-https://bosstv.asia/1bostv/TOKEN/6317.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/gk2kTfM-0dQoQcUIeKsLTPPoOH8=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/5095114/4b8053.jpg" group-title="SPORTS",🔴 15:55 WIB 27/05/26Round 2 - Day 4 (Court 3) - Roland Garros 2026 [J1] (ALT) (BakulWIFI)
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1bostv/TOKEN/6317.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+https://bosstv.asia/1bostv/TOKEN/6317.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/emHpj-uEoQwjDU_pcCtUJ5jSCgg=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/21289/citra-drama-plus-a6965e.jpg" group-title="SPORTS",🔴 Como Vs Roma : Serie A 2025/26 [J1] (ALT) (BakulWIFI)
 #EXTVLCOPT:http-user-agent=Dalvik/2.1.0 (Linux; U; Android 15; itel S688LN Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36
 #EXTVLCOPT:network-caching=150
 #EXTVLCOPT:live-caching=150
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1xxxxxx/6299.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-https://bosstv.asia/1xxxxxx/6299.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/gk2kTfM-0dQoQcUIeKsLTPPoOH8=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/5095114/4b8053.jpg" group-title="SPORTS",🔴 15:55 WIB 27/05/26Round 2 - Day 4 (Court 3) - Roland Garros 2026 [J1] (BakulWIFI)
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1xxxxxx/21289.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+https://bosstv.asia/1xxxxxx/21289.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/emHpj-uEoQwjDU_pcCtUJ5jSCgg=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/21289/citra-drama-plus-a6965e.jpg" group-title="SPORTS",🔴 Como Vs Roma : Serie A 2025/26 [J1] (BakulWIFI)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
 #EXTVLCOPT:network-caching=150
 #EXTVLCOPT:live-caching=150
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1bostv/TOKEN/6299.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-https://bosstv.asia/1bostv/TOKEN/6299.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/YMJUP3w6rBzrWrdI0zA_giG0PGc=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/5096503/254438.jpg" group-title="SPORTS",🔴 20:48 WIB 27/05/26Valentin Royer vs Novak Djokovic - Men's Singles | Roland Garros 2026: Round 2 - Day 4 (Court 1) [J1] (ALT) (BakulWIFI)
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1bostv/TOKEN/21289.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+https://bosstv.asia/1bostv/TOKEN/21289.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/a3mObjZKdTVwnVbQC1k14bvXNp8=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/9353/premier-league-tv-28c9ae.jpg" group-title="SPORTS",🔴 Fanzone [J1] (ALT) (BakulWIFI)
 #EXTVLCOPT:http-user-agent=Dalvik/2.1.0 (Linux; U; Android 15; itel S688LN Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36
 #EXTVLCOPT:network-caching=150
 #EXTVLCOPT:live-caching=150
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1xxxxxx/17875.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-https://bosstv.asia/1xxxxxx/17875.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/YMJUP3w6rBzrWrdI0zA_giG0PGc=/640x360/filters:strip_icc():quality(70)/vidio-media-production/uploads/livestreaming/schedule/thumbnail/5096503/254438.jpg" group-title="SPORTS",🔴 20:48 WIB 27/05/26Valentin Royer vs Novak Djokovic - Men's Singles | Roland Garros 2026: Round 2 - Day 4 (Court 1) [J1] (BakulWIFI)
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1xxxxxx/9353.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+https://bosstv.asia/1xxxxxx/9353.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/a3mObjZKdTVwnVbQC1k14bvXNp8=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/9353/premier-league-tv-28c9ae.jpg" group-title="SPORTS",🔴 Fanzone [J1] (BakulWIFI)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
 #EXTVLCOPT:network-caching=150
 #EXTVLCOPT:live-caching=150
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1bostv/TOKEN/17875.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-https://bosstv.asia/1bostv/TOKEN/17875.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/emHpj-uEoQwjDU_pcCtUJ5jSCgg=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/21289/citra-drama-plus-a6965e.jpg" group-title="SPORTS",🔴 Bursa Buyuksehi?r Bld. Vs Kusgoz Izmi?r Vi?nc Akkus Beledi?yespor : (Continue) Turkish Volleyball 25/26 Men'S League [J1] (ALT) (BakulWIFI)
-#EXTVLCOPT:http-user-agent=Dalvik/2.1.0 (Linux; U; Android 15; itel S688LN Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36
-#EXTVLCOPT:network-caching=150
-#EXTVLCOPT:live-caching=150
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1xxxxxx/21289.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-https://bosstv.asia/1xxxxxx/21289.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/emHpj-uEoQwjDU_pcCtUJ5jSCgg=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/21289/citra-drama-plus-a6965e.jpg" group-title="SPORTS",🔴 Bursa Buyuksehi?r Bld. Vs Kusgoz Izmi?r Vi?nc Akkus Beledi?yespor : (Continue) Turkish Volleyball 25/26 Men'S League [J1] (BakulWIFI)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=150
-#EXTVLCOPT:live-caching=150
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1bostv/TOKEN/21289.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-https://bosstv.asia/1bostv/TOKEN/21289.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/hH9e5pXdlobUCJgh6CE8l6eRE-Q=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/6685/champions-tv-1-54e282.jpg" group-title="SPORTS",🔴 Eps 27 : PL Story 2024/25 - Subs [J1] (ALT) (BakulWIFI)
-#EXTVLCOPT:http-user-agent=Dalvik/2.1.0 (Linux; U; Android 15; itel S688LN Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36
-#EXTVLCOPT:network-caching=150
-#EXTVLCOPT:live-caching=150
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1xxxxxx/6685.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-https://bosstv.asia/1xxxxxx/6685.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/hH9e5pXdlobUCJgh6CE8l6eRE-Q=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/6685/champions-tv-1-54e282.jpg" group-title="SPORTS",🔴 Eps 27 : PL Story 2024/25 - Subs [J1] (BakulWIFI)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=150
-#EXTVLCOPT:live-caching=150
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1bostv/TOKEN/6685.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-https://bosstv.asia/1bostv/TOKEN/6685.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1bostv/TOKEN/9353.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+https://bosstv.asia/1bostv/TOKEN/9353.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
 #EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/6cpTxOAd9oaP5yOaKInfkE7mybc=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/6686/champions-tv-2-681a27.jpg" group-title="SPORTS",🔴 Fc Groningen Vs Nec : Dutch League Eredivisie 2025/26 [J1] (ALT) (BakulWIFI)
 #EXTVLCOPT:http-user-agent=Dalvik/2.1.0 (Linux; U; Android 15; itel S688LN Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36
 #EXTVLCOPT:network-caching=150
@@ -1667,8 +1746,8 @@ https://bosstv.asia/1bostv/TOKEN/6685.mpd?kamu_mau_ngapain_goblok_sengaja_selama
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1xxxxxx/6686.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-https://bosstv.asia/1xxxxxx/6686.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1xxxxxx/6686.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+https://bosstv.asia/1xxxxxx/6686.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
 #EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/6cpTxOAd9oaP5yOaKInfkE7mybc=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/6686/champions-tv-2-681a27.jpg" group-title="SPORTS",🔴 Fc Groningen Vs Nec : Dutch League Eredivisie 2025/26 [J1] (BakulWIFI)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
 #EXTVLCOPT:network-caching=150
@@ -1676,8 +1755,26 @@ https://bosstv.asia/1xxxxxx/6686.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1bostv/TOKEN/6686.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-https://bosstv.asia/1bostv/TOKEN/6686.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1bostv/TOKEN/6686.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+https://bosstv.asia/1bostv/TOKEN/6686.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/hH9e5pXdlobUCJgh6CE8l6eRE-Q=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/6685/champions-tv-1-54e282.jpg" group-title="SPORTS",🔴 MILAN vs CAGLIARI : Serie A 2025/26 [J1] (ALT) (BakulWIFI)
+#EXTVLCOPT:http-user-agent=Dalvik/2.1.0 (Linux; U; Android 15; itel S688LN Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36
+#EXTVLCOPT:network-caching=150
+#EXTVLCOPT:live-caching=150
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1xxxxxx/6685.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+https://bosstv.asia/1xxxxxx/6685.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/hH9e5pXdlobUCJgh6CE8l6eRE-Q=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/6685/champions-tv-1-54e282.jpg" group-title="SPORTS",🔴 MILAN vs CAGLIARI : Serie A 2025/26 [J1] (BakulWIFI)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+#EXTVLCOPT:network-caching=150
+#EXTVLCOPT:live-caching=150
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1bostv/TOKEN/6685.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+https://bosstv.asia/1bostv/TOKEN/6685.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
 #EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/TRXqsPqp4vYy2IV5LyM7TFC9_N8=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/9182/champions-tv-5-e0dd48.jpg" group-title="SPORTS",🔴 Nottingham Forest Vs Bournemouth : Premier League 2025/26 [J1] (ALT) (BakulWIFI)
 #EXTVLCOPT:http-user-agent=Dalvik/2.1.0 (Linux; U; Android 15; itel S688LN Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36
 #EXTVLCOPT:network-caching=150
@@ -1685,8 +1782,8 @@ https://bosstv.asia/1bostv/TOKEN/6686.mpd?kamu_mau_ngapain_goblok_sengaja_selama
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1xxxxxx/9182.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-https://bosstv.asia/1xxxxxx/9182.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1xxxxxx/9182.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+https://bosstv.asia/1xxxxxx/9182.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
 #EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/TRXqsPqp4vYy2IV5LyM7TFC9_N8=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/9182/champions-tv-5-e0dd48.jpg" group-title="SPORTS",🔴 Nottingham Forest Vs Bournemouth : Premier League 2025/26 [J1] (BakulWIFI)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
 #EXTVLCOPT:network-caching=150
@@ -1694,8 +1791,8 @@ https://bosstv.asia/1xxxxxx/9182.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1bostv/TOKEN/9182.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-https://bosstv.asia/1bostv/TOKEN/9182.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1bostv/TOKEN/9182.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+https://bosstv.asia/1bostv/TOKEN/9182.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
 #EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/6I6EwjU5jeUZIh_wn7cu8tkqeMI=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/6786/champions-tv-3-76ca7c.jpg" group-title="SPORTS",🔴 Semifinal - Grand Prix Sar La Princesse Lalla Meryem - Rabat : WTA 250 [J1] (ALT) (BakulWIFI)
 #EXTVLCOPT:http-user-agent=Dalvik/2.1.0 (Linux; U; Android 15; itel S688LN Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36
 #EXTVLCOPT:network-caching=150
@@ -1703,8 +1800,8 @@ https://bosstv.asia/1bostv/TOKEN/9182.mpd?kamu_mau_ngapain_goblok_sengaja_selama
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1xxxxxx/6786.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-https://bosstv.asia/1xxxxxx/6786.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1xxxxxx/6786.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+https://bosstv.asia/1xxxxxx/6786.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
 #EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/6I6EwjU5jeUZIh_wn7cu8tkqeMI=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/6786/champions-tv-3-76ca7c.jpg" group-title="SPORTS",🔴 Semifinal - Grand Prix Sar La Princesse Lalla Meryem - Rabat : WTA 250 [J1] (BakulWIFI)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
 #EXTVLCOPT:network-caching=150
@@ -1712,26 +1809,8 @@ https://bosstv.asia/1xxxxxx/6786.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1bostv/TOKEN/6786.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-https://bosstv.asia/1bostv/TOKEN/6786.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/a3mObjZKdTVwnVbQC1k14bvXNp8=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/9353/premier-league-tv-28c9ae.jpg" group-title="SPORTS",🔴 The Great North London Divide : PL Stories [J1] (ALT) (BakulWIFI)
-#EXTVLCOPT:http-user-agent=Dalvik/2.1.0 (Linux; U; Android 15; itel S688LN Build/AP3A.240905.015.A2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36
-#EXTVLCOPT:network-caching=150
-#EXTVLCOPT:live-caching=150
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1xxxxxx/9353.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-https://bosstv.asia/1xxxxxx/9353.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-#EXTINF:-1 group-logo="https://static-web.prod.vidiocdn.com/_next/static/logo/vidio.png" tvg-logo="https://thumbor.prod.vidiocdn.com/a3mObjZKdTVwnVbQC1k14bvXNp8=/640x360/filters:strip_icc():quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/9353/premier-league-tv-28c9ae.jpg" group-title="SPORTS",🔴 The Great North London Divide : PL Stories [J1] (BakulWIFI)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleCoreMedia/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-#EXTVLCOPT:network-caching=150
-#EXTVLCOPT:live-caching=150
-#KODIPROP:inputstreamaddon=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=dash
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1bostv/TOKEN/9353.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
-https://bosstv.asia/1bostv/TOKEN/9353.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwMjcwNCwiZXhwIjoxNzc5OTQ1OTA0LCJyeiI6OTg2NDE0fQ.GS8BUCIQRGZc0CYpgXXRCDoIU8JNksD6-aCwtYwhzKA
+#KODIPROP:inputstream.adaptive.license_key=https://bosstv.asia/1bostv/TOKEN/6786.drm?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
+https://bosstv.asia/1bostv/TOKEN/6786.mpd?kamu_mau_ngapain_goblok_sengaja_selama_ini_tidak_aku_token_itu_mau_tes_server_dan_lain_lain_eh_gak_taunya_kamu_pakai_bertanda_kamu_tololya_tidak_bisa_buat_script_vidio_non_akun_kasihan_sini_pm_wa_ku_kasih_free_daripada_modal_comotan_terus_nih_wa_ku_639551630010=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiVmlld2VyX00zVSIsImlhdCI6MTc3OTkwNTcwMywiZXhwIjoxNzc5OTQ4OTAzLCJyeiI6OTUxOTI4fQ.JO6m6L615jJxKF5KxmrrR9WZ9qd49En19fjCFvSn564
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/beinsports3.png" group-title="SPORTS",beIN Sports 3 HD (Love4vn-Live)
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=7995c724a13748ed970840a8ab5bb9b3:67bdaf1e2175b9ff682fcdf0e2354b1e
@@ -3328,6 +3407,186 @@ https://cdnjkt913.transvision.co.id:1000/live/master/4/4028c6857fe540a1018060a43
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #EXTVLCOPT:http-user-agent=YuppTV/7.18.1 (Linux;Android 16) ExoPlayerLib/2.19.1
 https://streams2.sofast.tv/ptnr-yupptv/title-XTREM-SPORTS-ENG_yupptv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/e0b81a5c-6ab5-48cd-aaa9-f82de4ab5bf9/manifest.m3u8
+#EXTINF:-1 tvg-id="beINSportsFrench1.qa" tvg-name="beIN Sports French 1" tvg-logo="https://object-streamo.emonaja.com/img/beinsports.png" group-title="SPORTS" radio="false",beIN Sports 1 (France) (Lalajo)
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key={"3acea01244785a6363fc04b25d696392": "f0b8f84dbd93407af6ab0b41fc774249", "9d8b1b819cfdcff845625b86cc4968f3": "480b03fe4476bc187c6a9d43ba85b9db", "3cf686dc4246f19bc4419c54da0f90bc": "b40f599266c8a262ccf4a384dadce08a", "b6362975ca29d0685b7cac721b6faa26": "da04d180e9028af27482b6a37c81e020", "6ca2f2c822444ff76d9570741dec7b2b": "9fc3d71ab30e8d33f09ee29e5e453608"}
+https://api-proxad.dc2.oqee.net/playlist/v1/live/966/1/live.mpd
+#EXTINF:-1 tvg-url="https://epg.pw/api/epg.xml?lang=en&date=20260519&channel_id=399482" tvg-id="399482" tvg-id="beIN SPORTS 1" tvg-logo="https://object-streamo.emonaja.com/img/beinsports.png" group-title="SPORTS",beIN Sports 1 (TrueVisions) (Lalajo)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 7.1.2; TV BOX Build/NHG47L) AppleWebKit/537.36 (KHTML เช&#3656;น Gecko) Chrome/56.0.2924.87 Safari/537.36
+https://love.9xrie8ecms.workers.dev/vx-origin/epl-bein1_720/chunks.m3u8
+#EXTINF:-1 tvg-id="beINSportsFrench2.qa" tvg-name="beIN Sports French 2" tvg-logo="https://object-streamo.emonaja.com/img/beinsports2.png" group-title="SPORTS" radio="false",beIN Sports 2 (France) (Lalajo)
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key={"85ac9362e89354ef5341fe4dbee0dd6a": "e556276599c55bdee169f39eab8e56bc", "71fcdcfd58c608662db317fcf4411c19": "eaf76e97b969a7d124a720a109acda61", "6c976caa628fde89aacedbd47059967e": "0d1e54565950c1e2f58d45c561a47187", "7a62a516c5d980553f497c6bfc469b19": "a0eeb97b4d14d6bb7a5c39755dd7c41c", "f81df5cf72bd43c3da84d04dc8691fcb": "4a60e4e009560c40766a0fa38770ef4e"}
+https://api-proxad.dc2.oqee.net/playlist/v1/live/970/1/live.mpd
+#EXTINF:-1 tvg-url="https://epg.pw/api/epg.xml?lang=en&date=20260519&channel_id=524174" tvg-id="524174" tvg-id="beIN SPORTS 2" tvg-logo="https://object-streamo.emonaja.com/img/beinsports2.png" group-title="SPORTS",beIN Sports 2 (TrueVisions) (Lalajo)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 7.1.2; TV BOX Build/NHG47L) AppleWebKit/537.36 (KHTML เช&#3656;น Gecko) Chrome/56.0.2924.87 Safari/537.36
+https://love.9xrie8ecms.workers.dev/vx-origin/epl-bein2_720/chunks.m3u8
+#EXTINF:-1 tvg-id="beINSportsFrench3.qa" tvg-name="beIN Sports French 3" tvg-logo="https://object-streamo.emonaja.com/img/beinsports3.png" group-title="SPORTS" radio="false",beIN Sports 3 (France) (Lalajo)
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key={"4281ee112555097325058cb7355035b4": "1a88899547f7fd4a5c22ee8150d89208", "b4023d3a71316ed3cd06af7e43988d31": "91a96d592dd6e946b0f0074d15ac1168", "441100b7de65d7c582a9c71140e46f79": "ef37dadc14bdade17224ef4bc9f87ce6", "43faba2da98eeeeb42481dca873d3460": "f8b58939398e5a5574c18408d304d44e", "92e8cc9527c7f56a10777278cb801027": "4ce3f3e2234f00b21ba77006f197832a"}
+https://api-proxad.dc2.oqee.net/playlist/v1/live/971/1/live.mpd
+#EXTINF:-1 tvg-url="https://epg.pw/api/epg.xml?lang=en&date=20260421&channel_id=3118" tvg-id="3118" tvg-id="beIN Sports 3" tvg-logo="https://object-streamo.emonaja.com/img/beinsports3.png" group-title="SPORTS",beIN Sports 3 (TrueVisions) (Lalajo)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 7.1.2; TV BOX Build/NHG47L) AppleWebKit/537.36 (KHTML เช&#3656;น Gecko) Chrome/56.0.2924.87 Safari/537.36
+https://love.9xrie8ecms.workers.dev/vx-origin/epl-bein3_720/chunks.m3u8
+#EXTINF:-1 tvg-name="beIN SPORTS Xtra" tvg-logo="https://object-streamo.emonaja.com/img/beinsports.png" group-title="SPORTS",beIN Sports XTRA (United States) (Lalajo)
+https://amg01334-beinsportsllc-beinxtra-localnow-kcy6r.amagi.tv/playlist.m3u8
+#EXTINF:-1:-1 tvg-id="" tvg-name="BeIN Sports ñ HD" tvg-logo="https://object-streamo.emonaja.com/img/beinsports.png" group-title="SPORTS",beIN Sports ñ (Spain) (Lalajo)
+http://opplextv.cyou:8080/nasir6160/nasir/381359
+#EXTINF:-1 tvg-name="FUBO Sports Network" tvg-id="FuboSportsNetwork.us" tvg-logo="https://object-streamo.emonaja.com/img/fubosportsnetwork.avif" tvg-id="24.7.Dummy.us" group-title="SPORTS",Fubo Sports Network (LGTV United States) (Lalajo)
+https://wurlfubo.global.transmit.live/hls/67f42332d3dd98936978f581/v1/fubotv_fubo_sports_network_1/lg_us/latest/main/hls/playlist.m3u8?wurl_channel=1358&wurl_name=FuboSportsNetwork&coppa=0&uid=[DEVICE_ID]&rdid=[IFA]&ifatype=[IFA_TYPE]&dnt=[LMT]&donotsell=[DNS]&isgdpr=[GDPR]&gdpr=[GDPR_CONSENT]&country=[COUNTRY]&pr=[US_PRIVACY]&appstoreurl=[APP_STOREURL]&bundleid=[APP_BUNDLE]&appname=[APP_NAME]&appversion=[APP_VERSION]&dt=[DEVICE_TYPE]&make=[DEVICE_MAKE]&model=[DEVICE_MODEL]&targetad=[TARGETAD_ALLOWED]&fck=[FCK]&viewsize=[VIEWSIZE]&nonce=[NONCE]
+#EXTINF:-1:-1 tvg-id="DAZN1.uk" tvg-name="DAZN 1" tvg-logo="https://i.imgur.com/2Z2EmZF.png" group-title="SPORTS",DAZN 1 (Lalajo)
+http://opplextv.cyou:8080/nasir6160/nasir/233072
+#EXTINF:-1:-1 tvg-id="DAZN2.uk" tvg-name="DAZN 2" tvg-logo="https://i.imgur.com/OGj3qf5.png" group-title="SPORTS",DAZN 2 (Lalajo)
+http://opplextv.cyou:8080/nasir6160/nasir/233075
+#EXTINF:-1:-1 tvg-id="DAZN3.uk" tvg-name="DAZN 3" tvg-logo="https://i.imgur.com/2rXsq2m.png" group-title="SPORTS",DAZN 3 (Lalajo)
+http://opplextv.cyou:8080/nasir6160/nasir/233078
+#EXTINF:-1:-1 tvg-id="DAZN4.uk" tvg-name="DAZN 4" tvg-logo="https://i.imgur.com/m7ga8bU.png" group-title="SPORTS",DAZN 4 (Lalajo)
+http://opplextv.cyou:8080/nasir6160/nasir/233080
+#EXTINF:-1:-1 tvg-id="DAZN5.uk" tvg-name="DAZN 5" tvg-logo="https://i.imgur.com/HD2XaeS.png" group-title="SPORTS",DAZN 5 (Lalajo)
+http://opplextv.cyou:8080/nasir6160/nasir/233082
+#EXTINF:-1 tvg-id="ElevenSports1.pl" tvg-name="Eleven Sports 1" tvg-logo="https://i.imgur.com/AOu4FXH.png" group-title="SPORTS",DAZN Sports 1 (Alt) (Lalajo)
+http://opplextv.cyou:8080/nasir6160/nasir/352795
+#EXTINF:-1 tvg-id="ElevenSports2.pl" tvg-name="Eleven Sports 2" tvg-logo="https://i.imgur.com/bTIRgqG.png" group-title="SPORTS",DAZN Sports 2 (Lalajo)
+http://opplextv.cyou:8080/nasir6160/nasir/352796
+#EXTINF:-1 tvg-id="ElevenSports3.pl" tvg-name="Eleven Sports 3" tvg-logo="https://i.imgur.com/bWjGol4.png" group-title="SPORTS",DAZN Sports 3 (Lalajo)
+http://opplextv.cyou:8080/nasir6160/nasir/352797
+#EXTINF:-1 tvg-id="ElevenSports4.pl" tvg-name="Eleven Sports 4" tvg-logo="https://i.imgur.com/SEKXaAW.png" group-title="SPORTS",DAZN Sports 4 (Lalajo)
+http://opplextv.cyou:8080/nasir6160/nasir/352798
+#EXTINF:-1 tvg-id="SKY.Sport.1.nz" tvg-logo="https://i.postimg.cc/wxDNzRcQ/sky-sport-1.png" group-title="SPORTS",Sky Sport 1 (New Zealand) (Lalajo)
+https://pal6.short.gy/skyspt1nz
+#EXTINF:-1 tvg-id="SKY.Sport.2.nz" tvg-logo="https://i.postimg.cc/KvFM8c0S/sky_sport_2.png" group-title="SPORTS",Sky Sport 2 (New Zealand) (Lalajo)
+https://pal6.short.gy/skyspt2nz
+#EXTINF:-1 tvg-id="SKY.Sport.3.nz" tvg-logo="https://i.postimg.cc/L88gjCdx/sky_sport_3.png" group-title="SPORTS",Sky Sport 3 (New Zealand) (Lalajo)
+https://pal6.short.gy/skyspt3nz
+#EXTINF:-1 tvg-id="SKY.Sport.4.nz" tvg-logo="https://i.postimg.cc/52KYgBbb/sky-sport-4.png" group-title="SPORTS",Sky Sport 4 (New Zealand) (Lalajo)
+https://pal6.short.gy/skyspt4nz
+#EXTINF:-1 tvg-id="SKY.Sport.5.nz" tvg-logo="https://i.postimg.cc/3wyyckxp/sky_sport_5.png" group-title="SPORTS",Sky Sport 5 (New Zealand) (Lalajo)
+https://pal6.short.gy/skyspt5nz
+#EXTINF:-1 tvg-id="SKY.Sport.6.nz" tvg-logo="https://i.postimg.cc/LsrqKmJW/sky_sport_6.png" group-title="SPORTS",Sky Sport 6 (New Zealand) (Lalajo)
+https://pal6.short.gy/skyspt6nz
+#EXTINF:-1 tvg-id="SKY.Sport.7.nz" tvg-logo="https://i.postimg.cc/G2G4b6Ym/sky_sport_7.png" group-title="SPORTS",Sky Sport 7 (New Zealand) (Lalajo)
+https://pal6.short.gy/skyspt7nz
+#EXTINF:-1 tvg-id="SKY.Sport.8.nz" tvg-logo="https://i.postimg.cc/PJMNwZSG/Sky-Sport-PL.png" group-title="SPORTS",Sky Sport Premier League (New Zealand) (Lalajo)
+https://pal6.short.gy/skyspt8nz
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1
+#EXTINF:-1 tvg-name="Sky Sports F1 FHD" tvg-id="SkySp.F1.HD.uk" tvg-logo="https://object-streamo.emonaja.com/img/skysportsf1.webp" group-title="SPORTS",Sky Sports F1 (United Kingdom) (Lalajo)
+https://xemzi.short.gy/2000005
+#EXTINF:-1 tvg-name="Sky Sports F1 FHD" tvg-id="SkySp.F1.HD.uk" tvg-logo="https://object-streamo.emonaja.com/img/skysportsf1.webp" group-title="SPORTS",Sky Sports F1 (United Kingdom/Alt) (Lalajo)
+http://opplextv.cyou:8080/nasir6160/nasir/346380
+# Sports (English Language) #
+#EXTINF:-1 tvg-name="Sky Sports Main Event FHD" tvg-id="SkySpMainEvHD.uk" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/d7/Sky_Sports_Main_Event_Stacked.svg/revision/latest/scale-to-width-down/250?cb=20220728001048" group-title="SPORTS",Sky Sports Main Event (United Kingdom) (Lalajo)
+https://xemzi.short.gy/2000001
+#EXTINF:-1 tvg-name="Sky Sports Mix FHD" tvg-id="SkySp.Mix.HD.uk" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Sky_Sport_Mix_Logo_2022.svg/1280px-Sky_Sport_Mix_Logo_2022.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" group-title="SPORTS",Sky Sports Mix (United Kingdom) (Lalajo)
+https://xemzi.short.gy/2000008
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1
+#EXTINF:-1 tvg-logo="https://i.ibb.co/rcSRMh9/sky-sports-pl.png" group-title="SPORTS",Sky Sports Premier League (United Kingdom) (Lalajo)
+https://xemzi.short.gy/2000002
+#EXTINF:-1 tvg-name="Sky Sports Racing FHD" tvg-id="SkySp.Racing.HD.uk" tvg-logo="https://i.ibb.co/Hnp1hBz/sky-racing.png" group-title="SPORTS" radio="false",Sky Sports Racing (United Kingdom) (Lalajo)
+http://opplextv.cyou:8080/nasir6160/nasir/346385
+#EXTINF:-1 tvg-chno="46" tvg-id="ESPN.HD.us2" tvg-name="ESPN" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s10179_dark_360w_270h.png" group-title="SPORTS",ESPN (United States) (Lalajo)
+http://41.205.93.154/ESPN/index.m3u8
+#EXTINF:-1 tvg-chno="49" tvg-id="ESPN2.HD.us2" tvg-name="ESPN2" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s12444_dark_360w_270h.png" group-title="SPORTS",ESPN2 (United States) (Lalajo)
+http://41.223.30.230/ESPN2/index.m3u8
+#EXTINF:-1 tvg-name="Fox Sports 501 FHD" tvg-id="FoxCricket.au" tvg-logo="https://i.ibb.co/hvxssSM/Fox-Cricket-501.png" group-title="SPORTS",Fox Sports 501 (Lalajo)
+http://front-main.eagle-4k.me:80/Emeka20252025/fwazza47nd/197185
+#EXTINF:-1 tvg-name="Fox Sports 502 FHD" tvg-id="FoxLeague.au" tvg-logo="https://i.ibb.co/XZpHFsBh/Fox502HD.png" group-title="SPORTS",Fox Sports 502 (Lalajo)
+http://front-main.eagle-4k.me:80/Emeka20252025/fwazza47nd/197186
+#EXTINF:-1 tvg-name="Fox Sports 503 FHD" tvg-id="FoxSports503.au" tvg-logo="https://i.ibb.co/Z60SQPG9/Fox-503.png" group-title="SPORTS",Fox Sports 503 (Lalajo)
+http://front-main.eagle-4k.me:80/Emeka20252025/fwazza47nd/1098502
+#EXTINF:-1 tvg-name="Fox Sports 504 FHD" tvg-id="FoxFooty.au" tvg-logo="https://i.ibb.co/RpxSzY1R/Fox-Footy504.png" group-title="SPORTS",Fox Sports 504 (Lalajo)
+http://front-main.eagle-4k.me:80/Emeka20252025/fwazza47nd/197188
+#EXTINF:-1 tvg-name="Fox Sports 505 FHD" tvg-id="FoxSports505.au" tvg-logo="https://i.ibb.co/RpxSzY1R/Fox-Footy504.png" group-title="SPORTS",Fox Sports 505 (Lalajo)
+http://front-main.eagle-4k.me:80/Emeka20252025/fwazza47nd/197189
+#EXTINF:-1 tvg-name="Fox Sports 506 FHD" tvg-id="FoxSports506.au" tvg-logo="https://i.ibb.co/Y65j4s1/Fox505.png" group-title="SPORTS",Fox Sports 506 (Lalajo)
+http://front-main.eagle-4k.me:80/Emeka20252025/fwazza47nd/197190
+#EXTINF:-1 tvg-name="Fox Sports 507 FHD" tvg-id="FoxSportsMore.au" tvg-logo="https://i.ibb.co/CK1F69ht/Fox507.png" group-title="SPORTS",Fox Sports 507 (Lalajo)
+http://front-main.eagle-4k.me:80/Emeka20252025/fwazza47nd/197191
+#EXTINF:-1 tvg-chno="93" tvg-id="MLB.Network.HD.us2" tvg-name="MLB Network" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s62081_dark_360w_270h.png" group-title="SPORTS",MLB Network (Lalajo)
+http://cdn1host.online:2999/live/bongus/35zqYxrbg0/145.ts
+#EXTINF:-1 tvg-chno="101" tvg-id="NBC.Sports.Bay.Area.HD.us2" tvg-name="NBC Sports Bay Area" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s63138_dark_360w_270h.png" group-title="SPORTS",NBC Sports Bay Area (Lalajo)
+http://cdn1host.online:2999/live/bongus/35zqYxrbg0/591.ts
+#EXTINF:-1 tvg-chno="102" tvg-id="NBC.Sports.Boston.HD.us2" tvg-name="NBC Sports Boston" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s49198_dark_360w_270h.png" group-title="SPORTS",NBC Sports Boston (Lalajo)
+http://cdn1host.online:2999/live/bongus/35zqYxrbg0/590.ts
+#EXTINF:-1 tvg-chno="103" tvg-id="NBC.Sports.California.SAT.us2" tvg-name="NBC Sports California" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s45540_dark_360w_270h.png" group-title="SPORTS",NBC Sports California (Lalajo)
+http://cdn1host.online:2999/live/bongus/35zqYxrbg0/589.ts
+#EXTINF:-1 tvg-chno="104" tvg-id="a90a91570ce0536cbb22b591ad7e0da2" tvg-name="NBC Sports NOW" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s114140_dark_360w_270h.png" group-title="SPORTS",NBC Sports NOW (Lalajo)
+https://jmp2.uk/stvp-USBD420002446
+#EXTINF:-1 tvg-chno="105" tvg-id="NBC.Sports.Philadelphia.HD.us2" tvg-name="NBC Sports Philadelphia" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s32571_dark_360w_270h.png" group-title="SPORTS",NBC Sports Philadelphia (Lalajo)
+http://cdn1host.online:2999/live/bongus/35zqYxrbg0/586.ts
+#EXTINF:-1 tvg-chno="109" tvg-id="NHL.Network.HD.us2" tvg-name="NHL Network" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s58570_dark_360w_270h.png" group-title="SPORTS",NHL Network (Lalajo)
+http://cdn1host.online:2999/live/bongus/35zqYxrbg0/299.ts
+#EXTINF:-1 group-title="SPORTS" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/UFC_Logo.svg/1280px-UFC_Logo.svg.png",UFC 1 (Lalajo)
+https://linear-893.frequency.stream/dist/xumo/893/hls/master/playlist.m3u8
+#EXTINF:-1 group-title="SPORTS" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/UFC_Logo.svg/1280px-UFC_Logo.svg.png",UFC 2 (Lalajo)
+https://aegis-cloudfront-1.tubi.video/a78ea283-8666-44a1-a0f6-fde5d229ac21/playlist.m3u8
+#EXTINF:-1 tvg-id="InterTV.it" tvg-name="Inter Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5e/Inter_TV_-_Logo_2021.png" group-title="SPORTS",Inter TV (Lalajo)
+#EXTVLCOPT:http-user-agent=ExoPlayer/2.19.1 (Linux; Android 15) Media3/1.6.0
+https://ilglobotv-live.akamaized.net/channels/InterTV/Live.m3u8
+#EXTINF:-1 tvg-name="Real Madrid TV" group-title="SPORTS" tvg-logo="https://image.xumo.com/v1/channels/channel/99951381/168x168.png?type=color_onBlack",Real Madrid TV (Lalajo)
+https://dbrb49pjoymg4.cloudfront.net/10001/99951381/hls/playlist.m3u8?ads.xumo_channelId=99951381&ads._fw_ifa_type=&ads._fw_did=&ads.amznappId=&ads.lat=&ads.lon=&ads.os=&ads.osv=&ads.asnw=&ads.caid=CineverseRealMadrid&ads.csid=xumo__CineverseRealMadrid_ssai&ads._fw_is_lat=&ads._fw_us_privacy=&ads._fw_coppa=0&ads.genre=Sport,Sports,SA,SC,SE,SN&ads._fw_content_category=&ads._fw_content_language=&ads._fw_content_genre=Sport,Sports,SA,SC,SE,SN&ads._fw_content_rating=&ads.xumo_contentId=4183&ads.xumo_contentName=CineverseRealMadrid&ads.xumo_providerId=4183&ads.xumo_providerName=CineverseRealMadrid&ads._fw_deviceMake=&ads._fw_device_model=&ads.channelId=99951381&ads.xumo_platform=&ads.site_id=&ads.appName=xumo&ads.appVersion=&ads._fw_app_bundle=&ads._fw_app_store_url=
+#EXTINF:-1 tvg-chno="147" tvg-id="TSN.1.ca2" tvg-name="TSN1" tvg-logo="https://i.imgur.com/eRFE0jZ.png" group-title="SPORTS",TSN 1 (Alt) (Lalajo)
+http://cdn1host.online:2999/live/bongus/35zqYxrbg0/1195.ts
+#EXTINF:-1 tvg-chno="148" tvg-id="TSN.2.ca2" tvg-name="TSN2" tvg-logo="https://i.ibb.co/fzHfwF5j/TSN2.png" group-title="SPORTS",TSN 2 (Alt) (Lalajo)
+http://cdn1host.online:2999/live/bongus/35zqYxrbg0/175.ts
+#EXTINF:-1 tvg-id="TSN5.ca" tvg-name="TSN 5" tvg-logo="https://i.imgur.com/HEzHpzz.png" group-title="SPORTS",TSN 5 (Lalajo)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone14,6; U; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19E241 Safari/602.1
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=e853333da2c9196ea11374634231bc45:de2e2dbe818d78dfad07d6cd9a4c63d4
+https://otte.cache.aiv-cdn.net/bom-nitro/clients/dash/enc/jkcljgqbx8/out/v1/63bfa701559340f3a2a2cb1fccd24807/cenc.mpd
+#EXTINF:-1 tvg-id="FS1.Fox.Sports.1.HD.us2" tvg-name="FS1" tvg-logo="https://i.ibb.co/vx6X9LXV/FS1.jpg" group-title="SPORTS",FS1 (Alt) (Lalajo)
+https://cors-proxy.cooks.fyi/http://190.11.225.124:5000/live/fs1_hd/playlist.m3u8
+#EXTINF:-1 tvg-id="FS2.Fox.Sports.2.HD.us2" tvg-name="FS2" tvg-logo="https://i.ibb.co/qFcxnxXw/FS2.png" group-title="SPORTS",FS2 (Alt) (Lalajo)
+http://cdn1host.online:2999/live/bongus/35zqYxrbg0/264.ts
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1
+#EXTINF:-1 tvg-id="FS2.Fox.Sports.2.HD.us2" tvg-name="FS2" tvg-logo="https://i.ibb.co/qFcxnxXw/FS2.png" group-title="SPORTS",FS2 (Lalajo)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=09453ce820d65fbc675de3185f9e454c:98cff9600995fa381c76fdacf3c7edae
+https://otte.live.fly.ww.aiv-cdn.net/iad-nitro/live/clients/dash/enc/awxnrqkbo5/out/v1/716529a4091947b0877e6cb80dbd6ccb/cenc.mpd
+#EXTINF:-1 tvg-id="Golf.Channel.HD.us2" tvg-name="Golf Channel" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s14899_dark_360w_270h.png" group-title="SPORTS",Golf Channel (Lalajo)
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=0c39778fe8fb4f9f8574016b3d4ae2ed:232b1f450f2e37f47fdd5b678a8a546d
+https://mega.z5cable.com/bpk-tv/golf_channel_hd/default/index.mpd
+#EXTINF:-1:-1 tvg-id="LFCTV.uk" tvg-name="LFCTV" tvg-logo="https://i.imgur.com/dVDZBlV.png" group-title="SPORTS",LFC TV (Lalajo)
+http://opplextv.cyou:8080/nasir6160/nasir/346243
+#EXTVLCOPT:http-referrer=https://maxstream.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 8.0.0;) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.90 Mobile Safari/537.36
+#EXTINF:-1 tvg-id="Max.Sports.id" tvg-logo="https://images.indihometv.com/images/channels/imageCir_180x180_CLMAXSports_2026_01_31_00_39_38.jpg" group-title="SPORTS",Max Sports (Lalajo)
+https://indihuy.streamized.net/atm/DASH/useesport/useesport-avc1_2500000=7-3277707030000000.mpd
+#EXTINF:-1 tvg-name="MTV Live" tvg-id="MTVLIVE.us2" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/mtv-live-us.png?raw=true" group-title="SPORTS" radio="false",MTV Live (Lalajo)
+http://23.237.104.106:8080/USA_MTV_LIVE/mpegts
+#EXTINF:-1 group-title="SPORTS" tvg-name="Rally TV" tvg-id="wrc-rallytv" tvg-logo="https://i.postimg.cc/WtLq2C7c/logo-Rally-Tv1.png",Rally TV (Alt) (Lalajo)
+https://rally-tv-live.akamaized.net/hls/live/2117704/RallyTV-Pri/master.m3u8
+#EXTINF:-1 group-title="SPORTS" tvg-name="Rally TV" tvg-id="wrc-rallytv" tvg-logo="https://i.postimg.cc/WtLq2C7c/logo-Rally-Tv1.png",Rally TV (Lalajo)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
+https://dms.redbull.tv/v5/destination/rallytv/07f960dc-fd36-466c-971f-64a597518b83/personal_computer/http/us/en_US/playlist.m3u8
+#EXTINF:-1 tvg-id="SportTVPlus.pt" tvg-name="Sport TV+" tvg-logo="https://i.imgur.com/R5FZEW6.png" group-title="SPORTS",Sport TV+ (Lalajo)
+http://opplextv.cyou:8080/nasir6160/nasir/352929
+#EXTINF:-1 tvg-id="SportTV1.pt" tvg-name="SPORT TV 1" tvg-logo="https://i.imgur.com/YWic36u.png" group-title="SPORTS",Sport TV1 (Lalajo)
+http://opplextv.cyou:8080/nasir6160/nasir/352930
+#EXTINF:-1 tvg-id="SportTV2.pt" tvg-name="SPORT TV 2" tvg-logo="https://i.imgur.com/0jSR6yG.png" group-title="SPORTS",Sport TV2 (Lalajo)
+http://opplextv.cyou:8080/nasir6160/nasir/352931
+#EXTINF:-1 tvg-id="SportTV3.pt" tvg-name="SPORT TV 3" tvg-logo="https://i.imgur.com/6Dw3GUx.png" group-title="SPORTS",Sport TV3 (Lalajo)
+http://opplextv.cyou:8080/nasir6160/nasir/352932
+#EXTINF:-1 tvg-id="SportTV4.pt" tvg-name="SPORT TV 4" tvg-logo="https://i.imgur.com/mJlbVfW.png" group-title="SPORTS",Sport TV4 (Lalajo)
+http://opplextv.cyou:8080/nasir6160/nasir/352933
+#EXTINF:-1 tvg-id="SportTV5.pt" tvg-name="SPORT TV 5" tvg-logo="https://i.imgur.com/4w4vuad.png" group-title="SPORTS",Sport TV5 (Lalajo)
+http://opplextv.cyou:8080/nasir6160/nasir/352934
+#EXTINF:-1 tvg-id="SportTV6.pt" tvg-name="SPORT TV 6" tvg-logo="https://i.imgur.com/qmlQkyI.png" group-title="SPORTS",Sport TV6 (Lalajo)
+http://opplextv.cyou:8080/nasir6160/nasir/352935
+#EXTINF:-1 channel-id="DEAJ0500429A-de" tvg-id="DEAJ0500429A-de" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/DEAJ0500429A_20250527T015726SQUARE.png" group-title="SPORTS",SportDigital Free (Lalajo)
+https://jmp2.uk/stvp-DEAJ0500429A
+#EXTINF:-1 tvg-id="SoccerChannel.id" tvg-name="Soccer Channel" tvg-logo="https://www.visionplus.id/images/repository/883/124883-LOGO-m.png" tvg-url="https://raw.githubusercontent.com/apistech/project/refs/heads/main/ApisTECH.xml" group-title="SPORTS",V+ Sports (Lalajo)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+#EXTVLCOPT:http-referrer=https://www.visionplus.id/
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=c6430463ab1d4e5080b7a962c766e7a0:66d8ba98f50a4147c9c71a9d4b32fbc6
+https://d2xz2v5wuvgur6.cloudfront.net/out/v1/f224a4945f2f48e892fb896645a9af6b/index.mpd
 # Last Updated: 2026-05-26 09:12 WIB
 #EXTINF:-1 tvg-logo="https://corporate.bwfbadminton.com/wp-content/uploads/2017/09/BWF-Logo-Text-Sized.jpg" tvg-id="Badminton.Live" group-title="SPORTS",LIVE BADMINTON - Bone TV (COURT 1) (RaketTV)
 #EXTVLCOPT:http-referrer=https://styleanecdotes.blogspot.com/
