@@ -36,7 +36,7 @@ MASTER_URLS = [
 PROVIDER_NAMES = [
     "Love4vn-Test",      # 0
     "Qtrung",            # 1
-    "BakulWIFI",       # 2
+    "BakulWIFI",         # 2
     "Love4vn-Live",      # 3
     "Deccotech",         # 4
     "KitKat",            # 5
@@ -106,7 +106,7 @@ CONFIGURATIONS = [
         "output_file": "event_combined.m3u",
         "keywords": ALL_POSITIVE_KEYWORDS["EVENT_ONLY"],
         "exclude_keywords": ALL_POSITIVE_KEYWORDS["NEWS"] + ALL_POSITIVE_KEYWORDS["KIDS"] + ALL_POSITIVE_KEYWORDS["RELIGI"] + ALL_POSITIVE_KEYWORDS["KNOWLEDGE"] + ALL_POSITIVE_KEYWORDS["MOVIES"], 
-        "category_name": "BACKUP EVENT SPORTS", 
+        "category_name": "EVENT LIVE SPORTS", 
         "force_category": True, 
         "require_time": True, 
         "description": "EVENT: Gabungan Event Olahraga (Wajib Berjadwal)"
@@ -339,7 +339,7 @@ def get_channel_priority(channel_name, category):
         if "UMMAT" in n or "NABAWI" in n: return 7
         return 99
         
-    elif category == "LIVE EVENT SPORTS":
+    elif category == "EVENT LIVE SPORTS":
         return 0 
         
     return 99
@@ -426,6 +426,10 @@ def filter_m3u_by_config(config, super_clean_channels):
         current_extinf = ch["extinf"]
         current_buffer = list(ch["buffer"]) 
 
+        # EKSEKUSI PENGECUALIAN KHUSUS RAFADERVIAN
+        if target_category == "EVENT LIVE SPORTS" and "RafaDervian.m3u" in provider_url_str:
+            continue
+
         group_match = GROUP_TITLE_REGEX.search(current_extinf)
         raw_group_title = group_match.group(1) if group_match else ""
         
@@ -434,14 +438,11 @@ def filter_m3u_by_config(config, super_clean_channels):
         else:
             raw_channel_name = current_extinf.strip()
             
-        # CEK APAKAH INI SPOTV
         is_ch_spotv = "SPOTV" in raw_channel_name.upper()
 
-        # BYPASS ANTI-DUPLIKAT URL KHUSUS SPOTV
         if stream_url in CATEGORIZED_URLS and not is_ch_spotv:
             continue
             
-        # BLOKIR SPOTV JIKA DARI bit.ly/KPL
         if is_ch_spotv and "bit.ly/KPL" in provider_url_str:
             continue
 
@@ -449,11 +450,18 @@ def filter_m3u_by_config(config, super_clean_channels):
         new_channel_name = raw_channel_name
         extracted_date = None
         
-        if target_category == "SPORTS":
-            new_channel_name = re.sub(r'(?i)eleven', 'DAZN', new_channel_name)
-        
         clean_group_title = CLEANING_REGEX.sub(' ', raw_group_title).upper()
         clean_channel_name = CLEANING_REGEX.sub(' ', new_channel_name).upper()
+        
+        # DIFERENSIASI REGIONAL SPORTS KETAT (MENCEGAH OVERLAP JADWAL)
+        if "BEIN" in clean_channel_name:
+            if re.search(r'\b(AU|AUSTRALIA)\b', clean_channel_name) and "(AU)" not in new_channel_name.upper():
+                new_channel_name += " (AU)"
+            elif re.search(r'\b(ID|INDONESIA)\b', clean_channel_name) and "(ID)" not in new_channel_name.upper():
+                new_channel_name += " (ID)"
+
+        if target_category == "SPORTS":
+            new_channel_name = re.sub(r'(?i)eleven', 'DAZN', new_channel_name)
 
         if "SPOTV" in clean_channel_name and re.search(r'[\U0001F1E6-\U0001F1FF]', raw_channel_name):
             continue 
@@ -473,7 +481,7 @@ def filter_m3u_by_config(config, super_clean_channels):
 
         match_found = False
 
-        if target_category == "LIVE EVENT SPORTS":
+        if target_category == "EVENT LIVE SPORTS":
             if has_time_pattern:
                 match_found = True
                 extracted_date = extract_date_from_group(raw_group_title)
@@ -517,13 +525,15 @@ def filter_m3u_by_config(config, super_clean_channels):
         if match_found:
             priority_score = get_channel_priority(new_channel_name, target_category)
             
+            # PRIORITASKAN STATUS 'LIVE' DARI PROVIDER
+            if "LIVE" in raw_channel_name.upper():
+                priority_score = max(0, priority_score - 1)
+            
             if target_category == "SPORTS" and priority_score == 999:
                 continue 
 
-            # ====== MODIFIKASI: MENYISIPKAN NAMA PENYEDIA KE DALAM NAMA CHANNEL ======
             provider_name = PROVIDER_NAMES[provider_idx] if provider_idx < len(PROVIDER_NAMES) else f"Prov-{provider_idx}"
             final_channel_name = f"{new_channel_name.strip()} ({provider_name})"
-            # =========================================================================
 
             if force_category:
                 for idx_buf in range(len(current_buffer)):
@@ -539,7 +549,6 @@ def filter_m3u_by_config(config, super_clean_channels):
                             else:
                                 b_line = f'{b_line} group-title="{target_category}"'
                         
-                        # Gantikan nama channel lama dengan nama yang sudah ditambahkan (Provider)
                         parts = b_line.split(',', 1)
                         if len(parts) == 2:
                             b_line = f"{parts[0]},{final_channel_name}"
@@ -550,12 +559,11 @@ def filter_m3u_by_config(config, super_clean_channels):
                         current_buffer[idx_buf] = f"#EXTGRP:{target_category}"
             
             sort_key = final_channel_name.upper()
-            if target_category == "LIVE EVENT SPORTS" and extracted_date:
+            if target_category == "EVENT LIVE SPORTS" and extracted_date:
                 date_parts = extracted_date.split('-')
                 if len(date_parts) == 3:
                     sort_key = f"{date_parts[2]}-{date_parts[1]}-{date_parts[0]} {final_channel_name.upper()}"
             
-            # Membersihkan nama dari kurung siku untuk logs, tapi tetap mempertahankan alias provider
             clean_name_for_log = re.sub(r'\[.*?\]|\(.*?\)', '', new_channel_name).strip()
             
             tvg_id_match = re.search(r'tvg-id="([^"]*)"', current_extinf, re.IGNORECASE)
@@ -564,7 +572,6 @@ def filter_m3u_by_config(config, super_clean_channels):
                 tvg_name_match = re.search(r'tvg-name="([^"]*)"', current_extinf, re.IGNORECASE)
                 epg_name = tvg_name_match.group(1).strip() if tvg_name_match else "KOSONG"
                 
-            # Log sekarang akan memunculkan "(ProviderName) [EPG: ...]"
             log_entry = f"{clean_name_for_log} ({provider_name})  [EPG: {epg_name}]"
             
             if provider_idx not in CATEGORY_LOGS[target_category]:
@@ -577,7 +584,7 @@ def filter_m3u_by_config(config, super_clean_channels):
             channels_data.append((priority_score, provider_idx, sort_key, current_buffer, stream_url))
             CATEGORIZED_URLS.add(stream_url)
                     
-    if target_category == "LIVE EVENT SPORTS":
+    if target_category == "EVENT LIVE SPORTS":
         channels_data.sort(key=lambda x: (x[1], x[2])) 
     else:
         channels_data.sort(key=lambda x: (0 if x[0] == 0 else 1, x[1], x[0], x[2])) 
@@ -631,7 +638,6 @@ if __name__ == "__main__":
             if stream_url in GLOBAL_BLACKLIST_URLS:
                 continue
             
-            # Ekstrak nama channel untuk deteksi SPOTV
             if "," in extinf:
                 raw_channel_name = extinf.split(',', 1)[1].strip()
             else:
@@ -639,11 +645,9 @@ if __name__ == "__main__":
                 
             is_ch_spotv = "SPOTV" in raw_channel_name.upper()
             
-            # BLOKIR SPOTV JIKA DARI bit.ly/KPL (pada tahap deduplikasi awal)
             if is_ch_spotv and "bit.ly/KPL" in provider_url_str:
                 continue
             
-            # BYPASS ANTI-DUPLIKAT KHUSUS SPOTV
             if is_ch_spotv or stream_url not in master_seen_urls:
                 if not is_ch_spotv:
                     master_seen_urls.add(stream_url)
@@ -681,7 +685,6 @@ if __name__ == "__main__":
         30: "[KASTA 30 - FEEDS & LIVE EVENTS]", 31: "[KASTA 31 - PHILIPPINES & EAST ASIA]"
     }
 
-    # 1. MENCETAK LAPORAN LENGKAP (SEMUA KATEGORI)
     with open("daftar_epg_lengkap.txt", "w", encoding="utf-8") as f:
         f.write("DAFTAR LENGKAP CHANNEL SEMUA KATEGORI BESERTA ID EPG (DIURUTKAN PER PENYEDIA)\n")
         f.write("================================================================================\n\n")
@@ -696,7 +699,7 @@ if __name__ == "__main__":
                 kasta_dict = provider_dict[p_idx]
                 
                 for kasta in sorted(kasta_dict.keys()):
-                    if category == "LIVE EVENT SPORTS" and kasta == 0:
+                    if category == "EVENT LIVE SPORTS" and kasta == 0:
                         kasta_name = "[JADWAL EVENT]"
                     elif category == "SPORTS" and kasta == 0:
                         kasta_name = kasta_names_sports.get(kasta)
@@ -716,7 +719,6 @@ if __name__ == "__main__":
                         f.write(f"      - {name_with_epg}\n")
             f.write("\n================================================================================\n\n")
 
-    # 2. MENCETAK KHUSUS KATEGORI SPORTS (HANYA NAMA CHANNEL)
     with open("daftar_channel_sports.txt", "w", encoding="utf-8") as fs:
         fs.write("DAFTAR NAMA CHANNEL KHUSUS KATEGORI SPORTS\n")
         fs.write("===================================================\n\n")
@@ -733,7 +735,6 @@ if __name__ == "__main__":
                     fs.write(f"  {kasta_name}\n")
                     
                     for name_with_epg in sorted(kasta_dict[kasta]):
-                        # Memisahkan nama channel dari tag EPG agar yang tercetak hanya nama murni
                         channel_name_only = name_with_epg.split("  [EPG:")[0]
                         fs.write(f"    - {channel_name_only}\n")
                 fs.write("\n")
