@@ -15,17 +15,17 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # ====================================================================
 
 MASTER_URLS = [
-    "https://deccotech.online/tv/tvstream.html", 
+    "https://raw.githubusercontent.com/DinasKegelapanKotaKonoha/romlah-gunadi/refs/heads/main/romlahsiahaan.m3u", 
     "https://gist.githubusercontent.com/zentral-qtrung/531720c17d089702dd7ac4b96db6e1ce/raw/a40d137328263e58d827dccee2974079eae092b5/sports.m3u",
     "https://bwifi.my.id/maling.m3u",
     "https://raw.githubusercontent.com/jrpahe-del/IPTV/refs/heads/main/RafaDervian.m3u", 
     "https://raw.githubusercontent.com/Bluestraveller13/super-duper-spork/refs/heads/main/KITKATJOSS", 
     "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25",
-    "https://raw.githubusercontent.com/DinasKegelapanKotaKonoha/romlah-gunadi/refs/heads/main/romlahsiahaan.m3u",
+    "",
     "https://ayo.maling.pl/colong.m3u",
     "https://semar25.short.gy",
     "https://freeiptv2026.tsender57.workers.dev",
-    "",
+    "https://deccotech.online/tv/tvstream.html",
     "",
     "",
     "https://raw.githubusercontent.com/tsender57-dotcom/iptv-rox-playlist/refs/heads/main/rakettv.m3u8",
