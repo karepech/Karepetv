@@ -22,7 +22,7 @@ MASTER_URLS = [
     "https://raw.githubusercontent.com/Bluestraveller13/super-duper-spork/refs/heads/main/KITKATJOSS", 
     "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25",
     "https://raw.githubusercontent.com/DinasKegelapanKotaKonoha/romlah-gunadi/refs/heads/main/romlahsiahaan.m3u",
-    "",
+    "https://ayo.maling.pl/colong.m3u",
     "https://semar25.short.gy",
     "https://freeiptv2026.tsender57.workers.dev",
     "",
