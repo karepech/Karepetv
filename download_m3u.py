@@ -32,7 +32,7 @@ MASTER_URLS = [
     "https://bit.ly/KPL203"
 ]
 
-# Daftar Alias Provider untuk dimunculkan di belakang nama channel
+# Daftar Alias Provider (Hanya digunakan untuk LOG txt sekarang)
 PROVIDER_NAMES = [
     "Love4vn-Test",      # 0
     "Qtrung",            # 1
@@ -525,8 +525,13 @@ def filter_m3u_by_config(config, super_clean_channels):
             if target_category == "SPORTS" and priority_score == 999:
                 continue 
 
+            # ===== PERUBAHAN DI SINI =====
+            # Membuang embel-embel nama provider pada string channel akhir
+            final_channel_name = new_channel_name.strip()
+            
+            # Variabel provider_name tetap diset murni hanya untuk keperluan log laporan EPG/txt
             provider_name = PROVIDER_NAMES[provider_idx] if provider_idx < len(PROVIDER_NAMES) else f"Prov-{provider_idx}"
-            final_channel_name = f"{new_channel_name.strip()} ({provider_name})"
+            # =============================
 
             if force_category:
                 for idx_buf in range(len(current_buffer)):
