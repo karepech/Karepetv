@@ -22,7 +22,7 @@ MASTER_URLS = [
     "https://raw.githubusercontent.com/Bluestraveller13/super-duper-spork/refs/heads/main/KITKATJOSS", 
     "https://raw.githubusercontent.com/mimipipi22/lalajo/refs/heads/main/playlist25",
     "",
-    "https://ayo.maling.pl/colong.m3u",
+    "https://bwifi.my.id/epg/epg/colong.m3u",
     "https://semar25.short.gy",
     "https://freeiptv2026.tsender57.workers.dev",
     "https://deccotech.online/tv/tvstream.html",
