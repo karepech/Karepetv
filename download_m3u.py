@@ -26,7 +26,7 @@ MASTER_URLS = [
     "https://bwifi.my.id/epg/epg/colong.m3u",
     "https://semar25.short.gy",
     "https://freeiptv2026.tsender57.workers.dev",
-    "https://tvg.short.gy/2026TVGNSM301",
+    "http://sauridigital.my.id/kerbaunakal/2026TVGNS29.html",
     "",
     "",
     "https://raw.githubusercontent.com/tsender57-dotcom/iptv-rox-playlist/refs/heads/main/rakettv.m3u8",
