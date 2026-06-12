@@ -504,10 +504,14 @@ https://bintangstreaming.my.id/1kds/kds_tes.php/.m3u8?id=natgeo-wild-tamil
 #KODIPROP:inputstream.adaptive.license_key=ffa7c3ca6020428c919e13b817b7e31b:adf163c6c1729e6f77668d4e49f32352
 #EXTINF:-1 tvg-id="NationalGeographicWest.us" tvg-logo="https://mimipipi22.github.io/logo/png/natgeowild.png" group-title="KNOWLEDGE",NATGEO WILD 🇺🇸
 https://at-live-3.tentcdn.eu/bpk-tv/Nat_Geo_People_HD/default/index.mpd
+#EXTINF:-1 group-title="KNOWLEDGE",NATGEOHD
+http://185.246.209.113/NATGEOHD/index.m3u8
 #EXTINF:-1 group-title="KNOWLEDGE",natgeowild
 http://198.58.104.90:8989/natgeowild/index.m3u8
 #EXTINF:-1 group-title="KNOWLEDGE",natgeowild HD
 http://84.17.50.102/natgeowild/index.m3u8
+#EXTINF:-1 group-title="KNOWLEDGE",NatGeoWildUK
+http://185.246.209.113/NatGeoWildUK/index.m3u8
 #EXTINF:-1 group-title="KNOWLEDGE",National Geographic
 http://85.14.32.26:8800/udp/239.100.10.69:5000
 #EXTINF:-1 tvg-id="National.Geographic.Wild.HD.us2" tvg-logo="https://i.postimg.cc/HL3xRJz4/Nat-Geo-Wild.png" group-title="KNOWLEDGE",National Geographic Wild
@@ -527,7 +531,7 @@ https://s2129134.cdn.mytvnet.vn/pkg20/live_dzones/dsc.smil/manifest.mpd
 #KODIPROP:inputstream.adaptive.license_key=b70a8cf9450c4d6484b4ac4d3c6761c0:0908be844260409cbac180bf0181da40
 https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Discoverychannel2/default/manifest.mpd
 #EXTINF:-1 tvg-id="discovery_sd" tvg-name="Discovery" tvg-logo="https://images.toffeelive.com/images/program/18097/logo/240x240/mobile_logo_297723001673195119.png" group-title="KNOWLEDGE",Discovery
-http://sm-monirul.top/ultra_restream/play/discovery_sd.m3u8
+https://sm-monirul.top/toffee/play/discovery_sd.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/2rx8Whs.png" group-title="KNOWLEDGE",Discovery
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=d9ac48f5131641a789328257e778ad3a:b6e67c37239901980c6e37e0607ceee6
@@ -564,22 +568,26 @@ http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/BMXKTN5RXYDNXT/6452/inde
 #KODIPROP:inputstream.adaptive.stream_headers=referer=https://hfc-tlx-live-atv-cdn.izzigo.tv
 https://hfc-tlx-live-atv-cdn.izzigo.tv/13/out/u/dash/DISCOVERY-HOME-AND-HEALTH-HD/default.mpd
 #EXTINF:-1 tvg-id="discovery_hd" tvg-name="Discovery HD" tvg-logo="https://images.toffeelive.com/images/program/18093/logo/240x240/mobile_logo_868363001673181438.png" group-title="KNOWLEDGE",Discovery HD
-http://sm-monirul.top/ultra_restream/play/discovery_hd.m3u8
+https://sm-monirul.top/toffee/play/discovery_hd.m3u8
 #EXTINF:-1 group-title="KNOWLEDGE",Discovery HD
 http://151.80.18.177:86/Discovery_HD/index.m3u8
 #EXTINF:-1 tvg-name="Discovery Life Channel HD" tvg-id="discovery-life-channel" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/discovery-life-us.png?raw=true" group-title="KNOWLEDGE",DISCOVERY LIFE
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:90.0) Gecko/20100101 Firefox/140.0
 http://supersonictv.live:8080/864072/196529/22075
 #EXTINF:-1 tvg-id="discovery_science" tvg-name="Discovery Science" tvg-logo="https://images.toffeelive.com/images/program/378/logo/240x240/mobile_logo_604754001673177502.png" group-title="KNOWLEDGE",Discovery Science
-http://sm-monirul.top/ultra_restream/play/discovery_science.m3u8
+https://sm-monirul.top/toffee/play/discovery_science.m3u8
 #EXTINF:-1 tvg-id="discovery_turbo" tvg-name="Discovery Turbo" tvg-logo="https://images.toffeelive.com/images/program/379/logo/240x240/mobile_logo_775127001673177876.png" group-title="KNOWLEDGE",Discovery Turbo
-http://sm-monirul.top/ultra_restream/play/discovery_turbo.m3u8
+https://sm-monirul.top/toffee/play/discovery_turbo.m3u8
 #EXTINF:-1 group-title="KNOWLEDGE",DISCOVERY-CHANNEL
 http://179.60.51.134:8888/DISCOVERY-CHANNEL/index.m3u8
+#EXTINF:-1 group-title="KNOWLEDGE",DiscoveryFamily
+http://185.246.209.113/DiscoveryFamily/index.m3u8
+#EXTINF:-1 group-title="KNOWLEDGE",DiscoveryScience
+http://185.246.209.113/DiscoveryScience/index.m3u8
 #EXTINF:-1 group-title="KNOWLEDGE",ID-DISCOVERY
 http://179.60.51.134:8888/ID-DISCOVERY/index.m3u8
 #EXTINF:-1 tvg-id="discovary_investigation_hd" tvg-name="Investigation Discovery HD" tvg-logo="https://images.toffeelive.com/images/program/18094/logo/240x240/mobile_logo_154805001673178308.png" group-title="KNOWLEDGE",Investigation Discovery HD
-http://sm-monirul.top/ultra_restream/play/discovary_investigation_hd.m3u8
+https://sm-monirul.top/toffee/play/discovary_investigation_hd.m3u8
 #EXTINF:-1 group-title="KNOWLEDGE",USA_DISCOVERY
 http://23.237.104.106:8080/USA_DISCOVERY/index.m3u8
 #EXTVLCOPT:http-referrer=https://www.indihometv.com/
@@ -587,11 +595,11 @@ http://23.237.104.106:8080/USA_DISCOVERY/index.m3u8
 #EXTINF:-1 tvg-id="Animal.Planet.id" tvg-name="Animal Planet" tvg-logo="https://mimipipi22.github.io/logo/knowledge/animalplanet.jpg" group-title="KNOWLEDGE",ANIMAL PLANET
 https://cdn08jtedge.indihometv.com/dassdvr/194/animalplanet/manifest_w816003161_qRFZS.mpd?encp=&uid=&expp=
 #EXTINF:-1 tvg-id="animal_planet_sd" tvg-name="Animal Planet" tvg-logo="https://images.toffeelive.com/images/program/359/logo/240x240/mobile_logo_835681001673175607.png" group-title="KNOWLEDGE",Animal Planet
-http://sm-monirul.top/ultra_restream/play/animal_planet_sd.m3u8
+https://sm-monirul.top/toffee/play/animal_planet_sd.m3u8
 #EXTINF:-1 group-title="KNOWLEDGE",Animal Planet
 http://85.14.32.26:8800/udp/239.100.10.14:5000
 #EXTINF:-1 tvg-id="animal_planet_hd" tvg-name="Animal Planet HD" tvg-logo="https://images.toffeelive.com/images/program/18096/logo/240x240/mobile_logo_032001001673194753.png" group-title="KNOWLEDGE",Animal Planet HD
-http://sm-monirul.top/ultra_restream/play/animal_planet_hd.m3u8
+https://sm-monirul.top/toffee/play/animal_planet_hd.m3u8
 #EXTINF:-1 tvg-id="AnimalPlanet.us" tvg-logo="https://i.postimg.cc/FKjsnbjf/AP.png" group-title="KNOWLEDGE",Animal Planet HD 2
 #KODIPROP:inputstream.adaptive.manifest_type=dash
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
@@ -643,6 +651,8 @@ http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/BMXKTN5RXYDNXT/6453/inde
 https://bintangstreaming.my.id/1kds/kds_tes.php/.m3u8?id=history-tamil
 #EXTINF:-1 group-title="KNOWLEDGE",HISTORY2
 http://179.60.51.134:8888/HISTORY2/index.m3u8
+#EXTINF:-1 group-title="KNOWLEDGE",HistoryUK
+http://185.246.209.113/HistoryUK/index.m3u8
 #EXTINF:-1 group-title="KNOWLEDGE",Viasat History
 http://85.14.32.26:8800/udp/239.100.10.107:5000
 #EXTINF:-1 group-title="KNOWLEDGE",Viasat History HD
