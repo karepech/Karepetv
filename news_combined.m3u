@@ -202,6 +202,8 @@ http://op-group1-swiftservehd-1.dens.tv/h/h143/index2.m3u8
 #EXTVLCOPT:http-referrer=http://www.dens.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36
 http://op-group1-swiftservehd-1.dens.tv/h/h29/index.m3u8
+#EXTINF:-1 tvg-logo="https://img.platform.wurl.dev/channel/1179/lg/816767/LG-Logo-PNG-100x100_v1.png" group-title="NEWS",Bloomberg
+https://5e72b647.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctanBfQmxvb21iZXJnT3JpZ2luYWxzLTFfSExT/playlist.m3u8
 #EXTVLCOPT:http-referrer=https://www.visionplustv.id/
 #KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
 #KODIPROP:inputstream.adaptive.license_key=e0d67e9e2641468d9daf3182c25bd40c:84663ccbdeba441f88c63d8573269fa1
@@ -210,12 +212,8 @@ https://d2xz2v5wuvgur6.cloudfront.net/out/v1/3212c95b42154b6284671f28cc2c943c/in
 #EXTINF:-1 group-title="NEWS" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/bloombeng.png",Bloomberg 2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0
 https://cdnbal1.indihometv.com/atm/DASH/BLOOMBERG_AT/manifest.mpd
-#EXTINF:-1 tvg-logo="https://img.platform.wurl.dev/channel/1179/lg/816767/LG-Logo-PNG-100x100_v1.png" group-title="NEWS",Bloomberg Originals
-https://5e72b647.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctanBfQmxvb21iZXJnT3JpZ2luYWxzLTFfSExT/playlist.m3u8
 #EXTINF:-1 group-title="NEWS" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/bloombeng.png",Bloomberg TV Australia
 https://bloomberg.com/media-manifest/streams/aus.m3u8
-#EXTINF:-1 tvg-logo="https://img.platform.wurl.dev/channel/389/lg/6f2a84/LG-Logo-PNG-100x100_v3.png" group-title="NEWS",Bloomberg TV+
-https://727fa7fd.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctanBfQmxvb21iZXJnVFZQbHVzX0hMUw/playlist.m3u8
 #EXTINF:-1 group-title="NEWS" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/abctv.png",ABC News
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:145.0) Gecko/20100101 Firefox/145.0
 https://abc-news-dmd-streams-1.akamaized.net/out/v1/701126012d044971b3fa89406a440133/index.m3u8
