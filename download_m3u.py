@@ -658,6 +658,16 @@ if __name__ == "__main__":
                 prefix_extinf = ""
                 raw_channel_name = extinf.strip()
                 
+            # ==============================================================
+            # TAMBAHAN KHUSUS PLAYLIST BONE: HAPUS KATA "LIVE"
+            # ==============================================================
+            if "bone.m3u" in provider_url_str.lower():
+                # Hapus kata "LIVE" atau "[LIVE]" (huruf besar/kecil bebas)
+                raw_channel_name = re.sub(r'(?i)\[?\blive\b\]?', '', raw_channel_name)
+                # Bersihkan sisa spasi ganda dan spasi di awal/akhir
+                raw_channel_name = re.sub(r'\s+', ' ', raw_channel_name).strip()
+            # ==============================================================
+                
             # Filter KPL untuk SPOTV 
             is_ch_spotv = "SPOTV" in raw_channel_name.upper()
             if is_ch_spotv and "bit.ly/KPL" in provider_url_str:
