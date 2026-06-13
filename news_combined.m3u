@@ -53,6 +53,16 @@ https://d25tgymtnqzu8s.cloudfront.net/smil:berita/playlist.m3u8?id=5
 #EXTVLCOPT:http-referrer=http://www.dens.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36
 https://op-group1-swiftservehd-1.dens.tv/h/h209/index.m3u8
+#EXTINF:-1 tvg-uid="6336b9c0e76647e93108d593efebf4c2" data-source="Vididi Combi Termux" tvg-id="18280-18280" tvg-logo="https://thumbor.prod.vidiocdn.com/BaOhOMeyQ6fF-jCy0ej0sS_we5c=/640x360/filters:strip_icc:quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/18280/berita-satu-f3779f.jpg" group-title="NEWS",Berita Satu Sore "Recorded"
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+https://streamvididi.bonetvkoe.web.id/play.m3u8?q=18280&ext=hls&x=1781387032&k=e59ab458cb9f1442684a74ba9d3afd3b4929c61d400b81948f59088e911bea4b&sc=18280
+#EXTINF:-1 tvg-uid="9c85483a6603f7898b677f22bb2e9817" data-source="Vididi Combi Termux" tvg-id="5409-5409" tvg-logo="https://thumbor.prod.vidiocdn.com/Qmg51k_L3f4RoyW0p3rmhaflkuU=/640x360/filters:strip_icc:quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/5409/inews-1b9437.jpg" group-title="NEWS",Breaking News
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
+#KODIPROP:inputstream.adaptive.license_key=https://streamvididi.koe.web.id/index.mpd?q=5409&ext=drm&x=1781387032&k=dac285a0856937c0c2e22358ecee04f31c878085c1b1ce342a00625b364f0108
+https://streamvididi.bonetvkoe.web.id/index.mpd?q=5409&ext=dash&x=1781387032&k=a795e06bda397fd7ea606bf089becb4d6f44a5116bd35afede57563fb3a2b7f3&sc=5409
 #EXTINF:-1 tvg-uid="b120646c2854a3af557b19c893d8da31" data-source="TV_Amrik" tvg-chno="22" tvg-id="CBS.News.National.Stream.us2" tvg-name="CBS News 24/7" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s104846_dark_360w_270h.png" group-title="NEWS",CBS News 24/7
 https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8
 #EXTVLCOPT:http-referrer=https://www.visionplus.id/
