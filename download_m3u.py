@@ -659,11 +659,15 @@ if __name__ == "__main__":
                 raw_channel_name = extinf.strip()
                 
             # ==============================================================
-            # TAMBAHAN KHUSUS PLAYLIST BONE: HAPUS KATA "LIVE"
+            # TAMBAHAN KHUSUS PLAYLIST BONE: HAPUS KATA "LIVE" & EMOJI
             # ==============================================================
             if "bone.m3u" in provider_url_str.lower():
                 # Hapus kata "LIVE" atau "[LIVE]" (huruf besar/kecil bebas)
                 raw_channel_name = re.sub(r'(?i)\[?\blive\b\]?', '', raw_channel_name)
+                
+                # Hapus emoji titik merah (dan warna lain untuk jaga-jaga)
+                raw_channel_name = raw_channel_name.replace('🔴', '').replace('🟢', '').replace('🔵', '')
+                
                 # Bersihkan sisa spasi ganda dan spasi di awal/akhir
                 raw_channel_name = re.sub(r'\s+', ' ', raw_channel_name).strip()
             # ==============================================================
