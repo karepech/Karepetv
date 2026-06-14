@@ -907,6 +907,13 @@ http://op-group1-swiftservehd-1.dens.tv/h/h29/01.m3u8
 https://www.bloomberg.com/media-manifest/streams/us.m3u8
 #EXTINF:-1 tvg-logo="https://mifntechnology.github.io/siaranMy/logo/BeritaRtm.png" x-spion-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQP6H4tbicNweZcf5y2SSaSAJUynbpxa_8j5Acror5tmJKTnuwVhM5dKp0yIcK8XWqVnpDkPRXBe6Kuul_HdaF7h0wEuO6Q4qHQA7praMsf45a8-fDVKZdTeurhDeUjZwGC9hMRoACp_usI0RcvWYKEUdW80GXTBFB8T8PmyCsVUcE20-Z_ko3wuZyqdRa/s700/BERITA%20RTM.png" group-title="NEWS" x-source="GEulis TV",BERITA RTM (4)
 https://d25tgymtnqzu8s.cloudfront.net/smil:berita/playlist.m3u8?id=5
+#EXTINF:-1 tvg-uid="9c85483a6603f7898b677f22bb2e9817" data-source="Vididi Combi Termux" tvg-id="5409-5409" tvg-logo="https://thumbor.prod.vidiocdn.com/Qmg51k_L3f4RoyW0p3rmhaflkuU=/640x360/filters:strip_icc:quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/image/5409/inews-1b9437.jpg" group-title="NEWS",Breaking News
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
+#KODIPROP:inputstream.adaptive.license_key=https://streambone.usw40304648193001.workers.dev/index.mpd?q=5409&ext=drm&x=1781470448&k=2c00ea08488d20bef347b4527c0ab08b5cb05b740d9c4e842a50fb17bf71fe26
+https://streambone.usw40304648193001.workers.dev/index.mpd?q=5409&ext=dash&x=1781470448&k=e8daaae10e4cb7e6d710d57bd74192efe99a59a28b718635084dfbdbc090d899&sc=5409
 #EXTVLCOPT:http-referrer=https://www.visionplus.id/
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=fb0dd5a64a3c45e086cb23f7f9649fbc:d68ee78a9b1703da869a983b57d95c60
@@ -919,6 +926,9 @@ http://s.rocketdns.info:8080/live/monstercable/Dq6jjknxCr/3640.ts
 http://s.rocketdns.info:8080/live/monstercable/Dq6jjknxCr/2543.ts
 #EXTINF:-1 tvg-uid="4a00ba9c2a6e1bee00fca0fd4e0cdef0" data-source="TV_Amrik" tvg-chno="94" tvg-id="NewsNation.us2" tvg-name="NewsNation" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s91096_dark_360w_270h.png" group-title="NEWS",NewsNation
 http://s.rocketdns.info:8080/live/monstercable/Dq6jjknxCr/647784.ts
+#EXTINF:-1 tvg-uid="fbeaeb8edb657ac0da6a62fb094eed8c" data-source="Vididi Combi Termux" tvg-id="777-777" tvg-logo="https://thumbor.prod.vidiocdn.com/d52Xki8E17WZGLPAtw2v5hEjYK0=/640x360/filters:strip_icc:quality(70)/vidio-media-production/uploads/tv_program/thumbnail/390346/ed6f7a.jpg" group-title="NEWS",Primetime News
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+https://streambone.usw40304648193001.workers.dev/play.m3u8?q=777&ext=hls&x=1781470448&k=8a59c9be59611f153741591e5244b022f56c0d2fff85189728d36617a731b013&sc=777
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe9hUX2bmyvD65GKfn-HlVHS94KbohkNVGj0mhDGc0PZvsYJwqedGmGxo&s=10" x-spion-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTUvjGJuQr4iX_T6xiHIKNQmxNy_Sl4Tc8Ns7qgp6SxRr3xCh1aTiS-H0gPLsLTFQMAGGrdse86IuX1VPhdu5scP4c5GFh0AmE9CD3vUlz5DlVM6-Kl3OSM_c8YON3NFnYLKCjE0JNHZeirShyVVjX9bmdRRU2eDUoKZ6s942Mwk8ZUJQVqVbfLIKgmq2S/s700/SINDO%20NEWS%20TV.png" group-title="NEWS" x-source="GEulis TV" tvg-id="24",SINDONEWS (2)
 https://indihuy.streamized.net/atm/DASH/mncnews/manifest.mpd
 #EXTINF:-1 tvg-logo="https://image-resizer-cloud-cdn.api.tmcms.quickplay.com/image/E5BD5F84-8278-4B7C-95EA-E7057B0B3233/0-16x9.png?width=190&amp;updatedTime=0&amp;dt=Web" x-spion-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEht-eOxx6TH6CGQ4vO_zet1tRKC-sagLqHudaXlxFXulnopFn1s1Hq8lnS1R2uqDyR55fj4H4rn2S05YiZFiv0vAU5FgOQM1XCG_0gviyt9kcEec08iiJGfCs3EYwCHgqOAjCln3acTBVgwNIFxUlYog5PPGYrwbrt0p-Aug9e-OdWjSYv_VCqqF_MKG7Wz/s700/CCTV4.png" group-title="NEWS" x-source="GEulis TV",CCTV4 (3)
