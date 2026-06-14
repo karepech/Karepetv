@@ -15,7 +15,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # ====================================================================
 
 MASTER_URLS = [
-    "",
+    "https://getch.semar.my.id",
     "https://deccotech.online/tv/tvstream.html",
     "https://raw.githubusercontent.com/DinasKegelapanKotaKonoha/romlah-gunadi/refs/heads/main/romlahsiahaan.m3u", 
     "https://gist.githubusercontent.com/zentral-qtrung/531720c17d089702dd7ac4b96db6e1ce/raw/a40d137328263e58d827dccee2974079eae092b5/sports.m3u",
