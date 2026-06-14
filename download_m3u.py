@@ -15,7 +15,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # ====================================================================
 
 MASTER_URLS = [
-    "https://bwtv.my.id/bone.m3u",
+    "",
     "https://deccotech.online/tv/tvstream.html",
     "https://raw.githubusercontent.com/DinasKegelapanKotaKonoha/romlah-gunadi/refs/heads/main/romlahsiahaan.m3u", 
     "https://gist.githubusercontent.com/zentral-qtrung/531720c17d089702dd7ac4b96db6e1ce/raw/a40d137328263e58d827dccee2974079eae092b5/sports.m3u",
@@ -26,7 +26,7 @@ MASTER_URLS = [
     "https://fireredst.github.io/Itz-Play/Play.m3u",
     "https://bwifi.my.id/epg/epg/colong.m3u",
     "https://semar25.short.gy",
-    "https://freeiptv2026.tsender57.workers.dev",
+    "https://bwtv.my.id/bone.m3u",
     "http://sauridigital.my.id/kerbaunakal/2026TVGNS29.html",
     "",
     "",
